@@ -118,6 +118,24 @@ export default function HomeScreen() {
             </Pressable>
           </View>
 
+          {/* 忘却曲線ダッシュボード */}
+          <Pressable
+            style={({ pressed }) => [
+              styles.srsCard,
+              pressed && styles.pressed,
+            ]}
+            onPress={() => router.push('/srs-dashboard' as any)}
+          >
+            <View style={styles.srsIcon}>
+              <IconSymbol name="chart.bar.fill" size={24} color="#FFFFFF" />
+            </View>
+            <View style={styles.srsContent}>
+              <Text style={styles.srsTitle}>忘却曲線ダッシュボード</Text>
+              <Text style={styles.srsDesc}>記憶保持率・苦手語・復習状況を確認</Text>
+            </View>
+            <IconSymbol name="chevron.right" size={20} color="#687076" />
+          </Pressable>
+
           {/* 科目一覧 */}
           <Text style={styles.sectionTitle}>科目別</Text>
           <View style={styles.topicList}>
@@ -318,6 +336,36 @@ const styles = StyleSheet.create({
   topicCount: {
     fontSize: 12,
     color: '#687076',
+  },
+  srsCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#E8F4FD',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 24,
+  },
+  srsIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: '#4A90E2',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  srsContent: {
+    flex: 1,
+  },
+  srsTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A1A1A',
+  },
+  srsDesc: {
+    fontSize: 12,
+    color: '#4A90E2',
+    marginTop: 2,
   },
   pressed: {
     opacity: 0.7,

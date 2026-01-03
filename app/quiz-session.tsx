@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { Text, View, Pressable, TextInput, StyleSheet, ScrollView } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
@@ -6,11 +6,14 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { loadTerms, loadExamples, loadProgress, saveProgress, createInitialProgress, TOPICS } from '@/lib/data-store';
 import type { Term, Example, LearningProgress, TopicCode, QuizQuestion, QuizResult } from '@/lib/types';
 
+type QuizDirection = 'jp_to_en' | 'en_to_jp';
+
 export default function QuizSessionScreen() {
   const router = useRouter();
   const params = useLocalSearchParams<{ 
     topics?: string; 
     type?: string; 
+    direction?: string;
     count?: string; 
     review?: string;
   }>();
@@ -39,6 +42,7 @@ export default function QuizSessionScreen() {
     // パラメータ解析
     const topicCodes = params.topics?.split(',') as TopicCode[] || [];
     const questionType = params.type || 'multiple_choice';
+    const quizDirection = (params.direction || 'jp_to_en') as QuizDirection;
     const questionCount = parseInt(params.count || '10', 10);
     const prioritizeReview = params.review === 'true';
 
@@ -68,33 +72,65 @@ export default function QuizSessionScreen() {
       const example = allExamples.find(e => e.term_id === term.term_id);
       
       if (questionType === 'multiple_choice') {
-        // 四択問題：日本語定義から英語用語を選ぶ
-        const correctAnswer = term.en_canonical;
-        const otherTerms = allTerms
-          .filter(t => t.term_id !== term.term_id && t.topic_code === term.topic_code)
-          .sort(() => Math.random() - 0.5)
-          .slice(0, 3);
-        
-        const options = [correctAnswer, ...otherTerms.map(t => t.en_canonical)]
-          .sort(() => Math.random() - 0.5);
+        if (quizDirection === 'jp_to_en') {
+          // 日本語→英語：日本語定義から英語用語を選ぶ
+          const correctAnswer = term.en_canonical;
+          const otherTerms = allTerms
+            .filter(t => t.term_id !== term.term_id && t.topic_code === term.topic_code)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3);
+          
+          const options = [correctAnswer, ...otherTerms.map(t => t.en_canonical)]
+            .sort(() => Math.random() - 0.5);
 
-        return {
-          term_id: term.term_id,
-          question_type: 'multiple_choice',
-          question_text: `「${term.jp_headword}」の英語名は？`,
-          correct_answer: correctAnswer,
-          options,
-          explanation: term.jp_definition,
-        };
+          return {
+            term_id: term.term_id,
+            question_type: 'multiple_choice',
+            question_text: `「${term.jp_headword}」の英語名は？`,
+            correct_answer: correctAnswer,
+            options,
+            explanation: term.jp_definition,
+          };
+        } else {
+          // 英語→日本語：英語用語から日本語の意味を選ぶ
+          const correctAnswer = term.jp_headword;
+          const otherTerms = allTerms
+            .filter(t => t.term_id !== term.term_id && t.topic_code === term.topic_code)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3);
+          
+          const options = [correctAnswer, ...otherTerms.map(t => t.jp_headword)]
+            .sort(() => Math.random() - 0.5);
+
+          return {
+            term_id: term.term_id,
+            question_type: 'multiple_choice',
+            question_text: `「${term.en_canonical}」の日本語名は？`,
+            correct_answer: correctAnswer,
+            options,
+            explanation: term.jp_definition,
+          };
+        }
       } else if (questionType === 'input') {
-        // 入力式：日本語から英語を入力
-        return {
-          term_id: term.term_id,
-          question_type: 'input',
-          question_text: `「${term.jp_headword}」の英語名を入力してください`,
-          correct_answer: term.en_canonical,
-          explanation: term.jp_definition,
-        };
+        if (quizDirection === 'jp_to_en') {
+          // 入力式：日本語から英語を入力
+          return {
+            term_id: term.term_id,
+            question_type: 'input',
+            question_text: `「${term.jp_headword}」の英語名を入力してください`,
+            correct_answer: term.en_canonical,
+            explanation: term.jp_definition,
+          };
+        } else {
+          // 入力式：英語から日本語を入力
+          return {
+            term_id: term.term_id,
+            question_type: 'input',
+            question_text: `「${term.en_canonical}」の日本語名を入力してください`,
+            correct_answer: term.jp_headword,
+            explanation: term.jp_definition,
+          };
+        }
       } else {
         // 穴埋め：例文の空欄を埋める
         const questionText = example 
@@ -283,70 +319,62 @@ export default function QuizSessionScreen() {
                   ? styles.inputCorrect
                   : styles.inputWrong),
               ]}
-              placeholder="回答を入力..."
-              placeholderTextColor="#687076"
               value={inputAnswer}
               onChangeText={setInputAnswer}
+              placeholder="回答を入力..."
+              placeholderTextColor="#9BA1A6"
               editable={!showResult}
               autoCapitalize="none"
-              returnKeyType="done"
+              autoCorrect={false}
             />
             {showResult && (
-              <Text style={styles.correctAnswerText}>
-                正解: {currentQuestion.correct_answer}
-              </Text>
+              <View style={styles.correctAnswerBox}>
+                <Text style={styles.correctAnswerLabel}>正解:</Text>
+                <Text style={styles.correctAnswerText}>{currentQuestion.correct_answer}</Text>
+              </View>
             )}
           </View>
         )}
 
-        {/* 解説 */}
-        {showResult && currentQuestion.explanation && (
+        {/* 解説（結果表示時） */}
+        {showResult && (
           <View style={styles.explanationBox}>
-            <Text style={styles.explanationTitle}>解説</Text>
+            <Text style={styles.explanationLabel}>解説</Text>
             <Text style={styles.explanationText}>{currentQuestion.explanation}</Text>
           </View>
         )}
-      </View>
 
-      {/* ボタン */}
-      <View style={styles.buttonContainer}>
-        {!showResult ? (
-          <Pressable
-            style={({ pressed }) => [
-              styles.submitButton,
-              pressed && styles.pressed,
-              (!selectedOption && !inputAnswer) && styles.submitButtonDisabled,
-            ]}
-            onPress={handleAnswer}
-            disabled={!selectedOption && !inputAnswer}
-          >
-            <Text style={styles.submitButtonText}>回答する</Text>
-          </Pressable>
-        ) : (
-          <Pressable
-            style={({ pressed }) => [styles.nextButton, pressed && styles.pressed]}
-            onPress={nextQuestion}
-          >
-            <Text style={styles.nextButtonText}>
-              {currentIndex < questions.length - 1 ? '次の問題' : '結果を見る'}
-            </Text>
-          </Pressable>
-        )}
+        {/* ボタン */}
+        <View style={styles.buttonContainer}>
+          {!showResult ? (
+            <Pressable
+              style={({ pressed }) => [
+                styles.answerButton,
+                pressed && styles.pressed,
+                (!selectedOption && !inputAnswer) && styles.buttonDisabled,
+              ]}
+              onPress={handleAnswer}
+              disabled={!selectedOption && !inputAnswer}
+            >
+              <Text style={styles.answerButtonText}>回答する</Text>
+            </Pressable>
+          ) : (
+            <Pressable
+              style={({ pressed }) => [styles.nextButton, pressed && styles.pressed]}
+              onPress={nextQuestion}
+            >
+              <Text style={styles.nextButtonText}>
+                {currentIndex < questions.length - 1 ? '次の問題' : '結果を見る'}
+              </Text>
+            </Pressable>
+          )}
+        </View>
       </View>
     </ScreenContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  loading: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  loadingText: {
-    fontSize: 16,
-    color: '#687076',
-  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -355,11 +383,12 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   backButton: {
-    padding: 8,
+    padding: 4,
   },
   progressText: {
-    fontSize: 14,
-    color: '#687076',
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A1A1A',
   },
   progressBar: {
     height: 4,
@@ -402,11 +431,11 @@ const styles = StyleSheet.create({
   },
   optionCorrect: {
     borderColor: '#22C55E',
-    backgroundColor: '#F0FFF4',
+    backgroundColor: '#F0FDF4',
   },
   optionWrong: {
     borderColor: '#E74C3C',
-    backgroundColor: '#FFF0F0',
+    backgroundColor: '#FEF2F2',
   },
   optionText: {
     fontSize: 16,
@@ -420,34 +449,47 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   inputField: {
+    padding: 16,
     backgroundColor: '#FFFFFF',
     borderRadius: 12,
     borderWidth: 2,
     borderColor: '#E5E7EB',
-    padding: 16,
-    fontSize: 18,
+    fontSize: 16,
     color: '#1A1A1A',
   },
   inputCorrect: {
     borderColor: '#22C55E',
-    backgroundColor: '#F0FFF4',
+    backgroundColor: '#F0FDF4',
   },
   inputWrong: {
     borderColor: '#E74C3C',
-    backgroundColor: '#FFF0F0',
+    backgroundColor: '#FEF2F2',
+  },
+  correctAnswerBox: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 12,
+    backgroundColor: '#F0FDF4',
+    borderRadius: 8,
+  },
+  correctAnswerLabel: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#22C55E',
+    marginRight: 8,
   },
   correctAnswerText: {
     fontSize: 16,
-    color: '#22C55E',
-    fontWeight: '600',
+    color: '#1A1A1A',
+    fontWeight: '500',
   },
   explanationBox: {
-    backgroundColor: '#F8F9FA',
-    padding: 16,
-    borderRadius: 12,
     marginTop: 24,
+    padding: 16,
+    backgroundColor: '#F5F5F5',
+    borderRadius: 12,
   },
-  explanationTitle: {
+  explanationLabel: {
     fontSize: 14,
     fontWeight: '600',
     color: '#687076',
@@ -459,19 +501,16 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   buttonContainer: {
-    padding: 16,
-    paddingBottom: 24,
+    marginTop: 'auto',
+    paddingTop: 24,
   },
-  submitButton: {
+  answerButton: {
     backgroundColor: '#4A90E2',
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',
   },
-  submitButtonDisabled: {
-    backgroundColor: '#E5E7EB',
-  },
-  submitButtonText: {
+  answerButtonText: {
     fontSize: 18,
     fontWeight: '600',
     color: '#FFFFFF',
@@ -486,6 +525,21 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     color: '#FFFFFF',
+  },
+  buttonDisabled: {
+    backgroundColor: '#E5E7EB',
+  },
+  pressed: {
+    opacity: 0.8,
+  },
+  loading: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    fontSize: 16,
+    color: '#687076',
   },
   resultContainer: {
     flex: 1,
@@ -529,12 +583,10 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   incorrectItem: {
-    backgroundColor: '#FFF0F0',
+    backgroundColor: '#FEF2F2',
     padding: 16,
     borderRadius: 12,
     marginBottom: 12,
-    borderWidth: 1,
-    borderColor: '#FFD0D0',
   },
   incorrectQuestion: {
     fontSize: 14,
@@ -543,27 +595,23 @@ const styles = StyleSheet.create({
   },
   incorrectAnswer: {
     fontSize: 14,
-    color: '#22C55E',
     fontWeight: '600',
+    color: '#22C55E',
+    marginBottom: 4,
   },
   incorrectUserAnswer: {
-    fontSize: 12,
+    fontSize: 14,
     color: '#E74C3C',
-    marginTop: 4,
   },
   finishButton: {
     backgroundColor: '#4A90E2',
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',
-    marginTop: 16,
   },
   finishButtonText: {
     fontSize: 18,
     fontWeight: '600',
     color: '#FFFFFF',
-  },
-  pressed: {
-    opacity: 0.8,
   },
 });

@@ -7,11 +7,13 @@ import { TOPICS } from '@/lib/data-store';
 import type { TopicCode } from '@/lib/types';
 
 type QuestionType = 'multiple_choice' | 'input' | 'fill_blank';
+type QuizDirection = 'jp_to_en' | 'en_to_jp';
 
 export default function QuizScreen() {
   const router = useRouter();
   const [selectedTopics, setSelectedTopics] = useState<TopicCode[]>([]);
   const [questionType, setQuestionType] = useState<QuestionType>('multiple_choice');
+  const [quizDirection, setQuizDirection] = useState<QuizDirection>('jp_to_en');
   const [questionCount, setQuestionCount] = useState(10);
   const [prioritizeReview, setPrioritizeReview] = useState(true);
 
@@ -35,6 +37,7 @@ export default function QuizScreen() {
     const params = new URLSearchParams({
       topics: selectedTopics.join(','),
       type: questionType,
+      direction: quizDirection,
       count: questionCount.toString(),
       review: prioritizeReview.toString(),
     });
@@ -88,6 +91,45 @@ export default function QuizScreen() {
                   ]}>{topic.term_count}語</Text>
                 </Pressable>
               ))}
+            </View>
+          </View>
+
+          {/* 出題方向 */}
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>出題方向</Text>
+            <View style={styles.directionRow}>
+              <Pressable
+                style={[
+                  styles.directionChip,
+                  quizDirection === 'jp_to_en' && styles.directionChipActive,
+                ]}
+                onPress={() => setQuizDirection('jp_to_en')}
+              >
+                <Text style={[
+                  styles.directionChipText,
+                  quizDirection === 'jp_to_en' && styles.directionChipTextActive,
+                ]}>日本語 → 英語</Text>
+                <Text style={[
+                  styles.directionChipDesc,
+                  quizDirection === 'jp_to_en' && styles.directionChipTextActive,
+                ]}>日本語を見て英語を選ぶ</Text>
+              </Pressable>
+              <Pressable
+                style={[
+                  styles.directionChip,
+                  quizDirection === 'en_to_jp' && styles.directionChipActive,
+                ]}
+                onPress={() => setQuizDirection('en_to_jp')}
+              >
+                <Text style={[
+                  styles.directionChipText,
+                  quizDirection === 'en_to_jp' && styles.directionChipTextActive,
+                ]}>英語 → 日本語</Text>
+                <Text style={[
+                  styles.directionChipDesc,
+                  quizDirection === 'en_to_jp' && styles.directionChipTextActive,
+                ]}>英語を見て日本語を選ぶ</Text>
+              </Pressable>
             </View>
           </View>
 
@@ -217,6 +259,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '600',
     color: '#1A1A1A',
+    marginBottom: 12,
   },
   sectionActions: {
     flexDirection: 'row',
@@ -255,6 +298,37 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   topicChipTextActive: {
+    color: '#FFFFFF',
+  },
+  directionRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  directionChip: {
+    flex: 1,
+    paddingVertical: 16,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    backgroundColor: '#FFFFFF',
+    borderWidth: 2,
+    borderColor: '#E5E7EB',
+    alignItems: 'center',
+  },
+  directionChipActive: {
+    backgroundColor: '#4A90E2',
+    borderColor: '#4A90E2',
+  },
+  directionChipText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A1A1A',
+  },
+  directionChipDesc: {
+    fontSize: 11,
+    color: '#687076',
+    marginTop: 4,
+  },
+  directionChipTextActive: {
     color: '#FFFFFF',
   },
   optionList: {
