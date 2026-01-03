@@ -23,19 +23,36 @@ const STORAGE_KEYS = {
 
 const CURRENT_DATA_VERSION = '1.0.0';
 
-// 科目マスターデータ
-export const TOPICS: Topic[] = [
-  { code: 'ETH', name_en: 'Ethics & Professional Standards', name_jp: '倫理・職業行為基準', color: '#4A90E2', term_count: 10 },
-  { code: 'QM', name_en: 'Quantitative Methods', name_jp: '定量分析', color: '#50E3C2', term_count: 20 },
-  { code: 'ECON', name_en: 'Economics', name_jp: '経済学', color: '#F5A623', term_count: 20 },
-  { code: 'FSA', name_en: 'Financial Statement Analysis', name_jp: '財務諸表分析', color: '#D0021B', term_count: 30 },
-  { code: 'CI', name_en: 'Corporate Issuers', name_jp: 'コーポレート・イシュアーズ', color: '#9013FE', term_count: 20 },
-  { code: 'EQ', name_en: 'Equity Investments', name_jp: '株式投資', color: '#417505', term_count: 20 },
-  { code: 'FI', name_en: 'Fixed Income', name_jp: '債券', color: '#BD10E0', term_count: 25 },
-  { code: 'DER', name_en: 'Derivatives', name_jp: 'デリバティブ', color: '#8B4513', term_count: 25 },
-  { code: 'AI', name_en: 'Alternative Investments', name_jp: 'オルタナティブ投資', color: '#7ED321', term_count: 10 },
-  { code: 'PM', name_en: 'Portfolio Management', name_jp: 'ポートフォリオ管理', color: '#B8E986', term_count: 20 },
+// 科目マスターデータのベース情報
+const TOPIC_BASE: Omit<Topic, 'term_count'>[] = [
+  { code: 'ETH', name_en: 'Ethics & Professional Standards', name_jp: '倫理・職業行為基準', color: '#4A90E2' },
+  { code: 'QM', name_en: 'Quantitative Methods', name_jp: '定量分析', color: '#50E3C2' },
+  { code: 'ECON', name_en: 'Economics', name_jp: '経済学', color: '#F5A623' },
+  { code: 'FSA', name_en: 'Financial Statement Analysis', name_jp: '財務諸表分析', color: '#D0021B' },
+  { code: 'CI', name_en: 'Corporate Issuers', name_jp: 'コーポレート・イシュアーズ', color: '#9013FE' },
+  { code: 'EQ', name_en: 'Equity Investments', name_jp: '株式投資', color: '#417505' },
+  { code: 'FI', name_en: 'Fixed Income', name_jp: '債券', color: '#BD10E0' },
+  { code: 'DER', name_en: 'Derivatives', name_jp: 'デリバティブ', color: '#8B4513' },
+  { code: 'AI', name_en: 'Alternative Investments', name_jp: 'オルタナティブ投資', color: '#7ED321' },
+  { code: 'PM', name_en: 'Portfolio Management', name_jp: 'ポートフォリオ管理', color: '#B8E986' },
 ];
+
+// 実際のデータから単語数を動的に計算
+function calculateTopicCounts(): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const term of termsData as Term[]) {
+    counts[term.topic_code] = (counts[term.topic_code] || 0) + 1;
+  }
+  return counts;
+}
+
+const topicCounts = calculateTopicCounts();
+
+// 科目マスターデータ（実際の単語数を含む）
+export const TOPICS: Topic[] = TOPIC_BASE.map(topic => ({
+  ...topic,
+  term_count: topicCounts[topic.code] || 0,
+}));
 
 // 組み込みデータ（200語）
 const EMBEDDED_TERMS: Term[] = termsData as Term[];

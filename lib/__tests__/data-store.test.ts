@@ -28,9 +28,9 @@ describe('TOPICS', () => {
     expect(codes).toContain('PM');
   });
 
-  it('should have term counts totaling 200', () => {
+  it('should have term counts totaling 229', () => {
     const total = TOPICS.reduce((sum, t) => sum + t.term_count, 0);
-    expect(total).toBe(200);
+    expect(total).toBe(229);
   });
 });
 
