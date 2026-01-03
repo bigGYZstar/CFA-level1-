@@ -1,0 +1,1002 @@
+[
+  {
+    "term_id": "TERM0001",
+    "example_en": "The candidate should be able to describe the concept of Code of Ethics in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「倫理規範」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0002",
+    "example_en": "The candidate should be able to describe the concept of Standards of Professional Conduct in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「職業行為基準」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0003",
+    "example_en": "The candidate should be able to estimate the concept of Material Nonpublic Information in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「重要な未公開情報」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0004",
+    "example_en": "The candidate should be able to estimate the concept of Mosaic Theory in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「モザイク理論」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0005",
+    "example_en": "The candidate should be able to compare the concept of Fiduciary Duty in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「受託者責任」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0006",
+    "example_en": "The candidate should be able to interpret the concept of Global Investment Performance Standards in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「グローバル投資パフォーマンス基準」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0007",
+    "example_en": "The candidate should be able to analyze the concept of Soft Dollar in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「ソフトダラー」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0008",
+    "example_en": "The candidate should be able to analyze the concept of Fair Dealing in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「公正な取扱い」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0009",
+    "example_en": "The candidate should be able to calculate the concept of Suitability in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「適合性」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0010",
+    "example_en": "The candidate should be able to analyze the concept of Investment Policy Statement in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「投資方針書」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0011",
+    "example_en": "The candidate should be able to calculate the concept of Time Value of Money in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「貨幣の時間価値」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0012",
+    "example_en": "The candidate should be able to interpret the concept of Present Value in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「現在価値」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0013",
+    "example_en": "The candidate should be able to assume the concept of Future Value in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「将来価値」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0014",
+    "example_en": "The candidate should be able to compare the concept of Discount Rate in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「割引率」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0015",
+    "example_en": "The candidate should be able to interpret the concept of Net Present Value in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「正味現在価値」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0016",
+    "example_en": "The candidate should be able to describe the concept of Internal Rate of Return in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「内部収益率」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0017",
+    "example_en": "The candidate should be able to assume the concept of Effective Annual Rate in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「実効年利率」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0018",
+    "example_en": "The candidate should be able to describe the concept of Annuity in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「年金」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0019",
+    "example_en": "The candidate should be able to calculate the concept of Perpetuity in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「永久年金」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0020",
+    "example_en": "The candidate should be able to estimate the concept of Standard Deviation in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「標準偏差」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0021",
+    "example_en": "The candidate should be able to analyze the concept of Variance in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「分散」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0022",
+    "example_en": "The candidate should be able to estimate the concept of Covariance in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「共分散」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0023",
+    "example_en": "The candidate should be able to compare the concept of Correlation Coefficient in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「相関係数」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0024",
+    "example_en": "The candidate should be able to estimate the concept of Normal Distribution in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「正規分布」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0025",
+    "example_en": "The candidate should be able to describe the concept of Confidence Interval in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「信頼区間」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0026",
+    "example_en": "The candidate should be able to calculate the concept of Hypothesis Testing in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「仮説検定」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0027",
+    "example_en": "The candidate should be able to describe the concept of Type I Error in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「第一種の過誤」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0028",
+    "example_en": "The candidate should be able to compare the concept of Type II Error in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「第二種の過誤」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0029",
+    "example_en": "The candidate should be able to assume the concept of p-value in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「p値」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0030",
+    "example_en": "The candidate should be able to calculate the concept of Sampling Distribution in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「標本分布」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0031",
+    "example_en": "The candidate should be able to interpret the concept of Demand in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「需要」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0032",
+    "example_en": "The candidate should be able to compare the concept of Supply in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「供給」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0033",
+    "example_en": "The candidate should be able to analyze the concept of Elasticity in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「弾力性」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0034",
+    "example_en": "The candidate should be able to interpret the concept of Consumer Surplus in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「消費者余剰」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0035",
+    "example_en": "The candidate should be able to assume the concept of Producer Surplus in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「生産者余剰」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0036",
+    "example_en": "The candidate should be able to describe the concept of Deadweight Loss in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「死荷重」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0037",
+    "example_en": "The candidate should be able to estimate the concept of Gross Domestic Product in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「国内総生産」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0038",
+    "example_en": "The candidate should be able to compare the concept of Inflation in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「インフレーション」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0039",
+    "example_en": "The candidate should be able to interpret the concept of Consumer Price Index in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「消費者物価指数」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0040",
+    "example_en": "The candidate should be able to describe the concept of Monetary Policy in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「金融政策」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0041",
+    "example_en": "The candidate should be able to assume the concept of Fiscal Policy in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「財政政策」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0042",
+    "example_en": "The candidate should be able to estimate the concept of Interest Rate in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「金利」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0043",
+    "example_en": "The candidate should be able to assume the concept of Exchange Rate in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「為替レート」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0044",
+    "example_en": "The candidate should be able to calculate the concept of Purchasing Power Parity in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「購買力平価」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0045",
+    "example_en": "The candidate should be able to interpret the concept of Business Cycle in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「景気循環」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0046",
+    "example_en": "The candidate should be able to compare the concept of Aggregate Demand in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「総需要」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0047",
+    "example_en": "The candidate should be able to analyze the concept of Aggregate Supply in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「総供給」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0048",
+    "example_en": "The candidate should be able to analyze the concept of Opportunity Cost in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「機会費用」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0049",
+    "example_en": "The candidate should be able to describe the concept of Comparative Advantage in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「比較優位」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0050",
+    "example_en": "The candidate should be able to analyze the concept of Balance of Payments in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「国際収支」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0051",
+    "example_en": "An analyst must describe the Income Statement when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「損益計算書」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0052",
+    "example_en": "An analyst must compare the Balance Sheet when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「貸借対照表」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0053",
+    "example_en": "An analyst must interpret the Cash Flow Statement when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「キャッシュフロー計算書」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0054",
+    "example_en": "An analyst must assume the Revenue when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「収益」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0055",
+    "example_en": "An analyst must analyze the Gross Profit when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「売上総利益」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0056",
+    "example_en": "An analyst must calculate the Operating Income when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「営業利益」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0057",
+    "example_en": "An analyst must describe the Net Income when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「純利益」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0058",
+    "example_en": "An analyst must describe the Earnings Per Share when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「一株当たり利益」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0059",
+    "example_en": "An analyst must analyze the EBITDA when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「EBITDA」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0060",
+    "example_en": "An analyst must describe the Depreciation when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「減価償却」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0061",
+    "example_en": "An analyst must calculate the Amortization when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「償却」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0062",
+    "example_en": "An analyst must interpret the Working Capital when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「運転資本」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0063",
+    "example_en": "An analyst must calculate the Current Ratio when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「流動比率」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0064",
+    "example_en": "An analyst must analyze the Quick Ratio when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「当座比率」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0065",
+    "example_en": "An analyst must interpret the Debt-to-Equity Ratio when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「負債資本比率」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0066",
+    "example_en": "An analyst must interpret the Return on Equity when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「株主資本利益率」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0067",
+    "example_en": "An analyst must estimate the Return on Assets when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「総資産利益率」をestimateする必要がある。"
+  },
+  {
+    "term_id": "TERM0068",
+    "example_en": "An analyst must assume the DuPont Analysis when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「デュポン分析」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0069",
+    "example_en": "An analyst must compare the Inventory Turnover when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「棚卸資産回転率」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0070",
+    "example_en": "An analyst must assume the Accounts Receivable Turnover when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「売掛金回転率」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0071",
+    "example_en": "An analyst must describe the Free Cash Flow when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「フリーキャッシュフロー」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0072",
+    "example_en": "An analyst must interpret the Accrual Accounting when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「発生主義会計」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0073",
+    "example_en": "An analyst must calculate the Deferred Tax Asset when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「繰延税金資産」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0074",
+    "example_en": "An analyst must describe the Deferred Tax Liability when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「繰延税金負債」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0075",
+    "example_en": "An analyst must calculate the Goodwill when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「のれん」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0076",
+    "example_en": "An analyst must compare the Impairment when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「減損」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0077",
+    "example_en": "An analyst must analyze the Operating Lease when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「オペレーティングリース」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0078",
+    "example_en": "An analyst must assume the Finance Lease when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「ファイナンスリース」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0079",
+    "example_en": "An analyst must calculate the IFRS when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「国際財務報告基準」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0080",
+    "example_en": "An analyst must estimate the US GAAP when evaluating a company's financial health under IFRS.",
+    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「米国会計基準」をestimateする必要がある。"
+  },
+  {
+    "term_id": "TERM0081",
+    "example_en": "The candidate should be able to describe the concept of Corporate Governance in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「コーポレートガバナンス」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0082",
+    "example_en": "The candidate should be able to estimate the concept of Agency Problem in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「エージェンシー問題」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0083",
+    "example_en": "The candidate should be able to estimate the concept of Stakeholder in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「ステークホルダー」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0084",
+    "example_en": "The candidate should be able to calculate the concept of Capital Budgeting in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「資本予算」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0085",
+    "example_en": "The candidate should be able to calculate the concept of Weighted Average Cost of Capital in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「加重平均資本コスト」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0086",
+    "example_en": "The candidate should be able to compare the concept of Cost of Equity in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「株主資本コスト」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0087",
+    "example_en": "The candidate should be able to estimate the concept of Cost of Debt in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「負債コスト」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0088",
+    "example_en": "The candidate should be able to estimate the concept of Capital Structure in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「資本構成」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0089",
+    "example_en": "The candidate should be able to compare the concept of Modigliani-Miller Theorem in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「モジリアーニ・ミラー理論」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0090",
+    "example_en": "The candidate should be able to calculate the concept of Financial Leverage in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「財務レバレッジ」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0091",
+    "example_en": "The candidate should be able to describe the concept of Operating Leverage in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「営業レバレッジ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0092",
+    "example_en": "The candidate should be able to estimate the concept of Breakeven Point in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「損益分岐点」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0093",
+    "example_en": "The candidate should be able to interpret the concept of Dividend Policy in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「配当政策」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0094",
+    "example_en": "The candidate should be able to interpret the concept of Share Repurchase in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「自社株買い」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0095",
+    "example_en": "The candidate should be able to interpret the concept of Working Capital Management in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「運転資本管理」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0096",
+    "example_en": "The candidate should be able to estimate the concept of Cash Conversion Cycle in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「キャッシュコンバージョンサイクル」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0097",
+    "example_en": "The candidate should be able to estimate the concept of Net Present Value Rule in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「NPVルール」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0098",
+    "example_en": "The candidate should be able to interpret the concept of Payback Period in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「回収期間」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0099",
+    "example_en": "The candidate should be able to analyze the concept of Profitability Index in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「収益性指数」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0100",
+    "example_en": "The candidate should be able to compare the concept of Hurdle Rate in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「ハードルレート」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0101",
+    "example_en": "When using a DDM, it is crucial to interpret the Equity to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「株式」をinterpretすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0102",
+    "example_en": "When using a DDM, it is crucial to calculate the Common Stock to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「普通株」をcalculateすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0103",
+    "example_en": "When using a DDM, it is crucial to analyze the Preferred Stock to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「優先株」をanalyzeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0104",
+    "example_en": "When using a DDM, it is crucial to estimate the Market Capitalization to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「時価総額」をestimateすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0105",
+    "example_en": "When using a DDM, it is crucial to assume the Enterprise Value to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「企業価値」をassumeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0106",
+    "example_en": "When using a DDM, it is crucial to compare the Price-to-Earnings Ratio to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「株価収益率」をcompareすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0107",
+    "example_en": "When using a DDM, it is crucial to assume the Price-to-Book Ratio to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「株価純資産倍率」をassumeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0108",
+    "example_en": "When using a DDM, it is crucial to estimate the Dividend Discount Model to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「配当割引モデル」をestimateすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0109",
+    "example_en": "When using a DDM, it is crucial to interpret the Gordon Growth Model to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「ゴードン成長モデル」をinterpretすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0110",
+    "example_en": "When using a DDM, it is crucial to interpret the Free Cash Flow to Equity to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「株主帰属フリーキャッシュフロー」をinterpretすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0111",
+    "example_en": "When using a DDM, it is crucial to analyze the Free Cash Flow to Firm to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「企業帰属フリーキャッシュフロー」をanalyzeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0112",
+    "example_en": "When using a DDM, it is crucial to assume the Intrinsic Value to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「本質的価値」をassumeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0113",
+    "example_en": "When using a DDM, it is crucial to interpret the Market Efficiency to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「市場効率性」をinterpretすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0114",
+    "example_en": "When using a DDM, it is crucial to describe the Weak Form Efficiency to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「弱度の効率性」をdescribeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0115",
+    "example_en": "When using a DDM, it is crucial to estimate the Semi-Strong Form Efficiency to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「準強度の効率性」をestimateすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0116",
+    "example_en": "When using a DDM, it is crucial to describe the Strong Form Efficiency to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「強度の効率性」をdescribeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0117",
+    "example_en": "When using a DDM, it is crucial to interpret the Industry Analysis to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「業種分析」をinterpretすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0118",
+    "example_en": "When using a DDM, it is crucial to describe the Porter's Five Forces to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「ポーターの5つの力」をdescribeすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0119",
+    "example_en": "When using a DDM, it is crucial to compare the Equity Risk Premium to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「株式リスクプレミアム」をcompareすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0120",
+    "example_en": "When using a DDM, it is crucial to calculate the Dividend Yield to arrive at a reasonable intrinsic value.",
+    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「配当利回り」をcalculateすることが不可欠である。"
+  },
+  {
+    "term_id": "TERM0121",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to assume the Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「債券」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0122",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to describe the Coupon Rate of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「クーポンレート」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0123",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to interpret the Face Value of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「額面」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0124",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to estimate the Yield to Maturity of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「満期利回り」をestimateする必要がある。"
+  },
+  {
+    "term_id": "TERM0125",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to assume the Current Yield of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「直接利回り」をassumeする必要がある。"
+  },
+  {
+    "term_id": "TERM0126",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to calculate the Duration of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「デュレーション」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0127",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to interpret the Modified Duration of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「修正デュレーション」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0128",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to compare the Convexity of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「コンベクシティ」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0129",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to analyze the Credit Risk of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「信用リスク」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0130",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to compare the Credit Spread of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「信用スプレッド」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0131",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to compare the Interest Rate Risk of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「金利リスク」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0132",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to analyze the Reinvestment Risk of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「再投資リスク」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0133",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to describe the Yield Curve of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「イールドカーブ」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0134",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to estimate the Spot Rate of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「スポットレート」をestimateする必要がある。"
+  },
+  {
+    "term_id": "TERM0135",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to calculate the Forward Rate of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「フォワードレート」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0136",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to analyze the Zero-Coupon Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ゼロクーポン債」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0137",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to estimate the Callable Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「コーラブル債」をestimateする必要がある。"
+  },
+  {
+    "term_id": "TERM0138",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to interpret the Putable Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「プッタブル債」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0139",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to describe the Floating Rate Note of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「変動利付債」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0140",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to compare the Investment Grade of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「投資適格」をcompareする必要がある。"
+  },
+  {
+    "term_id": "TERM0141",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to describe the High Yield Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ハイイールド債」をdescribeする必要がある。"
+  },
+  {
+    "term_id": "TERM0142",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to analyze the Sovereign Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ソブリン債」をanalyzeする必要がある。"
+  },
+  {
+    "term_id": "TERM0143",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to calculate the Municipal Bond of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「地方債」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0144",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to calculate the Mortgage-Backed Security of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「住宅ローン担保証券」をcalculateする必要がある。"
+  },
+  {
+    "term_id": "TERM0145",
+    "example_en": "Assuming a parallel shift in the yield curve, an investor needs to interpret the Asset-Backed Security of the bond portfolio.",
+    "example_jp": "イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「資産担保証券」をinterpretする必要がある。"
+  },
+  {
+    "term_id": "TERM0146",
+    "example_en": "The candidate should be able to assume the concept of Derivative in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「デリバティブ」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0147",
+    "example_en": "The candidate should be able to compare the concept of Forward Contract in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「先渡契約」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0148",
+    "example_en": "The candidate should be able to calculate the concept of Futures Contract in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「先物契約」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0149",
+    "example_en": "The candidate should be able to interpret the concept of Option in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「オプション」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0150",
+    "example_en": "The candidate should be able to interpret the concept of Call Option in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「コールオプション」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0151",
+    "example_en": "The candidate should be able to interpret the concept of Put Option in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「プットオプション」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0152",
+    "example_en": "The candidate should be able to analyze the concept of Strike Price in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「行使価格」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0153",
+    "example_en": "The candidate should be able to estimate the concept of Option Premium in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「オプションプレミアム」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0154",
+    "example_en": "The candidate should be able to analyze the concept of Intrinsic Value (Option) in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「本質的価値（オプション）」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0155",
+    "example_en": "The candidate should be able to interpret the concept of Time Value (Option) in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「時間価値（オプション）」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0156",
+    "example_en": "The candidate should be able to assume the concept of In-the-Money in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「イン・ザ・マネー」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0157",
+    "example_en": "The candidate should be able to calculate the concept of Out-of-the-Money in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「アウト・オブ・ザ・マネー」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0158",
+    "example_en": "The candidate should be able to interpret the concept of At-the-Money in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「アット・ザ・マネー」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0159",
+    "example_en": "The candidate should be able to analyze the concept of Swap in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「スワップ」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0160",
+    "example_en": "The candidate should be able to describe the concept of Interest Rate Swap in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「金利スワップ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0161",
+    "example_en": "The candidate should be able to describe the concept of Currency Swap in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「通貨スワップ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0162",
+    "example_en": "The candidate should be able to interpret the concept of Hedging in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「ヘッジ」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0163",
+    "example_en": "The candidate should be able to compare the concept of Speculation in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「投機」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0164",
+    "example_en": "The candidate should be able to assume the concept of Arbitrage in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「裁定取引」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0165",
+    "example_en": "The candidate should be able to interpret the concept of Put-Call Parity in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「プット・コール・パリティ」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0166",
+    "example_en": "The candidate should be able to interpret the concept of European Option in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「ヨーロピアンオプション」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0167",
+    "example_en": "The candidate should be able to estimate the concept of American Option in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「アメリカンオプション」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0168",
+    "example_en": "The candidate should be able to describe the concept of Moneyness in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「マネーネス」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0169",
+    "example_en": "The candidate should be able to assume the concept of Notional Principal in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「想定元本」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0170",
+    "example_en": "The candidate should be able to analyze the concept of Marking to Market in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「値洗い」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0171",
+    "example_en": "The candidate should be able to analyze the concept of Alternative Investment in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「オルタナティブ投資」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0172",
+    "example_en": "The candidate should be able to describe the concept of Private Equity in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「プライベートエクイティ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0173",
+    "example_en": "The candidate should be able to analyze the concept of Venture Capital in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「ベンチャーキャピタル」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0174",
+    "example_en": "The candidate should be able to estimate the concept of Leveraged Buyout in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「レバレッジド・バイアウト」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0175",
+    "example_en": "The candidate should be able to estimate the concept of Hedge Fund in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「ヘッジファンド」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0176",
+    "example_en": "The candidate should be able to compare the concept of Real Estate Investment in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「不動産投資」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0177",
+    "example_en": "The candidate should be able to analyze the concept of Real Estate Investment Trust in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「不動産投資信託」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0178",
+    "example_en": "The candidate should be able to compare the concept of Commodity in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「コモディティ」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0179",
+    "example_en": "The candidate should be able to describe the concept of Contango in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「コンタンゴ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0180",
+    "example_en": "The candidate should be able to compare the concept of Backwardation in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「バックワーデーション」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0181",
+    "example_en": "The candidate should be able to compare the concept of Portfolio in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「ポートフォリオ」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0182",
+    "example_en": "The candidate should be able to assume the concept of Diversification in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「分散投資」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0183",
+    "example_en": "The candidate should be able to estimate the concept of Systematic Risk in the context of the effect on ROE.",
+    "example_jp": "受験者は、the effect on ROEの文脈で「システマティックリスク」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0184",
+    "example_en": "The candidate should be able to calculate the concept of Unsystematic Risk in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「非システマティックリスク」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0185",
+    "example_en": "The candidate should be able to estimate the concept of Beta in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「ベータ」の概念をestimateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0186",
+    "example_en": "The candidate should be able to describe the concept of Capital Asset Pricing Model in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「資本資産価格モデル」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0187",
+    "example_en": "The candidate should be able to interpret the concept of Security Market Line in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「証券市場線」の概念をinterpretできる必要がある。"
+  },
+  {
+    "term_id": "TERM0188",
+    "example_en": "The candidate should be able to calculate the concept of Capital Market Line in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「資本市場線」の概念をcalculateできる必要がある。"
+  },
+  {
+    "term_id": "TERM0189",
+    "example_en": "The candidate should be able to assume the concept of Efficient Frontier in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「効率的フロンティア」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0190",
+    "example_en": "The candidate should be able to assume the concept of Sharpe Ratio in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「シャープレシオ」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0191",
+    "example_en": "The candidate should be able to analyze the concept of Treynor Ratio in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「トレイナーレシオ」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0192",
+    "example_en": "The candidate should be able to analyze the concept of Jensen's Alpha in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「ジェンセンのアルファ」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0193",
+    "example_en": "The candidate should be able to analyze the concept of Information Ratio in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「インフォメーションレシオ」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0194",
+    "example_en": "The candidate should be able to describe the concept of Tracking Error in the context of the impact on the IPS.",
+    "example_jp": "受験者は、the impact on the IPSの文脈で「トラッキングエラー」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0195",
+    "example_en": "The candidate should be able to compare the concept of Risk-Free Rate in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「リスクフリーレート」の概念をcompareできる必要がある。"
+  },
+  {
+    "term_id": "TERM0196",
+    "example_en": "The candidate should be able to describe the concept of Market Portfolio in the context of the going concern assumption.",
+    "example_jp": "受験者は、the going concern assumptionの文脈で「市場ポートフォリオ」の概念をdescribeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0197",
+    "example_en": "The candidate should be able to assume the concept of Asset Allocation in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「資産配分」の概念をassumeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0198",
+    "example_en": "The candidate should be able to analyze the concept of Strategic Asset Allocation in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「戦略的資産配分」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0199",
+    "example_en": "The candidate should be able to analyze the concept of Tactical Asset Allocation in the context of the credit spread.",
+    "example_jp": "受験者は、the credit spreadの文脈で「戦術的資産配分」の概念をanalyzeできる必要がある。"
+  },
+  {
+    "term_id": "TERM0200",
+    "example_en": "The candidate should be able to assume the concept of Rebalancing in the context of the required return.",
+    "example_jp": "受験者は、the required returnの文脈で「リバランス」の概念をassumeできる必要がある。"
+  }
+]

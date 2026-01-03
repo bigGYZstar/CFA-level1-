@@ -1,0 +1,201 @@
+example_id,term_id,example_en,example_jp,difficulty_tag
+EX0001,TERM0001,The candidate should be able to describe the concept of Code of Ethics in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「倫理規範」の概念をdescribeできる必要がある。,Medium
+EX0002,TERM0002,The candidate should be able to describe the concept of Standards of Professional Conduct in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「職業行為基準」の概念をdescribeできる必要がある。,Medium
+EX0003,TERM0003,The candidate should be able to estimate the concept of Material Nonpublic Information in the context of the required return.,受験者は、the required returnの文脈で「重要な未公開情報」の概念をestimateできる必要がある。,Medium
+EX0004,TERM0004,The candidate should be able to estimate the concept of Mosaic Theory in the context of the credit spread.,受験者は、the credit spreadの文脈で「モザイク理論」の概念をestimateできる必要がある。,Medium
+EX0005,TERM0005,The candidate should be able to compare the concept of Fiduciary Duty in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「受託者責任」の概念をcompareできる必要がある。,Medium
+EX0006,TERM0006,The candidate should be able to interpret the concept of Global Investment Performance Standards in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「グローバル投資パフォーマンス基準」の概念をinterpretできる必要がある。,Medium
+EX0007,TERM0007,The candidate should be able to analyze the concept of Soft Dollar in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「ソフトダラー」の概念をanalyzeできる必要がある。,Medium
+EX0008,TERM0008,The candidate should be able to analyze the concept of Fair Dealing in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「公正な取扱い」の概念をanalyzeできる必要がある。,Medium
+EX0009,TERM0009,The candidate should be able to calculate the concept of Suitability in the context of the credit spread.,受験者は、the credit spreadの文脈で「適合性」の概念をcalculateできる必要がある。,Medium
+EX0010,TERM0010,The candidate should be able to analyze the concept of Investment Policy Statement in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「投資方針書」の概念をanalyzeできる必要がある。,Medium
+EX0011,TERM0011,The candidate should be able to calculate the concept of Time Value of Money in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「貨幣の時間価値」の概念をcalculateできる必要がある。,Medium
+EX0012,TERM0012,The candidate should be able to interpret the concept of Present Value in the context of the required return.,受験者は、the required returnの文脈で「現在価値」の概念をinterpretできる必要がある。,Medium
+EX0013,TERM0013,The candidate should be able to assume the concept of Future Value in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「将来価値」の概念をassumeできる必要がある。,Medium
+EX0014,TERM0014,The candidate should be able to compare the concept of Discount Rate in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「割引率」の概念をcompareできる必要がある。,Medium
+EX0015,TERM0015,The candidate should be able to interpret the concept of Net Present Value in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「正味現在価値」の概念をinterpretできる必要がある。,Medium
+EX0016,TERM0016,The candidate should be able to describe the concept of Internal Rate of Return in the context of the required return.,受験者は、the required returnの文脈で「内部収益率」の概念をdescribeできる必要がある。,Medium
+EX0017,TERM0017,The candidate should be able to assume the concept of Effective Annual Rate in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「実効年利率」の概念をassumeできる必要がある。,Medium
+EX0018,TERM0018,The candidate should be able to describe the concept of Annuity in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「年金」の概念をdescribeできる必要がある。,Medium
+EX0019,TERM0019,The candidate should be able to calculate the concept of Perpetuity in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「永久年金」の概念をcalculateできる必要がある。,Medium
+EX0020,TERM0020,The candidate should be able to estimate the concept of Standard Deviation in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「標準偏差」の概念をestimateできる必要がある。,Medium
+EX0021,TERM0021,The candidate should be able to analyze the concept of Variance in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「分散」の概念をanalyzeできる必要がある。,Medium
+EX0022,TERM0022,The candidate should be able to estimate the concept of Covariance in the context of the required return.,受験者は、the required returnの文脈で「共分散」の概念をestimateできる必要がある。,Medium
+EX0023,TERM0023,The candidate should be able to compare the concept of Correlation Coefficient in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「相関係数」の概念をcompareできる必要がある。,Medium
+EX0024,TERM0024,The candidate should be able to estimate the concept of Normal Distribution in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「正規分布」の概念をestimateできる必要がある。,Medium
+EX0025,TERM0025,The candidate should be able to describe the concept of Confidence Interval in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「信頼区間」の概念をdescribeできる必要がある。,Medium
+EX0026,TERM0026,The candidate should be able to calculate the concept of Hypothesis Testing in the context of the required return.,受験者は、the required returnの文脈で「仮説検定」の概念をcalculateできる必要がある。,Medium
+EX0027,TERM0027,The candidate should be able to describe the concept of Type I Error in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「第一種の過誤」の概念をdescribeできる必要がある。,Medium
+EX0028,TERM0028,The candidate should be able to compare the concept of Type II Error in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「第二種の過誤」の概念をcompareできる必要がある。,Medium
+EX0029,TERM0029,The candidate should be able to assume the concept of p-value in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「p値」の概念をassumeできる必要がある。,Medium
+EX0030,TERM0030,The candidate should be able to calculate the concept of Sampling Distribution in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「標本分布」の概念をcalculateできる必要がある。,Medium
+EX0031,TERM0031,The candidate should be able to interpret the concept of Demand in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「需要」の概念をinterpretできる必要がある。,Medium
+EX0032,TERM0032,The candidate should be able to compare the concept of Supply in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「供給」の概念をcompareできる必要がある。,Medium
+EX0033,TERM0033,The candidate should be able to analyze the concept of Elasticity in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「弾力性」の概念をanalyzeできる必要がある。,Medium
+EX0034,TERM0034,The candidate should be able to interpret the concept of Consumer Surplus in the context of the required return.,受験者は、the required returnの文脈で「消費者余剰」の概念をinterpretできる必要がある。,Medium
+EX0035,TERM0035,The candidate should be able to assume the concept of Producer Surplus in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「生産者余剰」の概念をassumeできる必要がある。,Medium
+EX0036,TERM0036,The candidate should be able to describe the concept of Deadweight Loss in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「死荷重」の概念をdescribeできる必要がある。,Medium
+EX0037,TERM0037,The candidate should be able to estimate the concept of Gross Domestic Product in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「国内総生産」の概念をestimateできる必要がある。,Medium
+EX0038,TERM0038,The candidate should be able to compare the concept of Inflation in the context of the credit spread.,受験者は、the credit spreadの文脈で「インフレーション」の概念をcompareできる必要がある。,Medium
+EX0039,TERM0039,The candidate should be able to interpret the concept of Consumer Price Index in the context of the credit spread.,受験者は、the credit spreadの文脈で「消費者物価指数」の概念をinterpretできる必要がある。,Medium
+EX0040,TERM0040,The candidate should be able to describe the concept of Monetary Policy in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「金融政策」の概念をdescribeできる必要がある。,Medium
+EX0041,TERM0041,The candidate should be able to assume the concept of Fiscal Policy in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「財政政策」の概念をassumeできる必要がある。,Medium
+EX0042,TERM0042,The candidate should be able to estimate the concept of Interest Rate in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「金利」の概念をestimateできる必要がある。,Medium
+EX0043,TERM0043,The candidate should be able to assume the concept of Exchange Rate in the context of the required return.,受験者は、the required returnの文脈で「為替レート」の概念をassumeできる必要がある。,Medium
+EX0044,TERM0044,The candidate should be able to calculate the concept of Purchasing Power Parity in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「購買力平価」の概念をcalculateできる必要がある。,Medium
+EX0045,TERM0045,The candidate should be able to interpret the concept of Business Cycle in the context of the credit spread.,受験者は、the credit spreadの文脈で「景気循環」の概念をinterpretできる必要がある。,Medium
+EX0046,TERM0046,The candidate should be able to compare the concept of Aggregate Demand in the context of the credit spread.,受験者は、the credit spreadの文脈で「総需要」の概念をcompareできる必要がある。,Medium
+EX0047,TERM0047,The candidate should be able to analyze the concept of Aggregate Supply in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「総供給」の概念をanalyzeできる必要がある。,Medium
+EX0048,TERM0048,The candidate should be able to analyze the concept of Opportunity Cost in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「機会費用」の概念をanalyzeできる必要がある。,Medium
+EX0049,TERM0049,The candidate should be able to describe the concept of Comparative Advantage in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「比較優位」の概念をdescribeできる必要がある。,Medium
+EX0050,TERM0050,The candidate should be able to analyze the concept of Balance of Payments in the context of the credit spread.,受験者は、the credit spreadの文脈で「国際収支」の概念をanalyzeできる必要がある。,Medium
+EX0051,TERM0051,An analyst must describe the Income Statement when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「損益計算書」をdescribeする必要がある。,Medium
+EX0052,TERM0052,An analyst must compare the Balance Sheet when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「貸借対照表」をcompareする必要がある。,Medium
+EX0053,TERM0053,An analyst must interpret the Cash Flow Statement when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「キャッシュフロー計算書」をinterpretする必要がある。,Medium
+EX0054,TERM0054,An analyst must assume the Revenue when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「収益」をassumeする必要がある。,Medium
+EX0055,TERM0055,An analyst must analyze the Gross Profit when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「売上総利益」をanalyzeする必要がある。,Medium
+EX0056,TERM0056,An analyst must calculate the Operating Income when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「営業利益」をcalculateする必要がある。,Medium
+EX0057,TERM0057,An analyst must describe the Net Income when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「純利益」をdescribeする必要がある。,Medium
+EX0058,TERM0058,An analyst must describe the Earnings Per Share when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「一株当たり利益」をdescribeする必要がある。,Medium
+EX0059,TERM0059,An analyst must analyze the EBITDA when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「EBITDA」をanalyzeする必要がある。,Medium
+EX0060,TERM0060,An analyst must describe the Depreciation when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「減価償却」をdescribeする必要がある。,Medium
+EX0061,TERM0061,An analyst must calculate the Amortization when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「償却」をcalculateする必要がある。,Medium
+EX0062,TERM0062,An analyst must interpret the Working Capital when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「運転資本」をinterpretする必要がある。,Medium
+EX0063,TERM0063,An analyst must calculate the Current Ratio when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「流動比率」をcalculateする必要がある。,Medium
+EX0064,TERM0064,An analyst must analyze the Quick Ratio when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「当座比率」をanalyzeする必要がある。,Medium
+EX0065,TERM0065,An analyst must interpret the Debt-to-Equity Ratio when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「負債資本比率」をinterpretする必要がある。,Medium
+EX0066,TERM0066,An analyst must interpret the Return on Equity when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「株主資本利益率」をinterpretする必要がある。,Medium
+EX0067,TERM0067,An analyst must estimate the Return on Assets when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「総資産利益率」をestimateする必要がある。,Medium
+EX0068,TERM0068,An analyst must assume the DuPont Analysis when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「デュポン分析」をassumeする必要がある。,Medium
+EX0069,TERM0069,An analyst must compare the Inventory Turnover when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「棚卸資産回転率」をcompareする必要がある。,Medium
+EX0070,TERM0070,An analyst must assume the Accounts Receivable Turnover when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「売掛金回転率」をassumeする必要がある。,Medium
+EX0071,TERM0071,An analyst must describe the Free Cash Flow when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「フリーキャッシュフロー」をdescribeする必要がある。,Medium
+EX0072,TERM0072,An analyst must interpret the Accrual Accounting when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「発生主義会計」をinterpretする必要がある。,Medium
+EX0073,TERM0073,An analyst must calculate the Deferred Tax Asset when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「繰延税金資産」をcalculateする必要がある。,Medium
+EX0074,TERM0074,An analyst must describe the Deferred Tax Liability when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「繰延税金負債」をdescribeする必要がある。,Medium
+EX0075,TERM0075,An analyst must calculate the Goodwill when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「のれん」をcalculateする必要がある。,Medium
+EX0076,TERM0076,An analyst must compare the Impairment when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「減損」をcompareする必要がある。,Medium
+EX0077,TERM0077,An analyst must analyze the Operating Lease when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「オペレーティングリース」をanalyzeする必要がある。,Medium
+EX0078,TERM0078,An analyst must assume the Finance Lease when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「ファイナンスリース」をassumeする必要がある。,Medium
+EX0079,TERM0079,An analyst must calculate the IFRS when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「国際財務報告基準」をcalculateする必要がある。,Medium
+EX0080,TERM0080,An analyst must estimate the US GAAP when evaluating a company's financial health under IFRS.,アナリストは、IFRS基準で企業の財務健全性を評価する際に「米国会計基準」をestimateする必要がある。,Medium
+EX0081,TERM0081,The candidate should be able to describe the concept of Corporate Governance in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「コーポレートガバナンス」の概念をdescribeできる必要がある。,Medium
+EX0082,TERM0082,The candidate should be able to estimate the concept of Agency Problem in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「エージェンシー問題」の概念をestimateできる必要がある。,Medium
+EX0083,TERM0083,The candidate should be able to estimate the concept of Stakeholder in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「ステークホルダー」の概念をestimateできる必要がある。,Medium
+EX0084,TERM0084,The candidate should be able to calculate the concept of Capital Budgeting in the context of the credit spread.,受験者は、the credit spreadの文脈で「資本予算」の概念をcalculateできる必要がある。,Medium
+EX0085,TERM0085,The candidate should be able to calculate the concept of Weighted Average Cost of Capital in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「加重平均資本コスト」の概念をcalculateできる必要がある。,Medium
+EX0086,TERM0086,The candidate should be able to compare the concept of Cost of Equity in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「株主資本コスト」の概念をcompareできる必要がある。,Medium
+EX0087,TERM0087,The candidate should be able to estimate the concept of Cost of Debt in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「負債コスト」の概念をestimateできる必要がある。,Medium
+EX0088,TERM0088,The candidate should be able to estimate the concept of Capital Structure in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「資本構成」の概念をestimateできる必要がある。,Medium
+EX0089,TERM0089,The candidate should be able to compare the concept of Modigliani-Miller Theorem in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「モジリアーニ・ミラー理論」の概念をcompareできる必要がある。,Medium
+EX0090,TERM0090,The candidate should be able to calculate the concept of Financial Leverage in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「財務レバレッジ」の概念をcalculateできる必要がある。,Medium
+EX0091,TERM0091,The candidate should be able to describe the concept of Operating Leverage in the context of the credit spread.,受験者は、the credit spreadの文脈で「営業レバレッジ」の概念をdescribeできる必要がある。,Medium
+EX0092,TERM0092,The candidate should be able to estimate the concept of Breakeven Point in the context of the credit spread.,受験者は、the credit spreadの文脈で「損益分岐点」の概念をestimateできる必要がある。,Medium
+EX0093,TERM0093,The candidate should be able to interpret the concept of Dividend Policy in the context of the required return.,受験者は、the required returnの文脈で「配当政策」の概念をinterpretできる必要がある。,Medium
+EX0094,TERM0094,The candidate should be able to interpret the concept of Share Repurchase in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「自社株買い」の概念をinterpretできる必要がある。,Medium
+EX0095,TERM0095,The candidate should be able to interpret the concept of Working Capital Management in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「運転資本管理」の概念をinterpretできる必要がある。,Medium
+EX0096,TERM0096,The candidate should be able to estimate the concept of Cash Conversion Cycle in the context of the required return.,受験者は、the required returnの文脈で「キャッシュコンバージョンサイクル」の概念をestimateできる必要がある。,Medium
+EX0097,TERM0097,The candidate should be able to estimate the concept of Net Present Value Rule in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「NPVルール」の概念をestimateできる必要がある。,Medium
+EX0098,TERM0098,The candidate should be able to interpret the concept of Payback Period in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「回収期間」の概念をinterpretできる必要がある。,Medium
+EX0099,TERM0099,The candidate should be able to analyze the concept of Profitability Index in the context of the credit spread.,受験者は、the credit spreadの文脈で「収益性指数」の概念をanalyzeできる必要がある。,Medium
+EX0100,TERM0100,The candidate should be able to compare the concept of Hurdle Rate in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「ハードルレート」の概念をcompareできる必要がある。,Medium
+EX0101,TERM0101,"When using a DDM, it is crucial to interpret the Equity to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「株式」をinterpretすることが不可欠である。,Medium
+EX0102,TERM0102,"When using a DDM, it is crucial to calculate the Common Stock to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「普通株」をcalculateすることが不可欠である。,Medium
+EX0103,TERM0103,"When using a DDM, it is crucial to analyze the Preferred Stock to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「優先株」をanalyzeすることが不可欠である。,Medium
+EX0104,TERM0104,"When using a DDM, it is crucial to estimate the Market Capitalization to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「時価総額」をestimateすることが不可欠である。,Medium
+EX0105,TERM0105,"When using a DDM, it is crucial to assume the Enterprise Value to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「企業価値」をassumeすることが不可欠である。,Medium
+EX0106,TERM0106,"When using a DDM, it is crucial to compare the Price-to-Earnings Ratio to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「株価収益率」をcompareすることが不可欠である。,Medium
+EX0107,TERM0107,"When using a DDM, it is crucial to assume the Price-to-Book Ratio to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「株価純資産倍率」をassumeすることが不可欠である。,Medium
+EX0108,TERM0108,"When using a DDM, it is crucial to estimate the Dividend Discount Model to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「配当割引モデル」をestimateすることが不可欠である。,Medium
+EX0109,TERM0109,"When using a DDM, it is crucial to interpret the Gordon Growth Model to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「ゴードン成長モデル」をinterpretすることが不可欠である。,Medium
+EX0110,TERM0110,"When using a DDM, it is crucial to interpret the Free Cash Flow to Equity to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「株主帰属フリーキャッシュフロー」をinterpretすることが不可欠である。,Medium
+EX0111,TERM0111,"When using a DDM, it is crucial to analyze the Free Cash Flow to Firm to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「企業帰属フリーキャッシュフロー」をanalyzeすることが不可欠である。,Medium
+EX0112,TERM0112,"When using a DDM, it is crucial to assume the Intrinsic Value to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「本質的価値」をassumeすることが不可欠である。,Medium
+EX0113,TERM0113,"When using a DDM, it is crucial to interpret the Market Efficiency to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「市場効率性」をinterpretすることが不可欠である。,Medium
+EX0114,TERM0114,"When using a DDM, it is crucial to describe the Weak Form Efficiency to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「弱度の効率性」をdescribeすることが不可欠である。,Medium
+EX0115,TERM0115,"When using a DDM, it is crucial to estimate the Semi-Strong Form Efficiency to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「準強度の効率性」をestimateすることが不可欠である。,Medium
+EX0116,TERM0116,"When using a DDM, it is crucial to describe the Strong Form Efficiency to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「強度の効率性」をdescribeすることが不可欠である。,Medium
+EX0117,TERM0117,"When using a DDM, it is crucial to interpret the Industry Analysis to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「業種分析」をinterpretすることが不可欠である。,Medium
+EX0118,TERM0118,"When using a DDM, it is crucial to describe the Porter's Five Forces to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「ポーターの5つの力」をdescribeすることが不可欠である。,Medium
+EX0119,TERM0119,"When using a DDM, it is crucial to compare the Equity Risk Premium to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「株式リスクプレミアム」をcompareすることが不可欠である。,Medium
+EX0120,TERM0120,"When using a DDM, it is crucial to calculate the Dividend Yield to arrive at a reasonable intrinsic value.",DDMを使用する際、妥当な本質的価値を算出するためには「配当利回り」をcalculateすることが不可欠である。,Medium
+EX0121,TERM0121,"Assuming a parallel shift in the yield curve, an investor needs to assume the Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「債券」をassumeする必要がある。,Medium
+EX0122,TERM0122,"Assuming a parallel shift in the yield curve, an investor needs to describe the Coupon Rate of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「クーポンレート」をdescribeする必要がある。,Medium
+EX0123,TERM0123,"Assuming a parallel shift in the yield curve, an investor needs to interpret the Face Value of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「額面」をinterpretする必要がある。,Medium
+EX0124,TERM0124,"Assuming a parallel shift in the yield curve, an investor needs to estimate the Yield to Maturity of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「満期利回り」をestimateする必要がある。,Medium
+EX0125,TERM0125,"Assuming a parallel shift in the yield curve, an investor needs to assume the Current Yield of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「直接利回り」をassumeする必要がある。,Medium
+EX0126,TERM0126,"Assuming a parallel shift in the yield curve, an investor needs to calculate the Duration of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「デュレーション」をcalculateする必要がある。,Medium
+EX0127,TERM0127,"Assuming a parallel shift in the yield curve, an investor needs to interpret the Modified Duration of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「修正デュレーション」をinterpretする必要がある。,Medium
+EX0128,TERM0128,"Assuming a parallel shift in the yield curve, an investor needs to compare the Convexity of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「コンベクシティ」をcompareする必要がある。,Medium
+EX0129,TERM0129,"Assuming a parallel shift in the yield curve, an investor needs to analyze the Credit Risk of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「信用リスク」をanalyzeする必要がある。,Medium
+EX0130,TERM0130,"Assuming a parallel shift in the yield curve, an investor needs to compare the Credit Spread of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「信用スプレッド」をcompareする必要がある。,Medium
+EX0131,TERM0131,"Assuming a parallel shift in the yield curve, an investor needs to compare the Interest Rate Risk of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「金利リスク」をcompareする必要がある。,Medium
+EX0132,TERM0132,"Assuming a parallel shift in the yield curve, an investor needs to analyze the Reinvestment Risk of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「再投資リスク」をanalyzeする必要がある。,Medium
+EX0133,TERM0133,"Assuming a parallel shift in the yield curve, an investor needs to describe the Yield Curve of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「イールドカーブ」をdescribeする必要がある。,Medium
+EX0134,TERM0134,"Assuming a parallel shift in the yield curve, an investor needs to estimate the Spot Rate of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「スポットレート」をestimateする必要がある。,Medium
+EX0135,TERM0135,"Assuming a parallel shift in the yield curve, an investor needs to calculate the Forward Rate of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「フォワードレート」をcalculateする必要がある。,Medium
+EX0136,TERM0136,"Assuming a parallel shift in the yield curve, an investor needs to analyze the Zero-Coupon Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ゼロクーポン債」をanalyzeする必要がある。,Medium
+EX0137,TERM0137,"Assuming a parallel shift in the yield curve, an investor needs to estimate the Callable Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「コーラブル債」をestimateする必要がある。,Medium
+EX0138,TERM0138,"Assuming a parallel shift in the yield curve, an investor needs to interpret the Putable Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「プッタブル債」をinterpretする必要がある。,Medium
+EX0139,TERM0139,"Assuming a parallel shift in the yield curve, an investor needs to describe the Floating Rate Note of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「変動利付債」をdescribeする必要がある。,Medium
+EX0140,TERM0140,"Assuming a parallel shift in the yield curve, an investor needs to compare the Investment Grade of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「投資適格」をcompareする必要がある。,Medium
+EX0141,TERM0141,"Assuming a parallel shift in the yield curve, an investor needs to describe the High Yield Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ハイイールド債」をdescribeする必要がある。,Medium
+EX0142,TERM0142,"Assuming a parallel shift in the yield curve, an investor needs to analyze the Sovereign Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「ソブリン債」をanalyzeする必要がある。,Medium
+EX0143,TERM0143,"Assuming a parallel shift in the yield curve, an investor needs to calculate the Municipal Bond of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「地方債」をcalculateする必要がある。,Medium
+EX0144,TERM0144,"Assuming a parallel shift in the yield curve, an investor needs to calculate the Mortgage-Backed Security of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「住宅ローン担保証券」をcalculateする必要がある。,Medium
+EX0145,TERM0145,"Assuming a parallel shift in the yield curve, an investor needs to interpret the Asset-Backed Security of the bond portfolio.",イールドカーブのパラレルシフトを仮定すると、投資家は債券ポートフォリオの「資産担保証券」をinterpretする必要がある。,Medium
+EX0146,TERM0146,The candidate should be able to assume the concept of Derivative in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「デリバティブ」の概念をassumeできる必要がある。,Medium
+EX0147,TERM0147,The candidate should be able to compare the concept of Forward Contract in the context of the required return.,受験者は、the required returnの文脈で「先渡契約」の概念をcompareできる必要がある。,Medium
+EX0148,TERM0148,The candidate should be able to calculate the concept of Futures Contract in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「先物契約」の概念をcalculateできる必要がある。,Medium
+EX0149,TERM0149,The candidate should be able to interpret the concept of Option in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「オプション」の概念をinterpretできる必要がある。,Medium
+EX0150,TERM0150,The candidate should be able to interpret the concept of Call Option in the context of the credit spread.,受験者は、the credit spreadの文脈で「コールオプション」の概念をinterpretできる必要がある。,Medium
+EX0151,TERM0151,The candidate should be able to interpret the concept of Put Option in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「プットオプション」の概念をinterpretできる必要がある。,Medium
+EX0152,TERM0152,The candidate should be able to analyze the concept of Strike Price in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「行使価格」の概念をanalyzeできる必要がある。,Medium
+EX0153,TERM0153,The candidate should be able to estimate the concept of Option Premium in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「オプションプレミアム」の概念をestimateできる必要がある。,Medium
+EX0154,TERM0154,The candidate should be able to analyze the concept of Intrinsic Value (Option) in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「本質的価値（オプション）」の概念をanalyzeできる必要がある。,Medium
+EX0155,TERM0155,The candidate should be able to interpret the concept of Time Value (Option) in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「時間価値（オプション）」の概念をinterpretできる必要がある。,Medium
+EX0156,TERM0156,The candidate should be able to assume the concept of In-the-Money in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「イン・ザ・マネー」の概念をassumeできる必要がある。,Medium
+EX0157,TERM0157,The candidate should be able to calculate the concept of Out-of-the-Money in the context of the credit spread.,受験者は、the credit spreadの文脈で「アウト・オブ・ザ・マネー」の概念をcalculateできる必要がある。,Medium
+EX0158,TERM0158,The candidate should be able to interpret the concept of At-the-Money in the context of the required return.,受験者は、the required returnの文脈で「アット・ザ・マネー」の概念をinterpretできる必要がある。,Medium
+EX0159,TERM0159,The candidate should be able to analyze the concept of Swap in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「スワップ」の概念をanalyzeできる必要がある。,Medium
+EX0160,TERM0160,The candidate should be able to describe the concept of Interest Rate Swap in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「金利スワップ」の概念をdescribeできる必要がある。,Medium
+EX0161,TERM0161,The candidate should be able to describe the concept of Currency Swap in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「通貨スワップ」の概念をdescribeできる必要がある。,Medium
+EX0162,TERM0162,The candidate should be able to interpret the concept of Hedging in the context of the credit spread.,受験者は、the credit spreadの文脈で「ヘッジ」の概念をinterpretできる必要がある。,Medium
+EX0163,TERM0163,The candidate should be able to compare the concept of Speculation in the context of the credit spread.,受験者は、the credit spreadの文脈で「投機」の概念をcompareできる必要がある。,Medium
+EX0164,TERM0164,The candidate should be able to assume the concept of Arbitrage in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「裁定取引」の概念をassumeできる必要がある。,Medium
+EX0165,TERM0165,The candidate should be able to interpret the concept of Put-Call Parity in the context of the required return.,受験者は、the required returnの文脈で「プット・コール・パリティ」の概念をinterpretできる必要がある。,Medium
+EX0166,TERM0166,The candidate should be able to interpret the concept of European Option in the context of the credit spread.,受験者は、the credit spreadの文脈で「ヨーロピアンオプション」の概念をinterpretできる必要がある。,Medium
+EX0167,TERM0167,The candidate should be able to estimate the concept of American Option in the context of the credit spread.,受験者は、the credit spreadの文脈で「アメリカンオプション」の概念をestimateできる必要がある。,Medium
+EX0168,TERM0168,The candidate should be able to describe the concept of Moneyness in the context of the required return.,受験者は、the required returnの文脈で「マネーネス」の概念をdescribeできる必要がある。,Medium
+EX0169,TERM0169,The candidate should be able to assume the concept of Notional Principal in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「想定元本」の概念をassumeできる必要がある。,Medium
+EX0170,TERM0170,The candidate should be able to analyze the concept of Marking to Market in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「値洗い」の概念をanalyzeできる必要がある。,Medium
+EX0171,TERM0171,The candidate should be able to analyze the concept of Alternative Investment in the context of the credit spread.,受験者は、the credit spreadの文脈で「オルタナティブ投資」の概念をanalyzeできる必要がある。,Medium
+EX0172,TERM0172,The candidate should be able to describe the concept of Private Equity in the context of the credit spread.,受験者は、the credit spreadの文脈で「プライベートエクイティ」の概念をdescribeできる必要がある。,Medium
+EX0173,TERM0173,The candidate should be able to analyze the concept of Venture Capital in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「ベンチャーキャピタル」の概念をanalyzeできる必要がある。,Medium
+EX0174,TERM0174,The candidate should be able to estimate the concept of Leveraged Buyout in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「レバレッジド・バイアウト」の概念をestimateできる必要がある。,Medium
+EX0175,TERM0175,The candidate should be able to estimate the concept of Hedge Fund in the context of the required return.,受験者は、the required returnの文脈で「ヘッジファンド」の概念をestimateできる必要がある。,Medium
+EX0176,TERM0176,The candidate should be able to compare the concept of Real Estate Investment in the context of the required return.,受験者は、the required returnの文脈で「不動産投資」の概念をcompareできる必要がある。,Medium
+EX0177,TERM0177,The candidate should be able to analyze the concept of Real Estate Investment Trust in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「不動産投資信託」の概念をanalyzeできる必要がある。,Medium
+EX0178,TERM0178,The candidate should be able to compare the concept of Commodity in the context of the credit spread.,受験者は、the credit spreadの文脈で「コモディティ」の概念をcompareできる必要がある。,Medium
+EX0179,TERM0179,The candidate should be able to describe the concept of Contango in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「コンタンゴ」の概念をdescribeできる必要がある。,Medium
+EX0180,TERM0180,The candidate should be able to compare the concept of Backwardation in the context of the required return.,受験者は、the required returnの文脈で「バックワーデーション」の概念をcompareできる必要がある。,Medium
+EX0181,TERM0181,The candidate should be able to compare the concept of Portfolio in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「ポートフォリオ」の概念をcompareできる必要がある。,Medium
+EX0182,TERM0182,The candidate should be able to assume the concept of Diversification in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「分散投資」の概念をassumeできる必要がある。,Medium
+EX0183,TERM0183,The candidate should be able to estimate the concept of Systematic Risk in the context of the effect on ROE.,受験者は、the effect on ROEの文脈で「システマティックリスク」の概念をestimateできる必要がある。,Medium
+EX0184,TERM0184,The candidate should be able to calculate the concept of Unsystematic Risk in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「非システマティックリスク」の概念をcalculateできる必要がある。,Medium
+EX0185,TERM0185,The candidate should be able to estimate the concept of Beta in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「ベータ」の概念をestimateできる必要がある。,Medium
+EX0186,TERM0186,The candidate should be able to describe the concept of Capital Asset Pricing Model in the context of the required return.,受験者は、the required returnの文脈で「資本資産価格モデル」の概念をdescribeできる必要がある。,Medium
+EX0187,TERM0187,The candidate should be able to interpret the concept of Security Market Line in the context of the credit spread.,受験者は、the credit spreadの文脈で「証券市場線」の概念をinterpretできる必要がある。,Medium
+EX0188,TERM0188,The candidate should be able to calculate the concept of Capital Market Line in the context of the required return.,受験者は、the required returnの文脈で「資本市場線」の概念をcalculateできる必要がある。,Medium
+EX0189,TERM0189,The candidate should be able to assume the concept of Efficient Frontier in the context of the credit spread.,受験者は、the credit spreadの文脈で「効率的フロンティア」の概念をassumeできる必要がある。,Medium
+EX0190,TERM0190,The candidate should be able to assume the concept of Sharpe Ratio in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「シャープレシオ」の概念をassumeできる必要がある。,Medium
+EX0191,TERM0191,The candidate should be able to analyze the concept of Treynor Ratio in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「トレイナーレシオ」の概念をanalyzeできる必要がある。,Medium
+EX0192,TERM0192,The candidate should be able to analyze the concept of Jensen's Alpha in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「ジェンセンのアルファ」の概念をanalyzeできる必要がある。,Medium
+EX0193,TERM0193,The candidate should be able to analyze the concept of Information Ratio in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「インフォメーションレシオ」の概念をanalyzeできる必要がある。,Medium
+EX0194,TERM0194,The candidate should be able to describe the concept of Tracking Error in the context of the impact on the IPS.,受験者は、the impact on the IPSの文脈で「トラッキングエラー」の概念をdescribeできる必要がある。,Medium
+EX0195,TERM0195,The candidate should be able to compare the concept of Risk-Free Rate in the context of the credit spread.,受験者は、the credit spreadの文脈で「リスクフリーレート」の概念をcompareできる必要がある。,Medium
+EX0196,TERM0196,The candidate should be able to describe the concept of Market Portfolio in the context of the going concern assumption.,受験者は、the going concern assumptionの文脈で「市場ポートフォリオ」の概念をdescribeできる必要がある。,Medium
+EX0197,TERM0197,The candidate should be able to assume the concept of Asset Allocation in the context of the credit spread.,受験者は、the credit spreadの文脈で「資産配分」の概念をassumeできる必要がある。,Medium
+EX0198,TERM0198,The candidate should be able to analyze the concept of Strategic Asset Allocation in the context of the required return.,受験者は、the required returnの文脈で「戦略的資産配分」の概念をanalyzeできる必要がある。,Medium
+EX0199,TERM0199,The candidate should be able to analyze the concept of Tactical Asset Allocation in the context of the credit spread.,受験者は、the credit spreadの文脈で「戦術的資産配分」の概念をanalyzeできる必要がある。,Medium
+EX0200,TERM0200,The candidate should be able to assume the concept of Rebalancing in the context of the required return.,受験者は、the required returnの文脈で「リバランス」の概念をassumeできる必要がある。,Medium

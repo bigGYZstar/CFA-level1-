@@ -1,0 +1,3326 @@
+[
+  {
+    "term_id": "TERM0001",
+    "topic_code": "ETH",
+    "en_canonical": "Code of Ethics",
+    "en_aliases": [
+      "CFA Code of Ethics"
+    ],
+    "abbreviations": [],
+    "jp_headword": "倫理規範",
+    "jp_reading": "りんりきはん",
+    "jp_definition": "CFA協会が定める投資専門家の行動指針。誠実性・能力・勤勉さ・敬意をもって行動し、顧客利益を自己利益より優先することを求める。",
+    "key_points": [
+      "6つの構成要素を暗記。顧客利益＞雇用者利益＞自己利益の優先順位。"
+    ],
+    "pitfall": "Code of EthicsとStandards of Professional Conductの違いを混同しやすい。Codeは理念、Standardsは具体的行動規範。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0002",
+    "topic_code": "ETH",
+    "en_canonical": "Standards of Professional Conduct",
+    "en_aliases": [
+      "Professional Standards",
+      "SPC"
+    ],
+    "abbreviations": [],
+    "jp_headword": "職業行為基準",
+    "jp_reading": "しょくぎょうこういきじゅん",
+    "jp_definition": "CFA協会が定める7つの行動基準。専門職としての行動・資本市場の健全性・顧客への義務・雇用者への義務・投資分析・利益相反・CFA会員としての責任を規定。",
+    "key_points": [
+      "7つのStandardとそのサブセクションを理解。違反事例の判断が頻出。"
+    ],
+    "pitfall": "Standards違反の判断で「最も厳格な法律に従う」原則を忘れやすい。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0003",
+    "topic_code": "ETH",
+    "en_canonical": "Material Nonpublic Information",
+    "en_aliases": [
+      "MNPI",
+      "Inside Information"
+    ],
+    "abbreviations": [
+      "MNPI"
+    ],
+    "jp_headword": "重要な未公開情報",
+    "jp_reading": "じゅうようなみこうかいじょうほう",
+    "jp_definition": "証券価格に重大な影響を与える可能性があり、まだ一般に公開されていない情報。この情報に基づく取引はインサイダー取引として禁止される。",
+    "key_points": [
+      "MNPIに基づく取引・推奨は禁止。Mosaic Theoryとの区別が重要。"
+    ],
+    "pitfall": "Material（重要）とNonpublic（未公開）の両方を満たす必要がある。公開情報や非重要情報は対象外。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0004",
+    "topic_code": "ETH",
+    "en_canonical": "Mosaic Theory",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "モザイク理論",
+    "jp_reading": "もざいくりろん",
+    "jp_definition": "公開情報と非重要な未公開情報を組み合わせて投資結論を導く分析手法。MNPIを使用しない限り、この手法による取引は許容される。",
+    "key_points": [
+      "公開情報＋非重要未公開情報の組み合わせは合法。MNPIとの境界線を理解。"
+    ],
+    "pitfall": "Mosaic TheoryはMNPIの使用を正当化するものではない。非重要情報のみ使用可能。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0005",
+    "topic_code": "ETH",
+    "en_canonical": "Fiduciary Duty",
+    "en_aliases": [
+      "Fiduciary Responsibility"
+    ],
+    "abbreviations": [],
+    "jp_headword": "受託者責任",
+    "jp_reading": "じゅたくしゃせきにん",
+    "jp_definition": "顧客の最善の利益のために行動する法的・倫理的義務。忠実義務（Loyalty）と注意義務（Care）を含む。",
+    "key_points": [
+      "顧客利益を最優先。Prudent Investor Ruleに従う。利益相反の開示義務。"
+    ],
+    "pitfall": "Fiduciary DutyとSuitability（適合性）の違い。受託者は常に顧客最善利益、適合性は投資の適切さ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0006",
+    "topic_code": "ETH",
+    "en_canonical": "Global Investment Performance Standards",
+    "en_aliases": [
+      "GIPS Standards"
+    ],
+    "abbreviations": [
+      "GIPS"
+    ],
+    "jp_headword": "グローバル投資パフォーマンス基準",
+    "jp_reading": "ぐろーばるとうしぱふぉーまんすきじゅん",
+    "jp_definition": "投資運用会社のパフォーマンス報告の公正性と比較可能性を確保するための世界標準。コンポジット構築・計算方法・開示要件を規定。",
+    "key_points": [
+      "GIPS準拠は任意だが準拠表明には完全遵守が必要。コンポジット要件を理解。"
+    ],
+    "pitfall": "GIPS準拠は「会社全体」に適用。一部ファンドのみの準拠表明は不可。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0007",
+    "topic_code": "ETH",
+    "en_canonical": "Soft Dollar",
+    "en_aliases": [
+      "Soft Commission"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ソフトダラー",
+    "jp_reading": "そふとだらー",
+    "jp_definition": "証券取引の執行手数料の一部を、リサーチやサービスの対価として使用する慣行。顧客への開示と顧客利益への使用が求められる。",
+    "key_points": [
+      "顧客利益に資するリサーチ等への使用は許容。開示義務あり。"
+    ],
+    "pitfall": "Soft Dollarを個人的利益（オフィス家具等）に使用することは違反。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0008",
+    "topic_code": "ETH",
+    "en_canonical": "Fair Dealing",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "公正な取扱い",
+    "jp_reading": "こうせいなとりあつかい",
+    "jp_definition": "すべての顧客に対して公平かつ客観的に投資推奨・情報提供を行う義務。同時配信の原則を含む。",
+    "key_points": [
+      "投資推奨の同時配信。大口顧客への優先提供は違反。"
+    ],
+    "pitfall": "Fair Dealing（公正）とEqual Treatment（平等）の違い。サービス水準は手数料に応じて異なりうる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0009",
+    "topic_code": "ETH",
+    "en_canonical": "Suitability",
+    "en_aliases": [
+      "Investment Suitability"
+    ],
+    "abbreviations": [],
+    "jp_headword": "適合性",
+    "jp_reading": "てきごうせい",
+    "jp_definition": "投資推奨が顧客の投資目的・リスク許容度・財務状況・制約条件に適合していることを確認する義務。",
+    "key_points": [
+      "IPS（投資方針書）に基づく判断。ポートフォリオ全体の文脈で評価。"
+    ],
+    "pitfall": "個別銘柄の適合性ではなく、ポートフォリオ全体での適合性を判断する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0010",
+    "topic_code": "ETH",
+    "en_canonical": "Investment Policy Statement",
+    "en_aliases": [
+      "IPS"
+    ],
+    "abbreviations": [
+      "IPS"
+    ],
+    "jp_headword": "投資方針書",
+    "jp_reading": "とうしほうしんしょ",
+    "jp_definition": "顧客の投資目的・リスク許容度・時間軸・流動性ニーズ・法的制約等を文書化したもの。投資意思決定の基盤となる。",
+    "key_points": [
+      "Return objectives・Risk tolerance・Constraintsの3要素。定期的な見直し。"
+    ],
+    "pitfall": "IPSは「目標」と「制約」の両方を含む。制約条件（TTLLU）を忘れやすい。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0011",
+    "topic_code": "QM",
+    "en_canonical": "Time Value of Money",
+    "en_aliases": [
+      "TVM"
+    ],
+    "abbreviations": [
+      "TVM"
+    ],
+    "jp_headword": "貨幣の時間価値",
+    "jp_reading": "かへいのじかんかち",
+    "jp_definition": "現在の1円は将来の1円より価値が高いという概念。金利・インフレ・リスクにより、同額の貨幣でも時点により価値が異なる。",
+    "key_points": [
+      "PV・FV・PMT・N・I/Yの5変数。複利計算の基礎。"
+    ],
+    "pitfall": "単利と複利の混同。Annuity DueとOrdinary Annuityの計算タイミングの違い。",
+    "formula": "FV = PV × (1 + r)^n"
+  },
+  {
+    "term_id": "TERM0012",
+    "topic_code": "QM",
+    "en_canonical": "Present Value",
+    "en_aliases": [
+      "Discounted Value"
+    ],
+    "abbreviations": [
+      "PV"
+    ],
+    "jp_headword": "現在価値",
+    "jp_reading": "げんざいかち",
+    "jp_definition": "将来のキャッシュフローを適切な割引率で割り引いた現時点での価値。投資評価・債券価格計算の基礎。",
+    "key_points": [
+      "割引率の選択が重要。リスクが高いほど割引率は高い。"
+    ],
+    "pitfall": "PVとFVの計算で期間（n）と利率（r）の整合性を確認。年率と期間の単位を揃える。",
+    "formula": "PV = FV / (1 + r)^n"
+  },
+  {
+    "term_id": "TERM0013",
+    "topic_code": "QM",
+    "en_canonical": "Future Value",
+    "en_aliases": [],
+    "abbreviations": [
+      "FV"
+    ],
+    "jp_headword": "将来価値",
+    "jp_reading": "しょうらいかち",
+    "jp_definition": "現在の金額が一定期間後に成長した価値。複利効果により、期間が長いほど成長が加速する。",
+    "key_points": [
+      "複利の効果。連続複利との違い。"
+    ],
+    "pitfall": "名目金利と実効金利の違い。複利頻度が異なると実効金利が変わる。",
+    "formula": "FV = PV × (1 + r)^n"
+  },
+  {
+    "term_id": "TERM0014",
+    "topic_code": "QM",
+    "en_canonical": "Discount Rate",
+    "en_aliases": [
+      "Required Rate of Return"
+    ],
+    "abbreviations": [],
+    "jp_headword": "割引率",
+    "jp_reading": "わりびきりつ",
+    "jp_definition": "将来キャッシュフローを現在価値に換算する際に使用する利率。機会費用・リスクプレミアム・インフレ期待を反映。",
+    "key_points": [
+      "リスクフリーレート＋リスクプレミアム。WACCとの関係。"
+    ],
+    "pitfall": "Discount RateとRequired Returnの使い分け。評価目的により適切な率を選択。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0015",
+    "topic_code": "QM",
+    "en_canonical": "Net Present Value",
+    "en_aliases": [
+      "NPV"
+    ],
+    "abbreviations": [
+      "NPV"
+    ],
+    "jp_headword": "正味現在価値",
+    "jp_reading": "しょうみげんざいかち",
+    "jp_definition": "投資プロジェクトの全キャッシュフローの現在価値合計から初期投資額を差し引いた値。正のNPVは価値創造を意味する。",
+    "key_points": [
+      "NPV > 0 なら投資採用。IRRとの比較。相互排他的プロジェクトの評価。"
+    ],
+    "pitfall": "NPVとIRRが矛盾する場合はNPVを優先。再投資率の仮定が異なる。",
+    "formula": "NPV = Σ[CFt / (1+r)^t] - Initial Investment"
+  },
+  {
+    "term_id": "TERM0016",
+    "topic_code": "QM",
+    "en_canonical": "Internal Rate of Return",
+    "en_aliases": [],
+    "abbreviations": [
+      "IRR"
+    ],
+    "jp_headword": "内部収益率",
+    "jp_reading": "ないぶしゅうえきりつ",
+    "jp_definition": "NPVをゼロにする割引率。プロジェクトの期待収益率を示し、ハードルレートとの比較で投資判断を行う。",
+    "key_points": [
+      "IRR > ハードルレートなら投資採用。複数IRR問題に注意。"
+    ],
+    "pitfall": "IRRは再投資率をIRR自身と仮定。NPVとの矛盾時はNPV優先。",
+    "formula": "NPV = 0 となる r を求める"
+  },
+  {
+    "term_id": "TERM0017",
+    "topic_code": "QM",
+    "en_canonical": "Effective Annual Rate",
+    "en_aliases": [
+      "Effective Annual Yield"
+    ],
+    "abbreviations": [
+      "EAR",
+      "EAY"
+    ],
+    "jp_headword": "実効年利率",
+    "jp_reading": "じっこうねんりりつ",
+    "jp_definition": "複利頻度を考慮した年間の実質的な利率。名目金利と複利頻度から計算され、異なる金融商品の比較に使用。",
+    "key_points": [
+      "複利頻度が高いほどEARは高くなる。連続複利の極限。"
+    ],
+    "pitfall": "Stated Rate（名目金利）とEARの混同。比較には必ずEARを使用。",
+    "formula": "EAR = (1 + r/m)^m - 1"
+  },
+  {
+    "term_id": "TERM0018",
+    "topic_code": "QM",
+    "en_canonical": "Annuity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "年金",
+    "jp_reading": "ねんきん",
+    "jp_definition": "一定期間にわたり定額のキャッシュフローが発生する金融商品または支払いパターン。普通年金と期首年金がある。",
+    "key_points": [
+      "Ordinary Annuity（期末払い）とAnnuity Due（期首払い）の区別。"
+    ],
+    "pitfall": "Annuity DueのPV/FVはOrdinary Annuityの(1+r)倍。計算時の設定確認。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0019",
+    "topic_code": "QM",
+    "en_canonical": "Perpetuity",
+    "en_aliases": [
+      "Perpetual Annuity"
+    ],
+    "abbreviations": [],
+    "jp_headword": "永久年金",
+    "jp_reading": "えいきゅうねんきん",
+    "jp_definition": "無期限に一定額のキャッシュフローが続く金融商品。優先株の評価や成長永久年金モデルで使用。",
+    "key_points": [
+      "PV = PMT / r。成長永久年金はPV = PMT / (r - g)。"
+    ],
+    "pitfall": "成長率gが割引率rを超えるとモデルは適用不可。g < r の条件確認。",
+    "formula": "PV = PMT / r"
+  },
+  {
+    "term_id": "TERM0020",
+    "topic_code": "QM",
+    "en_canonical": "Standard Deviation",
+    "en_aliases": [
+      "Volatility"
+    ],
+    "abbreviations": [
+      "SD",
+      "σ"
+    ],
+    "jp_headword": "標準偏差",
+    "jp_reading": "ひょうじゅんへんさ",
+    "jp_definition": "データの散らばり具合を示す統計量。投資においてはリスク（ボラティリティ）の指標として使用される。",
+    "key_points": [
+      "分散の平方根。正規分布での確率解釈（68-95-99.7ルール）。"
+    ],
+    "pitfall": "母集団と標本の標準偏差の計算式の違い（n vs n-1）。",
+    "formula": "σ = √[Σ(xi - μ)² / n]"
+  },
+  {
+    "term_id": "TERM0021",
+    "topic_code": "QM",
+    "en_canonical": "Variance",
+    "en_aliases": [],
+    "abbreviations": [
+      "σ²"
+    ],
+    "jp_headword": "分散",
+    "jp_reading": "ぶんさん",
+    "jp_definition": "データの散らばりを二乗平均で測定した統計量。標準偏差の二乗であり、ポートフォリオリスク計算の基礎。",
+    "key_points": [
+      "共分散・相関係数との関係。ポートフォリオ分散の計算。"
+    ],
+    "pitfall": "分散は単位が二乗になるため、解釈には標準偏差を使用。",
+    "formula": "σ² = Σ(xi - μ)² / n"
+  },
+  {
+    "term_id": "TERM0022",
+    "topic_code": "QM",
+    "en_canonical": "Covariance",
+    "en_aliases": [],
+    "abbreviations": [
+      "Cov"
+    ],
+    "jp_headword": "共分散",
+    "jp_reading": "きょうぶんさん",
+    "jp_definition": "2つの変数が同時にどの程度変動するかを測定する統計量。正の共分散は同方向、負は逆方向の動きを示す。",
+    "key_points": [
+      "ポートフォリオ分散計算の重要要素。相関係数との関係。"
+    ],
+    "pitfall": "共分散の大きさは単位に依存。比較には相関係数を使用。",
+    "formula": "Cov(X;Y) = Σ[(xi - μx)(yi - μy)] / n"
+  },
+  {
+    "term_id": "TERM0023",
+    "topic_code": "QM",
+    "en_canonical": "Correlation Coefficient",
+    "en_aliases": [],
+    "abbreviations": [
+      "ρ",
+      "r"
+    ],
+    "jp_headword": "相関係数",
+    "jp_reading": "そうかんけいすう",
+    "jp_definition": "-1から+1の範囲で2変数間の線形関係の強さと方向を示す。+1は完全正相関、-1は完全負相関、0は無相関。",
+    "key_points": [
+      "分散投資効果は相関が低いほど大きい。相関と因果の違い。"
+    ],
+    "pitfall": "相関は因果関係を意味しない。また、非線形関係は検出できない。",
+    "formula": "ρ = Cov(X;Y) / (σx*σy)"
+  },
+  {
+    "term_id": "TERM0024",
+    "topic_code": "QM",
+    "en_canonical": "Normal Distribution",
+    "en_aliases": [
+      "Gaussian Distribution"
+    ],
+    "abbreviations": [],
+    "jp_headword": "正規分布",
+    "jp_reading": "せいきぶんぷ",
+    "jp_definition": "平均を中心に左右対称の釣鐘型の確率分布。多くの金融データの近似モデルとして使用される。",
+    "key_points": [
+      "平均・標準偏差で完全に特定。68-95-99.7ルール。"
+    ],
+    "pitfall": "実際の金融リターンは正規分布より裾が厚い（Fat Tails）。極端な事象を過小評価。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0025",
+    "topic_code": "QM",
+    "en_canonical": "Confidence Interval",
+    "en_aliases": [],
+    "abbreviations": [
+      "CI"
+    ],
+    "jp_headword": "信頼区間",
+    "jp_reading": "しんらいくかん",
+    "jp_definition": "母集団パラメータが一定の確率で含まれると推定される区間。95%信頼区間は平均±1.96標準誤差。",
+    "key_points": [
+      "信頼水準と区間幅のトレードオフ。標本サイズの影響。"
+    ],
+    "pitfall": "信頼区間は「母集団パラメータがこの区間にある確率」ではない。解釈に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0026",
+    "topic_code": "QM",
+    "en_canonical": "Hypothesis Testing",
+    "en_aliases": [
+      "Statistical Testing"
+    ],
+    "abbreviations": [],
+    "jp_headword": "仮説検定",
+    "jp_reading": "かせつけんてい",
+    "jp_definition": "標本データに基づいて母集団に関する仮説の妥当性を統計的に判断する手法。帰無仮説と対立仮説を設定。",
+    "key_points": [
+      "Type I Error（α）とType II Error（β）。p値の解釈。"
+    ],
+    "pitfall": "帰無仮説を「棄却できない」ことは「正しい」ことを意味しない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0027",
+    "topic_code": "QM",
+    "en_canonical": "Type I Error",
+    "en_aliases": [
+      "False Positive"
+    ],
+    "abbreviations": [],
+    "jp_headword": "第一種の過誤",
+    "jp_reading": "だいいっしゅのかご",
+    "jp_definition": "帰無仮説が真であるにもかかわらず、誤って棄却してしまう誤り。有意水準αで発生確率を制御。",
+    "key_points": [
+      "有意水準αと同じ。検定力との関係。"
+    ],
+    "pitfall": "Type I Error（偽陽性）とType II Error（偽陰性）の混同。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0028",
+    "topic_code": "QM",
+    "en_canonical": "Type II Error",
+    "en_aliases": [
+      "False Negative"
+    ],
+    "abbreviations": [],
+    "jp_headword": "第二種の過誤",
+    "jp_reading": "だいにしゅのかご",
+    "jp_definition": "帰無仮説が偽であるにもかかわらず、棄却できない誤り。検定力（1-β）で評価。",
+    "key_points": [
+      "標本サイズを増やすとβは減少。αとのトレードオフ。"
+    ],
+    "pitfall": "Type II Errorを減らすにはαを上げるか標本サイズを増やす。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0029",
+    "topic_code": "QM",
+    "en_canonical": "p-value",
+    "en_aliases": [
+      "Probability Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "p値",
+    "jp_reading": "ぴーち",
+    "jp_definition": "帰無仮説が真である場合に、観測されたデータ以上に極端な結果が得られる確率。小さいほど帰無仮説に反する証拠が強い。",
+    "key_points": [
+      "p値 < αなら帰無仮説を棄却。統計的有意性の指標。"
+    ],
+    "pitfall": "p値は効果の大きさや実務的重要性を示さない。統計的有意≠実務的重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0030",
+    "topic_code": "QM",
+    "en_canonical": "Sampling Distribution",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "標本分布",
+    "jp_reading": "ひょうほんぶんぷ",
+    "jp_definition": "標本統計量（平均など）の確率分布。中心極限定理により、標本サイズが大きいと正規分布に近づく。",
+    "key_points": [
+      "標準誤差 = σ/√n。中心極限定理の適用条件。"
+    ],
+    "pitfall": "標本分布と母集団分布の混同。標本分布は統計量の分布。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0031",
+    "topic_code": "ECON",
+    "en_canonical": "Demand",
+    "en_aliases": [
+      "Market Demand"
+    ],
+    "abbreviations": [],
+    "jp_headword": "需要",
+    "jp_reading": "じゅよう",
+    "jp_definition": "ある価格水準で消費者が購入しようとする財・サービスの量。価格と需要量は逆相関（需要の法則）。",
+    "key_points": [
+      "需要曲線のシフト要因（所得・嗜好・代替財価格等）と移動の区別。"
+    ],
+    "pitfall": "需要曲線の「シフト」と曲線上の「移動」の混同。価格変化は移動、他要因はシフト。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0032",
+    "topic_code": "ECON",
+    "en_canonical": "Supply",
+    "en_aliases": [
+      "Market Supply"
+    ],
+    "abbreviations": [],
+    "jp_headword": "供給",
+    "jp_reading": "きょうきゅう",
+    "jp_definition": "ある価格水準で生産者が販売しようとする財・サービスの量。価格と供給量は正相関（供給の法則）。",
+    "key_points": [
+      "供給曲線のシフト要因（生産コスト・技術・期待等）。均衡価格の決定。"
+    ],
+    "pitfall": "供給曲線のシフト要因と需要曲線のシフト要因の混同。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0033",
+    "topic_code": "ECON",
+    "en_canonical": "Elasticity",
+    "en_aliases": [
+      "Price Elasticity"
+    ],
+    "abbreviations": [],
+    "jp_headword": "弾力性",
+    "jp_reading": "だんりょくせい",
+    "jp_definition": "価格変化に対する需要量または供給量の反応度を測定する指標。弾力的（>1）・非弾力的（<1）・単位弾力的（=1）。",
+    "key_points": [
+      "価格弾力性・所得弾力性・交差弾力性の区別。税負担の帰着。"
+    ],
+    "pitfall": "弾力性は絶対値で評価。需要の価格弾力性は通常負だが絶対値で議論。",
+    "formula": "Ed = %ΔQd / %ΔP"
+  },
+  {
+    "term_id": "TERM0034",
+    "topic_code": "ECON",
+    "en_canonical": "Consumer Surplus",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "消費者余剰",
+    "jp_reading": "しょうひしゃよじょう",
+    "jp_definition": "消費者が支払ってもよいと考える最高価格と実際の市場価格との差額の合計。需要曲線と価格線の間の面積。",
+    "key_points": [
+      "市場効率性の指標。価格規制・税の影響分析。"
+    ],
+    "pitfall": "消費者余剰と生産者余剰の混同。需要曲線の上側が消費者余剰。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0035",
+    "topic_code": "ECON",
+    "en_canonical": "Producer Surplus",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "生産者余剰",
+    "jp_reading": "せいさんしゃよじょう",
+    "jp_definition": "市場価格と生産者が受け入れる最低価格との差額の合計。供給曲線と価格線の間の面積。",
+    "key_points": [
+      "総余剰（社会的厚生）= 消費者余剰 + 生産者余剰。死荷重の概念。"
+    ],
+    "pitfall": "生産者余剰と利益の混同。余剰は機会費用を超える部分。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0036",
+    "topic_code": "ECON",
+    "en_canonical": "Deadweight Loss",
+    "en_aliases": [
+      "Welfare Loss"
+    ],
+    "abbreviations": [],
+    "jp_headword": "死荷重",
+    "jp_reading": "しかじゅう",
+    "jp_definition": "市場の非効率性により失われる総余剰。税・価格規制・独占などにより発生する社会的損失。",
+    "key_points": [
+      "税の死荷重は弾力性に依存。独占の非効率性。"
+    ],
+    "pitfall": "死荷重は政府収入や企業利益に移転されない「純損失」。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0037",
+    "topic_code": "ECON",
+    "en_canonical": "Gross Domestic Product",
+    "en_aliases": [],
+    "abbreviations": [
+      "GDP"
+    ],
+    "jp_headword": "国内総生産",
+    "jp_reading": "こくないそうせいさん",
+    "jp_definition": "一定期間に国内で生産されたすべての最終財・サービスの市場価値の合計。経済規模と成長の主要指標。",
+    "key_points": [
+      "支出アプローチ: GDP = C + I + G + (X - M)。名目GDPと実質GDPの区別。"
+    ],
+    "pitfall": "GDPとGNP（国民総生産）の違い。GDPは国内、GNPは国民ベース。",
+    "formula": "GDP = C + I + G + (X - M)"
+  },
+  {
+    "term_id": "TERM0038",
+    "topic_code": "ECON",
+    "en_canonical": "Inflation",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "インフレーション",
+    "jp_reading": "いんふれーしょん",
+    "jp_definition": "一般物価水準の持続的な上昇。購買力の低下をもたらし、金融政策の主要な目標の一つ。",
+    "key_points": [
+      "CPI・PPI・GDPデフレーター。コストプッシュとデマンドプル。"
+    ],
+    "pitfall": "インフレ率とインフレの混同。率は変化率、インフレは水準上昇。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0039",
+    "topic_code": "ECON",
+    "en_canonical": "Consumer Price Index",
+    "en_aliases": [],
+    "abbreviations": [
+      "CPI"
+    ],
+    "jp_headword": "消費者物価指数",
+    "jp_reading": "しょうひしゃぶっかしすう",
+    "jp_definition": "代表的な消費財・サービスのバスケットの価格変動を測定する指数。インフレの主要指標。",
+    "key_points": [
+      "基準年との比較。CPIの上方バイアス（代替・品質・新製品）。"
+    ],
+    "pitfall": "CPIは生活費の完全な指標ではない。代替効果を反映しにくい。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0040",
+    "topic_code": "ECON",
+    "en_canonical": "Monetary Policy",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "金融政策",
+    "jp_reading": "きんゆうせいさく",
+    "jp_definition": "中央銀行が金利・マネーサプライを調整して経済目標（物価安定・雇用・成長）を達成する政策。",
+    "key_points": [
+      "政策金利・公開市場操作・準備率。拡張的と緊縮的政策。"
+    ],
+    "pitfall": "金融政策と財政政策の混同。金融は中央銀行、財政は政府。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0041",
+    "topic_code": "ECON",
+    "en_canonical": "Fiscal Policy",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "財政政策",
+    "jp_reading": "ざいせいせいさく",
+    "jp_definition": "政府が歳出・税制を通じて経済に影響を与える政策。景気刺激や安定化を目的とする。",
+    "key_points": [
+      "自動安定化装置と裁量的政策。乗数効果。クラウディングアウト。"
+    ],
+    "pitfall": "財政政策の効果は金融政策との組み合わせで変化。IS-LMモデル。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0042",
+    "topic_code": "ECON",
+    "en_canonical": "Interest Rate",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "金利",
+    "jp_reading": "きんり",
+    "jp_definition": "資金の貸借に対する対価。名目金利は実質金利とインフレ期待の合計（フィッシャー方程式）。",
+    "key_points": [
+      "名目金利と実質金利の区別。金利の期間構造。"
+    ],
+    "pitfall": "名目金利と実質金利の混同。実質金利 = 名目金利 - インフレ率。",
+    "formula": "名目金利 ≈ 実質金利 + 期待インフレ率"
+  },
+  {
+    "term_id": "TERM0043",
+    "topic_code": "ECON",
+    "en_canonical": "Exchange Rate",
+    "en_aliases": [
+      "Foreign Exchange Rate"
+    ],
+    "abbreviations": [
+      "FX"
+    ],
+    "jp_headword": "為替レート",
+    "jp_reading": "かわせれーと",
+    "jp_definition": "2つの通貨間の交換比率。直接表示と間接表示がある。貿易・投資・金融政策に影響。",
+    "key_points": [
+      "直物レートと先物レート。購買力平価と金利平価。"
+    ],
+    "pitfall": "直接表示（自国通貨/外国通貨）と間接表示の混同。上昇の意味が逆。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0044",
+    "topic_code": "ECON",
+    "en_canonical": "Purchasing Power Parity",
+    "en_aliases": [],
+    "abbreviations": [
+      "PPP"
+    ],
+    "jp_headword": "購買力平価",
+    "jp_reading": "こうばいりょくへいか",
+    "jp_definition": "同一財は為替調整後に各国で同一価格になるという理論。長期的な為替レートの決定要因。",
+    "key_points": [
+      "絶対的PPPと相対的PPP。実際の為替レートとの乖離。"
+    ],
+    "pitfall": "PPPは短期では成立しにくい。取引コスト・非貿易財の存在。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0045",
+    "topic_code": "ECON",
+    "en_canonical": "Business Cycle",
+    "en_aliases": [
+      "Economic Cycle"
+    ],
+    "abbreviations": [],
+    "jp_headword": "景気循環",
+    "jp_reading": "けいきじゅんかん",
+    "jp_definition": "経済活動の拡大と収縮の周期的な変動。拡張・ピーク・収縮・トラフの4局面。",
+    "key_points": [
+      "先行指標・一致指標・遅行指標。各局面での資産パフォーマンス。"
+    ],
+    "pitfall": "景気循環の各局面で最適な資産配分が異なる。セクターローテーション。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0046",
+    "topic_code": "ECON",
+    "en_canonical": "Aggregate Demand",
+    "en_aliases": [],
+    "abbreviations": [
+      "AD"
+    ],
+    "jp_headword": "総需要",
+    "jp_reading": "そうじゅよう",
+    "jp_definition": "経済全体で需要される財・サービスの総量。消費・投資・政府支出・純輸出の合計。",
+    "key_points": [
+      "AD曲線のシフト要因。AS曲線との均衡。"
+    ],
+    "pitfall": "ADの構成要素とGDPの支出アプローチは同じ。AD = C + I + G + (X-M)。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0047",
+    "topic_code": "ECON",
+    "en_canonical": "Aggregate Supply",
+    "en_aliases": [],
+    "abbreviations": [
+      "AS"
+    ],
+    "jp_headword": "総供給",
+    "jp_reading": "そうきょうきゅう",
+    "jp_definition": "経済全体で供給される財・サービスの総量。短期ASと長期ASの区別が重要。",
+    "key_points": [
+      "短期AS（右上がり）と長期AS（垂直）。スタグフレーション。"
+    ],
+    "pitfall": "短期と長期のAS曲線の形状の違い。長期は完全雇用GDPで垂直。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0048",
+    "topic_code": "ECON",
+    "en_canonical": "Opportunity Cost",
+    "en_aliases": [
+      "Economic Cost"
+    ],
+    "abbreviations": [],
+    "jp_headword": "機会費用",
+    "jp_reading": "きかいひよう",
+    "jp_definition": "ある選択をすることで放棄した次善の選択肢の価値。経済学的意思決定の基礎概念。",
+    "key_points": [
+      "会計費用との違い。暗黙のコストを含む。"
+    ],
+    "pitfall": "会計上の利益と経済的利益の違い。経済的利益は機会費用を差し引く。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0049",
+    "topic_code": "ECON",
+    "en_canonical": "Comparative Advantage",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "比較優位",
+    "jp_reading": "ひかくゆうい",
+    "jp_definition": "他国より低い機会費用で財を生産できる状態。国際貿易の理論的基盤。",
+    "key_points": [
+      "絶対優位との違い。貿易利益の源泉。"
+    ],
+    "pitfall": "比較優位と絶対優位の混同。比較優位は相対的な効率性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0050",
+    "topic_code": "ECON",
+    "en_canonical": "Balance of Payments",
+    "en_aliases": [],
+    "abbreviations": [
+      "BOP"
+    ],
+    "jp_headword": "国際収支",
+    "jp_reading": "こくさいしゅうし",
+    "jp_definition": "一定期間における国と外国との間のすべての経済取引の記録。経常収支・資本収支・金融収支で構成。",
+    "key_points": [
+      "経常収支の構成要素。双子の赤字。為替レートへの影響。"
+    ],
+    "pitfall": "経常収支と貿易収支の混同。経常収支はサービス・所得・移転も含む。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0051",
+    "topic_code": "FSA",
+    "en_canonical": "Income Statement",
+    "en_aliases": [
+      "Profit and Loss Statement",
+      "P&L"
+    ],
+    "abbreviations": [],
+    "jp_headword": "損益計算書",
+    "jp_reading": "そんえきけいさんしょ",
+    "jp_definition": "一定期間の企業の収益・費用・利益を示す財務諸表。収益性の分析に使用。",
+    "key_points": [
+      "Revenue - Expenses = Net Income。発生主義会計。"
+    ],
+    "pitfall": "収益（Revenue）と利益（Profit/Income）の混同。収益は売上、利益は差額。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0052",
+    "topic_code": "FSA",
+    "en_canonical": "Balance Sheet",
+    "en_aliases": [
+      "Statement of Financial Position"
+    ],
+    "abbreviations": [],
+    "jp_headword": "貸借対照表",
+    "jp_reading": "たいしゃくたいしょうひょう",
+    "jp_definition": "特定時点における企業の資産・負債・株主資本を示す財務諸表。財政状態を表す。",
+    "key_points": [
+      "Assets = Liabilities + Equity。流動性の順序。"
+    ],
+    "pitfall": "貸借対照表は「時点」、損益計算書は「期間」の情報。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0053",
+    "topic_code": "FSA",
+    "en_canonical": "Cash Flow Statement",
+    "en_aliases": [
+      "Statement of Cash Flows"
+    ],
+    "abbreviations": [],
+    "jp_headword": "キャッシュフロー計算書",
+    "jp_reading": "きゃっしゅふろーけいさんしょ",
+    "jp_definition": "一定期間の現金の流入・流出を営業・投資・財務活動に分類して示す財務諸表。",
+    "key_points": [
+      "直接法と間接法。FCF（フリーキャッシュフロー）の計算。"
+    ],
+    "pitfall": "営業CFと純利益の違い。非現金項目の調整が必要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0054",
+    "topic_code": "FSA",
+    "en_canonical": "Revenue",
+    "en_aliases": [
+      "Sales",
+      "Turnover"
+    ],
+    "abbreviations": [],
+    "jp_headword": "収益",
+    "jp_reading": "しゅうえき",
+    "jp_definition": "企業の主たる事業活動から生じる経済的便益の流入。売上高とも呼ばれる。",
+    "key_points": [
+      "収益認識の5ステップモデル（IFRS 15）。"
+    ],
+    "pitfall": "収益と現金収入の違い。発生主義では現金受領前に収益認識可能。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0055",
+    "topic_code": "FSA",
+    "en_canonical": "Gross Profit",
+    "en_aliases": [
+      "Gross Margin"
+    ],
+    "abbreviations": [],
+    "jp_headword": "売上総利益",
+    "jp_reading": "うりあげそうりえき",
+    "jp_definition": "売上高から売上原価を差し引いた利益。製品・サービスの基本的な収益性を示す。",
+    "key_points": [
+      "Gross Profit = Revenue - COGS。粗利率の計算。"
+    ],
+    "pitfall": "売上総利益と営業利益の混同。営業利益はさらに販管費を差し引く。",
+    "formula": "Gross Profit = Revenue - COGS"
+  },
+  {
+    "term_id": "TERM0056",
+    "topic_code": "FSA",
+    "en_canonical": "Operating Income",
+    "en_aliases": [
+      "Operating Profit",
+      "EBIT"
+    ],
+    "abbreviations": [],
+    "jp_headword": "営業利益",
+    "jp_reading": "えいぎょうりえき",
+    "jp_definition": "売上総利益から販売費・一般管理費を差し引いた利益。本業の収益性を示す。",
+    "key_points": [
+      "EBIT（利息・税前利益）との関係。営業利益率。"
+    ],
+    "pitfall": "EBITとOperating Incomeは通常同義だが、非営業項目の扱いに注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0057",
+    "topic_code": "FSA",
+    "en_canonical": "Net Income",
+    "en_aliases": [
+      "Net Profit",
+      "Bottom Line"
+    ],
+    "abbreviations": [],
+    "jp_headword": "純利益",
+    "jp_reading": "じゅんりえき",
+    "jp_definition": "すべての収益から費用・税金を差し引いた最終利益。株主に帰属する利益。",
+    "key_points": [
+      "EPS計算の分子。包括利益との違い。"
+    ],
+    "pitfall": "純利益と包括利益の違い。包括利益はOCI（その他包括利益）を含む。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0058",
+    "topic_code": "FSA",
+    "en_canonical": "Earnings Per Share",
+    "en_aliases": [],
+    "abbreviations": [
+      "EPS"
+    ],
+    "jp_headword": "一株当たり利益",
+    "jp_reading": "ひとかぶあたりりえき",
+    "jp_definition": "純利益を発行済株式数で割った指標。株式の収益性を測定し、株価評価の基礎。",
+    "key_points": [
+      "Basic EPSとDiluted EPS。希薄化の影響。"
+    ],
+    "pitfall": "Basic EPSとDiluted EPSの違い。潜在株式の影響を考慮。",
+    "formula": "EPS = Net Income / Shares Outstanding"
+  },
+  {
+    "term_id": "TERM0059",
+    "topic_code": "FSA",
+    "en_canonical": "EBITDA",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "EBITDA",
+    "jp_reading": "いーびっとだー",
+    "jp_definition": "利息・税金・減価償却・償却前利益。営業キャッシュフローの代理指標として使用。",
+    "key_points": [
+      "Operating Income + D&A。企業価値評価での使用。"
+    ],
+    "pitfall": "EBITDAは運転資本変動・設備投資を考慮しない。FCFとは異なる。",
+    "formula": "EBITDA = EBIT + Depreciation + Amortization"
+  },
+  {
+    "term_id": "TERM0060",
+    "topic_code": "FSA",
+    "en_canonical": "Depreciation",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "減価償却",
+    "jp_reading": "げんかしょうきゃく",
+    "jp_definition": "有形固定資産の取得原価を耐用年数にわたり費用配分する会計処理。非現金費用。",
+    "key_points": [
+      "定額法・定率法・生産高比例法。税務上の影響。"
+    ],
+    "pitfall": "減価償却は現金支出を伴わない。CFでは加算調整。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0061",
+    "topic_code": "FSA",
+    "en_canonical": "Amortization",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "償却",
+    "jp_reading": "しょうきゃく",
+    "jp_definition": "無形資産の取得原価を耐用年数にわたり費用配分する会計処理。のれんは償却しない（IFRS）。",
+    "key_points": [
+      "IFRSとUS GAAPの違い（のれんの処理）。減損テスト。"
+    ],
+    "pitfall": "AmortizationとDepreciationの対象の違い。無形 vs 有形。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0062",
+    "topic_code": "FSA",
+    "en_canonical": "Working Capital",
+    "en_aliases": [
+      "Net Working Capital"
+    ],
+    "abbreviations": [],
+    "jp_headword": "運転資本",
+    "jp_reading": "うんてんしほん",
+    "jp_definition": "流動資産から流動負債を差し引いた金額。短期的な支払能力と流動性を示す。",
+    "key_points": [
+      "WC = Current Assets - Current Liabilities。運転資本管理。"
+    ],
+    "pitfall": "運転資本の増加はCFOを減少させる。在庫・売掛金の増加に注意。",
+    "formula": "Working Capital = CA - CL"
+  },
+  {
+    "term_id": "TERM0063",
+    "topic_code": "FSA",
+    "en_canonical": "Current Ratio",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "流動比率",
+    "jp_reading": "りゅうどうひりつ",
+    "jp_definition": "流動資産を流動負債で割った比率。短期支払能力の指標。一般に1.0以上が望ましい。",
+    "key_points": [
+      "Quick Ratioとの比較。業種による適正水準の違い。"
+    ],
+    "pitfall": "流動比率が高すぎると資産の非効率な運用を示唆。",
+    "formula": "Current Ratio = CA / CL"
+  },
+  {
+    "term_id": "TERM0064",
+    "topic_code": "FSA",
+    "en_canonical": "Quick Ratio",
+    "en_aliases": [
+      "Acid-Test Ratio"
+    ],
+    "abbreviations": [],
+    "jp_headword": "当座比率",
+    "jp_reading": "とうざひりつ",
+    "jp_definition": "流動資産から棚卸資産を除いた資産を流動負債で割った比率。より厳格な流動性指標。",
+    "key_points": [
+      "棚卸資産は換金に時間がかかるため除外。"
+    ],
+    "pitfall": "Current RatioとQuick Ratioの違い。在庫の流動性を考慮。",
+    "formula": "Quick Ratio = (CA - Inventory) / CL"
+  },
+  {
+    "term_id": "TERM0065",
+    "topic_code": "FSA",
+    "en_canonical": "Debt-to-Equity Ratio",
+    "en_aliases": [
+      "D/E Ratio"
+    ],
+    "abbreviations": [
+      "D/E"
+    ],
+    "jp_headword": "負債資本比率",
+    "jp_reading": "ふさいしほんひりつ",
+    "jp_definition": "総負債を株主資本で割った比率。財務レバレッジと資本構成を示す。",
+    "key_points": [
+      "レバレッジの指標。業種による適正水準。"
+    ],
+    "pitfall": "D/EとDebt-to-Assetsの違い。分母が異なる。",
+    "formula": "D/E = Total Debt / Total Equity"
+  },
+  {
+    "term_id": "TERM0066",
+    "topic_code": "FSA",
+    "en_canonical": "Return on Equity",
+    "en_aliases": [],
+    "abbreviations": [
+      "ROE"
+    ],
+    "jp_headword": "株主資本利益率",
+    "jp_reading": "かぶぬししほんりえきりつ",
+    "jp_definition": "純利益を株主資本で割った比率。株主の投資に対する収益性を測定。",
+    "key_points": [
+      "DuPont分析（3要素・5要素）。ROAとの比較。"
+    ],
+    "pitfall": "ROEが高くてもレバレッジによる場合がある。DuPont分析で要因分解。",
+    "formula": "ROE = Net Income / Equity"
+  },
+  {
+    "term_id": "TERM0067",
+    "topic_code": "FSA",
+    "en_canonical": "Return on Assets",
+    "en_aliases": [],
+    "abbreviations": [
+      "ROA"
+    ],
+    "jp_headword": "総資産利益率",
+    "jp_reading": "そうしさんりえきりつ",
+    "jp_definition": "純利益を総資産で割った比率。資産の効率的な活用度を測定。",
+    "key_points": [
+      "ROE = ROA × Financial Leverage。業種比較。"
+    ],
+    "pitfall": "ROEとROAの違い。ROEはレバレッジ効果を含む。",
+    "formula": "ROA = Net Income / Total Assets"
+  },
+  {
+    "term_id": "TERM0068",
+    "topic_code": "FSA",
+    "en_canonical": "DuPont Analysis",
+    "en_aliases": [
+      "DuPont Model"
+    ],
+    "abbreviations": [],
+    "jp_headword": "デュポン分析",
+    "jp_reading": "でゅぽんぶんせき",
+    "jp_definition": "ROEを収益性・効率性・レバレッジの3要素に分解する分析手法。",
+    "key_points": [
+      "ROE = Profit Margin × Asset Turnover × Financial Leverage。"
+    ],
+    "pitfall": "3要素分解と5要素分解の違い。5要素は税負担と金利負担を分離。",
+    "formula": "ROE = (NI/Sales) × (Sales/Assets) × (Assets/Equity)"
+  },
+  {
+    "term_id": "TERM0069",
+    "topic_code": "FSA",
+    "en_canonical": "Inventory Turnover",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "棚卸資産回転率",
+    "jp_reading": "たなおろししさんかいてんりつ",
+    "jp_definition": "売上原価を平均棚卸資産で割った比率。在庫管理の効率性を測定。",
+    "key_points": [
+      "Days of Inventory on Hand (DOH)との関係。"
+    ],
+    "pitfall": "売上高ではなく売上原価を使用。回転率と日数の換算。",
+    "formula": "Inventory Turnover = COGS / Average Inventory"
+  },
+  {
+    "term_id": "TERM0070",
+    "topic_code": "FSA",
+    "en_canonical": "Accounts Receivable Turnover",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "売掛金回転率",
+    "jp_reading": "うりかけきんかいてんりつ",
+    "jp_definition": "売上高を平均売掛金で割った比率。売掛金の回収効率を測定。",
+    "key_points": [
+      "Days of Sales Outstanding (DSO)との関係。"
+    ],
+    "pitfall": "回転率が低いと回収に問題がある可能性。与信管理の指標。",
+    "formula": "AR Turnover = Revenue / Average AR"
+  },
+  {
+    "term_id": "TERM0071",
+    "topic_code": "FSA",
+    "en_canonical": "Free Cash Flow",
+    "en_aliases": [
+      "FCF"
+    ],
+    "abbreviations": [
+      "FCF"
+    ],
+    "jp_headword": "フリーキャッシュフロー",
+    "jp_reading": "ふりーきゃっしゅふろー",
+    "jp_definition": "営業活動から生じるキャッシュフローから設備投資を差し引いた金額。株主・債権者に分配可能な現金。",
+    "key_points": [
+      "FCFF（企業全体）とFCFE（株主）の区別。企業価値評価での使用。"
+    ],
+    "pitfall": "FCFFとFCFEの計算式の違い。FCFEは負債関連CFを調整。",
+    "formula": "FCFF = CFO - CapEx"
+  },
+  {
+    "term_id": "TERM0072",
+    "topic_code": "FSA",
+    "en_canonical": "Accrual Accounting",
+    "en_aliases": [
+      "Accrual Basis"
+    ],
+    "abbreviations": [],
+    "jp_headword": "発生主義会計",
+    "jp_reading": "はっせいしゅぎかいけい",
+    "jp_definition": "現金の収支に関わらず、経済的事象の発生時点で収益・費用を認識する会計方式。",
+    "key_points": [
+      "現金主義との違い。収益認識と費用対応の原則。"
+    ],
+    "pitfall": "発生主義と現金主義の違い。発生主義では売掛金・買掛金が生じる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0073",
+    "topic_code": "FSA",
+    "en_canonical": "Deferred Tax Asset",
+    "en_aliases": [],
+    "abbreviations": [
+      "DTA"
+    ],
+    "jp_headword": "繰延税金資産",
+    "jp_reading": "くりのべぜいきんしさん",
+    "jp_definition": "将来の税金を減少させる一時差異から生じる資産。将来減算一時差異により発生。",
+    "key_points": [
+      "一時差異と永久差異の区別。評価性引当金。"
+    ],
+    "pitfall": "DTAとDTLの発生原因の違い。将来の課税所得の見込みが重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0074",
+    "topic_code": "FSA",
+    "en_canonical": "Deferred Tax Liability",
+    "en_aliases": [],
+    "abbreviations": [
+      "DTL"
+    ],
+    "jp_headword": "繰延税金負債",
+    "jp_reading": "くりのべぜいきんふさい",
+    "jp_definition": "将来の税金を増加させる一時差異から生じる負債。将来加算一時差異により発生。",
+    "key_points": [
+      "加速償却による発生例。税効果会計の理解。"
+    ],
+    "pitfall": "DTLは将来の税金支払義務。課税所得と会計上の利益の差異。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0075",
+    "topic_code": "FSA",
+    "en_canonical": "Goodwill",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "のれん",
+    "jp_reading": "のれん",
+    "jp_definition": "企業買収において支払対価が被取得企業の純資産の公正価値を超える部分。",
+    "key_points": [
+      "IFRSでは償却せず減損テスト。US GAAPとの違い。"
+    ],
+    "pitfall": "のれんは償却しない（IFRS）。減損テストで価値を評価。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0076",
+    "topic_code": "FSA",
+    "en_canonical": "Impairment",
+    "en_aliases": [
+      "Asset Impairment"
+    ],
+    "abbreviations": [],
+    "jp_headword": "減損",
+    "jp_reading": "げんそん",
+    "jp_definition": "資産の帳簿価額が回収可能価額を超える場合に認識される損失。のれん・固定資産に適用。",
+    "key_points": [
+      "減損テストの手順。IFRSとUS GAAPの違い。"
+    ],
+    "pitfall": "減損損失は一度認識すると戻入れ不可（US GAAP）。IFRSは戻入れ可能。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0077",
+    "topic_code": "FSA",
+    "en_canonical": "Operating Lease",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オペレーティングリース",
+    "jp_reading": "おぺれーてぃんぐりーす",
+    "jp_definition": "リース資産の所有に伴うリスクと経済的便益の大部分が移転しないリース。IFRS 16で会計処理が変更。",
+    "key_points": [
+      "IFRS 16では使用権資産とリース負債を認識。旧基準との違い。"
+    ],
+    "pitfall": "IFRS 16以降、ほぼすべてのリースがオンバランス化。旧基準との比較。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0078",
+    "topic_code": "FSA",
+    "en_canonical": "Finance Lease",
+    "en_aliases": [
+      "Capital Lease"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ファイナンスリース",
+    "jp_reading": "ふぁいなんすりーす",
+    "jp_definition": "リース資産の所有に伴うリスクと経済的便益の大部分が移転するリース。資産・負債を認識。",
+    "key_points": [
+      "所有権移転・割安購入オプション等の判定基準。"
+    ],
+    "pitfall": "ファイナンスリースとオペレーティングリースの判定基準。5つの条件。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0079",
+    "topic_code": "FSA",
+    "en_canonical": "IFRS",
+    "en_aliases": [
+      "International Financial Reporting Standards"
+    ],
+    "abbreviations": [
+      "IFRS"
+    ],
+    "jp_headword": "国際財務報告基準",
+    "jp_reading": "こくさいざいむほうこくきじゅん",
+    "jp_definition": "国際会計基準審議会（IASB）が策定する会計基準。原則主義に基づく。",
+    "key_points": [
+      "US GAAPとの主要な違い。LIFO禁止・減損戻入れ可能等。"
+    ],
+    "pitfall": "IFRSとUS GAAPの違いが頻出。在庫評価・減損・リース等。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0080",
+    "topic_code": "FSA",
+    "en_canonical": "US GAAP",
+    "en_aliases": [
+      "Generally Accepted Accounting Principles"
+    ],
+    "abbreviations": [
+      "GAAP"
+    ],
+    "jp_headword": "米国会計基準",
+    "jp_reading": "べいこくかいけいきじゅん",
+    "jp_definition": "米国財務会計基準審議会（FASB）が策定する会計基準。規則主義に基づく。",
+    "key_points": [
+      "IFRSとの主要な違い。LIFO許容・減損戻入れ不可等。"
+    ],
+    "pitfall": "US GAAPはLIFO許容、IFRSは禁止。試験で頻出の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0081",
+    "topic_code": "CI",
+    "en_canonical": "Corporate Governance",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コーポレートガバナンス",
+    "jp_reading": "こーぽれーとがばなんす",
+    "jp_definition": "企業の経営を監督・統制する仕組み。株主・取締役会・経営陣の関係を規定。",
+    "key_points": [
+      "取締役会の構成・独立性。ステークホルダー理論。"
+    ],
+    "pitfall": "株主利益最大化とステークホルダー理論の違い。ESGとの関連。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0082",
+    "topic_code": "CI",
+    "en_canonical": "Agency Problem",
+    "en_aliases": [
+      "Principal-Agent Problem"
+    ],
+    "abbreviations": [],
+    "jp_headword": "エージェンシー問題",
+    "jp_reading": "えーじぇんしーもんだい",
+    "jp_definition": "経営者（代理人）と株主（本人）の利害が一致しないことから生じる問題。",
+    "key_points": [
+      "情報の非対称性。モニタリングコスト・ボンディングコスト。"
+    ],
+    "pitfall": "エージェンシー問題の解決策（報酬設計・監視・敵対的買収の脅威）。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0083",
+    "topic_code": "CI",
+    "en_canonical": "Stakeholder",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ステークホルダー",
+    "jp_reading": "すてーくほるだー",
+    "jp_definition": "企業活動に利害関係を持つすべての関係者。株主・従業員・顧客・債権者・地域社会等。",
+    "key_points": [
+      "株主（Shareholder）との違い。ESG投資との関連。"
+    ],
+    "pitfall": "Stakeholder（利害関係者）とShareholder（株主）の混同。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0084",
+    "topic_code": "CI",
+    "en_canonical": "Capital Budgeting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "資本予算",
+    "jp_reading": "しほんよさん",
+    "jp_definition": "長期投資プロジェクトの評価・選択プロセス。NPV・IRR・回収期間等の手法を使用。",
+    "key_points": [
+      "NPV法が最も理論的に優れる。相互排他的プロジェクトの評価。"
+    ],
+    "pitfall": "NPVとIRRの矛盾時はNPV優先。規模・タイミングの違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0085",
+    "topic_code": "CI",
+    "en_canonical": "Weighted Average Cost of Capital",
+    "en_aliases": [],
+    "abbreviations": [
+      "WACC"
+    ],
+    "jp_headword": "加重平均資本コスト",
+    "jp_reading": "かじゅうへいきんしほんこすと",
+    "jp_definition": "企業の資金調達コストの加重平均。負債コストと株主資本コストを資本構成で加重。",
+    "key_points": [
+      "税引後負債コストを使用。最適資本構成との関係。"
+    ],
+    "pitfall": "WACCは税引後負債コストを使用。税の節税効果を反映。",
+    "formula": "WACC = (E/V)×Re + (D/V)×Rd×(1-T)"
+  },
+  {
+    "term_id": "TERM0086",
+    "topic_code": "CI",
+    "en_canonical": "Cost of Equity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "株主資本コスト",
+    "jp_reading": "かぶぬししほんこすと",
+    "jp_definition": "株主が企業に期待する収益率。CAPMやDDMで推定。",
+    "key_points": [
+      "CAPM: Re = Rf + β(Rm - Rf)。DDMアプローチ。"
+    ],
+    "pitfall": "CAPMとDDMで推定値が異なる場合がある。前提条件の確認。",
+    "formula": "Re = Rf + β × (Rm - Rf)"
+  },
+  {
+    "term_id": "TERM0087",
+    "topic_code": "CI",
+    "en_canonical": "Cost of Debt",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "負債コスト",
+    "jp_reading": "ふさいこすと",
+    "jp_definition": "企業が負債で資金調達する際のコスト。税引後ベースで計算。",
+    "key_points": [
+      "YTM（満期利回り）で推定。税の節税効果。"
+    ],
+    "pitfall": "税引前と税引後の負債コストの違い。WACCでは税引後を使用。",
+    "formula": "税引後Rd = Rd × (1 - T)"
+  },
+  {
+    "term_id": "TERM0088",
+    "topic_code": "CI",
+    "en_canonical": "Capital Structure",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "資本構成",
+    "jp_reading": "しほんこうせい",
+    "jp_definition": "企業の資金調達における負債と株主資本の組み合わせ。レバレッジの程度を示す。",
+    "key_points": [
+      "MM理論。最適資本構成。トレードオフ理論。"
+    ],
+    "pitfall": "MM理論の前提条件（税なし・倒産コストなし等）と現実の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0089",
+    "topic_code": "CI",
+    "en_canonical": "Modigliani-Miller Theorem",
+    "en_aliases": [
+      "MM Theorem"
+    ],
+    "abbreviations": [
+      "MM"
+    ],
+    "jp_headword": "モジリアーニ・ミラー理論",
+    "jp_reading": "もじりあーに・みらーりろん",
+    "jp_definition": "完全市場では資本構成は企業価値に影響しないという理論。税を考慮すると負債の節税効果が生じる。",
+    "key_points": [
+      "MM Proposition I（価値無関連）とII（株主資本コスト）。"
+    ],
+    "pitfall": "MM理論の前提と現実の違い。税・倒産コスト・エージェンシーコスト。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0090",
+    "topic_code": "CI",
+    "en_canonical": "Financial Leverage",
+    "en_aliases": [
+      "Gearing"
+    ],
+    "abbreviations": [],
+    "jp_headword": "財務レバレッジ",
+    "jp_reading": "ざいむればれっじ",
+    "jp_definition": "負債を使用して株主資本利益率を高める効果。ROEを増幅するがリスクも増加。",
+    "key_points": [
+      "DFL（財務レバレッジの程度）。ROEへの影響。"
+    ],
+    "pitfall": "レバレッジは好況時にROEを高めるが、不況時は悪化させる。",
+    "formula": "DFL = EBIT / (EBIT - Interest)"
+  },
+  {
+    "term_id": "TERM0091",
+    "topic_code": "CI",
+    "en_canonical": "Operating Leverage",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "営業レバレッジ",
+    "jp_reading": "えいぎょうればれっじ",
+    "jp_definition": "固定費の存在により売上変動がEBITに増幅して影響する効果。",
+    "key_points": [
+      "DOL（営業レバレッジの程度）。損益分岐点分析。"
+    ],
+    "pitfall": "営業レバレッジと財務レバレッジの違い。固定費 vs 金利。",
+    "formula": "DOL = (Sales - VC) / (Sales - VC - FC)"
+  },
+  {
+    "term_id": "TERM0092",
+    "topic_code": "CI",
+    "en_canonical": "Breakeven Point",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "損益分岐点",
+    "jp_reading": "そんえきぶんきてん",
+    "jp_definition": "総収益と総費用が等しくなる売上高または販売数量。利益がゼロになる点。",
+    "key_points": [
+      "BEP = Fixed Costs / (Price - Variable Cost per unit)。"
+    ],
+    "pitfall": "損益分岐点分析の前提（線形費用・単一製品等）。",
+    "formula": "BEP = FC / (P - VC)"
+  },
+  {
+    "term_id": "TERM0093",
+    "topic_code": "CI",
+    "en_canonical": "Dividend Policy",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "配当政策",
+    "jp_reading": "はいとうせいさく",
+    "jp_definition": "企業が利益をどの程度配当として株主に還元するかの方針。",
+    "key_points": [
+      "配当無関連理論（MM）。シグナリング効果。配当の安定性。"
+    ],
+    "pitfall": "配当政策と株価の関係。MM理論と現実の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0094",
+    "topic_code": "CI",
+    "en_canonical": "Share Repurchase",
+    "en_aliases": [
+      "Stock Buyback"
+    ],
+    "abbreviations": [],
+    "jp_headword": "自社株買い",
+    "jp_reading": "じしゃかぶかい",
+    "jp_definition": "企業が自社の株式を市場から買い戻すこと。配当の代替手段として使用。",
+    "key_points": [
+      "EPSへの影響。税務上の利点。シグナリング効果。"
+    ],
+    "pitfall": "自社株買いと配当の違い。株主への還元方法の選択。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0095",
+    "topic_code": "CI",
+    "en_canonical": "Working Capital Management",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "運転資本管理",
+    "jp_reading": "うんてんしほんかんり",
+    "jp_definition": "流動資産と流動負債の効率的な管理。流動性と収益性のバランス。",
+    "key_points": [
+      "キャッシュコンバージョンサイクル。在庫・売掛金・買掛金管理。"
+    ],
+    "pitfall": "運転資本の増加はCFOを減少させる。効率性と流動性のトレードオフ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0096",
+    "topic_code": "CI",
+    "en_canonical": "Cash Conversion Cycle",
+    "en_aliases": [],
+    "abbreviations": [
+      "CCC"
+    ],
+    "jp_headword": "キャッシュコンバージョンサイクル",
+    "jp_reading": "きゃっしゅこんばーじょんさいくる",
+    "jp_definition": "原材料購入から売上代金回収までの日数。短いほど効率的。",
+    "key_points": [
+      "CCC = DOH + DSO - DPO。運転資本管理の指標。"
+    ],
+    "pitfall": "CCCの構成要素（DOH・DSO・DPO）の計算と解釈。",
+    "formula": "CCC = DOH + DSO - DPO"
+  },
+  {
+    "term_id": "TERM0097",
+    "topic_code": "CI",
+    "en_canonical": "Net Present Value Rule",
+    "en_aliases": [
+      "NPV Rule"
+    ],
+    "abbreviations": [],
+    "jp_headword": "NPVルール",
+    "jp_reading": "えぬぴーぶいるーる",
+    "jp_definition": "NPVが正のプロジェクトを採用し、負のプロジェクトを棄却する投資決定ルール。",
+    "key_points": [
+      "NPV > 0 は価値創造を意味する。IRRルールとの比較。"
+    ],
+    "pitfall": "NPVルールとIRRルールの矛盾。相互排他的プロジェクトでの選択。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0098",
+    "topic_code": "CI",
+    "en_canonical": "Payback Period",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "回収期間",
+    "jp_reading": "かいしゅうきかん",
+    "jp_definition": "投資額を回収するまでに要する期間。単純だが貨幣の時間価値を無視。",
+    "key_points": [
+      "割引回収期間との違い。意思決定基準としての限界。"
+    ],
+    "pitfall": "回収期間法は時間価値を無視。回収後のCFも考慮しない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0099",
+    "topic_code": "CI",
+    "en_canonical": "Profitability Index",
+    "en_aliases": [],
+    "abbreviations": [
+      "PI"
+    ],
+    "jp_headword": "収益性指数",
+    "jp_reading": "しゅうえきせいしすう",
+    "jp_definition": "投資の現在価値を初期投資額で割った比率。1より大きければ採用。",
+    "key_points": [
+      "PI = PV of Future CFs / Initial Investment。資本制約下での使用。"
+    ],
+    "pitfall": "PIとNPVの関係。PI > 1 ⟺ NPV > 0。",
+    "formula": "PI = PV / Initial Investment"
+  },
+  {
+    "term_id": "TERM0100",
+    "topic_code": "CI",
+    "en_canonical": "Hurdle Rate",
+    "en_aliases": [
+      "Minimum Acceptable Return"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ハードルレート",
+    "jp_reading": "はーどるれーと",
+    "jp_definition": "投資プロジェクトが採用されるために超えるべき最低限の収益率。通常WACCを使用。",
+    "key_points": [
+      "IRRとの比較。リスク調整の必要性。"
+    ],
+    "pitfall": "ハードルレートとWACCの関係。プロジェクト固有リスクの調整。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0101",
+    "topic_code": "EQ",
+    "en_canonical": "Equity",
+    "en_aliases": [
+      "Shareholders Equity",
+      "Stock"
+    ],
+    "abbreviations": [],
+    "jp_headword": "株式",
+    "jp_reading": "かぶしき",
+    "jp_definition": "企業の所有権を表す証券。普通株と優先株がある。残余請求権と議決権を持つ。",
+    "key_points": [
+      "普通株と優先株の違い。株主の権利（配当・議決・残余財産）。"
+    ],
+    "pitfall": "Equity（株式/株主資本）の文脈による意味の違い。証券 vs 会計上の資本。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0102",
+    "topic_code": "EQ",
+    "en_canonical": "Common Stock",
+    "en_aliases": [
+      "Ordinary Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "普通株",
+    "jp_reading": "ふつうかぶ",
+    "jp_definition": "企業の基本的な所有権を表す株式。議決権と残余請求権を持ち、配当は保証されない。",
+    "key_points": [
+      "優先株との違い。希薄化の影響。"
+    ],
+    "pitfall": "普通株と優先株の権利の違い。配当・議決権・清算時の優先順位。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0103",
+    "topic_code": "EQ",
+    "en_canonical": "Preferred Stock",
+    "en_aliases": [
+      "Preference Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "優先株",
+    "jp_reading": "ゆうせんかぶ",
+    "jp_definition": "普通株より配当・清算時に優先権を持つ株式。通常は議決権がない。債券と株式の中間的性質。",
+    "key_points": [
+      "累積型・参加型・転換型の区別。評価方法（永久年金モデル）。"
+    ],
+    "pitfall": "優先株は株式だが、評価は債券に近い。配当利回りで評価。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0104",
+    "topic_code": "EQ",
+    "en_canonical": "Market Capitalization",
+    "en_aliases": [
+      "Market Cap"
+    ],
+    "abbreviations": [],
+    "jp_headword": "時価総額",
+    "jp_reading": "じかそうがく",
+    "jp_definition": "株価に発行済株式数を乗じた企業の市場価値。企業規模の指標。",
+    "key_points": [
+      "Large Cap・Mid Cap・Small Capの分類。"
+    ],
+    "pitfall": "時価総額と企業価値（EV）の違い。EVは負債も含む。",
+    "formula": "Market Cap = Price × Shares Outstanding"
+  },
+  {
+    "term_id": "TERM0105",
+    "topic_code": "EQ",
+    "en_canonical": "Enterprise Value",
+    "en_aliases": [],
+    "abbreviations": [
+      "EV"
+    ],
+    "jp_headword": "企業価値",
+    "jp_reading": "きぎょうかち",
+    "jp_definition": "株式時価総額に純負債を加えた企業全体の価値。買収価格の指標。",
+    "key_points": [
+      "EV = Market Cap + Debt - Cash。EV/EBITDA倍率。"
+    ],
+    "pitfall": "EVとEquity Valueの違い。EVは負債保有者も含む全体価値。",
+    "formula": "EV = Market Cap + Debt - Cash"
+  },
+  {
+    "term_id": "TERM0106",
+    "topic_code": "EQ",
+    "en_canonical": "Price-to-Earnings Ratio",
+    "en_aliases": [
+      "P/E Ratio"
+    ],
+    "abbreviations": [
+      "P/E",
+      "PER"
+    ],
+    "jp_headword": "株価収益率",
+    "jp_reading": "かぶかしゅうえきりつ",
+    "jp_definition": "株価を一株当たり利益（EPS）で割った比率。株式の相対的な割高・割安を判断。",
+    "key_points": [
+      "Trailing P/EとForward P/E。業種・成長率による違い。"
+    ],
+    "pitfall": "P/Eが高い＝割高とは限らない。成長期待を反映。",
+    "formula": "P/E = Price / EPS"
+  },
+  {
+    "term_id": "TERM0107",
+    "topic_code": "EQ",
+    "en_canonical": "Price-to-Book Ratio",
+    "en_aliases": [
+      "P/B Ratio"
+    ],
+    "abbreviations": [
+      "P/B",
+      "PBR"
+    ],
+    "jp_headword": "株価純資産倍率",
+    "jp_reading": "かぶかじゅんしさんばいりつ",
+    "jp_definition": "株価を一株当たり純資産（BPS）で割った比率。資産価値に対する市場評価。",
+    "key_points": [
+      "P/B < 1 は資産価値割れ。ROEとの関係。"
+    ],
+    "pitfall": "P/Bが低い＝割安とは限らない。資産の質・収益性を確認。",
+    "formula": "P/B = Price / Book Value per Share"
+  },
+  {
+    "term_id": "TERM0108",
+    "topic_code": "EQ",
+    "en_canonical": "Dividend Discount Model",
+    "en_aliases": [
+      "DDM"
+    ],
+    "abbreviations": [
+      "DDM"
+    ],
+    "jp_headword": "配当割引モデル",
+    "jp_reading": "はいとうわりびきもでる",
+    "jp_definition": "将来の配当を現在価値に割り引いて株式価値を算出するモデル。",
+    "key_points": [
+      "Gordon Growth Model: P = D1 / (r - g)。多段階DDM。"
+    ],
+    "pitfall": "DDMは配当を支払う企業にのみ適用可能。成長率gの推定が重要。",
+    "formula": "P = D1 / (r - g)"
+  },
+  {
+    "term_id": "TERM0109",
+    "topic_code": "EQ",
+    "en_canonical": "Gordon Growth Model",
+    "en_aliases": [
+      "Constant Growth DDM"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ゴードン成長モデル",
+    "jp_reading": "ごーどんせいちょうもでる",
+    "jp_definition": "配当が一定率で永続的に成長すると仮定した配当割引モデル。",
+    "key_points": [
+      "P = D1 / (r - g)。g < r の条件。"
+    ],
+    "pitfall": "成長率gが要求収益率rを超えるとモデルは適用不可。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0110",
+    "topic_code": "EQ",
+    "en_canonical": "Free Cash Flow to Equity",
+    "en_aliases": [
+      "FCFE"
+    ],
+    "abbreviations": [
+      "FCFE"
+    ],
+    "jp_headword": "株主帰属フリーキャッシュフロー",
+    "jp_reading": "かぶぬしきぞくふりーきゃっしゅふろー",
+    "jp_definition": "営業CFから設備投資と純負債返済を差し引いた株主に分配可能なCF。",
+    "key_points": [
+      "FCFE = CFO - CapEx - Net Debt Repayment。株式評価での使用。"
+    ],
+    "pitfall": "FCFEとFCFFの違い。FCFEは株主のみ、FCFFは全資本提供者。",
+    "formula": "FCFE = CFO - CapEx + Net Borrowing"
+  },
+  {
+    "term_id": "TERM0111",
+    "topic_code": "EQ",
+    "en_canonical": "Free Cash Flow to Firm",
+    "en_aliases": [
+      "FCFF"
+    ],
+    "abbreviations": [
+      "FCFF"
+    ],
+    "jp_headword": "企業帰属フリーキャッシュフロー",
+    "jp_reading": "きぎょうきぞくふりーきゃっしゅふろー",
+    "jp_definition": "株主と債権者の両方に分配可能なキャッシュフロー。企業価値評価に使用。",
+    "key_points": [
+      "FCFF = EBIT(1-T) + D&A - CapEx - ΔWC。WACCで割引。"
+    ],
+    "pitfall": "FCFFとFCFEの計算式の違い。金利の扱いに注意。",
+    "formula": "FCFF = EBIT(1-T) + D&A - CapEx - ΔWC"
+  },
+  {
+    "term_id": "TERM0112",
+    "topic_code": "EQ",
+    "en_canonical": "Intrinsic Value",
+    "en_aliases": [
+      "Fair Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "本質的価値",
+    "jp_reading": "ほんしつてきかち",
+    "jp_definition": "企業のファンダメンタルズに基づく理論的な株式価値。市場価格との比較で投資判断。",
+    "key_points": [
+      "DCF法・相対評価法で算出。市場価格との乖離。"
+    ],
+    "pitfall": "Intrinsic ValueとMarket Priceの違い。市場の非効率性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0113",
+    "topic_code": "EQ",
+    "en_canonical": "Market Efficiency",
+    "en_aliases": [
+      "Efficient Market Hypothesis"
+    ],
+    "abbreviations": [
+      "EMH"
+    ],
+    "jp_headword": "市場効率性",
+    "jp_reading": "しじょうこうりつせい",
+    "jp_definition": "株価が利用可能な情報をすべて反映しているという仮説。3つの形態がある。",
+    "key_points": [
+      "Weak・Semi-strong・Strong Form。各形態での情報反映。"
+    ],
+    "pitfall": "3つの効率性の違い。テクニカル分析・ファンダメンタル分析の有効性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0114",
+    "topic_code": "EQ",
+    "en_canonical": "Weak Form Efficiency",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "弱度の効率性",
+    "jp_reading": "じゃくどのこうりつせい",
+    "jp_definition": "株価が過去の価格・出来高情報をすべて反映している状態。テクニカル分析は無効。",
+    "key_points": [
+      "過去の価格パターンから超過収益は得られない。"
+    ],
+    "pitfall": "弱度効率性ではファンダメンタル分析は有効な可能性がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0115",
+    "topic_code": "EQ",
+    "en_canonical": "Semi-Strong Form Efficiency",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "準強度の効率性",
+    "jp_reading": "じゅんきょうどのこうりつせい",
+    "jp_definition": "株価が公開情報をすべて反映している状態。ファンダメンタル分析も無効。",
+    "key_points": [
+      "公開情報に基づく超過収益は得られない。イベントスタディ。"
+    ],
+    "pitfall": "準強度効率性ではインサイダー情報のみが有効。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0116",
+    "topic_code": "EQ",
+    "en_canonical": "Strong Form Efficiency",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "強度の効率性",
+    "jp_reading": "きょうどのこうりつせい",
+    "jp_definition": "株価がすべての情報（公開・非公開）を反映している状態。いかなる分析も無効。",
+    "key_points": [
+      "インサイダー情報でも超過収益は得られない。現実には成立しにくい。"
+    ],
+    "pitfall": "強度効率性は理論上の概念。インサイダー取引規制の存在が反証。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0117",
+    "topic_code": "EQ",
+    "en_canonical": "Industry Analysis",
+    "en_aliases": [
+      "Sector Analysis"
+    ],
+    "abbreviations": [],
+    "jp_headword": "業種分析",
+    "jp_reading": "ぎょうしゅぶんせき",
+    "jp_definition": "投資対象業種の競争環境・成長性・収益性を分析する手法。",
+    "key_points": [
+      "ポーターの5つの力。業種ライフサイクル。"
+    ],
+    "pitfall": "業種分析と企業分析の順序。トップダウンアプローチ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0118",
+    "topic_code": "EQ",
+    "en_canonical": "Porter's Five Forces",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ポーターの5つの力",
+    "jp_reading": "ぽーたーのいつつのちから",
+    "jp_definition": "業界の競争環境を分析するフレームワーク。収益性に影響する5つの競争要因。",
+    "key_points": [
+      "新規参入・代替品・買い手・売り手の交渉力・既存競争。"
+    ],
+    "pitfall": "5つの力が強いほど業界の収益性は低下。参入障壁の重要性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0119",
+    "topic_code": "EQ",
+    "en_canonical": "Equity Risk Premium",
+    "en_aliases": [],
+    "abbreviations": [
+      "ERP"
+    ],
+    "jp_headword": "株式リスクプレミアム",
+    "jp_reading": "かぶしきりすくぷれみあむ",
+    "jp_definition": "株式投資がリスクフリー資産を上回る期待超過収益率。CAPMの重要な入力値。",
+    "key_points": [
+      "歴史的ERP vs 期待ERP。推定方法の違い。"
+    ],
+    "pitfall": "ERPの推定値は手法により大きく異なる。前提条件の確認。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0120",
+    "topic_code": "EQ",
+    "en_canonical": "Dividend Yield",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "配当利回り",
+    "jp_reading": "はいとうりまわり",
+    "jp_definition": "年間配当を株価で割った比率。インカム投資家にとって重要な指標。",
+    "key_points": [
+      "Dividend Yield = DPS / Price。高配当株の特性。"
+    ],
+    "pitfall": "配当利回りが高い＝良い投資とは限らない。株価下落の可能性。",
+    "formula": "Dividend Yield = DPS / Price"
+  },
+  {
+    "term_id": "TERM0121",
+    "topic_code": "FI",
+    "en_canonical": "Bond",
+    "en_aliases": [
+      "Fixed Income Security"
+    ],
+    "abbreviations": [],
+    "jp_headword": "債券",
+    "jp_reading": "さいけん",
+    "jp_definition": "発行体が投資家に対して元本返済と利息支払いを約束する債務証券。",
+    "key_points": [
+      "額面・クーポン・満期の3要素。信用リスク・金利リスク。"
+    ],
+    "pitfall": "BondとLoanの違い。債券は流通市場で取引可能。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0122",
+    "topic_code": "FI",
+    "en_canonical": "Coupon Rate",
+    "en_aliases": [
+      "Nominal Rate"
+    ],
+    "abbreviations": [],
+    "jp_headword": "クーポンレート",
+    "jp_reading": "くーぽんれーと",
+    "jp_definition": "債券の額面に対する年間利息支払いの割合。発行時に固定される。",
+    "key_points": [
+      "Coupon = Face Value × Coupon Rate。YTMとの違い。"
+    ],
+    "pitfall": "Coupon RateとYTMの違い。Couponは固定、YTMは市場で変動。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0123",
+    "topic_code": "FI",
+    "en_canonical": "Face Value",
+    "en_aliases": [
+      "Par Value",
+      "Principal"
+    ],
+    "abbreviations": [],
+    "jp_headword": "額面",
+    "jp_reading": "がくめん",
+    "jp_definition": "債券の満期時に返済される元本金額。通常1000ドルまたは100ドル。",
+    "key_points": [
+      "クーポン計算の基準。パー・プレミアム・ディスカウント。"
+    ],
+    "pitfall": "Face ValueとMarket Priceの違い。市場価格は変動する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0124",
+    "topic_code": "FI",
+    "en_canonical": "Yield to Maturity",
+    "en_aliases": [],
+    "abbreviations": [
+      "YTM"
+    ],
+    "jp_headword": "満期利回り",
+    "jp_reading": "まんきりまわり",
+    "jp_definition": "債券を満期まで保有した場合の年率換算収益率。債券価格と等価のIRR。",
+    "key_points": [
+      "債券価格とYTMは逆相関。再投資リスクの仮定。"
+    ],
+    "pitfall": "YTMは再投資率をYTM自身と仮定。実際の収益率と異なる可能性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0125",
+    "topic_code": "FI",
+    "en_canonical": "Current Yield",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "直接利回り",
+    "jp_reading": "ちょくせつりまわり",
+    "jp_definition": "年間クーポンを現在の市場価格で割った利回り。YTMの近似値。",
+    "key_points": [
+      "Current Yield = Annual Coupon / Price。YTMとの違い。"
+    ],
+    "pitfall": "Current YieldはYTMの近似。資本損益を考慮しない。",
+    "formula": "Current Yield = Coupon / Price"
+  },
+  {
+    "term_id": "TERM0126",
+    "topic_code": "FI",
+    "en_canonical": "Duration",
+    "en_aliases": [
+      "Macaulay Duration"
+    ],
+    "abbreviations": [],
+    "jp_headword": "デュレーション",
+    "jp_reading": "でゅれーしょん",
+    "jp_definition": "債券のキャッシュフローの加重平均回収期間。金利感応度の指標。",
+    "key_points": [
+      "Modified Duration = Macaulay Duration / (1 + y)。価格変化の推定。"
+    ],
+    "pitfall": "DurationとMaturityの違い。Durationはリスク指標、Maturityは期間。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0127",
+    "topic_code": "FI",
+    "en_canonical": "Modified Duration",
+    "en_aliases": [],
+    "abbreviations": [
+      "MD"
+    ],
+    "jp_headword": "修正デュレーション",
+    "jp_reading": "しゅうせいでゅれーしょん",
+    "jp_definition": "金利変化1%に対する債券価格の変化率。金利リスク管理の基本指標。",
+    "key_points": [
+      "ΔP/P ≈ -MD × Δy。凸性との組み合わせ。"
+    ],
+    "pitfall": "Modified Durationは線形近似。大きな金利変化には凸性が必要。",
+    "formula": "ΔP/P ≈ -MD × Δy"
+  },
+  {
+    "term_id": "TERM0128",
+    "topic_code": "FI",
+    "en_canonical": "Convexity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コンベクシティ",
+    "jp_reading": "こんべくしてぃ",
+    "jp_definition": "債券価格と利回りの関係の曲率。デュレーションによる近似誤差を補正。",
+    "key_points": [
+      "正のコンベクシティは投資家に有利。価格変化の精緻な推定。"
+    ],
+    "pitfall": "Convexityは二次項。大きな金利変化での価格推定に必要。",
+    "formula": "ΔP/P ≈ -MD × Δy + 0.5 × Convexity × (Δy)²"
+  },
+  {
+    "term_id": "TERM0129",
+    "topic_code": "FI",
+    "en_canonical": "Credit Risk",
+    "en_aliases": [
+      "Default Risk"
+    ],
+    "abbreviations": [],
+    "jp_headword": "信用リスク",
+    "jp_reading": "しんようりすく",
+    "jp_definition": "債券発行体が利息・元本の支払いを履行できないリスク。",
+    "key_points": [
+      "信用格付け。スプレッド。デフォルト確率と回収率。"
+    ],
+    "pitfall": "Credit RiskとInterest Rate Riskの違い。発行体 vs 市場金利。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0130",
+    "topic_code": "FI",
+    "en_canonical": "Credit Spread",
+    "en_aliases": [
+      "Yield Spread"
+    ],
+    "abbreviations": [],
+    "jp_headword": "信用スプレッド",
+    "jp_reading": "しんようすぷれっど",
+    "jp_definition": "社債利回りと同満期国債利回りの差。信用リスクの対価。",
+    "key_points": [
+      "スプレッドの決定要因。景気循環との関係。"
+    ],
+    "pitfall": "Credit SpreadとOption-Adjusted Spread（OAS）の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0131",
+    "topic_code": "FI",
+    "en_canonical": "Interest Rate Risk",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "金利リスク",
+    "jp_reading": "きんりりすく",
+    "jp_definition": "市場金利の変動により債券価格が変動するリスク。デュレーションで測定。",
+    "key_points": [
+      "金利上昇→債券価格下落。長期債ほどリスク大。"
+    ],
+    "pitfall": "Interest Rate RiskとReinvestment Riskのトレードオフ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0132",
+    "topic_code": "FI",
+    "en_canonical": "Reinvestment Risk",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "再投資リスク",
+    "jp_reading": "さいとうしりすく",
+    "jp_definition": "クーポンを当初想定した利回りで再投資できないリスク。金利低下時に顕在化。",
+    "key_points": [
+      "ゼロクーポン債は再投資リスクなし。金利リスクとのトレードオフ。"
+    ],
+    "pitfall": "Reinvestment RiskとInterest Rate Riskは逆方向。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0133",
+    "topic_code": "FI",
+    "en_canonical": "Yield Curve",
+    "en_aliases": [
+      "Term Structure"
+    ],
+    "abbreviations": [],
+    "jp_headword": "イールドカーブ",
+    "jp_reading": "いーるどかーぶ",
+    "jp_definition": "満期と利回りの関係を示す曲線。金利の期間構造を表す。",
+    "key_points": [
+      "正常・逆イールド・フラット。期待理論・流動性プレミアム理論。"
+    ],
+    "pitfall": "イールドカーブの形状と景気予測。逆イールドは景気後退の先行指標。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0134",
+    "topic_code": "FI",
+    "en_canonical": "Spot Rate",
+    "en_aliases": [
+      "Zero Rate"
+    ],
+    "abbreviations": [],
+    "jp_headword": "スポットレート",
+    "jp_reading": "すぽっとれーと",
+    "jp_definition": "特定の満期までの割引率。ゼロクーポン債の利回りに相当。",
+    "key_points": [
+      "フォワードレートとの関係。ブートストラップ法。"
+    ],
+    "pitfall": "Spot RateとYTMの違い。Spot Rateは各期間固有の割引率。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0135",
+    "topic_code": "FI",
+    "en_canonical": "Forward Rate",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "フォワードレート",
+    "jp_reading": "ふぉわーどれーと",
+    "jp_definition": "将来の特定期間に適用される予想金利。スポットレートから計算。",
+    "key_points": [
+      "スポットレートとの関係式。金利予想の指標。"
+    ],
+    "pitfall": "Forward RateとSpot Rateの違い。Forwardは将来期間の金利。",
+    "formula": "(1+S2)² = (1+S1)*(1+f1;2)"
+  },
+  {
+    "term_id": "TERM0136",
+    "topic_code": "FI",
+    "en_canonical": "Zero-Coupon Bond",
+    "en_aliases": [
+      "Discount Bond"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ゼロクーポン債",
+    "jp_reading": "ぜろくーぽんさい",
+    "jp_definition": "クーポンを支払わず、額面より低い価格で発行される債券。満期に額面を受け取る。",
+    "key_points": [
+      "再投資リスクなし。金利リスクは高い。税務上の扱い。"
+    ],
+    "pitfall": "ゼロクーポン債のDurationは満期と等しい。再投資リスクゼロ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0137",
+    "topic_code": "FI",
+    "en_canonical": "Callable Bond",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コーラブル債",
+    "jp_reading": "こーらぶるさい",
+    "jp_definition": "発行体が満期前に額面で償還できるオプション付き債券。金利低下時に行使。",
+    "key_points": [
+      "コールリスク。OAS（オプション調整スプレッド）。"
+    ],
+    "pitfall": "Callable BondはPutable Bondと逆。発行体有利 vs 投資家有利。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0138",
+    "topic_code": "FI",
+    "en_canonical": "Putable Bond",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "プッタブル債",
+    "jp_reading": "ぷったぶるさい",
+    "jp_definition": "投資家が満期前に額面で売却できるオプション付き債券。金利上昇時に行使。",
+    "key_points": [
+      "プットオプションの価値。通常の債券より高価格。"
+    ],
+    "pitfall": "Putable BondはCallable Bondと逆のオプション。投資家有利。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0139",
+    "topic_code": "FI",
+    "en_canonical": "Floating Rate Note",
+    "en_aliases": [
+      "Floater"
+    ],
+    "abbreviations": [
+      "FRN"
+    ],
+    "jp_headword": "変動利付債",
+    "jp_reading": "へんどうりつきさい",
+    "jp_definition": "クーポンが基準金利に連動して変動する債券。金利リスクが低い。",
+    "key_points": [
+      "LIBOR/SOFR + スプレッド。価格はパー付近で推移。"
+    ],
+    "pitfall": "FRNの金利リスクは低いが、信用リスクは存在する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0140",
+    "topic_code": "FI",
+    "en_canonical": "Investment Grade",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "投資適格",
+    "jp_reading": "とうしてきかく",
+    "jp_definition": "信用格付けがBBB-/Baa3以上の債券。機関投資家が投資可能な水準。",
+    "key_points": [
+      "格付け機関（S&P・Moody's・Fitch）。格下げリスク。"
+    ],
+    "pitfall": "Investment GradeとHigh Yield（ジャンク）の境界。BBB-/Baa3。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0141",
+    "topic_code": "FI",
+    "en_canonical": "High Yield Bond",
+    "en_aliases": [
+      "Junk Bond",
+      "Speculative Grade"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ハイイールド債",
+    "jp_reading": "はいいーるどさい",
+    "jp_definition": "信用格付けがBB+/Ba1以下の債券。高い利回りと高い信用リスクを持つ。",
+    "key_points": [
+      "スプレッドの変動。景気循環との相関。デフォルト率。"
+    ],
+    "pitfall": "High YieldとInvestment Gradeの境界。格付け変更の影響。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0142",
+    "topic_code": "FI",
+    "en_canonical": "Sovereign Bond",
+    "en_aliases": [
+      "Government Bond"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ソブリン債",
+    "jp_reading": "そぶりんさい",
+    "jp_definition": "国家が発行する債券。自国通貨建ては信用リスクが低いとされる。",
+    "key_points": [
+      "米国債・日本国債。外貨建てソブリン債のリスク。"
+    ],
+    "pitfall": "ソブリン債でもデフォルトリスクは存在（外貨建て・新興国）。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0143",
+    "topic_code": "FI",
+    "en_canonical": "Municipal Bond",
+    "en_aliases": [
+      "Muni Bond"
+    ],
+    "abbreviations": [],
+    "jp_headword": "地方債",
+    "jp_reading": "ちほうさい",
+    "jp_definition": "地方自治体が発行する債券。米国では連邦税が免除される場合がある。",
+    "key_points": [
+      "一般財源債と収益債。税引後利回りの比較。"
+    ],
+    "pitfall": "地方債の税制優遇。税引後利回りで課税債券と比較。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0144",
+    "topic_code": "FI",
+    "en_canonical": "Mortgage-Backed Security",
+    "en_aliases": [],
+    "abbreviations": [
+      "MBS"
+    ],
+    "jp_headword": "住宅ローン担保証券",
+    "jp_reading": "じゅうたくろーんたんぽしょうけん",
+    "jp_definition": "住宅ローンのプールを裏付けとする証券。期限前償還リスクがある。",
+    "key_points": [
+      "パススルー証券。CMO。期限前償還リスク。"
+    ],
+    "pitfall": "MBSの期限前償還リスク。金利低下時に借り換えが増加。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0145",
+    "topic_code": "FI",
+    "en_canonical": "Asset-Backed Security",
+    "en_aliases": [],
+    "abbreviations": [
+      "ABS"
+    ],
+    "jp_headword": "資産担保証券",
+    "jp_reading": "しさんたんぽしょうけん",
+    "jp_definition": "自動車ローン・クレジットカード債権等を裏付けとする証券。",
+    "key_points": [
+      "証券化の仕組み。トランシェ構造。信用補完。"
+    ],
+    "pitfall": "ABSとMBSの違い。裏付け資産の種類が異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0146",
+    "topic_code": "DER",
+    "en_canonical": "Derivative",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "デリバティブ",
+    "jp_reading": "でりばてぃぶ",
+    "jp_definition": "原資産の価値に基づいて価格が決まる金融商品。先物・オプション・スワップ等。",
+    "key_points": [
+      "ヘッジ・投機・裁定の3つの用途。レバレッジ効果。"
+    ],
+    "pitfall": "デリバティブの価値は原資産から「派生」する。ゼロサムゲーム。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0147",
+    "topic_code": "DER",
+    "en_canonical": "Forward Contract",
+    "en_aliases": [
+      "Forward"
+    ],
+    "abbreviations": [],
+    "jp_headword": "先渡契約",
+    "jp_reading": "さきわたしけいやく",
+    "jp_definition": "将来の特定日に特定価格で原資産を売買する相対契約。カスタマイズ可能。",
+    "key_points": [
+      "先物との違い（取引所 vs OTC）。カウンターパーティリスク。"
+    ],
+    "pitfall": "ForwardとFuturesの違い。標準化・決済方法・信用リスク。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0148",
+    "topic_code": "DER",
+    "en_canonical": "Futures Contract",
+    "en_aliases": [
+      "Futures"
+    ],
+    "abbreviations": [],
+    "jp_headword": "先物契約",
+    "jp_reading": "さきものけいやく",
+    "jp_definition": "将来の特定日に特定価格で原資産を売買する取引所取引契約。標準化されている。",
+    "key_points": [
+      "日次決済（マーキング・トゥ・マーケット）。証拠金制度。"
+    ],
+    "pitfall": "Futuresは日次決済。Forwardは満期時一括決済。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0149",
+    "topic_code": "DER",
+    "en_canonical": "Option",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オプション",
+    "jp_reading": "おぷしょん",
+    "jp_definition": "原資産を特定価格で売買する権利（義務ではない）を与える契約。",
+    "key_points": [
+      "コール（買う権利）とプット（売る権利）。プレミアム。"
+    ],
+    "pitfall": "オプションの買い手は権利を持ち、売り手は義務を負う。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0150",
+    "topic_code": "DER",
+    "en_canonical": "Call Option",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コールオプション",
+    "jp_reading": "こーるおぷしょん",
+    "jp_definition": "原資産を行使価格で買う権利。原資産価格上昇で価値が増加。",
+    "key_points": [
+      "Payoff = Max(0",
+      "S - X)。損益図の理解。"
+    ],
+    "pitfall": "Call OptionとPut Optionの違い。買う権利 vs 売る権利。",
+    "formula": "Payoff = Max(0; S - X)"
+  },
+  {
+    "term_id": "TERM0151",
+    "topic_code": "DER",
+    "en_canonical": "Put Option",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "プットオプション",
+    "jp_reading": "ぷっとおぷしょん",
+    "jp_definition": "原資産を行使価格で売る権利。原資産価格下落で価値が増加。",
+    "key_points": [
+      "Payoff = Max(0",
+      "X - S)。ヘッジでの使用。"
+    ],
+    "pitfall": "Put Optionは下落リスクのヘッジに使用。保険的機能。",
+    "formula": "Payoff = Max(0; X - S)"
+  },
+  {
+    "term_id": "TERM0152",
+    "topic_code": "DER",
+    "en_canonical": "Strike Price",
+    "en_aliases": [
+      "Exercise Price"
+    ],
+    "abbreviations": [],
+    "jp_headword": "行使価格",
+    "jp_reading": "こうしかかく",
+    "jp_definition": "オプション契約で定められた原資産の売買価格。",
+    "key_points": [
+      "ATM・ITM・OTMの判定基準。本質的価値との関係。"
+    ],
+    "pitfall": "Strike PriceとSpot Priceの関係でオプションの状態が決まる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0153",
+    "topic_code": "DER",
+    "en_canonical": "Option Premium",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オプションプレミアム",
+    "jp_reading": "おぷしょんぷれみあむ",
+    "jp_definition": "オプションの買い手が売り手に支払う対価。本質的価値と時間価値の合計。",
+    "key_points": [
+      "Premium = Intrinsic Value + Time Value。価格決定要因。"
+    ],
+    "pitfall": "プレミアムは本質的価値＋時間価値。満期に近づくと時間価値は減少。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0154",
+    "topic_code": "DER",
+    "en_canonical": "Intrinsic Value (Option)",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "本質的価値（オプション）",
+    "jp_reading": "ほんしつてきかち",
+    "jp_definition": "オプションを今すぐ行使した場合の価値。ITMの場合のみ正の値。",
+    "key_points": [
+      "Call: Max(0",
+      "S-X)、Put: Max(0",
+      "X-S)。"
+    ],
+    "pitfall": "本質的価値と時間価値の区別。OTMオプションの本質的価値はゼロ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0155",
+    "topic_code": "DER",
+    "en_canonical": "Time Value (Option)",
+    "en_aliases": [
+      "Extrinsic Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "時間価値（オプション）",
+    "jp_reading": "じかんかち",
+    "jp_definition": "オプションプレミアムから本質的価値を差し引いた部分。満期までの不確実性の価値。",
+    "key_points": [
+      "満期に近づくと減少（時間減価）。ボラティリティとの関係。"
+    ],
+    "pitfall": "時間価値は満期でゼロになる。Time Decay（シータ）。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0156",
+    "topic_code": "DER",
+    "en_canonical": "In-the-Money",
+    "en_aliases": [],
+    "abbreviations": [
+      "ITM"
+    ],
+    "jp_headword": "イン・ザ・マネー",
+    "jp_reading": "いん・ざ・まねー",
+    "jp_definition": "オプションを行使すると利益が出る状態。本質的価値が正。",
+    "key_points": [
+      "Call: S > X、Put: S < X。行使の判断。"
+    ],
+    "pitfall": "ITM・ATM・OTMの区別。行使価格と原資産価格の関係。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0157",
+    "topic_code": "DER",
+    "en_canonical": "Out-of-the-Money",
+    "en_aliases": [],
+    "abbreviations": [
+      "OTM"
+    ],
+    "jp_headword": "アウト・オブ・ザ・マネー",
+    "jp_reading": "あうと・おぶ・ざ・まねー",
+    "jp_definition": "オプションを行使しても利益が出ない状態。本質的価値がゼロ。",
+    "key_points": [
+      "Call: S < X、Put: S > X。時間価値のみ。"
+    ],
+    "pitfall": "OTMオプションは行使されない。満期まで待つか売却。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0158",
+    "topic_code": "DER",
+    "en_canonical": "At-the-Money",
+    "en_aliases": [],
+    "abbreviations": [
+      "ATM"
+    ],
+    "jp_headword": "アット・ザ・マネー",
+    "jp_reading": "あっと・ざ・まねー",
+    "jp_definition": "原資産価格と行使価格がほぼ等しい状態。本質的価値はほぼゼロ。",
+    "key_points": [
+      "時間価値が最大。デルタは約0.5（コール）。"
+    ],
+    "pitfall": "ATMオプションは時間価値が最も大きい。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0159",
+    "topic_code": "DER",
+    "en_canonical": "Swap",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "スワップ",
+    "jp_reading": "すわっぷ",
+    "jp_definition": "2者間でキャッシュフローを交換する契約。金利スワップ・通貨スワップ等。",
+    "key_points": [
+      "固定金利と変動金利の交換。想定元本。"
+    ],
+    "pitfall": "スワップは元本の交換を伴わない（金利スワップ）。想定元本で計算。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0160",
+    "topic_code": "DER",
+    "en_canonical": "Interest Rate Swap",
+    "en_aliases": [],
+    "abbreviations": [
+      "IRS"
+    ],
+    "jp_headword": "金利スワップ",
+    "jp_reading": "きんりすわっぷ",
+    "jp_definition": "固定金利と変動金利のキャッシュフローを交換する契約。金利リスク管理に使用。",
+    "key_points": [
+      "固定金利支払者と変動金利支払者。スワップレート。"
+    ],
+    "pitfall": "金利スワップは元本交換なし。ネット決済。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0161",
+    "topic_code": "DER",
+    "en_canonical": "Currency Swap",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "通貨スワップ",
+    "jp_reading": "つうかすわっぷ",
+    "jp_definition": "異なる通貨建ての元本・利息を交換する契約。為替リスク管理に使用。",
+    "key_points": [
+      "元本の交換を伴う。金利スワップとの違い。"
+    ],
+    "pitfall": "通貨スワップは元本交換あり。金利スワップとの違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0162",
+    "topic_code": "DER",
+    "en_canonical": "Hedging",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ヘッジ",
+    "jp_reading": "へっじ",
+    "jp_definition": "デリバティブを使用してリスクを軽減または相殺する取引。",
+    "key_points": [
+      "ロングヘッジとショートヘッジ。ベーシスリスク。"
+    ],
+    "pitfall": "ヘッジは完全ではない。ベーシスリスクが残る場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0163",
+    "topic_code": "DER",
+    "en_canonical": "Speculation",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "投機",
+    "jp_reading": "とうき",
+    "jp_definition": "価格変動から利益を得ることを目的としたデリバティブ取引。レバレッジを活用。",
+    "key_points": [
+      "ヘッジとの違い。リスクテイク。"
+    ],
+    "pitfall": "投機はリスクを取る。ヘッジはリスクを減らす。目的の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0164",
+    "topic_code": "DER",
+    "en_canonical": "Arbitrage",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "裁定取引",
+    "jp_reading": "さいていとりひき",
+    "jp_definition": "同一資産の価格差を利用してリスクなしで利益を得る取引。市場効率性を高める。",
+    "key_points": [
+      "一物一価の法則。裁定機会の消滅。"
+    ],
+    "pitfall": "理論上、裁定取引はリスクフリー。実際には取引コスト・執行リスク。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0165",
+    "topic_code": "DER",
+    "en_canonical": "Put-Call Parity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "プット・コール・パリティ",
+    "jp_reading": "ぷっと・こーる・ぱりてぃ",
+    "jp_definition": "同一条件のコールとプットの価格関係を示す式。裁定取引の基礎。",
+    "key_points": [
+      "C + PV(X) = P + S。合成ポジションの構築。"
+    ],
+    "pitfall": "Put-Call Parityはヨーロピアンオプションに適用。アメリカンは不等式。",
+    "formula": "C + PV(X) = P + S"
+  },
+  {
+    "term_id": "TERM0166",
+    "topic_code": "DER",
+    "en_canonical": "European Option",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ヨーロピアンオプション",
+    "jp_reading": "よーろぴあんおぷしょん",
+    "jp_definition": "満期日のみ行使可能なオプション。Put-Call Parityが成立。",
+    "key_points": [
+      "アメリカンオプションとの違い。評価モデル。"
+    ],
+    "pitfall": "ヨーロピアンとアメリカンの違い。行使タイミングの柔軟性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0167",
+    "topic_code": "DER",
+    "en_canonical": "American Option",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "アメリカンオプション",
+    "jp_reading": "あめりかんおぷしょん",
+    "jp_definition": "満期日までいつでも行使可能なオプション。ヨーロピアンより価値が高い。",
+    "key_points": [
+      "早期行使の判断。配当の影響。"
+    ],
+    "pitfall": "アメリカンオプションは早期行使可能。配当株のコールで重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0168",
+    "topic_code": "DER",
+    "en_canonical": "Moneyness",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "マネーネス",
+    "jp_reading": "まねーねす",
+    "jp_definition": "オプションの行使価格と原資産価格の関係。ITM・ATM・OTMで表現。",
+    "key_points": [
+      "オプション価格への影響。デルタとの関係。"
+    ],
+    "pitfall": "Moneynessはオプションの状態を示す。価格決定の重要要素。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0169",
+    "topic_code": "DER",
+    "en_canonical": "Notional Principal",
+    "en_aliases": [
+      "Notional Amount"
+    ],
+    "abbreviations": [],
+    "jp_headword": "想定元本",
+    "jp_reading": "そうていがんぽん",
+    "jp_definition": "スワップやデリバティブの支払い計算に使用される名目上の元本金額。実際の交換はない。",
+    "key_points": [
+      "金利スワップでの使用。レバレッジの計算。"
+    ],
+    "pitfall": "想定元本は実際に交換されない。支払い計算の基準。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0170",
+    "topic_code": "DER",
+    "en_canonical": "Marking to Market",
+    "en_aliases": [
+      "Daily Settlement"
+    ],
+    "abbreviations": [],
+    "jp_headword": "値洗い",
+    "jp_reading": "ねあらい",
+    "jp_definition": "先物契約の日次決済。毎日の損益を証拠金口座で精算。",
+    "key_points": [
+      "証拠金制度。追証（マージンコール）。"
+    ],
+    "pitfall": "Marking to Marketは先物の特徴。先渡は満期時決済。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0171",
+    "topic_code": "AI",
+    "en_canonical": "Alternative Investment",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オルタナティブ投資",
+    "jp_reading": "おるたなてぃぶとうし",
+    "jp_definition": "伝統的な株式・債券以外の投資対象。PE・不動産・ヘッジファンド・コモディティ等。",
+    "key_points": [
+      "低流動性・高手数料・低透明性。分散効果。"
+    ],
+    "pitfall": "オルタナティブ投資の特徴。伝統資産との相関が低い傾向。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0172",
+    "topic_code": "AI",
+    "en_canonical": "Private Equity",
+    "en_aliases": [],
+    "abbreviations": [
+      "PE"
+    ],
+    "jp_headword": "プライベートエクイティ",
+    "jp_reading": "ぷらいべーといくいてぃ",
+    "jp_definition": "非上場企業への投資。バイアウト・ベンチャーキャピタル・成長資本等を含む。",
+    "key_points": [
+      "Jカーブ効果。IRRでの評価。流動性リスク。"
+    ],
+    "pitfall": "PEのJカーブ。初期は手数料でマイナス、後半に収益実現。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0173",
+    "topic_code": "AI",
+    "en_canonical": "Venture Capital",
+    "en_aliases": [],
+    "abbreviations": [
+      "VC"
+    ],
+    "jp_headword": "ベンチャーキャピタル",
+    "jp_reading": "べんちゃーきゃぴたる",
+    "jp_definition": "スタートアップや初期段階の企業への投資。高リスク・高リターン。",
+    "key_points": [
+      "ステージ（シード・アーリー・レイター）。出口戦略。"
+    ],
+    "pitfall": "VCとバイアウトの違い。投資ステージと戦略が異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0174",
+    "topic_code": "AI",
+    "en_canonical": "Leveraged Buyout",
+    "en_aliases": [],
+    "abbreviations": [
+      "LBO"
+    ],
+    "jp_headword": "レバレッジド・バイアウト",
+    "jp_reading": "ればれっじど・ばいあうと",
+    "jp_definition": "負債を活用して企業を買収する手法。買収後のCFで負債を返済。",
+    "key_points": [
+      "負債比率が高い。ターゲット企業の特性。"
+    ],
+    "pitfall": "LBOの成功要因。安定したCF・資産売却・業務改善。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0175",
+    "topic_code": "AI",
+    "en_canonical": "Hedge Fund",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ヘッジファンド",
+    "jp_reading": "へっじふぁんど",
+    "jp_definition": "多様な投資戦略を用いる私募ファンド。絶対リターンを追求。",
+    "key_points": [
+      "ロング/ショート・イベントドリブン・グローバルマクロ等。手数料構造。"
+    ],
+    "pitfall": "ヘッジファンドの手数料。2 and 20（管理報酬2%・成功報酬20%）。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0176",
+    "topic_code": "AI",
+    "en_canonical": "Real Estate Investment",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "不動産投資",
+    "jp_reading": "ふどうさんとうし",
+    "jp_definition": "不動産への直接投資またはREIT等を通じた間接投資。インカムとキャピタルゲイン。",
+    "key_points": [
+      "直接投資とREIT。NOI・Cap Rate。"
+    ],
+    "pitfall": "直接投資とREITの違い。流動性・分散・管理負担。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0177",
+    "topic_code": "AI",
+    "en_canonical": "Real Estate Investment Trust",
+    "en_aliases": [],
+    "abbreviations": [
+      "REIT"
+    ],
+    "jp_headword": "不動産投資信託",
+    "jp_reading": "ふどうさんとうししんたく",
+    "jp_definition": "不動産に投資し、賃料収入を投資家に分配する上場投資信託。",
+    "key_points": [
+      "配当の90%以上を分配。税制優遇。流動性。"
+    ],
+    "pitfall": "REITは株式市場で取引可能。直接投資より流動性が高い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0178",
+    "topic_code": "AI",
+    "en_canonical": "Commodity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コモディティ",
+    "jp_reading": "こもでぃてぃ",
+    "jp_definition": "原油・金・農産物等の実物資産。先物市場で取引されることが多い。",
+    "key_points": [
+      "インフレヘッジ。ロールリターン。コンタンゴとバックワーデーション。"
+    ],
+    "pitfall": "コモディティ投資の方法。先物・ETF・株式。直接保有は保管コスト。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0179",
+    "topic_code": "AI",
+    "en_canonical": "Contango",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コンタンゴ",
+    "jp_reading": "こんたんご",
+    "jp_definition": "先物価格がスポット価格より高い状態。保管コストを反映。ロールリターンは負。",
+    "key_points": [
+      "バックワーデーションとの違い。コモディティ投資への影響。"
+    ],
+    "pitfall": "コンタンゴではロールオーバー時に損失。先物価格＞スポット価格。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0180",
+    "topic_code": "AI",
+    "en_canonical": "Backwardation",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "バックワーデーション",
+    "jp_reading": "ばっくわーでーしょん",
+    "jp_definition": "先物価格がスポット価格より低い状態。供給不足等で発生。ロールリターンは正。",
+    "key_points": [
+      "コンタンゴとの違い。コンビニエンスイールド。"
+    ],
+    "pitfall": "バックワーデーションではロールオーバー時に利益。先物価格＜スポット価格。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0181",
+    "topic_code": "PM",
+    "en_canonical": "Portfolio",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ポートフォリオ",
+    "jp_reading": "ぽーとふぉりお",
+    "jp_definition": "複数の資産を組み合わせた投資の集合体。分散によりリスクを低減。",
+    "key_points": [
+      "期待リターンとリスクの計算。効率的フロンティア。"
+    ],
+    "pitfall": "ポートフォリオのリスクは個別リスクの単純合計より小さい。分散効果。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0182",
+    "topic_code": "PM",
+    "en_canonical": "Diversification",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "分散投資",
+    "jp_reading": "ぶんさんとうし",
+    "jp_definition": "複数の資産に投資することでリスクを低減する戦略。相関が低いほど効果大。",
+    "key_points": [
+      "システマティックリスクは分散不可。相関係数の重要性。"
+    ],
+    "pitfall": "分散投資で消去できるのは非システマティックリスクのみ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0183",
+    "topic_code": "PM",
+    "en_canonical": "Systematic Risk",
+    "en_aliases": [
+      "Market Risk",
+      "Non-diversifiable Risk"
+    ],
+    "abbreviations": [],
+    "jp_headword": "システマティックリスク",
+    "jp_reading": "しすてまてぃっくりすく",
+    "jp_definition": "市場全体に影響するリスク。分散投資では消去できない。ベータで測定。",
+    "key_points": [
+      "マーケットリスク。CAPMでの扱い。リスクプレミアム。"
+    ],
+    "pitfall": "Systematic RiskとUnsystematic Riskの違い。分散可能性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0184",
+    "topic_code": "PM",
+    "en_canonical": "Unsystematic Risk",
+    "en_aliases": [
+      "Idiosyncratic Risk",
+      "Diversifiable Risk"
+    ],
+    "abbreviations": [],
+    "jp_headword": "非システマティックリスク",
+    "jp_reading": "ひしすてまてぃっくりすく",
+    "jp_definition": "個別企業・業種固有のリスク。分散投資により消去可能。",
+    "key_points": [
+      "企業固有リスク。十分な分散で消去。"
+    ],
+    "pitfall": "Unsystematic Riskは分散で消去可能。報酬は得られない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0185",
+    "topic_code": "PM",
+    "en_canonical": "Beta",
+    "en_aliases": [
+      "Market Beta"
+    ],
+    "abbreviations": [
+      "β"
+    ],
+    "jp_headword": "ベータ",
+    "jp_reading": "べーた",
+    "jp_definition": "個別資産のリターンが市場リターンに対してどの程度変動するかを示す指標。",
+    "key_points": [
+      "β = 1は市場と同じ変動。CAPMでの使用。"
+    ],
+    "pitfall": "ベータはシステマティックリスクのみを測定。トータルリスクではない。",
+    "formula": "β = Cov(Ri;Rm) / Var(Rm)"
+  },
+  {
+    "term_id": "TERM0186",
+    "topic_code": "PM",
+    "en_canonical": "Capital Asset Pricing Model",
+    "en_aliases": [],
+    "abbreviations": [
+      "CAPM"
+    ],
+    "jp_headword": "資本資産価格モデル",
+    "jp_reading": "しほんしさんかかくもでる",
+    "jp_definition": "期待リターンをリスクフリーレートとベータで説明するモデル。",
+    "key_points": [
+      "E(R) = Rf + β(Rm - Rf)。SMLとの関係。"
+    ],
+    "pitfall": "CAPMの前提条件（効率的市場・同質的期待等）と現実の違い。",
+    "formula": "E(R) = Rf + β × (Rm - Rf)"
+  },
+  {
+    "term_id": "TERM0187",
+    "topic_code": "PM",
+    "en_canonical": "Security Market Line",
+    "en_aliases": [],
+    "abbreviations": [
+      "SML"
+    ],
+    "jp_headword": "証券市場線",
+    "jp_reading": "しょうけんしじょうせん",
+    "jp_definition": "ベータと期待リターンの関係を示す直線。CAPMを図示したもの。",
+    "key_points": [
+      "SML上の点は適正価格。上方は割安、下方は割高。"
+    ],
+    "pitfall": "SMLとCMLの違い。SMLはベータ、CMLは標準偏差を横軸。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0188",
+    "topic_code": "PM",
+    "en_canonical": "Capital Market Line",
+    "en_aliases": [],
+    "abbreviations": [
+      "CML"
+    ],
+    "jp_headword": "資本市場線",
+    "jp_reading": "しほんしじょうせん",
+    "jp_definition": "効率的ポートフォリオのリスク・リターン関係を示す直線。",
+    "key_points": [
+      "リスクフリー資産と市場ポートフォリオの組み合わせ。"
+    ],
+    "pitfall": "CMLは効率的ポートフォリオのみ。個別証券はCML上にない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0189",
+    "topic_code": "PM",
+    "en_canonical": "Efficient Frontier",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "効率的フロンティア",
+    "jp_reading": "こうりつてきふろんてぃあ",
+    "jp_definition": "同じリスク水準で最大リターン、または同じリターンで最小リスクのポートフォリオの集合。",
+    "key_points": [
+      "マーコウィッツの平均分散分析。最適ポートフォリオの選択。"
+    ],
+    "pitfall": "効率的フロンティア上のポートフォリオが最適。下方は非効率。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0190",
+    "topic_code": "PM",
+    "en_canonical": "Sharpe Ratio",
+    "en_aliases": [
+      "Reward-to-Variability Ratio"
+    ],
+    "abbreviations": [],
+    "jp_headword": "シャープレシオ",
+    "jp_reading": "しゃーぷれしお",
+    "jp_definition": "超過リターンをトータルリスク（標準偏差）で割った指標。リスク調整後リターン。",
+    "key_points": [
+      "Sharpe = (Rp - Rf) / σp。高いほど効率的。"
+    ],
+    "pitfall": "シャープレシオはトータルリスクを使用。トレイナーレシオはベータ。",
+    "formula": "Sharpe = (Rp - Rf) / σp"
+  },
+  {
+    "term_id": "TERM0191",
+    "topic_code": "PM",
+    "en_canonical": "Treynor Ratio",
+    "en_aliases": [
+      "Reward-to-Volatility Ratio"
+    ],
+    "abbreviations": [],
+    "jp_headword": "トレイナーレシオ",
+    "jp_reading": "とれいなーれしお",
+    "jp_definition": "超過リターンをベータで割った指標。システマティックリスク当たりのリターン。",
+    "key_points": [
+      "Treynor = (Rp - Rf) / βp。分散されたポートフォリオに適切。"
+    ],
+    "pitfall": "トレイナーレシオはベータを使用。分散が不十分ならシャープレシオ。",
+    "formula": "Treynor = (Rp - Rf) / βp"
+  },
+  {
+    "term_id": "TERM0192",
+    "topic_code": "PM",
+    "en_canonical": "Jensen's Alpha",
+    "en_aliases": [
+      "Alpha"
+    ],
+    "abbreviations": [
+      "α"
+    ],
+    "jp_headword": "ジェンセンのアルファ",
+    "jp_reading": "じぇんせんのあるふぁ",
+    "jp_definition": "CAPMが予測するリターンを超える超過リターン。運用能力の指標。",
+    "key_points": [
+      "α = Rp - [Rf + β(Rm - Rf)]。正のαは優れた運用。"
+    ],
+    "pitfall": "アルファはCAPMからの乖離。市場の非効率性または運用スキル。",
+    "formula": "α = Rp - [Rf + β(Rm - Rf)]"
+  },
+  {
+    "term_id": "TERM0193",
+    "topic_code": "PM",
+    "en_canonical": "Information Ratio",
+    "en_aliases": [],
+    "abbreviations": [
+      "IR"
+    ],
+    "jp_headword": "インフォメーションレシオ",
+    "jp_reading": "いんふぉめーしょんれしお",
+    "jp_definition": "アクティブリターンをトラッキングエラーで割った指標。アクティブ運用の効率性。",
+    "key_points": [
+      "IR = Active Return / Tracking Error。高いほど効率的。"
+    ],
+    "pitfall": "IRはアクティブ運用の評価指標。ベンチマーク対比のリスク調整リターン。",
+    "formula": "IR = (Rp - Rb) / TE"
+  },
+  {
+    "term_id": "TERM0194",
+    "topic_code": "PM",
+    "en_canonical": "Tracking Error",
+    "en_aliases": [
+      "Active Risk"
+    ],
+    "abbreviations": [],
+    "jp_headword": "トラッキングエラー",
+    "jp_reading": "とらっきんぐえらー",
+    "jp_definition": "ポートフォリオリターンとベンチマークリターンの差の標準偏差。アクティブリスク。",
+    "key_points": [
+      "パッシブ運用ではTEを最小化。アクティブ運用ではTEを許容。"
+    ],
+    "pitfall": "トラッキングエラーはアクティブリスク。ベンチマークからの乖離度。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0195",
+    "topic_code": "PM",
+    "en_canonical": "Risk-Free Rate",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "リスクフリーレート",
+    "jp_reading": "りすくふりーれーと",
+    "jp_definition": "リスクのない投資の理論上の収益率。通常は短期国債利回りを使用。",
+    "key_points": [
+      "CAPMの入力値。実質と名目の区別。"
+    ],
+    "pitfall": "リスクフリーレートは理論上の概念。実際には信用リスクゼロの資産はない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0196",
+    "topic_code": "PM",
+    "en_canonical": "Market Portfolio",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場ポートフォリオ",
+    "jp_reading": "しじょうぽーとふぉりお",
+    "jp_definition": "すべてのリスク資産を時価総額加重で含む理論上のポートフォリオ。",
+    "key_points": [
+      "CAPMでの使用。実務では株価指数で代用。"
+    ],
+    "pitfall": "市場ポートフォリオは理論上の概念。実務ではS&P500等で代用。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0197",
+    "topic_code": "PM",
+    "en_canonical": "Asset Allocation",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "資産配分",
+    "jp_reading": "しさんはいぶん",
+    "jp_definition": "ポートフォリオにおける各資産クラスへの投資比率の決定。",
+    "key_points": [
+      "戦略的資産配分と戦術的資産配分。リターンの大部分を説明。"
+    ],
+    "pitfall": "資産配分がリターンの90%以上を説明するという研究結果。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0198",
+    "topic_code": "PM",
+    "en_canonical": "Strategic Asset Allocation",
+    "en_aliases": [],
+    "abbreviations": [
+      "SAA"
+    ],
+    "jp_headword": "戦略的資産配分",
+    "jp_reading": "せんりゃくてきしさんはいぶん",
+    "jp_definition": "長期的な投資目標に基づく基本的な資産配分。定期的にリバランス。",
+    "key_points": [
+      "IPSに基づく。長期的な視点。"
+    ],
+    "pitfall": "SAA（長期）とTAA（短期）の違い。基本配分 vs 機動的調整。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0199",
+    "topic_code": "PM",
+    "en_canonical": "Tactical Asset Allocation",
+    "en_aliases": [],
+    "abbreviations": [
+      "TAA"
+    ],
+    "jp_headword": "戦術的資産配分",
+    "jp_reading": "せんじゅつてきしさんはいぶん",
+    "jp_definition": "短期的な市場見通しに基づきSAAから一時的に乖離する配分調整。",
+    "key_points": [
+      "マーケットタイミング。アクティブな意思決定。"
+    ],
+    "pitfall": "TAAは短期的な調整。SAA（基本配分）からの乖離を許容。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0200",
+    "topic_code": "PM",
+    "en_canonical": "Rebalancing",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "リバランス",
+    "jp_reading": "りばらんす",
+    "jp_definition": "ポートフォリオの資産配分を目標比率に戻す調整。定期的または閾値ベースで実施。",
+    "key_points": [
+      "取引コストとの兼ね合い。カレンダーリバランス vs パーセンテージリバランス。"
+    ],
+    "pitfall": "リバランスは「高く売り、安く買う」効果。逆張り戦略。",
+    "formula": ""
+  }
+]
