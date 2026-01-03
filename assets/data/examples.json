@@ -995,8 +995,153 @@
     "example_jp": "受験者は、the credit spreadの文脈で「戦術的資産配分」の概念をanalyzeできる必要がある。"
   },
   {
-    "term_id": "TERM0200",
-    "example_en": "The candidate should be able to assume the concept of Rebalancing in the context of the required return.",
-    "example_jp": "受験者は、the required returnの文脈で「リバランス」の概念をassumeできる必要がある。"
+    "term_id": "TERM0201",
+    "example_en": "Companies raise capital in the primary market through initial public offerings (IPOs) and seasoned equity offerings (SEOs).",
+    "example_ja": "企業は新規株式公開（IPO）や公募増資（SEO）を通じて発行市場で資金を調達する。"
+  },
+  {
+    "term_id": "TERM0202",
+    "example_en": "Most stock trading occurs in the secondary market, where investors buy and sell shares among themselves.",
+    "example_ja": "株式取引の大部分は流通市場で行われ、投資家同士が株式を売買する。"
+  },
+  {
+    "term_id": "TERM0203",
+    "example_en": "A broker executes buy and sell orders on behalf of clients and earns a commission for each transaction.",
+    "example_ja": "ブローカーは顧客に代わって売買注文を執行し、各取引に対して手数料を得る。"
+  },
+  {
+    "term_id": "TERM0204",
+    "example_en": "A dealer maintains an inventory of securities and profits from the bid-ask spread.",
+    "example_ja": "ディーラーは証券の在庫を保有し、ビッド・アスク・スプレッドから利益を得る。"
+  },
+  {
+    "term_id": "TERM0205",
+    "example_en": "Market makers provide liquidity by continuously quoting bid and ask prices for specific securities.",
+    "example_ja": "マーケットメーカーは特定の証券について継続的にビッド価格とアスク価格を提示することで流動性を提供する。"
+  },
+  {
+    "term_id": "TERM0206",
+    "example_en": "A narrow bid-ask spread indicates high liquidity and lower transaction costs for investors.",
+    "example_ja": "狭いビッド・アスク・スプレッドは高い流動性と投資家にとっての低い取引コストを示す。"
+  },
+  {
+    "term_id": "TERM0207",
+    "example_en": "A market order guarantees execution but not the price at which the trade will be executed.",
+    "example_ja": "成行注文は執行を保証するが、取引が執行される価格は保証しない。"
+  },
+  {
+    "term_id": "TERM0208",
+    "example_en": "A limit order to buy at $50 will only be executed if the market price falls to $50 or below.",
+    "example_ja": "50ドルでの買い指値注文は、市場価格が50ドル以下に下落した場合にのみ執行される。"
+  },
+  {
+    "term_id": "TERM0209",
+    "example_en": "An investor places a stop-loss order at $45 to limit potential losses if the stock price declines.",
+    "example_ja": "投資家は株価が下落した場合の潜在的損失を限定するために45ドルでストップロス注文を出す。"
+  },
+  {
+    "term_id": "TERM0210",
+    "example_en": "Margin trading allows investors to leverage their positions, amplifying both gains and losses.",
+    "example_ja": "信用取引により投資家はポジションにレバレッジをかけることができ、利益と損失の両方が拡大する。"
+  },
+  {
+    "term_id": "TERM0211",
+    "example_en": "The Dow Jones Industrial Average is a price-weighted index where higher-priced stocks have greater influence.",
+    "example_ja": "ダウ・ジョーンズ工業株平均は株価加重指数であり、高株価の銘柄がより大きな影響力を持つ。"
+  },
+  {
+    "term_id": "TERM0212",
+    "example_en": "The S&P 500 is a market-cap weighted index where larger companies have greater weight.",
+    "example_ja": "S&P500は時価総額加重指数であり、大企業がより大きなウェイトを持つ。"
+  },
+  {
+    "term_id": "TERM0213",
+    "example_en": "An equal-weighted index gives the same weight to all constituent stocks regardless of their market capitalization.",
+    "example_ja": "均等加重指数は時価総額に関係なく、すべての構成銘柄に同じウェイトを与える。"
+  },
+  {
+    "term_id": "TERM0214",
+    "example_en": "Index rebalancing can cause temporary price movements in stocks being added to or removed from the index.",
+    "example_ja": "指数リバランスは、指数に追加または除外される銘柄に一時的な価格変動を引き起こす可能性がある。"
+  },
+  {
+    "term_id": "TERM0215",
+    "example_en": "A company with net income of $100 million and 50 million shares outstanding has an EPS of $2.00.",
+    "example_ja": "純利益1億ドル、発行済株式数5,000万株の企業のEPSは2.00ドルである。"
+  },
+  {
+    "term_id": "TERM0216",
+    "example_en": "Book value per share represents the accounting value of equity attributable to each share.",
+    "example_ja": "一株当たり純資産は、各株式に帰属する株主資本の会計上の価値を表す。"
+  },
+  {
+    "term_id": "TERM0217",
+    "example_en": "The price-to-sales ratio is useful for valuing companies with negative earnings.",
+    "example_ja": "株価売上高倍率は、利益がマイナスの企業を評価する際に有用である。"
+  },
+  {
+    "term_id": "TERM0218",
+    "example_en": "The price-to-cash flow ratio is less susceptible to accounting manipulation than the P/E ratio.",
+    "example_ja": "株価キャッシュフロー倍率はP/E比率よりも会計操作の影響を受けにくい。"
+  },
+  {
+    "term_id": "TERM0219",
+    "example_en": "EV/EBITDA is commonly used in M&A analysis to compare companies with different capital structures.",
+    "example_ja": "EV/EBITDAは異なる資本構成の企業を比較するためにM&A分析で一般的に使用される。"
+  },
+  {
+    "term_id": "TERM0220",
+    "example_en": "A PEG ratio below 1.0 suggests the stock may be undervalued relative to its growth prospects.",
+    "example_ja": "PEGレシオが1.0未満であることは、株式が成長見通しに対して割安である可能性を示唆する。"
+  },
+  {
+    "term_id": "TERM0221",
+    "example_en": "The justified P/E ratio is derived from the Gordon growth model and reflects fundamental value.",
+    "example_ja": "正当化P/Eはゴードン成長モデルから導出され、ファンダメンタル価値を反映する。"
+  },
+  {
+    "term_id": "TERM0222",
+    "example_en": "Terminal value often represents more than 50% of the total value in a DCF analysis.",
+    "example_ja": "継続価値はDCF分析において総価値の50%以上を占めることが多い。"
+  },
+  {
+    "term_id": "TERM0223",
+    "example_en": "The required rate of return is used as the discount rate in equity valuation models.",
+    "example_ja": "要求収益率は株式評価モデルにおいて割引率として使用される。"
+  },
+  {
+    "term_id": "TERM0224",
+    "example_en": "A company with ROE of 15% and retention ratio of 60% has a sustainable growth rate of 9%.",
+    "example_ja": "ROE15%、内部留保率60%の企業の持続可能成長率は9%である。"
+  },
+  {
+    "term_id": "TERM0225",
+    "example_en": "Callable stock gives the issuer the right to repurchase shares at a predetermined price.",
+    "example_ja": "コーラブル株式は発行企業に所定の価格で株式を買い戻す権利を与える。"
+  },
+  {
+    "term_id": "TERM0226",
+    "example_en": "Putable stock provides downside protection by allowing investors to sell shares back to the issuer.",
+    "example_ja": "プッタブル株式は投資家が発行企業に株式を売り戻すことを可能にし、下落リスクからの保護を提供する。"
+  },
+  {
+    "term_id": "TERM0227",
+    "example_en": "Convertible preferred stock allows holders to convert their shares into common stock at a specified ratio.",
+    "example_ja": "転換優先株は保有者が所定の比率で普通株に転換することを可能にする。"
+  },
+  {
+    "term_id": "TERM0228",
+    "example_en": "Cumulative preferred stockholders must receive all unpaid dividends before common stockholders receive any dividends.",
+    "example_ja": "累積優先株主は、普通株主が配当を受け取る前に、すべての未払配当を受け取る必要がある。"
+  },
+  {
+    "term_id": "TERM0229",
+    "example_en": "Loss aversion causes investors to hold losing positions too long, hoping to break even.",
+    "example_ja": "損失回避により、投資家は損益分岐点に戻ることを期待して、損失ポジションを長く保有しすぎる。"
+  },
+  {
+    "term_id": "TERM0230",
+    "example_en": "Herding behavior can lead to market bubbles as investors follow the crowd rather than their own analysis.",
+    "example_ja": "群集行動は、投資家が自身の分析ではなく群衆に従うことで、市場バブルを引き起こす可能性がある。"
   }
 ]

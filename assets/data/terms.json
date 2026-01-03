@@ -3309,18 +3309,543 @@
     "formula": ""
   },
   {
-    "term_id": "TERM0200",
-    "topic_code": "PM",
-    "en_canonical": "Rebalancing",
+    "term_id": "TERM0201",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "IPO・SEO（公募増資）の違い。引受業者の役割。"
+    ],
+    "pitfall": "Primary Market（発行市場）とSecondary Market（流通市場）の混同。",
+    "formula": "",
+    "en_canonical": "Primary Market",
+    "en_aliases": [
+      "New Issue Market"
+    ],
+    "abbreviations": [],
+    "jp_headword": "発行市場",
+    "jp_reading": "はっこうしじょう",
+    "jp_definition": "企業が新規に証券を発行し、投資家に直接販売する市場。IPO（新規株式公開）や増資が行われる。"
+  },
+  {
+    "term_id": "TERM0202",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "取引所（NYSE等）とOTC市場の違い。流動性の重要性。"
+    ],
+    "pitfall": "Secondary Marketでの取引は発行企業に資金が入らない。",
+    "formula": "",
+    "en_canonical": "Secondary Market",
+    "en_aliases": [
+      "Trading Market"
+    ],
+    "abbreviations": [],
+    "jp_headword": "流通市場",
+    "jp_reading": "りゅうつうしじょう",
+    "jp_definition": "既発行の証券が投資家間で売買される市場。取引所市場と店頭市場がある。"
+  },
+  {
+    "term_id": "TERM0203",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "Broker vs Dealer の違い。Best Execution義務。"
+    ],
+    "pitfall": "BrokerとDealerの混同。Brokerは代理人、Dealerは自己勘定取引。",
+    "formula": "",
+    "en_canonical": "Broker",
+    "en_aliases": [
+      "Securities Broker"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ブローカー",
+    "jp_reading": "ぶろーかー",
+    "jp_definition": "顧客の注文を執行する仲介業者。自己勘定では取引せず、手数料収入を得る。"
+  },
+  {
+    "term_id": "TERM0204",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "在庫リスクを負う。マーケットメイカーとの関係。"
+    ],
+    "pitfall": "Dealerは自己勘定取引のため、顧客と利益相反の可能性がある。",
+    "formula": "",
+    "en_canonical": "Dealer",
+    "en_aliases": [
+      "Market Dealer"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ディーラー",
+    "jp_reading": "でぃーらー",
+    "jp_definition": "自己勘定で証券を売買し、Bid-Askスプレッドから利益を得る業者。"
+  },
+  {
+    "term_id": "TERM0205",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "Bid-Askスプレッドが収益源。在庫管理の重要性。"
+    ],
+    "pitfall": "Market Makerは流動性提供の義務を負う代わりに、スプレッド収益を得る。",
+    "formula": "",
+    "en_canonical": "Market Maker",
+    "en_aliases": [
+      "Specialist"
+    ],
+    "abbreviations": [],
+    "jp_headword": "マーケットメーカー",
+    "jp_reading": "まーけっとめーかー",
+    "jp_definition": "特定の証券について常に売買の気配を提示し、市場の流動性を提供する業者。"
+  },
+  {
+    "term_id": "TERM0206",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "スプレッドが狭いほど流動性が高い。取引コストの一部。"
+    ],
+    "pitfall": "Bid（買い気配）は投資家が売る価格、Ask（売り気配）は投資家が買う価格。",
+    "formula": "Spread = Ask - Bid",
+    "en_canonical": "Bid-Ask Spread",
+    "en_aliases": [
+      "Bid-Offer Spread"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ビッド・アスク・スプレッド",
+    "jp_reading": "びっどあすくすぷれっど",
+    "jp_definition": "買い気配（Bid）と売り気配（Ask）の差。取引コストと流動性の指標。"
+  },
+  {
+    "term_id": "TERM0207",
+    "topic_code": "EQ",
+    "aliases": "",
+    "abbrev": "",
+    "key_points": [
+      "即時執行が保証される。価格の不確実性。"
+    ],
+    "pitfall": "Market Orderは執行価格が不確実。流動性の低い銘柄では不利な価格で約定する可能性。",
+    "formula": "",
+    "en_canonical": "Market Order",
     "en_aliases": [],
     "abbreviations": [],
-    "jp_headword": "リバランス",
-    "jp_reading": "りばらんす",
-    "jp_definition": "ポートフォリオの資産配分を目標比率に戻す調整。定期的または閾値ベースで実施。",
+    "jp_headword": "成行注文",
+    "jp_reading": "なりゆきちゅうもん",
+    "jp_definition": "価格を指定せず、現在の最良価格で即座に執行される注文。執行の確実性を優先。"
+  },
+  {
+    "term_id": "TERM0208",
+    "topic_code": "EQ",
+    "aliases": "",
+    "abbrev": "",
     "key_points": [
-      "取引コストとの兼ね合い。カレンダーリバランス vs パーセンテージリバランス。"
+      "価格の確実性。執行されない可能性。"
     ],
-    "pitfall": "リバランスは「高く売り、安く買う」効果。逆張り戦略。",
-    "formula": ""
+    "pitfall": "Limit Orderは執行が保証されない。市場価格が指値に達しないと未約定。",
+    "formula": "",
+    "en_canonical": "Limit Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "指値注文",
+    "jp_reading": "さしねちゅうもん",
+    "jp_definition": "指定した価格以上（売り）または以下（買い）でのみ執行される注文。価格を優先。"
+  },
+  {
+    "term_id": "TERM0209",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "トリガー価格の設定。ギャップリスク。"
+    ],
+    "pitfall": "Stop-Loss Orderは価格ギャップで指定価格より不利な価格で執行される可能性。",
+    "formula": "",
+    "en_canonical": "Stop-Loss Order",
+    "en_aliases": [
+      "Stop Order"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ストップロス注文",
+    "jp_reading": "すとっぷろすちゅうもん",
+    "jp_definition": "指定した価格に達したときに成行注文として発動する注文。損失限定に使用。"
+  },
+  {
+    "term_id": "TERM0210",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "Initial Margin・Maintenance Margin。Margin Call。"
+    ],
+    "pitfall": "Margin Tradingはレバレッジにより損益が拡大。Margin Callで強制決済の可能性。",
+    "formula": "Leverage Ratio = Position Value / Equity Value",
+    "en_canonical": "Margin Trading",
+    "en_aliases": [
+      "Buying on Margin"
+    ],
+    "abbreviations": [],
+    "jp_headword": "信用取引",
+    "jp_reading": "しんようとりひき",
+    "jp_definition": "証券会社から資金を借りて証券を購入する取引。レバレッジ効果がある。"
+  },
+  {
+    "term_id": "TERM0211",
+    "topic_code": "EQ",
+    "aliases": "",
+    "abbrev": "",
+    "key_points": [
+      "高株価銘柄の影響が大きい。株式分割の調整。"
+    ],
+    "pitfall": "Price-Weighted Indexは株価が高い銘柄の影響が大きく、企業規模を反映しない。",
+    "formula": "Weight = Pi / ΣPj",
+    "en_canonical": "Price-Weighted Index",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "株価加重指数",
+    "jp_reading": "かぶかかじゅうしすう",
+    "jp_definition": "構成銘柄の株価の単純平均で算出される指数。ダウ平均が代表例。"
+  },
+  {
+    "term_id": "TERM0212",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "大型株の影響が大きい。Float調整。"
+    ],
+    "pitfall": "Market-Cap Weighted Indexは過大評価された銘柄のウェイトが高くなる傾向。",
+    "formula": "Weight = (Pi×Qi) / Σ(Pj×Qj)",
+    "en_canonical": "Market-Cap Weighted Index",
+    "en_aliases": [
+      "Value-Weighted Index"
+    ],
+    "abbreviations": [],
+    "jp_headword": "時価総額加重指数",
+    "jp_reading": "じかそうがくかじゅうしすう",
+    "jp_definition": "構成銘柄の時価総額で加重した指数。S&P500が代表例。"
+  },
+  {
+    "term_id": "TERM0213",
+    "topic_code": "EQ",
+    "aliases": "",
+    "abbrev": "",
+    "key_points": [
+      "定期的なリバランスが必要。取引コスト。"
+    ],
+    "pitfall": "Equal-Weighted Indexは頻繁なリバランスが必要で、取引コストが高くなる。",
+    "formula": "Weight = 1/N",
+    "en_canonical": "Equal-Weighted Index",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "均等加重指数",
+    "jp_reading": "きんとうかじゅうしすう",
+    "jp_definition": "すべての構成銘柄に同じウェイトを与える指数。小型株の影響が相対的に大きい。"
+  },
+  {
+    "term_id": "TERM0214",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "リバランス頻度。追加・除外銘柄の価格影響。"
+    ],
+    "pitfall": "Index Rebalancing時に追加銘柄は買われ、除外銘柄は売られる傾向（Index Effect）。",
+    "formula": "",
+    "en_canonical": "Index Rebalancing",
+    "en_aliases": [
+      "Index Reconstitution"
+    ],
+    "abbreviations": [],
+    "jp_headword": "指数リバランス",
+    "jp_reading": "しすうりばらんす",
+    "jp_definition": "指数の構成銘柄やウェイトを定期的に調整すること。指数の代表性を維持。"
+  },
+  {
+    "term_id": "TERM0215",
+    "topic_code": "EQ",
+    "key_points": [
+      "Basic EPSとDiluted EPSの違い。"
+    ],
+    "pitfall": "EPSは株式数の変動で操作可能。自社株買いでEPSが上昇。",
+    "formula": "EPS = Net Income / Shares Outstanding",
+    "en_canonical": "Earnings Per Share",
+    "en_aliases": [
+      "EPS"
+    ],
+    "abbreviations": [
+      "EPS"
+    ],
+    "jp_headword": "一株当たり利益",
+    "jp_reading": "ひとかぶあたりりえき",
+    "jp_definition": "純利益を発行済株式数で割った値。株式の収益性指標。"
+  },
+  {
+    "term_id": "TERM0216",
+    "topic_code": "EQ",
+    "key_points": [
+      "P/B比率の分母。清算価値との関係。"
+    ],
+    "pitfall": "Book Valueは取得原価ベースで、時価を反映しない。無形資産の扱い。",
+    "formula": "BVPS = Shareholders Equity / Shares Outstanding",
+    "en_canonical": "Book Value Per Share",
+    "en_aliases": [
+      "BVPS"
+    ],
+    "abbreviations": [
+      "BVPS"
+    ],
+    "jp_headword": "一株当たり純資産",
+    "jp_reading": "ひとかぶあたりじゅんしさん",
+    "jp_definition": "株主資本を発行済株式数で割った値。会計上の一株当たり価値。"
+  },
+  {
+    "term_id": "TERM0217",
+    "topic_code": "EQ",
+    "key_points": [
+      "利益がマイナスでも計算可能。業種間比較に注意。"
+    ],
+    "pitfall": "P/Sは利益率を考慮しない。売上が同じでも利益率が異なれば価値は異なる。",
+    "formula": "P/S = Price / Sales per Share",
+    "en_canonical": "Price-to-Sales Ratio",
+    "en_aliases": [
+      "P/S Ratio"
+    ],
+    "abbreviations": [
+      "P/S;PSR"
+    ],
+    "jp_headword": "株価売上高倍率",
+    "jp_reading": "かぶかうりあげだかばいりつ",
+    "jp_definition": "株価を一株当たり売上高で割った比率。赤字企業の評価にも使用可能。"
+  },
+  {
+    "term_id": "TERM0218",
+    "topic_code": "EQ",
+    "key_points": [
+      "CFの定義（CFO・FCF等）により値が異なる。"
+    ],
+    "pitfall": "P/CFはCFの定義を統一して比較する必要がある。減価償却の影響。",
+    "formula": "P/CF = Price / Cash Flow per Share",
+    "en_canonical": "Price-to-Cash Flow Ratio",
+    "en_aliases": [
+      "P/CF Ratio"
+    ],
+    "abbreviations": [
+      "P/CF"
+    ],
+    "jp_headword": "株価キャッシュフロー倍率",
+    "jp_reading": "かぶかきゃっしゅふろーばいりつ",
+    "jp_definition": "株価を一株当たりキャッシュフローで割った比率。会計操作の影響を受けにくい。"
+  },
+  {
+    "term_id": "TERM0219",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "異なる資本構成の企業比較に有用。買収評価。"
+    ],
+    "pitfall": "EV/EBITDAは設備投資の必要性を考慮しない。資本集約的産業では注意。",
+    "formula": "EV/EBITDA = Enterprise Value / EBITDA",
+    "en_canonical": "EV/EBITDA",
+    "en_aliases": [
+      "Enterprise Multiple"
+    ],
+    "abbreviations": [],
+    "jp_headword": "EV/EBITDA倍率",
+    "jp_reading": "いーぶいいーびっとだーばいりつ",
+    "jp_definition": "企業価値をEBITDAで割った比率。資本構成の影響を排除した評価指標。"
+  },
+  {
+    "term_id": "TERM0220",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "PEG < 1 は割安の目安。成長率の推定が重要。"
+    ],
+    "pitfall": "PEG Ratioは成長率の推定に依存。成長率がマイナスの場合は意味がない。",
+    "formula": "PEG = (P/E) / EPS Growth Rate",
+    "en_canonical": "PEG Ratio",
+    "en_aliases": [
+      "Price/Earnings to Growth"
+    ],
+    "abbreviations": [],
+    "jp_headword": "PEGレシオ",
+    "jp_reading": "ぺぐれしお",
+    "jp_definition": "P/E比率を予想EPS成長率で割った比率。成長性を考慮した割安度指標。"
+  },
+  {
+    "term_id": "TERM0221",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "配当性向・要求収益率・成長率から計算。"
+    ],
+    "pitfall": "Justified P/Eは仮定（成長率・要求収益率）に敏感。前提条件の確認が重要。",
+    "formula": "Justified P/E = (1 - b) / (r - g)",
+    "en_canonical": "Justified P/E",
+    "en_aliases": [
+      "Warranted P/E"
+    ],
+    "abbreviations": [],
+    "jp_headword": "正当化P/E",
+    "jp_reading": "せいとうかぴーいー",
+    "jp_definition": "ファンダメンタルズに基づく理論的なP/E比率。Gordon Growth Modelから導出。"
+  },
+  {
+    "term_id": "TERM0222",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "Gordon Growth ModelまたはExit Multipleで計算。"
+    ],
+    "pitfall": "Terminal Valueは全体価値の大部分を占めることが多い。成長率の仮定に注意。",
+    "formula": "TV = FCFn+1 / (r - g)",
+    "en_canonical": "Terminal Value",
+    "en_aliases": [
+      "Continuing Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "継続価値",
+    "jp_reading": "けいぞくかち",
+    "jp_definition": "予測期間終了後の企業価値。DCF評価で予測期間後のCFを一括評価。"
+  },
+  {
+    "term_id": "TERM0223",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "リスクフリーレート + β × ERP。割引率として使用。"
+    ],
+    "pitfall": "Required Rate of ReturnとExpected Returnの違い。要求は投資家視点、期待は予測。",
+    "formula": "r = Rf + β × (Rm - Rf)",
+    "en_canonical": "Required Rate of Return",
+    "en_aliases": [
+      "Cost of Equity"
+    ],
+    "abbreviations": [],
+    "jp_headword": "要求収益率",
+    "jp_reading": "ようきゅうしゅうえきりつ",
+    "jp_definition": "投資家が株式投資に求める最低限の期待収益率。CAPMで推定。"
+  },
+  {
+    "term_id": "TERM0224",
+    "topic_code": "EQ",
+    "key_points": [
+      "g = b × ROE。配当政策との関係。"
+    ],
+    "pitfall": "Sustainable Growth Rateを超える成長には外部資金調達が必要。",
+    "formula": "SGR = Retention Ratio × ROE",
+    "en_canonical": "Sustainable Growth Rate",
+    "en_aliases": [
+      "SGR"
+    ],
+    "abbreviations": [
+      "SGR"
+    ],
+    "jp_headword": "持続可能成長率",
+    "jp_reading": "じぞくかのうせいちょうりつ",
+    "jp_definition": "外部資金調達なしで達成可能な最大成長率。内部留保とROEから計算。"
+  },
+  {
+    "term_id": "TERM0225",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "コールプレミアム。金利低下時に行使されやすい。"
+    ],
+    "pitfall": "Callable Stockは投資家にとって不利。より高い配当利回りで補償。",
+    "formula": "",
+    "en_canonical": "Callable Stock",
+    "en_aliases": [
+      "Callable Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "コーラブル株式",
+    "jp_reading": "こーらぶるかぶしき",
+    "jp_definition": "発行企業が一定価格で買い戻す権利を持つ株式。企業に有利な条件。"
+  },
+  {
+    "term_id": "TERM0226",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "プットプレミアム。下落リスクの限定。"
+    ],
+    "pitfall": "Putable Stockは投資家保護のため、配当利回りは低くなる傾向。",
+    "formula": "",
+    "en_canonical": "Putable Stock",
+    "en_aliases": [
+      "Putable Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "プッタブル株式",
+    "jp_reading": "ぷったぶるかぶしき",
+    "jp_definition": "投資家が一定価格で発行企業に売り戻す権利を持つ株式。投資家に有利。"
+  },
+  {
+    "term_id": "TERM0227",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "転換比率・転換価格。普通株との価値比較。"
+    ],
+    "pitfall": "Convertible Preferredは転換価値と投資価値の高い方で評価。",
+    "formula": "",
+    "en_canonical": "Convertible Preferred",
+    "en_aliases": [
+      "Convertible Preference Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "転換優先株",
+    "jp_reading": "てんかんゆうせんかぶ",
+    "jp_definition": "一定条件で普通株に転換できる優先株。株価上昇時のアップサイドを享受。"
+  },
+  {
+    "term_id": "TERM0228",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "配当の累積。Non-cumulativeとの違い。"
+    ],
+    "pitfall": "Cumulative Preferredは未払配当が累積するため、Non-cumulativeより安全。",
+    "formula": "",
+    "en_canonical": "Cumulative Preferred",
+    "en_aliases": [
+      "Cumulative Preference Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "累積優先株",
+    "jp_reading": "るいせきゆうせんかぶ",
+    "jp_definition": "未払配当が累積し、普通株配当前に支払われる優先株。配当の確実性が高い。"
+  },
+  {
+    "term_id": "TERM0229",
+    "topic_code": "EQ",
+    "aliases": "",
+    "abbrev": "",
+    "key_points": [
+      "損失の痛みは利益の喜びの約2倍。処分効果との関係。"
+    ],
+    "pitfall": "Loss Aversionにより、損失銘柄を長く保有し、利益銘柄を早く売却する傾向。",
+    "formula": "",
+    "en_canonical": "Loss Aversion",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "損失回避",
+    "jp_reading": "そんしつかいひ",
+    "jp_definition": "同額の利益より損失をより大きく感じる心理的傾向。行動ファイナンスの重要概念。"
+  },
+  {
+    "term_id": "TERM0230",
+    "topic_code": "EQ",
+    "abbrev": "",
+    "key_points": [
+      "情報カスケード。独自分析の軽視。"
+    ],
+    "pitfall": "Herdingは市場の非効率性を生む。逆張り戦略の根拠にもなる。",
+    "formula": "",
+    "en_canonical": "Herding",
+    "en_aliases": [
+      "Herd Behavior"
+    ],
+    "abbreviations": [],
+    "jp_headword": "群集行動",
+    "jp_reading": "ぐんしゅうこうどう",
+    "jp_definition": "他の投資家の行動に追随する傾向。市場のバブルや暴落の一因。"
   }
 ]

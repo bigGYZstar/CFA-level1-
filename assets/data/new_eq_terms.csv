@@ -1,0 +1,31 @@
+term_id,topic_code,term_en,aliases,abbrev,term_ja,reading,definition,key_points,pitfall,formula
+TERM0201,EQ,Primary Market,New Issue Market,,発行市場,はっこうしじょう,企業が新規に証券を発行し、投資家に直接販売する市場。IPO（新規株式公開）や増資が行われる。,IPO・SEO（公募増資）の違い。引受業者の役割。,Primary Market（発行市場）とSecondary Market（流通市場）の混同。新規発行 vs 既発行証券。,
+TERM0202,EQ,Secondary Market,Trading Market,,流通市場,りゅうつうしじょう,既発行の証券が投資家間で売買される市場。取引所市場と店頭市場がある。,取引所（NYSE等）とOTC市場の違い。流動性の重要性。,Secondary Marketでの取引は発行企業に資金が入らない。投資家間の取引。,
+TERM0203,EQ,Broker,Securities Broker,,ブローカー,ぶろーかー,顧客の注文を執行する仲介業者。自己勘定では取引せず、手数料収入を得る。,Broker vs Dealer の違い。Best Execution義務。,BrokerとDealerの混同。Brokerは代理人、Dealerは自己勘定取引。,
+TERM0204,EQ,Dealer,Market Dealer,,ディーラー,でぃーらー,自己勘定で証券を売買し、Bid-Askスプレッドから利益を得る業者。,在庫リスクを負う。マーケットメイカーとの関係。,Dealerは自己勘定取引のため、顧客と利益相反の可能性がある。,
+TERM0205,EQ,Market Maker,Specialist,,マーケットメーカー,まーけっとめーかー,特定の証券について常に売買の気配を提示し、市場の流動性を提供する業者。,Bid-Askスプレッドが収益源。在庫管理の重要性。,Market Makerは流動性提供の義務を負う代わりに、スプレッド収益を得る。,
+TERM0206,EQ,Bid-Ask Spread,Bid-Offer Spread,,ビッド・アスク・スプレッド,びっどあすくすぷれっど,買い気配（Bid）と売り気配（Ask）の差。取引コストと流動性の指標。,スプレッドが狭いほど流動性が高い。取引コストの一部。,Bid（買い気配）は投資家が売る価格、Ask（売り気配）は投資家が買う価格。,Spread = Ask - Bid
+TERM0207,EQ,Market Order,,,成行注文,なりゆきちゅうもん,価格を指定せず、現在の最良価格で即座に執行される注文。執行の確実性を優先。,即時執行が保証される。価格の不確実性。,Market Orderは執行価格が不確実。流動性の低い銘柄では不利な価格で約定する可能性。,
+TERM0208,EQ,Limit Order,,,指値注文,さしねちゅうもん,指定した価格以上（売り）または以下（買い）でのみ執行される注文。価格を優先。,価格の確実性。執行されない可能性。,Limit Orderは執行が保証されない。市場価格が指値に達しないと未約定。,
+TERM0209,EQ,Stop-Loss Order,Stop Order,,ストップロス注文,すとっぷろすちゅうもん,指定した価格に達したときに成行注文として発動する注文。損失限定に使用。,トリガー価格の設定。ギャップリスク。,Stop-Loss Orderは価格ギャップで指定価格より不利な価格で執行される可能性。,
+TERM0210,EQ,Margin Trading,Buying on Margin,,信用取引,しんようとりひき,証券会社から資金を借りて証券を購入する取引。レバレッジ効果がある。,Initial Margin・Maintenance Margin。Margin Call。,Margin Tradingはレバレッジにより損益が拡大。Margin Callで強制決済の可能性。,Leverage Ratio = Position Value / Equity Value
+TERM0211,EQ,Price-Weighted Index,,,株価加重指数,かぶかかじゅうしすう,構成銘柄の株価の単純平均で算出される指数。ダウ平均が代表例。,高株価銘柄の影響が大きい。株式分割の調整。,Price-Weighted Indexは株価が高い銘柄の影響が大きく、企業規模を反映しない。,Weight = Pi / ΣPj
+TERM0212,EQ,Market-Cap Weighted Index,Value-Weighted Index,,時価総額加重指数,じかそうがくかじゅうしすう,構成銘柄の時価総額で加重した指数。S&P500が代表例。,大型株の影響が大きい。Float調整。,Market-Cap Weighted Indexは過大評価された銘柄のウェイトが高くなる傾向。,Weight = (Pi×Qi) / Σ(Pj×Qj)
+TERM0213,EQ,Equal-Weighted Index,,,均等加重指数,きんとうかじゅうしすう,すべての構成銘柄に同じウェイトを与える指数。小型株の影響が相対的に大きい。,定期的なリバランスが必要。取引コスト。,Equal-Weighted Indexは頻繁なリバランスが必要で、取引コストが高くなる。,Weight = 1/N
+TERM0214,EQ,Index Rebalancing,Index Reconstitution,,指数リバランス,しすうりばらんす,指数の構成銘柄やウェイトを定期的に調整すること。指数の代表性を維持。,リバランス頻度。追加・除外銘柄の価格影響。,Index Rebalancing時に追加銘柄は買われ、除外銘柄は売られる傾向（Index Effect）。,
+TERM0215,EQ,Earnings Per Share,EPS,EPS,一株当たり利益,ひとかぶあたりりえき,純利益を発行済株式数で割った値。株式の収益性指標。,Basic EPSとDiluted EPSの違い。,EPSは株式数の変動で操作可能。自社株買いでEPSが上昇。,EPS = Net Income / Shares Outstanding
+TERM0216,EQ,Book Value Per Share,BVPS,BVPS,一株当たり純資産,ひとかぶあたりじゅんしさん,株主資本を発行済株式数で割った値。会計上の一株当たり価値。,P/B比率の分母。清算価値との関係。,Book Valueは取得原価ベースで、時価を反映しない。無形資産の扱い。,BVPS = Shareholders Equity / Shares Outstanding
+TERM0217,EQ,Price-to-Sales Ratio,P/S Ratio,P/S;PSR,株価売上高倍率,かぶかうりあげだかばいりつ,株価を一株当たり売上高で割った比率。赤字企業の評価にも使用可能。,利益がマイナスでも計算可能。業種間比較に注意。,P/Sは利益率を考慮しない。売上が同じでも利益率が異なれば価値は異なる。,P/S = Price / Sales per Share
+TERM0218,EQ,Price-to-Cash Flow Ratio,P/CF Ratio,P/CF,株価キャッシュフロー倍率,かぶかきゃっしゅふろーばいりつ,株価を一株当たりキャッシュフローで割った比率。会計操作の影響を受けにくい。,CFの定義（CFO・FCF等）により値が異なる。,P/CFはCFの定義を統一して比較する必要がある。減価償却の影響。,P/CF = Price / Cash Flow per Share
+TERM0219,EQ,EV/EBITDA,Enterprise Multiple,,EV/EBITDA倍率,いーぶいいーびっとだーばいりつ,企業価値をEBITDAで割った比率。資本構成の影響を排除した評価指標。,異なる資本構成の企業比較に有用。買収評価。,EV/EBITDAは設備投資の必要性を考慮しない。資本集約的産業では注意。,EV/EBITDA = Enterprise Value / EBITDA
+TERM0220,EQ,PEG Ratio,Price/Earnings to Growth,,PEGレシオ,ぺぐれしお,P/E比率を予想EPS成長率で割った比率。成長性を考慮した割安度指標。,PEG < 1 は割安の目安。成長率の推定が重要。,PEG Ratioは成長率の推定に依存。成長率がマイナスの場合は意味がない。,PEG = (P/E) / EPS Growth Rate
+TERM0221,EQ,Justified P/E,Warranted P/E,,正当化P/E,せいとうかぴーいー,ファンダメンタルズに基づく理論的なP/E比率。Gordon Growth Modelから導出。,配当性向・要求収益率・成長率から計算。,Justified P/Eは仮定（成長率・要求収益率）に敏感。前提条件の確認が重要。,Justified P/E = (1 - b) / (r - g)
+TERM0222,EQ,Terminal Value,Continuing Value,,継続価値,けいぞくかち,予測期間終了後の企業価値。DCF評価で予測期間後のCFを一括評価。,Gordon Growth ModelまたはExit Multipleで計算。,Terminal Valueは全体価値の大部分を占めることが多い。成長率の仮定に注意。,TV = FCFn+1 / (r - g)
+TERM0223,EQ,Required Rate of Return,Cost of Equity,,要求収益率,ようきゅうしゅうえきりつ,投資家が株式投資に求める最低限の期待収益率。CAPMで推定。,リスクフリーレート + β × ERP。割引率として使用。,Required Rate of ReturnとExpected Returnの違い。要求は投資家視点、期待は予測。,r = Rf + β × (Rm - Rf)
+TERM0224,EQ,Sustainable Growth Rate,SGR,SGR,持続可能成長率,じぞくかのうせいちょうりつ,外部資金調達なしで達成可能な最大成長率。内部留保とROEから計算。,g = b × ROE。配当政策との関係。,Sustainable Growth Rateを超える成長には外部資金調達が必要。,SGR = Retention Ratio × ROE
+TERM0225,EQ,Callable Stock,Callable Shares,,コーラブル株式,こーらぶるかぶしき,発行企業が一定価格で買い戻す権利を持つ株式。企業に有利な条件。,コールプレミアム。金利低下時に行使されやすい。,Callable Stockは投資家にとって不利。より高い配当利回りで補償。,
+TERM0226,EQ,Putable Stock,Putable Shares,,プッタブル株式,ぷったぶるかぶしき,投資家が一定価格で発行企業に売り戻す権利を持つ株式。投資家に有利。,プットプレミアム。下落リスクの限定。,Putable Stockは投資家保護のため、配当利回りは低くなる傾向。,
+TERM0227,EQ,Convertible Preferred,Convertible Preference Shares,,転換優先株,てんかんゆうせんかぶ,一定条件で普通株に転換できる優先株。株価上昇時のアップサイドを享受。,転換比率・転換価格。普通株との価値比較。,Convertible Preferredは転換価値と投資価値の高い方で評価。,
+TERM0228,EQ,Cumulative Preferred,Cumulative Preference Shares,,累積優先株,るいせきゆうせんかぶ,未払配当が累積し、普通株配当前に支払われる優先株。配当の確実性が高い。,配当の累積。Non-cumulativeとの違い。,Cumulative Preferredは未払配当が累積するため、Non-cumulativeより安全。,
+TERM0229,EQ,Loss Aversion,,,損失回避,そんしつかいひ,同額の利益より損失をより大きく感じる心理的傾向。行動ファイナンスの重要概念。,損失の痛みは利益の喜びの約2倍。処分効果との関係。,Loss Aversionにより、損失銘柄を長く保有し、利益銘柄を早く売却する傾向。,
+TERM0230,EQ,Herding,Herd Behavior,,群集行動,ぐんしゅうこうどう,他の投資家の行動に追随する傾向。市場のバブルや暴落の一因。,情報カスケード。独自分析の軽視。,Herdingは市場の非効率性を生む。逆張り戦略の根拠にもなる。,
