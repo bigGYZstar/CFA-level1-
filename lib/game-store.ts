@@ -365,12 +365,15 @@ class GameStore {
         shuffled[0]?.jp_headword || '該当なし',
         shuffled[1]?.jp_headword || '該当なし',
       ].sort(() => Math.random() - 0.5);
+      const fullQuestion = `「${term1.en_canonical}」と「${term2.en_canonical}」のうち、「${term1.jp_definition}」に当てはまるのは？`;
+      const questionPreview = `「${term1.en_canonical}」と「${term2.en_canonical}」のうち、「${term1.jp_definition.substring(0, 30)}...」に当てはまるのは？`;
       return {
         termId: term1.term_id,
-        question: `「${term1.en_canonical}」と「${term2.en_canonical}」のうち、「${term1.jp_definition.substring(0, 30)}...」に当てはまるのは？`,
+        question: questionPreview,
         questionType: 'concept',
         correctAnswer: term1.jp_headword,
         options,
+        fullQuestion,
       };
     } else if (burstType === 1) {
       // タイプ2: 2つの英語用語の日本語訳を連続で問う
@@ -380,12 +383,14 @@ class GameStore {
         `${term1.jp_headword} / ${shuffled[0]?.jp_headword || '不明'}`,
         `${shuffled[0]?.jp_headword || '不明'} / ${term2.jp_headword}`,
       ].sort(() => Math.random() - 0.5);
+      const question = `「${term1.en_canonical}」と「${term2.en_canonical}」の日本語訳の正しい組み合わせは？`;
       return {
         termId: term1.term_id,
-        question: `「${term1.en_canonical}」と「${term2.en_canonical}」の日本語訳の正しい組み合わせは？`,
+        question,
         questionType: 'jp_to_en',
         correctAnswer: `${term1.jp_headword} / ${term2.jp_headword}`,
         options,
+        fullQuestion: question,
       };
     } else {
       // タイプ3: 定義の組み合わせ問題
@@ -397,12 +402,15 @@ class GameStore {
         shuffled[0]?.jp_headword || '該当なし',
         shuffled[1]?.jp_headword || '該当なし',
       ].sort(() => Math.random() - 0.5);
+      const fullQuestion = `「${term1.jp_definition}」と「${term2.jp_definition}」のうち、前者の説明に当てはまる用語は？`;
+      const questionPreview = `「${def1Preview}」と「${def2Preview}」のうち、前者の説明に当てはまる用語は？`;
       return {
         termId: term1.term_id,
-        question: `「${def1Preview}」と「${def2Preview}」のうち、前者の説明に当てはまる用語は？`,
+        question: questionPreview,
         questionType: 'concept',
         correctAnswer: term1.jp_headword,
         options,
+        fullQuestion,
       };
     }
   }
