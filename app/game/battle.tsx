@@ -11,7 +11,8 @@ export default function BattleScreen() {
   const router = useRouter();
   const colors = useColors();
   const [battle, setBattle] = useState<BattleState>(gameStore.getBattle());
-  const [selectedAction, setSelectedAction] = useState<'attack' | 'heal' | null>(null);
+  const [selectedAction, setSelectedAction] = useState<'attack' | 'heal' | 'burst' | null>(null);
+  const [selectedCards, setSelectedCards] = useState<WordCard[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [quizResult, setQuizResult] = useState<{ correct: boolean; message: string } | null>(null);
 
@@ -22,30 +23,75 @@ export default function BattleScreen() {
     return unsubscribe;
   }, []);
 
-  const deckCards = gameStore.getDeckCards();
+  // 手札を使用（デッキではなく手札から選択）
+  const handCards = battle.currentHand.filter(
+    card => !battle.usedCards.includes(card.id)
+  );
 
-  const handleCardSelect = useCallback((card: WordCard, action: 'attack' | 'heal') => {
-    setSelectedAction(action);
-    gameStore.selectCard(card, action);
+  const handleCardSelect = useCallback((card: WordCard) => {
+    // カードの選択/解除
+    setSelectedCards(prev => {
+      const isSelected = prev.some(c => c.id === card.id);
+      if (isSelected) {
+        return prev.filter(c => c.id !== card.id);
+      } else if (prev.length < 2) {
+        return [...prev, card];
+      }
+      return prev;
+    });
   }, []);
+
+  const handleAction = useCallback((action: 'attack' | 'heal' | 'burst') => {
+    if (selectedCards.length === 0) return;
+    
+    if (action === 'burst' && selectedCards.length !== 2) {
+      Alert.alert('バースト', 'バーストには2枚のカードが必要です');
+      return;
+    }
+    
+    if ((action === 'attack' || action === 'heal') && selectedCards.length !== 1) {
+      Alert.alert('選択エラー', '攻撃・回復には1枚のカードを選択してください');
+      return;
+    }
+
+    setSelectedAction(action);
+    
+    if (action === 'burst') {
+      gameStore.selectBurstCards(selectedCards[0], selectedCards[1]);
+    } else {
+      gameStore.selectCard(selectedCards[0], action);
+    }
+  }, [selectedCards]);
 
   const handleAnswerSelect = useCallback(async (answer: string) => {
     if (!selectedAction) return;
     setSelectedAnswer(answer);
     
-    const result = await gameStore.answerQuiz(answer, selectedAction);
-    setQuizResult({
-      correct: result.correct,
-      message: result.correct 
-        ? (selectedAction === 'attack' ? `${result.damage}ダメージ！` : `HP+${result.heal}回復！`)
-        : '不正解！反動ダメージ！'
-    });
+    const result = await gameStore.answerQuiz(answer, selectedAction === 'burst' ? 'attack' : selectedAction);
+    
+    let message = '';
+    if (result.correct) {
+      if (selectedAction === 'burst') {
+        message = `バースト成功！${result.damage}ダメージ！`;
+      } else if (selectedAction === 'attack') {
+        message = `${result.damage}ダメージ！`;
+      } else {
+        message = `HP+${result.heal}回復！`;
+      }
+    } else {
+      message = selectedAction === 'burst' 
+        ? 'バースト失敗！大反動ダメージ！' 
+        : '不正解！反動ダメージ！';
+    }
+    
+    setQuizResult({ correct: result.correct, message });
   }, [selectedAction]);
 
   const handleProceed = useCallback(() => {
     setSelectedAnswer(null);
     setQuizResult(null);
     setSelectedAction(null);
+    setSelectedCards([]);
     
     if (battle.phase === 'battle_end') {
       gameStore.resetBattle();
@@ -153,7 +199,14 @@ export default function BattleScreen() {
         {/* クイズフェーズ */}
         {battle.phase === 'quiz' && battle.quizQuestion && (
           <View style={[styles.quizCard, { backgroundColor: colors.surface, borderColor: colors.warning }]}>
-            <Text style={[styles.quizTitle, { color: colors.warning }]}>クイズ！</Text>
+            <Text style={[styles.quizTitle, { color: colors.warning }]}>
+              {selectedAction === 'burst' ? '🔥 バーストクイズ！' : 'クイズ！'}
+            </Text>
+            {selectedAction === 'burst' && (
+              <Text style={[styles.burstWarning, { color: colors.error }]}>
+                高難易度！成功で2倍ダメージ、失敗で2倍反動！
+              </Text>
+            )}
             <Text style={[styles.quizQuestion, { color: colors.foreground }]}>
               {battle.quizQuestion.question}
             </Text>
@@ -258,47 +311,109 @@ export default function BattleScreen() {
         {battle.phase === 'select_action' && (
           <>
             <Text style={[styles.actionTitle, { color: colors.foreground }]}>
-              カードを選んでアクション！
+              手札からカードを選択！
+            </Text>
+            <Text style={[styles.handInfo, { color: colors.muted }]}>
+              手札: {handCards.length}枚 / 選択中: {selectedCards.length}枚
             </Text>
             
-            {deckCards.length === 0 ? (
-              <Text style={[styles.noCardsText, { color: colors.muted }]}>
-                デッキにカードがありません
-              </Text>
-            ) : (
-              <View style={styles.cardsGrid}>
-                {deckCards.map((card) => (
-                  <View key={card.id} style={[styles.cardContainer, { borderColor: RARITY_COLORS[card.rarity] }]}>
-                    <Text style={[styles.cardName, { color: colors.foreground }]} numberOfLines={1}>
-                      {card.termJa}
-                    </Text>
-                    <Text style={[styles.cardTerm, { color: colors.muted }]} numberOfLines={1}>
-                      {card.term}
-                    </Text>
-                    <Text style={[styles.cardRarity, { color: RARITY_COLORS[card.rarity] }]}>
-                      {RARITY_NAMES[card.rarity]}
-                    </Text>
-                    <View style={styles.cardStats}>
-                      <Text style={[styles.cardStat, { color: colors.error }]}>⚔️{card.attackPower}</Text>
-                      <Text style={[styles.cardStat, { color: colors.success }]}>💚{card.healPower}</Text>
-                    </View>
-                    <View style={styles.cardActions}>
-                      <Pressable
-                        style={[styles.actionButton, { backgroundColor: colors.error }]}
-                        onPress={() => handleCardSelect(card, 'attack')}
-                      >
-                        <Text style={styles.actionButtonText}>攻撃</Text>
-                      </Pressable>
-                      <Pressable
-                        style={[styles.actionButton, { backgroundColor: colors.success }]}
-                        onPress={() => handleCardSelect(card, 'heal')}
-                      >
-                        <Text style={styles.actionButtonText}>回復</Text>
-                      </Pressable>
-                    </View>
-                  </View>
-                ))}
+            {handCards.length === 0 ? (
+              <View style={styles.noCardsContainer}>
+                <Text style={[styles.noCardsText, { color: colors.muted }]}>
+                  手札がありません
+                </Text>
+                <Text style={[styles.noCardsHint, { color: colors.muted }]}>
+                  デッキにカードを追加してください
+                </Text>
               </View>
+            ) : (
+              <>
+                <View style={styles.cardsGrid}>
+                  {handCards.map((card) => {
+                    const isSelected = selectedCards.some(c => c.id === card.id);
+                    return (
+                      <Pressable
+                        key={card.id}
+                        style={[
+                          styles.cardContainer, 
+                          { 
+                            borderColor: isSelected ? colors.primary : RARITY_COLORS[card.rarity],
+                            backgroundColor: isSelected ? colors.primary + '20' : colors.surface,
+                          }
+                        ]}
+                        onPress={() => handleCardSelect(card)}
+                      >
+                        {isSelected && (
+                          <View style={[styles.selectedBadge, { backgroundColor: colors.primary }]}>
+                            <Text style={styles.selectedBadgeText}>✓</Text>
+                          </View>
+                        )}
+                        <Text style={[styles.cardName, { color: colors.foreground }]} numberOfLines={1}>
+                          {card.termJa}
+                        </Text>
+                        <Text style={[styles.cardTerm, { color: colors.muted }]} numberOfLines={1}>
+                          {card.term}
+                        </Text>
+                        <Text style={[styles.cardRarity, { color: RARITY_COLORS[card.rarity] }]}>
+                          {RARITY_NAMES[card.rarity]}
+                        </Text>
+                        <View style={styles.cardStats}>
+                          <Text style={[styles.cardStat, { color: colors.error }]}>⚔️{card.attackPower}</Text>
+                          <Text style={[styles.cardStat, { color: colors.success }]}>💚{card.healPower}</Text>
+                        </View>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+
+                {/* アクションボタン */}
+                <View style={styles.actionButtons}>
+                  <Pressable
+                    style={[
+                      styles.mainActionButton, 
+                      { 
+                        backgroundColor: selectedCards.length === 1 ? colors.error : colors.border,
+                        opacity: selectedCards.length === 1 ? 1 : 0.5,
+                      }
+                    ]}
+                    onPress={() => handleAction('attack')}
+                    disabled={selectedCards.length !== 1}
+                  >
+                    <Text style={styles.mainActionButtonText}>⚔️ 攻撃</Text>
+                  </Pressable>
+                  
+                  <Pressable
+                    style={[
+                      styles.mainActionButton, 
+                      { 
+                        backgroundColor: selectedCards.length === 1 ? colors.success : colors.border,
+                        opacity: selectedCards.length === 1 ? 1 : 0.5,
+                      }
+                    ]}
+                    onPress={() => handleAction('heal')}
+                    disabled={selectedCards.length !== 1}
+                  >
+                    <Text style={styles.mainActionButtonText}>💚 回復</Text>
+                  </Pressable>
+                  
+                  <Pressable
+                    style={[
+                      styles.burstButton, 
+                      { 
+                        backgroundColor: selectedCards.length === 2 ? colors.warning : colors.border,
+                        opacity: selectedCards.length === 2 ? 1 : 0.5,
+                      }
+                    ]}
+                    onPress={() => handleAction('burst')}
+                    disabled={selectedCards.length !== 2}
+                  >
+                    <Text style={styles.burstButtonText}>🔥 バースト（2枚）</Text>
+                    <Text style={[styles.burstHint, { color: selectedCards.length === 2 ? '#fff' : colors.muted }]}>
+                      高難易度・高威力
+                    </Text>
+                  </Pressable>
+                </View>
+              </>
             )}
 
             <Pressable
@@ -356,39 +471,35 @@ const styles = StyleSheet.create({
   enemyName: {
     fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 12,
+    marginBottom: 8,
   },
   hpContainer: {
     width: '100%',
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
   },
   hpBarBg: {
-    flex: 1,
-    height: 16,
-    borderRadius: 8,
+    width: '100%',
+    height: 12,
+    borderRadius: 6,
     overflow: 'hidden',
   },
   hpBar: {
     height: '100%',
-    borderRadius: 8,
+    borderRadius: 6,
   },
   hpText: {
-    width: 80,
-    textAlign: 'right',
     fontSize: 14,
-    fontWeight: '600',
+    marginTop: 4,
   },
   playerHp: {
-    padding: 12,
+    padding: 16,
     borderRadius: 12,
     borderWidth: 2,
     marginBottom: 16,
   },
   playerLabel: {
-    fontSize: 14,
-    fontWeight: '600',
+    fontSize: 16,
+    fontWeight: 'bold',
     marginBottom: 8,
   },
   logContainer: {
@@ -398,7 +509,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   logText: {
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 4,
   },
   quizCard: {
@@ -408,30 +519,36 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   quizTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  burstWarning: {
+    fontSize: 12,
     textAlign: 'center',
     marginBottom: 12,
   },
   quizQuestion: {
-    fontSize: 16,
+    fontSize: 18,
     textAlign: 'center',
     marginBottom: 16,
+    lineHeight: 26,
   },
   optionsContainer: {
-    gap: 8,
+    gap: 10,
   },
   optionButton: {
     padding: 14,
-    borderRadius: 8,
+    borderRadius: 10,
     borderWidth: 1,
   },
   optionText: {
-    fontSize: 14,
+    fontSize: 16,
     textAlign: 'center',
   },
   resultCard: {
-    padding: 20,
+    padding: 24,
     borderRadius: 16,
     alignItems: 'center',
     marginBottom: 16,
@@ -442,13 +559,13 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   resultMessage: {
-    fontSize: 16,
+    fontSize: 18,
     marginBottom: 16,
   },
   proceedButton: {
     paddingHorizontal: 32,
-    paddingVertical: 12,
-    borderRadius: 8,
+    paddingVertical: 14,
+    borderRadius: 10,
   },
   proceedButtonText: {
     color: '#fff',
@@ -459,7 +576,6 @@ const styles = StyleSheet.create({
     padding: 24,
     borderRadius: 16,
     alignItems: 'center',
-    marginBottom: 16,
   },
   endTitle: {
     fontSize: 28,
@@ -478,87 +594,132 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 8,
+    marginBottom: 12,
   },
   earnedCard: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     padding: 12,
     borderRadius: 8,
     borderWidth: 2,
     marginBottom: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   earnedCardName: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: '600',
   },
   earnedCardRarity: {
-    fontSize: 12,
+    fontSize: 14,
     fontWeight: 'bold',
   },
   actionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 16,
+    marginBottom: 8,
   },
-  noCardsText: {
+  handInfo: {
     fontSize: 14,
     textAlign: 'center',
     marginBottom: 16,
   },
+  noCardsContainer: {
+    alignItems: 'center',
+    padding: 20,
+  },
+  noCardsText: {
+    fontSize: 16,
+    marginBottom: 8,
+  },
+  noCardsHint: {
+    fontSize: 14,
+  },
   cardsGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     gap: 12,
+    justifyContent: 'center',
+    marginBottom: 20,
   },
   cardContainer: {
+    width: '45%',
     padding: 12,
     borderRadius: 12,
     borderWidth: 2,
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    position: 'relative',
+  },
+  selectedBadge: {
+    position: 'absolute',
+    top: -8,
+    right: -8,
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  selectedBadgeText: {
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: 'bold',
   },
   cardName: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
+    marginBottom: 4,
   },
   cardTerm: {
     fontSize: 12,
     marginBottom: 4,
   },
   cardRarity: {
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: 'bold',
     marginBottom: 8,
   },
   cardStats: {
     flexDirection: 'row',
-    gap: 16,
-    marginBottom: 8,
+    justifyContent: 'space-around',
   },
   cardStat: {
     fontSize: 14,
     fontWeight: '600',
   },
-  cardActions: {
-    flexDirection: 'row',
-    gap: 8,
+  actionButtons: {
+    gap: 12,
+    marginBottom: 20,
   },
-  actionButton: {
-    flex: 1,
-    paddingVertical: 8,
-    borderRadius: 6,
+  mainActionButton: {
+    padding: 16,
+    borderRadius: 12,
     alignItems: 'center',
   },
-  actionButtonText: {
+  mainActionButtonText: {
     color: '#fff',
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: 'bold',
+  },
+  burstButton: {
+    padding: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+  },
+  burstButtonText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  burstHint: {
+    fontSize: 12,
+    marginTop: 4,
   },
   fleeButton: {
     padding: 12,
     borderRadius: 8,
     borderWidth: 1,
     alignItems: 'center',
-    marginTop: 16,
+    marginTop: 8,
   },
   fleeButtonText: {
     fontSize: 14,

@@ -27,8 +27,10 @@ export interface PlayerState {
   expToNextLevel: number;
   totalBattles: number;
   totalWins: number;
-  cards: WordCard[];
-  currentDeck: string[]; // カードID配列（最大5枚）
+  cards: WordCard[];           // 所持カード全て
+  currentDeck: string[];       // デッキに組み込んだカードID配列
+  deckCapacity: number;        // デッキ上限（レベルで増加）
+  handSize: number;            // 手札上限（レベルで増加）
 }
 
 // 敵キャラクター
@@ -54,10 +56,14 @@ export interface BattleState {
   turn: 'player' | 'enemy';
   phase: 'select_action' | 'quiz' | 'result' | 'battle_end';
   selectedCard: WordCard | null;
+  selectedBurstCards: [WordCard, WordCard] | null;  // バースト用の2枚のカード
+  isBurstMode: boolean;        // バーストモードかどうか
   quizQuestion: QuizQuestion | null;
   battleLog: BattleLogEntry[];
   earnedCards: WordCard[];
   earnedExp: number;
+  currentHand: WordCard[];     // 現在の手札（デッキからランダムに引いたカード）
+  usedCards: string[];         // このバトルで使用済みのカードID
 }
 
 // クイズ問題
@@ -125,6 +131,12 @@ export const RARITY_COLORS: Record<CardRarity, string> = {
   legendary: '#F59E0B', // 金
 };
 
+// レベル別のデッキ上限と手札上限
+export const LEVEL_LIMITS = {
+  getDeckCapacity: (level: number): number => Math.min(5 + Math.floor(level / 2), 15),  // Lv1:5, Lv3:6, Lv5:7... 最大:15
+  getHandSize: (level: number): number => Math.min(2 + Math.floor(level / 3), 6),       // Lv1:2, Lv3:3, Lv6:4... 最大:6
+};
+
 // 初期プレイヤー状態
 export const INITIAL_PLAYER_STATE: PlayerState = {
   hp: 100,
@@ -136,6 +148,8 @@ export const INITIAL_PLAYER_STATE: PlayerState = {
   totalWins: 0,
   cards: [],
   currentDeck: [],
+  deckCapacity: 5,
+  handSize: 2,
 };
 
 // 初期バトル状態
@@ -147,8 +161,12 @@ export const INITIAL_BATTLE_STATE: BattleState = {
   turn: 'player',
   phase: 'select_action',
   selectedCard: null,
+  selectedBurstCards: null,
+  isBurstMode: false,
   quizQuestion: null,
   battleLog: [],
   earnedCards: [],
   earnedExp: 0,
+  currentHand: [],
+  usedCards: [],
 };

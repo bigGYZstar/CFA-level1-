@@ -17,14 +17,16 @@ export default function GameTabScreen() {
     const init = async () => {
       await gameStore.loadState();
       await gameStore.grantStarterCards();
-      setPlayer(gameStore.getPlayer());
-      setUnlockedStages(gameStore.getState().unlockedStages);
+      const p = gameStore.getPlayer();
+      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck] });
+      setUnlockedStages([...gameStore.getState().unlockedStages]);
     };
     init();
 
     const unsubscribe = gameStore.subscribe(() => {
-      setPlayer(gameStore.getPlayer());
-      setUnlockedStages(gameStore.getState().unlockedStages);
+      const p = gameStore.getPlayer();
+      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck] });
+      setUnlockedStages([...gameStore.getState().unlockedStages]);
     });
     return unsubscribe;
   }, []);

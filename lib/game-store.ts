@@ -13,6 +13,7 @@ import {
   RARITY_STATS,
   INITIAL_PLAYER_STATE,
   INITIAL_BATTLE_STATE,
+  LEVEL_LIMITS,
 } from './game-types';
 import { dataStore } from './data-store';
 import type { Term } from './types';
@@ -249,6 +250,14 @@ class GameStore {
 
     const enemy = stage.enemies[Math.floor(Math.random() * stage.enemies.length)];
     
+    // デッキから手札をランダムに引く
+    const deckCards = this.state.player.currentDeck
+      .map(id => this.state.player.cards.find(c => c.id === id))
+      .filter((c): c is WordCard => c !== undefined);
+    const shuffled = [...deckCards].sort(() => Math.random() - 0.5);
+    const handSize = this.state.player.handSize;
+    const currentHand = shuffled.slice(0, handSize);
+
     this.state.battle = {
       inBattle: true,
       enemy: { ...enemy },
@@ -257,10 +266,14 @@ class GameStore {
       turn: 'player',
       phase: 'select_action',
       selectedCard: null,
+      selectedBurstCards: null,
+      isBurstMode: false,
       quizQuestion: null,
       battleLog: [],
       earnedCards: [],
       earnedExp: 0,
+      currentHand,
+      usedCards: [],
     };
     this.state.currentStage = stageId;
     this.notify();
@@ -271,6 +284,7 @@ class GameStore {
     if (this.state.battle.phase !== 'select_action') return;
 
     this.state.battle.selectedCard = card;
+    this.state.battle.isBurstMode = false;
     this.state.battle.phase = 'quiz';
     
     // クイズ問題を生成
@@ -279,7 +293,91 @@ class GameStore {
       this.state.battle.quizQuestion = this.generateQuiz(term);
     }
     
+    // 使用済みカードに追加
+    this.state.battle.usedCards.push(card.id);
+    
     this.notify();
+  }
+
+  // バーストカード選択（2枚同時使用）
+  selectBurstCards(card1: WordCard, card2: WordCard): void {
+    if (this.state.battle.phase !== 'select_action') return;
+
+    this.state.battle.selectedBurstCards = [card1, card2];
+    this.state.battle.selectedCard = card1; // メインカードとして使用
+    this.state.battle.isBurstMode = true;
+    this.state.battle.phase = 'quiz';
+    
+    // バースト用の高難度クイズを生成
+    const term1 = dataStore.getTermById(card1.termId);
+    const term2 = dataStore.getTermById(card2.termId);
+    if (term1 && term2) {
+      this.state.battle.quizQuestion = this.generateBurstQuiz(term1, term2);
+    }
+    
+    // 使用済みカードに追加
+    this.state.battle.usedCards.push(card1.id, card2.id);
+    
+    this.notify();
+  }
+
+  // バースト用高難度クイズ生成（2つの概念を組み合わせた問題）
+  private generateBurstQuiz(term1: Term, term2: Term): QuizQuestion {
+    const allTerms = dataStore.getTerms();
+    const otherTerms = allTerms.filter((t: Term) => t.term_id !== term1.term_id && t.term_id !== term2.term_id);
+    const shuffled = otherTerms.sort(() => Math.random() - 0.5).slice(0, 2);
+
+    // バーストクイズのタイプをランダムに選択
+    const burstType = Math.floor(Math.random() * 3);
+
+    if (burstType === 0) {
+      // タイプ1: 2つの用語の共通点を問う
+      const options = [
+        term1.jp_headword,
+        term2.jp_headword,
+        shuffled[0]?.jp_headword || '該当なし',
+        shuffled[1]?.jp_headword || '該当なし',
+      ].sort(() => Math.random() - 0.5);
+      return {
+        termId: term1.term_id,
+        question: `「${term1.en_canonical}」と「${term2.en_canonical}」のうち、「${term1.jp_definition.substring(0, 30)}...」に当てはまるのは？`,
+        questionType: 'concept',
+        correctAnswer: term1.jp_headword,
+        options,
+      };
+    } else if (burstType === 1) {
+      // タイプ2: 2つの英語用語の日本語訳を連続で問う
+      const options = [
+        `${term1.jp_headword} / ${term2.jp_headword}`,
+        `${term2.jp_headword} / ${term1.jp_headword}`,
+        `${term1.jp_headword} / ${shuffled[0]?.jp_headword || '不明'}`,
+        `${shuffled[0]?.jp_headword || '不明'} / ${term2.jp_headword}`,
+      ].sort(() => Math.random() - 0.5);
+      return {
+        termId: term1.term_id,
+        question: `「${term1.en_canonical}」と「${term2.en_canonical}」の日本語訳の正しい組み合わせは？`,
+        questionType: 'jp_to_en',
+        correctAnswer: `${term1.jp_headword} / ${term2.jp_headword}`,
+        options,
+      };
+    } else {
+      // タイプ3: 定義の組み合わせ問題
+      const def1Preview = term1.jp_definition.substring(0, 25) + '...';
+      const def2Preview = term2.jp_definition.substring(0, 25) + '...';
+      const options = [
+        term1.jp_headword,
+        term2.jp_headword,
+        shuffled[0]?.jp_headword || '該当なし',
+        shuffled[1]?.jp_headword || '該当なし',
+      ].sort(() => Math.random() - 0.5);
+      return {
+        termId: term1.term_id,
+        question: `「${def1Preview}」と「${def2Preview}」のうち、前者の説明に当てはまる用語は？`,
+        questionType: 'concept',
+        correctAnswer: term1.jp_headword,
+        options,
+      };
+    }
   }
 
   // クイズ問題生成（3タイプ：英語→日本語、日本語→英語、概念説明）
@@ -338,11 +436,17 @@ class GameStore {
 
     const correct = answer === battle.quizQuestion.correctAnswer;
     const card = battle.selectedCard;
+    const isBurst = battle.isBurstMode;
     let damage = 0;
     let heal = 0;
 
     // 学習ログに記録
     await dataStore.recordStudy(card.termId, correct);
+    
+    // バーストの場合、2枚目のカードも記録
+    if (isBurst && battle.selectedBurstCards) {
+      await dataStore.recordStudy(battle.selectedBurstCards[1].termId, correct);
+    }
 
     // カードの使用回数を更新
     const cardIndex = player.cards.findIndex((c) => c.id === card.id);
@@ -352,27 +456,56 @@ class GameStore {
         player.cards[cardIndex].successCount++;
       }
     }
+    
+    // バーストの場合、2枚目のカードも更新
+    if (isBurst && battle.selectedBurstCards) {
+      const card2Index = player.cards.findIndex((c) => c.id === battle.selectedBurstCards![1].id);
+      if (card2Index >= 0) {
+        player.cards[card2Index].usageCount++;
+        if (correct) {
+          player.cards[card2Index].successCount++;
+        }
+      }
+    }
+
+    // バースト倍率（成功で2倍ダメージ、失敗で2倍反動）
+    const burstMultiplier = isBurst ? 2 : 1;
 
     if (correct) {
       if (action === 'attack') {
-        damage = card.attackPower;
-        battle.enemyHp = Math.max(0, battle.enemyHp - damage);
-        this.addBattleLog('player', 'attack', `${card.term}で攻撃！${damage}ダメージ！`, damage);
+        // バーストの場合、2枚のカードの攻撃力合計 × バースト倍率
+        if (isBurst && battle.selectedBurstCards) {
+          damage = (card.attackPower + battle.selectedBurstCards[1].attackPower) * burstMultiplier;
+          battle.enemyHp = Math.max(0, battle.enemyHp - damage);
+          this.addBattleLog('player', 'attack', `🔥バースト攻撃！${damage}ダメージ！`, damage);
+        } else {
+          damage = card.attackPower;
+          battle.enemyHp = Math.max(0, battle.enemyHp - damage);
+          this.addBattleLog('player', 'attack', `${card.term}で攻撃！${damage}ダメージ！`, damage);
+        }
       } else {
-        heal = card.healPower;
+        heal = card.healPower * burstMultiplier;
         battle.playerHp = Math.min(player.maxHp, battle.playerHp + heal);
         this.addBattleLog('player', 'heal', `${card.term}で回復！HP+${heal}！`, undefined, heal);
       }
     } else {
-      // 不正解の場合、逆ダメージ
-      const selfDamage = Math.floor(card.attackPower * 0.5);
+      // 不正解の場合、逆ダメージ（バーストは2倍）
+      let selfDamage = Math.floor(card.attackPower * 0.5);
+      if (isBurst && battle.selectedBurstCards) {
+        selfDamage = Math.floor((card.attackPower + battle.selectedBurstCards[1].attackPower) * 0.5 * burstMultiplier);
+      }
       battle.playerHp = Math.max(0, battle.playerHp - selfDamage);
-      this.addBattleLog('player', 'fail', `クイズ不正解！${selfDamage}の反動ダメージ！`, selfDamage);
+      const logMessage = isBurst 
+        ? `🔥バースト失敗！${selfDamage}の大反動ダメージ！`
+        : `クイズ不正解！${selfDamage}の反動ダメージ！`;
+      this.addBattleLog('player', 'fail', logMessage, selfDamage);
     }
 
     // フェーズを結果に移行
     battle.phase = 'result';
     battle.selectedCard = null;
+    battle.selectedBurstCards = null;
+    battle.isBurstMode = false;
     battle.quizQuestion = null;
 
     this.notify();
@@ -441,6 +574,9 @@ class GameStore {
         player.maxHp += 10;
         player.hp = player.maxHp;
         player.expToNextLevel = Math.floor(player.expToNextLevel * 1.2);
+        // レベルアップでデッキ上限と手札上限を更新
+        player.deckCapacity = LEVEL_LIMITS.getDeckCapacity(player.level);
+        player.handSize = LEVEL_LIMITS.getHandSize(player.level);
       }
 
       // カードドロップ判定
