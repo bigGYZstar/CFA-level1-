@@ -10,13 +10,20 @@ import {
   QuizQuestion,
   CardRarity,
   BattleLogEntry,
+  GameItem,
+  ItemType,
+  CFAQuestion,
   RARITY_STATS,
   INITIAL_PLAYER_STATE,
   INITIAL_BATTLE_STATE,
   LEVEL_LIMITS,
+  UPGRADE_COSTS,
+  UPGRADE_BONUS,
+  ITEM_DEFINITIONS,
 } from './game-types';
 import { dataStore } from './data-store';
 import type { Term } from './types';
+import { getRandomCFAQuestion } from './cfa-questions';
 
 const GAME_STATE_KEY = 'cfa_game_state';
 
@@ -33,8 +40,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 1,
     topicCode: 'EQ',
     enemies: [
-      { id: 'eq1', name: 'P/E Slime', nameJa: 'PERスライム', hp: 40, maxHp: 40, attack: 6, defense: 2, expReward: 15, cardDropRate: 0.7, sprite: '🟢' },
-      { id: 'eq2', name: 'Dividend Goblin', nameJa: '配当ゴブリン', hp: 50, maxHp: 50, attack: 8, defense: 3, expReward: 20, cardDropRate: 0.65, sprite: '👺' },
+      { id: 'eq1', name: 'P/E Slime', nameJa: 'PERスライム', hp: 40, maxHp: 40, attack: 6, defense: 2, expReward: 15, goldReward: 20, cardDropRate: 0.7, sprite: '🟢' },
+      { id: 'eq2', name: 'Dividend Goblin', nameJa: '配当ゴブリン', hp: 50, maxHp: 50, attack: 8, defense: 3, expReward: 20, goldReward: 25, cardDropRate: 0.65, sprite: '👺' },
     ],
   },
   // ステージ2: 株式投資上級
@@ -46,8 +53,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 3,
     topicCode: 'EQ',
     enemies: [
-      { id: 'eq3', name: 'Valuation Golem', nameJa: 'バリュエーションゴーレム', hp: 80, maxHp: 80, attack: 12, defense: 5, expReward: 35, cardDropRate: 0.55, sprite: '🗿' },
-      { id: 'eq4', name: 'DCF Phantom', nameJa: 'DCFファントム', hp: 70, maxHp: 70, attack: 14, defense: 4, expReward: 30, cardDropRate: 0.6, sprite: '👻' },
+      { id: 'eq3', name: 'Valuation Golem', nameJa: 'バリュエーションゴーレム', hp: 80, maxHp: 80, attack: 12, defense: 5, expReward: 35, goldReward: 40, cardDropRate: 0.55, sprite: '🗿' },
+      { id: 'eq4', name: 'DCF Phantom', nameJa: 'DCFファントム', hp: 70, maxHp: 70, attack: 14, defense: 4, expReward: 30, goldReward: 35, cardDropRate: 0.6, sprite: '👻' },
     ],
   },
   // ステージ3: 倫理・職業行為基準（ETH）
@@ -59,8 +66,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 5,
     topicCode: 'ETH',
     enemies: [
-      { id: 'eth1', name: 'Compliance Goblin', nameJa: 'コンプラゴブリン', hp: 60, maxHp: 60, attack: 10, defense: 4, expReward: 25, cardDropRate: 0.6, sprite: '👺' },
-      { id: 'eth2', name: 'Ethics Slime', nameJa: '倫理スライム', hp: 45, maxHp: 45, attack: 8, defense: 3, expReward: 20, cardDropRate: 0.65, sprite: '🟢' },
+      { id: 'eth1', name: 'Compliance Goblin', nameJa: 'コンプラゴブリン', hp: 60, maxHp: 60, attack: 10, defense: 4, expReward: 25, goldReward: 30, cardDropRate: 0.6, sprite: '👺' },
+      { id: 'eth2', name: 'Ethics Slime', nameJa: '倫理スライム', hp: 45, maxHp: 45, attack: 8, defense: 3, expReward: 20, goldReward: 25, cardDropRate: 0.65, sprite: '🟢' },
     ],
   },
   // ステージ4: 定量分析（QM）
@@ -72,8 +79,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 7,
     topicCode: 'QM',
     enemies: [
-      { id: 'qm1', name: 'Statistics Golem', nameJa: '統計ゴーレム', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, cardDropRate: 0.5, sprite: '🗿' },
-      { id: 'qm2', name: 'Probability Phantom', nameJa: '確率ファントム', hp: 75, maxHp: 75, attack: 16, defense: 5, expReward: 35, cardDropRate: 0.55, sprite: '👻' },
+      { id: 'qm1', name: 'Statistics Golem', nameJa: '統計ゴーレム', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, goldReward: 50, cardDropRate: 0.5, sprite: '🗿' },
+      { id: 'qm2', name: 'Probability Phantom', nameJa: '確率ファントム', hp: 75, maxHp: 75, attack: 16, defense: 5, expReward: 35, goldReward: 45, cardDropRate: 0.55, sprite: '👻' },
     ],
   },
   // ステージ5: 経済学（ECON）
@@ -85,8 +92,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 9,
     topicCode: 'ECON',
     enemies: [
-      { id: 'econ1', name: 'Inflation Dragon', nameJa: 'インフレドラゴン', hp: 120, maxHp: 120, attack: 18, defense: 8, expReward: 50, cardDropRate: 0.45, sprite: '🐉' },
-      { id: 'econ2', name: 'Supply Demon', nameJa: '供給デーモン', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, cardDropRate: 0.5, sprite: '😈' },
+      { id: 'econ1', name: 'Inflation Dragon', nameJa: 'インフレドラゴン', hp: 120, maxHp: 120, attack: 18, defense: 8, expReward: 50, goldReward: 60, cardDropRate: 0.45, sprite: '🐉' },
+      { id: 'econ2', name: 'Supply Demon', nameJa: '供給デーモン', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, goldReward: 50, cardDropRate: 0.5, sprite: '😈' },
     ],
   },
   // ステージ6: 財務諸表分析（FSA）
@@ -98,8 +105,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 11,
     topicCode: 'FSA',
     enemies: [
-      { id: 'fsa1', name: 'Balance Sheet Beast', nameJa: 'BS獣', hp: 150, maxHp: 150, attack: 22, defense: 10, expReward: 65, cardDropRate: 0.4, sprite: '🦁' },
-      { id: 'fsa2', name: 'Income Wraith', nameJa: 'PL亡霊', hp: 110, maxHp: 110, attack: 20, defense: 7, expReward: 55, cardDropRate: 0.45, sprite: '💀' },
+      { id: 'fsa1', name: 'Balance Sheet Beast', nameJa: 'BS獣', hp: 150, maxHp: 150, attack: 22, defense: 10, expReward: 65, goldReward: 80, cardDropRate: 0.4, sprite: '🦁' },
+      { id: 'fsa2', name: 'Income Wraith', nameJa: 'PL亡霊', hp: 110, maxHp: 110, attack: 20, defense: 7, expReward: 55, goldReward: 70, cardDropRate: 0.45, sprite: '💀' },
     ],
   },
   // ステージ7: 債券（FI）
@@ -111,8 +118,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 13,
     topicCode: 'FI',
     enemies: [
-      { id: 'fi1', name: 'Duration Dragon', nameJa: 'デュレーションドラゴン', hp: 200, maxHp: 200, attack: 26, defense: 12, expReward: 80, cardDropRate: 0.35, sprite: '🐲' },
-      { id: 'fi2', name: 'Yield Hydra', nameJa: '利回りヒドラ', hp: 180, maxHp: 180, attack: 24, defense: 10, expReward: 70, cardDropRate: 0.4, sprite: '🐍' },
+      { id: 'fi1', name: 'Duration Dragon', nameJa: 'デュレーションドラゴン', hp: 200, maxHp: 200, attack: 26, defense: 12, expReward: 80, goldReward: 100, cardDropRate: 0.35, sprite: '🐲' },
+      { id: 'fi2', name: 'Yield Hydra', nameJa: '利回りヒドラ', hp: 180, maxHp: 180, attack: 24, defense: 10, expReward: 70, goldReward: 90, cardDropRate: 0.4, sprite: '🐍' },
     ],
   },
   // ステージ8: デリバティブ（DER）
@@ -124,8 +131,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 15,
     topicCode: 'DER',
     enemies: [
-      { id: 'der1', name: 'Options Overlord', nameJa: 'オプション魔王', hp: 250, maxHp: 250, attack: 30, defense: 14, expReward: 100, cardDropRate: 0.3, sprite: '👹' },
-      { id: 'der2', name: 'Futures Fiend', nameJa: '先物フィーンド', hp: 220, maxHp: 220, attack: 28, defense: 12, expReward: 90, cardDropRate: 0.35, sprite: '🔥' },
+      { id: 'der1', name: 'Options Overlord', nameJa: 'オプション魔王', hp: 250, maxHp: 250, attack: 30, defense: 14, expReward: 100, goldReward: 130, cardDropRate: 0.3, sprite: '👹' },
+      { id: 'der2', name: 'Futures Fiend', nameJa: '先物フィーンド', hp: 220, maxHp: 220, attack: 28, defense: 12, expReward: 90, goldReward: 120, cardDropRate: 0.35, sprite: '🔥' },
     ],
   },
   // ステージ9: ポートフォリオ管理（PM）
@@ -137,8 +144,8 @@ export const STAGES: Stage[] = [
     requiredLevel: 18,
     topicCode: 'PM',
     enemies: [
-      { id: 'pm1', name: 'CAPM Colossus', nameJa: 'CAPMコロッサス', hp: 350, maxHp: 350, attack: 38, defense: 18, expReward: 130, cardDropRate: 0.25, sprite: '🏔️' },
-      { id: 'pm2', name: 'Sharpe Sovereign', nameJa: 'シャープ皇帝', hp: 400, maxHp: 400, attack: 42, defense: 20, expReward: 150, cardDropRate: 0.2, sprite: '👑' },
+      { id: 'pm1', name: 'CAPM Colossus', nameJa: 'CAPMコロッサス', hp: 350, maxHp: 350, attack: 38, defense: 18, expReward: 130, goldReward: 180, cardDropRate: 0.25, sprite: '🏔️' },
+      { id: 'pm2', name: 'Sharpe Sovereign', nameJa: 'シャープ皇帝', hp: 400, maxHp: 400, attack: 42, defense: 20, expReward: 150, goldReward: 200, cardDropRate: 0.2, sprite: '👑' },
     ],
   },
 ];
@@ -226,6 +233,7 @@ class GameStore {
       acquiredAt: Date.now(),
       usageCount: 0,
       successCount: 0,
+      upgradeLevel: 0,
     };
   }
 
@@ -269,11 +277,14 @@ class GameStore {
       selectedBurstCards: null,
       isBurstMode: false,
       quizQuestion: null,
+      cfaQuestion: null,
       battleLog: [],
       earnedCards: [],
       earnedExp: 0,
+      earnedGold: 0,
       currentHand,
       usedCards: [],
+      expMultiplier: 1,
     };
     this.state.currentStage = stageId;
     this.notify();
@@ -412,10 +423,11 @@ class GameStore {
       };
     } else {
       // タイプ3: 概念説明クイズ（定義を見て用語を選ぶ）
-      // 定義の最初の50文字を表示
+      // 定義の最初の60文字を表示
       const defPreview = term.jp_definition.length > 60 
         ? term.jp_definition.substring(0, 60) + '...' 
         : term.jp_definition;
+      const fullQuestion = `次の説明に当てはまる用語は？\n「${term.jp_definition}」`;
       const options = [term.jp_headword, ...shuffled.map((t: Term) => t.jp_headword)].sort(() => Math.random() - 0.5);
       return {
         termId: term.term_id,
@@ -423,6 +435,7 @@ class GameStore {
         questionType: 'concept',
         correctAnswer: term.jp_headword,
         options,
+        fullQuestion,
       };
     }
   }
@@ -564,8 +577,15 @@ class GameStore {
 
     if (victory && battle.enemy) {
       player.totalWins++;
-      battle.earnedExp = battle.enemy.expReward;
+      
+      // EXP計算（アイテム効果で倍率適用）
+      const baseExp = battle.enemy.expReward;
+      battle.earnedExp = Math.floor(baseExp * battle.expMultiplier);
       player.exp += battle.earnedExp;
+      
+      // ゴールド獲得
+      battle.earnedGold = battle.enemy.goldReward;
+      player.gold += battle.earnedGold;
 
       // レベルアップ判定
       while (player.exp >= player.expToNextLevel) {
@@ -602,8 +622,14 @@ class GameStore {
         this.state.unlockedStages.push(nextStageId);
       }
 
-      this.addBattleLog('player', 'victory', `勝利！${battle.earnedExp}EXP獲得！`);
+      // アイテム使用済みをリセット
+      player.activeItem = null;
+
+      const expMsg = battle.expMultiplier > 1 ? `${battle.earnedExp}EXP(x${battle.expMultiplier})` : `${battle.earnedExp}EXP`;
+      this.addBattleLog('player', 'victory', `勝利！${expMsg}、${battle.earnedGold}G獲得！`);
     } else {
+      // 敗北時はアイテム効果をリセット
+      player.activeItem = null;
       this.addBattleLog('enemy', 'victory', '敗北...');
     }
 
@@ -634,7 +660,8 @@ class GameStore {
 
   // デッキにカードを追加
   addToDeck(cardId: string): boolean {
-    if (this.state.player.currentDeck.length >= 5) return false;
+    // レベルに応じたデッキ上限を使用
+    if (this.state.player.currentDeck.length >= this.state.player.deckCapacity) return false;
     if (this.state.player.currentDeck.includes(cardId)) return false;
     this.state.player.currentDeck.push(cardId);
     this.saveState();
@@ -684,6 +711,137 @@ class GameStore {
     };
     await AsyncStorage.removeItem(GAME_STATE_KEY);
     this.notify();
+  }
+
+  // アイテム購入
+  buyItem(itemType: ItemType): boolean {
+    const itemDef = ITEM_DEFINITIONS[itemType];
+    if (!itemDef) return false;
+    if (this.state.player.gold < itemDef.price) return false;
+
+    this.state.player.gold -= itemDef.price;
+    
+    // 既存のアイテムを検索
+    const existingItem = this.state.player.items.find(i => i.type === itemType);
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      const newItem: GameItem = {
+        id: `item_${itemType}_${Date.now()}`,
+        ...itemDef,
+        quantity: 1,
+      };
+      this.state.player.items.push(newItem);
+    }
+
+    this.saveState();
+    this.notify();
+    return true;
+  }
+
+  // アイテム使用（バトル開始前に使用）
+  useItem(itemType: ItemType): boolean {
+    const item = this.state.player.items.find(i => i.type === itemType && i.quantity > 0);
+    if (!item) return false;
+
+    item.quantity--;
+    this.state.player.activeItem = itemType;
+    
+    // 数量が0になったら削除
+    if (item.quantity <= 0) {
+      this.state.player.items = this.state.player.items.filter(i => i.type !== itemType);
+    }
+
+    this.saveState();
+    this.notify();
+    return true;
+  }
+
+  // CFA実問を出題（アイテム使用時）
+  startCFAQuiz(): void {
+    const question = getRandomCFAQuestion();
+    this.state.battle.cfaQuestion = question;
+    this.state.battle.phase = 'item_quiz';
+    this.notify();
+  }
+
+  // CFA実問に回答
+  answerCFAQuiz(answer: string): boolean {
+    const { battle } = this.state;
+    if (!battle.cfaQuestion) return false;
+
+    const isCorrect = answer === battle.cfaQuestion.correctAnswer;
+    
+    if (isCorrect) {
+      // 正解：EXP10倍
+      battle.expMultiplier = 10;
+      this.addBattleLog('player', 'item', 'Schwの力発動！EXP10倍！');
+    } else {
+      // 不正解：効果なし
+      battle.expMultiplier = 1;
+      this.addBattleLog('player', 'item', 'Schwの力不発...');
+    }
+
+    battle.cfaQuestion = null;
+    battle.phase = 'select_action';
+    this.notify();
+    return isCorrect;
+  }
+
+  // カード強化
+  upgradeCard(cardId: string): { success: boolean; message: string } {
+    const card = this.state.player.cards.find(c => c.id === cardId);
+    if (!card) return { success: false, message: 'カードが見つかりません' };
+
+    const maxUpgradeLevel = 5;
+    if (card.upgradeLevel >= maxUpgradeLevel) {
+      return { success: false, message: '最大強化レベルに達しています' };
+    }
+
+    const costs = UPGRADE_COSTS[card.rarity];
+    const cost = costs[card.upgradeLevel];
+    
+    if (this.state.player.gold < cost) {
+      return { success: false, message: `ゴールドが足りません（必要: ${cost}G）` };
+    }
+
+    // 強化実行
+    this.state.player.gold -= cost;
+    card.upgradeLevel++;
+    
+    // ステータスアップ
+    const baseStats = RARITY_STATS[card.rarity];
+    card.attackPower = Math.floor(baseStats.attack * (1 + UPGRADE_BONUS.attackMultiplier * card.upgradeLevel));
+    card.healPower = Math.floor(baseStats.heal * (1 + UPGRADE_BONUS.healMultiplier * card.upgradeLevel));
+
+    // レアリティアップ判定（強化レベル3と5でレアリティが上がる可能性）
+    if ((card.upgradeLevel === 3 || card.upgradeLevel === 5) && Math.random() < 0.3) {
+      const rarityOrder: CardRarity[] = ['common', 'uncommon', 'rare', 'epic', 'legendary'];
+      const currentIndex = rarityOrder.indexOf(card.rarity);
+      if (currentIndex < rarityOrder.length - 1) {
+        card.rarity = rarityOrder[currentIndex + 1];
+        this.saveState();
+        this.notify();
+        return { success: true, message: `強化成功！レアリティが上がりました！` };
+      }
+    }
+
+    this.saveState();
+    this.notify();
+    return { success: true, message: `強化成功！Lv.${card.upgradeLevel}になりました` };
+  }
+
+  // カード強化コストを取得
+  getUpgradeCost(cardId: string): number | null {
+    const card = this.state.player.cards.find(c => c.id === cardId);
+    if (!card || card.upgradeLevel >= 5) return null;
+    return UPGRADE_COSTS[card.rarity][card.upgradeLevel];
+  }
+
+  // アイテム所持数を取得
+  getItemCount(itemType: ItemType): number {
+    const item = this.state.player.items.find(i => i.type === itemType);
+    return item?.quantity ?? 0;
   }
 }
 

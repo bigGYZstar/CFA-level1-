@@ -1,10 +1,10 @@
 import { useEffect, useState, useCallback } from 'react';
-import { View, Text, ScrollView, Pressable, StyleSheet, Alert } from 'react-native';
+import { View, Text, ScrollView, Pressable, StyleSheet, Alert, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { useColors } from '@/hooks/use-colors';
 import { gameStore } from '@/lib/game-store';
-import { BattleState, WordCard, QuizQuestion } from '@/lib/game-types';
+import { BattleState, WordCard, QuizQuestion, CFAQuestion } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
 
 export default function BattleScreen() {
@@ -15,6 +15,9 @@ export default function BattleScreen() {
   const [selectedCards, setSelectedCards] = useState<WordCard[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [quizResult, setQuizResult] = useState<{ correct: boolean; message: string } | null>(null);
+  const [showFullQuestion, setShowFullQuestion] = useState(false);
+  const [cfaAnswer, setCfaAnswer] = useState<string | null>(null);
+  const [cfaResult, setCfaResult] = useState<boolean | null>(null);
 
   useEffect(() => {
     const unsubscribe = gameStore.subscribe(() => {
@@ -87,11 +90,25 @@ export default function BattleScreen() {
     setQuizResult({ correct: result.correct, message });
   }, [selectedAction]);
 
+  // CFA実問に回答
+  const handleCFAAnswer = useCallback((answer: string) => {
+    setCfaAnswer(answer);
+    const isCorrect = gameStore.answerCFAQuiz(answer);
+    setCfaResult(isCorrect);
+    
+    // 3秒後に結果をクリア
+    setTimeout(() => {
+      setCfaAnswer(null);
+      setCfaResult(null);
+    }, 2000);
+  }, []);
+
   const handleProceed = useCallback(() => {
     setSelectedAnswer(null);
     setQuizResult(null);
     setSelectedAction(null);
     setSelectedCards([]);
+    setShowFullQuestion(false);
     
     if (battle.phase === 'battle_end') {
       gameStore.resetBattle();
@@ -114,6 +131,14 @@ export default function BattleScreen() {
       },
     ]);
   }, [router]);
+
+  // 問題文を省略表示
+  const truncateQuestion = (question: string, maxLength: number = 60): { text: string; isTruncated: boolean } => {
+    if (question.length <= maxLength) {
+      return { text: question, isTruncated: false };
+    }
+    return { text: question.slice(0, maxLength) + '...', isTruncated: true };
+  };
 
   if (!battle.inBattle && battle.phase !== 'battle_end') {
     return (
@@ -155,12 +180,23 @@ export default function BattleScreen() {
                 {battle.enemyHp}/{battle.enemy.maxHp}
               </Text>
             </View>
+            {/* 報酬表示 */}
+            <View style={styles.rewardPreview}>
+              <Text style={[styles.rewardPreviewText, { color: colors.muted }]}>
+                💰{battle.enemy.goldReward}G / ⭐{battle.enemy.expReward}EXP
+              </Text>
+            </View>
           </View>
         )}
 
         {/* プレイヤーHP */}
         <View style={[styles.playerHp, { backgroundColor: colors.surface, borderColor: colors.primary }]}>
-          <Text style={[styles.playerLabel, { color: colors.foreground }]}>あなた</Text>
+          <View style={styles.playerHeader}>
+            <Text style={[styles.playerLabel, { color: colors.foreground }]}>あなた</Text>
+            <Text style={[styles.goldText, { color: colors.warning }]}>
+              💰 {gameStore.getPlayer().gold}G
+            </Text>
+          </View>
           <View style={styles.hpContainer}>
             <View style={[styles.hpBarBg, { backgroundColor: colors.border }]}>
               <View 
@@ -177,6 +213,12 @@ export default function BattleScreen() {
               {battle.playerHp}/{gameStore.getPlayer().maxHp}
             </Text>
           </View>
+          {/* EXP倍率表示 */}
+          {battle.expMultiplier > 1 && (
+            <Text style={[styles.multiplierText, { color: colors.warning }]}>
+              🔥 EXP x{battle.expMultiplier}
+            </Text>
+          )}
         </View>
 
         {/* バトルログ */}
@@ -196,6 +238,64 @@ export default function BattleScreen() {
           </View>
         )}
 
+        {/* CFA実問クイズ（アイテム使用時） */}
+        {battle.phase === 'item_quiz' && battle.cfaQuestion && (
+          <View style={[styles.quizCard, { backgroundColor: colors.surface, borderColor: colors.warning }]}>
+            <Text style={[styles.quizTitle, { color: colors.warning }]}>
+              ⚡ Schwの力 - CFA実問
+            </Text>
+            <Text style={[styles.cfaHint, { color: colors.muted }]}>
+              正解でEXP10倍！
+            </Text>
+            
+            {/* 問題文 */}
+            {(() => {
+              const { text, isTruncated } = truncateQuestion(battle.cfaQuestion.question, 100);
+              return (
+                <>
+                  <Text style={[styles.quizQuestion, { color: colors.foreground }]}>
+                    {showFullQuestion ? battle.cfaQuestion.question : text}
+                  </Text>
+                  {isTruncated && (
+                    <Pressable onPress={() => setShowFullQuestion(!showFullQuestion)}>
+                      <Text style={[styles.seeAllText, { color: colors.primary }]}>
+                        {showFullQuestion ? '(collapse)' : '(see all)'}
+                      </Text>
+                    </Pressable>
+                  )}
+                </>
+              );
+            })()}
+            
+            <View style={styles.optionsContainer}>
+              {battle.cfaQuestion.options.map((option, index) => (
+                <Pressable
+                  key={index}
+                  style={({ pressed }) => [
+                    styles.optionButton,
+                    { 
+                      backgroundColor: cfaAnswer === option 
+                        ? (cfaResult ? colors.success : colors.error)
+                        : colors.background,
+                      borderColor: colors.border,
+                    },
+                    pressed && { opacity: 0.7 }
+                  ]}
+                  onPress={() => handleCFAAnswer(option)}
+                  disabled={cfaAnswer !== null}
+                >
+                  <Text style={[
+                    styles.optionText, 
+                    { color: cfaAnswer === option ? '#fff' : colors.foreground }
+                  ]}>
+                    {option}
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+          </View>
+        )}
+
         {/* クイズフェーズ */}
         {battle.phase === 'quiz' && battle.quizQuestion && (
           <View style={[styles.quizCard, { backgroundColor: colors.surface, borderColor: colors.warning }]}>
@@ -207,9 +307,26 @@ export default function BattleScreen() {
                 高難易度！成功で2倍ダメージ、失敗で2倍反動！
               </Text>
             )}
-            <Text style={[styles.quizQuestion, { color: colors.foreground }]}>
-              {battle.quizQuestion.question}
-            </Text>
+            
+            {/* 問題文（省略表示対応） */}
+            {(() => {
+              const { text, isTruncated } = truncateQuestion(battle.quizQuestion.question, 60);
+              return (
+                <>
+                  <Text style={[styles.quizQuestion, { color: colors.foreground }]}>
+                    {showFullQuestion ? (battle.quizQuestion.fullQuestion || battle.quizQuestion.question) : text}
+                  </Text>
+                  {isTruncated && (
+                    <Pressable onPress={() => setShowFullQuestion(!showFullQuestion)}>
+                      <Text style={[styles.seeAllText, { color: colors.primary }]}>
+                        {showFullQuestion ? '(collapse)' : '(see all)'}
+                      </Text>
+                    </Pressable>
+                  )}
+                </>
+              );
+            })()}
+            
             <View style={styles.optionsContainer}>
               {battle.quizQuestion.options.map((option, index) => (
                 <Pressable
@@ -272,9 +389,15 @@ export default function BattleScreen() {
             
             {battle.earnedExp > 0 && (
               <>
-                <Text style={[styles.rewardText, { color: colors.foreground }]}>
-                  獲得EXP: {battle.earnedExp}
-                </Text>
+                <View style={styles.rewardsContainer}>
+                  <Text style={[styles.rewardText, { color: colors.foreground }]}>
+                    獲得EXP: {battle.earnedExp}
+                    {battle.expMultiplier > 1 && ` (x${battle.expMultiplier})`}
+                  </Text>
+                  <Text style={[styles.rewardText, { color: colors.warning }]}>
+                    💰 獲得ゴールド: {battle.earnedGold}G
+                  </Text>
+                </View>
                 {battle.earnedCards.length > 0 && (
                   <View style={styles.earnedCardsContainer}>
                     <Text style={[styles.earnedCardsTitle, { color: colors.warning }]}>
@@ -356,6 +479,7 @@ export default function BattleScreen() {
                         </Text>
                         <Text style={[styles.cardRarity, { color: RARITY_COLORS[card.rarity] }]}>
                           {RARITY_NAMES[card.rarity]}
+                          {card.upgradeLevel > 0 && ` +${card.upgradeLevel}`}
                         </Text>
                         <View style={styles.cardStats}>
                           <Text style={[styles.cardStat, { color: colors.error }]}>⚔️{card.attackPower}</Text>
@@ -491,16 +615,37 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginTop: 4,
   },
+  rewardPreview: {
+    marginTop: 8,
+  },
+  rewardPreviewText: {
+    fontSize: 12,
+  },
   playerHp: {
     padding: 16,
     borderRadius: 12,
     borderWidth: 2,
     marginBottom: 16,
   },
+  playerHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
   playerLabel: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 8,
+  },
+  goldText: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  multiplierText: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginTop: 8,
+    textAlign: 'center',
   },
   logContainer: {
     padding: 12,
@@ -509,7 +654,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   logText: {
-    fontSize: 14,
+    fontSize: 12,
     marginBottom: 4,
   },
   quizCard: {
@@ -519,7 +664,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   quizTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 8,
@@ -529,11 +674,22 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 12,
   },
+  cfaHint: {
+    fontSize: 12,
+    textAlign: 'center',
+    marginBottom: 12,
+  },
   quizQuestion: {
-    fontSize: 18,
+    fontSize: 16,
+    textAlign: 'center',
+    marginBottom: 8,
+    lineHeight: 24,
+  },
+  seeAllText: {
+    fontSize: 14,
     textAlign: 'center',
     marginBottom: 16,
-    lineHeight: 26,
+    textDecorationLine: 'underline',
   },
   optionsContainer: {
     gap: 10,
@@ -544,7 +700,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   optionText: {
-    fontSize: 16,
+    fontSize: 14,
     textAlign: 'center',
   },
   resultCard: {
@@ -559,8 +715,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   resultMessage: {
-    fontSize: 18,
-    marginBottom: 16,
+    fontSize: 16,
+    marginBottom: 20,
   },
   proceedButton: {
     paddingHorizontal: 32,
@@ -576,15 +732,20 @@ const styles = StyleSheet.create({
     padding: 24,
     borderRadius: 16,
     alignItems: 'center',
+    marginBottom: 16,
   },
   endTitle: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 16,
   },
+  rewardsContainer: {
+    marginBottom: 16,
+    alignItems: 'center',
+  },
   rewardText: {
     fontSize: 18,
-    marginBottom: 16,
+    marginBottom: 8,
   },
   earnedCardsContainer: {
     width: '100%',
@@ -606,11 +767,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   earnedCardName: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: '600',
   },
   earnedCardRarity: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: 'bold',
   },
   actionTitle: {
@@ -625,25 +786,24 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   noCardsContainer: {
+    padding: 40,
     alignItems: 'center',
-    padding: 20,
   },
   noCardsText: {
     fontSize: 16,
     marginBottom: 8,
   },
   noCardsHint: {
-    fontSize: 14,
+    fontSize: 12,
   },
   cardsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 12,
-    justifyContent: 'center',
     marginBottom: 20,
   },
   cardContainer: {
-    width: '45%',
+    width: '47%',
     padding: 12,
     borderRadius: 12,
     borderWidth: 2,
@@ -667,28 +827,28 @@ const styles = StyleSheet.create({
   cardName: {
     fontSize: 14,
     fontWeight: 'bold',
-    marginBottom: 4,
+    marginBottom: 2,
   },
   cardTerm: {
-    fontSize: 12,
+    fontSize: 11,
     marginBottom: 4,
   },
   cardRarity: {
-    fontSize: 11,
+    fontSize: 10,
     fontWeight: 'bold',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   cardStats: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    gap: 8,
   },
   cardStat: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '600',
   },
   actionButtons: {
     gap: 12,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   mainActionButton: {
     padding: 16,
@@ -719,7 +879,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 1,
     alignItems: 'center',
-    marginTop: 8,
   },
   fleeButtonText: {
     fontSize: 14,

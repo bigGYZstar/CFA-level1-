@@ -1,30 +1,62 @@
-import { useEffect, useState } from 'react';
-import { View, Text, FlatList, Pressable, StyleSheet } from 'react-native';
+import { useEffect, useState, useCallback } from 'react';
+import { View, Text, FlatList, Pressable, StyleSheet, Alert, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { useColors } from '@/hooks/use-colors';
 import { gameStore } from '@/lib/game-store';
-import { WordCard, CardRarity } from '@/lib/game-types';
+import { WordCard, CardRarity, PlayerState } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
 
 export default function CardsScreen() {
   const router = useRouter();
   const colors = useColors();
   const [cards, setCards] = useState<WordCard[]>([]);
+  const [player, setPlayer] = useState<PlayerState>(gameStore.getPlayer());
   const [filter, setFilter] = useState<CardRarity | 'all'>('all');
+  const [selectedCard, setSelectedCard] = useState<WordCard | null>(null);
 
   useEffect(() => {
     const loadCards = async () => {
       await gameStore.loadState();
       setCards(gameStore.getPlayer().cards);
+      setPlayer(gameStore.getPlayer());
     };
     loadCards();
 
     const unsubscribe = gameStore.subscribe(() => {
       setCards(gameStore.getPlayer().cards);
+      setPlayer(gameStore.getPlayer());
     });
     return unsubscribe;
   }, []);
+
+  const handleUpgrade = useCallback((card: WordCard) => {
+    const cost = gameStore.getUpgradeCost(card.id);
+    if (cost === null) {
+      Alert.alert('強化不可', '最大強化レベルに達しています');
+      return;
+    }
+
+    Alert.alert(
+      'カード強化',
+      `${card.termJa}を強化しますか？\n\n費用: ${cost}G\n所持金: ${player.gold}G`,
+      [
+        { text: 'キャンセル', style: 'cancel' },
+        {
+          text: '強化する',
+          onPress: () => {
+            const result = gameStore.upgradeCard(card.id);
+            if (result.success) {
+              Alert.alert('強化成功', result.message);
+              setSelectedCard(null);
+            } else {
+              Alert.alert('強化失敗', result.message);
+            }
+          }
+        }
+      ]
+    );
+  }, [player.gold]);
 
   const filteredCards = filter === 'all' 
     ? cards 
@@ -32,41 +64,69 @@ export default function CardsScreen() {
 
   const rarityFilters: (CardRarity | 'all')[] = ['all', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
 
-  const renderCard = ({ item }: { item: WordCard }) => (
-    <View style={[styles.card, { borderColor: RARITY_COLORS[item.rarity], backgroundColor: colors.surface }]}>
-      <View style={styles.cardHeader}>
-        <Text style={[styles.cardName, { color: colors.foreground }]} numberOfLines={1}>
-          {item.termJa}
-        </Text>
-        <Text style={[styles.cardRarity, { color: RARITY_COLORS[item.rarity] }]}>
-          {RARITY_NAMES[item.rarity]}
-        </Text>
-      </View>
-      <Text style={[styles.cardTerm, { color: colors.muted }]} numberOfLines={1}>
-        {item.term}
-      </Text>
-      <View style={styles.cardStats}>
-        <View style={styles.statItem}>
-          <Text style={[styles.statLabel, { color: colors.muted }]}>攻撃力</Text>
-          <Text style={[styles.statValue, { color: colors.error }]}>⚔️ {item.attackPower}</Text>
-        </View>
-        <View style={styles.statItem}>
-          <Text style={[styles.statLabel, { color: colors.muted }]}>回復力</Text>
-          <Text style={[styles.statValue, { color: colors.success }]}>💚 {item.healPower}</Text>
-        </View>
-      </View>
-      <View style={styles.cardUsage}>
-        <Text style={[styles.usageText, { color: colors.muted }]}>
-          使用回数: {item.usageCount} | 成功: {item.successCount}
-        </Text>
-        {item.usageCount > 0 && (
-          <Text style={[styles.successRate, { color: colors.primary }]}>
-            ({Math.round((item.successCount / item.usageCount) * 100)}%)
+  const renderCard = ({ item }: { item: WordCard }) => {
+    const upgradeCost = gameStore.getUpgradeCost(item.id);
+    const canUpgrade = upgradeCost !== null && player.gold >= upgradeCost;
+    
+    return (
+      <Pressable 
+        style={[styles.card, { borderColor: RARITY_COLORS[item.rarity], backgroundColor: colors.surface }]}
+        onPress={() => setSelectedCard(item)}
+      >
+        <View style={styles.cardHeader}>
+          <Text style={[styles.cardName, { color: colors.foreground }]} numberOfLines={1}>
+            {item.termJa}
           </Text>
-        )}
-      </View>
-    </View>
-  );
+          <View style={styles.rarityContainer}>
+            <Text style={[styles.cardRarity, { color: RARITY_COLORS[item.rarity] }]}>
+              {RARITY_NAMES[item.rarity]}
+            </Text>
+            {item.upgradeLevel > 0 && (
+              <Text style={[styles.upgradeLevel, { color: colors.warning }]}>
+                +{item.upgradeLevel}
+              </Text>
+            )}
+          </View>
+        </View>
+        <Text style={[styles.cardTerm, { color: colors.muted }]} numberOfLines={1}>
+          {item.term}
+        </Text>
+        <View style={styles.cardStats}>
+          <View style={styles.statItem}>
+            <Text style={[styles.statLabel, { color: colors.muted }]}>攻撃力</Text>
+            <Text style={[styles.statValue, { color: colors.error }]}>⚔️ {item.attackPower}</Text>
+          </View>
+          <View style={styles.statItem}>
+            <Text style={[styles.statLabel, { color: colors.muted }]}>回復力</Text>
+            <Text style={[styles.statValue, { color: colors.success }]}>💚 {item.healPower}</Text>
+          </View>
+          {upgradeCost !== null && (
+            <Pressable
+              style={[
+                styles.upgradeButton,
+                { backgroundColor: canUpgrade ? colors.warning : colors.border }
+              ]}
+              onPress={() => handleUpgrade(item)}
+            >
+              <Text style={styles.upgradeButtonText}>
+                強化 {upgradeCost}G
+              </Text>
+            </Pressable>
+          )}
+        </View>
+        <View style={styles.cardUsage}>
+          <Text style={[styles.usageText, { color: colors.muted }]}>
+            使用回数: {item.usageCount} | 成功: {item.successCount}
+          </Text>
+          {item.usageCount > 0 && (
+            <Text style={[styles.successRate, { color: colors.primary }]}>
+              ({Math.round((item.successCount / item.usageCount) * 100)}%)
+            </Text>
+          )}
+        </View>
+      </Pressable>
+    );
+  };
 
   return (
     <ScreenContainer>
@@ -77,7 +137,7 @@ export default function CardsScreen() {
             <Text style={[styles.backText, { color: colors.primary }]}>← 戻る</Text>
           </Pressable>
           <Text style={[styles.title, { color: colors.foreground }]}>カード一覧</Text>
-          <Text style={[styles.countText, { color: colors.muted }]}>{cards.length}枚</Text>
+          <Text style={[styles.goldText, { color: colors.warning }]}>💰{player.gold}G</Text>
         </View>
 
         {/* フィルター */}
@@ -104,6 +164,10 @@ export default function CardsScreen() {
           ))}
         </View>
 
+        <Text style={[styles.countText, { color: colors.muted }]}>
+          {filteredCards.length}枚 / 全{cards.length}枚
+        </Text>
+
         {/* カードリスト */}
         <FlatList
           data={filteredCards}
@@ -117,6 +181,86 @@ export default function CardsScreen() {
           }
         />
       </View>
+
+      {/* カード詳細モーダル */}
+      <Modal
+        visible={selectedCard !== null}
+        animationType="fade"
+        transparent={true}
+        onRequestClose={() => setSelectedCard(null)}
+      >
+        <View style={styles.modalOverlay}>
+          {selectedCard && (
+            <View style={[styles.modalContent, { backgroundColor: colors.background, borderColor: RARITY_COLORS[selectedCard.rarity] }]}>
+              <Text style={[styles.modalTitle, { color: RARITY_COLORS[selectedCard.rarity] }]}>
+                {RARITY_NAMES[selectedCard.rarity]}
+                {selectedCard.upgradeLevel > 0 && ` +${selectedCard.upgradeLevel}`}
+              </Text>
+              <Text style={[styles.modalCardName, { color: colors.foreground }]}>
+                {selectedCard.termJa}
+              </Text>
+              <Text style={[styles.modalCardTerm, { color: colors.muted }]}>
+                {selectedCard.term}
+              </Text>
+              
+              <View style={styles.modalStats}>
+                <View style={styles.modalStatItem}>
+                  <Text style={[styles.modalStatLabel, { color: colors.muted }]}>攻撃力</Text>
+                  <Text style={[styles.modalStatValue, { color: colors.error }]}>⚔️ {selectedCard.attackPower}</Text>
+                </View>
+                <View style={styles.modalStatItem}>
+                  <Text style={[styles.modalStatLabel, { color: colors.muted }]}>回復力</Text>
+                  <Text style={[styles.modalStatValue, { color: colors.success }]}>💚 {selectedCard.healPower}</Text>
+                </View>
+              </View>
+
+              <View style={styles.modalInfo}>
+                <Text style={[styles.modalInfoText, { color: colors.muted }]}>
+                  強化レベル: {selectedCard.upgradeLevel} / 5
+                </Text>
+                <Text style={[styles.modalInfoText, { color: colors.muted }]}>
+                  使用回数: {selectedCard.usageCount}回
+                </Text>
+                <Text style={[styles.modalInfoText, { color: colors.muted }]}>
+                  成功率: {selectedCard.usageCount > 0 ? Math.round((selectedCard.successCount / selectedCard.usageCount) * 100) : 0}%
+                </Text>
+              </View>
+
+              {(() => {
+                const cost = gameStore.getUpgradeCost(selectedCard.id);
+                if (cost === null) {
+                  return (
+                    <View style={[styles.maxLevelBadge, { backgroundColor: colors.warning }]}>
+                      <Text style={styles.maxLevelText}>最大強化済み</Text>
+                    </View>
+                  );
+                }
+                return (
+                  <Pressable
+                    style={[
+                      styles.modalUpgradeButton,
+                      { backgroundColor: player.gold >= cost ? colors.warning : colors.border }
+                    ]}
+                    onPress={() => handleUpgrade(selectedCard)}
+                    disabled={player.gold < cost}
+                  >
+                    <Text style={styles.modalUpgradeText}>
+                      強化する ({cost}G)
+                    </Text>
+                  </Pressable>
+                );
+              })()}
+
+              <Pressable
+                style={[styles.closeButton, { borderColor: colors.muted }]}
+                onPress={() => setSelectedCard(null)}
+              >
+                <Text style={[styles.closeButtonText, { color: colors.muted }]}>閉じる</Text>
+              </Pressable>
+            </View>
+          )}
+        </View>
+      </Modal>
     </ScreenContainer>
   );
 }
@@ -142,8 +286,9 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
-  countText: {
+  goldText: {
     fontSize: 14,
+    fontWeight: 'bold',
   },
   filterContainer: {
     flexDirection: 'row',
@@ -160,6 +305,11 @@ const styles = StyleSheet.create({
   filterText: {
     fontSize: 12,
     fontWeight: '600',
+  },
+  countText: {
+    fontSize: 12,
+    textAlign: 'center',
+    marginBottom: 8,
   },
   listContent: {
     padding: 16,
@@ -182,7 +332,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     flex: 1,
   },
+  rarityContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
   cardRarity: {
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  upgradeLevel: {
     fontSize: 12,
     fontWeight: 'bold',
   },
@@ -194,6 +353,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 24,
     marginBottom: 8,
+    alignItems: 'center',
   },
   statItem: {
     alignItems: 'center',
@@ -203,6 +363,17 @@ const styles = StyleSheet.create({
   },
   statValue: {
     fontSize: 16,
+    fontWeight: 'bold',
+  },
+  upgradeButton: {
+    marginLeft: 'auto',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+  },
+  upgradeButtonText: {
+    color: '#fff',
+    fontSize: 12,
     fontWeight: 'bold',
   },
   cardUsage: {
@@ -221,5 +392,90 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     marginTop: 40,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    width: '100%',
+    maxWidth: 350,
+    borderRadius: 16,
+    borderWidth: 3,
+    padding: 24,
+    alignItems: 'center',
+  },
+  modalTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
+  modalCardName: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 4,
+    textAlign: 'center',
+  },
+  modalCardTerm: {
+    fontSize: 16,
+    marginBottom: 20,
+  },
+  modalStats: {
+    flexDirection: 'row',
+    gap: 40,
+    marginBottom: 20,
+  },
+  modalStatItem: {
+    alignItems: 'center',
+  },
+  modalStatLabel: {
+    fontSize: 12,
+  },
+  modalStatValue: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+  modalInfo: {
+    width: '100%',
+    marginBottom: 20,
+  },
+  modalInfoText: {
+    fontSize: 14,
+    marginBottom: 4,
+  },
+  maxLevelBadge: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 8,
+    marginBottom: 16,
+  },
+  maxLevelText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  modalUpgradeButton: {
+    width: '100%',
+    padding: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  modalUpgradeText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  closeButton: {
+    width: '100%',
+    padding: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    alignItems: 'center',
+  },
+  closeButtonText: {
+    fontSize: 14,
   },
 });

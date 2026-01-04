@@ -1,10 +1,10 @@
 import { useEffect, useState, useCallback } from 'react';
-import { View, Text, ScrollView, Pressable, StyleSheet, Image } from 'react-native';
+import { View, Text, ScrollView, Pressable, StyleSheet, Image, Alert, Modal } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { useColors } from '@/hooks/use-colors';
 import { gameStore, STAGES } from '@/lib/game-store';
-import { PlayerState, Stage } from '@/lib/game-types';
+import { PlayerState, Stage, ItemType, ITEM_DEFINITIONS } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
 
 export default function GameTabScreen() {
@@ -12,20 +12,23 @@ export default function GameTabScreen() {
   const colors = useColors();
   const [player, setPlayer] = useState<PlayerState>(gameStore.getPlayer());
   const [unlockedStages, setUnlockedStages] = useState<number[]>([1]);
+  const [showShop, setShowShop] = useState(false);
+  const [selectedStage, setSelectedStage] = useState<Stage | null>(null);
+  const [showItemSelect, setShowItemSelect] = useState(false);
 
   useEffect(() => {
     const init = async () => {
       await gameStore.loadState();
       await gameStore.grantStarterCards();
       const p = gameStore.getPlayer();
-      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck] });
+      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck], items: [...p.items] });
       setUnlockedStages([...gameStore.getState().unlockedStages]);
     };
     init();
 
     const unsubscribe = gameStore.subscribe(() => {
       const p = gameStore.getPlayer();
-      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck] });
+      setPlayer({ ...p, cards: [...p.cards], currentDeck: [...p.currentDeck], items: [...p.items] });
       setUnlockedStages([...gameStore.getState().unlockedStages]);
     });
     return unsubscribe;
@@ -33,11 +36,45 @@ export default function GameTabScreen() {
 
   const handleStageSelect = useCallback((stage: Stage) => {
     if (!unlockedStages.includes(stage.id)) return;
-    gameStore.startBattle(stage.id);
+    setSelectedStage(stage);
+    setShowItemSelect(true);
+  }, [unlockedStages]);
+
+  const handleStartBattle = useCallback((useItem: boolean) => {
+    if (!selectedStage) return;
+    
+    if (useItem) {
+      // アイテムを使用してバトル開始
+      const success = gameStore.useItem('schw_power');
+      if (!success) {
+        Alert.alert('エラー', 'アイテムがありません');
+        return;
+      }
+    }
+    
+    gameStore.startBattle(selectedStage.id);
+    setShowItemSelect(false);
+    setSelectedStage(null);
+    
+    // アイテム使用時はCFA実問を出題
+    if (useItem) {
+      gameStore.startCFAQuiz();
+    }
+    
     router.push('/game/battle');
-  }, [unlockedStages, router]);
+  }, [selectedStage, router]);
+
+  const handleBuyItem = useCallback((itemType: ItemType) => {
+    const success = gameStore.buyItem(itemType);
+    if (success) {
+      Alert.alert('購入完了', `${ITEM_DEFINITIONS[itemType].name}を購入しました！`);
+    } else {
+      Alert.alert('購入失敗', 'ゴールドが足りません');
+    }
+  }, []);
 
   const expPercentage = (player.exp / player.expToNextLevel) * 100;
+  const schwCount = gameStore.getItemCount('schw_power');
 
   return (
     <ScreenContainer>
@@ -57,6 +94,12 @@ export default function GameTabScreen() {
         <View style={[styles.statusCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
           <View style={styles.statusHeader}>
             <Text style={[styles.levelText, { color: colors.primary }]}>Lv.{player.level}</Text>
+            <View style={styles.goldContainer}>
+              <Text style={[styles.goldText, { color: colors.warning }]}>💰 {player.gold}G</Text>
+            </View>
+          </View>
+          
+          <View style={styles.statsRow}>
             <Text style={[styles.statsText, { color: colors.muted }]}>
               勝利: {player.totalWins} / {player.totalBattles}戦
             </Text>
@@ -99,22 +142,62 @@ export default function GameTabScreen() {
           </View>
         </View>
 
-        {/* カード枚数 */}
-        <Pressable 
-          style={({ pressed }) => [
-            styles.cardsButton, 
-            { backgroundColor: colors.surface, borderColor: colors.border },
-            pressed && { opacity: 0.7 }
-          ]}
-          onPress={() => router.push('/game/cards')}
-        >
-          <Text style={[styles.cardsIcon]}>🃏</Text>
-          <View style={styles.cardsInfo}>
-            <Text style={[styles.cardsLabel, { color: colors.foreground }]}>所持カード</Text>
-            <Text style={[styles.cardsCount, { color: colors.primary }]}>{player.cards.length}枚</Text>
+        {/* アクションボタン */}
+        <View style={styles.actionRow}>
+          {/* カード枚数 */}
+          <Pressable 
+            style={({ pressed }) => [
+              styles.actionButton, 
+              { backgroundColor: colors.surface, borderColor: colors.border },
+              pressed && { opacity: 0.7 }
+            ]}
+            onPress={() => router.push('/game/cards')}
+          >
+            <Text style={styles.actionIcon}>🃏</Text>
+            <Text style={[styles.actionLabel, { color: colors.foreground }]}>カード</Text>
+            <Text style={[styles.actionCount, { color: colors.primary }]}>{player.cards.length}枚</Text>
+          </Pressable>
+
+          {/* ショップ */}
+          <Pressable 
+            style={({ pressed }) => [
+              styles.actionButton, 
+              { backgroundColor: colors.surface, borderColor: colors.warning },
+              pressed && { opacity: 0.7 }
+            ]}
+            onPress={() => setShowShop(true)}
+          >
+            <Text style={styles.actionIcon}>🛒</Text>
+            <Text style={[styles.actionLabel, { color: colors.foreground }]}>ショップ</Text>
+            <Text style={[styles.actionCount, { color: colors.warning }]}>アイテム</Text>
+          </Pressable>
+
+          {/* デッキ */}
+          <Pressable 
+            style={({ pressed }) => [
+              styles.actionButton, 
+              { backgroundColor: colors.surface, borderColor: colors.primary },
+              pressed && { opacity: 0.7 }
+            ]}
+            onPress={() => router.push('/game/deck')}
+          >
+            <Text style={styles.actionIcon}>📚</Text>
+            <Text style={[styles.actionLabel, { color: colors.foreground }]}>デッキ</Text>
+            <Text style={[styles.actionCount, { color: colors.primary }]}>{player.currentDeck.length}枚</Text>
+          </Pressable>
+        </View>
+
+        {/* 所持アイテム */}
+        {schwCount > 0 && (
+          <View style={[styles.itemsCard, { backgroundColor: colors.surface, borderColor: colors.warning }]}>
+            <Text style={[styles.itemsTitle, { color: colors.warning }]}>所持アイテム</Text>
+            <View style={styles.itemRow}>
+              <Text style={styles.itemIcon}>⚡</Text>
+              <Text style={[styles.itemName, { color: colors.foreground }]}>Schwの力</Text>
+              <Text style={[styles.itemCount, { color: colors.warning }]}>×{schwCount}</Text>
+            </View>
           </View>
-          <Text style={[styles.chevron, { color: colors.muted }]}>›</Text>
-        </Pressable>
+        )}
 
         {/* ステージ選択 */}
         <Text style={[styles.sectionTitle, { color: colors.foreground }]}>ステージ選択</Text>
@@ -149,25 +232,120 @@ export default function GameTabScreen() {
               <Text style={[styles.stageDesc, { color: colors.muted }]}>{stage.description}</Text>
               <View style={styles.enemyPreview}>
                 {stage.enemies.map((enemy) => (
-                  <Text key={enemy.id} style={styles.enemySprite}>{enemy.sprite}</Text>
+                  <View key={enemy.id} style={styles.enemyInfo}>
+                    <Text style={styles.enemySprite}>{enemy.sprite}</Text>
+                    <Text style={[styles.enemyReward, { color: colors.muted }]}>
+                      💰{enemy.goldReward}
+                    </Text>
+                  </View>
                 ))}
               </View>
             </Pressable>
           );
         })}
-
-        {/* デッキ編集ボタン */}
-        <Pressable
-          style={({ pressed }) => [
-            styles.deckButton,
-            { backgroundColor: colors.primary },
-            pressed && { opacity: 0.8 }
-          ]}
-          onPress={() => router.push('/game/deck')}
-        >
-          <Text style={styles.deckButtonText}>デッキ編集</Text>
-        </Pressable>
       </ScrollView>
+
+      {/* ショップモーダル */}
+      <Modal
+        visible={showShop}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setShowShop(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalContent, { backgroundColor: colors.background }]}>
+            <Text style={[styles.modalTitle, { color: colors.foreground }]}>🛒 ショップ</Text>
+            <Text style={[styles.goldDisplay, { color: colors.warning }]}>所持金: {player.gold}G</Text>
+            
+            <View style={styles.shopItems}>
+              {Object.entries(ITEM_DEFINITIONS).map(([key, item]) => (
+                <View key={key} style={[styles.shopItem, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+                  <View style={styles.shopItemInfo}>
+                    <Text style={styles.shopItemIcon}>⚡</Text>
+                    <View style={styles.shopItemText}>
+                      <Text style={[styles.shopItemName, { color: colors.foreground }]}>{item.name}</Text>
+                      <Text style={[styles.shopItemDesc, { color: colors.muted }]}>{item.description}</Text>
+                    </View>
+                  </View>
+                  <Pressable
+                    style={({ pressed }) => [
+                      styles.buyButton,
+                      { 
+                        backgroundColor: player.gold >= item.price ? colors.warning : colors.border,
+                        opacity: pressed ? 0.7 : 1
+                      }
+                    ]}
+                    onPress={() => handleBuyItem(key as ItemType)}
+                    disabled={player.gold < item.price}
+                  >
+                    <Text style={styles.buyButtonText}>{item.price}G</Text>
+                  </Pressable>
+                </View>
+              ))}
+            </View>
+            
+            <Pressable
+              style={[styles.closeButton, { backgroundColor: colors.primary }]}
+              onPress={() => setShowShop(false)}
+            >
+              <Text style={styles.closeButtonText}>閉じる</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
+      {/* アイテム使用選択モーダル */}
+      <Modal
+        visible={showItemSelect}
+        animationType="fade"
+        transparent={true}
+        onRequestClose={() => setShowItemSelect(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={[styles.modalContent, { backgroundColor: colors.background }]}>
+            <Text style={[styles.modalTitle, { color: colors.foreground }]}>
+              {selectedStage?.nameJa}に挑戦
+            </Text>
+            
+            <View style={styles.battleOptions}>
+              <Pressable
+                style={({ pressed }) => [
+                  styles.battleOption,
+                  { backgroundColor: colors.primary, opacity: pressed ? 0.7 : 1 }
+                ]}
+                onPress={() => handleStartBattle(false)}
+              >
+                <Text style={styles.battleOptionIcon}>⚔️</Text>
+                <Text style={styles.battleOptionText}>通常バトル</Text>
+              </Pressable>
+              
+              {schwCount > 0 && (
+                <Pressable
+                  style={({ pressed }) => [
+                    styles.battleOption,
+                    { backgroundColor: colors.warning, opacity: pressed ? 0.7 : 1 }
+                  ]}
+                  onPress={() => handleStartBattle(true)}
+                >
+                  <Text style={styles.battleOptionIcon}>⚡</Text>
+                  <Text style={styles.battleOptionText}>Schwの力を使う</Text>
+                  <Text style={styles.battleOptionHint}>CFA実問正解でEXP10倍！</Text>
+                </Pressable>
+              )}
+            </View>
+            
+            <Pressable
+              style={[styles.cancelButton, { borderColor: colors.muted }]}
+              onPress={() => {
+                setShowItemSelect(false);
+                setSelectedStage(null);
+              }}
+            >
+              <Text style={[styles.cancelButtonText, { color: colors.muted }]}>キャンセル</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
     </ScreenContainer>
   );
 }
@@ -210,11 +388,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 8,
   },
   levelText: {
     fontSize: 24,
     fontWeight: 'bold',
+  },
+  goldContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  goldText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  statsRow: {
+    marginBottom: 12,
   },
   statsText: {
     fontSize: 14,
@@ -268,30 +457,55 @@ const styles = StyleSheet.create({
     textAlign: 'right',
     fontSize: 12,
   },
-  cardsButton: {
+  actionRow: {
     flexDirection: 'row',
-    alignItems: 'center',
-    padding: 16,
-    borderRadius: 12,
-    borderWidth: 1,
-    marginBottom: 24,
+    gap: 12,
+    marginBottom: 16,
   },
-  cardsIcon: {
-    fontSize: 32,
-    marginRight: 12,
-  },
-  cardsInfo: {
+  actionButton: {
     flex: 1,
+    padding: 12,
+    borderRadius: 12,
+    borderWidth: 2,
+    alignItems: 'center',
   },
-  cardsLabel: {
+  actionIcon: {
+    fontSize: 28,
+    marginBottom: 4,
+  },
+  actionLabel: {
+    fontSize: 12,
+  },
+  actionCount: {
     fontSize: 14,
-  },
-  cardsCount: {
-    fontSize: 20,
     fontWeight: 'bold',
   },
-  chevron: {
-    fontSize: 24,
+  itemsCard: {
+    padding: 12,
+    borderRadius: 12,
+    borderWidth: 2,
+    marginBottom: 16,
+  },
+  itemsTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 8,
+  },
+  itemRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  itemIcon: {
+    fontSize: 20,
+    marginRight: 8,
+  },
+  itemName: {
+    flex: 1,
+    fontSize: 14,
+  },
+  itemCount: {
+    fontSize: 14,
+    fontWeight: 'bold',
   },
   sectionTitle: {
     fontSize: 18,
@@ -323,20 +537,123 @@ const styles = StyleSheet.create({
   enemyPreview: {
     flexDirection: 'row',
     marginTop: 8,
-    gap: 8,
+    gap: 16,
+  },
+  enemyInfo: {
+    alignItems: 'center',
   },
   enemySprite: {
     fontSize: 24,
   },
-  deckButton: {
+  enemyReward: {
+    fontSize: 10,
+    marginTop: 2,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    width: '100%',
+    maxWidth: 400,
+    borderRadius: 16,
+    padding: 20,
+  },
+  modalTitle: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  goldDisplay: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  shopItems: {
+    gap: 12,
+    marginBottom: 20,
+  },
+  shopItem: {
     padding: 16,
     borderRadius: 12,
+    borderWidth: 1,
+    flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 8,
+    justifyContent: 'space-between',
   },
-  deckButtonText: {
+  shopItemInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
+  shopItemIcon: {
+    fontSize: 32,
+    marginRight: 12,
+  },
+  shopItemText: {
+    flex: 1,
+  },
+  shopItemName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  shopItemDesc: {
+    fontSize: 12,
+    marginTop: 2,
+  },
+  buyButton: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
+  buyButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  closeButton: {
+    padding: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  closeButtonText: {
     color: '#fff',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  battleOptions: {
+    gap: 12,
+    marginBottom: 16,
+  },
+  battleOption: {
+    padding: 16,
+    borderRadius: 12,
+    alignItems: 'center',
+  },
+  battleOptionIcon: {
+    fontSize: 32,
+    marginBottom: 4,
+  },
+  battleOptionText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  battleOptionHint: {
+    color: 'rgba(255,255,255,0.8)',
+    fontSize: 12,
+    marginTop: 4,
+  },
+  cancelButton: {
+    padding: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    alignItems: 'center',
+  },
+  cancelButtonText: {
+    fontSize: 14,
   },
 });
