@@ -4,28 +4,31 @@ import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { useColors } from '@/hooks/use-colors';
 import { gameStore } from '@/lib/game-store';
-import { WordCard } from '@/lib/game-types';
+import { WordCard, LEVEL_LIMITS } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
-
-const MAX_DECK_SIZE = 5;
 
 export default function DeckScreen() {
   const router = useRouter();
   const colors = useColors();
   const [allCards, setAllCards] = useState<WordCard[]>([]);
   const [deckCardIds, setDeckCardIds] = useState<string[]>([]);
+  const [deckCapacity, setDeckCapacity] = useState(5);
 
   useEffect(() => {
     const loadData = async () => {
       await gameStore.loadState();
-      setAllCards(gameStore.getPlayer().cards);
-      setDeckCardIds(gameStore.getPlayer().currentDeck);
+      const player = gameStore.getPlayer();
+      setAllCards([...player.cards]);
+      setDeckCardIds([...player.currentDeck]);
+      setDeckCapacity(player.deckCapacity);
     };
     loadData();
 
     const unsubscribe = gameStore.subscribe(() => {
-      setAllCards(gameStore.getPlayer().cards);
-      setDeckCardIds(gameStore.getPlayer().currentDeck);
+      const player = gameStore.getPlayer();
+      setAllCards([...player.cards]);
+      setDeckCardIds([...player.currentDeck]);
+      setDeckCapacity(player.deckCapacity);
     });
     return unsubscribe;
   }, []);
@@ -37,8 +40,8 @@ export default function DeckScreen() {
   const availableCards = allCards.filter(c => !deckCardIds.includes(c.id));
 
   const handleAddToDeck = (card: WordCard) => {
-    if (deckCardIds.length >= MAX_DECK_SIZE) {
-      Alert.alert('デッキ上限', `デッキには最大${MAX_DECK_SIZE}枚までです`);
+    if (deckCardIds.length >= deckCapacity) {
+      Alert.alert('デッキ上限', `現在のレベルではデッキには最大${deckCapacity}枚までです`);
       return;
     }
     gameStore.addToDeck(card.id);
@@ -105,7 +108,7 @@ export default function DeckScreen() {
         {/* 現在のデッキ */}
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.foreground }]}>
-            現在のデッキ ({deckCards.length}/{MAX_DECK_SIZE})
+            現在のデッキ ({deckCards.length}/{deckCapacity})
           </Text>
           {deckCards.length === 0 ? (
             <Text style={[styles.emptyText, { color: colors.muted }]}>
