@@ -112,3 +112,6 @@
   - [x] 同じカードを複数集めて合成
   - [x] 合成で上位レアリティに進化
   - [x] 合成UIの作成
+
+## Androidビルドエラー修正（2025-01-04）
+- [x] minSdkVersion互換性問題を修正（ReactAndroid/hermestoolingがSDK 24を要求）

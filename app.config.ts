@@ -96,6 +96,7 @@ const config: ExpoConfig = {
       "expo-build-properties",
       {
         android: {
+          minSdkVersion: 24,
           buildArchs: ["armeabi-v7a", "arm64-v8a"],
         },
       },
