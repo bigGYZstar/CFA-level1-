@@ -95,6 +95,7 @@ export interface BattleState {
   earnedExp: number;
   earnedGold: number;          // 獲得ゴールド
   currentHand: WordCard[];     // 現在の手札（デッキからランダムに引いたカード）
+  remainingDeck: WordCard[];   // 山札（まだ引いていないカード）
   usedCards: string[];         // このバトルで使用済みのカードID
   expMultiplier: number;       // EXP倍率（アイテム効果）
 }
@@ -233,6 +234,7 @@ export const INITIAL_BATTLE_STATE: BattleState = {
   earnedExp: 0,
   earnedGold: 0,
   currentHand: [],
+  remainingDeck: [],
   usedCards: [],
   expMultiplier: 1,
 };

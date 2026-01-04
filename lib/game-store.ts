@@ -279,6 +279,7 @@ class GameStore {
     const shuffled = [...deckCards].sort(() => Math.random() - 0.5);
     const handSize = this.state.player.handSize;
     const currentHand = shuffled.slice(0, handSize);
+    const remainingDeck = shuffled.slice(handSize);  // 残りは山札
 
     this.state.battle = {
       inBattle: true,
@@ -297,6 +298,7 @@ class GameStore {
       earnedExp: 0,
       earnedGold: 0,
       currentHand,
+      remainingDeck,
       usedCards: [],
       expMultiplier: 1,
     };
@@ -543,7 +545,7 @@ class GameStore {
 
   // 結果確認後、次のターンへ
   proceedToNextTurn(): void {
-    const { battle } = this.state;
+    const { battle, player } = this.state;
 
     // 敵が倒れたか確認
     if (battle.enemyHp <= 0) {
@@ -557,8 +559,34 @@ class GameStore {
       return;
     }
 
+    // 手札補充：山札から1枚引いて手札に追加
+    this.refillHand();
+
     // 敵のターン
     this.enemyTurn();
+  }
+
+  // 手札補充：山札から1枚引いて手札に追加
+  private refillHand(): void {
+    const { battle, player } = this.state;
+    
+    // 現在の手札枚数（使用済みを除く）
+    const currentHandCount = battle.currentHand.filter(
+      card => !battle.usedCards.includes(card.id)
+    ).length;
+    
+    // 手札上限まで補充
+    const cardsToRefill = player.handSize - currentHandCount;
+    
+    if (cardsToRefill > 0 && battle.remainingDeck.length > 0) {
+      // 山札から引く
+      const drawnCards = battle.remainingDeck.splice(0, cardsToRefill);
+      battle.currentHand.push(...drawnCards);
+      
+      if (drawnCards.length > 0) {
+        this.addBattleLog('player', 'draw', `山札から${drawnCards.length}枚ドロー！`);
+      }
+    }
   }
 
   // 敵のターン

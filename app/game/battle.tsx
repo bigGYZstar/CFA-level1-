@@ -357,16 +357,16 @@ export default function BattleScreen() {
         )}
 
         {/* 結果表示 */}
-        {battle.phase === 'result' && quizResult && (
+        {battle.phase === 'result' && (
           <View style={[styles.resultCard, { backgroundColor: colors.surface }]}>
             <Text style={[
               styles.resultText, 
-              { color: quizResult.correct ? colors.success : colors.error }
+              { color: quizResult?.correct ? colors.success : colors.error }
             ]}>
-              {quizResult.correct ? '✓ 正解！' : '✗ 不正解...'}
+              {quizResult?.correct ? '✓ 正解！' : '✗ 不正解...'}
             </Text>
             <Text style={[styles.resultMessage, { color: colors.foreground }]}>
-              {quizResult.message}
+              {quizResult?.message || '結果を確認してください'}
             </Text>
             <Pressable
               style={[styles.proceedButton, { backgroundColor: colors.primary }]}
@@ -437,7 +437,7 @@ export default function BattleScreen() {
               手札からカードを選択！
             </Text>
             <Text style={[styles.handInfo, { color: colors.muted }]}>
-              手札: {handCards.length}枚 / 選択中: {selectedCards.length}枚
+              手札: {handCards.length}枚 / 山札: {battle.remainingDeck?.length || 0}枚 / 選択中: {selectedCards.length}枚
             </Text>
             
             {handCards.length === 0 ? (
