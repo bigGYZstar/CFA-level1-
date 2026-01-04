@@ -19,102 +19,125 @@ import type { Term } from './types';
 
 const GAME_STATE_KEY = 'cfa_game_state';
 
-// ステージ定義
+// ステージ定義（拡張可能な構造）
+// 新しい分野を追加する場合は、このリストに追加するだけでOK
+// topicCodeはterms.csvのtopic_codeと一致させる
 export const STAGES: Stage[] = [
+  // ステージ1: 株式投資（EQ）- 最初から開始可能
   {
     id: 1,
+    name: 'Equity Arena',
+    nameJa: '株式投資のアリーナ',
+    description: '株式評価の基礎を学ぶ',
+    requiredLevel: 1,
+    topicCode: 'EQ',
+    enemies: [
+      { id: 'eq1', name: 'P/E Slime', nameJa: 'PERスライム', hp: 40, maxHp: 40, attack: 6, defense: 2, expReward: 15, cardDropRate: 0.7, sprite: '🟢' },
+      { id: 'eq2', name: 'Dividend Goblin', nameJa: '配当ゴブリン', hp: 50, maxHp: 50, attack: 8, defense: 3, expReward: 20, cardDropRate: 0.65, sprite: '👺' },
+    ],
+  },
+  // ステージ2: 株式投資上級
+  {
+    id: 2,
+    name: 'Equity Tower',
+    nameJa: '株式評価の塔',
+    description: 'バリュエーションの深淵',
+    requiredLevel: 3,
+    topicCode: 'EQ',
+    enemies: [
+      { id: 'eq3', name: 'Valuation Golem', nameJa: 'バリュエーションゴーレム', hp: 80, maxHp: 80, attack: 12, defense: 5, expReward: 35, cardDropRate: 0.55, sprite: '🗿' },
+      { id: 'eq4', name: 'DCF Phantom', nameJa: 'DCFファントム', hp: 70, maxHp: 70, attack: 14, defense: 4, expReward: 30, cardDropRate: 0.6, sprite: '👻' },
+    ],
+  },
+  // ステージ3: 倫理・職業行為基準（ETH）
+  {
+    id: 3,
     name: 'Ethics Forest',
     nameJa: '倫理の森',
     description: 'CFA倫理基準の基礎を学ぶ',
-    requiredLevel: 1,
+    requiredLevel: 5,
     topicCode: 'ETH',
     enemies: [
-      { id: 'e1', name: 'Compliance Goblin', nameJa: 'コンプラゴブリン', hp: 50, maxHp: 50, attack: 8, defense: 2, expReward: 20, cardDropRate: 0.6, sprite: '👺' },
-      { id: 'e2', name: 'Ethics Slime', nameJa: '倫理スライム', hp: 30, maxHp: 30, attack: 5, defense: 1, expReward: 15, cardDropRate: 0.7, sprite: '🟢' },
+      { id: 'eth1', name: 'Compliance Goblin', nameJa: 'コンプラゴブリン', hp: 60, maxHp: 60, attack: 10, defense: 4, expReward: 25, cardDropRate: 0.6, sprite: '👺' },
+      { id: 'eth2', name: 'Ethics Slime', nameJa: '倫理スライム', hp: 45, maxHp: 45, attack: 8, defense: 3, expReward: 20, cardDropRate: 0.65, sprite: '🟢' },
     ],
   },
+  // ステージ4: 定量分析（QM）
   {
-    id: 2,
+    id: 4,
     name: 'Quantitative Cave',
     nameJa: '定量分析の洞窟',
     description: '数値と統計の迷宮',
-    requiredLevel: 3,
+    requiredLevel: 7,
     topicCode: 'QM',
     enemies: [
-      { id: 'e3', name: 'Statistics Golem', nameJa: '統計ゴーレム', hp: 80, maxHp: 80, attack: 12, defense: 5, expReward: 35, cardDropRate: 0.5, sprite: '🗿' },
-      { id: 'e4', name: 'Probability Phantom', nameJa: '確率ファントム', hp: 60, maxHp: 60, attack: 15, defense: 3, expReward: 30, cardDropRate: 0.55, sprite: '👻' },
+      { id: 'qm1', name: 'Statistics Golem', nameJa: '統計ゴーレム', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, cardDropRate: 0.5, sprite: '🗿' },
+      { id: 'qm2', name: 'Probability Phantom', nameJa: '確率ファントム', hp: 75, maxHp: 75, attack: 16, defense: 5, expReward: 35, cardDropRate: 0.55, sprite: '👻' },
     ],
   },
+  // ステージ5: 経済学（ECON）
   {
-    id: 3,
+    id: 5,
     name: 'Economics Plains',
     nameJa: '経済学の平原',
     description: 'マクロ・ミクロ経済の戦場',
-    requiredLevel: 5,
+    requiredLevel: 9,
     topicCode: 'ECON',
     enemies: [
-      { id: 'e5', name: 'Inflation Dragon', nameJa: 'インフレドラゴン', hp: 120, maxHp: 120, attack: 18, defense: 8, expReward: 50, cardDropRate: 0.45, sprite: '🐉' },
-      { id: 'e6', name: 'Supply Demon', nameJa: '供給デーモン', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, cardDropRate: 0.5, sprite: '😈' },
+      { id: 'econ1', name: 'Inflation Dragon', nameJa: 'インフレドラゴン', hp: 120, maxHp: 120, attack: 18, defense: 8, expReward: 50, cardDropRate: 0.45, sprite: '🐉' },
+      { id: 'econ2', name: 'Supply Demon', nameJa: '供給デーモン', hp: 90, maxHp: 90, attack: 14, defense: 6, expReward: 40, cardDropRate: 0.5, sprite: '😈' },
     ],
   },
+  // ステージ6: 財務諸表分析（FSA）
   {
-    id: 4,
+    id: 6,
     name: 'Financial Statement Tower',
     nameJa: '財務諸表の塔',
     description: '会計の迷宮を攻略せよ',
-    requiredLevel: 8,
+    requiredLevel: 11,
     topicCode: 'FSA',
     enemies: [
-      { id: 'e7', name: 'Balance Sheet Beast', nameJa: 'BS獣', hp: 150, maxHp: 150, attack: 22, defense: 10, expReward: 65, cardDropRate: 0.4, sprite: '🦁' },
-      { id: 'e8', name: 'Income Wraith', nameJa: 'PL亡霊', hp: 110, maxHp: 110, attack: 20, defense: 7, expReward: 55, cardDropRate: 0.45, sprite: '💀' },
+      { id: 'fsa1', name: 'Balance Sheet Beast', nameJa: 'BS獣', hp: 150, maxHp: 150, attack: 22, defense: 10, expReward: 65, cardDropRate: 0.4, sprite: '🦁' },
+      { id: 'fsa2', name: 'Income Wraith', nameJa: 'PL亡霊', hp: 110, maxHp: 110, attack: 20, defense: 7, expReward: 55, cardDropRate: 0.45, sprite: '💀' },
     ],
   },
+  // ステージ7: 債券（FI）
   {
-    id: 5,
-    name: 'Equity Arena',
-    nameJa: '株式投資のアリーナ',
-    description: '株式評価の真髄',
-    requiredLevel: 10,
-    topicCode: 'EQ',
-    enemies: [
-      { id: 'e9', name: 'Valuation Titan', nameJa: 'バリュエーションタイタン', hp: 200, maxHp: 200, attack: 28, defense: 12, expReward: 80, cardDropRate: 0.35, sprite: '🦖' },
-      { id: 'e10', name: 'P/E Specter', nameJa: 'PERスペクター', hp: 160, maxHp: 160, attack: 25, defense: 10, expReward: 70, cardDropRate: 0.4, sprite: '👁️' },
-    ],
-  },
-  {
-    id: 6,
+    id: 7,
     name: 'Fixed Income Fortress',
     nameJa: '債券の要塞',
     description: '金利と債券の城',
-    requiredLevel: 12,
+    requiredLevel: 13,
     topicCode: 'FI',
     enemies: [
-      { id: 'e11', name: 'Duration Dragon', nameJa: 'デュレーションドラゴン', hp: 250, maxHp: 250, attack: 32, defense: 15, expReward: 100, cardDropRate: 0.3, sprite: '🐲' },
-      { id: 'e12', name: 'Yield Hydra', nameJa: '利回りヒドラ', hp: 220, maxHp: 220, attack: 30, defense: 13, expReward: 90, cardDropRate: 0.35, sprite: '🐍' },
+      { id: 'fi1', name: 'Duration Dragon', nameJa: 'デュレーションドラゴン', hp: 200, maxHp: 200, attack: 26, defense: 12, expReward: 80, cardDropRate: 0.35, sprite: '🐲' },
+      { id: 'fi2', name: 'Yield Hydra', nameJa: '利回りヒドラ', hp: 180, maxHp: 180, attack: 24, defense: 10, expReward: 70, cardDropRate: 0.4, sprite: '🐍' },
     ],
   },
+  // ステージ8: デリバティブ（DER）
   {
-    id: 7,
+    id: 8,
     name: 'Derivatives Dungeon',
     nameJa: 'デリバティブの地下牢',
     description: 'オプションと先物の深淵',
     requiredLevel: 15,
     topicCode: 'DER',
     enemies: [
-      { id: 'e13', name: 'Options Overlord', nameJa: 'オプション魔王', hp: 300, maxHp: 300, attack: 38, defense: 18, expReward: 120, cardDropRate: 0.25, sprite: '👹' },
-      { id: 'e14', name: 'Futures Fiend', nameJa: '先物フィーンド', hp: 280, maxHp: 280, attack: 35, defense: 16, expReward: 110, cardDropRate: 0.3, sprite: '🔥' },
+      { id: 'der1', name: 'Options Overlord', nameJa: 'オプション魔王', hp: 250, maxHp: 250, attack: 30, defense: 14, expReward: 100, cardDropRate: 0.3, sprite: '👹' },
+      { id: 'der2', name: 'Futures Fiend', nameJa: '先物フィーンド', hp: 220, maxHp: 220, attack: 28, defense: 12, expReward: 90, cardDropRate: 0.35, sprite: '🔥' },
     ],
   },
+  // ステージ9: ポートフォリオ管理（PM）
   {
-    id: 8,
+    id: 9,
     name: 'Portfolio Summit',
     nameJa: 'ポートフォリオの頂',
     description: '最終試練の地',
     requiredLevel: 18,
     topicCode: 'PM',
     enemies: [
-      { id: 'e15', name: 'CAPM Colossus', nameJa: 'CAPMコロッサス', hp: 400, maxHp: 400, attack: 45, defense: 22, expReward: 150, cardDropRate: 0.2, sprite: '🏔️' },
-      { id: 'e16', name: 'Sharpe Sovereign', nameJa: 'シャープ皇帝', hp: 500, maxHp: 500, attack: 50, defense: 25, expReward: 200, cardDropRate: 0.15, sprite: '👑' },
+      { id: 'pm1', name: 'CAPM Colossus', nameJa: 'CAPMコロッサス', hp: 350, maxHp: 350, attack: 38, defense: 18, expReward: 130, cardDropRate: 0.25, sprite: '🏔️' },
+      { id: 'pm2', name: 'Sharpe Sovereign', nameJa: 'シャープ皇帝', hp: 400, maxHp: 400, attack: 42, defense: 20, expReward: 150, cardDropRate: 0.2, sprite: '👑' },
     ],
   },
 ];
@@ -259,30 +282,47 @@ class GameStore {
     this.notify();
   }
 
-  // クイズ問題生成
+  // クイズ問題生成（3タイプ：英語→日本語、日本語→英語、概念説明）
   private generateQuiz(term: Term): QuizQuestion {
-    const isTermQuestion = Math.random() > 0.5;
     const allTerms = dataStore.getTerms();
-    const otherTerms = allTerms.filter((t: Term) => t.term_id !== term.term_id);
+    const sameTopicTerms = allTerms.filter((t: Term) => t.topic_code === term.topic_code && t.term_id !== term.term_id);
+    const otherTerms = sameTopicTerms.length >= 3 ? sameTopicTerms : allTerms.filter((t: Term) => t.term_id !== term.term_id);
     const shuffled = otherTerms.sort(() => Math.random() - 0.5).slice(0, 3);
 
-    if (isTermQuestion) {
-      // 日本語の意味を見て英語用語を選ぶ
+    // 3タイプのクイズをランダムに選択
+    const quizType = Math.floor(Math.random() * 3);
+
+    if (quizType === 0) {
+      // タイプ1: 日本語を見て英語を選ぶ（英語のみ表示）
       const options = [term.en_canonical, ...shuffled.map((t: Term) => t.en_canonical)].sort(() => Math.random() - 0.5);
       return {
         termId: term.term_id,
         question: `「${term.jp_headword}」の英語用語は？`,
-        questionType: 'term',
+        questionType: 'jp_to_en',
         correctAnswer: term.en_canonical,
         options,
       };
-    } else {
-      // 英語用語を見て日本語の意味を選ぶ
+    } else if (quizType === 1) {
+      // タイプ2: 英語を見て日本語を選ぶ（日本語のみ表示）
       const options = [term.jp_headword, ...shuffled.map((t: Term) => t.jp_headword)].sort(() => Math.random() - 0.5);
       return {
         termId: term.term_id,
         question: `「${term.en_canonical}」の日本語訳は？`,
-        questionType: 'meaning',
+        questionType: 'en_to_jp',
+        correctAnswer: term.jp_headword,
+        options,
+      };
+    } else {
+      // タイプ3: 概念説明クイズ（定義を見て用語を選ぶ）
+      // 定義の最初の50文字を表示
+      const defPreview = term.jp_definition.length > 60 
+        ? term.jp_definition.substring(0, 60) + '...' 
+        : term.jp_definition;
+      const options = [term.jp_headword, ...shuffled.map((t: Term) => t.jp_headword)].sort(() => Math.random() - 0.5);
+      return {
+        termId: term.term_id,
+        question: `次の説明に当てはまる用語は？\n「${defPreview}」`,
+        questionType: 'concept',
         correctAnswer: term.jp_headword,
         options,
       };

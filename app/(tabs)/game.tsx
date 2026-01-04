@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { View, Text, ScrollView, Pressable, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Pressable, StyleSheet, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { useColors } from '@/hooks/use-colors';
@@ -42,6 +42,11 @@ export default function GameTabScreen() {
       <ScrollView style={styles.container} contentContainerStyle={styles.content}>
         {/* ヘッダー */}
         <View style={[styles.header, { backgroundColor: colors.surface }]}>
+          <Image 
+            source={require('@/assets/images/icon.png')} 
+            style={styles.logo}
+            resizeMode="contain"
+          />
           <Text style={[styles.title, { color: colors.foreground }]}>🎮 CFA Quest</Text>
           <Text style={[styles.subtitle, { color: colors.muted }]}>単語カードバトルRPG</Text>
         </View>
@@ -178,6 +183,12 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     alignItems: 'center',
     marginBottom: 16,
+  },
+  logo: {
+    width: 80,
+    height: 80,
+    marginBottom: 8,
+    borderRadius: 16,
   },
   title: {
     fontSize: 28,

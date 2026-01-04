@@ -64,7 +64,7 @@ export interface BattleState {
 export interface QuizQuestion {
   termId: string;
   question: string;
-  questionType: 'meaning' | 'term';  // 意味を問う or 用語を問う
+  questionType: 'jp_to_en' | 'en_to_jp' | 'concept';  // 日本語→英語 | 英語→日本語 | 概念説明
   correctAnswer: string;
   options: string[];
 }
