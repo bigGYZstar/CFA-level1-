@@ -26,6 +26,7 @@ const MAPPING = {
   "bookmark.fill": "bookmark",
   "bookmark": "bookmark-border",
   "arrow.left": "arrow-back",
+  "chevron.left": "chevron-left",
   "checkmark.circle.fill": "check-circle",
   "xmark.circle.fill": "cancel",
   "play.fill": "play-arrow",
@@ -35,7 +36,8 @@ const MAPPING = {
   "chart.bar.fill": "bar-chart",
   "clock.fill": "schedule",
   "flag.fill": "flag",
-} as IconMapping;
+  "gamepad.fill": "sports-esports",
+} as const;
 
 /**
  * An icon component that uses native SF Symbols on iOS, and Material Icons on Android and web.
