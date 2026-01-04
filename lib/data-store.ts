@@ -316,3 +316,62 @@ export function getStatistics(
     byTopic: byTopic as Record<TopicCode, { total: number; learned: number }>,
   };
 }
+
+// Term型を再エクスポート
+export type { Term, Example, Relation, LearningProgress, TopicCode } from './types';
+
+// dataStoreオブジェクト（ゲームストアから使用）
+class DataStore {
+  private terms: Term[] = termsData as Term[];
+  private examples: Example[] = examplesData as Example[];
+  private relations: Relation[] = relationsData as Relation[];
+  private progress: Record<string, LearningProgress> = {};
+  private initialized = false;
+
+  async initialize(): Promise<void> {
+    if (this.initialized) return;
+    this.progress = await loadProgress();
+    this.initialized = true;
+  }
+
+  getTerms(): Term[] {
+    return this.terms;
+  }
+
+  getTermById(termId: string): Term | undefined {
+    return this.terms.find(t => t.term_id === termId);
+  }
+
+  getExamples(): Example[] {
+    return this.examples;
+  }
+
+  getRelations(): Relation[] {
+    return this.relations;
+  }
+
+  getProgress(): Record<string, LearningProgress> {
+    return this.progress;
+  }
+
+  async recordStudy(termId: string, correct: boolean): Promise<void> {
+    const term = this.getTermById(termId);
+    if (!term) return;
+
+    const id = term.term_id;
+    let progress = this.progress[id];
+    
+    if (!progress) {
+      progress = createInitialProgress(id);
+    }
+
+    // SM-2アルゴリズムで次回復習日を計算
+    const quality = correct ? 4 : 1;
+    const result = calculateNextReview(progress, quality as 0 | 1 | 2 | 3 | 4 | 5);
+
+    this.progress[id] = result;
+    await saveProgress(this.progress);
+  }
+}
+
+export const dataStore = new DataStore();
