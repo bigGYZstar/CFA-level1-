@@ -1155,8 +1155,8 @@ class GameStore {
   }
 
   // カード合成実行
-  fuseCards(cardIds: string[]): FusionResult {
-    console.log('[GameStore] fuseCards called with:', cardIds);
+  fuseCards(cardIds: string[], useFusionBoost: boolean = false): FusionResult {
+    console.log('[GameStore] fuseCards called with:', cardIds, 'useFusionBoost:', useFusionBoost);
     
     if (cardIds.length < 2) {
       console.log('[GameStore] Not enough cards to fuse');
@@ -1168,6 +1168,19 @@ class GameStore {
     
     if (cards.length < 2) {
       return { success: false, consumedCards: [] };
+    }
+
+    // 合成触媒アイテムの消費
+    if (useFusionBoost) {
+      const boostItem = this.state.player.items.find(i => i.type === 'fusion_boost');
+      if (!boostItem || boostItem.quantity <= 0) {
+        console.log('[GameStore] No fusion boost item available');
+        return { success: false, consumedCards: [] };
+      }
+      boostItem.quantity--;
+      if (boostItem.quantity <= 0) {
+        this.state.player.items = this.state.player.items.filter(i => i.type !== 'fusion_boost');
+      }
     }
 
     // 同じtermIdのカードのみ合成可能
@@ -1182,25 +1195,31 @@ class GameStore {
     const sortedCards = [...cards].sort((a, b) => rarityOrder.indexOf(b.rarity) - rarityOrder.indexOf(a.rarity));
     const baseCard = sortedCards[0];
     const materialsCount = cards.length - 1;
+    const previousRarity = baseCard.rarity;
     
     console.log('[GameStore] Base card:', baseCard.termJa, 'rarity:', baseCard.rarity);
     console.log('[GameStore] Materials count:', materialsCount);
 
     // レアリティアップ確率（素材数に応じて上昇）
     // 2枚合成で30%、3枚で45%、4枚で60%...
-    const baseUpgradeChance = 0.3;
-    const upgradeChance = Math.min(baseUpgradeChance + (materialsCount - 1) * 0.15, 0.8);
+    let baseUpgradeChance = 0.3;
+    if (useFusionBoost) {
+      baseUpgradeChance += 0.3;  // 合成触媒で+30%
+    }
+    const upgradeChance = Math.min(baseUpgradeChance + (materialsCount - 1) * 0.15, 1.0);
     const currentRarityIndex = rarityOrder.indexOf(baseCard.rarity);
     
-    console.log('[GameStore] Upgrade chance:', upgradeChance);
+    console.log('[GameStore] Upgrade chance:', upgradeChance, useFusionBoost ? '(with boost)' : '');
     console.log('[GameStore] Current rarity index:', currentRarityIndex);
 
     let newRarity = baseCard.rarity;
+    let rarityUpgraded = false;
     const roll = Math.random();
     console.log('[GameStore] Random roll:', roll);
     
     if (currentRarityIndex < rarityOrder.length - 1 && roll < upgradeChance) {
       newRarity = rarityOrder[currentRarityIndex + 1];
+      rarityUpgraded = true;
       console.log('[GameStore] Rarity upgraded to:', newRarity);
     } else {
       console.log('[GameStore] Rarity not upgraded (roll >= chance or already max)');
@@ -1240,12 +1259,32 @@ class GameStore {
       success: true,
       newCard,
       consumedCards: consumedIds,
+      rarityUpgraded,
+      previousRarity,
+      upgradeChance,
     };
   }
 
   // 合成に必要なカード数を取得
   getFusionRequirement(): number {
     return 2;  // 最低2枚必要
+  }
+
+  // 合成確率を計算（UI表示用）
+  calculateFusionChance(cardCount: number, useFusionBoost: boolean = false): number {
+    if (cardCount < 2) return 0;
+    const materialsCount = cardCount - 1;
+    let baseChance = 0.3;
+    if (useFusionBoost) {
+      baseChance += 0.3;
+    }
+    return Math.min(baseChance + (materialsCount - 1) * 0.15, 1.0);
+  }
+
+  // 合成触媒アイテムの所持数を取得
+  getFusionBoostCount(): number {
+    const item = this.state.player.items.find(i => i.type === 'fusion_boost');
+    return item?.quantity ?? 0;
   }
 }
 

@@ -215,10 +215,50 @@ export default function CardsScreen() {
                 </View>
               </View>
 
-              <View style={styles.modalInfo}>
-                <Text style={[styles.modalInfoText, { color: colors.muted }]}>
-                  強化レベル: {selectedCard.upgradeLevel} / 5
+              {/* 強化履歴 */}
+              <View style={[styles.upgradeHistory, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+                <Text style={[styles.upgradeHistoryTitle, { color: colors.foreground }]}>
+                  📊 強化履歴
                 </Text>
+                <View style={styles.upgradeHistoryRow}>
+                  <Text style={[styles.upgradeHistoryLabel, { color: colors.muted }]}>強化レベル</Text>
+                  <View style={styles.upgradeHistoryValue}>
+                    {[1, 2, 3, 4, 5].map((level) => (
+                      <View
+                        key={level}
+                        style={[
+                          styles.upgradeLevelDot,
+                          { backgroundColor: level <= selectedCard.upgradeLevel ? colors.warning : colors.border }
+                        ]}
+                      />
+                    ))}
+                    <Text style={[styles.upgradeLevelText, { color: colors.foreground }]}>
+                      {selectedCard.upgradeLevel}/5
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.upgradeHistoryRow}>
+                  <Text style={[styles.upgradeHistoryLabel, { color: colors.muted }]}>基本攻撃力</Text>
+                  <Text style={[styles.upgradeHistoryValue, { color: colors.foreground }]}>
+                    {Math.round(selectedCard.attackPower / (1 + selectedCard.upgradeLevel * 0.1))} → {selectedCard.attackPower}
+                    {selectedCard.upgradeLevel > 0 && (
+                      <Text style={{ color: colors.success }}> (+{Math.round(selectedCard.attackPower - selectedCard.attackPower / (1 + selectedCard.upgradeLevel * 0.1))})</Text>
+                    )}
+                  </Text>
+                </View>
+                <View style={styles.upgradeHistoryRow}>
+                  <Text style={[styles.upgradeHistoryLabel, { color: colors.muted }]}>基本回復力</Text>
+                  <Text style={[styles.upgradeHistoryValue, { color: colors.foreground }]}>
+                    {Math.round(selectedCard.healPower / (1 + selectedCard.upgradeLevel * 0.1))} → {selectedCard.healPower}
+                    {selectedCard.upgradeLevel > 0 && (
+                      <Text style={{ color: colors.success }}> (+{Math.round(selectedCard.healPower - selectedCard.healPower / (1 + selectedCard.upgradeLevel * 0.1))})</Text>
+                    )}
+                  </Text>
+                </View>
+              </View>
+
+              {/* 使用統計 */}
+              <View style={styles.modalInfo}>
                 <Text style={[styles.modalInfoText, { color: colors.muted }]}>
                   使用回数: {selectedCard.usageCount}回
                 </Text>
@@ -438,6 +478,42 @@ const styles = StyleSheet.create({
   modalStatValue: {
     fontSize: 24,
     fontWeight: 'bold',
+  },
+  upgradeHistory: {
+    width: '100%',
+    padding: 12,
+    borderRadius: 10,
+    borderWidth: 1,
+    marginBottom: 16,
+  },
+  upgradeHistoryTitle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 12,
+  },
+  upgradeHistoryRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  upgradeHistoryLabel: {
+    fontSize: 12,
+  },
+  upgradeHistoryValue: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  upgradeLevelDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+  },
+  upgradeLevelText: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    marginLeft: 8,
   },
   modalInfo: {
     width: '100%',

@@ -4,7 +4,7 @@
 export type CardRarity = 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary';
 
 // アイテムタイプ
-export type ItemType = 'schw_power';
+export type ItemType = 'schw_power' | 'fusion_boost';
 
 // 単語カード
 export interface WordCard {
@@ -171,6 +171,9 @@ export interface FusionResult {
   success: boolean;
   newCard?: WordCard;
   consumedCards: string[];  // 消費したカードID
+  rarityUpgraded?: boolean; // レアリティが上がったか
+  previousRarity?: CardRarity; // 合成前のレアリティ
+  upgradeChance?: number;   // 実際のアップグレード確率
 }
 
 // レアリティ別のステータス設定
@@ -229,6 +232,13 @@ export const ITEM_DEFINITIONS: Record<ItemType, Omit<GameItem, 'id' | 'quantity'
     nameJa: 'Schwの力',
     description: 'CFA実問に正解すると、勝利時の獲得EXPが10倍になる',
     price: 500,
+  },
+  fusion_boost: {
+    type: 'fusion_boost',
+    name: 'Fusion Catalyst',
+    nameJa: '合成触媒',
+    description: 'カード合成時のレアリティアップ確率を+30%アップ',
+    price: 300,
   },
 };
 

@@ -22,6 +22,8 @@ export default function GameTabScreen() {
   const [selectedFusionCards, setSelectedFusionCards] = useState<string[]>([]);
   const [showBossSelect, setShowBossSelect] = useState(false);
   const [selectedBoss, setSelectedBoss] = useState<{ stage: Stage; boss: Enemy } | null>(null);
+  const [useFusionBoost, setUseFusionBoost] = useState(false);
+  const [fusionResult, setFusionResult] = useState<{ success: boolean; upgraded: boolean; previousRarity: string; newRarity: string; chance: number } | null>(null);
 
   useEffect(() => {
     const init = async () => {
@@ -139,6 +141,39 @@ export default function GameTabScreen() {
       Alert.alert('合成失敗', '合成に失敗しました');
     }
   }, [selectedFusionCards]);
+
+  const handleFusionWithResult = useCallback(() => {
+    if (selectedFusionCards.length < 2) {
+      Alert.alert('エラー', '2枚以上のカードを選択してください');
+      return;
+    }
+    
+    const result = gameStore.fuseCards(selectedFusionCards, useFusionBoost);
+    if (result.success && result.newCard) {
+      const previousRarityName = result.previousRarity ? RARITY_NAMES[result.previousRarity] : '不明';
+      const newRarityName = RARITY_NAMES[result.newCard.rarity];
+      const upgraded = result.rarityUpgraded ?? false;
+      const chance = result.upgradeChance ?? 0;
+      
+      if (upgraded) {
+        Alert.alert(
+          '🎉 レアリティアップ成功！',
+          `${result.newCard.term}\n${previousRarityName} → ${newRarityName}\n（確率: ${Math.round(chance * 100)}%）`
+        );
+      } else {
+        Alert.alert(
+          '合成完了',
+          `${result.newCard.term}（${newRarityName}）\nレアリティは上がりませんでした\n（確率: ${Math.round(chance * 100)}%）`
+        );
+      }
+      
+      setSelectedFusionCards([]);
+      setUseFusionBoost(false);
+      setFusionCandidates(gameStore.getFusionCandidates());
+    } else {
+      Alert.alert('合成失敗', '合成に失敗しました');
+    }
+  }, [selectedFusionCards, useFusionBoost]);
 
   const toggleFusionCard = useCallback((cardId: string) => {
     setSelectedFusionCards(prev => {
@@ -538,6 +573,76 @@ export default function GameTabScreen() {
             <Text style={[styles.modalTitle, { color: colors.foreground }]}>🔮 カード合成</Text>
             <Text style={[styles.fusionHint, { color: colors.muted }]}>同じ単語のカード2枚以上で合成可能</Text>
             
+            {/* 合成確率表示 */}
+            {selectedFusionCards.length >= 2 && (
+              <View style={[styles.fusionChanceBox, { backgroundColor: colors.surface, borderColor: colors.primary }]}>
+                <Text style={[styles.fusionChanceLabel, { color: colors.foreground }]}>
+                  レアリティアップ確率
+                </Text>
+                <Text style={[styles.fusionChanceValue, { color: colors.primary }]}>
+                  {Math.round(gameStore.calculateFusionChance(selectedFusionCards.length, useFusionBoost) * 100)}%
+                </Text>
+                {useFusionBoost && (
+                  <Text style={[styles.fusionBoostBadge, { backgroundColor: colors.warning }]}>
+                    💫 +30% ブースト中
+                  </Text>
+                )}
+              </View>
+            )}
+            
+            {/* 合成触媒アイテム */}
+            <View style={[styles.fusionBoostSection, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+              <View style={styles.fusionBoostInfo}>
+                <Text style={[styles.fusionBoostName, { color: colors.foreground }]}>
+                  🧪 合成触媒
+                </Text>
+                <Text style={[styles.fusionBoostDesc, { color: colors.muted }]}>
+                  レアリティアップ確率+30%
+                </Text>
+                <Text style={[styles.fusionBoostCount, { color: colors.foreground }]}>
+                  所持: {gameStore.getFusionBoostCount()}個
+                </Text>
+              </View>
+              <View style={styles.fusionBoostActions}>
+                {gameStore.getFusionBoostCount() > 0 && (
+                  <Pressable
+                    style={({ pressed }) => [
+                      styles.fusionBoostToggle,
+                      { 
+                        backgroundColor: useFusionBoost ? colors.warning : colors.border,
+                        opacity: pressed ? 0.7 : 1
+                      }
+                    ]}
+                    onPress={() => setUseFusionBoost(!useFusionBoost)}
+                  >
+                    <Text style={styles.fusionBoostToggleText}>
+                      {useFusionBoost ? '✓ 使用中' : '使用する'}
+                    </Text>
+                  </Pressable>
+                )}
+                <Pressable
+                  style={({ pressed }) => [
+                    styles.fusionBoostBuy,
+                    { 
+                      backgroundColor: player.gold >= 300 ? colors.success : colors.muted,
+                      opacity: pressed ? 0.7 : 1
+                    }
+                  ]}
+                  onPress={() => {
+                    const success = gameStore.buyItem('fusion_boost');
+                    if (success) {
+                      Alert.alert('購入完了', '合成触媒を購入しました！');
+                    } else {
+                      Alert.alert('購入失敗', 'ゴールドが足りません');
+                    }
+                  }}
+                  disabled={player.gold < 300}
+                >
+                  <Text style={styles.fusionBoostBuyText}>300Gで購入</Text>
+                </Pressable>
+              </View>
+            </View>
+            
             <ScrollView style={styles.fusionList}>
               {fusionCandidates.length === 0 ? (
                 <Text style={[styles.noFusionText, { color: colors.muted }]}>合成可能なカードがありません</Text>
@@ -561,6 +666,9 @@ export default function GameTabScreen() {
                           <Text style={[styles.fusionCardRarity, { color: RARITY_COLORS[card.rarity] }]}>
                             {RARITY_NAMES[card.rarity]}
                           </Text>
+                          {card.upgradeLevel > 0 && (
+                            <Text style={[styles.fusionCardLevel, { color: colors.warning }]}>+{card.upgradeLevel}</Text>
+                          )}
                           {selectedFusionCards.includes(card.id) && (
                             <Text style={styles.selectedMark}>✓</Text>
                           )}
@@ -575,7 +683,7 @@ export default function GameTabScreen() {
             {selectedFusionCards.length >= 2 && (
               <Pressable
                 style={[styles.fusionButton, { backgroundColor: colors.primary }]}
-                onPress={handleFusion}
+                onPress={handleFusionWithResult}
               >
                 <Text style={styles.fusionButtonText}>合成する（{selectedFusionCards.length}枚）</Text>
               </Pressable>
@@ -586,6 +694,7 @@ export default function GameTabScreen() {
               onPress={() => {
                 setShowFusion(false);
                 setSelectedFusionCards([]);
+                setUseFusionBoost(false);
               }}
             >
               <Text style={styles.closeButtonText}>閉じる</Text>
@@ -1105,6 +1214,83 @@ const styles = StyleSheet.create({
   fusionCardRarity: {
     fontSize: 12,
     fontWeight: 'bold',
+  },
+  fusionCardLevel: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    marginTop: 2,
+  },
+  fusionChanceBox: {
+    padding: 12,
+    borderRadius: 12,
+    borderWidth: 2,
+    marginBottom: 12,
+    alignItems: 'center',
+  },
+  fusionChanceLabel: {
+    fontSize: 12,
+    marginBottom: 4,
+  },
+  fusionChanceValue: {
+    fontSize: 32,
+    fontWeight: 'bold',
+  },
+  fusionBoostBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 8,
+    marginTop: 8,
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: 'bold',
+    overflow: 'hidden',
+  },
+  fusionBoostSection: {
+    padding: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    marginBottom: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  fusionBoostInfo: {
+    flex: 1,
+  },
+  fusionBoostName: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  fusionBoostDesc: {
+    fontSize: 11,
+    marginTop: 2,
+  },
+  fusionBoostCount: {
+    fontSize: 12,
+    marginTop: 4,
+  },
+  fusionBoostActions: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  fusionBoostToggle: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
+  fusionBoostToggleText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 12,
+  },
+  fusionBoostBuy: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
+  fusionBoostBuyText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 12,
   },
   selectedMark: {
     fontSize: 14,
