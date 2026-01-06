@@ -510,7 +510,9 @@ class GameStore {
     
     // バーストの場合、2枚目のカードも記録
     if (isBurst && battle.selectedBurstCards) {
+      console.log('[Game] Recording burst card 2 for term:', battle.selectedBurstCards[1].termId, 'correct:', correct);
       await dataStore.recordStudy(battle.selectedBurstCards[1].termId, correct);
+      console.log('[Game] Burst card 2 study recorded successfully');
     }
 
     // カードの使用回数を更新
@@ -889,8 +891,14 @@ class GameStore {
 
   // カード強化
   upgradeCard(cardId: string): { success: boolean; message: string } {
-    const card = this.state.player.cards.find(c => c.id === cardId);
-    if (!card) return { success: false, message: 'カードが見つかりません' };
+    console.log('[GameStore] upgradeCard called for:', cardId);
+    console.log('[GameStore] Current gold:', this.state.player.gold);
+    
+    const cardIndex = this.state.player.cards.findIndex(c => c.id === cardId);
+    if (cardIndex === -1) return { success: false, message: 'カードが見つかりません' };
+    
+    const card = this.state.player.cards[cardIndex];
+    console.log('[GameStore] Card found:', card.termJa, 'upgradeLevel:', card.upgradeLevel);
 
     const maxUpgradeLevel = 5;
     if (card.upgradeLevel >= maxUpgradeLevel) {
@@ -899,26 +907,39 @@ class GameStore {
 
     const costs = UPGRADE_COSTS[card.rarity];
     const cost = costs[card.upgradeLevel];
+    console.log('[GameStore] Upgrade cost:', cost);
     
     if (this.state.player.gold < cost) {
       return { success: false, message: `ゴールドが足りません（必要: ${cost}G）` };
     }
 
     // 強化実行
+    const oldGold = this.state.player.gold;
+    const oldAttack = card.attackPower;
+    const oldHeal = card.healPower;
+    const oldLevel = card.upgradeLevel;
+    
     this.state.player.gold -= cost;
-    card.upgradeLevel++;
+    this.state.player.cards[cardIndex].upgradeLevel++;
     
     // ステータスアップ
     const baseStats = RARITY_STATS[card.rarity];
-    card.attackPower = Math.floor(baseStats.attack * (1 + UPGRADE_BONUS.attackMultiplier * card.upgradeLevel));
-    card.healPower = Math.floor(baseStats.heal * (1 + UPGRADE_BONUS.healMultiplier * card.upgradeLevel));
+    this.state.player.cards[cardIndex].attackPower = Math.floor(baseStats.attack * (1 + UPGRADE_BONUS.attackMultiplier * this.state.player.cards[cardIndex].upgradeLevel));
+    this.state.player.cards[cardIndex].healPower = Math.floor(baseStats.heal * (1 + UPGRADE_BONUS.healMultiplier * this.state.player.cards[cardIndex].upgradeLevel));
+    
+    console.log('[GameStore] Upgrade complete:');
+    console.log('  Gold:', oldGold, '->', this.state.player.gold);
+    console.log('  Level:', oldLevel, '->', this.state.player.cards[cardIndex].upgradeLevel);
+    console.log('  Attack:', oldAttack, '->', this.state.player.cards[cardIndex].attackPower);
+    console.log('  Heal:', oldHeal, '->', this.state.player.cards[cardIndex].healPower);
 
     // レアリティアップ判定（強化レベル3と5でレアリティが上がる可能性）
-    if ((card.upgradeLevel === 3 || card.upgradeLevel === 5) && Math.random() < 0.3) {
+    const updatedCard = this.state.player.cards[cardIndex];
+    if ((updatedCard.upgradeLevel === 3 || updatedCard.upgradeLevel === 5) && Math.random() < 0.3) {
       const rarityOrder: CardRarity[] = ['common', 'uncommon', 'rare', 'epic', 'legendary'];
-      const currentIndex = rarityOrder.indexOf(card.rarity);
+      const currentIndex = rarityOrder.indexOf(updatedCard.rarity);
       if (currentIndex < rarityOrder.length - 1) {
-        card.rarity = rarityOrder[currentIndex + 1];
+        this.state.player.cards[cardIndex].rarity = rarityOrder[currentIndex + 1];
         this.saveState();
         this.notify();
         return { success: true, message: `強化成功！レアリティが上がりました！` };
@@ -927,7 +948,7 @@ class GameStore {
 
     this.saveState();
     this.notify();
-    return { success: true, message: `強化成功！Lv.${card.upgradeLevel}になりました` };
+    return { success: true, message: `強化成功！Lv.${updatedCard.upgradeLevel}になりました` };
   }
 
   // カード強化コストを取得
@@ -1135,11 +1156,15 @@ class GameStore {
 
   // カード合成実行
   fuseCards(cardIds: string[]): FusionResult {
+    console.log('[GameStore] fuseCards called with:', cardIds);
+    
     if (cardIds.length < 2) {
+      console.log('[GameStore] Not enough cards to fuse');
       return { success: false, consumedCards: [] };
     }
 
     const cards = cardIds.map(id => this.state.player.cards.find(c => c.id === id)).filter((c): c is WordCard => c !== undefined);
+    console.log('[GameStore] Found cards:', cards.length);
     
     if (cards.length < 2) {
       return { success: false, consumedCards: [] };
@@ -1148,6 +1173,7 @@ class GameStore {
     // 同じtermIdのカードのみ合成可能
     const termId = cards[0].termId;
     if (!cards.every(c => c.termId === termId)) {
+      console.log('[GameStore] Cards have different termIds');
       return { success: false, consumedCards: [] };
     }
 
@@ -1156,15 +1182,28 @@ class GameStore {
     const sortedCards = [...cards].sort((a, b) => rarityOrder.indexOf(b.rarity) - rarityOrder.indexOf(a.rarity));
     const baseCard = sortedCards[0];
     const materialsCount = cards.length - 1;
+    
+    console.log('[GameStore] Base card:', baseCard.termJa, 'rarity:', baseCard.rarity);
+    console.log('[GameStore] Materials count:', materialsCount);
 
     // レアリティアップ確率（素材数に応じて上昇）
+    // 2枚合成で30%、3枚で45%、4枚で60%...
     const baseUpgradeChance = 0.3;
     const upgradeChance = Math.min(baseUpgradeChance + (materialsCount - 1) * 0.15, 0.8);
     const currentRarityIndex = rarityOrder.indexOf(baseCard.rarity);
+    
+    console.log('[GameStore] Upgrade chance:', upgradeChance);
+    console.log('[GameStore] Current rarity index:', currentRarityIndex);
 
     let newRarity = baseCard.rarity;
-    if (currentRarityIndex < rarityOrder.length - 1 && Math.random() < upgradeChance) {
+    const roll = Math.random();
+    console.log('[GameStore] Random roll:', roll);
+    
+    if (currentRarityIndex < rarityOrder.length - 1 && roll < upgradeChance) {
       newRarity = rarityOrder[currentRarityIndex + 1];
+      console.log('[GameStore] Rarity upgraded to:', newRarity);
+    } else {
+      console.log('[GameStore] Rarity not upgraded (roll >= chance or already max)');
     }
 
     // 新しいカードを作成
