@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { View, Image, StyleSheet, Animated } from 'react-native';
 
-// スプライトフレームの定義
+// スプライトフレームの定義 - PERスライム
 const PE_SLIME_FRAMES = {
   idle: [
     require('@/assets/sprites/enemies/pe_slime/idle_0.png'),
@@ -29,7 +29,139 @@ const PE_SLIME_FRAMES = {
   ],
 };
 
+// スプライトフレームの定義 - 配当ゴブリン
+const GOBLIN_FRAMES = {
+  idle: [
+    require('@/assets/sprites/enemies/goblin/idle_0.png'),
+    require('@/assets/sprites/enemies/goblin/idle_1.png'),
+    require('@/assets/sprites/enemies/goblin/idle_2.png'),
+    require('@/assets/sprites/enemies/goblin/idle_3.png'),
+  ],
+  attack: [
+    require('@/assets/sprites/enemies/goblin/attack_0.png'),
+    require('@/assets/sprites/enemies/goblin/attack_1.png'),
+    require('@/assets/sprites/enemies/goblin/attack_2.png'),
+    require('@/assets/sprites/enemies/goblin/attack_3.png'),
+  ],
+  damage: [
+    require('@/assets/sprites/enemies/goblin/damage_0.png'),
+    require('@/assets/sprites/enemies/goblin/damage_1.png'),
+    require('@/assets/sprites/enemies/goblin/damage_2.png'),
+    require('@/assets/sprites/enemies/goblin/damage_3.png'),
+  ],
+  death: [
+    require('@/assets/sprites/enemies/goblin/death_0.png'),
+    require('@/assets/sprites/enemies/goblin/death_1.png'),
+    require('@/assets/sprites/enemies/goblin/death_2.png'),
+    require('@/assets/sprites/enemies/goblin/death_3.png'),
+  ],
+};
+
+// スプライトフレームの定義 - バリュエーションゴーレム
+const GOLEM_FRAMES = {
+  idle: [
+    require('@/assets/sprites/enemies/golem/idle_0.png'),
+    require('@/assets/sprites/enemies/golem/idle_1.png'),
+    require('@/assets/sprites/enemies/golem/idle_2.png'),
+    require('@/assets/sprites/enemies/golem/idle_3.png'),
+  ],
+  attack: [
+    require('@/assets/sprites/enemies/golem/attack_0.png'),
+    require('@/assets/sprites/enemies/golem/attack_1.png'),
+    require('@/assets/sprites/enemies/golem/attack_2.png'),
+    require('@/assets/sprites/enemies/golem/attack_3.png'),
+  ],
+  damage: [
+    require('@/assets/sprites/enemies/golem/damage_0.png'),
+    require('@/assets/sprites/enemies/golem/damage_1.png'),
+    require('@/assets/sprites/enemies/golem/damage_2.png'),
+    require('@/assets/sprites/enemies/golem/damage_3.png'),
+  ],
+  death: [
+    require('@/assets/sprites/enemies/golem/death_0.png'),
+    require('@/assets/sprites/enemies/golem/death_1.png'),
+    require('@/assets/sprites/enemies/golem/death_2.png'),
+    require('@/assets/sprites/enemies/golem/death_3.png'),
+  ],
+};
+
+// スプライトフレームの定義 - DCFファントム
+const PHANTOM_FRAMES = {
+  idle: [
+    require('@/assets/sprites/enemies/phantom/idle_0.png'),
+    require('@/assets/sprites/enemies/phantom/idle_1.png'),
+    require('@/assets/sprites/enemies/phantom/idle_2.png'),
+    require('@/assets/sprites/enemies/phantom/idle_3.png'),
+  ],
+  attack: [
+    require('@/assets/sprites/enemies/phantom/attack_0.png'),
+    require('@/assets/sprites/enemies/phantom/attack_1.png'),
+    require('@/assets/sprites/enemies/phantom/attack_2.png'),
+    require('@/assets/sprites/enemies/phantom/attack_3.png'),
+  ],
+  damage: [
+    require('@/assets/sprites/enemies/phantom/damage_0.png'),
+    require('@/assets/sprites/enemies/phantom/damage_1.png'),
+    require('@/assets/sprites/enemies/phantom/damage_2.png'),
+    require('@/assets/sprites/enemies/phantom/damage_3.png'),
+  ],
+  death: [
+    require('@/assets/sprites/enemies/phantom/death_0.png'),
+    require('@/assets/sprites/enemies/phantom/death_1.png'),
+    require('@/assets/sprites/enemies/phantom/death_2.png'),
+    require('@/assets/sprites/enemies/phantom/death_3.png'),
+  ],
+};
+
+// 敵IDとスプライトのマッピング
+const ENEMY_SPRITE_MAP: Record<string, typeof PE_SLIME_FRAMES | null> = {
+  eq1: PE_SLIME_FRAMES,   // PERスライム
+  eq2: GOBLIN_FRAMES,     // 配当ゴブリン
+  eq3: GOLEM_FRAMES,      // バリュエーションゴーレム
+  eq4: PHANTOM_FRAMES,    // DCFファントム
+  // 他の敵は同じスプライトを再利用
+  eth1: GOBLIN_FRAMES,    // コンプラゴブリン
+  eth2: PE_SLIME_FRAMES,  // 倫理スライム
+  qm1: GOLEM_FRAMES,      // 統計ゴーレム
+  qm2: PHANTOM_FRAMES,    // 確率ファントム
+};
+
+// エフェクトフレームの定義
+export const EFFECT_FRAMES = {
+  hit: [
+    require('@/assets/sprites/effects/hit_1.png'),
+    require('@/assets/sprites/effects/hit_2.png'),
+    require('@/assets/sprites/effects/hit_3.png'),
+  ],
+  slash: [
+    require('@/assets/sprites/effects/slash_1.png'),
+    require('@/assets/sprites/effects/slash_2.png'),
+    require('@/assets/sprites/effects/slash_3.png'),
+  ],
+  explosion: [
+    require('@/assets/sprites/effects/explosion_1.png'),
+    require('@/assets/sprites/effects/explosion_2.png'),
+    require('@/assets/sprites/effects/explosion_3.png'),
+  ],
+  fire: [
+    require('@/assets/sprites/effects/fire_1.png'),
+    require('@/assets/sprites/effects/fire_2.png'),
+    require('@/assets/sprites/effects/fire_3.png'),
+  ],
+  ice: [
+    require('@/assets/sprites/effects/ice_1.png'),
+    require('@/assets/sprites/effects/ice_2.png'),
+    require('@/assets/sprites/effects/ice_3.png'),
+  ],
+  spark: [
+    require('@/assets/sprites/effects/spark_1.png'),
+    require('@/assets/sprites/effects/spark_2.png'),
+    require('@/assets/sprites/effects/spark_3.png'),
+  ],
+};
+
 export type AnimationState = 'idle' | 'attack' | 'damage' | 'death';
+export type EffectType = 'hit' | 'slash' | 'explosion' | 'fire' | 'ice' | 'spark';
 
 interface EnemySpriteProps {
   enemyId: string;
@@ -60,14 +192,15 @@ export function EnemySprite({
   const shakeAnim = useRef(new Animated.Value(0)).current;
   const fadeAnim = useRef(new Animated.Value(1)).current;
   
-  // PERスライム以外は絵文字フォールバック
-  const isPESlime = enemyId === 'eq1';
+  // スプライトが存在するか確認
+  const spriteFrames = ENEMY_SPRITE_MAP[enemyId];
+  const hasSprite = spriteFrames !== undefined && spriteFrames !== null;
   
   // フレームアニメーション
   useEffect(() => {
-    if (!isPESlime) return;
+    if (!hasSprite || !spriteFrames) return;
     
-    const frames = PE_SLIME_FRAMES[animation];
+    const frames = spriteFrames[animation];
     const speed = ANIMATION_SPEEDS[animation];
     const isLooping = LOOPING_ANIMATIONS.includes(animation);
     
@@ -90,7 +223,7 @@ export function EnemySprite({
     }, speed);
     
     return () => clearInterval(interval);
-  }, [animation, isPESlime, onAnimationComplete]);
+  }, [animation, hasSprite, spriteFrames, onAnimationComplete]);
   
   // アイドル時のバウンスアニメーション
   useEffect(() => {
@@ -148,8 +281,8 @@ export function EnemySprite({
     }
   }, [animation, fadeAnim]);
   
-  // PERスライム以外は絵文字表示
-  if (!isPESlime) {
+  // スプライトがない敵は絵文字表示
+  if (!hasSprite || !spriteFrames) {
     return (
       <Animated.View 
         style={[
@@ -172,7 +305,7 @@ export function EnemySprite({
     );
   }
   
-  const frames = PE_SLIME_FRAMES[animation];
+  const frames = spriteFrames[animation];
   const frameSource = frames[Math.min(currentFrame, frames.length - 1)];
   
   return (
@@ -196,6 +329,127 @@ export function EnemySprite({
         resizeMode="contain"
       />
     </Animated.View>
+  );
+}
+
+// エフェクトアニメーションコンポーネント
+interface BattleEffectProps {
+  type: EffectType;
+  size?: number;
+  onComplete?: () => void;
+}
+
+export function BattleEffect({ type, size = 100, onComplete }: BattleEffectProps) {
+  const [currentFrame, setCurrentFrame] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const scaleAnim = useRef(new Animated.Value(0.5)).current;
+  const opacityAnim = useRef(new Animated.Value(1)).current;
+  
+  const frames = EFFECT_FRAMES[type];
+  
+  useEffect(() => {
+    // スケールアニメーション
+    Animated.timing(scaleAnim, {
+      toValue: 1.2,
+      duration: 200,
+      useNativeDriver: true,
+    }).start();
+    
+    // フレームアニメーション
+    const interval = setInterval(() => {
+      setCurrentFrame(prev => {
+        const nextFrame = prev + 1;
+        if (nextFrame >= frames.length) {
+          clearInterval(interval);
+          // フェードアウト
+          Animated.timing(opacityAnim, {
+            toValue: 0,
+            duration: 100,
+            useNativeDriver: true,
+          }).start(() => {
+            setVisible(false);
+            onComplete?.();
+          });
+          return prev;
+        }
+        return nextFrame;
+      });
+    }, 80);
+    
+    return () => clearInterval(interval);
+  }, [frames.length, onComplete, scaleAnim, opacityAnim]);
+  
+  if (!visible) return null;
+  
+  const frameSource = frames[Math.min(currentFrame, frames.length - 1)];
+  
+  return (
+    <Animated.View 
+      style={[
+        styles.effectContainer,
+        {
+          transform: [{ scale: scaleAnim }],
+          opacity: opacityAnim,
+        }
+      ]}
+    >
+      <Image 
+        source={frameSource}
+        style={{ width: size, height: size }}
+        resizeMode="contain"
+      />
+    </Animated.View>
+  );
+}
+
+// プレイヤーダメージエフェクトコンポーネント
+interface PlayerDamageEffectProps {
+  onComplete?: () => void;
+}
+
+export function PlayerDamageEffect({ onComplete }: PlayerDamageEffectProps) {
+  const flashAnim = useRef(new Animated.Value(0)).current;
+  const shakeAnim = useRef(new Animated.Value(0)).current;
+  
+  useEffect(() => {
+    // 画面フラッシュ
+    const flash = Animated.sequence([
+      Animated.timing(flashAnim, { toValue: 0.5, duration: 50, useNativeDriver: true }),
+      Animated.timing(flashAnim, { toValue: 0, duration: 100, useNativeDriver: true }),
+      Animated.timing(flashAnim, { toValue: 0.3, duration: 50, useNativeDriver: true }),
+      Animated.timing(flashAnim, { toValue: 0, duration: 100, useNativeDriver: true }),
+    ]);
+    
+    // 画面シェイク
+    const shake = Animated.sequence([
+      Animated.timing(shakeAnim, { toValue: 5, duration: 30, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: -5, duration: 30, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: 5, duration: 30, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: -5, duration: 30, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: 0, duration: 30, useNativeDriver: true }),
+    ]);
+    
+    Animated.parallel([flash, shake]).start(() => {
+      onComplete?.();
+    });
+  }, [flashAnim, shakeAnim, onComplete]);
+  
+  return (
+    <>
+      <Animated.View 
+        style={[
+          styles.damageOverlay,
+          { opacity: flashAnim }
+        ]}
+        pointerEvents="none"
+      />
+      <Animated.View 
+        style={[
+          styles.shakeContainer,
+          { transform: [{ translateX: shakeAnim }] }
+        ]}
+      />
+    </>
   );
 }
 
@@ -259,5 +513,18 @@ const styles = StyleSheet.create({
   },
   emoji: {
     textAlign: 'center',
+  },
+  effectContainer: {
+    position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  damageOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'red',
+    zIndex: 100,
+  },
+  shakeContainer: {
+    ...StyleSheet.absoluteFillObject,
   },
 });

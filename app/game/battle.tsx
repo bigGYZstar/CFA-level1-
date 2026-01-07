@@ -6,7 +6,7 @@ import { useColors } from '@/hooks/use-colors';
 import { gameStore } from '@/lib/game-store';
 import { BattleState, WordCard, QuizQuestion, CFAQuestion } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
-import { EnemySprite, AnimationState } from '@/components/enemy-sprite';
+import { EnemySprite, AnimationState, BattleEffect, PlayerDamageEffect, EffectType } from '@/components/enemy-sprite';
 
 export default function BattleScreen() {
   const router = useRouter();
@@ -20,6 +20,8 @@ export default function BattleScreen() {
   const [cfaAnswer, setCfaAnswer] = useState<string | null>(null);
   const [cfaResult, setCfaResult] = useState<boolean | null>(null);
   const [enemyAnimation, setEnemyAnimation] = useState<AnimationState>('idle');
+  const [showEffect, setShowEffect] = useState<EffectType | null>(null);
+  const [showPlayerDamage, setShowPlayerDamage] = useState(false);
 
   useEffect(() => {
     const unsubscribe = gameStore.subscribe(() => {
@@ -76,8 +78,12 @@ export default function BattleScreen() {
     
     let message = '';
     if (result.correct) {
-      // 正解時は敵にダメージアニメーション
+      // 正解時は敵にダメージアニメーションとエフェクト
       if (selectedAction === 'attack' || selectedAction === 'burst') {
+        // 攻撃エフェクトを表示
+        setShowEffect(selectedAction === 'burst' ? 'explosion' : 'hit');
+        setTimeout(() => setShowEffect(null), 300);
+        
         setEnemyAnimation('damage');
         setTimeout(() => {
           // 敵が倒れたかチェック
@@ -97,8 +103,14 @@ export default function BattleScreen() {
         message = `HP+${result.heal}回復！`;
       }
     } else {
-      // 不正解時は敵が攻撃アニメーション
+      // 不正解時は敵が攻撃アニメーションとプレイヤーダメージ演出
       setEnemyAnimation('attack');
+      // 敵の攻撃エフェクト
+      setTimeout(() => {
+        setShowEffect('fire');
+        setTimeout(() => setShowEffect(null), 300);
+        setShowPlayerDamage(true);
+      }, 300);
       setTimeout(() => setEnemyAnimation('idle'), 600);
       message = selectedAction === 'burst' 
         ? 'バースト失敗！大反動ダメージ！' 
@@ -180,16 +192,24 @@ export default function BattleScreen() {
         {/* 敵情報 */}
         {battle.enemy && (
           <View style={[styles.enemyCard, { backgroundColor: colors.surface, borderColor: colors.error }]}>
-            <EnemySprite 
-              enemyId={battle.enemy.id} 
-              animation={enemyAnimation} 
-              size={120}
-              onAnimationComplete={() => {
-                if (enemyAnimation === 'death') {
-                  // 死亡アニメーション完了後は何もしない（バトル終了処理は別途）
-                }
-              }}
-            />
+            <View style={styles.enemySpriteContainer}>
+              <EnemySprite 
+                enemyId={battle.enemy.id} 
+                animation={enemyAnimation} 
+                size={120}
+                onAnimationComplete={() => {
+                  if (enemyAnimation === 'death') {
+                    // 死亡アニメーション完了後は何もしない（バトル終了処理は別途）
+                  }
+                }}
+              />
+              {/* 攻撃エフェクトオーバーレイ */}
+              {showEffect && (showEffect === 'hit' || showEffect === 'explosion' || showEffect === 'slash') && (
+                <View style={styles.effectOverlay}>
+                  <BattleEffect type={showEffect} size={100} onComplete={() => setShowEffect(null)} />
+                </View>
+              )}
+            </View>
             <Text style={[styles.enemyName, { color: colors.foreground }]}>{battle.enemy.nameJa}</Text>
             <View style={styles.hpContainer}>
               <View style={[styles.hpBarBg, { backgroundColor: colors.border }]}>
@@ -217,7 +237,13 @@ export default function BattleScreen() {
         )}
 
         {/* プレイヤーHP */}
-        <View style={[styles.playerHp, { backgroundColor: colors.surface, borderColor: colors.primary }]}>
+        <View style={[styles.playerHp, { backgroundColor: colors.surface, borderColor: showPlayerDamage ? colors.error : colors.primary }]}>
+          {/* プレイヤーダメージエフェクト */}
+          {showPlayerDamage && (
+            <View style={styles.playerDamageOverlay}>
+              <BattleEffect type="fire" size={80} onComplete={() => setShowPlayerDamage(false)} />
+            </View>
+          )}
           <View style={styles.playerHeader}>
             <Text style={[styles.playerLabel, { color: colors.foreground }]}>あなた</Text>
             <Text style={[styles.goldText, { color: colors.warning }]}>
@@ -909,5 +935,26 @@ const styles = StyleSheet.create({
   },
   fleeButtonText: {
     fontSize: 14,
+  },
+  enemySpriteContainer: {
+    position: 'relative',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  effectOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 10,
+  },
+  playerDamageOverlay: {
+    position: 'absolute',
+    top: -20,
+    right: 10,
+    zIndex: 10,
   },
 });
