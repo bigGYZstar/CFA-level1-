@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { View, Image, StyleSheet, Animated } from 'react-native';
+import { View, StyleSheet, Animated } from 'react-native';
+import { Image } from 'expo-image';
 
 // スプライトフレームの定義 - PERスライム
 const PE_SLIME_FRAMES = {
@@ -326,7 +327,9 @@ export function EnemySprite({
       <Image 
         source={frameSource}
         style={{ width: size, height: size }}
-        resizeMode="contain"
+        contentFit="contain"
+        cachePolicy="memory-disk"
+        priority="high"
       />
     </Animated.View>
   );
@@ -396,7 +399,9 @@ export function BattleEffect({ type, size = 100, onComplete }: BattleEffectProps
       <Image 
         source={frameSource}
         style={{ width: size, height: size }}
-        resizeMode="contain"
+        contentFit="contain"
+        cachePolicy="memory-disk"
+        priority="high"
       />
     </Animated.View>
   );

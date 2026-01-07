@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ScrollView, Text, View, Pressable, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, useFocusEffect } from 'expo-router';
+import { useCallback } from 'react';
 import { ScreenContainer } from '@/components/screen-container';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { loadTerms, loadProgress, getReviewDueTerms, TOPICS } from '@/lib/data-store';
@@ -16,6 +17,13 @@ export default function HomeScreen() {
   useEffect(() => {
     loadData();
   }, []);
+
+  // 画面がフォーカスされたときにデータを再読み込み
+  useFocusEffect(
+    useCallback(() => {
+      loadData();
+    }, [])
+  );
 
   async function loadData() {
     const loadedTerms = await loadTerms();
