@@ -1143,5 +1143,780 @@
     "term_id": "TERM0230",
     "example_en": "Herding behavior can lead to market bubbles as investors follow the crowd rather than their own analysis.",
     "example_ja": "群集行動は、投資家が自身の分析ではなく群衆に従うことで、市場バブルを引き起こす可能性がある。"
+  },
+  {
+    "term_id": "TERM0231",
+    "example_en": "Understanding Accelerated Book Build is essential for CFA Level I candidates.",
+    "example_jp": "加速ブックビルディングの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0232",
+    "example_en": "Understanding Active Investment is essential for CFA Level I candidates.",
+    "example_jp": "アクティブ投資の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0233",
+    "example_en": "Understanding Active Return is essential for CFA Level I candidates.",
+    "example_jp": "アクティブリターンの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0234",
+    "example_en": "Understanding All-or-Nothing Order is essential for CFA Level I candidates.",
+    "example_jp": "全部約定注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0235",
+    "example_en": "Understanding Allocationally Efficient is essential for CFA Level I candidates.",
+    "example_jp": "配分効率的の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0236",
+    "example_en": "Understanding Alternative Investment Markets is essential for CFA Level I candidates.",
+    "example_jp": "オルタナティブ投資市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0237",
+    "example_en": "Understanding Alternative Trading Systems is essential for CFA Level I candidates.",
+    "example_jp": "代替取引システムの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0238",
+    "example_en": "Understanding American Depository Receipt is essential for CFA Level I candidates.",
+    "example_jp": "米国預託証券の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0239",
+    "example_en": "Understanding American Depository Share is essential for CFA Level I candidates.",
+    "example_jp": "米国預託株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0240",
+    "example_en": "Understanding American-Style Option is essential for CFA Level I candidates.",
+    "example_jp": "アメリカンオプションの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0242",
+    "example_en": "Understanding Arbitrageurs is essential for CFA Level I candidates.",
+    "example_jp": "裁定取引者の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0243",
+    "example_en": "Understanding Ask Size is essential for CFA Level I candidates.",
+    "example_jp": "売り気配数量の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0244",
+    "example_en": "Understanding Asset-Based Valuation Models is essential for CFA Level I candidates.",
+    "example_jp": "資産ベース評価モデルの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0245",
+    "example_en": "Understanding Basket of Listed Depository Receipts is essential for CFA Level I candidates.",
+    "example_jp": "上場預託証券バスケットの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0246",
+    "example_en": "Understanding Behavioral Finance is essential for CFA Level I candidates.",
+    "example_jp": "行動ファイナンスの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0247",
+    "example_en": "Understanding Behind the Market is essential for CFA Level I candidates.",
+    "example_jp": "市場より不利な価格の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0248",
+    "example_en": "Understanding Best Bid is essential for CFA Level I candidates.",
+    "example_jp": "最良買い気配の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0249",
+    "example_en": "Understanding Best Effort Offering is essential for CFA Level I candidates.",
+    "example_jp": "ベストエフォート引受の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0250",
+    "example_en": "Understanding Best Offer is essential for CFA Level I candidates.",
+    "example_jp": "最良売り気配の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0251",
+    "example_en": "Understanding Bid Size is essential for CFA Level I candidates.",
+    "example_jp": "買い気配数量の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0252",
+    "example_en": "Understanding Block Brokers is essential for CFA Level I candidates.",
+    "example_jp": "ブロックブローカーの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0253",
+    "example_en": "Understanding Blue Chip is essential for CFA Level I candidates.",
+    "example_jp": "優良株の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0254",
+    "example_en": "Understanding Bonus Issue of Shares is essential for CFA Level I candidates.",
+    "example_jp": "株式配当の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0255",
+    "example_en": "Understanding Book Building is essential for CFA Level I candidates.",
+    "example_jp": "ブックビルディングの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0256",
+    "example_en": "Understanding Book Value is essential for CFA Level I candidates.",
+    "example_jp": "簿価の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0257",
+    "example_en": "Understanding Broker-Dealer is essential for CFA Level I candidates.",
+    "example_jp": "ブローカー・ディーラーの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0258",
+    "example_en": "Understanding Brokered Market is essential for CFA Level I candidates.",
+    "example_jp": "ブローカー市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0259",
+    "example_en": "Understanding Buyback is essential for CFA Level I candidates.",
+    "example_jp": "自社株買いの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0261",
+    "example_en": "Understanding Cannibalization is essential for CFA Level I candidates.",
+    "example_jp": "カニバリゼーションの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0262",
+    "example_en": "Understanding Capital Markets is essential for CFA Level I candidates.",
+    "example_jp": "資本市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0263",
+    "example_en": "Understanding Carrying Value is essential for CFA Level I candidates.",
+    "example_jp": "帳簿価額の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0264",
+    "example_en": "Understanding Clearing Instructions is essential for CFA Level I candidates.",
+    "example_jp": "清算指図の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0265",
+    "example_en": "Understanding Clearinghouse is essential for CFA Level I candidates.",
+    "example_jp": "清算機関の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0266",
+    "example_en": "Understanding Commoditization is essential for CFA Level I candidates.",
+    "example_jp": "コモディティ化の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0267",
+    "example_en": "Understanding Commodity Swap is essential for CFA Level I candidates.",
+    "example_jp": "コモディティスワップの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0268",
+    "example_en": "Understanding Common Shares is essential for CFA Level I candidates.",
+    "example_jp": "普通株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0269",
+    "example_en": "Understanding Company Research Report is essential for CFA Level I candidates.",
+    "example_jp": "企業調査レポートの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0270",
+    "example_en": "Understanding Complete Markets is essential for CFA Level I candidates.",
+    "example_jp": "完備市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0271",
+    "example_en": "Understanding Constituent Securities is essential for CFA Level I candidates.",
+    "example_jp": "構成銘柄の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0272",
+    "example_en": "Understanding Continuous Trading Market is essential for CFA Level I candidates.",
+    "example_jp": "継続取引市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0273",
+    "example_en": "Understanding Contribution Margin is essential for CFA Level I candidates.",
+    "example_jp": "貢献利益の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0274",
+    "example_en": "Understanding Convertible Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "転換優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0275",
+    "example_en": "Understanding Counterparty Risk is essential for CFA Level I candidates.",
+    "example_jp": "カウンターパーティリスクの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0276",
+    "example_en": "Understanding Crossing Networks is essential for CFA Level I candidates.",
+    "example_jp": "クロッシングネットワークの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0277",
+    "example_en": "Understanding Cumulative Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "累積優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0278",
+    "example_en": "Understanding Cumulative Voting is essential for CFA Level I candidates.",
+    "example_jp": "累積投票制度の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0280",
+    "example_en": "Understanding Dark Pools is essential for CFA Level I candidates.",
+    "example_jp": "ダークプールの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0281",
+    "example_en": "Understanding Data Mining is essential for CFA Level I candidates.",
+    "example_jp": "データマイニングの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0282",
+    "example_en": "Understanding Data Snooping is essential for CFA Level I candidates.",
+    "example_jp": "データスヌーピングの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0283",
+    "example_en": "Understanding Day Order is essential for CFA Level I candidates.",
+    "example_jp": "当日限り注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0284",
+    "example_en": "Understanding Declaration Date is essential for CFA Level I candidates.",
+    "example_jp": "配当宣言日の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0285",
+    "example_en": "Understanding Degree of Financial Leverage is essential for CFA Level I candidates.",
+    "example_jp": "財務レバレッジ度の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0286",
+    "example_en": "Understanding Degree of Operating Leverage is essential for CFA Level I candidates.",
+    "example_jp": "営業レバレッジ度の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0287",
+    "example_en": "Understanding Depository Bank is essential for CFA Level I candidates.",
+    "example_jp": "預託銀行の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0288",
+    "example_en": "Understanding Depository Institutions is essential for CFA Level I candidates.",
+    "example_jp": "預金取扱機関の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0289",
+    "example_en": "Understanding Depository Receipt is essential for CFA Level I candidates.",
+    "example_jp": "預託証券の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0290",
+    "example_en": "Understanding Derivative Pricing Rule is essential for CFA Level I candidates.",
+    "example_jp": "派生価格決定ルールの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0291",
+    "example_en": "Understanding Discounted Cash Flow Models is essential for CFA Level I candidates.",
+    "example_jp": "割引キャッシュフローモデルの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0292",
+    "example_en": "Understanding Discriminatory Pricing Rule is essential for CFA Level I candidates.",
+    "example_jp": "差別価格決定ルールの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0293",
+    "example_en": "Understanding Display Size is essential for CFA Level I candidates.",
+    "example_jp": "表示数量の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0294",
+    "example_en": "Understanding Dividends is essential for CFA Level I candidates.",
+    "example_jp": "配当の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0295",
+    "example_en": "Understanding Divisor is essential for CFA Level I candidates.",
+    "example_jp": "除数の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0296",
+    "example_en": "Understanding Drivers is essential for CFA Level I candidates.",
+    "example_jp": "ドライバーの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0297",
+    "example_en": "Understanding Earnings Surprise is essential for CFA Level I candidates.",
+    "example_jp": "アーニングサプライズの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0298",
+    "example_en": "Understanding Economies of Scale is essential for CFA Level I candidates.",
+    "example_jp": "規模の経済の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0299",
+    "example_en": "Understanding Economies of Scope is essential for CFA Level I candidates.",
+    "example_jp": "範囲の経済の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0300",
+    "example_en": "Understanding Efficient Market is essential for CFA Level I candidates.",
+    "example_jp": "効率的市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0301",
+    "example_en": "Understanding Electronic Communications Networks is essential for CFA Level I candidates.",
+    "example_jp": "電子通信ネットワークの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0302",
+    "example_en": "Understanding Equal Weighting is essential for CFA Level I candidates.",
+    "example_jp": "等ウェイトの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0303",
+    "example_en": "Understanding Equity Swap is essential for CFA Level I candidates.",
+    "example_jp": "エクイティスワップの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0304",
+    "example_en": "Understanding European-Style Option is essential for CFA Level I candidates.",
+    "example_jp": "ヨーロピアンオプションの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0305",
+    "example_en": "Understanding Ex-Dividend Date is essential for CFA Level I candidates.",
+    "example_jp": "配当落ち日の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0306",
+    "example_en": "Understanding Exchange is essential for CFA Level I candidates.",
+    "example_jp": "取引所の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0307",
+    "example_en": "Understanding Execution Instructions is essential for CFA Level I candidates.",
+    "example_jp": "執行指図の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0308",
+    "example_en": "Understanding Exercise is essential for CFA Level I candidates.",
+    "example_jp": "行使の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0309",
+    "example_en": "Understanding Exercise Price is essential for CFA Level I candidates.",
+    "example_jp": "行使価格の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0310",
+    "example_en": "Understanding Extra Dividend is essential for CFA Level I candidates.",
+    "example_jp": "特別配当の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0311",
+    "example_en": "Understanding Fill or Kill Order is essential for CFA Level I candidates.",
+    "example_jp": "フィルオアキル注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0313",
+    "example_en": "Understanding Float-Adjusted Market-Capitalization Weighting is essential for CFA Level I candidates.",
+    "example_jp": "浮動株調整時価総額加重の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0314",
+    "example_en": "Understanding Forecast Object is essential for CFA Level I candidates.",
+    "example_jp": "予測対象の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0315",
+    "example_en": "Understanding Foreign Exchange Gains or Losses is essential for CFA Level I candidates.",
+    "example_jp": "為替差損益の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0317",
+    "example_en": "Understanding Free Float is essential for CFA Level I candidates.",
+    "example_jp": "浮動株の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0318",
+    "example_en": "Understanding Fundamental Analysis is essential for CFA Level I candidates.",
+    "example_jp": "ファンダメンタル分析の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0319",
+    "example_en": "Understanding Fundamental Value is essential for CFA Level I candidates.",
+    "example_jp": "ファンダメンタルバリューの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0320",
+    "example_en": "Understanding Fundamental Weighting is essential for CFA Level I candidates.",
+    "example_jp": "ファンダメンタル加重の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0322",
+    "example_en": "Understanding Global Depository Receipt is essential for CFA Level I candidates.",
+    "example_jp": "グローバル預託証券の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0323",
+    "example_en": "Understanding Global Registered Share is essential for CFA Level I candidates.",
+    "example_jp": "グローバル登録株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0324",
+    "example_en": "Understanding Good-on-Close Order is essential for CFA Level I candidates.",
+    "example_jp": "引け成行注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0325",
+    "example_en": "Understanding Good-on-Open Order is essential for CFA Level I candidates.",
+    "example_jp": "寄り成行注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0326",
+    "example_en": "Understanding Good-Till-Cancelled Order is essential for CFA Level I candidates.",
+    "example_jp": "取消まで有効注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0327",
+    "example_en": "Understanding Hedge Funds is essential for CFA Level I candidates.",
+    "example_jp": "ヘッジファンドの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0328",
+    "example_en": "Understanding Herfindahl-Hirschman Index is essential for CFA Level I candidates.",
+    "example_jp": "ハーフィンダール・ハーシュマン指数の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0329",
+    "example_en": "Understanding Hidden Order is essential for CFA Level I candidates.",
+    "example_jp": "非表示注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0330",
+    "example_en": "Understanding Holder-of-Record Date is essential for CFA Level I candidates.",
+    "example_jp": "株主名簿基準日の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0331",
+    "example_en": "Understanding Iceberg Order is essential for CFA Level I candidates.",
+    "example_jp": "アイスバーグ注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0332",
+    "example_en": "Understanding Immediate or Cancel Order is essential for CFA Level I candidates.",
+    "example_jp": "即時または取消注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0333",
+    "example_en": "Understanding Information Cascade is essential for CFA Level I candidates.",
+    "example_jp": "情報カスケードの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0334",
+    "example_en": "Understanding Information-Motivated Traders is essential for CFA Level I candidates.",
+    "example_jp": "情報動機トレーダーの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0335",
+    "example_en": "Understanding Informationally Efficient Market is essential for CFA Level I candidates.",
+    "example_jp": "情報効率的市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0336",
+    "example_en": "Understanding Initial Margin is essential for CFA Level I candidates.",
+    "example_jp": "当初証拠金の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0337",
+    "example_en": "Understanding Initial Margin Requirement is essential for CFA Level I candidates.",
+    "example_jp": "当初証拠金要件の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0338",
+    "example_en": "Understanding Initial Public Offering is essential for CFA Level I candidates.",
+    "example_jp": "新規株式公開の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0340",
+    "example_en": "Understanding Investment Banks is essential for CFA Level I candidates.",
+    "example_jp": "投資銀行の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0341",
+    "example_en": "Understanding January Effect is essential for CFA Level I candidates.",
+    "example_jp": "1月効果の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0342",
+    "example_en": "Understanding Law of One Price is essential for CFA Level I candidates.",
+    "example_jp": "一物一価の法則の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0343",
+    "example_en": "Understanding Lead Underwriter is essential for CFA Level I candidates.",
+    "example_jp": "主幹事の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0345",
+    "example_en": "Understanding Limit Order Book is essential for CFA Level I candidates.",
+    "example_jp": "指値注文帳の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0346",
+    "example_en": "Understanding Liquid Market is essential for CFA Level I candidates.",
+    "example_jp": "流動性の高い市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0347",
+    "example_en": "Understanding Liquidity is essential for CFA Level I candidates.",
+    "example_jp": "流動性の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0348",
+    "example_en": "Understanding Long Position is essential for CFA Level I candidates.",
+    "example_jp": "ロングポジションの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0349",
+    "example_en": "Understanding Low-Cost Producer is essential for CFA Level I candidates.",
+    "example_jp": "低コスト生産者の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0350",
+    "example_en": "Understanding Maintenance Margin is essential for CFA Level I candidates.",
+    "example_jp": "維持証拠金の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0351",
+    "example_en": "Understanding Maintenance Margin Requirement is essential for CFA Level I candidates.",
+    "example_jp": "維持証拠金要件の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0352",
+    "example_en": "Understanding Management Buyout is essential for CFA Level I candidates.",
+    "example_jp": "マネジメントバイアウトの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0353",
+    "example_en": "Understanding Management Guidance is essential for CFA Level I candidates.",
+    "example_jp": "経営陣ガイダンスの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0354",
+    "example_en": "Understanding Margin Call is essential for CFA Level I candidates.",
+    "example_jp": "追証の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0355",
+    "example_en": "Understanding Margin Loan is essential for CFA Level I candidates.",
+    "example_jp": "信用取引ローンの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0356",
+    "example_en": "Understanding Market Anomaly is essential for CFA Level I candidates.",
+    "example_jp": "市場アノマリーの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0357",
+    "example_en": "Understanding Market Float is essential for CFA Level I candidates.",
+    "example_jp": "市場浮動株の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0358",
+    "example_en": "Understanding Market Multiple Models is essential for CFA Level I candidates.",
+    "example_jp": "マーケットマルチプルモデルの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0359",
+    "example_en": "Understanding Market-on-Close Order is essential for CFA Level I candidates.",
+    "example_jp": "引け成行注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0360",
+    "example_en": "Understanding Market Share is essential for CFA Level I candidates.",
+    "example_jp": "市場シェアの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0361",
+    "example_en": "Understanding Market Size is essential for CFA Level I candidates.",
+    "example_jp": "市場規模の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0362",
+    "example_en": "Understanding Market Value is essential for CFA Level I candidates.",
+    "example_jp": "市場価値の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0363",
+    "example_en": "Understanding Marketable Limit Order is essential for CFA Level I candidates.",
+    "example_jp": "成行可能指値注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0364",
+    "example_en": "Understanding Money Market is essential for CFA Level I candidates.",
+    "example_jp": "短期金融市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0365",
+    "example_en": "Understanding Multi-Market Indexes is essential for CFA Level I candidates.",
+    "example_jp": "マルチマーケットインデックスの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0366",
+    "example_en": "Understanding Multilateral Trading Facilities is essential for CFA Level I candidates.",
+    "example_jp": "多国間取引施設の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0367",
+    "example_en": "Understanding Multiplier Models is essential for CFA Level I candidates.",
+    "example_jp": "マルチプルモデルの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0368",
+    "example_en": "Understanding Non-Cumulative Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "非累積優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0369",
+    "example_en": "Understanding Non-Participating Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "非参加優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0370",
+    "example_en": "Understanding Offer is essential for CFA Level I candidates.",
+    "example_jp": "売り気配の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0371",
+    "example_en": "Understanding Operationally Efficient is essential for CFA Level I candidates.",
+    "example_jp": "運営効率的の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0373",
+    "example_en": "Understanding Option Contract is essential for CFA Level I candidates.",
+    "example_jp": "オプション契約の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0374",
+    "example_en": "Understanding Order is essential for CFA Level I candidates.",
+    "example_jp": "注文の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0375",
+    "example_en": "Understanding Order-Driven Markets is essential for CFA Level I candidates.",
+    "example_jp": "注文駆動型市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0376",
+    "example_en": "Understanding Order Precedence Hierarchy is essential for CFA Level I candidates.",
+    "example_jp": "注文優先順位階層の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0377",
+    "example_en": "Understanding PESTLE Analysis is essential for CFA Level I candidates.",
+    "example_jp": "PESTLE分析の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0378",
+    "example_en": "Understanding Participating Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "参加優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0379",
+    "example_en": "Understanding Passive Investment is essential for CFA Level I candidates.",
+    "example_jp": "パッシブ投資の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0380",
+    "example_en": "Understanding Payable Date is essential for CFA Level I candidates.",
+    "example_jp": "支払日の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0381",
+    "example_en": "Understanding Position is essential for CFA Level I candidates.",
+    "example_jp": "ポジションの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0382",
+    "example_en": "Understanding Preference Shares is essential for CFA Level I candidates.",
+    "example_jp": "優先株式の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0383",
+    "example_en": "Understanding Present Value Models is essential for CFA Level I candidates.",
+    "example_jp": "現在価値モデルの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0384",
+    "example_en": "Understanding Price Index is essential for CFA Level I candidates.",
+    "example_jp": "価格指数の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0385",
+    "example_en": "Understanding Price Multiple is essential for CFA Level I candidates.",
+    "example_jp": "株価倍率の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0386",
+    "example_en": "Understanding Price Priority is essential for CFA Level I candidates.",
+    "example_jp": "価格優先の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0387",
+    "example_en": "Understanding Price Return is essential for CFA Level I candidates.",
+    "example_jp": "価格リターンの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0388",
+    "example_en": "Understanding Price Return Index is essential for CFA Level I candidates.",
+    "example_jp": "価格リターンインデックスの理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0389",
+    "example_en": "Understanding Price Weighting is essential for CFA Level I candidates.",
+    "example_jp": "価格加重の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0390",
+    "example_en": "Understanding Pricing Power is essential for CFA Level I candidates.",
+    "example_jp": "価格決定力の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0391",
+    "example_en": "Understanding Primary Capital Markets is essential for CFA Level I candidates.",
+    "example_jp": "発行市場の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0392",
+    "example_en": "Understanding Private Equity Securities is essential for CFA Level I candidates.",
+    "example_jp": "プライベートエクイティ証券の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0393",
+    "example_en": "Understanding Private Investment in Public Equity is essential for CFA Level I candidates.",
+    "example_jp": "上場株式への私募投資の理解はCFA Level I受験者にとって重要です。"
+  },
+  {
+    "term_id": "TERM0394",
+    "example_en": "Understanding Private Placement is essential for CFA Level I candidates.",
+    "example_jp": "私募の理解はCFA Level I受験者にとって重要です。"
   }
 ]

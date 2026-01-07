@@ -3847,5 +3847,2633 @@
     "jp_headword": "群集行動",
     "jp_reading": "ぐんしゅうこうどう",
     "jp_definition": "他の投資家の行動に追随する傾向。市場のバブルや暴落の一因。"
+  },
+  {
+    "term_id": "TERM0231",
+    "topic_code": "EQ",
+    "en_canonical": "Accelerated Book Build",
+    "en_aliases": [],
+    "abbreviations": [
+      "ABB"
+    ],
+    "jp_headword": "加速ブックビルディング",
+    "jp_reading": "かそくぶっくびるでぃんぐ",
+    "jp_definition": "投資銀行が主幹事として1〜2日で完了する証券の募集方式。",
+    "key_points": [
+      "迅速な資金調達が可能",
+      "機関投資家向け"
+    ],
+    "pitfall": "通常のブックビルディングより短期間だが、価格発見機能が限定的。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0232",
+    "topic_code": "EQ",
+    "en_canonical": "Active Investment",
+    "en_aliases": [
+      "Active Management"
+    ],
+    "abbreviations": [],
+    "jp_headword": "アクティブ投資",
+    "jp_reading": "あくてぃぶとうし",
+    "jp_definition": "ベンチマークを上回るリターンを目指して投資する手法。",
+    "key_points": [
+      "ベンチマーク超過を目標",
+      "パッシブ投資との対比"
+    ],
+    "pitfall": "手数料控除後にベンチマークを上回ることは困難な場合が多い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0233",
+    "topic_code": "EQ",
+    "en_canonical": "Active Return",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "アクティブリターン",
+    "jp_reading": "あくてぃぶりたーん",
+    "jp_definition": "ポートフォリオのリターンからベンチマークのリターンを差し引いた値。",
+    "key_points": [
+      "運用能力の評価指標",
+      "プラスなら超過達成"
+    ],
+    "pitfall": "リスク調整なしの単純な差であることに注意。",
+    "formula": "Active Return = Portfolio Return - Benchmark Return"
+  },
+  {
+    "term_id": "TERM0234",
+    "topic_code": "EQ",
+    "en_canonical": "All-or-Nothing Order",
+    "en_aliases": [
+      "AON Order"
+    ],
+    "abbreviations": [
+      "AON"
+    ],
+    "jp_headword": "全部約定注文",
+    "jp_reading": "ぜんぶやくじょうちゅうもん",
+    "jp_definition": "指定した数量全部が約定する場合のみ取引を行う注文。",
+    "key_points": [
+      "部分約定を防止",
+      "大口取引で使用"
+    ],
+    "pitfall": "約定しにくい場合があり、機会損失のリスクがある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0235",
+    "topic_code": "EQ",
+    "en_canonical": "Allocationally Efficient",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "配分効率的",
+    "jp_reading": "はいぶんこうりつてき",
+    "jp_definition": "資源が最も価値の高い用途に配分される市場・金融システム・経済の特性。",
+    "key_points": [
+      "資源の最適配分",
+      "市場効率性の一形態"
+    ],
+    "pitfall": "情報効率性とは異なる概念。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0236",
+    "topic_code": "EQ",
+    "en_canonical": "Alternative Investment Markets",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オルタナティブ投資市場",
+    "jp_reading": "おるたなてぃぶとうししじょう",
+    "jp_definition": "伝統的な株式・債券以外の投資市場。不動産、ヘッジファンド、プライベートエクイティ、コモディティなどを含む。",
+    "key_points": [
+      "分散投資効果",
+      "流動性が低い場合が多い"
+    ],
+    "pitfall": "デューデリジェンスが特に重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0237",
+    "topic_code": "EQ",
+    "en_canonical": "Alternative Trading Systems",
+    "en_aliases": [
+      "Electronic Communications Networks"
+    ],
+    "abbreviations": [
+      "ATS",
+      "ECN"
+    ],
+    "jp_headword": "代替取引システム",
+    "jp_reading": "だいたいとりひきしすてむ",
+    "jp_definition": "取引所のように機能するが、加入者の取引行為に対する規制権限を持たない取引施設。",
+    "key_points": [
+      "取引所外取引",
+      "ダークプールを含む"
+    ],
+    "pitfall": "規制が取引所より緩い場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0238",
+    "topic_code": "EQ",
+    "en_canonical": "American Depository Receipt",
+    "en_aliases": [],
+    "abbreviations": [
+      "ADR"
+    ],
+    "jp_headword": "米国預託証券",
+    "jp_reading": "べいこくよたくしょうけん",
+    "jp_definition": "米国取引所で普通株のように取引される米ドル建て証券。",
+    "key_points": [
+      "外国株への投資手段",
+      "為替リスクあり"
+    ],
+    "pitfall": "原株との価格乖離が生じる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0239",
+    "topic_code": "EQ",
+    "en_canonical": "American Depository Share",
+    "en_aliases": [],
+    "abbreviations": [
+      "ADS"
+    ],
+    "jp_headword": "米国預託株式",
+    "jp_reading": "べいこくよたくかぶしき",
+    "jp_definition": "米国預託証券の基礎となる株式。発行会社の国内市場で取引される。",
+    "key_points": [
+      "ADRの裏付け資産",
+      "預託銀行が保管"
+    ],
+    "pitfall": "ADRとADSの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0240",
+    "topic_code": "EQ",
+    "en_canonical": "American-Style Option",
+    "en_aliases": [
+      "American Option"
+    ],
+    "abbreviations": [],
+    "jp_headword": "アメリカンオプション",
+    "jp_reading": "あめりかんおぷしょん",
+    "jp_definition": "満期日までいつでも行使可能なオプション契約。",
+    "key_points": [
+      "早期行使が可能",
+      "ヨーロピアンより価値が高い"
+    ],
+    "pitfall": "配当がある場合、早期行使が有利になることがある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0242",
+    "topic_code": "EQ",
+    "en_canonical": "Arbitrageurs",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "裁定取引者",
+    "jp_reading": "さいていとりひきしゃ",
+    "jp_definition": "裁定取引を行うトレーダー。",
+    "key_points": [
+      "価格の歪みを修正",
+      "市場効率性に貢献"
+    ],
+    "pitfall": "裁定機会は短時間で消滅することが多い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0243",
+    "topic_code": "EQ",
+    "en_canonical": "Ask Size",
+    "en_aliases": [
+      "Offer Size"
+    ],
+    "abbreviations": [],
+    "jp_headword": "売り気配数量",
+    "jp_reading": "うりけはいすうりょう",
+    "jp_definition": "特定の売り気配価格に対応する最大取引可能数量。",
+    "key_points": [
+      "流動性の指標",
+      "板情報の一部"
+    ],
+    "pitfall": "表示数量が全ての売り注文を反映しているとは限らない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0244",
+    "topic_code": "EQ",
+    "en_canonical": "Asset-Based Valuation Models",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "資産ベース評価モデル",
+    "jp_reading": "しさんべーすひょうかもでる",
+    "jp_definition": "企業の資産の市場価値の推定に基づく評価手法。",
+    "key_points": [
+      "清算価値の算定",
+      "資産集約型企業に適用"
+    ],
+    "pitfall": "無形資産の評価が困難な場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0245",
+    "topic_code": "EQ",
+    "en_canonical": "Basket of Listed Depository Receipts",
+    "en_aliases": [],
+    "abbreviations": [
+      "BLDR"
+    ],
+    "jp_headword": "上場預託証券バスケット",
+    "jp_reading": "じょうじょうよたくしょうけんばすけっと",
+    "jp_definition": "預託証券のポートフォリオを表すETF。",
+    "key_points": [
+      "分散投資が容易",
+      "外国株へのアクセス"
+    ],
+    "pitfall": "個別ADRとは異なるリスク特性を持つ。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0246",
+    "topic_code": "EQ",
+    "en_canonical": "Behavioral Finance",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "行動ファイナンス",
+    "jp_reading": "こうどうふぁいなんす",
+    "jp_definition": "投資家、アナリスト、ポートフォリオマネージャーの投資意思決定に影響を与える心理的変数を研究する分野。",
+    "key_points": [
+      "認知バイアスの研究",
+      "市場の非効率性を説明"
+    ],
+    "pitfall": "伝統的ファイナンス理論との統合が課題。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0247",
+    "topic_code": "EQ",
+    "en_canonical": "Behind the Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場より不利な価格",
+    "jp_reading": "しじょうよりふりなかかく",
+    "jp_definition": "最良気配より不利な価格で指定された注文。買い指値注文では最良買い気配より低い価格。",
+    "key_points": [
+      "約定しにくい",
+      "価格改善を期待"
+    ],
+    "pitfall": "市場が動くと約定機会を逃す可能性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0248",
+    "topic_code": "EQ",
+    "en_canonical": "Best Bid",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "最良買い気配",
+    "jp_reading": "さいりょうかいけはい",
+    "jp_definition": "市場で最も高い買い気配価格。",
+    "key_points": [
+      "売り手にとっての最良価格",
+      "スプレッドの一端"
+    ],
+    "pitfall": "表示数量が限られている場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0249",
+    "topic_code": "EQ",
+    "en_canonical": "Best Effort Offering",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ベストエフォート引受",
+    "jp_reading": "べすとえふぉーとひきうけ",
+    "jp_definition": "投資銀行が発行体の代理人として最善を尽くして売却するが、特定の金額の売却を保証しない募集方式。",
+    "key_points": [
+      "引受リスクなし",
+      "小規模発行に多い"
+    ],
+    "pitfall": "確約引受とは異なり、調達額が不確定。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0250",
+    "topic_code": "EQ",
+    "en_canonical": "Best Offer",
+    "en_aliases": [
+      "Best Ask"
+    ],
+    "abbreviations": [],
+    "jp_headword": "最良売り気配",
+    "jp_reading": "さいりょううりけはい",
+    "jp_definition": "市場で最も低い売り気配価格。",
+    "key_points": [
+      "買い手にとっての最良価格",
+      "スプレッドの一端"
+    ],
+    "pitfall": "表示数量が限られている場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0251",
+    "topic_code": "EQ",
+    "en_canonical": "Bid Size",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "買い気配数量",
+    "jp_reading": "かいけはいすうりょう",
+    "jp_definition": "特定の買い気配価格に対応する最大取引可能数量。",
+    "key_points": [
+      "流動性の指標",
+      "板情報の一部"
+    ],
+    "pitfall": "表示数量が全ての買い注文を反映しているとは限らない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0252",
+    "topic_code": "EQ",
+    "en_canonical": "Block Brokers",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ブロックブローカー",
+    "jp_reading": "ぶろっくぶろーかー",
+    "jp_definition": "大口取引の仲介サービスを提供するブローカー。",
+    "key_points": [
+      "機関投資家向け",
+      "市場インパクトを軽減"
+    ],
+    "pitfall": "情報漏洩リスクの管理が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0253",
+    "topic_code": "EQ",
+    "en_canonical": "Blue Chip",
+    "en_aliases": [
+      "Blue Chip Stock"
+    ],
+    "abbreviations": [],
+    "jp_headword": "優良株",
+    "jp_reading": "ゆうりょうかぶ",
+    "jp_definition": "財務的に健全で、各業界や地域市場のリーダーとされる大型時価総額企業。",
+    "key_points": [
+      "安定した配当",
+      "低リスク"
+    ],
+    "pitfall": "優良株でも市場リスクは存在する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0254",
+    "topic_code": "EQ",
+    "en_canonical": "Bonus Issue of Shares",
+    "en_aliases": [
+      "Stock Dividend"
+    ],
+    "abbreviations": [],
+    "jp_headword": "株式配当",
+    "jp_reading": "かぶしきはいとう",
+    "jp_definition": "企業が現金ではなく追加の普通株を株主に分配する配当の一種。",
+    "key_points": [
+      "現金流出なし",
+      "株式数増加"
+    ],
+    "pitfall": "株価は希薄化により調整される。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0255",
+    "topic_code": "EQ",
+    "en_canonical": "Book Building",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ブックビルディング",
+    "jp_reading": "ぶっくびるでぃんぐ",
+    "jp_definition": "投資銀行が募集の一部を購入する関心表明のリストを収集するプロセス。",
+    "key_points": [
+      "価格発見機能",
+      "需要調査"
+    ],
+    "pitfall": "関心表明は拘束力がない場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0256",
+    "topic_code": "EQ",
+    "en_canonical": "Book Value",
+    "en_aliases": [
+      "Shareholders' Equity"
+    ],
+    "abbreviations": [],
+    "jp_headword": "簿価",
+    "jp_reading": "ぼか",
+    "jp_definition": "株主資本（総資産から総負債を差し引いた額）から優先株の価値を差し引いた額。普通株主の持分。",
+    "key_points": [
+      "会計上の価値",
+      "市場価値とは異なる"
+    ],
+    "pitfall": "無形資産や時価評価されていない資産がある場合、実態と乖離する。",
+    "formula": "Book Value = Total Assets - Total Liabilities - Preferred Stock"
+  },
+  {
+    "term_id": "TERM0257",
+    "topic_code": "EQ",
+    "en_canonical": "Broker-Dealer",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ブローカー・ディーラー",
+    "jp_reading": "ぶろーかーでぃーらー",
+    "jp_definition": "取引の種類に応じて、主体（ディーラー）または代理人（ブローカー）として機能する金融仲介業者。",
+    "key_points": [
+      "二重の役割",
+      "利益相反の可能性"
+    ],
+    "pitfall": "どの立場で取引しているか確認が必要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0258",
+    "topic_code": "EQ",
+    "en_canonical": "Brokered Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ブローカー市場",
+    "jp_reading": "ぶろーかーしじょう",
+    "jp_definition": "ブローカーが顧客間の取引を仲介する市場。",
+    "key_points": [
+      "仲介手数料が発生",
+      "相対取引"
+    ],
+    "pitfall": "取引所市場より透明性が低い場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0259",
+    "topic_code": "EQ",
+    "en_canonical": "Buyback",
+    "en_aliases": [
+      "Share Repurchase"
+    ],
+    "abbreviations": [],
+    "jp_headword": "自社株買い",
+    "jp_reading": "じしゃかぶがい",
+    "jp_definition": "企業が自社の株式を買い戻す取引。株式分割や株式配当とは異なり、企業の現金を使用する。",
+    "key_points": [
+      "EPS向上効果",
+      "株主還元の一形態"
+    ],
+    "pitfall": "株価が割高な時の自社株買いは価値破壊になりうる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0261",
+    "topic_code": "EQ",
+    "en_canonical": "Cannibalization",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "カニバリゼーション",
+    "jp_reading": "かにばりぜーしょん",
+    "jp_definition": "同一企業が所有する製品間での売上やマーケットシェアの移転。実際または認識された代替品である場合に発生する傾向がある。",
+    "key_points": [
+      "新製品導入時の影響",
+      "純増収益の評価"
+    ],
+    "pitfall": "カニバリゼーションを考慮しないと収益予測を過大評価する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0262",
+    "topic_code": "EQ",
+    "en_canonical": "Capital Markets",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "資本市場",
+    "jp_reading": "しほんしじょう",
+    "jp_definition": "株式や債券など長期の証券を取引する金融市場。",
+    "key_points": [
+      "長期資金調達",
+      "一次市場と二次市場"
+    ],
+    "pitfall": "短期金融市場（マネーマーケット）との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0263",
+    "topic_code": "EQ",
+    "en_canonical": "Carrying Value",
+    "en_aliases": [
+      "Book Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "帳簿価額",
+    "jp_reading": "ちょうぼかがく",
+    "jp_definition": "債券の場合、購入価格に割引の償却額を加算（またはプレミアムの償却額を減算）した額。",
+    "key_points": [
+      "償却原価法",
+      "市場価値とは異なる"
+    ],
+    "pitfall": "金利変動による時価との乖離に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0264",
+    "topic_code": "EQ",
+    "en_canonical": "Clearing Instructions",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "清算指図",
+    "jp_reading": "せいさんさしず",
+    "jp_definition": "取引の最終決済（清算）をどのように行うかを示す指図。",
+    "key_points": [
+      "決済方法の指定",
+      "カウンターパーティリスク軽減"
+    ],
+    "pitfall": "清算機関を通じた決済と相対決済の違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0265",
+    "topic_code": "EQ",
+    "en_canonical": "Clearinghouse",
+    "en_aliases": [
+      "Central Counterparty"
+    ],
+    "abbreviations": [
+      "CCP"
+    ],
+    "jp_headword": "清算機関",
+    "jp_reading": "せいさんきかん",
+    "jp_definition": "先物市場において、契約当事者間の仲介者として機能し、各当事者に対して相手方の履行を保証する機関。",
+    "key_points": [
+      "カウンターパーティリスクの軽減",
+      "証拠金管理"
+    ],
+    "pitfall": "清算機関自体のシステミックリスクも存在する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0266",
+    "topic_code": "EQ",
+    "en_canonical": "Commoditization",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コモディティ化",
+    "jp_reading": "こもでぃてぃか",
+    "jp_definition": "競合製品が時間とともに差別化が薄れ、顧客の目には交換可能な「コモディティ」になるプロセス。収益性の低下を伴う傾向がある。",
+    "key_points": [
+      "価格競争の激化",
+      "差別化の困難"
+    ],
+    "pitfall": "業界分析で重要な考慮事項。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0267",
+    "topic_code": "EQ",
+    "en_canonical": "Commodity Swap",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "コモディティスワップ",
+    "jp_reading": "こもでぃてぃすわっぷ",
+    "jp_definition": "コモディティに関連する指定された基準価格またはインデックスで決定される複数の日付での支払いの交換を伴うスワップの一種。",
+    "key_points": [
+      "価格リスクのヘッジ",
+      "現物決済または差金決済"
+    ],
+    "pitfall": "ベーシスリスクが存在する場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0268",
+    "topic_code": "EQ",
+    "en_canonical": "Common Shares",
+    "en_aliases": [
+      "Common Stock",
+      "Ordinary Shares"
+    ],
+    "abbreviations": [],
+    "jp_headword": "普通株式",
+    "jp_reading": "ふつうかぶしき",
+    "jp_definition": "企業の所有権を表す証券の一種。普通株とも呼ばれる。",
+    "key_points": [
+      "議決権あり",
+      "残余請求権"
+    ],
+    "pitfall": "優先株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0269",
+    "topic_code": "EQ",
+    "en_canonical": "Company Research Report",
+    "en_aliases": [
+      "Equity Research Report"
+    ],
+    "abbreviations": [],
+    "jp_headword": "企業調査レポート",
+    "jp_reading": "きぎょうちょうされぽーと",
+    "jp_definition": "発行体とその証券に関するアナリストの投資推奨を提示する文書。財務モデリング、業界概要、競合分析、バリュエーション、ESG考慮、投資リスクに裏付けられている。",
+    "key_points": [
+      "投資判断の参考",
+      "利益相反の開示"
+    ],
+    "pitfall": "セルサイドレポートのバイアスに注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0270",
+    "topic_code": "EQ",
+    "en_canonical": "Complete Markets",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "完備市場",
+    "jp_reading": "かんびしじょう",
+    "jp_definition": "取引される証券の種類が非常に広く、将来のあらゆる状態に対する望ましいペイオフが達成可能な市場。",
+    "key_points": [
+      "理論的概念",
+      "リスク移転が完全"
+    ],
+    "pitfall": "現実の市場は完備ではない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0271",
+    "topic_code": "EQ",
+    "en_canonical": "Constituent Securities",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "構成銘柄",
+    "jp_reading": "こうせいめいがら",
+    "jp_definition": "インデックス内の個別証券。",
+    "key_points": [
+      "インデックスの構成要素",
+      "定期的な入れ替え"
+    ],
+    "pitfall": "構成銘柄の変更がインデックスリターンに影響する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0272",
+    "topic_code": "EQ",
+    "en_canonical": "Continuous Trading Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "継続取引市場",
+    "jp_reading": "けいぞくとりひきしじょう",
+    "jp_definition": "市場が開いている間いつでも取引を手配・執行できる市場。",
+    "key_points": [
+      "リアルタイム取引",
+      "流動性が高い"
+    ],
+    "pitfall": "コール市場との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0273",
+    "topic_code": "EQ",
+    "en_canonical": "Contribution Margin",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "貢献利益",
+    "jp_reading": "こうけんりえき",
+    "jp_definition": "変動費を用いた収益性指標：単価から単位変動費を差し引いた額。価格または売上高に対する割合としても表される。",
+    "key_points": [
+      "固定費回収への貢献",
+      "損益分岐点分析"
+    ],
+    "pitfall": "営業利益とは異なる概念。",
+    "formula": "Contribution Margin = Price - Variable Cost per Unit"
+  },
+  {
+    "term_id": "TERM0274",
+    "topic_code": "EQ",
+    "en_canonical": "Convertible Preference Shares",
+    "en_aliases": [
+      "Convertible Preferred Stock"
+    ],
+    "abbreviations": [],
+    "jp_headword": "転換優先株式",
+    "jp_reading": "てんかんゆうせんかぶしき",
+    "jp_definition": "株主が指定された数の普通株に転換する権利を持つ株式証券の一種。",
+    "key_points": [
+      "転換権の価値",
+      "株価上昇の恩恵"
+    ],
+    "pitfall": "転換比率と転換価格の関係を理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0275",
+    "topic_code": "EQ",
+    "en_canonical": "Counterparty Risk",
+    "en_aliases": [
+      "Credit Risk"
+    ],
+    "abbreviations": [],
+    "jp_headword": "カウンターパーティリスク",
+    "jp_reading": "かうんたーぱーてぃりすく",
+    "jp_definition": "契約の相手方が契約条件を履行しないリスク。",
+    "key_points": [
+      "信用リスクの一種",
+      "デリバティブで重要"
+    ],
+    "pitfall": "清算機関の利用でリスク軽減可能。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0276",
+    "topic_code": "EQ",
+    "en_canonical": "Crossing Networks",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "クロッシングネットワーク",
+    "jp_reading": "くろっしんぐねっとわーく",
+    "jp_definition": "他の市場から得た価格で取引する意思のある買い手と売り手をマッチングする取引システム。",
+    "key_points": [
+      "価格発見機能なし",
+      "取引コスト削減"
+    ],
+    "pitfall": "約定の不確実性がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0277",
+    "topic_code": "EQ",
+    "en_canonical": "Cumulative Preference Shares",
+    "en_aliases": [
+      "Cumulative Preferred Stock"
+    ],
+    "abbreviations": [],
+    "jp_headword": "累積優先株式",
+    "jp_reading": "るいせきゆうせんかぶしき",
+    "jp_definition": "当期または後続期間に支払われなかった配当は、普通株への配当支払い前に全額支払われなければならない優先株式。",
+    "key_points": [
+      "配当の累積",
+      "株主保護"
+    ],
+    "pitfall": "非累積優先株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0278",
+    "topic_code": "EQ",
+    "en_canonical": "Cumulative Voting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "累積投票制度",
+    "jp_reading": "るいせきとうひょうせいど",
+    "jp_definition": "株主が全ての票を累積し、選挙で単一の候補者に投票できる投票プロセス。複数の候補者に均等に投票権を配分する必要がある場合とは対照的。",
+    "key_points": [
+      "少数株主の権利保護",
+      "取締役選任"
+    ],
+    "pitfall": "法定投票制度との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0280",
+    "topic_code": "EQ",
+    "en_canonical": "Dark Pools",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ダークプール",
+    "jp_reading": "だーくぷーる",
+    "jp_definition": "顧客が送信した注文を表示しない代替取引システム。",
+    "key_points": [
+      "匿名取引",
+      "大口取引向け"
+    ],
+    "pitfall": "価格発見機能が限定的。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0281",
+    "topic_code": "EQ",
+    "en_canonical": "Data Mining",
+    "en_aliases": [
+      "Data Snooping"
+    ],
+    "abbreviations": [],
+    "jp_headword": "データマイニング",
+    "jp_reading": "でーたまいにんぐ",
+    "jp_definition": "統計的に有意なパターンを求めてデータセットを広範に検索することでモデルを決定する手法。データスヌーピングとも呼ばれる。",
+    "key_points": [
+      "過学習のリスク",
+      "偽の相関"
+    ],
+    "pitfall": "サンプル外検証が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0282",
+    "topic_code": "EQ",
+    "en_canonical": "Data Snooping",
+    "en_aliases": [
+      "P-Hacking"
+    ],
+    "abbreviations": [],
+    "jp_headword": "データスヌーピング",
+    "jp_reading": "でーたすぬーぴんぐ",
+    "jp_definition": "統計的に有意な結果を生み出すようにデータを意識的または無意識的に操作すること。複数のシミュレーションを実行し、最良の結果を素朴に受け入れるなど。",
+    "key_points": [
+      "研究の信頼性低下",
+      "再現性の問題"
+    ],
+    "pitfall": "事前に仮説を設定することが重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0283",
+    "topic_code": "EQ",
+    "en_canonical": "Day Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "当日限り注文",
+    "jp_reading": "とうじつかぎりちゅうもん",
+    "jp_definition": "提出された日に有効で、取引終了までに約定しなければ失効する注文。",
+    "key_points": [
+      "デフォルトの注文期限",
+      "自動失効"
+    ],
+    "pitfall": "GTC注文との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0284",
+    "topic_code": "EQ",
+    "en_canonical": "Declaration Date",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "配当宣言日",
+    "jp_reading": "はいとうせんげんび",
+    "jp_definition": "企業が特定の配当を宣言する声明を発表する日。",
+    "key_points": [
+      "配当スケジュールの起点",
+      "株価への影響"
+    ],
+    "pitfall": "権利落ち日との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0285",
+    "topic_code": "EQ",
+    "en_canonical": "Degree of Financial Leverage",
+    "en_aliases": [],
+    "abbreviations": [
+      "DFL"
+    ],
+    "jp_headword": "財務レバレッジ度",
+    "jp_reading": "ざいむればれっじど",
+    "jp_definition": "一定期間における営業利益の変化率に対する純利益の変化率の比率。企業の資本構成における負債の使用によって駆動される、営業利益の変化に対する純利益の感応度を測定する。",
+    "key_points": [
+      "金利負担の影響",
+      "リスク指標"
+    ],
+    "pitfall": "営業レバレッジ度との違いを理解する。",
+    "formula": "DFL = % Change in Net Income / % Change in Operating Income"
+  },
+  {
+    "term_id": "TERM0286",
+    "topic_code": "EQ",
+    "en_canonical": "Degree of Operating Leverage",
+    "en_aliases": [],
+    "abbreviations": [
+      "DOL"
+    ],
+    "jp_headword": "営業レバレッジ度",
+    "jp_reading": "えいぎょうればれっじど",
+    "jp_definition": "一定期間における売上高の変化率に対する営業利益の変化率の比率。営業費用の固定費と変動費の構成によって駆動される、売上高の変化に対する営業利益の感応度を測定する。",
+    "key_points": [
+      "固定費の影響",
+      "損益分岐点分析"
+    ],
+    "pitfall": "財務レバレッジ度との違いを理解する。",
+    "formula": "DOL = % Change in Operating Income / % Change in Sales"
+  },
+  {
+    "term_id": "TERM0287",
+    "topic_code": "EQ",
+    "en_canonical": "Depository Bank",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "預託銀行",
+    "jp_reading": "よたくぎんこう",
+    "jp_definition": "預金者や他の投資家から資金を集め、借り手に貸し出す銀行。",
+    "key_points": [
+      "ADR発行の仲介",
+      "カストディサービス"
+    ],
+    "pitfall": "投資銀行との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0288",
+    "topic_code": "EQ",
+    "en_canonical": "Depository Institutions",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "預金取扱機関",
+    "jp_reading": "よきんとりあつかいきかん",
+    "jp_definition": "商業銀行、貯蓄貸付組合、信用組合など、預金者や他の投資家から資金を集め、借り手に貸し出す類似の機関。",
+    "key_points": [
+      "金融仲介機能",
+      "預金保険"
+    ],
+    "pitfall": "ノンバンクとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0289",
+    "topic_code": "EQ",
+    "en_canonical": "Depository Receipt",
+    "en_aliases": [],
+    "abbreviations": [
+      "DR"
+    ],
+    "jp_headword": "預託証券",
+    "jp_reading": "よたくしょうけん",
+    "jp_definition": "現地取引所で普通株のように取引され、外国企業の経済的利益を表す証券。",
+    "key_points": [
+      "外国株投資の手段",
+      "ADR、GDRなど"
+    ],
+    "pitfall": "為替リスクと原株リスクの両方がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0290",
+    "topic_code": "EQ",
+    "en_canonical": "Derivative Pricing Rule",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "派生価格決定ルール",
+    "jp_reading": "はせいかかくけっているーる",
+    "jp_definition": "クロッシングネットワークで使用される価格決定ルールで、資産の一次市場で現在の価格から派生（導出）した価格を取る。",
+    "key_points": [
+      "他市場の価格を参照",
+      "価格発見機能なし"
+    ],
+    "pitfall": "一次市場の流動性に依存する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0291",
+    "topic_code": "EQ",
+    "en_canonical": "Discounted Cash Flow Models",
+    "en_aliases": [
+      "DCF Models"
+    ],
+    "abbreviations": [
+      "DCF"
+    ],
+    "jp_headword": "割引キャッシュフローモデル",
+    "jp_reading": "わりびききゃっしゅふろーもでる",
+    "jp_definition": "証券から受け取ることが期待される将来の利益の現在価値として証券の本質的価値を推定する評価モデル。現在価値モデルとも呼ばれる。",
+    "key_points": [
+      "将来CFの現在価値",
+      "割引率の選択が重要"
+    ],
+    "pitfall": "予測の不確実性が大きい。",
+    "formula": "Value = Σ[CFt / (1+r)^t]"
+  },
+  {
+    "term_id": "TERM0292",
+    "topic_code": "EQ",
+    "en_canonical": "Discriminatory Pricing Rule",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "差別価格決定ルール",
+    "jp_reading": "さべつかかくけっているーる",
+    "jp_definition": "継続取引市場で使用される価格決定ルールで、最初に到着した注文または気配の指値価格が取引価格を決定する。",
+    "key_points": [
+      "価格優先の原則",
+      "先着順"
+    ],
+    "pitfall": "統一価格ルールとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0293",
+    "topic_code": "EQ",
+    "en_canonical": "Display Size",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "表示数量",
+    "jp_reading": "ひょうじすうりょう",
+    "jp_definition": "公開されている注文のサイズ。",
+    "key_points": [
+      "板情報の一部",
+      "アイスバーグ注文"
+    ],
+    "pitfall": "全注文数量とは異なる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0294",
+    "topic_code": "EQ",
+    "en_canonical": "Dividends",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "配当",
+    "jp_reading": "はいとう",
+    "jp_definition": "企業から株主への利益および/または純資産の分配。現金で支払われることが多いが、株式や資産で支払われることもある。",
+    "key_points": [
+      "株主還元",
+      "配当政策"
+    ],
+    "pitfall": "配当は保証されていない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0295",
+    "topic_code": "EQ",
+    "en_canonical": "Divisor",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "除数",
+    "jp_reading": "じょすう",
+    "jp_definition": "価格リターンインデックスの値を決定するために使用される数値（分母）。インデックス開始時に最初に選択され、その後構成証券の価格の変化とは無関係なインデックス値の変化を避けるために、インデックス提供者によって必要に応じて調整される。",
+    "key_points": [
+      "インデックス計算",
+      "調整の必要性"
+    ],
+    "pitfall": "株式分割や銘柄入替時に調整が必要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0296",
+    "topic_code": "EQ",
+    "en_canonical": "Drivers",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ドライバー",
+    "jp_reading": "どらいばー",
+    "jp_definition": "出力変数のレベルと変化を説明する因果要因。",
+    "key_points": [
+      "業績予測の基礎",
+      "KPI"
+    ],
+    "pitfall": "相関と因果の区別が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0297",
+    "topic_code": "EQ",
+    "en_canonical": "Earnings Surprise",
+    "en_aliases": [
+      "Unexpected Earnings"
+    ],
+    "abbreviations": [],
+    "jp_headword": "アーニングサプライズ",
+    "jp_reading": "あーにんぐさぷらいず",
+    "jp_definition": "報告されたEPSと予想EPSの差。予想外の利益とも呼ばれる。",
+    "key_points": [
+      "株価への影響",
+      "アナリスト予想との比較"
+    ],
+    "pitfall": "市場の反応は予想との差に依存する。",
+    "formula": "Earnings Surprise = Actual EPS - Expected EPS"
+  },
+  {
+    "term_id": "TERM0298",
+    "topic_code": "EQ",
+    "en_canonical": "Economies of Scale",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "規模の経済",
+    "jp_reading": "きぼのけいざい",
+    "jp_definition": "生産量が増加するにつれて単位当たりコストが低下すること。一般的に、固定費がより多くの生産単位に分散されるコスト構造から生じる。",
+    "key_points": [
+      "コスト優位性",
+      "参入障壁"
+    ],
+    "pitfall": "規模の不経済も存在する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0299",
+    "topic_code": "EQ",
+    "en_canonical": "Economies of Scope",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "範囲の経済",
+    "jp_reading": "はんいのけいざい",
+    "jp_definition": "製品または事業ラインの数が増加するにつれて単位当たりコストが低下すること。一般的に、製品ライン間で共有コストを持つことから生じる。",
+    "key_points": [
+      "シナジー効果",
+      "多角化のメリット"
+    ],
+    "pitfall": "複雑性コストも考慮する必要がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0300",
+    "topic_code": "EQ",
+    "en_canonical": "Efficient Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "効率的市場",
+    "jp_reading": "こうりつてきしじょう",
+    "jp_definition": "資産価格が新しい情報を迅速かつ合理的に反映する市場。情報効率的市場も参照。",
+    "key_points": [
+      "EMH",
+      "3つの形態"
+    ],
+    "pitfall": "完全に効率的な市場は存在しない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0301",
+    "topic_code": "EQ",
+    "en_canonical": "Electronic Communications Networks",
+    "en_aliases": [
+      "ECNs"
+    ],
+    "abbreviations": [
+      "ECN"
+    ],
+    "jp_headword": "電子通信ネットワーク",
+    "jp_reading": "でんしつうしんねっとわーく",
+    "jp_definition": "代替取引システムおよび多国間取引施設を参照。",
+    "key_points": [
+      "電子取引",
+      "取引所外取引"
+    ],
+    "pitfall": "規制環境が取引所と異なる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0302",
+    "topic_code": "EQ",
+    "en_canonical": "Equal Weighting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "等ウェイト",
+    "jp_reading": "とううぇいと",
+    "jp_definition": "開始時に各構成証券に等しいウェイトを割り当てるインデックスウェイト方式。",
+    "key_points": [
+      "リバランスが必要",
+      "小型株の影響大"
+    ],
+    "pitfall": "時価総額加重との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0303",
+    "topic_code": "EQ",
+    "en_canonical": "Equity Swap",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "エクイティスワップ",
+    "jp_reading": "えくいてぃすわっぷ",
+    "jp_definition": "少なくとも1つのキャッシュフローが株式ポートフォリオポジション（多くの場合株式インデックス）のリターンに連動するスワップ取引。",
+    "key_points": [
+      "株式エクスポージャーの取得",
+      "現物保有なし"
+    ],
+    "pitfall": "カウンターパーティリスクがある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0304",
+    "topic_code": "EQ",
+    "en_canonical": "European-Style Option",
+    "en_aliases": [
+      "European Option"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ヨーロピアンオプション",
+    "jp_reading": "よーろぴあんおぷしょん",
+    "jp_definition": "オプションの満期日にのみ行使可能なオプション契約。",
+    "key_points": [
+      "満期日のみ行使可能",
+      "アメリカンより安価"
+    ],
+    "pitfall": "早期行使ができない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0305",
+    "topic_code": "EQ",
+    "en_canonical": "Ex-Dividend Date",
+    "en_aliases": [
+      "Ex-Date"
+    ],
+    "abbreviations": [],
+    "jp_headword": "配当落ち日",
+    "jp_reading": "はいとうおちび",
+    "jp_definition": "株式が配当を受け取る権利なし（すなわち「配当落ち」）で取引される最初の日。",
+    "key_points": [
+      "配当権利の基準日",
+      "株価調整"
+    ],
+    "pitfall": "権利確定日との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0306",
+    "topic_code": "EQ",
+    "en_canonical": "Exchange",
+    "en_aliases": [
+      "Stock Exchange"
+    ],
+    "abbreviations": [],
+    "jp_headword": "取引所",
+    "jp_reading": "とりひきじょ",
+    "jp_definition": "金融商品が取引されるルールベースのオープンアクセス市場で、発行体、投資家、およびその仲介者が価格と出来高の透明性にアクセスできる。",
+    "key_points": [
+      "規制された市場",
+      "価格発見機能"
+    ],
+    "pitfall": "OTC市場との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0307",
+    "topic_code": "EQ",
+    "en_canonical": "Execution Instructions",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "執行指図",
+    "jp_reading": "しっこうさしず",
+    "jp_definition": "注文をどのように約定させるかを示す指図。",
+    "key_points": [
+      "成行、指値など",
+      "取引戦略"
+    ],
+    "pitfall": "市場状況に応じた適切な選択が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0308",
+    "topic_code": "EQ",
+    "en_canonical": "Exercise",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "行使",
+    "jp_reading": "こうし",
+    "jp_definition": "オプション保有者が原資産を取引する決定。",
+    "key_points": [
+      "権利の実行",
+      "本源的価値の実現"
+    ],
+    "pitfall": "行使のタイミングが重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0309",
+    "topic_code": "EQ",
+    "en_canonical": "Exercise Price",
+    "en_aliases": [
+      "Strike Price"
+    ],
+    "abbreviations": [],
+    "jp_headword": "行使価格",
+    "jp_reading": "こうしかかく",
+    "jp_definition": "オプション契約で指定された事前合意の執行価格。ストライク価格とも呼ばれる。",
+    "key_points": [
+      "オプションの条件",
+      "本源的価値の計算"
+    ],
+    "pitfall": "現在の市場価格との比較が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0310",
+    "topic_code": "EQ",
+    "en_canonical": "Extra Dividend",
+    "en_aliases": [
+      "Special Dividend"
+    ],
+    "abbreviations": [],
+    "jp_headword": "特別配当",
+    "jp_reading": "とくべつはいとう",
+    "jp_definition": "定期的なスケジュールで配当を支払わない企業が支払う配当、または通常の現金配当を補完する追加支払いとしての配当。",
+    "key_points": [
+      "一時的な配当",
+      "特別な利益の還元"
+    ],
+    "pitfall": "継続性がない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0311",
+    "topic_code": "EQ",
+    "en_canonical": "Fill or Kill Order",
+    "en_aliases": [],
+    "abbreviations": [
+      "FOK"
+    ],
+    "jp_headword": "フィルオアキル注文",
+    "jp_reading": "ふぃるおあきるちゅうもん",
+    "jp_definition": "ブローカーまたは取引所が受領時にのみ有効な注文。全部または一部が約定できない場合、即座にキャンセルされる。即時または取消注文とも呼ばれる。",
+    "key_points": [
+      "即時約定または取消",
+      "大口取引向け"
+    ],
+    "pitfall": "約定しない可能性が高い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0313",
+    "topic_code": "EQ",
+    "en_canonical": "Float-Adjusted Market-Capitalization Weighting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "浮動株調整時価総額加重",
+    "jp_reading": "ふどうかぶちょうせいじかそうがくかじゅう",
+    "jp_definition": "各構成証券に割り当てられるウェイトが、その時価総額を浮動株で調整することで決定されるインデックスウェイト方式。",
+    "key_points": [
+      "投資可能性を反映",
+      "主要インデックスで採用"
+    ],
+    "pitfall": "浮動株の定義が異なる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0314",
+    "topic_code": "EQ",
+    "en_canonical": "Forecast Object",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "予測対象",
+    "jp_reading": "よそくたいしょう",
+    "jp_definition": "アナリストが発行体の財務諸表について予測を行う変数。財務諸表のドライバー、財務諸表の項目、EBITDAなどの要約指標を含む。",
+    "key_points": [
+      "財務予測の対象",
+      "KPI"
+    ],
+    "pitfall": "適切な予測対象の選択が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0315",
+    "topic_code": "EQ",
+    "en_canonical": "Foreign Exchange Gains or Losses",
+    "en_aliases": [
+      "FX Gains/Losses"
+    ],
+    "abbreviations": [],
+    "jp_headword": "為替差損益",
+    "jp_reading": "かわせさそんえき",
+    "jp_definition": "投資家の通貨と外国証券が建てられている通貨との間の為替レートの変化により発生する利益（または損失）。",
+    "key_points": [
+      "為替リスク",
+      "国際投資"
+    ],
+    "pitfall": "為替ヘッジの検討が必要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0317",
+    "topic_code": "EQ",
+    "en_canonical": "Free Float",
+    "en_aliases": [
+      "Public Float"
+    ],
+    "abbreviations": [],
+    "jp_headword": "浮動株",
+    "jp_reading": "ふどうかぶ",
+    "jp_definition": "インサイダー、戦略的投資家、スポンサー、創業者などが保有していない、より自由に取引可能な上場企業の株式証券の部分。",
+    "key_points": [
+      "流動性の指標",
+      "インデックス計算"
+    ],
+    "pitfall": "浮動株比率が低いと流動性リスクが高い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0318",
+    "topic_code": "EQ",
+    "en_canonical": "Fundamental Analysis",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ファンダメンタル分析",
+    "jp_reading": "ふぁんだめんたるぶんせき",
+    "jp_definition": "公開情報の調査と予測の策定により資産の本質的価値を推定すること。",
+    "key_points": [
+      "財務諸表分析",
+      "本質的価値の推定"
+    ],
+    "pitfall": "テクニカル分析との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0319",
+    "topic_code": "EQ",
+    "en_canonical": "Fundamental Value",
+    "en_aliases": [
+      "Intrinsic Value"
+    ],
+    "abbreviations": [],
+    "jp_headword": "ファンダメンタルバリュー",
+    "jp_reading": "ふぁんだめんたるばりゅー",
+    "jp_definition": "ファンダメンタル分析を用いて割安で愛されていない企業を特定し、将来の収益とキャッシュフロー成長による企業再生の可能性がより高いバリュエーションをもたらす戦略。",
+    "key_points": [
+      "バリュー投資",
+      "長期投資"
+    ],
+    "pitfall": "バリュートラップに注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0320",
+    "topic_code": "EQ",
+    "en_canonical": "Fundamental Weighting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ファンダメンタル加重",
+    "jp_reading": "ふぁんだめんたるかじゅう",
+    "jp_definition": "各構成証券に割り当てられるウェイトが、その基礎となる企業の規模に基づくインデックスウェイト方式。時価総額加重の欠点に対処するため、構成証券の価格とは独立した指標を使用しようとする。",
+    "key_points": [
+      "スマートベータ",
+      "時価総額以外の指標"
+    ],
+    "pitfall": "リバランスコストが高い場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0322",
+    "topic_code": "EQ",
+    "en_canonical": "Global Depository Receipt",
+    "en_aliases": [],
+    "abbreviations": [
+      "GDR"
+    ],
+    "jp_headword": "グローバル預託証券",
+    "jp_reading": "ぐろーばるよたくしょうけん",
+    "jp_definition": "企業の本国および米国以外で発行される預託証券。",
+    "key_points": [
+      "国際的な資金調達",
+      "複数市場で取引"
+    ],
+    "pitfall": "ADRとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0323",
+    "topic_code": "EQ",
+    "en_canonical": "Global Registered Share",
+    "en_aliases": [],
+    "abbreviations": [
+      "GRS"
+    ],
+    "jp_headword": "グローバル登録株式",
+    "jp_reading": "ぐろーばるとうろくかぶしき",
+    "jp_definition": "異なる通貨で世界中の異なる証券取引所で取引される普通株。",
+    "key_points": [
+      "単一の株式クラス",
+      "グローバル取引"
+    ],
+    "pitfall": "預託証券とは異なる仕組み。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0324",
+    "topic_code": "EQ",
+    "en_canonical": "Good-on-Close Order",
+    "en_aliases": [
+      "Market-on-Close Order"
+    ],
+    "abbreviations": [
+      "MOC"
+    ],
+    "jp_headword": "引け成行注文",
+    "jp_reading": "ひけなりゆきちゅうもん",
+    "jp_definition": "注文が取引終了時にのみ約定可能であることを指定する執行指図。マーケットオンクローズとも呼ばれる。",
+    "key_points": [
+      "終値での約定",
+      "インデックスファンド"
+    ],
+    "pitfall": "約定価格が不確定。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0325",
+    "topic_code": "EQ",
+    "en_canonical": "Good-on-Open Order",
+    "en_aliases": [
+      "Market-on-Open Order"
+    ],
+    "abbreviations": [
+      "MOO"
+    ],
+    "jp_headword": "寄り成行注文",
+    "jp_reading": "よりなりゆきちゅうもん",
+    "jp_definition": "注文が取引開始時にのみ約定可能であることを指定する執行指図。",
+    "key_points": [
+      "始値での約定",
+      "ギャップリスク"
+    ],
+    "pitfall": "約定価格が不確定。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0326",
+    "topic_code": "EQ",
+    "en_canonical": "Good-Till-Cancelled Order",
+    "en_aliases": [],
+    "abbreviations": [
+      "GTC"
+    ],
+    "jp_headword": "取消まで有効注文",
+    "jp_reading": "とりけしまでゆうこうちゅうもん",
+    "jp_definition": "注文を出した主体がキャンセルするまで、または一般的に60日などの指定された期間が経過するまで（いずれか早い方）有効な注文。",
+    "key_points": [
+      "長期有効",
+      "自動更新なし"
+    ],
+    "pitfall": "市場状況の変化に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0327",
+    "topic_code": "EQ",
+    "en_canonical": "Hedge Funds",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ヘッジファンド",
+    "jp_reading": "へっじふぁんど",
+    "jp_definition": "公開株式、公開取引の債券、プライベートキャピタル、および/または実物資産に投資する可能性のあるプライベート投資ビークルだが、投資自体ではなく投資アプローチによって区別される。",
+    "key_points": [
+      "絶対リターン追求",
+      "多様な戦略"
+    ],
+    "pitfall": "流動性リスクと手数料に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0328",
+    "topic_code": "EQ",
+    "en_canonical": "Herfindahl-Hirschman Index",
+    "en_aliases": [],
+    "abbreviations": [
+      "HHI"
+    ],
+    "jp_headword": "ハーフィンダール・ハーシュマン指数",
+    "jp_reading": "はーふぃんだーるはーしゅまんしすう",
+    "jp_definition": "競合企業の市場シェアの二乗の合計として計算される市場集中度の指標。一部の国の独占禁止規制当局は、HHIが1,500〜2,500の市場を適度に集中、HHIが2,500を超える市場を高度に集中とみなす。",
+    "key_points": [
+      "市場集中度",
+      "競争分析"
+    ],
+    "pitfall": "市場の定義により結果が変わる。",
+    "formula": "HHI = Σ(Market Share)²"
+  },
+  {
+    "term_id": "TERM0329",
+    "topic_code": "EQ",
+    "en_canonical": "Hidden Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "非表示注文",
+    "jp_reading": "ひひょうじちゅうもん",
+    "jp_definition": "一般には公開されず、ブローカーまたは取引所のみに公開される注文。",
+    "key_points": [
+      "市場インパクト軽減",
+      "大口取引向け"
+    ],
+    "pitfall": "約定優先順位が低い場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0330",
+    "topic_code": "EQ",
+    "en_canonical": "Holder-of-Record Date",
+    "en_aliases": [
+      "Record Date"
+    ],
+    "abbreviations": [],
+    "jp_headword": "株主名簿基準日",
+    "jp_reading": "かぶぬしめいぼきじゅんび",
+    "jp_definition": "企業の帳簿に記載された株主が、今後の配当を受け取るために株式の所有権を持っているとみなされる日。",
+    "key_points": [
+      "配当権利の確定",
+      "配当落ち日との関係"
+    ],
+    "pitfall": "権利落ち日より後の日付。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0331",
+    "topic_code": "EQ",
+    "en_canonical": "Iceberg Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "アイスバーグ注文",
+    "jp_reading": "あいすばーぐちゅうもん",
+    "jp_definition": "表示サイズが注文の全サイズより小さい注文。",
+    "key_points": [
+      "部分表示",
+      "市場インパクト軽減"
+    ],
+    "pitfall": "全量が見えないため、流動性の判断が困難。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0332",
+    "topic_code": "EQ",
+    "en_canonical": "Immediate or Cancel Order",
+    "en_aliases": [
+      "Fill or Kill"
+    ],
+    "abbreviations": [
+      "IOC"
+    ],
+    "jp_headword": "即時または取消注文",
+    "jp_reading": "そくじまたはとりけしちゅうもん",
+    "jp_definition": "ブローカーまたは取引所が受領時にのみ有効な注文。全部または一部が約定できない場合、即座にキャンセルされる。フィルオアキルとも呼ばれる。",
+    "key_points": [
+      "即時約定",
+      "部分約定可能"
+    ],
+    "pitfall": "AON注文との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0333",
+    "topic_code": "EQ",
+    "en_canonical": "Information Cascade",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "情報カスケード",
+    "jp_reading": "じょうほうかすけーど",
+    "jp_definition": "最初に行動し、その決定が他者の決定に影響を与える参加者からの情報の伝達。",
+    "key_points": [
+      "群集行動",
+      "市場の非効率性"
+    ],
+    "pitfall": "バブルやクラッシュの原因になりうる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0334",
+    "topic_code": "EQ",
+    "en_canonical": "Information-Motivated Traders",
+    "en_aliases": [
+      "Informed Traders"
+    ],
+    "abbreviations": [],
+    "jp_headword": "情報動機トレーダー",
+    "jp_reading": "じょうほうどうきとれーだー",
+    "jp_definition": "将来の価格を予測できると信じる情報から利益を得るために取引するトレーダー。",
+    "key_points": [
+      "情報優位性",
+      "市場効率性への貢献"
+    ],
+    "pitfall": "流動性トレーダーとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0335",
+    "topic_code": "EQ",
+    "en_canonical": "Informationally Efficient Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "情報効率的市場",
+    "jp_reading": "じょうほうこうりつてきしじょう",
+    "jp_definition": "資産価格が新しい情報を迅速かつ合理的に反映する市場。",
+    "key_points": [
+      "EMH",
+      "価格発見"
+    ],
+    "pitfall": "効率性の程度は市場により異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0336",
+    "topic_code": "EQ",
+    "en_canonical": "Initial Margin",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "当初証拠金",
+    "jp_reading": "とうしょしょうこきん",
+    "jp_definition": "レポにおける担保価格と交換される現金の価値の比率。1.0または100%を超える値は過剰担保を示す。",
+    "key_points": [
+      "リスク管理",
+      "レバレッジの制限"
+    ],
+    "pitfall": "維持証拠金との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0337",
+    "topic_code": "EQ",
+    "en_canonical": "Initial Margin Requirement",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "当初証拠金要件",
+    "jp_reading": "とうしょしょうこきんようけん",
+    "jp_definition": "取引の初日および追加証拠金を預け入れる必要がある日の証拠金要件。",
+    "key_points": [
+      "取引開始時の要件",
+      "規制による設定"
+    ],
+    "pitfall": "商品や市場により異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0338",
+    "topic_code": "EQ",
+    "en_canonical": "Initial Public Offering",
+    "en_aliases": [],
+    "abbreviations": [
+      "IPO"
+    ],
+    "jp_headword": "新規株式公開",
+    "jp_reading": "しんきかぶしきこうかい",
+    "jp_definition": "以前は非公開だった企業による普通株の最初の発行。",
+    "key_points": [
+      "資金調達",
+      "株式の流動性向上"
+    ],
+    "pitfall": "IPO後のパフォーマンスは不確実。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0340",
+    "topic_code": "EQ",
+    "en_canonical": "Investment Banks",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "投資銀行",
+    "jp_reading": "とうしぎんこう",
+    "jp_definition": "主に法人顧客にアドバイスを提供し、新規発行や既発行の証券募集などの取引を手配する金融仲介機関。",
+    "key_points": [
+      "引受業務",
+      "M&Aアドバイザリー"
+    ],
+    "pitfall": "商業銀行との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0341",
+    "topic_code": "EQ",
+    "en_canonical": "January Effect",
+    "en_aliases": [
+      "Turn-of-the-Year Effect"
+    ],
+    "abbreviations": [],
+    "jp_headword": "1月効果",
+    "jp_reading": "いちがつこうか",
+    "jp_definition": "1月の株式市場リターンが年間の他の月と比較して有意に高いというカレンダーアノマリー。異常リターンのほとんどは1月の最初の5営業日に報告される。年末効果とも呼ばれる。",
+    "key_points": [
+      "市場アノマリー",
+      "小型株で顕著"
+    ],
+    "pitfall": "近年は効果が弱まっている可能性。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0342",
+    "topic_code": "EQ",
+    "en_canonical": "Law of One Price",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "一物一価の法則",
+    "jp_reading": "いちぶついっかのほうそく",
+    "jp_definition": "2つの投資が同じまたは同等の将来キャッシュフローを持つ場合、将来何が起こるかに関係なく、これら2つの投資は同じ現在価格を持つべきであるという原則。",
+    "key_points": [
+      "裁定取引の基礎",
+      "市場効率性"
+    ],
+    "pitfall": "取引コストや制約により乖離が生じる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0343",
+    "topic_code": "EQ",
+    "en_canonical": "Lead Underwriter",
+    "en_aliases": [
+      "Book Runner"
+    ],
+    "abbreviations": [],
+    "jp_headword": "主幹事",
+    "jp_reading": "しゅかんじ",
+    "jp_definition": "証券引受に関与する投資銀行とブローカー・ディーラーのシンジケートにおける主幹事投資銀行。",
+    "key_points": [
+      "引受の責任者",
+      "価格設定"
+    ],
+    "pitfall": "共同主幹事との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0345",
+    "topic_code": "EQ",
+    "en_canonical": "Limit Order Book",
+    "en_aliases": [
+      "Order Book"
+    ],
+    "abbreviations": [],
+    "jp_headword": "指値注文帳",
+    "jp_reading": "さしねちゅうもんちょう",
+    "jp_definition": "証券に関連する売買の指値注文の帳簿またはリスト。",
+    "key_points": [
+      "板情報",
+      "流動性の可視化"
+    ],
+    "pitfall": "表示されていない注文も存在する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0346",
+    "topic_code": "EQ",
+    "en_canonical": "Liquid Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "流動性の高い市場",
+    "jp_reading": "りゅうどうせいのたかいしじょう",
+    "jp_definition": "トレーダーが希望する取引を低い総取引コストで売買できる市場。",
+    "key_points": [
+      "取引コストが低い",
+      "スプレッドが狭い"
+    ],
+    "pitfall": "流動性は市場状況により変化する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0347",
+    "topic_code": "EQ",
+    "en_canonical": "Liquidity",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "流動性",
+    "jp_reading": "りゅうどうせい",
+    "jp_definition": "企業がキャッシュフローと容易に現金化できる資産を使用して短期債務を履行できる程度。",
+    "key_points": [
+      "支払能力",
+      "運転資本管理"
+    ],
+    "pitfall": "ソルベンシーとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0348",
+    "topic_code": "EQ",
+    "en_canonical": "Long Position",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ロングポジション",
+    "jp_reading": "ろんぐぽじしょん",
+    "jp_definition": "資産または契約において、資産を所有するか、契約に基づく行使可能な権利を持つポジション。",
+    "key_points": [
+      "買い持ち",
+      "価格上昇で利益"
+    ],
+    "pitfall": "ショートポジションとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0349",
+    "topic_code": "EQ",
+    "en_canonical": "Low-Cost Producer",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "低コスト生産者",
+    "jp_reading": "ていこすとせいさんしゃ",
+    "jp_definition": "業界の競合他社より生産コストが低い企業。",
+    "key_points": [
+      "コスト優位性",
+      "価格競争力"
+    ],
+    "pitfall": "品質との トレードオフに注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0350",
+    "topic_code": "EQ",
+    "en_canonical": "Maintenance Margin",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "維持証拠金",
+    "jp_reading": "いじしょうこきん",
+    "jp_definition": "各契約の買い手と売り手が、取引開始から満期時の最終決済まで先物証拠金口座に保持しなければならない当初証拠金を下回る最低残高。",
+    "key_points": [
+      "最低残高要件",
+      "追証の基準"
+    ],
+    "pitfall": "当初証拠金との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0351",
+    "topic_code": "EQ",
+    "en_canonical": "Maintenance Margin Requirement",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "維持証拠金要件",
+    "jp_reading": "いじしょうこきんようけん",
+    "jp_definition": "取引の初日以外の日の証拠金要件。",
+    "key_points": [
+      "継続的な要件",
+      "追証発生の基準"
+    ],
+    "pitfall": "市場のボラティリティにより変更される場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0352",
+    "topic_code": "EQ",
+    "en_canonical": "Management Buyout",
+    "en_aliases": [],
+    "abbreviations": [
+      "MBO"
+    ],
+    "jp_headword": "マネジメントバイアウト",
+    "jp_reading": "まねじめんとばいあうと",
+    "jp_definition": "企業の既存経営陣を含む戦略的買い手への非公開売却。経営陣は他の投資家とともに自己資本を投入し、企業のキャッシュフローと価値を成長させるインセンティブとして参加する。",
+    "key_points": [
+      "経営陣の参加",
+      "インセンティブ整合"
+    ],
+    "pitfall": "利益相反の可能性に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0353",
+    "topic_code": "EQ",
+    "en_canonical": "Management Guidance",
+    "en_aliases": [
+      "Earnings Guidance"
+    ],
+    "abbreviations": [],
+    "jp_headword": "経営陣ガイダンス",
+    "jp_reading": "けいえいじんがいだんす",
+    "jp_definition": "上場企業の経営陣が、次の四半期、年、またはそれ以上の期間の収益、売上高、その他の指標（例：設備投資）の目標を公表すること。ガイダンスは詳細または大まかな方向性であり、年間を通じて更新されることが多い。",
+    "key_points": [
+      "業績予想",
+      "投資家向け情報"
+    ],
+    "pitfall": "ガイダンスは保証ではない。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0354",
+    "topic_code": "EQ",
+    "en_canonical": "Margin Call",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "追証",
+    "jp_reading": "おいしょう",
+    "jp_definition": "デリバティブ契約のカウンターパーティに対して、先物証拠金口座残高を当初証拠金に戻すために即座に資金を預け入れるよう求める要求。",
+    "key_points": [
+      "追加担保の要求",
+      "強制決済リスク"
+    ],
+    "pitfall": "迅速な対応が必要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0355",
+    "topic_code": "EQ",
+    "en_canonical": "Margin Loan",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "信用取引ローン",
+    "jp_reading": "しんようとりひきろーん",
+    "jp_definition": "証券購入のためにブローカーから借りた資金。",
+    "key_points": [
+      "レバレッジ取引",
+      "金利負担"
+    ],
+    "pitfall": "追証リスクがある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0356",
+    "topic_code": "EQ",
+    "en_canonical": "Market Anomaly",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場アノマリー",
+    "jp_reading": "しじょうあのまりー",
+    "jp_definition": "市場で知られている関連情報や新しい情報の公開に直接関連付けることができない証券の価格またはリターンの変化。",
+    "key_points": [
+      "市場の非効率性",
+      "投資機会"
+    ],
+    "pitfall": "アノマリーは消滅する可能性がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0357",
+    "topic_code": "EQ",
+    "en_canonical": "Market Float",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場浮動株",
+    "jp_reading": "しじょうふどうかぶ",
+    "jp_definition": "投資家が利用可能な株式数。",
+    "key_points": [
+      "流動性の指標",
+      "インデックス計算"
+    ],
+    "pitfall": "発行済株式数との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0358",
+    "topic_code": "EQ",
+    "en_canonical": "Market Multiple Models",
+    "en_aliases": [
+      "Relative Valuation"
+    ],
+    "abbreviations": [],
+    "jp_headword": "マーケットマルチプルモデル",
+    "jp_reading": "まーけっとまるちぷるもでる",
+    "jp_definition": "株価倍率または企業価値倍率に基づく評価モデル。",
+    "key_points": [
+      "相対評価",
+      "比較可能企業"
+    ],
+    "pitfall": "適切な比較対象の選択が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0359",
+    "topic_code": "EQ",
+    "en_canonical": "Market-on-Close Order",
+    "en_aliases": [],
+    "abbreviations": [
+      "MOC"
+    ],
+    "jp_headword": "引け成行注文",
+    "jp_reading": "ひけなりゆきちゅうもん",
+    "jp_definition": "取引終了時にのみ約定可能な成行注文。",
+    "key_points": [
+      "終値での約定",
+      "インデックスファンド"
+    ],
+    "pitfall": "約定価格が不確定。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0360",
+    "topic_code": "EQ",
+    "en_canonical": "Market Share",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場シェア",
+    "jp_reading": "しじょうしぇあ",
+    "jp_definition": "企業の製品の売上高を市場規模に対する割合として表したもの。",
+    "key_points": [
+      "競争力の指標",
+      "業界分析"
+    ],
+    "pitfall": "市場の定義により結果が変わる。",
+    "formula": "Market Share = Company Sales / Total Market Sales"
+  },
+  {
+    "term_id": "TERM0361",
+    "topic_code": "EQ",
+    "en_canonical": "Market Size",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場規模",
+    "jp_reading": "しじょうきぼ",
+    "jp_definition": "財またはサービスの総売上高。グローバルまたはより地域的なベースで計算できる。",
+    "key_points": [
+      "TAM、SAM、SOM",
+      "成長機会"
+    ],
+    "pitfall": "市場の定義により大きく異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0362",
+    "topic_code": "EQ",
+    "en_canonical": "Market Value",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "市場価値",
+    "jp_reading": "しじょうかち",
+    "jp_definition": "資産または証券が公開市場で現在売買できる価格。",
+    "key_points": [
+      "時価",
+      "公正価値"
+    ],
+    "pitfall": "簿価との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0363",
+    "topic_code": "EQ",
+    "en_canonical": "Marketable Limit Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "成行可能指値注文",
+    "jp_reading": "なりゆきかのうさしねちゅうもん",
+    "jp_definition": "指値価格が最良売り気配より高い買い指値注文、または指値価格が最良買い気配より低い売り指値注文。このような注文は通常、部分的または完全に即座に約定する。",
+    "key_points": [
+      "即時約定可能",
+      "価格保護"
+    ],
+    "pitfall": "部分約定の可能性がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0364",
+    "topic_code": "EQ",
+    "en_canonical": "Money Market",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "短期金融市場",
+    "jp_reading": "たんききんゆうしじょう",
+    "jp_definition": "短期債務証券（満期1年以下）の市場。",
+    "key_points": [
+      "流動性管理",
+      "低リスク"
+    ],
+    "pitfall": "資本市場との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0365",
+    "topic_code": "EQ",
+    "en_canonical": "Multi-Market Indexes",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "マルチマーケットインデックス",
+    "jp_reading": "まるちまーけっといんでっくす",
+    "jp_definition": "複数の国のインデックスで構成され、複数の証券市場を代表するように設計されたインデックス。",
+    "key_points": [
+      "国際分散投資",
+      "グローバルベンチマーク"
+    ],
+    "pitfall": "為替の影響を考慮する必要がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0366",
+    "topic_code": "EQ",
+    "en_canonical": "Multilateral Trading Facilities",
+    "en_aliases": [],
+    "abbreviations": [
+      "MTF"
+    ],
+    "jp_headword": "多国間取引施設",
+    "jp_reading": "たこくかんとりひきしせつ",
+    "jp_definition": "代替取引システムを参照。",
+    "key_points": [
+      "欧州の規制用語",
+      "ATS相当"
+    ],
+    "pitfall": "地域により規制が異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0367",
+    "topic_code": "EQ",
+    "en_canonical": "Multiplier Models",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "マルチプルモデル",
+    "jp_reading": "まるちぷるもでる",
+    "jp_definition": "株価倍率または企業価値倍率に基づく評価モデル。",
+    "key_points": [
+      "相対評価",
+      "P/E、EV/EBITDAなど"
+    ],
+    "pitfall": "適切な比較対象の選択が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0368",
+    "topic_code": "EQ",
+    "en_canonical": "Non-Cumulative Preference Shares",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "非累積優先株式",
+    "jp_reading": "ひるいせきゆうせんかぶしき",
+    "jp_definition": "当期または後続期間に支払われなかった配当が、後日累積して支払われるのではなく、永久に没収される優先株式。",
+    "key_points": [
+      "配当の没収",
+      "発行体に有利"
+    ],
+    "pitfall": "累積優先株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0369",
+    "topic_code": "EQ",
+    "en_canonical": "Non-Participating Preference Shares",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "非参加優先株式",
+    "jp_reading": "ひさんかゆうせんかぶしき",
+    "jp_definition": "株主に企業の利益への参加権を与えない優先株式。株主は固定配当と清算時の額面価値のみを受け取る権利がある。",
+    "key_points": [
+      "固定配当のみ",
+      "アップサイドなし"
+    ],
+    "pitfall": "参加優先株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0370",
+    "topic_code": "EQ",
+    "en_canonical": "Offer",
+    "en_aliases": [
+      "Ask"
+    ],
+    "abbreviations": [],
+    "jp_headword": "売り気配",
+    "jp_reading": "うりけはい",
+    "jp_definition": "ディーラーまたはトレーダーが資産を売却する意思のある価格。通常、最大数量（売り気配サイズ）で限定される。",
+    "key_points": [
+      "売り手の提示価格",
+      "スプレッドの一端"
+    ],
+    "pitfall": "買い気配との差がスプレッド。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0371",
+    "topic_code": "EQ",
+    "en_canonical": "Operationally Efficient",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "運営効率的",
+    "jp_reading": "うんえいこうりつてき",
+    "jp_definition": "取引コストが比較的低い市場、金融システム、または経済の特性。",
+    "key_points": [
+      "低取引コスト",
+      "市場効率性の一形態"
+    ],
+    "pitfall": "情報効率性とは異なる概念。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0373",
+    "topic_code": "EQ",
+    "en_canonical": "Option Contract",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "オプション契約",
+    "jp_reading": "おぷしょんけいやく",
+    "jp_definition": "オプションを参照。",
+    "key_points": [
+      "権利の売買",
+      "標準化または相対"
+    ],
+    "pitfall": "行使条件を確認する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0374",
+    "topic_code": "EQ",
+    "en_canonical": "Order",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "注文",
+    "jp_reading": "ちゅうもん",
+    "jp_definition": "どの商品を取引するか、どれだけ取引するか、買うか売るかの仕様。",
+    "key_points": [
+      "取引の指示",
+      "執行条件"
+    ],
+    "pitfall": "注文タイプの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0375",
+    "topic_code": "EQ",
+    "en_canonical": "Order-Driven Markets",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "注文駆動型市場",
+    "jp_reading": "ちゅうもんくどうがたしじょう",
+    "jp_definition": "トレーダーが提出した注文に基づいて取引を手配するルールを使用する市場（一般的にオークション市場）。純粋な形態では、ディーラーを使用しない。",
+    "key_points": [
+      "オークション方式",
+      "価格発見"
+    ],
+    "pitfall": "気配駆動型市場との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0376",
+    "topic_code": "EQ",
+    "en_canonical": "Order Precedence Hierarchy",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "注文優先順位階層",
+    "jp_reading": "ちゅうもんゆうせんじゅんいかいそう",
+    "jp_definition": "注文の執行に関して、どの注文が他の注文より先に執行されるかを決定する一連のルール。",
+    "key_points": [
+      "価格優先、時間優先",
+      "公平な執行"
+    ],
+    "pitfall": "市場により異なる場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0377",
+    "topic_code": "EQ",
+    "en_canonical": "PESTLE Analysis",
+    "en_aliases": [
+      "PEST Analysis"
+    ],
+    "abbreviations": [],
+    "jp_headword": "PESTLE分析",
+    "jp_reading": "ぺすとるぶんせき",
+    "jp_definition": "業界の経済的成果に影響を与える要因を分析するフレームワーク。政治、経済、社会、技術、法律、環境の頭文字。",
+    "key_points": [
+      "マクロ環境分析",
+      "戦略立案"
+    ],
+    "pitfall": "定性的分析であり、定量化が困難。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0378",
+    "topic_code": "EQ",
+    "en_canonical": "Participating Preference Shares",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "参加優先株式",
+    "jp_reading": "さんかゆうせんかぶしき",
+    "jp_definition": "標準的な優先配当に加え、企業の利益が事前に指定されたレベルを超えた場合に追加配当を受け取る機会を株主に与える優先株式。",
+    "key_points": [
+      "追加配当の権利",
+      "アップサイド参加"
+    ],
+    "pitfall": "非参加優先株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0379",
+    "topic_code": "EQ",
+    "en_canonical": "Passive Investment",
+    "en_aliases": [
+      "Passive Management"
+    ],
+    "abbreviations": [],
+    "jp_headword": "パッシブ投資",
+    "jp_reading": "ぱっしぶとうし",
+    "jp_definition": "短期的な市場または証券パフォーマンスの変化予想に基づいてポートフォリオを変更しないバイアンドホールドアプローチ。",
+    "key_points": [
+      "インデックス追従",
+      "低コスト"
+    ],
+    "pitfall": "アクティブ投資との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0380",
+    "topic_code": "EQ",
+    "en_canonical": "Payable Date",
+    "en_aliases": [
+      "Payment Date"
+    ],
+    "abbreviations": [],
+    "jp_headword": "支払日",
+    "jp_reading": "しはらいび",
+    "jp_definition": "企業が実際に配当を郵送（または電子送金）する日。",
+    "key_points": [
+      "配当の受取日",
+      "配当スケジュール"
+    ],
+    "pitfall": "権利確定日との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0381",
+    "topic_code": "EQ",
+    "en_canonical": "Position",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "ポジション",
+    "jp_reading": "ぽじしょん",
+    "jp_definition": "企業が所有または負っている資産の数量。",
+    "key_points": [
+      "保有状況",
+      "ロング/ショート"
+    ],
+    "pitfall": "ネットポジションとグロスポジションの違い。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0382",
+    "topic_code": "EQ",
+    "en_canonical": "Preference Shares",
+    "en_aliases": [
+      "Preferred Stock"
+    ],
+    "abbreviations": [],
+    "jp_headword": "優先株式",
+    "jp_reading": "ゆうせんかぶしき",
+    "jp_definition": "配当の支払いと清算時の企業純資産の分配に関して普通株より上位にランクされる株式利益の一種。負債と株式証券の両方の特性を持つ。優先株とも呼ばれる。",
+    "key_points": [
+      "固定配当",
+      "清算優先権"
+    ],
+    "pitfall": "普通株との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0383",
+    "topic_code": "EQ",
+    "en_canonical": "Present Value Models",
+    "en_aliases": [
+      "Discounted Cash Flow Models"
+    ],
+    "abbreviations": [],
+    "jp_headword": "現在価値モデル",
+    "jp_reading": "げんざいかちもでる",
+    "jp_definition": "証券から受け取ることが期待される将来の利益の現在価値として証券の本質的価値を推定する評価モデル。",
+    "key_points": [
+      "DCFモデル",
+      "将来CFの割引"
+    ],
+    "pitfall": "割引率と成長率の仮定が重要。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0384",
+    "topic_code": "EQ",
+    "en_canonical": "Price Index",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "価格指数",
+    "jp_reading": "かかくしすう",
+    "jp_definition": "財とサービスのバスケットの平均価格を表す。",
+    "key_points": [
+      "インフレ測定",
+      "CPI、PPI"
+    ],
+    "pitfall": "構成品目の変更に注意。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0385",
+    "topic_code": "EQ",
+    "en_canonical": "Price Multiple",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "株価倍率",
+    "jp_reading": "かぶかばいりつ",
+    "jp_definition": "株価を何らかの金銭的フローまたは価値と比較し、企業の株式の相対的価値を評価する比率。",
+    "key_points": [
+      "P/E、P/B、P/Sなど",
+      "相対評価"
+    ],
+    "pitfall": "業界や成長段階により適切な倍率が異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0386",
+    "topic_code": "EQ",
+    "en_canonical": "Price Priority",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "価格優先",
+    "jp_reading": "かかくゆうせん",
+    "jp_definition": "最も高い価格の買い注文と最も低い価格の売り注文が最初に執行されるという原則。",
+    "key_points": [
+      "注文執行の原則",
+      "公平な取引"
+    ],
+    "pitfall": "時間優先との組み合わせで使用される。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0387",
+    "topic_code": "EQ",
+    "en_canonical": "Price Return",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "価格リターン",
+    "jp_reading": "かかくりたーん",
+    "jp_definition": "インデックスまたはポートフォリオの証券の価格上昇または価格変化率のみを測定する。",
+    "key_points": [
+      "配当を含まない",
+      "キャピタルゲイン"
+    ],
+    "pitfall": "トータルリターンとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0388",
+    "topic_code": "EQ",
+    "en_canonical": "Price Return Index",
+    "en_aliases": [
+      "Price Index"
+    ],
+    "abbreviations": [],
+    "jp_headword": "価格リターンインデックス",
+    "jp_reading": "かかくりたーんいんでっくす",
+    "jp_definition": "構成証券の価格上昇または価格変化率のみを反映するインデックス。プライスインデックスとも呼ばれる。",
+    "key_points": [
+      "配当を含まない",
+      "価格変動のみ"
+    ],
+    "pitfall": "トータルリターンインデックスとの違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0389",
+    "topic_code": "EQ",
+    "en_canonical": "Price Weighting",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "価格加重",
+    "jp_reading": "かかくかじゅう",
+    "jp_definition": "各構成証券に割り当てられるウェイトが、その構成証券の全価格の合計に対する価格で決定されるインデックスウェイト方式。",
+    "key_points": [
+      "ダウ平均",
+      "高株価銘柄の影響大"
+    ],
+    "pitfall": "株式分割の影響を受ける。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0390",
+    "topic_code": "EQ",
+    "en_canonical": "Pricing Power",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "価格決定力",
+    "jp_reading": "かかくけっていりょく",
+    "jp_definition": "販売量に影響を与えずに価格やその他の経済条件を顧客に設定する企業の能力。",
+    "key_points": [
+      "競争優位性",
+      "利益率への影響"
+    ],
+    "pitfall": "業界構造により異なる。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0391",
+    "topic_code": "EQ",
+    "en_canonical": "Primary Capital Markets",
+    "en_aliases": [
+      "Primary Markets"
+    ],
+    "abbreviations": [],
+    "jp_headword": "発行市場",
+    "jp_reading": "はっこうしじょう",
+    "jp_definition": "証券が最初に売却され、発行体が収益を受け取る市場。",
+    "key_points": [
+      "新規発行",
+      "資金調達"
+    ],
+    "pitfall": "流通市場との違いを理解する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0392",
+    "topic_code": "EQ",
+    "en_canonical": "Private Equity Securities",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "プライベートエクイティ証券",
+    "jp_reading": "ぷらいべーとえくいてぃしょうけん",
+    "jp_definition": "公開取引所に上場されておらず、活発な流通市場がない証券。主にプライベートプレースメントなどの非公開募集を通じて機関投資家に発行される。",
+    "key_points": [
+      "非上場株式",
+      "流動性が低い"
+    ],
+    "pitfall": "評価が困難な場合がある。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0393",
+    "topic_code": "EQ",
+    "en_canonical": "Private Investment in Public Equity",
+    "en_aliases": [],
+    "abbreviations": [
+      "PIPE"
+    ],
+    "jp_headword": "上場株式への私募投資",
+    "jp_reading": "じょうじょうかぶしきへのしぼとうし",
+    "jp_definition": "上場企業の株式に対して、株式の市場価値に対して割引価格で行われる投資。",
+    "key_points": [
+      "迅速な資金調達",
+      "希薄化"
+    ],
+    "pitfall": "既存株主への影響を考慮する。",
+    "formula": ""
+  },
+  {
+    "term_id": "TERM0394",
+    "topic_code": "EQ",
+    "en_canonical": "Private Placement",
+    "en_aliases": [],
+    "abbreviations": [],
+    "jp_headword": "私募",
+    "jp_reading": "しぼ",
+    "jp_definition": "少数の投資家グループへの非規制ベースでの負債または株式証券の売却。募集条件は発行体と投資家の間で交渉される。",
+    "key_points": [
+      "非公開募集",
+      "規制緩和"
+    ],
+    "pitfall": "流動性が低い。",
+    "formula": ""
   }
 ]
