@@ -6,6 +6,7 @@ import { useColors } from '@/hooks/use-colors';
 import { gameStore } from '@/lib/game-store';
 import { BattleState, WordCard, QuizQuestion, CFAQuestion } from '@/lib/game-types';
 import { RARITY_COLORS, RARITY_NAMES } from '@/lib/game-types';
+import { EnemySprite, AnimationState } from '@/components/enemy-sprite';
 
 export default function BattleScreen() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function BattleScreen() {
   const [showFullQuestion, setShowFullQuestion] = useState(false);
   const [cfaAnswer, setCfaAnswer] = useState<string | null>(null);
   const [cfaResult, setCfaResult] = useState<boolean | null>(null);
+  const [enemyAnimation, setEnemyAnimation] = useState<AnimationState>('idle');
 
   useEffect(() => {
     const unsubscribe = gameStore.subscribe(() => {
@@ -74,6 +76,19 @@ export default function BattleScreen() {
     
     let message = '';
     if (result.correct) {
+      // 正解時は敵にダメージアニメーション
+      if (selectedAction === 'attack' || selectedAction === 'burst') {
+        setEnemyAnimation('damage');
+        setTimeout(() => {
+          // 敵が倒れたかチェック
+          const currentBattle = gameStore.getBattle();
+          if (currentBattle.enemyHp <= 0) {
+            setEnemyAnimation('death');
+          } else {
+            setEnemyAnimation('idle');
+          }
+        }, 500);
+      }
       if (selectedAction === 'burst') {
         message = `バースト成功！${result.damage}ダメージ！`;
       } else if (selectedAction === 'attack') {
@@ -82,6 +97,9 @@ export default function BattleScreen() {
         message = `HP+${result.heal}回復！`;
       }
     } else {
+      // 不正解時は敵が攻撃アニメーション
+      setEnemyAnimation('attack');
+      setTimeout(() => setEnemyAnimation('idle'), 600);
       message = selectedAction === 'burst' 
         ? 'バースト失敗！大反動ダメージ！' 
         : '不正解！反動ダメージ！';
@@ -162,7 +180,16 @@ export default function BattleScreen() {
         {/* 敵情報 */}
         {battle.enemy && (
           <View style={[styles.enemyCard, { backgroundColor: colors.surface, borderColor: colors.error }]}>
-            <Text style={styles.enemySprite}>{battle.enemy.sprite}</Text>
+            <EnemySprite 
+              enemyId={battle.enemy.id} 
+              animation={enemyAnimation} 
+              size={120}
+              onAnimationComplete={() => {
+                if (enemyAnimation === 'death') {
+                  // 死亡アニメーション完了後は何もしない（バトル終了処理は別途）
+                }
+              }}
+            />
             <Text style={[styles.enemyName, { color: colors.foreground }]}>{battle.enemy.nameJa}</Text>
             <View style={styles.hpContainer}>
               <View style={[styles.hpBarBg, { backgroundColor: colors.border }]}>
