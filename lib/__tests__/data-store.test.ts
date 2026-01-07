@@ -56,7 +56,7 @@ describe('createInitialProgress', () => {
 });
 
 describe('calculateNextReview', () => {
-  it('should reset on quality < 3 (Again)', () => {
+  it('should move to relearning on Again (SM2-Anki)', () => {
     const initial: LearningProgress = {
       term_id: 'test',
       ease_factor: 2.5,
@@ -67,16 +67,24 @@ describe('calculateNextReview', () => {
       incorrect_count: 0,
       is_bookmarked: false,
       is_difficult: false,
+      phase: 'review',
+      learning_step: 0,
+      stability: 10,
+      difficulty: 5,
     };
     
-    const result = calculateNextReview(initial, 0);
+    const result = calculateNextReview(initial, 0); // Again
     
-    expect(result.repetitions).toBe(0);
-    expect(result.interval).toBe(1);
+    // SM2-Ankiでは、Againで再学習フェーズに移行
+    expect(result.phase).toBe('relearning');
+    // 再学習ステップ（10分）
+    expect(result.interval).toBeCloseTo(10 / (24 * 60), 5);
     expect(result.incorrect_count).toBe(1);
+    // Ease係数が減少
+    expect(result.ease_factor).toBeLessThan(2.5);
   });
 
-  it('should increase interval on quality >= 3 (Good)', () => {
+   it('should increase interval on correct answer (review phase)', () => {
     const initial: LearningProgress = {
       term_id: 'test',
       ease_factor: 2.5,
@@ -87,40 +95,54 @@ describe('calculateNextReview', () => {
       incorrect_count: 0,
       is_bookmarked: false,
       is_difficult: false,
+      phase: 'review', // 復習フェーズを明示
+      learning_step: 0,
+      stability: 6,
+      difficulty: 5,
     };
     
-    const result = calculateNextReview(initial, 3);
+    const result = calculateNextReview(initial, 3); // Good
     
     expect(result.repetitions).toBe(3);
     expect(result.interval).toBe(15); // 6 * 2.5 = 15
     expect(result.correct_count).toBe(3);
   });
 
-  it('should set interval to 1 on first success', () => {
+  it('should start learning steps on first success (SM2-Anki)', () => {
     const initial = createInitialProgress('test');
-    const result = calculateNextReview(initial, 3);
+    // SM2-Ankiでは、新規カードはGoodで学習ステップを進む
+    // ステップ0→ステップ1（10分）
+    const result = calculateNextReview(initial, 3); // Good
     
-    expect(result.interval).toBe(1);
-    expect(result.repetitions).toBe(1);
+    // 学習ステップ1（10分 = 10/(24*60)日）
+    expect(result.interval).toBeCloseTo(10 / (24 * 60), 5);
+    expect(result.phase).toBe('learning');
   });
 
-  it('should set interval to 6 on second success', () => {
+  it('should graduate to review phase after learning steps (SM2-Anki)', () => {
+    // 学習ステップ1（最後のステップ）のカード
     const initial: LearningProgress = {
       term_id: 'test',
       ease_factor: 2.5,
-      interval: 1,
-      repetitions: 1,
+      interval: 10 / (24 * 60), // 10分
+      repetitions: 0,
       next_review: '2024-01-01',
       correct_count: 1,
       incorrect_count: 0,
       is_bookmarked: false,
       is_difficult: false,
+      phase: 'learning',
+      learning_step: 1, // 最後のステップ
+      stability: 0,
+      difficulty: 5,
     };
     
-    const result = calculateNextReview(initial, 3);
+    const result = calculateNextReview(initial, 3); // Good
     
-    expect(result.interval).toBe(6);
-    expect(result.repetitions).toBe(2);
+    // 卒業間隔（1日）で復習フェーズへ
+    expect(result.interval).toBe(1);
+    expect(result.phase).toBe('review');
+    expect(result.repetitions).toBe(1);
   });
 
   it('should not let ease_factor go below 1.3', () => {
@@ -299,7 +321,8 @@ describe('getStatistics', () => {
     expect(stats.total).toBe(2);
     expect(stats.learned).toBe(0);
     expect(stats.mastered).toBe(0);
-    expect(stats.reviewDue).toBe(2); // All unlearned count as review due
+    // 未学習の単語は復習対象に含めない（新規学習が必要）
+    expect(stats.reviewDue).toBe(0);
   });
 
   it('should calculate statistics correctly with progress', () => {
@@ -314,6 +337,10 @@ describe('getStatistics', () => {
         incorrect_count: 0,
         is_bookmarked: false,
         is_difficult: false,
+        phase: 'review',
+        learning_step: 0,
+        stability: 10,
+        difficulty: 5,
       },
     };
     
@@ -321,6 +348,7 @@ describe('getStatistics', () => {
     
     expect(stats.learned).toBe(1);
     expect(stats.mastered).toBe(1); // repetitions >= 3
-    expect(stats.reviewDue).toBe(2); // 1 past due + 1 unlearned
+    // 未学習の単語は復習対象に含めない（学習済みで期限切れのみ）
+    expect(stats.reviewDue).toBe(1); // 1 past due only
   });
 });

@@ -37,6 +37,13 @@ const MAPPING = {
   "clock.fill": "schedule",
   "flag.fill": "flag",
   "gamepad.fill": "sports-esports",
+  // SRSアルゴリズム設定用
+  "brain": "psychology",
+  "xmark": "close",
+  "info.circle": "info",
+  // 音声再生用
+  "speaker.wave.2.fill": "volume-up",
+  "speaker.slash.fill": "volume-off",
 } as const;
 
 /**

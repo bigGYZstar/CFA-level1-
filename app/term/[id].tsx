@@ -4,11 +4,13 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { loadTerms, loadExamples, loadRelations, loadProgress, saveProgress, createInitialProgress, TOPICS } from '@/lib/data-store';
+import { useSpeech } from '@/hooks/use-speech';
 import type { Term, Example, Relation, LearningProgress } from '@/lib/types';
 
 export default function TermDetailScreen() {
   const router = useRouter();
   const { id } = useLocalSearchParams<{ id: string }>();
+  const { speakEnglish, speakJapanese, isSpeaking, stop, isAvailable } = useSpeech();
   
   const [term, setTerm] = useState<Term | null>(null);
   const [example, setExample] = useState<Example | null>(null);
@@ -20,6 +22,13 @@ export default function TermDetailScreen() {
   useEffect(() => {
     if (id) loadData();
   }, [id]);
+
+  // 画面を離れる時に音声を停止
+  useEffect(() => {
+    return () => {
+      stop();
+    };
+  }, [stop]);
 
   async function loadData() {
     const [terms, examples, rels, prog] = await Promise.all([
@@ -54,6 +63,22 @@ export default function TermDetailScreen() {
     await saveProgress(newProgress);
     setProgress(updated);
     setAllProgress(newProgress);
+  };
+
+  const handleSpeakTerm = () => {
+    if (isSpeaking) {
+      stop();
+    } else if (term) {
+      speakEnglish(term.en_canonical);
+    }
+  };
+
+  const handleSpeakExample = () => {
+    if (isSpeaking) {
+      stop();
+    } else if (example?.example_en) {
+      speakEnglish(example.example_en);
+    }
   };
 
   const topic = term ? TOPICS.find(t => t.code === term.topic_code) : null;
@@ -104,10 +129,24 @@ export default function TermDetailScreen() {
                 </View>
               )}
             </View>
-            <Text style={styles.englishHeadword}>
-              {term.en_canonical}
-              {term.abbreviations.length > 0 && ` (${term.abbreviations.join(', ')})`}
-            </Text>
+            <View style={styles.englishRow}>
+              <Text style={styles.englishHeadword}>
+                {term.en_canonical}
+                {term.abbreviations.length > 0 && ` (${term.abbreviations.join(', ')})`}
+              </Text>
+              {isAvailable && (
+                <Pressable
+                  style={({ pressed }) => [styles.speakButton, pressed && styles.pressed]}
+                  onPress={handleSpeakTerm}
+                >
+                  <IconSymbol 
+                    name={isSpeaking ? "speaker.slash.fill" : "speaker.wave.2.fill"} 
+                    size={20} 
+                    color="#4A90E2" 
+                  />
+                </Pressable>
+              )}
+            </View>
             <Text style={styles.reading}>{term.jp_reading}</Text>
           </View>
 
@@ -133,10 +172,29 @@ export default function TermDetailScreen() {
           {/* 例文 */}
           {example && (
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>例文</Text>
+              <View style={styles.sectionHeader}>
+                <Text style={styles.sectionTitle}>例文</Text>
+                {isAvailable && example.example_en && (
+                  <Pressable
+                    style={({ pressed }) => [styles.speakButtonSmall, pressed && styles.pressed]}
+                    onPress={handleSpeakExample}
+                  >
+                    <IconSymbol 
+                      name={isSpeaking ? "speaker.slash.fill" : "speaker.wave.2.fill"} 
+                      size={18} 
+                      color="#4A90E2" 
+                    />
+                    <Text style={styles.speakButtonText}>
+                      {isSpeaking ? '停止' : '再生'}
+                    </Text>
+                  </Pressable>
+                )}
+              </View>
               <View style={styles.exampleBlock}>
                 <Text style={styles.exampleEn}>{example.example_en}</Text>
-                <Text style={styles.exampleJp}>{example.example_jp}</Text>
+                {example.example_jp && (
+                  <Text style={styles.exampleJp}>{example.example_jp}</Text>
+                )}
               </View>
             </View>
           )}
@@ -259,11 +317,22 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFFFFF',
   },
+  englishRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
   englishHeadword: {
     fontSize: 18,
     fontWeight: '600',
     color: '#1A1A1A',
-    marginBottom: 4,
+    flex: 1,
+  },
+  speakButton: {
+    padding: 8,
+    marginLeft: 8,
+    backgroundColor: '#F0F7FF',
+    borderRadius: 20,
   },
   reading: {
     fontSize: 14,
@@ -272,12 +341,31 @@ const styles = StyleSheet.create({
   section: {
     marginBottom: 20,
   },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
   sectionTitle: {
     fontSize: 14,
     fontWeight: '600',
     color: '#687076',
-    marginBottom: 8,
     textTransform: 'uppercase',
+  },
+  speakButtonSmall: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    backgroundColor: '#F0F7FF',
+    borderRadius: 16,
+    gap: 4,
+  },
+  speakButtonText: {
+    fontSize: 12,
+    color: '#4A90E2',
+    fontWeight: '500',
   },
   definition: {
     fontSize: 16,

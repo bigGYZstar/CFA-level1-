@@ -1,15 +1,27 @@
 import { useEffect, useState } from 'react';
-import { Text, View, Pressable, StyleSheet } from 'react-native';
+import { Text, View, Pressable, StyleSheet, ScrollView } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ScreenContainer } from '@/components/screen-container';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { 
   loadTerms, loadExamples, loadProgress, saveProgress, 
-  getReviewDueTerms, calculateNextReview, createInitialProgress, TOPICS 
+  getReviewDueTerms, createInitialProgress, 
+  TOPICS, loadSRSSettings, saveSRSSettings
 } from '@/lib/data-store';
-import type { Term, Example, LearningProgress } from '@/lib/types';
+import { 
+  previewIntervals, formatInterval, ALGORITHMS,
+  calculateNextReview as calculateNextReviewWithButton,
+  type AnswerButton 
+} from '@/lib/srs-algorithms';
+import type { Term, Example, LearningProgress, SRSAlgorithm, LearningPhase } from '@/lib/types';
 
-type ReviewQuality = 0 | 1 | 2 | 3 | 4 | 5;
+// 学習フェーズの日本語表示
+const PHASE_LABELS: Record<LearningPhase, string> = {
+  new: '新規',
+  learning: '学習中',
+  review: '復習',
+  relearning: '再学習',
+};
 
 export default function ReviewScreen() {
   const router = useRouter();
@@ -19,18 +31,22 @@ export default function ReviewScreen() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
+  const [algorithm, setAlgorithm] = useState<SRSAlgorithm>('sm2_anki');
+  const [showAlgorithmInfo, setShowAlgorithmInfo] = useState(false);
 
   useEffect(() => {
     loadData();
   }, []);
 
   async function loadData() {
-    const [allTerms, allExamples, allProgress] = await Promise.all([
+    const [allTerms, allExamples, allProgress, srsSettings] = await Promise.all([
       loadTerms(),
       loadExamples(),
       loadProgress(),
+      loadSRSSettings(),
     ]);
     
+    setAlgorithm(srsSettings.algorithm);
     const reviewDue = getReviewDueTerms(allTerms, allProgress);
     setTerms(reviewDue);
     setExamples(allExamples);
@@ -44,12 +60,15 @@ export default function ReviewScreen() {
   const currentTerm = terms[currentIndex];
   const currentExample = currentTerm ? examples.find(e => e.term_id === currentTerm.term_id) : null;
   const topic = currentTerm ? TOPICS.find(t => t.code === currentTerm.topic_code) : null;
+  const currentProgress = currentTerm ? (progress[currentTerm.term_id] || createInitialProgress(currentTerm.term_id)) : null;
+  
+  // 各ボタンの次回間隔をプレビュー
+  const intervalPreviews = currentProgress ? previewIntervals(currentProgress, algorithm) : null;
 
-  const handleAnswer = async (quality: ReviewQuality) => {
-    if (!currentTerm) return;
+  const handleAnswer = async (answer: AnswerButton) => {
+    if (!currentTerm || !currentProgress) return;
     
-    const currentProgress = progress[currentTerm.term_id] || createInitialProgress(currentTerm.term_id);
-    const updatedProgress = calculateNextReview(currentProgress, quality);
+    const updatedProgress = calculateNextReviewWithButton(currentProgress, answer, algorithm);
     
     const newProgress = { ...progress, [currentTerm.term_id]: updatedProgress };
     await saveProgress(newProgress);
@@ -63,6 +82,9 @@ export default function ReviewScreen() {
       setIsComplete(true);
     }
   };
+
+  const currentPhase = currentProgress?.phase || 'new';
+  const algorithmInfo = ALGORITHMS.find(a => a.id === algorithm);
 
   if (isComplete) {
     return (
@@ -106,15 +128,40 @@ export default function ReviewScreen() {
           style={({ pressed }) => [styles.backButton, pressed && styles.pressed]}
           onPress={() => router.back()}
         >
-          <IconSymbol name="arrow.left" size={24} color="#1A1A1A" />
+          <IconSymbol name="chevron.left" size={24} color="#1A1A1A" />
         </Pressable>
-        <Text style={styles.headerTitle}>復習</Text>
-        <Text style={styles.progress}>{currentIndex + 1} / {terms.length}</Text>
+        <View style={styles.headerCenter}>
+          <Text style={styles.headerTitle}>復習</Text>
+          <Pressable 
+            style={styles.algorithmBadge}
+            onPress={() => setShowAlgorithmInfo(!showAlgorithmInfo)}
+          >
+            <Text style={styles.algorithmBadgeText}>{algorithmInfo?.nameJp || algorithm}</Text>
+          </Pressable>
+        </View>
+        <Text style={styles.progressText}>{currentIndex + 1} / {terms.length}</Text>
       </View>
+
+      {/* アルゴリズム情報 */}
+      {showAlgorithmInfo && algorithmInfo && (
+        <View style={styles.algorithmInfo}>
+          <Text style={styles.algorithmInfoText}>{algorithmInfo.descriptionJp}</Text>
+        </View>
+      )}
 
       {/* プログレスバー */}
       <View style={styles.progressBar}>
         <View style={[styles.progressFill, { width: `${((currentIndex + 1) / terms.length) * 100}%` }]} />
+      </View>
+
+      {/* 学習フェーズ表示 */}
+      <View style={styles.phaseContainer}>
+        <View style={[styles.phaseBadge, { backgroundColor: getPhaseColor(currentPhase) }]}>
+          <Text style={styles.phaseBadgeText}>{PHASE_LABELS[currentPhase]}</Text>
+        </View>
+        {currentProgress && currentProgress.learning_step !== undefined && currentProgress.learning_step > 0 && (
+          <Text style={styles.stepText}>ステップ {currentProgress.learning_step + 1}</Text>
+        )}
       </View>
 
       {/* カード */}
@@ -138,7 +185,7 @@ export default function ReviewScreen() {
 
           {/* 裏面（回答） */}
           {showAnswer && (
-            <View style={styles.cardBack}>
+            <ScrollView style={styles.cardBack}>
               <View style={styles.divider} />
               <Text style={styles.cardAnswer}>{currentTerm.jp_headword}</Text>
               <Text style={styles.cardReading}>{currentTerm.jp_reading}</Text>
@@ -149,7 +196,7 @@ export default function ReviewScreen() {
                   <Text style={styles.exampleJp}>{currentExample.example_jp}</Text>
                 </View>
               )}
-            </View>
+            </ScrollView>
           )}
 
           {!showAnswer && (
@@ -159,40 +206,49 @@ export default function ReviewScreen() {
       </View>
 
       {/* 回答ボタン */}
-      {showAnswer && (
+      {showAnswer && intervalPreviews && (
         <View style={styles.answerButtons}>
           <Pressable
             style={({ pressed }) => [styles.answerButton, styles.againButton, pressed && styles.pressed]}
-            onPress={() => handleAnswer(0)}
+            onPress={() => handleAnswer('again')}
           >
             <Text style={styles.answerButtonText}>Again</Text>
-            <Text style={styles.answerButtonHint}>1日</Text>
+            <Text style={styles.answerButtonHint}>{intervalPreviews.again.label}</Text>
           </Pressable>
           <Pressable
             style={({ pressed }) => [styles.answerButton, styles.hardButton, pressed && styles.pressed]}
-            onPress={() => handleAnswer(2)}
+            onPress={() => handleAnswer('hard')}
           >
             <Text style={styles.answerButtonText}>Hard</Text>
-            <Text style={styles.answerButtonHint}>3日</Text>
+            <Text style={styles.answerButtonHint}>{intervalPreviews.hard.label}</Text>
           </Pressable>
           <Pressable
             style={({ pressed }) => [styles.answerButton, styles.goodButton, pressed && styles.pressed]}
-            onPress={() => handleAnswer(3)}
+            onPress={() => handleAnswer('good')}
           >
             <Text style={styles.answerButtonText}>Good</Text>
-            <Text style={styles.answerButtonHint}>7日</Text>
+            <Text style={styles.answerButtonHint}>{intervalPreviews.good.label}</Text>
           </Pressable>
           <Pressable
             style={({ pressed }) => [styles.answerButton, styles.easyButton, pressed && styles.pressed]}
-            onPress={() => handleAnswer(5)}
+            onPress={() => handleAnswer('easy')}
           >
             <Text style={styles.answerButtonText}>Easy</Text>
-            <Text style={styles.answerButtonHint}>14日</Text>
+            <Text style={styles.answerButtonHint}>{intervalPreviews.easy.label}</Text>
           </Pressable>
         </View>
       )}
     </ScreenContainer>
   );
+}
+
+function getPhaseColor(phase: LearningPhase): string {
+  switch (phase) {
+    case 'new': return '#4A90E2';
+    case 'learning': return '#F5A623';
+    case 'review': return '#22C55E';
+    case 'relearning': return '#E74C3C';
+  }
 }
 
 const styles = StyleSheet.create({
@@ -214,16 +270,43 @@ const styles = StyleSheet.create({
   backButton: {
     padding: 8,
   },
-  headerTitle: {
+  headerCenter: {
     flex: 1,
+    alignItems: 'center',
+  },
+  headerTitle: {
     fontSize: 18,
     fontWeight: '600',
     color: '#1A1A1A',
-    textAlign: 'center',
   },
-  progress: {
+  algorithmBadge: {
+    backgroundColor: '#F0F0F0',
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 8,
+    marginTop: 4,
+  },
+  algorithmBadgeText: {
+    fontSize: 10,
+    color: '#687076',
+  },
+  algorithmInfo: {
+    backgroundColor: '#F8F9FA',
+    marginHorizontal: 16,
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 8,
+  },
+  algorithmInfoText: {
+    fontSize: 12,
+    color: '#687076',
+    lineHeight: 18,
+  },
+  progressText: {
     fontSize: 14,
     color: '#687076',
+    minWidth: 50,
+    textAlign: 'right',
   },
   progressBar: {
     height: 4,
@@ -235,6 +318,27 @@ const styles = StyleSheet.create({
     height: '100%',
     backgroundColor: '#4A90E2',
     borderRadius: 2,
+  },
+  phaseContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 8,
+    gap: 8,
+  },
+  phaseBadge: {
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  phaseBadgeText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#FFFFFF',
+  },
+  stepText: {
+    fontSize: 12,
+    color: '#687076',
   },
   cardContainer: {
     flex: 1,
@@ -279,6 +383,7 @@ const styles = StyleSheet.create({
   },
   cardBack: {
     paddingTop: 20,
+    maxHeight: 300,
   },
   divider: {
     height: 1,

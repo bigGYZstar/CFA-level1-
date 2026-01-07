@@ -1,8 +1,10 @@
-import { useState } from 'react';
-import { ScrollView, Text, View, Pressable, StyleSheet, Alert } from 'react-native';
+import { useState, useEffect } from 'react';
+import { ScrollView, Text, View, Pressable, StyleSheet, Alert, Modal } from 'react-native';
 import { ScreenContainer } from '@/components/screen-container';
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { loadTerms, loadExamples, exportToAnkiTSV } from '@/lib/data-store';
+import { loadTerms, loadExamples, exportToAnkiTSV, loadSRSSettings, saveSRSSettings } from '@/lib/data-store';
+import { ALGORITHMS, type AlgorithmInfo } from '@/lib/srs-algorithms';
+import type { SRSAlgorithm } from '@/lib/types';
 import * as Clipboard from 'expo-clipboard';
 
 export default function SettingsScreen() {
@@ -10,6 +12,24 @@ export default function SettingsScreen() {
   const [hideExample, setHideExample] = useState(false);
   const [hideTranslation, setHideTranslation] = useState(false);
   const [enableTTS, setEnableTTS] = useState(false);
+  const [srsAlgorithm, setSrsAlgorithm] = useState<SRSAlgorithm>('sm2_anki');
+  const [showAlgorithmModal, setShowAlgorithmModal] = useState(false);
+
+  useEffect(() => {
+    loadSettings();
+  }, []);
+
+  const loadSettings = async () => {
+    const settings = await loadSRSSettings();
+    setSrsAlgorithm(settings.algorithm);
+  };
+
+  const handleAlgorithmChange = async (algorithm: SRSAlgorithm) => {
+    setSrsAlgorithm(algorithm);
+    await saveSRSSettings({ algorithm });
+    setShowAlgorithmModal(false);
+    Alert.alert('設定を保存しました', `アルゴリズムを「${ALGORITHMS.find(a => a.id === algorithm)?.nameJp}」に変更しました。`);
+  };
 
   const handleExportAnki = async () => {
     try {
@@ -45,6 +65,8 @@ export default function SettingsScreen() {
     );
   };
 
+  const currentAlgorithm = ALGORITHMS.find(a => a.id === srsAlgorithm);
+
   return (
     <ScreenContainer className="bg-background">
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
@@ -52,6 +74,26 @@ export default function SettingsScreen() {
           {/* ヘッダー */}
           <View style={styles.header}>
             <Text style={styles.title}>設定</Text>
+          </View>
+
+          {/* SRSアルゴリズム設定 */}
+          <Text style={styles.sectionTitle}>復習アルゴリズム</Text>
+          <View style={styles.section}>
+            <Pressable
+              style={({ pressed }) => [styles.algorithmRow, pressed && styles.pressed]}
+              onPress={() => setShowAlgorithmModal(true)}
+            >
+              <View style={styles.algorithmIcon}>
+                <IconSymbol name="brain" size={24} color="#4A90E2" />
+              </View>
+              <View style={styles.algorithmContent}>
+                <Text style={styles.algorithmLabel}>{currentAlgorithm?.nameJp || 'SM2-Anki'}</Text>
+                <Text style={styles.algorithmDesc} numberOfLines={2}>
+                  {currentAlgorithm?.descriptionJp || ''}
+                </Text>
+              </View>
+              <IconSymbol name="chevron.right" size={16} color="#687076" />
+            </Pressable>
           </View>
 
           {/* 表示設定 */}
@@ -128,7 +170,84 @@ export default function SettingsScreen() {
           </View>
         </View>
       </ScrollView>
+
+      {/* アルゴリズム選択モーダル */}
+      <Modal
+        visible={showAlgorithmModal}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setShowAlgorithmModal(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <View style={styles.modalHeader}>
+              <Text style={styles.modalTitle}>復習アルゴリズムを選択</Text>
+              <Pressable
+                style={({ pressed }) => [styles.modalClose, pressed && styles.pressed]}
+                onPress={() => setShowAlgorithmModal(false)}
+              >
+                <IconSymbol name="xmark" size={24} color="#687076" />
+              </Pressable>
+            </View>
+            
+            <ScrollView style={styles.algorithmList}>
+              {ALGORITHMS.map((algo) => (
+                <AlgorithmOption
+                  key={algo.id}
+                  algorithm={algo}
+                  isSelected={srsAlgorithm === algo.id}
+                  onSelect={() => handleAlgorithmChange(algo.id)}
+                />
+              ))}
+            </ScrollView>
+
+            <View style={styles.algorithmNote}>
+              <IconSymbol name="info.circle" size={16} color="#687076" />
+              <Text style={styles.algorithmNoteText}>
+                アルゴリズムを変更しても、既存の学習データは保持されます。
+                新しいアルゴリズムは次回の復習から適用されます。
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </ScreenContainer>
+  );
+}
+
+interface AlgorithmOptionProps {
+  algorithm: AlgorithmInfo;
+  isSelected: boolean;
+  onSelect: () => void;
+}
+
+function AlgorithmOption({ algorithm, isSelected, onSelect }: AlgorithmOptionProps) {
+  return (
+    <Pressable
+      style={({ pressed }) => [
+        styles.algorithmOption,
+        isSelected && styles.algorithmOptionSelected,
+        pressed && styles.pressed,
+      ]}
+      onPress={onSelect}
+    >
+      <View style={styles.algorithmOptionContent}>
+        <View style={styles.algorithmOptionHeader}>
+          <Text style={[styles.algorithmOptionName, isSelected && styles.algorithmOptionNameSelected]}>
+            {algorithm.nameJp}
+          </Text>
+          {algorithm.id === 'sm2_anki' && (
+            <View style={styles.recommendedBadge}>
+              <Text style={styles.recommendedBadgeText}>推奨</Text>
+            </View>
+          )}
+        </View>
+        <Text style={styles.algorithmOptionDesc}>{algorithm.descriptionJp}</Text>
+      </View>
+      <View style={[styles.radioOuter, isSelected && styles.radioOuterSelected]}>
+        {isSelected && <View style={styles.radioInner} />}
+      </View>
+    </Pressable>
   );
 }
 
@@ -289,5 +408,144 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.7,
     backgroundColor: '#F8F9FA',
+  },
+  // アルゴリズム選択行
+  algorithmRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 16,
+  },
+  algorithmIcon: {
+    width: 44,
+    height: 44,
+    borderRadius: 10,
+    backgroundColor: '#F0F7FF',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  algorithmContent: {
+    flex: 1,
+  },
+  algorithmLabel: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A1A1A',
+  },
+  algorithmDesc: {
+    fontSize: 12,
+    color: '#687076',
+    marginTop: 4,
+    lineHeight: 16,
+  },
+  // モーダル
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    backgroundColor: '#FFFFFF',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    maxHeight: '80%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E7EB',
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#1A1A1A',
+  },
+  modalClose: {
+    padding: 4,
+  },
+  algorithmList: {
+    padding: 16,
+  },
+  algorithmOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 16,
+    backgroundColor: '#F8F9FA',
+    borderRadius: 12,
+    marginBottom: 12,
+    borderWidth: 2,
+    borderColor: 'transparent',
+  },
+  algorithmOptionSelected: {
+    borderColor: '#4A90E2',
+    backgroundColor: '#F0F7FF',
+  },
+  algorithmOptionContent: {
+    flex: 1,
+  },
+  algorithmOptionHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  algorithmOptionName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1A1A1A',
+  },
+  algorithmOptionNameSelected: {
+    color: '#4A90E2',
+  },
+  algorithmOptionDesc: {
+    fontSize: 13,
+    color: '#687076',
+    marginTop: 4,
+    lineHeight: 18,
+  },
+  recommendedBadge: {
+    backgroundColor: '#22C55E',
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 10,
+  },
+  recommendedBadgeText: {
+    fontSize: 10,
+    fontWeight: '600',
+    color: '#FFFFFF',
+  },
+  radioOuter: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    borderWidth: 2,
+    borderColor: '#E5E7EB',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 12,
+  },
+  radioOuterSelected: {
+    borderColor: '#4A90E2',
+  },
+  radioInner: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    backgroundColor: '#4A90E2',
+  },
+  algorithmNote: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    padding: 16,
+    backgroundColor: '#F8F9FA',
+    gap: 8,
+  },
+  algorithmNoteText: {
+    flex: 1,
+    fontSize: 12,
+    color: '#687076',
+    lineHeight: 18,
   },
 });

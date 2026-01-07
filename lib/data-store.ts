@@ -2,8 +2,15 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { 
   Term, Example, Relation, Abbreviation, Topic, 
-  LearningProgress, AppState, QAReport, TopicCode 
+  LearningProgress, AppState, QAReport, TopicCode, SRSAlgorithm, DisplaySettings
 } from './types';
+import {
+  calculateNextReview as calcNextReview,
+  createInitialProgress as createInitProgress,
+  isReviewDue,
+  getReviewUrgency,
+  type AnswerButton,
+} from './srs-algorithms';
 
 // JSONデータをインポート
 import termsData from '@/assets/data/terms.json';
@@ -19,6 +26,8 @@ const STORAGE_KEYS = {
   PROGRESS: 'cfa_progress',
   QA_REPORT: 'cfa_qa_report',
   DATA_VERSION: 'cfa_data_version',
+  SRS_SETTINGS: 'cfa_srs_settings',
+  DISPLAY_SETTINGS: 'cfa_display_settings',
 };
 
 const CURRENT_DATA_VERSION = '1.0.0';
@@ -98,72 +107,67 @@ export async function loadProgress(): Promise<Record<string, LearningProgress>> 
 
 // 学習進捗の初期化
 export function createInitialProgress(term_id: string): LearningProgress {
-  return {
-    term_id,
-    ease_factor: 2.5,
-    interval: 0,
-    repetitions: 0,
-    next_review: new Date().toISOString().split('T')[0],
-    correct_count: 0,
-    incorrect_count: 0,
-    is_bookmarked: false,
-    is_difficult: false,
-  };
+  return createInitProgress(term_id);
 }
 
-// SM-2アルゴリズムによる復習間隔計算
+// 復習間隔計算（後方互換性のためのラッパー）
 export function calculateNextReview(
   progress: LearningProgress,
-  quality: 0 | 1 | 2 | 3 | 4 | 5 // 0-5: Again=0, Hard=2, Good=3, Easy=5
+  quality: 0 | 1 | 2 | 3 | 4 | 5, // 0-5: Again=0, Hard=2, Good=3, Easy=5
+  algorithm: SRSAlgorithm = 'sm2_anki'
 ): LearningProgress {
-  let { ease_factor, interval, repetitions } = progress;
-  
-  if (quality < 3) {
-    // 失敗: リセット
-    repetitions = 0;
-    interval = 1;
-  } else {
-    // 成功
-    if (repetitions === 0) {
-      interval = 1;
-    } else if (repetitions === 1) {
-      interval = 6;
-    } else {
-      interval = Math.round(interval * ease_factor);
-    }
-    repetitions += 1;
-  }
-  
-  // Ease Factor更新
-  ease_factor = ease_factor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-  if (ease_factor < 1.3) ease_factor = 1.3;
-  
-  const next_review = new Date();
-  next_review.setDate(next_review.getDate() + interval);
-  
-  return {
-    ...progress,
-    ease_factor,
-    interval,
-    repetitions,
-    next_review: next_review.toISOString().split('T')[0],
-    last_review: new Date().toISOString().split('T')[0],
-    correct_count: quality >= 3 ? progress.correct_count + 1 : progress.correct_count,
-    incorrect_count: quality < 3 ? progress.incorrect_count + 1 : progress.incorrect_count,
-  };
+  // qualityをAnswerButtonに変換
+  const answer: AnswerButton = quality === 0 ? 'again' : quality <= 2 ? 'hard' : quality <= 3 ? 'good' : 'easy';
+  return calcNextReview(progress, answer, algorithm);
 }
 
-// 今日の復習対象を取得
+// 新しいAPI: AnswerButtonを直接使用
+export function calculateNextReviewWithButton(
+  progress: LearningProgress,
+  answer: AnswerButton,
+  algorithm: SRSAlgorithm = 'sm2_anki'
+): LearningProgress {
+  return calcNextReview(progress, answer, algorithm);
+}
+
+// 今日の復習対象を取得（復習期限を過ぎた学習済み単語のみ、緊急度順）
 export function getReviewDueTerms(
   terms: Term[],
   progress: Record<string, LearningProgress>
 ): Term[] {
-  const today = new Date().toISOString().split('T')[0];
-  return terms.filter(term => {
+  // 復習期限を過ぎた学習済み単語のみをフィルタリング
+  const dueTerms = terms.filter(term => {
     const p = progress[term.term_id];
-    if (!p) return true; // 未学習
-    return p.next_review <= today;
+    // 未学習の単語は除外（復習ではなく新規学習が必要）
+    if (!p) return false;
+    // 復習期限を過ぎているかチェック（分単位も対応）
+    return isReviewDue(p);
   });
+  
+  // 緊急度順にソート（期限超過が大きい順、次に間違い率が高い順）
+  dueTerms.sort((a, b) => {
+    const pA = progress[a.term_id];
+    const pB = progress[b.term_id];
+    
+    // 緊急度を計算（分単位も対応）
+    const urgencyA = getReviewUrgency(pA);
+    const urgencyB = getReviewUrgency(pB);
+    
+    // 緊急度が高い順
+    if (urgencyA !== urgencyB) {
+      return urgencyB - urgencyA;
+    }
+    
+    // 同じ緊急度の場合は間違い率が高い順
+    const totalA = pA.correct_count + pA.incorrect_count;
+    const totalB = pB.correct_count + pB.incorrect_count;
+    const errorRateA = totalA > 0 ? pA.incorrect_count / totalA : 0;
+    const errorRateB = totalB > 0 ? pB.incorrect_count / totalB : 0;
+    
+    return errorRateB - errorRateA;
+  });
+  
+  return dueTerms;
 }
 
 // QA検証
@@ -300,12 +304,12 @@ export function getStatistics(
         mastered++;
       }
       
+      // 復習期限を過ぎた学習済み単語のみカウント
       if (p.next_review <= today) {
         reviewDue++;
       }
-    } else {
-      reviewDue++; // 未学習も復習対象
     }
+    // 未学習は復習対象に含めない（新規学習が必要）
   }
   
   return {
@@ -318,7 +322,25 @@ export function getStatistics(
 }
 
 // Term型を再エクスポート
-export type { Term, Example, Relation, LearningProgress, TopicCode } from './types';
+export type { Term, Example, Relation, LearningProgress, TopicCode, SRSAlgorithm } from './types';
+export { type AnswerButton } from './srs-algorithms';
+
+// SRS設定の保存・読み込み
+export async function saveSRSSettings(settings: { algorithm: SRSAlgorithm; targetRetention?: number }): Promise<void> {
+  await AsyncStorage.setItem(STORAGE_KEYS.SRS_SETTINGS, JSON.stringify(settings));
+}
+
+export async function loadSRSSettings(): Promise<{ algorithm: SRSAlgorithm; targetRetention: number }> {
+  const data = await AsyncStorage.getItem(STORAGE_KEYS.SRS_SETTINGS);
+  if (data) {
+    const parsed = JSON.parse(data);
+    return {
+      algorithm: parsed.algorithm || 'sm2_anki',
+      targetRetention: parsed.targetRetention || 0.9,
+    };
+  }
+  return { algorithm: 'sm2_anki', targetRetention: 0.9 };
+}
 
 // dataStoreオブジェクト（ゲームストアから使用）
 class DataStore {
@@ -326,11 +348,14 @@ class DataStore {
   private examples: Example[] = examplesData as Example[];
   private relations: Relation[] = relationsData as Relation[];
   private progress: Record<string, LearningProgress> = {};
+  private srsAlgorithm: SRSAlgorithm = 'sm2_anki';
   private initialized = false;
 
   async initialize(): Promise<void> {
     if (this.initialized) return;
     this.progress = await loadProgress();
+    const srsSettings = await loadSRSSettings();
+    this.srsAlgorithm = srsSettings.algorithm;
     this.initialized = true;
   }
 
@@ -354,6 +379,15 @@ class DataStore {
     return this.progress;
   }
 
+  getSRSAlgorithm(): SRSAlgorithm {
+    return this.srsAlgorithm;
+  }
+
+  async setSRSAlgorithm(algorithm: SRSAlgorithm): Promise<void> {
+    this.srsAlgorithm = algorithm;
+    await saveSRSSettings({ algorithm });
+  }
+
   async recordStudy(termId: string, correct: boolean): Promise<void> {
     console.log('[DataStore] recordStudy called:', termId, correct);
     console.log('[DataStore] initialized:', this.initialized);
@@ -374,9 +408,9 @@ class DataStore {
       progress = createInitialProgress(id);
     }
 
-    // SM-2アルゴリズムで次回復習日を計算
-    const quality = correct ? 4 : 1;
-    const result = calculateNextReview(progress, quality as 0 | 1 | 2 | 3 | 4 | 5);
+    // 選択されたアルゴリズムで次回復習日を計算
+    const answer: AnswerButton = correct ? 'good' : 'again';
+    const result = calculateNextReviewWithButton(progress, answer, this.srsAlgorithm);
 
     this.progress[id] = result;
     console.log('[DataStore] Saving progress for term:', id, 'result:', result);

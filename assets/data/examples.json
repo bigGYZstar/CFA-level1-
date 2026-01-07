@@ -326,8 +326,8 @@
   },
   {
     "term_id": "TERM0066",
-    "example_en": "An analyst must interpret the Return on Equity when evaluating a company's financial health under IFRS.",
-    "example_jp": "アナリストは、IFRS基準で企業の財務健全性を評価する際に「株主資本利益率」をinterpretする必要がある。"
+    "example_en": "The company's return on equity of 15% indicates that it generates $0.15 in profit for every dollar of shareholder equity.",
+    "example_jp": "企業の自己資本利益率が15%であることは、株主エクイティ1ドルごとに0.15ドルの利益を生成することを示している。"
   },
   {
     "term_id": "TERM0067",
@@ -446,8 +446,8 @@
   },
   {
     "term_id": "TERM0090",
-    "example_en": "The candidate should be able to calculate the concept of Financial Leverage in the context of the going concern assumption.",
-    "example_jp": "受験者は、the going concern assumptionの文脈で「財務レバレッジ」の概念をcalculateできる必要がある。"
+    "example_en": "A company with high financial leverage uses significant debt financing, which amplifies both gains and losses for equity holders.",
+    "example_jp": "高い財務レバレッジを持つ企業は有意な負債融資を使用し、これは株主の利益と損失の両方を増幅する。"
   },
   {
     "term_id": "TERM0091",
@@ -521,8 +521,8 @@
   },
   {
     "term_id": "TERM0105",
-    "example_en": "When using a DDM, it is crucial to assume the Enterprise Value to arrive at a reasonable intrinsic value.",
-    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「企業価値」をassumeすることが不可欠である。"
+    "example_en": "The company's enterprise value of $10 billion was calculated by adding market capitalization and debt, then subtracting cash.",
+    "example_jp": "企業の100億ドルのエンタープライズ・バリューは、時価総額と負債を加算し、現金を差し引くことで計算された。"
   },
   {
     "term_id": "TERM0106",
@@ -536,8 +536,8 @@
   },
   {
     "term_id": "TERM0108",
-    "example_en": "When using a DDM, it is crucial to estimate the Dividend Discount Model to arrive at a reasonable intrinsic value.",
-    "example_jp": "DDMを使用する際、妥当な本質的価値を算出するためには「配当割引モデル」をestimateすることが不可欠である。"
+    "example_en": "Using the dividend discount model, the analyst valued the stock at $50 based on expected future dividends and a required return of 10%.",
+    "example_jp": "配当割引モデルを使用して、アナリストは予想される将来配当と10%の必要収益率に基づいて株式を50ドルで評価した。"
   },
   {
     "term_id": "TERM0109",
@@ -731,23 +731,23 @@
   },
   {
     "term_id": "TERM0147",
-    "example_en": "The candidate should be able to compare the concept of Forward Contract in the context of the required return.",
-    "example_jp": "受験者は、the required returnの文脈で「先渡契約」の概念をcompareできる必要がある。"
+    "example_en": "The company entered into a forward contract to purchase 1 million euros at a fixed rate of $1.10 per euro in six months.",
+    "example_jp": "企業は6ヶ月後に1ユーロ当たり1.10ドルの固定レートで100万ユーロを購入するための先渡契約を締結した。"
   },
   {
     "term_id": "TERM0148",
-    "example_en": "The candidate should be able to calculate the concept of Futures Contract in the context of the impact on the IPS.",
-    "example_jp": "受験者は、the impact on the IPSの文脈で「先物契約」の概念をcalculateできる必要がある。"
+    "example_en": "The trader bought S&P 500 futures contracts to gain exposure to the broad market, with daily mark-to-market settlement.",
+    "example_jp": "トレーダーはS&P 500先物契約を購入して広い市場へのエクスポージャーを得、毎日のマーク・トゥ・マーケット決済を行った。"
   },
   {
     "term_id": "TERM0149",
-    "example_en": "The candidate should be able to interpret the concept of Option in the context of the effect on ROE.",
-    "example_jp": "受験者は、the effect on ROEの文脈で「オプション」の概念をinterpretできる必要がある。"
+    "example_en": "The investor purchased a call option on the stock, giving them the right to buy shares at a predetermined price.",
+    "example_jp": "投資家は株式のコール・オプションを購入し、事前に決定された価格で株式を買う権利を与えた。"
   },
   {
     "term_id": "TERM0150",
-    "example_en": "The candidate should be able to interpret the concept of Call Option in the context of the credit spread.",
-    "example_jp": "受験者は、the credit spreadの文脈で「コールオプション」の概念をinterpretできる必要がある。"
+    "example_en": "An investor purchased a call option on Tesla stock with a strike price of $200, allowing them to buy shares at that price before expiration.",
+    "example_jp": "投資家はテスラ株のストライク価格200ドルのコール・オプションを購入し、満期前にその価格で株式を買う権利を得た。"
   },
   {
     "term_id": "TERM0151",
@@ -796,13 +796,13 @@
   },
   {
     "term_id": "TERM0160",
-    "example_en": "The candidate should be able to describe the concept of Interest Rate Swap in the context of the effect on ROE.",
-    "example_jp": "受験者は、the effect on ROEの文脈で「金利スワップ」の概念をdescribeできる必要がある。"
+    "example_en": "The company entered into an interest rate swap to exchange floating rate payments for fixed rate payments, reducing interest rate risk.",
+    "example_jp": "企業は変動金利支払いを固定金利支払いと交換する金利スワップを締結し、金利リスクを軽減した。"
   },
   {
     "term_id": "TERM0161",
-    "example_en": "The candidate should be able to describe the concept of Currency Swap in the context of the impact on the IPS.",
-    "example_jp": "受験者は、the impact on the IPSの文脈で「通貨スワップ」の概念をdescribeできる必要がある。"
+    "example_en": "A US company and a Japanese company entered into a currency swap to exchange dollar-denominated payments for yen-denominated payments.",
+    "example_jp": "米国企業と日本企業は、ドル建ての支払いを円建ての支払いと交換するために通貨スワップを締結した。"
   },
   {
     "term_id": "TERM0162",
@@ -816,8 +816,8 @@
   },
   {
     "term_id": "TERM0164",
-    "example_en": "The candidate should be able to assume the concept of Arbitrage in the context of the impact on the IPS.",
-    "example_jp": "受験者は、the impact on the IPSの文脈で「裁定取引」の概念をassumeできる必要がある。"
+    "example_en": "A trader identified an arbitrage opportunity by buying gold futures on one exchange and simultaneously selling them on another at a higher price.",
+    "example_jp": "トレーダーは、あるエクスチェンジで金先物を買い、別のエクスチェンジでより高い価格で同時に売ることで、アービトラージ機会を特定した。"
   },
   {
     "term_id": "TERM0165",
@@ -866,8 +866,8 @@
   },
   {
     "term_id": "TERM0174",
-    "example_en": "The candidate should be able to estimate the concept of Leveraged Buyout in the context of the impact on the IPS.",
-    "example_jp": "受験者は、the impact on the IPSの文脈で「レバレッジド・バイアウト」の概念をestimateできる必要がある。"
+    "example_en": "The private equity firm completed a leveraged buyout of the manufacturing company, using $200 million in equity and $800 million in debt.",
+    "example_jp": "プライベート・エクイティ企業は、2億ドルのエクイティと8億ドルの負債を使用して、製造企業のレバレッジド・バイアウトを完了した。"
   },
   {
     "term_id": "TERM0175",
@@ -997,167 +997,197 @@
   {
     "term_id": "TERM0201",
     "example_en": "Companies raise capital in the primary market through initial public offerings (IPOs) and seasoned equity offerings (SEOs).",
-    "example_ja": "企業は新規株式公開（IPO）や公募増資（SEO）を通じて発行市場で資金を調達する。"
+    "example_ja": "企業は新規株式公開（IPO）や公募増資（SEO）を通じて発行市場で資金を調達する。",
+    "example_jp": "一次市場はIPOが発生する場所であり、企業が初めて公開市場から資本を調達できる。"
   },
   {
     "term_id": "TERM0202",
-    "example_en": "Most stock trading occurs in the secondary market, where investors buy and sell shares among themselves.",
-    "example_ja": "株式取引の大部分は流通市場で行われ、投資家同士が株式を売買する。"
+    "example_en": "The secondary market allows investors to buy and sell securities after their initial issuance in the primary market.",
+    "example_ja": "株式取引の大部分は流通市場で行われ、投資家同士が株式を売買する。",
+    "example_jp": "二次市場は、投資家が一次市場での初期発行後に有価証券を売買することを可能にする。"
   },
   {
     "term_id": "TERM0203",
     "example_en": "A broker executes buy and sell orders on behalf of clients and earns a commission for each transaction.",
-    "example_ja": "ブローカーは顧客に代わって売買注文を執行し、各取引に対して手数料を得る。"
+    "example_ja": "ブローカーは顧客に代わって売買注文を執行し、各取引に対して手数料を得る。",
+    "example_jp": "ブローカーは顧客に代わって売買注文を執行し、各取引ごとに手数料を得る。"
   },
   {
     "term_id": "TERM0204",
     "example_en": "A dealer maintains an inventory of securities and profits from the bid-ask spread.",
-    "example_ja": "ディーラーは証券の在庫を保有し、ビッド・アスク・スプレッドから利益を得る。"
+    "example_ja": "ディーラーは証券の在庫を保有し、ビッド・アスク・スプレッドから利益を得る。",
+    "example_jp": "ディーラーは有価証券の在庫を保有し、ビッド・アスク・スプレッドから利益を得る。"
   },
   {
     "term_id": "TERM0205",
     "example_en": "Market makers provide liquidity by continuously quoting bid and ask prices for specific securities.",
-    "example_ja": "マーケットメーカーは特定の証券について継続的にビッド価格とアスク価格を提示することで流動性を提供する。"
+    "example_ja": "マーケットメーカーは特定の証券について継続的にビッド価格とアスク価格を提示することで流動性を提供する。",
+    "example_jp": "マーケットメーカーは、特定の有価証券に対してビッド価格とアスク価格を継続的に提示することで流動性を提供する。"
   },
   {
     "term_id": "TERM0206",
     "example_en": "A narrow bid-ask spread indicates high liquidity and lower transaction costs for investors.",
-    "example_ja": "狭いビッド・アスク・スプレッドは高い流動性と投資家にとっての低い取引コストを示す。"
+    "example_ja": "狭いビッド・アスク・スプレッドは高い流動性と投資家にとっての低い取引コストを示す。",
+    "example_jp": "狭いビッド・アスク・スプレッドは、高い流動性と投資家にとって低い取引コストを示す。"
   },
   {
     "term_id": "TERM0207",
-    "example_en": "A market order guarantees execution but not the price at which the trade will be executed.",
-    "example_ja": "成行注文は執行を保証するが、取引が執行される価格は保証しない。"
+    "example_en": "The investor placed a market order to buy 100 shares immediately at the best available price.",
+    "example_ja": "成行注文は執行を保証するが、取引が執行される価格は保証しない。",
+    "example_jp": "投資家は利用可能な最良価格で直ちに100株を買う成行注文を発注した。"
   },
   {
     "term_id": "TERM0208",
-    "example_en": "A limit order to buy at $50 will only be executed if the market price falls to $50 or below.",
-    "example_ja": "50ドルでの買い指値注文は、市場価格が50ドル以下に下落した場合にのみ執行される。"
+    "example_en": "The investor placed a limit buy order for 1,000 shares at $50, ensuring they would not pay more than that price.",
+    "example_ja": "50ドルでの買い指値注文は、市場価格が50ドル以下に下落した場合にのみ執行される。",
+    "example_jp": "投資家は1,000株を50ドルで指値買い注文を発注し、その価格以上を支払わないことを保証した。"
   },
   {
     "term_id": "TERM0209",
     "example_en": "An investor places a stop-loss order at $45 to limit potential losses if the stock price declines.",
-    "example_ja": "投資家は株価が下落した場合の潜在的損失を限定するために45ドルでストップロス注文を出す。"
+    "example_ja": "投資家は株価が下落した場合の潜在的損失を限定するために45ドルでストップロス注文を出す。",
+    "example_jp": "投資家は、株価が下落した場合の潜在的な損失を限定するために、45ドルでストップロス注文を発注する。"
   },
   {
     "term_id": "TERM0210",
     "example_en": "Margin trading allows investors to leverage their positions, amplifying both gains and losses.",
-    "example_ja": "信用取引により投資家はポジションにレバレッジをかけることができ、利益と損失の両方が拡大する。"
+    "example_ja": "信用取引により投資家はポジションにレバレッジをかけることができ、利益と損失の両方が拡大する。",
+    "example_jp": "信用取引は投資家がポジションにレバレッジをかけることを可能にし、利益と損失の両方を増幅させる。"
   },
   {
     "term_id": "TERM0211",
     "example_en": "The Dow Jones Industrial Average is a price-weighted index where higher-priced stocks have greater influence.",
-    "example_ja": "ダウ・ジョーンズ工業株平均は株価加重指数であり、高株価の銘柄がより大きな影響力を持つ。"
+    "example_ja": "ダウ・ジョーンズ工業株平均は株価加重指数であり、高株価の銘柄がより大きな影響力を持つ。",
+    "example_jp": "ダウ・ジョーンズ工業株平均は、株価の高い銘柄がより大きな影響力を持つ株価加重指数である。"
   },
   {
     "term_id": "TERM0212",
     "example_en": "The S&P 500 is a market-cap weighted index where larger companies have greater weight.",
-    "example_ja": "S&P500は時価総額加重指数であり、大企業がより大きなウェイトを持つ。"
+    "example_ja": "S&P500は時価総額加重指数であり、大企業がより大きなウェイトを持つ。",
+    "example_jp": "S&P 500は、大企業がより大きなウェイトを持つ時価総額加重指数である。"
   },
   {
     "term_id": "TERM0213",
     "example_en": "An equal-weighted index gives the same weight to all constituent stocks regardless of their market capitalization.",
-    "example_ja": "均等加重指数は時価総額に関係なく、すべての構成銘柄に同じウェイトを与える。"
+    "example_ja": "均等加重指数は時価総額に関係なく、すべての構成銘柄に同じウェイトを与える。",
+    "example_jp": "等加重指数は、時価総額に関係なく、すべての構成銘柄に同じウェイトを与える。"
   },
   {
     "term_id": "TERM0214",
     "example_en": "Index rebalancing can cause temporary price movements in stocks being added to or removed from the index.",
-    "example_ja": "指数リバランスは、指数に追加または除外される銘柄に一時的な価格変動を引き起こす可能性がある。"
+    "example_ja": "指数リバランスは、指数に追加または除外される銘柄に一時的な価格変動を引き起こす可能性がある。",
+    "example_jp": "指数のリバランスは、指数に追加または除外される銘柄に一時的な価格変動を引き起こす可能性がある。"
   },
   {
     "term_id": "TERM0215",
     "example_en": "A company with net income of $100 million and 50 million shares outstanding has an EPS of $2.00.",
-    "example_ja": "純利益1億ドル、発行済株式数5,000万株の企業のEPSは2.00ドルである。"
+    "example_ja": "純利益1億ドル、発行済株式数5,000万株の企業のEPSは2.00ドルである。",
+    "example_jp": "純利益1億ドル、発行済株式数5,000万株の企業のEPSは2.00ドルである。"
   },
   {
     "term_id": "TERM0216",
     "example_en": "Book value per share represents the accounting value of equity attributable to each share.",
-    "example_ja": "一株当たり純資産は、各株式に帰属する株主資本の会計上の価値を表す。"
+    "example_ja": "一株当たり純資産は、各株式に帰属する株主資本の会計上の価値を表す。",
+    "example_jp": "1株当たり純資産価値は、各株式に帰属する株主資本の会計上の価値を表す。"
   },
   {
     "term_id": "TERM0217",
     "example_en": "The price-to-sales ratio is useful for valuing companies with negative earnings.",
-    "example_ja": "株価売上高倍率は、利益がマイナスの企業を評価する際に有用である。"
+    "example_ja": "株価売上高倍率は、利益がマイナスの企業を評価する際に有用である。",
+    "example_jp": "株価売上高倍率は、赤字企業の評価に有用である。"
   },
   {
     "term_id": "TERM0218",
     "example_en": "The price-to-cash flow ratio is less susceptible to accounting manipulation than the P/E ratio.",
-    "example_ja": "株価キャッシュフロー倍率はP/E比率よりも会計操作の影響を受けにくい。"
+    "example_ja": "株価キャッシュフロー倍率はP/E比率よりも会計操作の影響を受けにくい。",
+    "example_jp": "株価キャッシュフロー倍率は、PERよりも会計操作の影響を受けにくい。"
   },
   {
     "term_id": "TERM0219",
     "example_en": "EV/EBITDA is commonly used in M&A analysis to compare companies with different capital structures.",
-    "example_ja": "EV/EBITDAは異なる資本構成の企業を比較するためにM&A分析で一般的に使用される。"
+    "example_ja": "EV/EBITDAは異なる資本構成の企業を比較するためにM&A分析で一般的に使用される。",
+    "example_jp": "EV/EBITDAは、異なる資本構成を持つ企業を比較するためにM&A分析で一般的に使用される。"
   },
   {
     "term_id": "TERM0220",
     "example_en": "A PEG ratio below 1.0 suggests the stock may be undervalued relative to its growth prospects.",
-    "example_ja": "PEGレシオが1.0未満であることは、株式が成長見通しに対して割安である可能性を示唆する。"
+    "example_ja": "PEGレシオが1.0未満であることは、株式が成長見通しに対して割安である可能性を示唆する。",
+    "example_jp": "PEGレシオが1.0未満であれば、その株式は成長見通しに対して割安である可能性を示唆する。"
   },
   {
     "term_id": "TERM0221",
     "example_en": "The justified P/E ratio is derived from the Gordon growth model and reflects fundamental value.",
-    "example_ja": "正当化P/Eはゴードン成長モデルから導出され、ファンダメンタル価値を反映する。"
+    "example_ja": "正当化P/Eはゴードン成長モデルから導出され、ファンダメンタル価値を反映する。",
+    "example_jp": "正当化PERはゴードン成長モデルから導出され、ファンダメンタル価値を反映する。"
   },
   {
     "term_id": "TERM0222",
     "example_en": "Terminal value often represents more than 50% of the total value in a DCF analysis.",
-    "example_ja": "継続価値はDCF分析において総価値の50%以上を占めることが多い。"
+    "example_ja": "継続価値はDCF分析において総価値の50%以上を占めることが多い。",
+    "example_jp": "ターミナルバリューは、DCF分析における総価値の50%以上を占めることが多い。"
   },
   {
     "term_id": "TERM0223",
     "example_en": "The required rate of return is used as the discount rate in equity valuation models.",
-    "example_ja": "要求収益率は株式評価モデルにおいて割引率として使用される。"
+    "example_ja": "要求収益率は株式評価モデルにおいて割引率として使用される。",
+    "example_jp": "要求収益率は、株式評価モデルにおいて割引率として使用される。"
   },
   {
     "term_id": "TERM0224",
     "example_en": "A company with ROE of 15% and retention ratio of 60% has a sustainable growth rate of 9%.",
-    "example_ja": "ROE15%、内部留保率60%の企業の持続可能成長率は9%である。"
+    "example_ja": "ROE15%、内部留保率60%の企業の持続可能成長率は9%である。",
+    "example_jp": "ROE15%、内部留保率60%の企業のサステイナブル成長率は9%である。"
   },
   {
     "term_id": "TERM0225",
     "example_en": "Callable stock gives the issuer the right to repurchase shares at a predetermined price.",
-    "example_ja": "コーラブル株式は発行企業に所定の価格で株式を買い戻す権利を与える。"
+    "example_ja": "コーラブル株式は発行企業に所定の価格で株式を買い戻す権利を与える。",
+    "example_jp": "コーラブル株式は、発行者に所定の価格で株式を買い戻す権利を与える。"
   },
   {
     "term_id": "TERM0226",
     "example_en": "Putable stock provides downside protection by allowing investors to sell shares back to the issuer.",
-    "example_ja": "プッタブル株式は投資家が発行企業に株式を売り戻すことを可能にし、下落リスクからの保護を提供する。"
+    "example_ja": "プッタブル株式は投資家が発行企業に株式を売り戻すことを可能にし、下落リスクからの保護を提供する。",
+    "example_jp": "プッタブル株式は、投資家が発行者に株式を売り戻すことを可能にすることで、下値保護を提供する。"
   },
   {
     "term_id": "TERM0227",
     "example_en": "Convertible preferred stock allows holders to convert their shares into common stock at a specified ratio.",
-    "example_ja": "転換優先株は保有者が所定の比率で普通株に転換することを可能にする。"
+    "example_ja": "転換優先株は保有者が所定の比率で普通株に転換することを可能にする。",
+    "example_jp": "転換優先株式は、保有者が指定された比率で普通株式に転換することを可能にする。"
   },
   {
     "term_id": "TERM0228",
     "example_en": "Cumulative preferred stockholders must receive all unpaid dividends before common stockholders receive any dividends.",
-    "example_ja": "累積優先株主は、普通株主が配当を受け取る前に、すべての未払配当を受け取る必要がある。"
+    "example_ja": "累積優先株主は、普通株主が配当を受け取る前に、すべての未払配当を受け取る必要がある。",
+    "example_jp": "累積優先株主は、普通株主が配当を受け取る前に、すべての未払い配当を受け取る必要がある。"
   },
   {
     "term_id": "TERM0229",
-    "example_en": "Loss aversion causes investors to hold losing positions too long, hoping to break even.",
-    "example_ja": "損失回避により、投資家は損益分岐点に戻ることを期待して、損失ポジションを長く保有しすぎる。"
+    "example_en": "Loss aversion explains why investors often hold losing positions too long, hoping to recover their losses.",
+    "example_ja": "損失回避により、投資家は損益分岐点に戻ることを期待して、損失ポジションを長く保有しすぎる。",
+    "example_jp": "損失回避は、投資家が損失を回復することを望んで、負けポジションを長く保有する傾向がある理由を説明する。"
   },
   {
     "term_id": "TERM0230",
-    "example_en": "Herding behavior can lead to market bubbles as investors follow the crowd rather than their own analysis.",
-    "example_ja": "群集行動は、投資家が自身の分析ではなく群衆に従うことで、市場バブルを引き起こす可能性がある。"
+    "example_en": "During market bubbles, herding behavior causes investors to follow the crowd, driving prices to unsustainable levels.",
+    "example_ja": "群集行動は、投資家が自身の分析ではなく群衆に従うことで、市場バブルを引き起こす可能性がある。",
+    "example_jp": "市場バブル中、ハーディング行動は投資家に群衆に従うことを引き起こし、価格を持続不可能なレベルに駆り立てる。"
   },
   {
     "term_id": "TERM0231",
-    "example_en": "Understanding Accelerated Book Build is essential for CFA Level I candidates.",
-    "example_jp": "加速ブックビルディングの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The technology company completed an accelerated book build in just two days, raising $500 million from institutional investors.",
+    "example_jp": "そのテクノロジー企業は、わずか2日間で加速度的な帳簿構築を完了し、機関投資家から5億ドルを調達した。"
   },
   {
     "term_id": "TERM0232",
-    "example_en": "Understanding Active Investment is essential for CFA Level I candidates.",
-    "example_jp": "アクティブ投資の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The fund manager employs an active investment strategy, frequently trading securities to outperform the S&P 500 index.",
+    "example_jp": "ファンドマネージャーはアクティブ投資戦略を採用し、S&P 500インデックスを上回るパフォーマンスを実現するために頻繁に有価証券を取引している。"
   },
   {
     "term_id": "TERM0233",
-    "example_en": "Understanding Active Return is essential for CFA Level I candidates.",
-    "example_jp": "アクティブリターンの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The portfolio achieved an active return of 3% relative to its benchmark, demonstrating the manager's skill in security selection.",
+    "example_jp": "そのポートフォリオはベンチマークに対して3%のアクティブリターンを達成し、マネージャーの銘柄選別スキルを実証した。"
   },
   {
     "term_id": "TERM0234",
@@ -1166,28 +1196,28 @@
   },
   {
     "term_id": "TERM0235",
-    "example_en": "Understanding Allocationally Efficient is essential for CFA Level I candidates.",
-    "example_jp": "配分効率的の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A well-functioning capital market exhibits allocational efficiency by directing capital to the most productive investments.",
+    "example_jp": "機能的に優れた資本市場は、配分効率性を示すことで、資本を最も生産性の高い投資に向ける。"
   },
   {
     "term_id": "TERM0236",
-    "example_en": "Understanding Alternative Investment Markets is essential for CFA Level I candidates.",
-    "example_jp": "オルタナティブ投資市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Institutional investors increasingly allocate capital to alternative investment markets, including private equity and hedge funds, to diversify their portfolios.",
+    "example_jp": "機関投資家は、ポートフォリオを多様化するために、プライベートエクイティやヘッジファンドを含むオルタナティブ投資市場に資本を配分する傾向が増加している。"
   },
   {
     "term_id": "TERM0237",
-    "example_en": "Understanding Alternative Trading Systems is essential for CFA Level I candidates.",
-    "example_jp": "代替取引システムの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Many brokers route orders through alternative trading systems to achieve better execution prices and lower transaction costs.",
+    "example_jp": "多くのブローカーは、より良い執行価格と低い取引コストを実現するために、オルタナティブ取引システムを通じて注文をルーティングしている。"
   },
   {
     "term_id": "TERM0238",
-    "example_en": "Understanding American Depository Receipt is essential for CFA Level I candidates.",
-    "example_jp": "米国預託証券の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Investors can purchase American depository receipts of Sony Corporation on the NYSE, allowing them to invest in Japanese equities without currency conversion.",
+    "example_jp": "投資家はNYSEでソニー株式会社の米国預託証券を購入でき、通貨換算なしに日本株に投資することができる。"
   },
   {
     "term_id": "TERM0239",
-    "example_en": "Understanding American Depository Share is essential for CFA Level I candidates.",
-    "example_jp": "米国預託株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Each American depository receipt represents a fixed number of American depository shares held in custody by a depository bank.",
+    "example_jp": "各米国預託証券は、預託銀行が保管する一定数の米国預託証券対象株式を表している。"
   },
   {
     "term_id": "TERM0240",
@@ -1196,63 +1226,63 @@
   },
   {
     "term_id": "TERM0242",
-    "example_en": "Understanding Arbitrageurs is essential for CFA Level I candidates.",
-    "example_jp": "裁定取引者の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Arbitrageurs quickly exploit pricing inefficiencies between related securities, helping to align market prices.",
+    "example_jp": "アービトラージャーは関連有価証券間の価格効率性を素早く利用し、市場価格の調整を支援する。"
   },
   {
     "term_id": "TERM0243",
-    "example_en": "Understanding Ask Size is essential for CFA Level I candidates.",
-    "example_jp": "売り気配数量の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The ask size is 5,000 shares at $75, indicating the seller will provide up to 5,000 shares at that price.",
+    "example_jp": "アスク・サイズは75ドルで5,000株であり、売り手がその価格で最大5,000株を提供することを示している。"
   },
   {
     "term_id": "TERM0244",
-    "example_en": "Understanding Asset-Based Valuation Models is essential for CFA Level I candidates.",
-    "example_jp": "資産ベース評価モデルの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The analyst used an asset-based valuation model to determine that the company's net asset value per share was $45.",
+    "example_jp": "アナリストは資産ベース評価モデルを使用して、企業の1株当たり純資産価値が45ドルであることを決定した。"
   },
   {
     "term_id": "TERM0245",
-    "example_en": "Understanding Basket of Listed Depository Receipts is essential for CFA Level I candidates.",
-    "example_jp": "上場預託証券バスケットの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The BLDR fund provides investors with exposure to a diversified basket of international depository receipts in a single security.",
+    "example_jp": "BLDRファンドは、投資家に単一の有価証券で国際預託証券の多様化されたバスケットへのエクスポージャーを提供する。"
   },
   {
     "term_id": "TERM0246",
-    "example_en": "Understanding Behavioral Finance is essential for CFA Level I candidates.",
-    "example_jp": "行動ファイナンスの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Behavioral finance explains why investors often hold losing positions too long, a phenomenon known as loss aversion.",
+    "example_jp": "行動ファイナンスは、投資家が損失回避として知られる現象である負けポジションを長く保有する理由を説明する。"
   },
   {
     "term_id": "TERM0247",
-    "example_en": "Understanding Behind the Market is essential for CFA Level I candidates.",
-    "example_jp": "市場より不利な価格の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor placed a limit buy order behind the market, hoping to purchase the stock at a lower price than the current best bid.",
+    "example_jp": "投資家は市場より悪い価格で指値買い注文を発注し、現在の最良気配値より低い価格で株式を購入することを望んだ。"
   },
   {
     "term_id": "TERM0248",
-    "example_en": "Understanding Best Bid is essential for CFA Level I candidates.",
-    "example_jp": "最良買い気配の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The best bid for the stock is $99.50, representing the highest price any buyer is currently willing to pay.",
+    "example_jp": "その株式の最良気配値は99.50ドルであり、現在、買い手が支払う意思がある最高価格を表している。"
   },
   {
     "term_id": "TERM0249",
-    "example_en": "Understanding Best Effort Offering is essential for CFA Level I candidates.",
-    "example_jp": "ベストエフォート引受の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company issued securities through a best effort offering, where the investment bank agreed to sell as many shares as possible without guaranteeing a minimum amount.",
+    "example_jp": "企業はベストエフォート引受を通じて有価証券を発行し、投資銀行は最小額を保証することなく、可能な限り多くの株式を売却することに同意した。"
   },
   {
     "term_id": "TERM0250",
-    "example_en": "Understanding Best Offer is essential for CFA Level I candidates.",
-    "example_jp": "最良売り気配の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The best offer for the security is $100.25, which is the lowest price any seller is currently willing to accept.",
+    "example_jp": "その有価証券の最良気配値は100.25ドルであり、現在、売り手が受け入れる意思がある最低価格である。"
   },
   {
     "term_id": "TERM0251",
-    "example_en": "Understanding Bid Size is essential for CFA Level I candidates.",
-    "example_jp": "買い気配数量の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The bid size is 10,000 shares at $50, meaning the buyer will purchase up to 10,000 shares at that price.",
+    "example_jp": "ビッド・サイズは50ドルで10,000株であり、買い手がその価格で最大10,000株を購入することを意味する。"
   },
   {
     "term_id": "TERM0252",
-    "example_en": "Understanding Block Brokers is essential for CFA Level I candidates.",
-    "example_jp": "ブロックブローカーの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The pension fund used a block broker to efficiently execute a $50 million equity trade without significantly impacting the market price.",
+    "example_jp": "年金基金はブロック・ブローカーを使用して、市場価格に大きな影響を与えることなく5,000万ドルのエクイティ取引を効率的に実行した。"
   },
   {
     "term_id": "TERM0253",
-    "example_en": "Understanding Blue Chip is essential for CFA Level I candidates.",
-    "example_jp": "優良株の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Investors often consider blue chip stocks like Microsoft and Coca-Cola as safer investments due to their strong financial positions and market dominance.",
+    "example_jp": "投資家は、マイクロソフトやコカ・コーラなどのブルーチップ株を、強い財務状況と市場支配力のためより安全な投資と見なすことが多い。"
   },
   {
     "term_id": "TERM0254",
@@ -1286,173 +1316,173 @@
   },
   {
     "term_id": "TERM0261",
-    "example_en": "Understanding Cannibalization is essential for CFA Level I candidates.",
-    "example_jp": "カニバリゼーションの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company's new smartphone model experienced cannibalization, as many customers simply upgraded from their previous model rather than switching from competitors.",
+    "example_jp": "企業の新しいスマートフォンモデルはカニバリゼーションを経験し、多くの顧客は競合他社から切り替えるのではなく、以前のモデルからアップグレードしただけであった。"
   },
   {
     "term_id": "TERM0262",
-    "example_en": "Understanding Capital Markets is essential for CFA Level I candidates.",
-    "example_jp": "資本市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The capital markets include stock exchanges and bond markets where long-term securities are traded between investors and corporations.",
+    "example_jp": "資本市場には、投資家と企業間で長期有価証券が取引される株式取引所と債券市場が含まれる。"
   },
   {
     "term_id": "TERM0263",
-    "example_en": "Understanding Carrying Value is essential for CFA Level I candidates.",
-    "example_jp": "帳簿価額の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The bond's carrying value increased each month as the discount was amortized over the remaining life of the bond.",
+    "example_jp": "債券の帳簿価額は毎月増加し、割引が債券の残存期間にわたって償却された。"
   },
   {
     "term_id": "TERM0264",
-    "example_en": "Understanding Clearing Instructions is essential for CFA Level I candidates.",
-    "example_jp": "清算指図の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The trader provided clearing instructions specifying that the settlement should occur through the Depository Trust Company (DTC).",
+    "example_jp": "トレーダーは決済がDepository Trust Company（DTC）を通じて行われることを指定するクリアリング指示を提供した。"
   },
   {
     "term_id": "TERM0265",
-    "example_en": "Understanding Clearinghouse is essential for CFA Level I candidates.",
-    "example_jp": "清算機関の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The clearinghouse guarantees that both the buyer and seller of a futures contract will fulfill their obligations, reducing counterparty risk.",
+    "example_jp": "クリアリング・ハウスは、先物契約の買い手と売り手の両方が義務を履行することを保証し、カウンターパーティ・リスクを軽減する。"
   },
   {
     "term_id": "TERM0266",
-    "example_en": "Understanding Commoditization is essential for CFA Level I candidates.",
-    "example_jp": "コモディティ化の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The smartphone market experienced commoditization as numerous manufacturers produced similar devices with comparable features and prices.",
+    "example_jp": "スマートフォン市場は、多くのメーカーが同様の機能と価格を持つ同様のデバイスを製造したため、コモディティ化を経験した。"
   },
   {
     "term_id": "TERM0267",
-    "example_en": "Understanding Commodity Swap is essential for CFA Level I candidates.",
-    "example_jp": "コモディティスワップの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "An airline entered into a commodity swap to exchange floating oil prices for fixed prices, protecting itself against fuel price volatility.",
+    "example_jp": "航空会社は、燃料価格の変動性から身を守るために、変動する石油価格を固定価格と交換するコモディティ・スワップを締結した。"
   },
   {
     "term_id": "TERM0268",
-    "example_en": "Understanding Common Shares is essential for CFA Level I candidates.",
-    "example_jp": "普通株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Common shares represent ownership in a company and typically grant shareholders voting rights and the right to receive dividends.",
+    "example_jp": "普通株式は企業の所有権を表し、通常、株主に投票権と配当を受け取る権利を付与する。"
   },
   {
     "term_id": "TERM0269",
-    "example_en": "Understanding Company Research Report is essential for CFA Level I candidates.",
-    "example_jp": "企業調査レポートの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The equity analyst published a company research report recommending a \"buy\" rating based on undervalued fundamentals and strong growth prospects.",
+    "example_jp": "エクイティアナリストは、過小評価されたファンダメンタルズと強い成長見通しに基づいて「買い」レーティングを推奨する企業調査レポートを発表した。"
   },
   {
     "term_id": "TERM0270",
-    "example_en": "Understanding Complete Markets is essential for CFA Level I candidates.",
-    "example_jp": "完備市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "In a complete market, investors can create any desired payoff structure by combining available securities, allowing for perfect hedging.",
+    "example_jp": "完全市場では、投資家は利用可能な有価証券を組み合わせることで、任意の望ましい利益構造を作成でき、完全なヘッジが可能である。"
   },
   {
     "term_id": "TERM0271",
-    "example_en": "Understanding Constituent Securities is essential for CFA Level I candidates.",
-    "example_jp": "構成銘柄の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The S&P 500 index comprises 500 constituent securities, each weighted according to its market capitalization.",
+    "example_jp": "S&P 500インデックスは500の構成証券で構成され、各証券は時価総額に従ってウェイト付けされている。"
   },
   {
     "term_id": "TERM0272",
-    "example_en": "Understanding Continuous Trading Market is essential for CFA Level I candidates.",
-    "example_jp": "継続取引市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Most major stock exchanges operate as continuous trading markets, allowing investors to buy and sell securities throughout the trading day.",
+    "example_jp": "ほとんどの主要株式取引所は連続取引市場として機能し、投資家が取引日中いつでも有価証券を売買できる。"
   },
   {
     "term_id": "TERM0273",
-    "example_en": "Understanding Contribution Margin is essential for CFA Level I candidates.",
-    "example_jp": "貢献利益の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The product has a contribution margin of $20 per unit, meaning each sale contributes $20 toward covering fixed costs and generating profit.",
+    "example_jp": "その製品は単位当たり20ドルの貢献利益を持ち、各販売が固定費をカバーし利益を生成するために20ドルを貢献することを意味する。"
   },
   {
     "term_id": "TERM0274",
-    "example_en": "Understanding Convertible Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "転換優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor purchased convertible preference shares that could be converted into 100 common shares at any time, providing upside potential.",
+    "example_jp": "投資家は、いつでも100株の普通株式に転換できる転換可能優先株式を購入し、上昇の可能性を提供した。"
   },
   {
     "term_id": "TERM0275",
-    "example_en": "Understanding Counterparty Risk is essential for CFA Level I candidates.",
-    "example_jp": "カウンターパーティリスクの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "When entering into a derivatives contract, investors must consider counterparty risk, as the other party may default on their obligations.",
+    "example_jp": "デリバティブ契約を締結する際、投資家は相手方が義務を果たさない可能性があるため、カウンターパーティ・リスクを考慮する必要がある。"
   },
   {
     "term_id": "TERM0276",
-    "example_en": "Understanding Crossing Networks is essential for CFA Level I candidates.",
-    "example_jp": "クロッシングネットワークの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Crossing networks match buyers and sellers at prices derived from other markets, providing execution without impacting the primary market price.",
+    "example_jp": "クロッシング・ネットワークは、他の市場から得た価格で買い手と売り手をマッチングし、主要市場価格に影響を与えることなく執行を提供する。"
   },
   {
     "term_id": "TERM0277",
-    "example_en": "Understanding Cumulative Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "累積優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Holders of cumulative preference shares have the right to receive all unpaid dividends before common shareholders receive any dividend payments.",
+    "example_jp": "累積優先株式の保有者は、普通株主が配当を受け取る前に、すべての未払い配当を受け取る権利を持つ。"
   },
   {
     "term_id": "TERM0278",
-    "example_en": "Understanding Cumulative Voting is essential for CFA Level I candidates.",
-    "example_jp": "累積投票制度の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Under cumulative voting, a shareholder with 1,000 shares can cast all 1,000 votes for a single board candidate, increasing their influence.",
+    "example_jp": "累積投票では、1,000株を保有する株主は、すべての1,000票を1人の取締役候補に投じることができ、影響力を増加させることができる。"
   },
   {
     "term_id": "TERM0280",
-    "example_en": "Understanding Dark Pools is essential for CFA Level I candidates.",
-    "example_jp": "ダークプールの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Large institutional investors often use dark pools to execute large trades without revealing their intentions to the broader market.",
+    "example_jp": "大型の機関投資家は、市場全体に意図を明かさずに大型取引を実行するために、ダーク・プールをよく使用する。"
   },
   {
     "term_id": "TERM0281",
-    "example_en": "Understanding Data Mining is essential for CFA Level I candidates.",
-    "example_jp": "データマイニングの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Researchers must be careful to avoid data mining, which can lead to false discoveries when searching for patterns in large datasets.",
+    "example_jp": "研究者は、大規模なデータセットでパターンを検索する際に誤った発見につながる可能性があるデータ・マイニングを避けるよう注意する必要がある。"
   },
   {
     "term_id": "TERM0282",
-    "example_en": "Understanding Data Snooping is essential for CFA Level I candidates.",
-    "example_jp": "データスヌーピングの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The analyst was accused of data snooping when they ran 100 different regression models and reported only the one with the highest R-squared.",
+    "example_jp": "アナリストは100の異なる回帰モデルを実行し、最も高いR二乗を持つモデルのみを報告したときに、データ・スヌーピングで非難された。"
   },
   {
     "term_id": "TERM0283",
-    "example_en": "Understanding Day Order is essential for CFA Level I candidates.",
-    "example_jp": "当日限り注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor placed a day order to buy 100 shares at $50, which would automatically expire at the end of the trading day if not filled.",
+    "example_jp": "投資家は100株を50ドルで買うデイ・オーダーを発注し、約定しない場合は取引日の終了時に自動的に失効する。"
   },
   {
     "term_id": "TERM0284",
-    "example_en": "Understanding Declaration Date is essential for CFA Level I candidates.",
-    "example_jp": "配当宣言日の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "On the declaration date, the company's board announced a quarterly dividend of $0.50 per share.",
+    "example_jp": "配当宣言日に、企業の取締役会は1株当たり0.50ドルの四半期配当を発表した。"
   },
   {
     "term_id": "TERM0285",
-    "example_en": "Understanding Degree of Financial Leverage is essential for CFA Level I candidates.",
-    "example_jp": "財務レバレッジ度の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A company with a high degree of financial leverage experiences larger changes in net income for a given change in operating income.",
+    "example_jp": "財務レバレッジの度合いが高い企業は、営業利益の変化に対して純利益の変化がより大きい。"
   },
   {
     "term_id": "TERM0286",
-    "example_en": "Understanding Degree of Operating Leverage is essential for CFA Level I candidates.",
-    "example_jp": "営業レバレッジ度の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A manufacturing company with high fixed costs has a high degree of operating leverage, meaning small changes in sales lead to large changes in operating income.",
+    "example_jp": "固定費が高い製造企業は営業レバレッジの度合いが高く、売上の小さな変化が営業利益の大きな変化につながることを意味する。"
   },
   {
     "term_id": "TERM0287",
-    "example_en": "Understanding Depository Bank is essential for CFA Level I candidates.",
-    "example_jp": "預託銀行の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A depository bank accepts customer deposits and uses those funds to provide loans to businesses and individuals.",
+    "example_jp": "預金銀行は顧客預金を受け入れ、それらの資金を企業と個人にローンを提供するために使用する。"
   },
   {
     "term_id": "TERM0288",
-    "example_en": "Understanding Depository Institutions is essential for CFA Level I candidates.",
-    "example_jp": "預金取扱機関の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Depository institutions such as commercial banks and credit unions are regulated by government agencies to ensure financial stability.",
+    "example_jp": "商業銀行や信用組合などの預金機関は、金融安定性を確保するために政府機関によって規制されている。"
   },
   {
     "term_id": "TERM0289",
-    "example_en": "Understanding Depository Receipt is essential for CFA Level I candidates.",
-    "example_jp": "預託証券の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Investors can purchase depository receipts of foreign companies, allowing them to invest internationally without dealing with foreign exchanges directly.",
+    "example_jp": "投資家は外国企業の預託証券を購入でき、外国取引所に直接対処することなく国際的に投資することができる。"
   },
   {
     "term_id": "TERM0290",
-    "example_en": "Understanding Derivative Pricing Rule is essential for CFA Level I candidates.",
-    "example_jp": "派生価格決定ルールの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Under the derivative pricing rule, a crossing network executes trades at prices derived from the primary market, ensuring fair execution.",
+    "example_jp": "デリバティブ価格設定ルールの下では、クロッシング・ネットワークは主要市場から導出された価格で取引を実行し、公正な執行を保証する。"
   },
   {
     "term_id": "TERM0291",
-    "example_en": "Understanding Discounted Cash Flow Models is essential for CFA Level I candidates.",
-    "example_jp": "割引キャッシュフローモデルの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The analyst used a discounted cash flow model to value the company by projecting future cash flows and discounting them at the appropriate rate.",
+    "example_jp": "アナリストは割引キャッシュフロー・モデルを使用して、将来のキャッシュフローを予測し、適切なレートで割引することで企業を評価した。"
   },
   {
     "term_id": "TERM0292",
-    "example_en": "Understanding Discriminatory Pricing Rule is essential for CFA Level I candidates.",
-    "example_jp": "差別価格決定ルールの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Under the discriminatory pricing rule, the first limit order to arrive at a price level determines the execution price for all trades at that level.",
+    "example_jp": "差別的価格設定ルールの下では、価格レベルに最初に到着した指値注文が、そのレベルでのすべての取引の執行価格を決定する。"
   },
   {
     "term_id": "TERM0293",
-    "example_en": "Understanding Display Size is essential for CFA Level I candidates.",
-    "example_jp": "表示数量の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The trader submitted an iceberg order with a display size of 1,000 shares, while the total order size was 10,000 shares.",
+    "example_jp": "トレーダーは表示サイズが1,000株のアイスバーグ・オーダーを提出し、総注文サイズは10,000株であった。"
   },
   {
     "term_id": "TERM0294",
-    "example_en": "Understanding Dividends is essential for CFA Level I candidates.",
-    "example_jp": "配当の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company paid quarterly dividends of $1.00 per share to shareholders, distributing a portion of its profits.",
+    "example_jp": "企業は株主に1株当たり1.00ドルの四半期配当を支払い、利益の一部を分配した。"
   },
   {
     "term_id": "TERM0295",
-    "example_en": "Understanding Divisor is essential for CFA Level I candidates.",
-    "example_jp": "除数の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The S&P 500 index uses a divisor to adjust for corporate actions such as stock splits, ensuring the index remains comparable over time.",
+    "example_jp": "S&P 500インデックスは、株式分割などの企業行動を調整するためにディビザーを使用し、インデックスが時間とともに比較可能なままであることを保証する。"
   },
   {
     "term_id": "TERM0296",
@@ -1461,38 +1491,38 @@
   },
   {
     "term_id": "TERM0297",
-    "example_en": "Understanding Earnings Surprise is essential for CFA Level I candidates.",
-    "example_jp": "アーニングサプライズの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company reported an earnings surprise, with actual EPS of $2.50 exceeding analyst expectations of $2.20.",
+    "example_jp": "企業は実際のEPSが2.50ドルでアナリスト予想の2.20ドルを上回るアーニング・サプライズを報告した。"
   },
   {
     "term_id": "TERM0298",
-    "example_en": "Understanding Economies of Scale is essential for CFA Level I candidates.",
-    "example_jp": "規模の経済の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Large manufacturers benefit from economies of scale, as they can spread fixed production costs across millions of units.",
+    "example_jp": "大型メーカーは規模の経済から利益を得、固定生産コストを数百万ユニットに分散できる。"
   },
   {
     "term_id": "TERM0299",
-    "example_en": "Understanding Economies of Scope is essential for CFA Level I candidates.",
-    "example_jp": "範囲の経済の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A conglomerate may benefit from economies of scope by sharing distribution networks and marketing resources across multiple product lines.",
+    "example_jp": "コングロマリットは、複数の製品ラインにわたって流通ネットワークとマーケティング資源を共有することで、範囲の経済から利益を得ることができる。"
   },
   {
     "term_id": "TERM0300",
-    "example_en": "Understanding Efficient Market is essential for CFA Level I candidates.",
-    "example_jp": "効率的市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "In an efficient market, stock prices quickly adjust to new information, making it difficult for investors to consistently beat the market.",
+    "example_jp": "効率的市場では、株価は新しい情報に素早く調整され、投資家が市場を一貫して上回ることが難しくなる。"
   },
   {
     "term_id": "TERM0301",
-    "example_en": "Understanding Electronic Communications Networks is essential for CFA Level I candidates.",
-    "example_jp": "電子通信ネットワークの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Electronic communications networks have increased market competition and reduced trading costs by providing alternative venues for securities trading.",
+    "example_jp": "電子通信ネットワークは、有価証券取引の代替会場を提供することで、市場競争を増加させ、取引コストを削減した。"
   },
   {
     "term_id": "TERM0302",
-    "example_en": "Understanding Equal Weighting is essential for CFA Level I candidates.",
-    "example_jp": "等ウェイトの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "An equal-weighted index assigns the same weight to each constituent security regardless of market capitalization, requiring frequent rebalancing.",
+    "example_jp": "等ウェイト・インデックスは、時価総額に関係なく各構成証券に同じウェイトを割り当て、頻繁なリバランシングが必要である。"
   },
   {
     "term_id": "TERM0303",
-    "example_en": "Understanding Equity Swap is essential for CFA Level I candidates.",
-    "example_jp": "エクイティスワップの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "An investor entered into an equity swap to exchange the returns of the S&P 500 for a fixed interest rate, hedging equity market risk.",
+    "example_jp": "投資家はS&P 500のリターンを固定金利と交換するエクイティ・スワップを締結し、エクイティ市場リスクをヘッジした。"
   },
   {
     "term_id": "TERM0304",
@@ -1501,33 +1531,33 @@
   },
   {
     "term_id": "TERM0305",
-    "example_en": "Understanding Ex-Dividend Date is essential for CFA Level I candidates.",
-    "example_jp": "配当落ち日の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Investors must own the stock before the ex-dividend date to receive the upcoming dividend payment.",
+    "example_jp": "投資家は今後の配当支払いを受け取るために、配当落ち日前に株式を所有する必要がある。"
   },
   {
     "term_id": "TERM0306",
-    "example_en": "Understanding Exchange is essential for CFA Level I candidates.",
-    "example_jp": "取引所の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The New York Stock Exchange is one of the world's largest exchanges, where billions of dollars in securities are traded daily.",
+    "example_jp": "ニューヨーク証券取引所は世界最大の取引所の1つで、毎日数十億ドルの有価証券が取引されている。"
   },
   {
     "term_id": "TERM0307",
-    "example_en": "Understanding Execution Instructions is essential for CFA Level I candidates.",
-    "example_jp": "執行指図の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The trader provided execution instructions specifying that the order should be executed at market open, using a VWAP algorithm.",
+    "example_jp": "トレーダーは、VWAPアルゴリズムを使用して市場開始時に注文を実行することを指定する執行指示を提供した。"
   },
   {
     "term_id": "TERM0308",
-    "example_en": "Understanding Exercise is essential for CFA Level I candidates.",
-    "example_jp": "行使の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The call option holder decided to exercise their right to purchase 100 shares at the strike price of $50.",
+    "example_jp": "コール・オプション保有者は、ストライク価格50ドルで100株を購入する権利を行使することを決定した。"
   },
   {
     "term_id": "TERM0309",
-    "example_en": "Understanding Exercise Price is essential for CFA Level I candidates.",
-    "example_jp": "行使価格の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The put option has an exercise price of $100, allowing the holder to sell the underlying stock at that price.",
+    "example_jp": "プット・オプションは行使価格が100ドルであり、保有者がその価格で原資産を売却できる。"
   },
   {
     "term_id": "TERM0310",
-    "example_en": "Understanding Extra Dividend is essential for CFA Level I candidates.",
-    "example_jp": "特別配当の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company announced an extra dividend of $2.00 per share in addition to its regular quarterly dividend.",
+    "example_jp": "企業は通常の四半期配当に加えて、1株当たり2.00ドルの臨時配当を発表した。"
   },
   {
     "term_id": "TERM0311",
@@ -1536,13 +1566,13 @@
   },
   {
     "term_id": "TERM0313",
-    "example_en": "Understanding Float-Adjusted Market-Capitalization Weighting is essential for CFA Level I candidates.",
-    "example_jp": "浮動株調整時価総額加重の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The float-adjusted market-cap weighted index excludes shares held by insiders and strategic investors, providing a more accurate representation of publicly traded shares.",
+    "example_jp": "フロート調整時価総額ウェイト・インデックスは、インサイダーと戦略的投資家が保有する株式を除外し、公開取引株式のより正確な表現を提供する。"
   },
   {
     "term_id": "TERM0314",
-    "example_en": "Understanding Forecast Object is essential for CFA Level I candidates.",
-    "example_jp": "予測対象の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The analyst's forecast objects included revenue growth, operating margins, and free cash flow for the next five years.",
+    "example_jp": "アナリストの予測対象には、今後5年間の収益成長、営業マージン、フリーキャッシュフローが含まれた。"
   },
   {
     "term_id": "TERM0315",
@@ -1551,8 +1581,8 @@
   },
   {
     "term_id": "TERM0317",
-    "example_en": "Understanding Free Float is essential for CFA Level I candidates.",
-    "example_jp": "浮動株の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company's free float represents only 40% of total shares, as 60% are held by the founder and strategic investors.",
+    "example_jp": "企業のフリー・フロートは総株式の40%のみを表し、60%は創業者と戦略的投資家が保有している。"
   },
   {
     "term_id": "TERM0318",
@@ -1561,23 +1591,23 @@
   },
   {
     "term_id": "TERM0319",
-    "example_en": "Understanding Fundamental Value is essential for CFA Level I candidates.",
-    "example_jp": "ファンダメンタルバリューの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The fund manager identified several stocks trading below their fundamental value, representing attractive investment opportunities.",
+    "example_jp": "ファンドマネージャーはファンダメンタル・バリューを下回って取引されている複数の株式を特定し、魅力的な投資機会を表している。"
   },
   {
     "term_id": "TERM0320",
-    "example_en": "Understanding Fundamental Weighting is essential for CFA Level I candidates.",
-    "example_jp": "ファンダメンタル加重の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A fundamentally-weighted index assigns weights based on company size metrics such as book value or earnings, rather than market capitalization.",
+    "example_jp": "ファンダメンタル・ウェイト・インデックスは、時価総額ではなく、簿価または利益などの企業規模指標に基づいてウェイトを割り当てる。"
   },
   {
     "term_id": "TERM0322",
-    "example_en": "Understanding Global Depository Receipt is essential for CFA Level I candidates.",
-    "example_jp": "グローバル預託証券の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The Indian company issued global depository receipts in London, allowing European investors to easily invest in the company.",
+    "example_jp": "インド企業はロンドンでグローバル預託証券を発行し、欧州投資家が企業に容易に投資できるようにした。"
   },
   {
     "term_id": "TERM0323",
-    "example_en": "Understanding Global Registered Share is essential for CFA Level I candidates.",
-    "example_jp": "グローバル登録株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Global registered shares allow investors worldwide to trade the same stock on their local exchanges without currency conversion complications.",
+    "example_jp": "グローバル登録株式は、世界中の投資家が通貨換算の複雑さなしに地域の取引所で同じ株式を取引できるようにする。"
   },
   {
     "term_id": "TERM0324",
@@ -1591,18 +1621,18 @@
   },
   {
     "term_id": "TERM0326",
-    "example_en": "Understanding Good-Till-Cancelled Order is essential for CFA Level I candidates.",
-    "example_jp": "取消まで有効注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor placed a good-till-cancelled order to buy the stock at $45, which would remain active until either filled or cancelled.",
+    "example_jp": "投資家は45ドルで株式を買う有効期限付き注文を発注し、約定またはキャンセルされるまで有効なままである。"
   },
   {
     "term_id": "TERM0327",
-    "example_en": "Understanding Hedge Funds is essential for CFA Level I candidates.",
-    "example_jp": "ヘッジファンドの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Hedge funds employ various strategies such as long-short equity, arbitrage, and derivatives trading to generate returns.",
+    "example_jp": "ヘッジファンドはロング・ショート・エクイティ、アービトラージ、デリバティブ取引などの様々な戦略を採用してリターンを生成する。"
   },
   {
     "term_id": "TERM0328",
-    "example_en": "Understanding Herfindahl-Hirschman Index is essential for CFA Level I candidates.",
-    "example_jp": "ハーフィンダール・ハーシュマン指数の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The industry's Herfindahl-Hirschman Index of 2,800 indicates a highly concentrated market dominated by a few large competitors.",
+    "example_jp": "業界のハーフィンダール・ハーシュマン指数が2,800であることは、少数の大型競争企業に支配された高度に集中した市場を示している。"
   },
   {
     "term_id": "TERM0329",
@@ -1616,133 +1646,133 @@
   },
   {
     "term_id": "TERM0331",
-    "example_en": "Understanding Iceberg Order is essential for CFA Level I candidates.",
-    "example_jp": "アイスバーグ注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The institutional investor used an iceberg order to hide the true size of their purchase, revealing only 10,000 shares at a time.",
+    "example_jp": "機関投資家はアイスバーグ・オーダーを使用して購入の真のサイズを隠し、一度に10,000株のみを明らかにした。"
   },
   {
     "term_id": "TERM0332",
-    "example_en": "Understanding Immediate or Cancel Order is essential for CFA Level I candidates.",
-    "example_jp": "即時または取消注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The trader submitted an immediate or cancel order for 5,000 shares, which would be cancelled if not fully executed upon receipt.",
+    "example_jp": "トレーダーは5,000株の即座にキャンセル注文を提出し、受領時に完全に約定しない場合はキャンセルされる。"
   },
   {
     "term_id": "TERM0333",
-    "example_en": "Understanding Information Cascade is essential for CFA Level I candidates.",
-    "example_jp": "情報カスケードの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "An information cascade occurred when early investors' enthusiasm for the IPO influenced subsequent investors to also purchase shares.",
+    "example_jp": "初期投資家のIPOへの熱意が後続投資家にも株式を購入させるよう影響を与えたときに、情報カスケードが発生した。"
   },
   {
     "term_id": "TERM0334",
-    "example_en": "Understanding Information-Motivated Traders is essential for CFA Level I candidates.",
-    "example_jp": "情報動機トレーダーの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Information-motivated traders analyze financial statements and industry data to identify mispricings before the market recognizes them.",
+    "example_jp": "情報駆動型トレーダーは、市場が認識する前に誤った価格設定を特定するために、財務諸表と業界データを分析する。"
   },
   {
     "term_id": "TERM0335",
-    "example_en": "Understanding Informationally Efficient Market is essential for CFA Level I candidates.",
-    "example_jp": "情報効率的市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "In an informationally efficient market, security prices quickly incorporate all available information, making it difficult to achieve abnormal returns.",
+    "example_jp": "情報効率的市場では、有価証券価格が利用可能なすべての情報を素早く組み込み、異常リターンを達成することが難しくなる。"
   },
   {
     "term_id": "TERM0336",
-    "example_en": "Understanding Initial Margin is essential for CFA Level I candidates.",
-    "example_jp": "当初証拠金の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The repo agreement required an initial margin of 105%, meaning the borrower had to post $105 in collateral for every $100 borrowed.",
+    "example_jp": "レポ契約は105%のイニシャル・マージンを要求し、借り手は借りた100ドルごとに105ドルの担保を提供する必要があった。"
   },
   {
     "term_id": "TERM0337",
-    "example_en": "Understanding Initial Margin Requirement is essential for CFA Level I candidates.",
-    "example_jp": "当初証拠金要件の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The initial margin requirement for the futures contract was 10%, meaning traders had to deposit $10,000 to control a $100,000 position.",
+    "example_jp": "先物契約のイニシャル・マージン・レクワイアメントは10%であり、トレーダーは100,000ドルのポジションを管理するために10,000ドルを預金する必要があった。"
   },
   {
     "term_id": "TERM0338",
-    "example_en": "Understanding Initial Public Offering is essential for CFA Level I candidates.",
-    "example_jp": "新規株式公開の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The technology startup completed its initial public offering, raising $500 million by selling shares to the public.",
+    "example_jp": "テクノロジー・スタートアップは新規公開株式を完了し、公開市場に株式を売却することで5億ドルを調達した。"
   },
   {
     "term_id": "TERM0340",
-    "example_en": "Understanding Investment Banks is essential for CFA Level I candidates.",
-    "example_jp": "投資銀行の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Investment banks advise companies on mergers and acquisitions, and help them raise capital through securities offerings.",
+    "example_jp": "投資銀行は企業に買収に関するアドバイスを提供し、有価証券公開を通じて資本調達を支援する。"
   },
   {
     "term_id": "TERM0341",
-    "example_en": "Understanding January Effect is essential for CFA Level I candidates.",
-    "example_jp": "1月効果の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The January effect has been observed historically, with stock returns in January significantly outperforming other months.",
+    "example_jp": "1月効果は歴史的に観察されており、1月の株式リターンは他の月を大幅に上回っている。"
   },
   {
     "term_id": "TERM0342",
-    "example_en": "Understanding Law of One Price is essential for CFA Level I candidates.",
-    "example_jp": "一物一価の法則の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The law of one price states that if two securities have identical cash flows, they must have the same price in an efficient market.",
+    "example_jp": "一物一価の法則は、2つの有価証券が同じキャッシュフローを持つ場合、効率的市場で同じ価格を持つべきであると述べている。"
   },
   {
     "term_id": "TERM0343",
-    "example_en": "Understanding Lead Underwriter is essential for CFA Level I candidates.",
-    "example_jp": "主幹事の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Goldman Sachs served as the lead underwriter for the company's IPO, coordinating the entire securities offering process.",
+    "example_jp": "ゴールドマン・サックスは企業のIPOのリード・アンダーライターとして機能し、有価証券公開プロセス全体を調整した。"
   },
   {
     "term_id": "TERM0345",
-    "example_en": "Understanding Limit Order Book is essential for CFA Level I candidates.",
-    "example_jp": "指値注文帳の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The exchange displays the limit order book showing all pending buy and sell orders at various price levels.",
+    "example_jp": "取引所は様々な価格レベルでの保留中のすべての買い注文と売り注文を示す指値注文帳を表示する。"
   },
   {
     "term_id": "TERM0346",
-    "example_en": "Understanding Liquid Market is essential for CFA Level I candidates.",
-    "example_jp": "流動性の高い市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The stock market is a liquid market where investors can quickly buy or sell large positions with minimal price impact.",
+    "example_jp": "株式市場は流動的市場であり、投資家は最小限の価格影響で大型ポジションを素早く売買できる。"
   },
   {
     "term_id": "TERM0347",
-    "example_en": "Understanding Liquidity is essential for CFA Level I candidates.",
-    "example_jp": "流動性の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company's strong liquidity position allows it to meet short-term obligations without difficulty.",
+    "example_jp": "企業の強い流動性ポジションは、短期債務を困難なく満たすことを可能にする。"
   },
   {
     "term_id": "TERM0348",
-    "example_en": "Understanding Long Position is essential for CFA Level I candidates.",
-    "example_jp": "ロングポジションの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor maintains a long position in Apple stock, betting that the price will increase over time.",
+    "example_jp": "投資家はアップル株のロング・ポジションを保有し、時間とともに価格が上昇することに賭けている。"
   },
   {
     "term_id": "TERM0349",
-    "example_en": "Understanding Low-Cost Producer is essential for CFA Level I candidates.",
-    "example_jp": "低コスト生産者の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Walmart has established itself as a low-cost producer in retail, allowing it to offer competitive prices and maintain market share.",
+    "example_jp": "ウォルマートは小売業の低コスト生産企業として自らを確立し、競争力のある価格を提供し、市場シェアを維持することができる。"
   },
   {
     "term_id": "TERM0350",
-    "example_en": "Understanding Maintenance Margin is essential for CFA Level I candidates.",
-    "example_jp": "維持証拠金の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The maintenance margin requirement for the futures contract is 75% of the initial margin, below which the trader must deposit additional funds.",
+    "example_jp": "先物契約のメンテナンス・マージン・レクワイアメントはイニシャル・マージンの75%であり、トレーダーは追加資金を預金する必要がある。"
   },
   {
     "term_id": "TERM0351",
-    "example_en": "Understanding Maintenance Margin Requirement is essential for CFA Level I candidates.",
-    "example_jp": "維持証拠金要件の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "If the account balance falls below the maintenance margin requirement, the broker will issue a margin call.",
+    "example_jp": "口座残高がメンテナンス・マージン・レクワイアメント以下に低下した場合、ブローカーはマージン・コールを発行する。"
   },
   {
     "term_id": "TERM0352",
-    "example_en": "Understanding Management Buyout is essential for CFA Level I candidates.",
-    "example_jp": "マネジメントバイアウトの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The management team completed a management buyout, acquiring the company from public shareholders with support from a private equity firm.",
+    "example_jp": "経営チームはマネジメント・バイアウトを完了し、プライベート・エクイティ企業の支援を得て、公開株主から企業を買収した。"
   },
   {
     "term_id": "TERM0353",
-    "example_en": "Understanding Management Guidance is essential for CFA Level I candidates.",
-    "example_jp": "経営陣ガイダンスの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company provided management guidance indicating expected revenue growth of 10-12% for the next fiscal year.",
+    "example_jp": "企業は次会計年度の予想される収益成長が10～12%であることを示すマネジメント・ガイダンスを提供した。"
   },
   {
     "term_id": "TERM0354",
-    "example_en": "Understanding Margin Call is essential for CFA Level I candidates.",
-    "example_jp": "追証の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The trader received a margin call when the futures position moved against them, requiring immediate deposit of additional funds.",
+    "example_jp": "トレーダーは先物ポジションが不利に動いたときにマージン・コールを受け取り、追加資金の直ちの預金が必要であった。"
   },
   {
     "term_id": "TERM0355",
-    "example_en": "Understanding Margin Loan is essential for CFA Level I candidates.",
-    "example_jp": "信用取引ローンの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor used a margin loan to purchase additional shares, doubling their equity exposure with borrowed funds.",
+    "example_jp": "投資家はマージン・ローンを使用して追加株式を購入し、借りた資金でエクイティ・エクスポージャーを2倍にした。"
   },
   {
     "term_id": "TERM0356",
-    "example_en": "Understanding Market Anomaly is essential for CFA Level I candidates.",
-    "example_jp": "市場アノマリーの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The small-cap stock premium is a market anomaly where smaller companies consistently outperform larger ones.",
+    "example_jp": "小型株プレミアムは市場異常であり、小型企業は一貫して大型企業を上回る。"
   },
   {
     "term_id": "TERM0357",
-    "example_en": "Understanding Market Float is essential for CFA Level I candidates.",
-    "example_jp": "市場浮動株の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company's market float decreased when the founder purchased additional shares, reducing the number of publicly available shares.",
+    "example_jp": "創業者が追加株式を購入したときに企業のマーケット・フロートが減少し、公開利用可能な株式の数が減少した。"
   },
   {
     "term_id": "TERM0358",
-    "example_en": "Understanding Market Multiple Models is essential for CFA Level I candidates.",
-    "example_jp": "マーケットマルチプルモデルの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Using market multiple models, the analyst valued the company at 15 times earnings, consistent with industry peers.",
+    "example_jp": "マーケット・マルチプル・モデルを使用して、アナリストは企業を利益の15倍で評価し、業界ピアと一貫している。"
   },
   {
     "term_id": "TERM0359",
@@ -1751,172 +1781,172 @@
   },
   {
     "term_id": "TERM0360",
-    "example_en": "Understanding Market Share is essential for CFA Level I candidates.",
-    "example_jp": "市場シェアの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Apple's market share in the smartphone market has remained strong despite intense competition from other manufacturers.",
+    "example_jp": "アップルのスマートフォン市場でのマーケット・シェアは、他のメーカーからの激しい競争にもかかわらず強いままである。"
   },
   {
     "term_id": "TERM0361",
-    "example_en": "Understanding Market Size is essential for CFA Level I candidates.",
-    "example_jp": "市場規模の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The global smartphone market size exceeded $400 billion in 2023, driven by strong demand in emerging markets.",
+    "example_jp": "グローバル・スマートフォン市場サイズは2023年に4,000億ドルを超え、新興市場での強い需要に支えられた。"
   },
   {
     "term_id": "TERM0362",
-    "example_en": "Understanding Market Value is essential for CFA Level I candidates.",
-    "example_jp": "市場価値の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The market value of the company increased by 20% following the announcement of strong quarterly earnings.",
+    "example_jp": "企業の市場価値は強い四半期利益の発表に続いて20%増加した。"
   },
   {
     "term_id": "TERM0363",
-    "example_en": "Understanding Marketable Limit Order is essential for CFA Level I candidates.",
-    "example_jp": "成行可能指値注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor placed a marketable limit order to buy at $50, which was above the current ask price of $48, ensuring quick execution.",
+    "example_jp": "投資家は現在のアスク価格48ドルを上回る50ドルで買うマーケット可能な指値注文を発注し、迅速な執行を保証した。"
   },
   {
     "term_id": "TERM0364",
-    "example_en": "Understanding Money Market is essential for CFA Level I candidates.",
-    "example_jp": "短期金融市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The money market includes instruments such as Treasury bills, commercial paper, and certificates of deposit.",
+    "example_jp": "マネー・マーケットには、財務省短期証券、コマーシャル・ペーパー、譲渡性預金などの商品が含まれる。"
   },
   {
     "term_id": "TERM0365",
-    "example_en": "Understanding Multi-Market Indexes is essential for CFA Level I candidates.",
-    "example_jp": "マルチマーケットインデックスの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The MSCI World Index is a multi-market index that includes stocks from developed markets across the globe.",
+    "example_jp": "MSCI World Indexはマルチ・マーケット・インデックスであり、世界中の先進市場の株式を含む。"
   },
   {
     "term_id": "TERM0366",
-    "example_en": "Understanding Multilateral Trading Facilities is essential for CFA Level I candidates.",
-    "example_jp": "多国間取引施設の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Multilateral trading facilities have grown in importance, providing alternative venues for securities trading beyond traditional exchanges.",
+    "example_jp": "多国間取引施設は重要性が増し、伝統的な取引所を超えた有価証券取引の代替会場を提供している。"
   },
   {
     "term_id": "TERM0367",
-    "example_en": "Understanding Multiplier Models is essential for CFA Level I candidates.",
-    "example_jp": "マルチプルモデルの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Multiplier models are popular among practitioners because they are simple to apply and based on observable market data.",
+    "example_jp": "マルチプライヤー・モデルは適用が簡単で、観察可能な市場データに基づいているため、実務家の間で人気がある。"
   },
   {
     "term_id": "TERM0368",
-    "example_en": "Understanding Non-Cumulative Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "非累積優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Holders of non-cumulative preference shares do not have the right to receive unpaid dividends from previous periods.",
+    "example_jp": "非累積優先株式の保有者は、以前の期間から未払い配当を受け取る権利を持たない。"
   },
   {
     "term_id": "TERM0369",
-    "example_en": "Understanding Non-Participating Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "非参加優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Non-participating preference shares provide a fixed dividend but do not allow shareholders to benefit from extraordinary profits.",
+    "example_jp": "非参加優先株式は固定配当を提供するが、株主が異常な利益から利益を得ることを許可しない。"
   },
   {
     "term_id": "TERM0370",
-    "example_en": "Understanding Offer is essential for CFA Level I candidates.",
-    "example_jp": "売り気配の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The dealer's offer for the bond is $102, indicating the price at which they are willing to sell.",
+    "example_jp": "ディーラーの債券のオファーは102ドルであり、売却する意思がある価格を示している。"
   },
   {
     "term_id": "TERM0371",
-    "example_en": "Understanding Operationally Efficient is essential for CFA Level I candidates.",
-    "example_jp": "運営効率的の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "An operationally efficient market minimizes transaction costs, benefiting all market participants.",
+    "example_jp": "操業効率的市場は取引コストを最小化し、すべての市場参加者に利益をもたらす。"
   },
   {
     "term_id": "TERM0373",
-    "example_en": "Understanding Option Contract is essential for CFA Level I candidates.",
-    "example_jp": "オプション契約の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The option contract specifies the strike price, expiration date, and the underlying asset.",
+    "example_jp": "オプション契約はストライク価格、満期日、および原資産を指定する。"
   },
   {
     "term_id": "TERM0374",
-    "example_en": "Understanding Order is essential for CFA Level I candidates.",
-    "example_jp": "注文の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The investor submitted an order to buy 1,000 shares of Microsoft at a limit price of $300.",
+    "example_jp": "投資家はマイクロソフトの1,000株を指値価格300ドルで買う注文を提出した。"
   },
   {
     "term_id": "TERM0375",
-    "example_en": "Understanding Order-Driven Markets is essential for CFA Level I candidates.",
-    "example_jp": "注文駆動型市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Stock exchanges are order-driven markets where prices are determined by the supply and demand of buy and sell orders.",
+    "example_jp": "株式取引所はオーダー・ドリブン・マーケットであり、価格は買い注文と売り注文の需給によって決定される。"
   },
   {
     "term_id": "TERM0376",
-    "example_en": "Understanding Order Precedence Hierarchy is essential for CFA Level I candidates.",
-    "example_jp": "注文優先順位階層の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The order precedence hierarchy determines that price priority comes before time priority in most markets.",
+    "example_jp": "注文優先順位階層は、ほとんどの市場で価格優先が時間優先より前に来ることを決定する。"
   },
   {
     "term_id": "TERM0377",
-    "example_en": "Understanding PESTLE Analysis is essential for CFA Level I candidates.",
-    "example_jp": "PESTLE分析の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The analyst conducted a PESTLE analysis to assess how regulatory changes might impact the company's future profitability.",
+    "example_jp": "アナリストはPESTLE分析を実施して、規制変更が企業の将来の収益性にどのように影響するかを評価した。"
   },
   {
     "term_id": "TERM0378",
-    "example_en": "Understanding Participating Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "参加優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Participating preference shares allow shareholders to receive additional dividends if company profits exceed a certain threshold.",
+    "example_jp": "参加優先株式は、企業利益が特定の閾値を超える場合、株主が追加配当を受け取ることを許可する。"
   },
   {
     "term_id": "TERM0379",
-    "example_en": "Understanding Passive Investment is essential for CFA Level I candidates.",
-    "example_jp": "パッシブ投資の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Passive investment strategies, such as index fund investing, have gained popularity due to their lower costs and consistent performance.",
+    "example_jp": "インデックスファンド投資などのパッシブ投資戦略は、低コストと一貫したパフォーマンスのため人気が高まっている。"
   },
   {
     "term_id": "TERM0380",
-    "example_en": "Understanding Payable Date is essential for CFA Level I candidates.",
-    "example_jp": "支払日の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The payable date for the dividend is March 15, when shareholders will receive their dividend payments.",
+    "example_jp": "配当の支払日は3月15日であり、株主が配当を受け取る日である。"
   },
   {
     "term_id": "TERM0381",
-    "example_en": "Understanding Position is essential for CFA Level I candidates.",
-    "example_jp": "ポジションの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The hedge fund maintained a long position in technology stocks and a short position in financial stocks.",
+    "example_jp": "ヘッジファンドはテクノロジー株のロング・ポジションと金融株のショート・ポジションを保有した。"
   },
   {
     "term_id": "TERM0382",
-    "example_en": "Understanding Preference Shares is essential for CFA Level I candidates.",
-    "example_jp": "優先株式の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Preference shares offer a fixed dividend and priority in liquidation, making them less risky than common shares.",
+    "example_jp": "優先株式は固定配当と清算時の優先権を提供し、普通株式より低リスクである。"
   },
   {
     "term_id": "TERM0383",
-    "example_en": "Understanding Present Value Models is essential for CFA Level I candidates.",
-    "example_jp": "現在価値モデルの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Present value models are fundamental to valuation, as they account for the time value of money.",
+    "example_jp": "現在価値モデルは評価の基本であり、お金の時間価値を考慮している。"
   },
   {
     "term_id": "TERM0384",
-    "example_en": "Understanding Price Index is essential for CFA Level I candidates.",
-    "example_jp": "価格指数の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The Consumer Price Index measures inflation by tracking price changes in a basket of consumer goods and services.",
+    "example_jp": "消費者物価指数は、消費者向け商品とサービスのバスケットの価格変化を追跡することでインフレを測定する。"
   },
   {
     "term_id": "TERM0385",
-    "example_en": "Understanding Price Multiple is essential for CFA Level I candidates.",
-    "example_jp": "株価倍率の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The price-to-earnings multiple is a common price multiple used to compare the valuation of different companies.",
+    "example_jp": "株価収益率は、異なる企業の評価を比較するために使用される一般的な価格マルチプルである。"
   },
   {
     "term_id": "TERM0386",
-    "example_en": "Understanding Price Priority is essential for CFA Level I candidates.",
-    "example_jp": "価格優先の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Under price priority, the highest buy orders and lowest sell orders execute first, regardless of when they were submitted.",
+    "example_jp": "価格優先の下では、最も高い買い注文と最も低い売り注文が、提出された時期に関係なく最初に実行される。"
   },
   {
     "term_id": "TERM0387",
-    "example_en": "Understanding Price Return is essential for CFA Level I candidates.",
-    "example_jp": "価格リターンの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Price return excludes dividends and interest income, focusing only on capital appreciation.",
+    "example_jp": "価格リターンは配当と利息収入を除外し、資本増価のみに焦点を当てる。"
   },
   {
     "term_id": "TERM0388",
-    "example_en": "Understanding Price Return Index is essential for CFA Level I candidates.",
-    "example_jp": "価格リターンインデックスの理解はCFA Level I受験者にとって重要です。"
+    "example_en": "A price return index only reflects capital appreciation, not dividend income, making it different from a total return index.",
+    "example_jp": "価格リターン・インデックスは資本増価のみを反映し、配当収入を反映しないため、トータル・リターン・インデックスと異なる。"
   },
   {
     "term_id": "TERM0389",
-    "example_en": "Understanding Price Weighting is essential for CFA Level I candidates.",
-    "example_jp": "価格加重の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The Dow Jones Industrial Average uses price weighting, so higher-priced stocks have greater influence on the index.",
+    "example_jp": "ダウ・ジョーンズ工業平均は価格ウェイトを使用するため、より高い価格の株式はインデックスに大きな影響を与える。"
   },
   {
     "term_id": "TERM0390",
-    "example_en": "Understanding Pricing Power is essential for CFA Level I candidates.",
-    "example_jp": "価格決定力の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Companies with strong brand recognition often have pricing power, allowing them to raise prices without losing customers.",
+    "example_jp": "強いブランド認識を持つ企業は価格設定力を持つことが多く、顧客を失うことなく価格を引き上げることができる。"
   },
   {
     "term_id": "TERM0391",
-    "example_en": "Understanding Primary Capital Markets is essential for CFA Level I candidates.",
-    "example_jp": "発行市場の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "In the primary capital market, companies raise capital by issuing new securities directly to investors.",
+    "example_jp": "一次資本市場では、企業は新しい有価証券を投資家に直接発行することで資本を調達する。"
   },
   {
     "term_id": "TERM0392",
-    "example_en": "Understanding Private Equity Securities is essential for CFA Level I candidates.",
-    "example_jp": "プライベートエクイティ証券の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "Private equity securities are typically held by institutional investors and are not traded on public exchanges.",
+    "example_jp": "プライベート・エクイティ証券は通常、機関投資家によって保有され、公開取引所で取引されない。"
   },
   {
     "term_id": "TERM0393",
-    "example_en": "Understanding Private Investment in Public Equity is essential for CFA Level I candidates.",
-    "example_jp": "上場株式への私募投資の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The private equity firm made a PIPE investment in the public company, purchasing shares at a discount to the market price.",
+    "example_jp": "プライベート・エクイティ企業は公開企業へのPIPE投資を行い、市場価格への割引で株式を購入した。"
   },
   {
     "term_id": "TERM0394",
-    "example_en": "Understanding Private Placement is essential for CFA Level I candidates.",
-    "example_jp": "私募の理解はCFA Level I受験者にとって重要です。"
+    "example_en": "The company raised capital through a private placement, selling bonds directly to institutional investors.",
+    "example_jp": "企業はプライベート・プレイスメントを通じて資本を調達し、機関投資家に直接債券を売却した。"
   }
 ]

@@ -49,19 +49,28 @@ export interface Abbreviation {
   term_id: string;
 }
 
+// 学習フェーズ（Anki風）
+export type LearningPhase = 'new' | 'learning' | 'review' | 'relearning';
+
 // 学習進捗データ
 export interface LearningProgress {
   term_id: string;
   ease_factor: number; // SM-2: 初期値2.5
-  interval: number; // 日数
+  interval: number; // 日数（分単位の場合は小数）
   repetitions: number;
   next_review: string; // ISO date string
+  next_review_time?: string; // ISO datetime string（分単位の場合）
   last_review?: string;
   correct_count: number;
   incorrect_count: number;
   is_bookmarked: boolean;
   is_difficult: boolean;
   user_notes?: string;
+  // Anki風拡張
+  phase?: LearningPhase; // 学習フェーズ
+  learning_step?: number; // 学習ステップの現在位置（0, 1, 2...）
+  stability?: number; // FSRS: 安定性
+  difficulty?: number; // FSRS: 難易度（0-1）
 }
 
 // クイズ設定
@@ -130,6 +139,9 @@ export interface FilterSettings {
   sort_by: 'frequency' | 'added_date' | 'review_due';
 }
 
+// SRSアルゴリズムタイプ
+export type SRSAlgorithm = 'sm2' | 'sm2_anki' | 'fsrs';
+
 // 表示設定
 export interface DisplaySettings {
   show_english_first: boolean;
@@ -137,4 +149,7 @@ export interface DisplaySettings {
   hide_translation: boolean;
   hide_definition: boolean;
   enable_tts: boolean;
+  // SRS設定
+  srs_algorithm?: SRSAlgorithm; // デフォルト: 'sm2_anki'
+  target_retention?: number; // 目標正答率（FSRS用）: 0.85-0.95
 }
