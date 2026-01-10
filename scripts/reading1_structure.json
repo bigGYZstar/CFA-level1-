@@ -1,0 +1,102 @@
+{
+  "reading": {
+    "number": 1,
+    "title": "Market Organization and Structure",
+    "author": "Larry Harris, PhD, CFA",
+    "page_range": "2-50",
+    "sections": [
+      {
+        "number": "1",
+        "title": "INTRODUCTION",
+        "page": 3,
+        "has_content": true
+      },
+      {
+        "number": "2",
+        "title": "THE FUNCTIONS OF THE FINANCIAL SYSTEM",
+        "page": 3,
+        "subsections": [
+          {
+            "number": "2.1",
+            "title": "Helping People Achieve Their Purposes in Using the Financial System",
+            "subsections": [
+              "2.1.1. Saving",
+              "2.1.2. Borrowing",
+              "2.1.3. Raising Equity Capital",
+              "2.1.4. Managing Risks",
+              "2.1.5. Exchanging Assets for Immediate Delivery (Spot Market Trading)",
+              "2.1.6. Information-Motivated Trading",
+              "2.1.7. Summary"
+            ]
+          },
+          {
+            "number": "2.2",
+            "title": "Determining Rates of Return",
+            "page": 7
+          },
+          {
+            "number": "2.3",
+            "title": "Capital Allocation Efficiency",
+            "page": 8
+          }
+        ]
+      },
+      {
+        "number": "3",
+        "title": "ASSETS AND CONTRACTS",
+        "page": 9,
+        "subsections": [
+          {
+            "number": "3.1",
+            "title": "Classifications of Assets and Markets",
+            "page": 9
+          }
+        ]
+      },
+      {
+        "number": "4",
+        "title": "SECURITIES",
+        "page": 10,
+        "subsections": [
+          {
+            "number": "4.1",
+            "title": "Fixed Income",
+            "page": 10
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "number": 1,
+        "title": "Financing Capital Projects",
+        "page": 5,
+        "section": "2.1.3"
+      },
+      {
+        "number": 2,
+        "title": "Investing versus Information-Motivated Trading",
+        "page": 6,
+        "section": "2.1.6"
+      },
+      {
+        "number": 3,
+        "title": "Interest Rates",
+        "page": 7,
+        "section": "2.2"
+      },
+      {
+        "number": 4,
+        "title": "Primary Market Capital Allocation",
+        "page": 8,
+        "section": "2.3"
+      },
+      {
+        "number": 5,
+        "title": "Asset and Market Classification",
+        "page": 9,
+        "section": "3.1"
+      }
+    ]
+  }
+}

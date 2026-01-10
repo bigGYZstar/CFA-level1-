@@ -1,0 +1,866 @@
+{
+  "subjects": [
+    {
+      "code": "EQ",
+      "name": "Equity Investments",
+      "nameJa": "株式投資",
+      "description": "Covers market organization, security market indexes, market efficiency, equity valuation, and industry analysis.",
+      "descriptionJa": "市場組織、証券市場インデックス、市場効率性、株式評価、業界分析をカバーします。",
+      "order": 1,
+      "totalReadings": 2
+    }
+  ],
+  "readings": [
+    {
+      "id": "EQ_MOS",
+      "subject": "EQ",
+      "code": "MOS",
+      "title": "Market Organization and Structure",
+      "titleJa": "市場組織と構造",
+      "description": "This reading covers the functions of the financial system, types of assets and markets, financial intermediaries, positions and leverage, order types, market structures, and regulation.",
+      "descriptionJa": "金融システムの機能、資産と市場の種類、金融仲介機関、ポジションとレバレッジ、注文タイプ、市場構造、規制について学習します。",
+      "order": 1,
+      "totalSections": 14,
+      "totalExamples": 5
+    },
+    {
+      "id": "EQ_SMI",
+      "subject": "EQ",
+      "code": "SMI",
+      "title": "Security Market Indexes",
+      "titleJa": "証券市場インデックス",
+      "description": "This reading covers the construction, management, and uses of security market indexes, including different weighting methods and types of indexes.",
+      "descriptionJa": "証券市場インデックスの構築、管理、用途について、異なる加重方式やインデックスの種類を含めて学習します。",
+      "order": 2,
+      "totalSections": 13,
+      "totalExamples": 6
+    }
+  ],
+  "textContents": [
+    {
+      "id": "EQ_MOS_1",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "1",
+      "title": "Introduction",
+      "titleJa": "はじめに",
+      "content": "Financial analysts must understand the characteristics of markets in which securities trade to properly evaluate investments.",
+      "contentJa": "金融アナリストは、投資を適切に評価するために、証券が取引される市場の特性を理解する必要があります。",
+      "keyPoints": [
+        "Understanding market organization is essential for investment analysis",
+        "Markets facilitate the transfer of capital between savers and borrowers"
+      ],
+      "keyPointsJa": [
+        "市場組織の理解は投資分析に不可欠",
+        "市場は貯蓄者と借り手の間の資本移転を促進する"
+      ],
+      "checkQuestions": [],
+      "order": 1,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_2",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "2",
+      "title": "The Functions of the Financial System",
+      "titleJa": "金融システムの機能",
+      "content": "The financial system serves six main purposes: saving, borrowing, raising equity capital, managing risks, exchanging assets, and information-motivated trading.",
+      "contentJa": "金融システムは6つの主要な目的を果たします：貯蓄、借入、株式資本の調達、リスク管理、資産の交換、情報に基づく取引。",
+      "keyPoints": [
+        "Financial system helps people achieve various financial purposes",
+        "Determines rates of return through supply and demand",
+        "Promotes capital allocation efficiency"
+      ],
+      "keyPointsJa": [
+        "金融システムは人々がさまざまな財務目的を達成するのを助ける",
+        "需給を通じて収益率を決定する",
+        "資本配分の効率性を促進する"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_2_Q1",
+          "contentId": "EQ_MOS_2",
+          "question": "What are the main functions of the financial system?",
+          "questionJa": "金融システムの主な機能は何ですか？",
+          "answer": "Saving, borrowing, raising equity capital, managing risks, exchanging assets for immediate delivery, and information-motivated trading.",
+          "answerJa": "貯蓄、借入、株式資本の調達、リスク管理、即時受渡しのための資産交換、情報に基づく取引。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "explain the main functions of the financial system",
+      "learningOutcomeJa": "金融システムの主な機能を説明する",
+      "order": 2,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_3",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "3",
+      "title": "Assets and Contracts",
+      "titleJa": "資産と契約",
+      "content": "Assets traded in financial markets include securities, currencies, contracts, commodities, and real assets. Each has distinct characteristics and trading mechanisms.",
+      "contentJa": "金融市場で取引される資産には、証券、通貨、契約、コモディティ、実物資産が含まれます。それぞれに固有の特性と取引メカニズムがあります。",
+      "keyPoints": [
+        "Securities include debt and equity instruments",
+        "Currencies are traded in forex markets",
+        "Contracts include forwards, futures, swaps, and options",
+        "Commodities include precious metals, energy, and agricultural products",
+        "Real assets include real estate and equipment"
+      ],
+      "keyPointsJa": [
+        "証券には債券と株式商品が含まれる",
+        "通貨は外国為替市場で取引される",
+        "契約には先渡、先物、スワップ、オプションが含まれる",
+        "コモディティには貴金属、エネルギー、農産物が含まれる",
+        "実物資産には不動産や設備が含まれる"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_3_Q1",
+          "contentId": "EQ_MOS_3",
+          "question": "What are the main classifications of assets traded in financial markets?",
+          "questionJa": "金融市場で取引される資産の主な分類は何ですか？",
+          "answer": "Securities, currencies, contracts, commodities, and real assets.",
+          "answerJa": "証券、通貨、契約、コモディティ、実物資産。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe classifications of assets and markets",
+      "learningOutcomeJa": "資産と市場の分類を説明する",
+      "order": 3,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_4",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "4",
+      "title": "Financial Intermediaries",
+      "titleJa": "金融仲介機関",
+      "content": "Financial intermediaries facilitate transactions between buyers and sellers. They include brokers, dealers, exchanges, securitizers, depository institutions, insurance companies, and arbitrageurs.",
+      "contentJa": "金融仲介機関は買い手と売り手の間の取引を促進します。ブローカー、ディーラー、取引所、証券化機関、預金取扱機関、保険会社、裁定取引者が含まれます。",
+      "keyPoints": [
+        "Brokers help clients buy and sell by finding counterparties",
+        "Dealers trade for their own accounts and provide liquidity",
+        "Exchanges provide venues for trading",
+        "Securitizers pool assets and issue securities backed by them",
+        "Arbitrageurs profit from price differences across markets"
+      ],
+      "keyPointsJa": [
+        "ブローカーは取引相手を見つけて顧客の売買を支援する",
+        "ディーラーは自己勘定で取引し流動性を提供する",
+        "取引所は取引の場を提供する",
+        "証券化機関は資産をプールしそれを担保とする証券を発行する",
+        "裁定取引者は市場間の価格差から利益を得る"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_4_Q1",
+          "contentId": "EQ_MOS_4",
+          "question": "What is the difference between a broker and a dealer?",
+          "questionJa": "ブローカーとディーラーの違いは何ですか？",
+          "answer": "Brokers help clients trade by finding counterparties and earn commissions. Dealers trade for their own accounts and profit from the bid-ask spread.",
+          "answerJa": "ブローカーは取引相手を見つけて顧客の取引を支援し手数料を得る。ディーラーは自己勘定で取引しビッド・アスク・スプレッドから利益を得る。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe types of financial intermediaries and services that they provide",
+      "learningOutcomeJa": "金融仲介機関の種類とそれらが提供するサービスを説明する",
+      "order": 4,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_5",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "5",
+      "title": "Positions and Leverage",
+      "titleJa": "ポジションとレバレッジ",
+      "content": "Investors can take long or short positions in assets. Leverage allows investors to control more assets than their capital would otherwise allow, amplifying both gains and losses.",
+      "contentJa": "投資家は資産のロングまたはショートポジションを取ることができます。レバレッジにより、投資家は資本が許す以上の資産を管理でき、利益と損失の両方が増幅されます。",
+      "keyPoints": [
+        "Long position: investor owns the asset and profits when price rises",
+        "Short position: investor borrows and sells, profits when price falls",
+        "Leverage ratio = Total asset value / Equity value",
+        "Higher leverage increases both potential returns and risks"
+      ],
+      "keyPointsJa": [
+        "ロングポジション：投資家が資産を所有し、価格上昇時に利益を得る",
+        "ショートポジション：投資家が借りて売却し、価格下落時に利益を得る",
+        "レバレッジ比率 = 総資産価値 / 自己資本価値",
+        "レバレッジが高いほど潜在的リターンとリスクの両方が増加する"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_5_Q1",
+          "contentId": "EQ_MOS_5",
+          "question": "How is the leverage ratio calculated?",
+          "questionJa": "レバレッジ比率はどのように計算されますか？",
+          "answer": "Leverage ratio = Total asset value / Equity value",
+          "answerJa": "レバレッジ比率 = 総資産価値 / 自己資本価値",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "compare positions an investor can take in an asset",
+      "learningOutcomeJa": "投資家が資産で取ることができるポジションを比較する",
+      "order": 5,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_6",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "6",
+      "title": "Buying on Margin",
+      "titleJa": "信用取引（証拠金取引）",
+      "content": "Margin trading allows investors to borrow money to purchase securities. The initial margin is the minimum equity required, and maintenance margin is the minimum equity that must be maintained.",
+      "contentJa": "信用取引により、投資家は証券を購入するためにお金を借りることができます。当初証拠金は必要な最低自己資本であり、維持証拠金は維持しなければならない最低自己資本です。",
+      "keyPoints": [
+        "Initial margin: minimum equity percentage required to open position",
+        "Maintenance margin: minimum equity percentage to maintain position",
+        "Margin call occurs when equity falls below maintenance margin",
+        "Margin call price = P₀ × (1 - Initial margin) / (1 - Maintenance margin)"
+      ],
+      "keyPointsJa": [
+        "当初証拠金：ポジションを開くために必要な最低自己資本比率",
+        "維持証拠金：ポジションを維持するための最低自己資本比率",
+        "自己資本が維持証拠金を下回るとマージンコールが発生",
+        "マージンコール価格 = P₀ × (1 - 当初証拠金) / (1 - 維持証拠金)"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_6_Q1",
+          "contentId": "EQ_MOS_6",
+          "question": "What triggers a margin call?",
+          "questionJa": "マージンコールは何によって発生しますか？",
+          "answer": "A margin call is triggered when the equity in the margin account falls below the maintenance margin requirement.",
+          "answerJa": "マージンコールは、証拠金口座の自己資本が維持証拠金要件を下回ったときに発生します。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "calculate and interpret the leverage ratio, the rate of return on a margin transaction, and the security price at which the investor would receive a margin call",
+      "learningOutcomeJa": "レバレッジ比率、信用取引の収益率、マージンコールが発生する証券価格を計算し解釈する",
+      "order": 6,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_7",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "7",
+      "title": "Short Selling",
+      "titleJa": "空売り",
+      "content": "Short selling involves borrowing securities and selling them, hoping to buy them back at a lower price. Short sellers must pay any dividends to the lender and face unlimited potential losses.",
+      "contentJa": "空売りは証券を借りて売却し、より低い価格で買い戻すことを期待します。空売り者は貸し手に配当を支払わなければならず、潜在的な損失は無限大です。",
+      "keyPoints": [
+        "Short seller borrows securities from a broker",
+        "Proceeds from sale are held as collateral",
+        "Short seller must pay dividends to the lender",
+        "Potential loss is unlimited as price can rise indefinitely",
+        "Short squeeze occurs when many short sellers try to cover simultaneously"
+      ],
+      "keyPointsJa": [
+        "空売り者はブローカーから証券を借りる",
+        "売却代金は担保として保持される",
+        "空売り者は貸し手に配当を支払わなければならない",
+        "価格は無限に上昇する可能性があるため、潜在的損失は無限大",
+        "多くの空売り者が同時にカバーしようとするとショートスクイーズが発生"
+      ],
+      "checkQuestions": [],
+      "order": 7,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_8",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "8",
+      "title": "Orders and Execution Instructions",
+      "titleJa": "注文と執行指示",
+      "content": "Market orders execute immediately at the best available price. Limit orders specify a maximum buy price or minimum sell price and may not execute if the limit is not reached.",
+      "contentJa": "成行注文は最良の利用可能価格で即座に執行されます。指値注文は最高買値または最低売値を指定し、指値に達しない場合は執行されない可能性があります。",
+      "keyPoints": [
+        "Market order: executes immediately at best available price",
+        "Limit order: specifies price limit; may not execute",
+        "Buy limit order: maximum price willing to pay",
+        "Sell limit order: minimum price willing to accept",
+        "Market orders have execution certainty but price uncertainty",
+        "Limit orders have price certainty but execution uncertainty"
+      ],
+      "keyPointsJa": [
+        "成行注文：最良の利用可能価格で即座に執行",
+        "指値注文：価格制限を指定；執行されない可能性あり",
+        "買い指値注文：支払う意思のある最高価格",
+        "売り指値注文：受け入れる意思のある最低価格",
+        "成行注文は執行の確実性があるが価格の不確実性がある",
+        "指値注文は価格の確実性があるが執行の不確実性がある"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_8_Q1",
+          "contentId": "EQ_MOS_8",
+          "question": "What is the main difference between market orders and limit orders?",
+          "questionJa": "成行注文と指値注文の主な違いは何ですか？",
+          "answer": "Market orders execute immediately at the best available price with execution certainty but price uncertainty. Limit orders specify a price limit and have price certainty but execution uncertainty.",
+          "answerJa": "成行注文は最良の利用可能価格で即座に執行され、執行の確実性があるが価格の不確実性がある。指値注文は価格制限を指定し、価格の確実性があるが執行の不確実性がある。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "compare market orders with limit orders",
+      "learningOutcomeJa": "成行注文と指値注文を比較する",
+      "order": 8,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_9",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "9",
+      "title": "Primary Security Markets",
+      "titleJa": "発行市場",
+      "content": "Primary markets are where new securities are issued. Methods include public offerings (underwritten or best efforts), private placements, shelf registrations, and rights offerings.",
+      "contentJa": "発行市場は新しい証券が発行される場所です。方法には公募（引受または最善努力）、私募、棚卸登録、ライツ・オファリングがあります。",
+      "keyPoints": [
+        "Public offerings: securities sold to the general public",
+        "Underwritten offering: investment bank guarantees sale",
+        "Best efforts offering: investment bank sells without guarantee",
+        "Private placement: sold directly to qualified investors",
+        "Shelf registration: pre-approved securities sold over time",
+        "Rights offering: existing shareholders can buy new shares"
+      ],
+      "keyPointsJa": [
+        "公募：一般投資家に証券を販売",
+        "引受発行：投資銀行が販売を保証",
+        "最善努力発行：投資銀行が保証なしで販売",
+        "私募：適格投資家に直接販売",
+        "棚卸登録：事前承認された証券を時間をかけて販売",
+        "ライツ・オファリング：既存株主が新株を購入可能"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_9_Q1",
+          "contentId": "EQ_MOS_9",
+          "question": "What is the difference between an underwritten offering and a best efforts offering?",
+          "questionJa": "引受発行と最善努力発行の違いは何ですか？",
+          "answer": "In an underwritten offering, the investment bank guarantees the sale by purchasing all shares and reselling them. In a best efforts offering, the bank sells as many shares as possible without guaranteeing the full amount.",
+          "answerJa": "引受発行では、投資銀行がすべての株式を購入して再販売することで販売を保証する。最善努力発行では、銀行は全額を保証せずにできるだけ多くの株式を販売する。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "define primary and secondary markets and explain how secondary markets support primary markets",
+      "learningOutcomeJa": "発行市場と流通市場を定義し、流通市場が発行市場をどのように支援するかを説明する",
+      "order": 9,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_10",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "10",
+      "title": "Secondary Security Market Structures",
+      "titleJa": "流通市場の構造",
+      "content": "Secondary markets can be organized as quote-driven (dealer) markets, order-driven markets, or brokered markets. Each has different mechanisms for matching buyers and sellers.",
+      "contentJa": "流通市場は、クォート駆動（ディーラー）市場、注文駆動市場、またはブローカー市場として組織されます。それぞれ買い手と売り手をマッチングする異なるメカニズムを持っています。",
+      "keyPoints": [
+        "Quote-driven markets: dealers provide bid and ask quotes",
+        "Order-driven markets: orders matched by rules (price-time priority)",
+        "Brokered markets: brokers find counterparties for large trades",
+        "Call markets: orders accumulated and executed at set times",
+        "Continuous markets: trading occurs throughout the day"
+      ],
+      "keyPointsJa": [
+        "クォート駆動市場：ディーラーがビッドとアスクの気配を提供",
+        "注文駆動市場：注文がルール（価格-時間優先）でマッチング",
+        "ブローカー市場：ブローカーが大口取引の相手を見つける",
+        "コール市場：注文が蓄積され設定時間に執行",
+        "継続市場：取引が一日を通じて行われる"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_10_Q1",
+          "contentId": "EQ_MOS_10",
+          "question": "What is the difference between quote-driven and order-driven markets?",
+          "questionJa": "クォート駆動市場と注文駆動市場の違いは何ですか？",
+          "answer": "In quote-driven markets, dealers provide bid and ask prices and trade from their own inventory. In order-driven markets, buy and sell orders are matched directly using rules like price-time priority.",
+          "answerJa": "クォート駆動市場では、ディーラーがビッドとアスク価格を提供し自己在庫から取引する。注文駆動市場では、買い注文と売り注文が価格-時間優先などのルールを使用して直接マッチングされる。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe how securities, contracts, and currencies are traded in quote-driven, order-driven, and brokered markets",
+      "learningOutcomeJa": "クォート駆動市場、注文駆動市場、ブローカー市場で証券、契約、通貨がどのように取引されるかを説明する",
+      "order": 10,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_1",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "1",
+      "title": "Introduction",
+      "titleJa": "はじめに",
+      "content": "Security market indexes measure the value of a selection of securities. They serve as benchmarks for portfolio performance and as the basis for investment products.",
+      "contentJa": "証券市場インデックスは、選択された証券の価値を測定します。ポートフォリオパフォーマンスのベンチマークとして、また投資商品の基盤として機能します。",
+      "keyPoints": [
+        "Indexes measure the value of a target market",
+        "Used as benchmarks and for creating investment products",
+        "Understanding construction is essential for proper use"
+      ],
+      "keyPointsJa": [
+        "インデックスはターゲット市場の価値を測定する",
+        "ベンチマークとして、また投資商品の作成に使用される",
+        "適切な使用には構築方法の理解が不可欠"
+      ],
+      "checkQuestions": [],
+      "order": 1,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_2",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "2",
+      "title": "Index Definition and Calculations",
+      "titleJa": "インデックスの定義と計算",
+      "content": "A security market index represents a given security market or segment. Index returns can be calculated as price returns (excluding dividends) or total returns (including dividends).",
+      "contentJa": "証券市場インデックスは、特定の証券市場またはセグメントを表します。インデックスリターンは、価格リターン（配当を除く）またはトータルリターン（配当を含む）として計算できます。",
+      "keyPoints": [
+        "Price return: measures only price changes",
+        "Total return: includes price changes plus income (dividends)",
+        "Index value = Sum of (Price × Weight) / Divisor",
+        "Divisor adjusted for stock splits and index changes"
+      ],
+      "keyPointsJa": [
+        "価格リターン：価格変動のみを測定",
+        "トータルリターン：価格変動とインカム（配当）を含む",
+        "インデックス値 = (価格 × ウェイト)の合計 / 除数",
+        "除数は株式分割やインデックス変更に対して調整される"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_SMI_2_Q1",
+          "contentId": "EQ_SMI_2",
+          "question": "What is the difference between price return and total return?",
+          "questionJa": "価格リターンとトータルリターンの違いは何ですか？",
+          "answer": "Price return measures only the percentage change in price. Total return includes both price changes and income from dividends or interest.",
+          "answerJa": "価格リターンは価格の変化率のみを測定します。トータルリターンは価格変動と配当や利息からのインカムの両方を含みます。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe a security market index; calculate and interpret the value, price return, and total return of an index",
+      "learningOutcomeJa": "証券市場インデックスを説明し、インデックスの価値、価格リターン、トータルリターンを計算し解釈する",
+      "order": 2,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_3",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "3",
+      "title": "Index Weighting Methods",
+      "titleJa": "インデックスの加重方式",
+      "content": "The four main weighting methods are price weighting, equal weighting, market-capitalization weighting, and fundamental weighting. Each has distinct advantages and disadvantages.",
+      "contentJa": "4つの主要な加重方式は、価格加重、均等加重、時価総額加重、ファンダメンタル加重です。それぞれに明確な利点と欠点があります。",
+      "keyPoints": [
+        "Price weighting: weight based on share price (e.g., Dow Jones)",
+        "Equal weighting: same weight for all securities",
+        "Market-cap weighting: weight based on market value",
+        "Fundamental weighting: weight based on financial metrics"
+      ],
+      "keyPointsJa": [
+        "価格加重：株価に基づくウェイト（例：ダウ平均）",
+        "均等加重：すべての証券に同じウェイト",
+        "時価総額加重：市場価値に基づくウェイト",
+        "ファンダメンタル加重：財務指標に基づくウェイト"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_SMI_3_Q1",
+          "contentId": "EQ_SMI_3",
+          "question": "What are the four main index weighting methods?",
+          "questionJa": "4つの主要なインデックス加重方式は何ですか？",
+          "answer": "Price weighting, equal weighting, market-capitalization weighting, and fundamental weighting.",
+          "answerJa": "価格加重、均等加重、時価総額加重、ファンダメンタル加重。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "compare the different weighting methods used in index construction",
+      "learningOutcomeJa": "インデックス構築に使用される異なる加重方式を比較する",
+      "order": 3,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_4",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "4",
+      "title": "Rebalancing and Reconstitution",
+      "titleJa": "リバランスと再構成",
+      "content": "Rebalancing adjusts weights back to target levels. Reconstitution changes the constituent securities based on selection criteria.",
+      "contentJa": "リバランスはウェイトを目標レベルに戻します。再構成は選定基準に基づいて構成銘柄を変更します。",
+      "keyPoints": [
+        "Rebalancing: periodic adjustment of weights",
+        "More frequent for equal-weighted indexes",
+        "Reconstitution: adding/removing securities",
+        "Can cause price effects (reconstitution effect)"
+      ],
+      "keyPointsJa": [
+        "リバランス：ウェイトの定期的な調整",
+        "均等加重インデックスではより頻繁",
+        "再構成：証券の追加/削除",
+        "価格効果を引き起こす可能性（再構成効果）"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_SMI_4_Q1",
+          "contentId": "EQ_SMI_4",
+          "question": "What is the difference between rebalancing and reconstitution?",
+          "questionJa": "リバランスと再構成の違いは何ですか？",
+          "answer": "Rebalancing adjusts the weights of existing securities back to target levels. Reconstitution changes which securities are included in the index.",
+          "answerJa": "リバランスは既存証券のウェイトを目標レベルに戻します。再構成はインデックスに含まれる証券を変更します。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe rebalancing and reconstitution of an index",
+      "learningOutcomeJa": "インデックスのリバランスと再構成を説明する",
+      "order": 4,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_5",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "5",
+      "title": "Uses of Market Indexes",
+      "titleJa": "市場インデックスの用途",
+      "content": "Market indexes serve as gauges of market sentiment, proxies for measuring risk and return, benchmarks for active managers, and model portfolios for index funds.",
+      "contentJa": "市場インデックスは、市場センチメントの指標、リスクとリターンを測定するための代理変数、アクティブマネージャーのベンチマーク、インデックスファンドのモデルポートフォリオとして機能します。",
+      "keyPoints": [
+        "Gauges of market sentiment and investor confidence",
+        "Proxies for systematic risk (beta calculation)",
+        "Benchmarks for evaluating active management",
+        "Basis for index funds and ETFs",
+        "Asset class proxies in asset allocation"
+      ],
+      "keyPointsJa": [
+        "市場センチメントと投資家の信頼感の指標",
+        "システマティックリスクの代理変数（ベータ計算）",
+        "アクティブ運用を評価するベンチマーク",
+        "インデックスファンドとETFの基盤",
+        "資産配分における資産クラスの代理変数"
+      ],
+      "checkQuestions": [],
+      "learningOutcome": "describe uses of security market indexes",
+      "learningOutcomeJa": "証券市場インデックスの用途を説明する",
+      "order": 5,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_6",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "6",
+      "title": "Equity Indexes",
+      "titleJa": "株式インデックス",
+      "content": "Equity indexes include broad market, multi-market, sector, and style indexes. They vary by geographic coverage, market segment, and investment style.",
+      "contentJa": "株式インデックスには、広範市場、マルチマーケット、セクター、スタイルインデックスが含まれます。地理的カバレッジ、市場セグメント、投資スタイルによって異なります。",
+      "keyPoints": [
+        "Broad market: represents entire equity market",
+        "Multi-market: covers multiple countries/regions",
+        "Sector: tracks specific industries",
+        "Style: based on size (cap) and value/growth"
+      ],
+      "keyPointsJa": [
+        "広範市場：株式市場全体を表す",
+        "マルチマーケット：複数の国/地域をカバー",
+        "セクター：特定の産業を追跡",
+        "スタイル：サイズ（時価総額）とバリュー/グロースに基づく"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_SMI_6_Q1",
+          "contentId": "EQ_SMI_6",
+          "question": "What are the six basic style index categories?",
+          "questionJa": "6つの基本的なスタイルインデックスカテゴリーは何ですか？",
+          "answer": "Large-cap value, large-cap growth, mid-cap value, mid-cap growth, small-cap value, and small-cap growth.",
+          "answerJa": "大型バリュー、大型グロース、中型バリュー、中型グロース、小型バリュー、小型グロース。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe types of equity indexes",
+      "learningOutcomeJa": "株式インデックスの種類を説明する",
+      "order": 6,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_7",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "7",
+      "title": "Fixed-Income Indexes",
+      "titleJa": "債券インデックス",
+      "content": "Fixed-income indexes face unique challenges due to the large number of securities, dealer markets, and illiquidity. They are categorized by issuer, maturity, and credit quality.",
+      "contentJa": "債券インデックスは、証券数の多さ、ディーラー市場、非流動性により独自の課題に直面します。発行体、満期、信用格付けで分類されます。",
+      "keyPoints": [
+        "More securities than equity indexes",
+        "Many bonds trade infrequently (pricing challenges)",
+        "Categories: government, corporate, securitized",
+        "Dimensions: issuer, maturity, credit quality",
+        "Harder to replicate than equity indexes"
+      ],
+      "keyPointsJa": [
+        "株式インデックスより多くの証券",
+        "多くの債券は取引頻度が低い（価格設定の課題）",
+        "カテゴリー：政府、企業、証券化",
+        "次元：発行体、満期、信用格付け",
+        "株式インデックスより複製が困難"
+      ],
+      "checkQuestions": [],
+      "learningOutcome": "describe types of fixed-income indexes",
+      "learningOutcomeJa": "債券インデックスの種類を説明する",
+      "order": 7,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_8",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "section": "8",
+      "title": "Indexes for Alternative Investments",
+      "titleJa": "オルタナティブ投資のインデックス",
+      "content": "Alternative investment indexes cover commodities, real estate, and hedge funds. Each has unique construction challenges and biases.",
+      "contentJa": "オルタナティブ投資インデックスは、コモディティ、不動産、ヘッジファンドをカバーします。それぞれに独自の構築上の課題とバイアスがあります。",
+      "keyPoints": [
+        "Commodity indexes: based on futures contracts",
+        "Real estate: REITs or appraisal-based indexes",
+        "Hedge funds: survivorship and selection bias",
+        "Different weighting methods across providers"
+      ],
+      "keyPointsJa": [
+        "コモディティインデックス：先物契約に基づく",
+        "不動産：REITまたは鑑定ベースのインデックス",
+        "ヘッジファンド：サバイバーシップバイアスと選択バイアス",
+        "プロバイダー間で異なる加重方式"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_SMI_8_Q1",
+          "contentId": "EQ_SMI_8",
+          "question": "What biases affect hedge fund indexes?",
+          "questionJa": "ヘッジファンドインデックスに影響するバイアスは何ですか？",
+          "answer": "Survivorship bias (failed funds drop out) and selection bias (funds choose whether to report). These biases tend to overstate hedge fund performance.",
+          "answerJa": "サバイバーシップバイアス（失敗したファンドが脱落）と選択バイアス（ファンドが報告するかどうかを選択）。これらのバイアスはヘッジファンドのパフォーマンスを過大評価する傾向があります。",
+          "order": 1
+        }
+      ],
+      "learningOutcome": "describe indexes representing alternative investments",
+      "learningOutcomeJa": "オルタナティブ投資を表すインデックスを説明する",
+      "order": 8,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    }
+  ],
+  "examples": [
+    {
+      "id": "EQ_MOS_EX1",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "exampleNumber": 1,
+      "title": "Leverage Ratio Calculation",
+      "titleJa": "レバレッジ比率の計算",
+      "problem": "An investor purchases $100,000 of stock using $60,000 of their own money and $40,000 borrowed from a broker. Calculate the leverage ratio.",
+      "problemJa": "投資家が自己資金60,000ドルとブローカーからの借入40,000ドルを使用して100,000ドルの株式を購入しました。レバレッジ比率を計算してください。",
+      "solution": "Leverage ratio = Total asset value / Equity = $100,000 / $60,000 = 1.67",
+      "solutionJa": "レバレッジ比率 = 総資産価値 / 自己資本 = 100,000ドル / 60,000ドル = 1.67",
+      "explanation": "A leverage ratio of 1.67 means the investor controls $1.67 of assets for every $1 of equity. This amplifies both gains and losses.",
+      "explanationJa": "レバレッジ比率1.67は、投資家が自己資本1ドルあたり1.67ドルの資産を管理していることを意味します。これにより利益と損失の両方が増幅されます。",
+      "relatedSection": "5",
+      "difficulty": "easy",
+      "order": 1,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_EX2",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "exampleNumber": 2,
+      "title": "Margin Call Price",
+      "titleJa": "マージンコール価格",
+      "problem": "An investor buys 1,000 shares at $50 per share with 50% initial margin and 25% maintenance margin. At what price will the investor receive a margin call?",
+      "problemJa": "投資家が1株50ドルで1,000株を購入し、当初証拠金50%、維持証拠金25%です。どの価格でマージンコールを受けますか？",
+      "solution": "Margin call price = P₀ × (1 - Initial margin) / (1 - Maintenance margin) = $50 × (1 - 0.50) / (1 - 0.25) = $50 × 0.50 / 0.75 = $33.33",
+      "solutionJa": "マージンコール価格 = P₀ × (1 - 当初証拠金) / (1 - 維持証拠金) = 50ドル × (1 - 0.50) / (1 - 0.25) = 50ドル × 0.50 / 0.75 = 33.33ドル",
+      "explanation": "When the stock price falls to $33.33, the equity in the account will equal exactly 25% of the position value, triggering a margin call.",
+      "explanationJa": "株価が33.33ドルに下落すると、口座の自己資本がポジション価値のちょうど25%になり、マージンコールが発生します。",
+      "relatedSection": "6",
+      "difficulty": "medium",
+      "order": 2,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_EX3",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "exampleNumber": 3,
+      "title": "Return on Margin Transaction",
+      "titleJa": "信用取引のリターン",
+      "problem": "An investor buys $100,000 of stock with 50% margin. The stock rises 20%. Calculate the return on equity.",
+      "problemJa": "投資家が50%の証拠金で100,000ドルの株式を購入しました。株価が20%上昇しました。自己資本利益率を計算してください。",
+      "solution": "Equity invested = $50,000. Stock gain = $100,000 × 20% = $20,000. Return on equity = $20,000 / $50,000 = 40%",
+      "solutionJa": "投資した自己資本 = 50,000ドル。株式利益 = 100,000ドル × 20% = 20,000ドル。自己資本利益率 = 20,000ドル / 50,000ドル = 40%",
+      "explanation": "The 2x leverage doubles the return: a 20% stock gain becomes a 40% return on equity (before interest costs).",
+      "explanationJa": "2倍のレバレッジがリターンを2倍にします：20%の株式利益が40%の自己資本利益率になります（金利コスト前）。",
+      "relatedSection": "6",
+      "difficulty": "medium",
+      "order": 3,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_EX1",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "exampleNumber": 1,
+      "title": "Price-Weighted Index Calculation",
+      "titleJa": "価格加重インデックスの計算",
+      "problem": "Calculate the value of a price-weighted index with three stocks: A at $25, B at $50, and C at $75. The divisor is 3.",
+      "problemJa": "3つの株式を持つ価格加重インデックスの値を計算してください：Aが25ドル、Bが50ドル、Cが75ドル。除数は3です。",
+      "solution": "Index value = (25 + 50 + 75) / 3 = 150 / 3 = 50",
+      "solutionJa": "インデックス値 = (25 + 50 + 75) / 3 = 150 / 3 = 50",
+      "explanation": "In a price-weighted index, the index value is simply the sum of prices divided by the divisor. Stock C has the highest weight (50%) because it has the highest price.",
+      "explanationJa": "価格加重インデックスでは、インデックス値は単純に価格の合計を除数で割ったものです。株式Cは最高価格のため、最も高いウェイト（50%）を持っています。",
+      "relatedSection": "3",
+      "difficulty": "easy",
+      "order": 1,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_EX2",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "exampleNumber": 2,
+      "title": "Equal-Weighted Index Return",
+      "titleJa": "均等加重インデックスのリターン",
+      "problem": "An equal-weighted index has three stocks. Stock A returns 10%, B returns -5%, and C returns 20%. What is the index return?",
+      "problemJa": "均等加重インデックスには3つの株式があります。株式Aのリターンは10%、Bは-5%、Cは20%です。インデックスのリターンは何ですか？",
+      "solution": "Index return = (10% + (-5%) + 20%) / 3 = 25% / 3 = 8.33%",
+      "solutionJa": "インデックスリターン = (10% + (-5%) + 20%) / 3 = 25% / 3 = 8.33%",
+      "explanation": "In an equal-weighted index, each stock contributes equally to the return regardless of its price or market cap.",
+      "explanationJa": "均等加重インデックスでは、価格や時価総額に関係なく、各株式がリターンに均等に貢献します。",
+      "relatedSection": "3",
+      "difficulty": "easy",
+      "order": 2,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_EX3",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "exampleNumber": 3,
+      "title": "Market-Cap Weighted Index",
+      "titleJa": "時価総額加重インデックス",
+      "problem": "Calculate the weight of Stock A in a market-cap weighted index. Stock A: 1,000 shares at $50. Stock B: 2,000 shares at $30. Stock C: 500 shares at $100.",
+      "problemJa": "時価総額加重インデックスにおける株式Aのウェイトを計算してください。株式A：1,000株、50ドル。株式B：2,000株、30ドル。株式C：500株、100ドル。",
+      "solution": "Market caps: A = $50,000, B = $60,000, C = $50,000. Total = $160,000. Weight of A = 50,000/160,000 = 31.25%",
+      "solutionJa": "時価総額：A = 50,000ドル、B = 60,000ドル、C = 50,000ドル。合計 = 160,000ドル。Aのウェイト = 50,000/160,000 = 31.25%",
+      "explanation": "Market-cap weighting reflects the relative market value of each company. Larger companies have more influence on the index.",
+      "explanationJa": "時価総額加重は各企業の相対的な市場価値を反映します。大企業がインデックスにより大きな影響を与えます。",
+      "relatedSection": "3",
+      "difficulty": "medium",
+      "order": 3,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_SMI_EX4",
+      "subject": "EQ",
+      "reading": "SMI",
+      "readingTitle": "Security Market Indexes",
+      "readingTitleJa": "証券市場インデックス",
+      "exampleNumber": 4,
+      "title": "Price Return vs Total Return",
+      "titleJa": "価格リターン vs トータルリターン",
+      "problem": "An index starts at 1,000 and ends at 1,050. During the period, the dividend yield was 2%. Calculate both price return and total return.",
+      "problemJa": "インデックスが1,000から始まり1,050で終了しました。期間中の配当利回りは2%でした。価格リターンとトータルリターンの両方を計算してください。",
+      "solution": "Price return = (1,050 - 1,000) / 1,000 = 5%. Total return = 5% + 2% = 7%",
+      "solutionJa": "価格リターン = (1,050 - 1,000) / 1,000 = 5%。トータルリターン = 5% + 2% = 7%",
+      "explanation": "Price return captures only capital appreciation. Total return adds income (dividends) to provide a complete picture of investment performance.",
+      "explanationJa": "価格リターンはキャピタルゲインのみを捉えます。トータルリターンはインカム（配当）を加えて、投資パフォーマンスの完全な姿を提供します。",
+      "relatedSection": "2",
+      "difficulty": "easy",
+      "order": 4,
+      "createdAt": "2025-01-08T00:00:00Z",
+      "updatedAt": "2025-01-08T00:00:00Z"
+    }
+  ]
+}

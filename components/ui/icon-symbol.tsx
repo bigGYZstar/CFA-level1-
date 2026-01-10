@@ -1,24 +1,21 @@
 // Fallback for using MaterialIcons on Android and web.
 
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import { SymbolWeight, SymbolViewProps } from "expo-symbols";
+import { SymbolWeight } from "expo-symbols";
 import { ComponentProps } from "react";
 import { OpaqueColorValue, type StyleProp, type TextStyle } from "react-native";
 
-type IconMapping = Record<SymbolViewProps["name"], ComponentProps<typeof MaterialIcons>["name"]>;
-type IconSymbolName = keyof typeof MAPPING;
-
-/**
- * Add your SF Symbols to Material Icons mappings here.
- */
+// SF Symbol名からMaterial Icons名へのマッピング
 const MAPPING = {
   "house.fill": "home",
   "paperplane.fill": "send",
   "chevron.left.forwardslash.chevron.right": "code",
   "chevron.right": "chevron-right",
-  // CFA単語帳アプリ用アイコン
-  "book.fill": "menu-book",
-  "questionmark.circle.fill": "quiz",
+  "book.fill": "book",
+  "book.pages.fill": "menu-book",
+  "questionmark.circle.fill": "help",
+  "gamepad.fill": "sports-esports",
+  "gamecontroller.fill": "sports-esports",
   "gearshape.fill": "settings",
   "magnifyingglass": "search",
   "star.fill": "star",
@@ -36,15 +33,17 @@ const MAPPING = {
   "chart.bar.fill": "bar-chart",
   "clock.fill": "schedule",
   "flag.fill": "flag",
-  "gamepad.fill": "sports-esports",
   // SRSアルゴリズム設定用
   "brain": "psychology",
   "xmark": "close",
   "info.circle": "info",
   // 音声再生用
   "speaker.wave.2.fill": "volume-up",
+  "volume.2.fill": "volume-up",
   "speaker.slash.fill": "volume-off",
 } as const;
+
+type IconSymbolName = keyof typeof MAPPING;
 
 /**
  * An icon component that uses native SF Symbols on iOS, and Material Icons on Android and web.
@@ -61,5 +60,6 @@ export function IconSymbol({
   style?: StyleProp<TextStyle>;
   weight?: SymbolWeight;
 }) {
-  return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
+  const iconName = MAPPING[name] as ComponentProps<typeof MaterialIcons>["name"];
+  return <MaterialIcons color={color} size={size} name={iconName} style={style} />;
 }

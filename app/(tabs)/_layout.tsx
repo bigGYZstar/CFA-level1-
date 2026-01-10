@@ -43,6 +43,13 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="textbook"
+        options={{
+          title: "テキスト",
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="book.pages.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="quiz"
         options={{
           title: "クイズ",
@@ -53,7 +60,7 @@ export default function TabLayout() {
         name="game"
         options={{
           title: "ゲーム",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gamepad.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gamecontroller.fill" color={color} />,
         }}
       />
       <Tabs.Screen

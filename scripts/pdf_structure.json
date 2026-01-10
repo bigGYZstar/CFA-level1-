@@ -1,0 +1,58 @@
+{
+  "pdf_info": {
+    "title": "Equity Investments",
+    "source": "2026 CFA PROGRAM CURRICULUM LEVEL I BOX SET (ENGLISH EDITION)",
+    "total_pages": 268,
+    "copyright": "© 2025 by CFA Institute. All Rights Reserved."
+  },
+  "readings": [
+    {
+      "number": 1,
+      "title": "Market Organization and Structure",
+      "author": "Larry Harris, PhD, CFA",
+      "start_page": 2,
+      "sections": [
+        {
+          "number": 1,
+          "title": "INTRODUCTION",
+          "page": 3
+        },
+        {
+          "number": 2,
+          "title": "THE FUNCTIONS OF THE FINANCIAL SYSTEM",
+          "page": 3,
+          "subsections": [
+            "2.1. Helping People Achieve Their Purposes in Using the Financial System",
+            "2.1.1. Saving",
+            "2.1.2. Borrowing",
+            "2.1.3. Raising Equity Capital",
+            "2.1.4. Managing Risks",
+            "2.1.5. Exchanging Assets for Immediate Delivery (Spot Market Trading)"
+          ]
+        }
+      ],
+      "learning_outcomes": [
+        "explain the main functions of the financial system",
+        "describe classifications of assets and markets",
+        "describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets",
+        "describe types of financial intermediaries and services that they provide",
+        "compare positions an investor can take in an asset",
+        "calculate and interpret the leverage ratio, the rate of return on a margin transaction, and the security price at which the investor would receive a margin call",
+        "compare execution, validity, and clearing instructions",
+        "compare market orders with limit orders",
+        "define primary and secondary markets and explain how secondary markets support primary markets",
+        "describe how securities, contracts, and currencies are traded in quote-driven, order-driven, and brokered markets",
+        "describe characteristics of a well-functioning financial system",
+        "describe objectives of market regulation"
+      ],
+      "examples": [
+        {
+          "number": 1,
+          "title": "Financing Capital Projects",
+          "page": 5,
+          "question": "As a chief financial officer (CFO) of a large industrial firm, you need to raise cash within a few months to pay for a project to expand existing and acquire new manufacturing facilities. What are the primary options available to you?"
+        }
+      ]
+    }
+  ]
+}
