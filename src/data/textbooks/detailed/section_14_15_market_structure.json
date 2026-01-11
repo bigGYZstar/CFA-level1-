@@ -1,0 +1,196 @@
+{
+  "section_number": "14-15",
+  "section_title": "Primary and Secondary Markets",
+  "section_title_ja": "発行市場と流通市場",
+  "japanese_summary": [
+    "企業は投資銀行と契約して証券を公募する。投資銀行はブックビルディングで投資家の需要を集める",
+    "IPO（新規株式公開）は企業の最初の公募。新株発行と創業者の持株売却を含むことがある",
+    "引受発行（Underwritten offering）では投資銀行が売れ残りを買い取る保証をする。手数料は約7%",
+    "ベストエフォート発行では投資銀行はブローカーとして行動し、売れ残りリスクは発行者が負う",
+    "投資銀行には利益相反がある：発行者の代理人として高い価格を望むが、引受人として低い価格を望む",
+    "流通市場は注文駆動型（オーダードリブン）と気配駆動型（クォートドリブン）に分類される",
+    "オーダードリブン市場では注文同士がマッチング。クォートドリブン市場ではディーラーが価格を提示",
+    "コールマーケットは特定時間に注文を集約して執行。継続市場は取引時間中いつでも執行可能"
+  ],
+  "key_concepts": [
+    {
+      "term": "Book building",
+      "japanese": "ブックビルディング",
+      "definition": "投資銀行が投資家の需要を集めて注文帳を作成するプロセス"
+    },
+    {
+      "term": "Initial Public Offering (IPO)",
+      "japanese": "新規株式公開",
+      "definition": "企業が初めて株式を公募すること"
+    },
+    {
+      "term": "Seasoned offering",
+      "japanese": "追加公募（シーズンドオファリング）",
+      "definition": "既に上場している企業による追加の株式発行"
+    },
+    {
+      "term": "Underwritten offering",
+      "japanese": "引受発行",
+      "definition": "投資銀行が売れ残りを買い取る保証をする発行方式"
+    },
+    {
+      "term": "Best effort offering",
+      "japanese": "ベストエフォート発行",
+      "definition": "投資銀行がブローカーとして行動し、売れ残りリスクは発行者が負う発行方式"
+    },
+    {
+      "term": "Underwriting fee",
+      "japanese": "引受手数料",
+      "definition": "投資銀行が引受サービスに対して受け取る手数料。通常約7%"
+    },
+    {
+      "term": "Syndicate",
+      "japanese": "シンジケート",
+      "definition": "大型発行で主幹事を支援する投資銀行とブローカーディーラーのグループ"
+    },
+    {
+      "term": "Order-driven market",
+      "japanese": "注文駆動型市場",
+      "definition": "買い注文と売り注文がマッチングルールに基づいて約定する市場"
+    },
+    {
+      "term": "Quote-driven market",
+      "japanese": "気配駆動型市場",
+      "definition": "ディーラーが買い・売り価格を提示し、トレーダーがその価格で取引する市場"
+    },
+    {
+      "term": "Call market",
+      "japanese": "コールマーケット",
+      "definition": "特定の時間に注文を集約して一斉に執行する市場"
+    },
+    {
+      "term": "Continuous market",
+      "japanese": "継続市場",
+      "definition": "取引時間中いつでも注文が約定可能な市場"
+    },
+    {
+      "term": "Private placement",
+      "japanese": "私募",
+      "definition": "公募ではなく、特定の投資家に直接証券を売却すること"
+    },
+    {
+      "term": "Shelf registration",
+      "japanese": "シェルフ登録",
+      "definition": "事前に証券を登録しておき、市場環境が良い時に発行できる制度"
+    },
+    {
+      "term": "Rights offering",
+      "japanese": "ライツオファリング",
+      "definition": "既存株主に新株を購入する権利を与える発行方式"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "In an underwritten offering, who bears the risk if the securities are not fully sold?",
+      "question_ja": "引受発行において、証券が完売しなかった場合のリスクを負うのは誰か？",
+      "options": [
+        "A. The issuer",
+        "B. The investment bank",
+        "C. The existing shareholders",
+        "D. The regulatory authority"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。引受発行では、投資銀行が発行価格での売却を保証する。売れ残りがあれば投資銀行が買い取る。"
+    },
+    {
+      "question": "Why do IPO prices often rise immediately after the offering?",
+      "question_ja": "IPO価格が公募直後に上昇することが多いのはなぜか？",
+      "options": [
+        "A. Because of high demand from retail investors",
+        "B. Because investment banks have incentives to set low offering prices",
+        "C. Because of regulatory requirements",
+        "D. Because of currency fluctuations"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。投資銀行は引受人として低い価格を望む傾向がある。価格が低ければ、優良顧客に価値ある株式を配分でき、売れ残りリスクも低下する。"
+    },
+    {
+      "question": "Which type of market structure involves dealers providing bid and ask prices?",
+      "question_ja": "ディーラーがビッド価格とアスク価格を提示する市場構造はどれか？",
+      "options": [
+        "A. Order-driven market",
+        "B. Quote-driven market",
+        "C. Call market",
+        "D. Auction market"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。気配駆動型市場（クォートドリブン市場）では、ディーラーが買い・売り価格を提示し、トレーダーがその価格で取引する。"
+    },
+    {
+      "question": "A company issues additional shares to the public after its IPO. This is best described as:",
+      "question_ja": "企業がIPO後に追加の株式を公募した場合、これは何と呼ばれるか？",
+      "options": [
+        "A. Initial public offering",
+        "B. Seasoned offering",
+        "C. Private placement",
+        "D. Rights offering"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。既に上場している企業による追加の株式発行は、シーズンドオファリング（追加公募）と呼ばれる。"
+    },
+    {
+      "question": "In a best effort offering, the investment bank:",
+      "question_ja": "ベストエフォート発行において、投資銀行は：",
+      "options": [
+        "A. Guarantees the sale of all securities",
+        "B. Acts only as a broker",
+        "C. Buys all unsold securities",
+        "D. Sets the offering price unilaterally"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。ベストエフォート発行では、投資銀行はブローカーとして行動するのみ。売れ残りがあっても買い取る義務はない。"
+    },
+    {
+      "question": "What is the typical underwriting fee for a public offering?",
+      "question_ja": "公募の典型的な引受手数料はいくらか？",
+      "options": [
+        "A. About 1%",
+        "B. About 3%",
+        "C. About 7%",
+        "D. About 15%"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「The issuer usually pays an underwriting fee of about 7 percent for these various services」と説明されている。"
+    }
+  ],
+  "calculation_examples": [
+    {
+      "title": "IPO Return Calculation",
+      "title_ja": "IPOリターンの計算",
+      "given": {
+        "offering_price": "£2.57/share",
+        "closing_price_day1": "£2.73/share"
+      },
+      "solution_steps": [
+        "1. 初日リターン = (終値 - 公募価格) / 公募価格",
+        "2. 初日リターン = (£2.73 - £2.57) / £2.57",
+        "3. 初日リターン = £0.16 / £2.57 = 6.2%"
+      ],
+      "japanese_explanation": "IPO参加者は初日で6.2%のリターンを得た。これは投資銀行が公募価格を低く設定した結果である可能性がある。"
+    },
+    {
+      "title": "Placement Cost Calculation",
+      "title_ja": "発行コストの計算",
+      "given": {
+        "gross_proceeds": "£34.3 million",
+        "net_proceeds": "£31.8 million"
+      },
+      "solution_steps": [
+        "1. 発行コスト = グロス収入 - ネット収入",
+        "2. 発行コスト = £34.3 million - £31.8 million = £2.5 million",
+        "3. 発行コスト率 = £2.5 million / £31.8 million = 7.9%"
+      ],
+      "japanese_explanation": "発行コストはネット収入の7.9%。これには引受手数料、法務費用、会計費用などが含まれる。"
+    }
+  ],
+  "practical_examples": [
+    "日本のIPOの例：メルカリは2018年に東証マザーズに上場。公募価格3,000円に対し、初値は5,000円（67%上昇）。投資銀行は大和証券、モルガン・スタンレーMUFGなどがシンジケートを組成。",
+    "日本の追加公募の例：ソフトバンクグループが子会社ソフトバンク株式会社の株式を追加売却する場合、これはシーズンドオファリングに該当。",
+    "日本の市場構造の例：東京証券取引所はオーダードリブン市場。寄付と引けはコールオークション方式、ザラ場は継続市場方式で取引される。"
+  ]
+}

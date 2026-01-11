@@ -1,0 +1,117 @@
+{
+  "section_number": "2.1.2",
+  "section_title": "Borrowing",
+  "section_title_ja": "借入",
+  "japanese_summary": [
+    "個人、企業、政府は現在持っていない資金を借入によって調達し、プロジェクトや支出に充てる",
+    "個人は住宅ローン、個人ローン、クレジットカードで借入し、将来の収入で返済する",
+    "企業は銀行融資、与信枠、固定利付証券の発行で資金を調達し、将来の収益で返済する",
+    "政府は短期証券（bills）、中期債（notes）、長期債（bonds）を発行し、税収や事業収益で返済する",
+    "貸し手は返済リスクが高い場合、より高い金利を要求する。借り手は担保を提供することで借入コストを下げられる",
+    "信用調査機関、格付機関、政府の破産法制度が借入を促進する"
+  ],
+  "key_concepts": [
+    {
+      "term": "Collateral",
+      "japanese": "担保",
+      "definition": "借入の返済を保証するために貸し手に差し入れる資産。返済不能の場合、貸し手は担保を売却して資金を回収できる"
+    },
+    {
+      "term": "Credit bureaus",
+      "japanese": "信用調査機関",
+      "definition": "借り手の信用情報を収集・提供する機関。貸し手が信用分析を行うための情報を提供する"
+    },
+    {
+      "term": "Credit rating agencies",
+      "japanese": "格付機関",
+      "definition": "借り手の信用力を評価し格付けを付与する機関。貸し手の信用分析を支援する"
+    },
+    {
+      "term": "Mortgage",
+      "japanese": "住宅ローン",
+      "definition": "不動産を担保とした長期借入。個人が住宅購入資金を調達する主な手段"
+    },
+    {
+      "term": "Line of credit",
+      "japanese": "与信枠",
+      "definition": "銀行が企業に設定する借入限度額。必要に応じて限度額内で資金を借り入れられる"
+    },
+    {
+      "term": "Fixed income securities",
+      "japanese": "固定利付証券",
+      "definition": "企業が投資家に発行する債券。定期的な利払いと元本返済を約束する"
+    },
+    {
+      "term": "Bankruptcy codes",
+      "japanese": "破産法",
+      "definition": "借り手と貸し手の権利を定義し執行する法制度。借入を促進する基盤となる"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "Which of the following is NOT a typical way for governments to borrow money?",
+      "question_ja": "政府が資金を借り入れる方法として、一般的でないものはどれか？",
+      "options": [
+        "A. Selling bills",
+        "B. Selling notes",
+        "C. Selling bonds",
+        "D. Issuing common stock"
+      ],
+      "correct_answer": "D",
+      "explanation": "正解はD。テキストでは「Governments borrow by selling bills, notes, or bonds」と説明されています。政府は短期証券（bills）、中期債（notes）、長期債（bonds）を発行して借入を行いますが、普通株式（common stock）は企業が発行するものであり、政府の借入手段ではありません。"
+    },
+    {
+      "question": "Why do lenders demand higher interest rates when they believe repayment may not occur?",
+      "question_ja": "貸し手が返済されない可能性があると考える場合、なぜ高い金利を要求するのか？",
+      "options": [
+        "A. To maximize their profits",
+        "B. To cover expected losses and compensate for uncertainty",
+        "C. To discourage all borrowing",
+        "D. To comply with government regulations"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「they will demand higher rates of interest to cover their expected losses and to compensate them for the discomfit they experience wondering whether they will lose their money」と説明されています。高い金利は予想損失をカバーし、資金を失うかもしれないという不安に対する補償として要求されます。"
+    },
+    {
+      "question": "How can borrowers lower their costs of borrowing?",
+      "question_ja": "借り手はどのようにして借入コストを下げることができるか？",
+      "options": [
+        "A. By borrowing from multiple lenders",
+        "B. By pledging assets as collateral",
+        "C. By extending the loan term",
+        "D. By increasing the loan amount"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「To lower the costs of borrowing, borrowers often pledge assets as collateral for their loans」と説明されています。担保を提供することで、貸し手のリスクが軽減され、結果として借入コスト（金利）が低下します。"
+    },
+    {
+      "question": "Which entities promote borrowing by collecting and disseminating credit information?",
+      "question_ja": "信用情報を収集・提供することで借入を促進する機関はどれか？",
+      "options": [
+        "A. Central banks and commercial banks",
+        "B. Credit bureaus and credit rating agencies",
+        "C. Stock exchanges and bond markets",
+        "D. Insurance companies and pension funds"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「credit bureaus and credit rating agencies do so by collecting and disseminating information that lenders need to analyze credit prospects」と説明されています。信用調査機関と格付機関は、貸し手が信用分析を行うために必要な情報を収集・提供することで借入を促進します。"
+    },
+    {
+      "question": "When lenders are unwilling to loan to borrowers with risky projects, how might investors still supply capital?",
+      "question_ja": "貸し手がリスクの高いプロジェクトへの融資を拒否する場合、投資家はどのように資本を提供するか？",
+      "options": [
+        "A. By providing secured loans",
+        "B. By contributing capital in exchange for equity",
+        "C. By offering lower interest rates",
+        "D. By requiring government guarantees"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「Rather than lending money, however, they will contribute capital in exchange for equity in the projects」と説明されています。リスクの高いプロジェクトに対しては、貸付ではなく、株式（エクイティ）と引き換えに資本を提供する形で投資が行われます。"
+    }
+  ],
+  "practical_examples": [
+    "日本の個人の例：住宅購入者が銀行から住宅ローン（フラット35など）を借り入れ、購入する住宅を担保として提供する。毎月の給与から返済を行い、35年かけて完済する。",
+    "日本企業の例：ソフトバンクグループが社債を発行して投資家から資金を調達し、海外企業への投資に充てる。社債の利払いと元本返済は、投資先企業からの配当や売却益で賄う。",
+    "日本政府の例：財務省が国債（JGB）を発行して財政支出を賄う。10年物国債、40年物超長期国債など様々な年限の国債を発行し、税収で利払いと償還を行う。"
+  ]
+}

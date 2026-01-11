@@ -1,0 +1,97 @@
+{
+  "section_number": "2.1.1",
+  "section_title": "Saving",
+  "section_title_ja": "貯蓄",
+  "japanese_summary": [
+    "人々は現在の収入の一部を将来のために貯蓄する必要がある（退職後の生活費、企業の将来の支出など）",
+    "貯蓄者は預金証書、債券、株式、投資信託、不動産などの資産を購入して資金を将来に移転する",
+    "投資家は資金の使用と投資リスク（損失リスク、インフレリスク）に対する公正な収益率を要求する",
+    "金融システムは取引コストが低く、公正に価格設定された投資手段を提供することで貯蓄を促進する"
+  ],
+  "key_concepts": [
+    {
+      "term": "Savers",
+      "japanese": "貯蓄者",
+      "definition": "現在の支出を抑えて将来のために資金を蓄える個人や企業"
+    },
+    {
+      "term": "Investors",
+      "japanese": "投資家",
+      "definition": "金融リターンを得るために資金を投じる貯蓄者。資産を購入する際に投資し、売却する際に投資を回収する"
+    },
+    {
+      "term": "Fair rate of return",
+      "japanese": "公正な収益率",
+      "definition": "資金の使用と投資リスク（損失リスク、インフレリスク）を補償する適切な収益率"
+    },
+    {
+      "term": "Investment vehicles",
+      "japanese": "投資手段",
+      "definition": "銀行預金、債券、株式、投資信託など、投資家が資金を投じることができる金融商品"
+    },
+    {
+      "term": "Transaction costs",
+      "japanese": "取引コスト",
+      "definition": "資産の売買に伴う手数料や費用。低い取引コストは貯蓄を促進する"
+    },
+    {
+      "term": "Divestment",
+      "japanese": "投資回収",
+      "definition": "投資家が保有資産を売却して資金を回収すること"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "Which of the following best describes the primary reason people save money?",
+      "question_ja": "人々が貯蓄する主な理由として最も適切なものはどれか？",
+      "options": [
+        "A. To move money from the present to the future",
+        "B. To avoid paying taxes",
+        "C. To speculate on asset prices",
+        "D. To maximize current consumption"
+      ],
+      "correct_answer": "A",
+      "explanation": "正解はA。テキストでは、貯蓄の主な目的は「現在の資金を将来に移転すること」と説明されています。退職後の生活費や将来の支出に備えるために、人々は現在の収入の一部を貯蓄します。"
+    },
+    {
+      "question": "When savers commit money to earn a financial return, they are commonly called:",
+      "question_ja": "貯蓄者が金融リターンを得るために資金を投じる場合、一般的に何と呼ばれるか？",
+      "options": [
+        "A. Speculators",
+        "B. Investors",
+        "C. Traders",
+        "D. Borrowers"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「When savers commit money to earn a financial return, they commonly are called investors」と明記されています。貯蓄者が資産を購入して金融リターンを追求する場合、投資家と呼ばれます。"
+    },
+    {
+      "question": "The required fair rate of return compensates investors for:",
+      "question_ja": "公正な収益率が投資家に補償するものは何か？",
+      "options": [
+        "A. Only the use of their money",
+        "B. Only the risk of losing money",
+        "C. The use of their money and the risk of losing money or inflation",
+        "D. Only inflation risk"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「The required fair rate of return compensates them for the use of their money and for the risk that they may lose money if the investment fails or if inflation reduces the real value of their investments」と説明されています。公正な収益率は、資金の使用と損失リスク（投資の失敗またはインフレによる実質価値の減少）の両方を補償します。"
+    },
+    {
+      "question": "How does the financial system facilitate savings?",
+      "question_ja": "金融システムはどのようにして貯蓄を促進するか？",
+      "options": [
+        "A. By creating investment vehicles with high transaction costs",
+        "B. By creating investment vehicles that are difficult to trade",
+        "C. By creating investment vehicles that can be acquired and sold without substantial transaction costs",
+        "D. By eliminating all investment risks"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「The financial system facilitates savings when institutions create investment vehicles... that investors can acquire and sell without paying substantial transaction costs」と説明されています。金融システムは、低い取引コストで売買できる投資手段を提供することで貯蓄を促進します。"
+    }
+  ],
+  "practical_examples": [
+    "日本の例：会社員が毎月給与の一部を確定拠出年金（iDeCo）や投資信託に積み立てることで、退職後の生活資金を準備する。これは現在の収入を将来に移転する典型的な貯蓄行動である。",
+    "企業の例：トヨタ自動車が営業収益の一部を現金や短期債券で保有し、将来の設備投資や研究開発費に備える。これにより、必要な時に資金を活用できる。"
+  ]
+}

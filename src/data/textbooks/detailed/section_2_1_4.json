@@ -1,0 +1,116 @@
+{
+  "section_number": "2.1.4",
+  "section_title": "Managing Risks",
+  "section_title_ja": "リスク管理",
+  "japanese_summary": [
+    "個人、企業、政府はデフォルトリスク、金利リスク、為替リスク、原材料価格リスクなど様々な金融リスクに直面する",
+    "リスクはヘッジとして機能する契約を取引することで管理される",
+    "先渡契約（フォワード契約）により、農家と食品加工業者は穀物価格変動リスクを相互に排除できる",
+    "ヘッジャーは先物契約、オプション契約、保険契約を使用してリスクを他者に移転する",
+    "流動性の高い市場でリスク管理商品が取引できれば、人々はリスクを管理しやすくなり、収益性のある活動に取り組む意欲が高まる"
+  ],
+  "key_concepts": [
+    {
+      "term": "Default risk",
+      "japanese": "デフォルトリスク",
+      "definition": "借り手が債務を返済できなくなるリスク。信用リスクとも呼ばれる"
+    },
+    {
+      "term": "Hedgers",
+      "japanese": "ヘッジャー",
+      "definition": "リスクを相殺または保険するために取引を行う市場参加者"
+    },
+    {
+      "term": "Forward contract",
+      "japanese": "先渡契約",
+      "definition": "将来の特定日に、合意した価格で資産を売買する拘束力のある契約"
+    },
+    {
+      "term": "Futures contracts",
+      "japanese": "先物契約",
+      "definition": "標準化された先渡契約で、取引所で取引される"
+    },
+    {
+      "term": "Option contracts",
+      "japanese": "オプション契約",
+      "definition": "将来の特定日に、特定価格で資産を売買する権利（義務ではない）を与える契約"
+    },
+    {
+      "term": "Insurance contracts",
+      "japanese": "保険契約",
+      "definition": "保険料と引き換えに、特定のリスクを保険会社に移転する契約"
+    },
+    {
+      "term": "Risk transfer",
+      "japanese": "リスク移転",
+      "definition": "リスクを負担する意思のある他者にリスクを移転すること"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "Which of the following is NOT mentioned as a financial risk that concerns people, companies, and governments?",
+      "question_ja": "個人、企業、政府が懸念する金融リスクとして言及されていないものはどれか？",
+      "options": [
+        "A. Default risk",
+        "B. Interest rate risk",
+        "C. Reputational risk",
+        "D. Exchange rate risk"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「default risk and the risk of changes in interest rates, exchange rates, raw material prices, and sale prices」が金融リスクとして挙げられています。評判リスク（reputational risk）は言及されていません。"
+    },
+    {
+      "question": "In the grain example, how do both the farmer and food processor eliminate their price risk?",
+      "question_ja": "穀物の例で、農家と食品加工業者はどのようにして価格リスクを排除するか？",
+      "options": [
+        "A. By buying insurance",
+        "B. By entering into a forward contract",
+        "C. By selling their businesses",
+        "D. By diversifying their products"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「They both can eliminate their exposures to these risks if they enter into a binding forward contract for the farmer to sell a specified quantity of grain to the food processor at a future date at a mutually agreed upon price」と説明されています。先渡契約により将来の取引価格を固定し、両者が価格変動リスクを排除します。"
+    },
+    {
+      "question": "What instruments can hedgers use to transfer risk?",
+      "question_ja": "ヘッジャーがリスクを移転するために使用できる商品はどれか？",
+      "options": [
+        "A. Only forward contracts",
+        "B. Forward, futures, option, and insurance contracts",
+        "C. Only equity securities",
+        "D. Only bank deposits"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「In addition to forward contracts, they may use futures contracts, option contracts, or insurance contracts to transfer risk」と説明されています。ヘッジャーは先渡契約、先物契約、オプション契約、保険契約を使用してリスクを移転できます。"
+    },
+    {
+      "question": "How does the financial system facilitate risk management?",
+      "question_ja": "金融システムはどのようにしてリスク管理を促進するか？",
+      "options": [
+        "A. By eliminating all risks",
+        "B. By providing liquid markets for risk management instruments",
+        "C. By prohibiting risky activities",
+        "D. By guaranteeing investment returns"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「The financial system facilitates risk management when liquid markets exist in which risk managers can trade instruments that are correlated (or inversely correlated) with the risks that concern them without incurring substantial transaction costs」と説明されています。流動性の高い市場でリスク管理商品を低コストで取引できることがリスク管理を促進します。"
+    },
+    {
+      "question": "Why does risk transfer often make both parties more secure?",
+      "question_ja": "リスク移転がしばしば両当事者をより安全にするのはなぜか？",
+      "options": [
+        "A. Because one party always loses",
+        "B. Because both parties face exactly opposite risks",
+        "C. Because the government guarantees the transaction",
+        "D. Because risks are eliminated entirely"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「Often the hedger and the other entity face exactly the opposite risks, so the transfer makes both more secure」と説明されています。農家は価格下落を恐れ、食品加工業者は価格上昇を恐れるように、両者が正反対のリスクに直面している場合、リスク移転により両者が安全になります。"
+    }
+  ],
+  "practical_examples": [
+    "日本の航空会社の例：ANAやJALは燃料価格の変動リスクをヘッジするため、原油先物契約やスワップ契約を締結する。これにより、燃料費の予算管理が容易になる。",
+    "日本の輸出企業の例：トヨタ自動車は為替リスクをヘッジするため、為替先渡契約を締結する。ドル建て売上の円換算額を固定し、為替変動による収益への影響を軽減する。",
+    "日本の農家の例：JA（農協）を通じて、米の先渡契約を締結し、収穫時の価格を事前に確定させる。これにより、価格下落リスクから農家を保護する。"
+  ]
+}

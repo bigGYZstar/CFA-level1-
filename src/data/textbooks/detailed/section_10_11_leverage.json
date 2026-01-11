@@ -1,0 +1,221 @@
+{
+  "section_number": "10-11",
+  "section_title": "Short Positions and Leveraged Positions",
+  "section_title_ja": "ショートポジションとレバレッジポジション",
+  "japanese_summary": [
+    "ショートセラーは所有していない証券を借りて売却し、価格下落時に利益を得る",
+    "ロングポジションの利益は無限大だが損失は100%に限定。ショートポジションは逆で損失が無限大になりうる",
+    "証券貸借契約では、ショートセラーは売却代金を担保として預け、ショートリベート金利を受け取る",
+    "マージン取引では、投資家は購入価格の一部を借入で賄い、レバレッジを効かせる",
+    "レバレッジ比率 = ポジション価値 ÷ 自己資本。初期証拠金率40%の場合、最大レバレッジ比率は2.5倍",
+    "維持証拠金を下回るとマージンコールが発生し、追加証拠金を入金しないとポジションが強制決済される"
+  ],
+  "key_concepts": [
+    {
+      "term": "Short selling",
+      "japanese": "空売り",
+      "definition": "証券を借りて売却し、後で買い戻して返却する取引。価格下落時に利益を得る"
+    },
+    {
+      "term": "Cover (short position)",
+      "japanese": "カバー（買い戻し）",
+      "definition": "ショートポジションを閉じるために証券を買い戻すこと"
+    },
+    {
+      "term": "Security lending agreement",
+      "japanese": "証券貸借契約",
+      "definition": "ショートセラーと証券の貸し手の間の契約。配当相当額の支払いなどを規定"
+    },
+    {
+      "term": "Short rebate rate",
+      "japanese": "ショートリベート金利",
+      "definition": "担保として預けた売却代金に対して支払われる金利"
+    },
+    {
+      "term": "Margin loan",
+      "japanese": "マージンローン",
+      "definition": "証券購入のためにブローカーから借りる資金"
+    },
+    {
+      "term": "Call money rate",
+      "japanese": "コールマネーレート",
+      "definition": "マージンローンに適用される金利。政府短期証券金利より高い"
+    },
+    {
+      "term": "Initial margin requirement",
+      "japanese": "初期証拠金率",
+      "definition": "購入価格のうち自己資本で賄わなければならない最低割合"
+    },
+    {
+      "term": "Maintenance margin requirement",
+      "japanese": "維持証拠金率",
+      "definition": "ポジションの現在価値に対して維持しなければならない最低自己資本割合（通常25%）"
+    },
+    {
+      "term": "Margin call",
+      "japanese": "マージンコール",
+      "definition": "自己資本が維持証拠金を下回った場合の追加証拠金請求"
+    },
+    {
+      "term": "Leverage ratio",
+      "japanese": "レバレッジ比率",
+      "definition": "ポジション価値 ÷ 自己資本。ポジションが自己資本の何倍かを示す"
+    },
+    {
+      "term": "Financial leverage",
+      "japanese": "財務レバレッジ",
+      "definition": "借入を使用してポジションを拡大すること。リスクとリターンの両方を増幅する"
+    }
+  ],
+  "formulas": [
+    {
+      "name": "Leverage Ratio",
+      "formula": "Leverage Ratio = Position Value / Equity = 1 / Initial Margin Requirement",
+      "example": "初期証拠金率40%の場合: Leverage Ratio = 1 / 0.40 = 2.5",
+      "japanese_explanation": "レバレッジ比率は、ポジション価値を自己資本で割った値。初期証拠金率の逆数でもある。"
+    },
+    {
+      "name": "Leveraged Return",
+      "formula": "Leveraged Return = Leverage Ratio × Stock Return",
+      "example": "株価が10%上昇、レバレッジ比率2.5の場合: Return = 2.5 × 10% = 25%",
+      "japanese_explanation": "レバレッジをかけた場合のリターンは、株価リターンにレバレッジ比率を掛けた値。損失も同様に増幅される。"
+    },
+    {
+      "name": "Margin Call Price",
+      "formula": "Margin Call Price = Initial Equity per Share / (1 - Maintenance Margin)",
+      "example": "初期自己資本$8/株、維持証拠金率25%の場合: P = (Initial Price × Initial Margin) / (1 - Maintenance Margin) = ($20 × 0.40) / (1 - 0.25) = $8 / 0.75 = $10.67... 実際は P = $16 (下記の正確な計算式参照)",
+      "japanese_explanation": "正確な計算: 自己資本/株 = 初期自己資本 + (現在価格 - 初期価格) = 維持証拠金率 × 現在価格 を解く"
+    },
+    {
+      "name": "Margin Call Price (Exact Formula)",
+      "formula": "P = (Initial Price × Initial Margin - Initial Price) / (Maintenance Margin - 1) = Initial Price × (1 - Initial Margin) / (1 - Maintenance Margin)",
+      "example": "初期価格$20、初期証拠金率40%、維持証拠金率25%の場合: P = $20 × (1 - 0.40) / (1 - 0.25) = $20 × 0.60 / 0.75 = $16",
+      "japanese_explanation": "株価が$16を下回ると、自己資本が維持証拠金率25%を下回り、マージンコールが発生する。"
+    },
+    {
+      "name": "Total Return on Leveraged Position",
+      "formula": "Total Return = (Ending Equity - Initial Equity) / Initial Equity",
+      "example": "初期自己資本$8,010、残余自己資本$2,490の場合: Return = ($2,490 - $8,010) / $8,010 = -68.9%",
+      "japanese_explanation": "レバレッジポジションの総リターンは、価格変動、配当、マージン金利、手数料を全て考慮して計算する。"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "A trader buys 1,000 shares at $50 per share with an initial margin of 50%. What is the leverage ratio?",
+      "question_ja": "トレーダーが1,000株を1株$50で購入し、初期証拠金率が50%の場合、レバレッジ比率はいくらか？",
+      "options": [
+        "A. 1.0",
+        "B. 1.5",
+        "C. 2.0",
+        "D. 2.5"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。レバレッジ比率 = 1 / 初期証拠金率 = 1 / 0.50 = 2.0。ポジション価値$50,000に対して自己資本は$25,000なので、レバレッジ比率は$50,000 / $25,000 = 2.0。"
+    },
+    {
+      "question": "If a stock bought on 40% margin rises by 15%, what is the approximate return on equity (ignoring interest and commissions)?",
+      "question_ja": "40%の証拠金で購入した株式が15%上昇した場合、自己資本に対するリターンは約何%か（金利と手数料を無視）？",
+      "options": [
+        "A. 15%",
+        "B. 25%",
+        "C. 37.5%",
+        "D. 40%"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。レバレッジ比率 = 1 / 0.40 = 2.5。自己資本リターン = 2.5 × 15% = 37.5%。レバレッジにより、株価リターンが2.5倍に増幅される。"
+    },
+    {
+      "question": "A trader buys stock at $30 per share with 50% initial margin. The maintenance margin is 30%. At what price will a margin call occur?",
+      "question_ja": "トレーダーが1株$30で株式を購入し、初期証拠金率50%、維持証拠金率30%の場合、何ドルでマージンコールが発生するか？",
+      "options": [
+        "A. $18.00",
+        "B. $21.43",
+        "C. $24.00",
+        "D. $27.00"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。初期自己資本 = $30 × 0.50 = $15/株。借入額 = $15/株。マージンコール価格P: (P - $15) / P = 0.30 を解くと、P - $15 = 0.30P、0.70P = $15、P = $21.43。または、P = $30 × (1 - 0.50) / (1 - 0.30) = $15 / 0.70 = $21.43。"
+    },
+    {
+      "question": "Which of the following best describes the risk profile of a short position?",
+      "question_ja": "ショートポジションのリスクプロファイルとして最も適切なものはどれか？",
+      "options": [
+        "A. Limited potential gains and limited potential losses",
+        "B. Unlimited potential gains and limited potential losses",
+        "C. Limited potential gains and unlimited potential losses",
+        "D. Unlimited potential gains and unlimited potential losses"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。ショートポジションの最大利益は100%（株価がゼロになった場合）に限定されるが、損失は無限大（株価が無限に上昇する可能性があるため）。テキストでは「the potential gains on a short position are limited to no more than 100 percent whereas the potential losses are unbounded」と説明されている。"
+    },
+    {
+      "question": "A buyer purchases 1,000 shares at $20/share with a leverage ratio of 2.5. The call money rate is 5%, and the stock pays a $0.10 dividend. After one year, the stock is sold at $15/share with $0.01/share commission each way. What is the approximate total return?",
+      "question_ja": "投資家が1,000株を1株$20で購入、レバレッジ比率2.5、コールマネーレート5%、配当$0.10/株。1年後に$15/株で売却、手数料は売買各$0.01/株。総リターンは約何%か？",
+      "options": [
+        "A. -25%",
+        "B. -50%",
+        "C. -62.5%",
+        "D. -68.9%"
+      ],
+      "correct_answer": "D",
+      "explanation": "正解はD。初期自己資本 = $20,000 × 40% = $8,000 + 購入手数料$10 = $8,010。借入額 = $12,000。1年後: 売却代金$15,000 - 借入返済$12,000 - 金利$600 + 配当$100 - 売却手数料$10 = $2,490。リターン = ($2,490 - $8,010) / $8,010 = -68.9%。"
+    }
+  ],
+  "calculation_examples": [
+    {
+      "title": "Example 19: Computing Total Return to a Leveraged Stock Purchase",
+      "title_ja": "例題19：レバレッジ株式購入の総リターン計算",
+      "given": {
+        "purchase_price": "$20/share",
+        "sale_price": "$15/share",
+        "shares": 1000,
+        "leverage_ratio": 2.5,
+        "call_money_rate": "5%",
+        "dividend": "$0.10/share",
+        "commission": "$0.01/share"
+      },
+      "solution_steps": [
+        "1. 初期自己資本の計算: レバレッジ比率2.5 → 自己資本比率 = 1/2.5 = 40%",
+        "2. 総購入価格 = $20 × 1,000 = $20,000",
+        "3. 自己資本 = $20,000 × 40% = $8,000",
+        "4. 借入額 = $20,000 - $8,000 = $12,000",
+        "5. 購入手数料 = $0.01 × 1,000 = $10",
+        "6. 総初期投資 = $8,000 + $10 = $8,010",
+        "7. 1年後の計算:",
+        "   - 売却代金 = $15 × 1,000 = $15,000",
+        "   - 借入返済 = -$12,000",
+        "   - 金利支払 = -$12,000 × 5% = -$600",
+        "   - 配当受取 = $0.10 × 1,000 = $100",
+        "   - 売却手数料 = -$10",
+        "   - 残余自己資本 = $15,000 - $12,000 - $600 + $100 - $10 = $2,490",
+        "8. 総リターン = ($2,490 - $8,010) / $8,010 = -68.9%"
+      ],
+      "japanese_explanation": "株価は25%下落したが、レバレッジ効果により自己資本の損失は約69%に達した。レバレッジ比率2.5だけで計算すると-62.5%だが、金利支払いと手数料により損失がさらに拡大した。"
+    },
+    {
+      "title": "Example 20: Margin Call Price",
+      "title_ja": "例題20：マージンコール価格の計算",
+      "given": {
+        "initial_price": "$20/share",
+        "initial_margin": "40%",
+        "maintenance_margin": "25%"
+      },
+      "solution_steps": [
+        "1. 初期自己資本/株 = $20 × 40% = $8",
+        "2. 借入額/株 = $20 - $8 = $12",
+        "3. 現在価格Pでの自己資本/株 = P - $12 = $8 + (P - $20)",
+        "4. マージンコール条件: 自己資本/株 ÷ 現在価格 < 25%",
+        "5. 方程式: (P - $12) / P = 25%",
+        "6. P - $12 = 0.25P",
+        "7. 0.75P = $12",
+        "8. P = $16"
+      ],
+      "japanese_explanation": "株価が$16を下回ると、自己資本が維持証拠金率25%を下回り、マージンコールが発生する。$16の時点で自己資本は$4/株（= $16 - $12）、これは$16の25%に相当する。"
+    }
+  ],
+  "practical_examples": [
+    "日本の信用取引の例：東京証券取引所での信用取引では、委託保証金率（初期証拠金率）は通常30%以上が必要。維持証拠金率は20%程度。例えば、100万円の株式を購入する場合、最低30万円の自己資金が必要で、70万円を証券会社から借りる。",
+    "空売りの例：ヘッジファンドが割高と判断した株式を空売りする場合、証券会社から株式を借りて市場で売却し、株価が下落した後に買い戻して返却する。日本では貸株市場を通じて株式を借りる。",
+    "マージンコールの例：2020年3月のコロナショック時、株価急落により多くの投資家がマージンコールを受けた。追加証拠金を入金できない場合、証券会社が強制的にポジションを決済（追証）。"
+  ]
+}

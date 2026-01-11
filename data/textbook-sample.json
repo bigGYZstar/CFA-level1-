@@ -20,7 +20,7 @@
       "description": "This reading covers the functions of the financial system, types of assets and markets, financial intermediaries, positions and leverage, order types, market structures, and regulation.",
       "descriptionJa": "金融システムの機能、資産と市場の種類、金融仲介機関、ポジションとレバレッジ、注文タイプ、市場構造、規制について学習します。",
       "order": 1,
-      "totalSections": 14,
+      "totalSections": 19,
       "totalExamples": 5
     },
     {
@@ -712,6 +712,897 @@
       "order": 8,
       "createdAt": "2025-01-08T00:00:00Z",
       "updatedAt": "2025-01-08T00:00:00Z"
+    },
+    {
+      "id": "EQ_MOS_DETAIL_10_11",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "10-11",
+      "title": "Short Positions and Leveraged Positions",
+      "titleJa": "ショートポジションとレバレッジポジション",
+      "content": "Short Positions and Leveraged Positions",
+      "contentJa": "ショートセラーは所有していない証券を借りて売却し、価格下落時に利益を得る\n\nロングポジションの利益は無限大だが損失は100%に限定。ショートポジションは逆で損失が無限大になりうる\n\n証券貸借契約では、ショートセラーは売却代金を担保として預け、ショートリベート金利を受け取る\n\nマージン取引では、投資家は購入価格の一部を借入で賄い、レバレッジを効かせる\n\nレバレッジ比率 = ポジション価値 ÷ 自己資本。初期証拠金率40%の場合、最大レバレッジ比率は2.5倍\n\n維持証拠金を下回るとマージンコールが発生し、追加証拠金を入金しないとポジションが強制決済される",
+      "keyPoints": [
+        "Short selling: 証券を借りて売却し、後で買い戻して返却する取引。価格下落時に利益を得る",
+        "Cover (short position): ショートポジションを閉じるために証券を買い戻すこと",
+        "Security lending agreement: ショートセラーと証券の貸し手の間の契約。配当相当額の支払いなどを規定",
+        "Short rebate rate: 担保として預けた売却代金に対して支払われる金利",
+        "Margin loan: 証券購入のためにブローカーから借りる資金"
+      ],
+      "keyPointsJa": [
+        "空売り（Short selling）: 証券を借りて売却し、後で買い戻して返却する取引。価格下落時に利益を得る",
+        "カバー（買い戻し）（Cover (short position)）: ショートポジションを閉じるために証券を買い戻すこと",
+        "証券貸借契約（Security lending agreement）: ショートセラーと証券の貸し手の間の契約。配当相当額の支払いなどを規定",
+        "ショートリベート金利（Short rebate rate）: 担保として預けた売却代金に対して支払われる金利",
+        "マージンローン（Margin loan）: 証券購入のためにブローカーから借りる資金"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_10_11_Q1",
+          "contentId": "EQ_MOS_DETAIL_10_11",
+          "question": "A trader buys 1,000 shares at $50 per share with an initial margin of 50%. What is the leverage ratio?",
+          "questionJa": "トレーダーが1,000株を1株$50で購入し、初期証拠金率が50%の場合、レバレッジ比率はいくらか？",
+          "answer": "C. 2.0",
+          "answerJa": "正解はC。レバレッジ比率 = 1 / 初期証拠金率 = 1 / 0.50 = 2.0。ポジション価値$50,000に対して自己資本は$25,000なので、レバレッジ比率は$50,000 / $25,000 = 2.0。",
+          "explanationJa": "正解はC。レバレッジ比率 = 1 / 初期証拠金率 = 1 / 0.50 = 2.0。ポジション価値$50,000に対して自己資本は$25,000なので、レバレッジ比率は$50,000 / $25,000 = 2.0。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_10_11_Q2",
+          "contentId": "EQ_MOS_DETAIL_10_11",
+          "question": "If a stock bought on 40% margin rises by 15%, what is the approximate return on equity (ignoring interest and commissions)?",
+          "questionJa": "40%の証拠金で購入した株式が15%上昇した場合、自己資本に対するリターンは約何%か（金利と手数料を無視）？",
+          "answer": "C. 37.5%",
+          "answerJa": "正解はC。レバレッジ比率 = 1 / 0.40 = 2.5。自己資本リターン = 2.5 × 15% = 37.5%。レバレッジにより、株価リターンが2.5倍に増幅される。",
+          "explanationJa": "正解はC。レバレッジ比率 = 1 / 0.40 = 2.5。自己資本リターン = 2.5 × 15% = 37.5%。レバレッジにより、株価リターンが2.5倍に増幅される。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_10_11_Q3",
+          "contentId": "EQ_MOS_DETAIL_10_11",
+          "question": "A trader buys stock at $30 per share with 50% initial margin. The maintenance margin is 30%. At what price will a margin call occur?",
+          "questionJa": "トレーダーが1株$30で株式を購入し、初期証拠金率50%、維持証拠金率30%の場合、何ドルでマージンコールが発生するか？",
+          "answer": "B. $21.43",
+          "answerJa": "正解はB。初期自己資本 = $30 × 0.50 = $15/株。借入額 = $15/株。マージンコール価格P: (P - $15) / P = 0.30 を解くと、P - $15 = 0.30P、0.70P = $15、P = $21.43。または、P = $30 × (1 - 0.50) / (1 - 0.30) = $15 / 0.70 = $21.43。",
+          "explanationJa": "正解はB。初期自己資本 = $30 × 0.50 = $15/株。借入額 = $15/株。マージンコール価格P: (P - $15) / P = 0.30 を解くと、P - $15 = 0.30P、0.70P = $15、P = $21.43。または、P = $30 × (1 - 0.50) / (1 - 0.30) = $15 / 0.70 = $21.43。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_10_11_Q4",
+          "contentId": "EQ_MOS_DETAIL_10_11",
+          "question": "Which of the following best describes the risk profile of a short position?",
+          "questionJa": "ショートポジションのリスクプロファイルとして最も適切なものはどれか？",
+          "answer": "C. Limited potential gains and unlimited potential losses",
+          "answerJa": "正解はC。ショートポジションの最大利益は100%（株価がゼロになった場合）に限定されるが、損失は無限大（株価が無限に上昇する可能性があるため）。テキストでは「the potential gains on a short position are limited to no more than 100 percent whereas the potential losses are unbounded」と説明されている。",
+          "explanationJa": "正解はC。ショートポジションの最大利益は100%（株価がゼロになった場合）に限定されるが、損失は無限大（株価が無限に上昇する可能性があるため）。テキストでは「the potential gains on a short position are limited to no more than 100 percent whereas the potential losses are unbounded」と説明されている。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_10_11_Q5",
+          "contentId": "EQ_MOS_DETAIL_10_11",
+          "question": "A buyer purchases 1,000 shares at $20/share with a leverage ratio of 2.5. The call money rate is 5%, and the stock pays a $0.10 dividend. After one year, the stock is sold at $15/share with $0.01/share commission each way. What is the approximate total return?",
+          "questionJa": "投資家が1,000株を1株$20で購入、レバレッジ比率2.5、コールマネーレート5%、配当$0.10/株。1年後に$15/株で売却、手数料は売買各$0.01/株。総リターンは約何%か？",
+          "answer": "D. -68.9%",
+          "answerJa": "正解はD。初期自己資本 = $20,000 × 40% = $8,000 + 購入手数料$10 = $8,010。借入額 = $12,000。1年後: 売却代金$15,000 - 借入返済$12,000 - 金利$600 + 配当$100 - 売却手数料$10 = $2,490。リターン = ($2,490 - $8,010) / $8,010 = -68.9%。",
+          "explanationJa": "正解はD。初期自己資本 = $20,000 × 40% = $8,000 + 購入手数料$10 = $8,010。借入額 = $12,000。1年後: 売却代金$15,000 - 借入返済$12,000 - 金利$600 + 配当$100 - 売却手数料$10 = $2,490。リターン = ($2,490 - $8,010) / $8,010 = -68.9%。",
+          "order": 5
+        }
+      ],
+      "order": 19,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の信用取引の例：東京証券取引所での信用取引では、委託保証金率（初期証拠金率）は通常30%以上が必要。維持証拠金率は20%程度。例えば、100万円の株式を購入する場合、最低30万円の自己資金が必要で、70万円を証券会社から借りる。",
+        "空売りの例：ヘッジファンドが割高と判断した株式を空売りする場合、証券会社から株式を借りて市場で売却し、株価が下落した後に買い戻して返却する。日本では貸株市場を通じて株式を借りる。",
+        "マージンコールの例：2020年3月のコロナショック時、株価急落により多くの投資家がマージンコールを受けた。追加証拠金を入金できない場合、証券会社が強制的にポジションを決済（追証）。"
+      ],
+      "calculationExamples": [
+        {
+          "title": "Example 19: Computing Total Return to a Leveraged Stock Purchase",
+          "title_ja": "例題19：レバレッジ株式購入の総リターン計算",
+          "given": {
+            "purchase_price": "$20/share",
+            "sale_price": "$15/share",
+            "shares": 1000,
+            "leverage_ratio": 2.5,
+            "call_money_rate": "5%",
+            "dividend": "$0.10/share",
+            "commission": "$0.01/share"
+          },
+          "solution_steps": [
+            "1. 初期自己資本の計算: レバレッジ比率2.5 → 自己資本比率 = 1/2.5 = 40%",
+            "2. 総購入価格 = $20 × 1,000 = $20,000",
+            "3. 自己資本 = $20,000 × 40% = $8,000",
+            "4. 借入額 = $20,000 - $8,000 = $12,000",
+            "5. 購入手数料 = $0.01 × 1,000 = $10",
+            "6. 総初期投資 = $8,000 + $10 = $8,010",
+            "7. 1年後の計算:",
+            "   - 売却代金 = $15 × 1,000 = $15,000",
+            "   - 借入返済 = -$12,000",
+            "   - 金利支払 = -$12,000 × 5% = -$600",
+            "   - 配当受取 = $0.10 × 1,000 = $100",
+            "   - 売却手数料 = -$10",
+            "   - 残余自己資本 = $15,000 - $12,000 - $600 + $100 - $10 = $2,490",
+            "8. 総リターン = ($2,490 - $8,010) / $8,010 = -68.9%"
+          ],
+          "japanese_explanation": "株価は25%下落したが、レバレッジ効果により自己資本の損失は約69%に達した。レバレッジ比率2.5だけで計算すると-62.5%だが、金利支払いと手数料により損失がさらに拡大した。"
+        },
+        {
+          "title": "Example 20: Margin Call Price",
+          "title_ja": "例題20：マージンコール価格の計算",
+          "given": {
+            "initial_price": "$20/share",
+            "initial_margin": "40%",
+            "maintenance_margin": "25%"
+          },
+          "solution_steps": [
+            "1. 初期自己資本/株 = $20 × 40% = $8",
+            "2. 借入額/株 = $20 - $8 = $12",
+            "3. 現在価格Pでの自己資本/株 = P - $12 = $8 + (P - $20)",
+            "4. マージンコール条件: 自己資本/株 ÷ 現在価格 < 25%",
+            "5. 方程式: (P - $12) / P = 25%",
+            "6. P - $12 = 0.25P",
+            "7. 0.75P = $12",
+            "8. P = $16"
+          ],
+          "japanese_explanation": "株価が$16を下回ると、自己資本が維持証拠金率25%を下回り、マージンコールが発生する。$16の時点で自己資本は$4/株（= $16 - $12）、これは$16の25%に相当する。"
+        }
+      ]
+    },
+    {
+      "id": "EQ_MOS_DETAIL_12_13",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "12-13",
+      "title": "Orders, Execution Instructions, and Validity Instructions",
+      "titleJa": "注文タイプ、執行指示、有効期限指示",
+      "content": "Orders, Execution Instructions, and Validity Instructions",
+      "contentJa": "成行注文は即座に最良価格で執行されるが、価格の不確実性がある。特に流動性の低い市場や大口注文では不利な価格で約定する可能性がある\n\n指値注文は最良価格を追求しつつ、指定した価格より不利な価格での約定を防ぐ。ただし、約定しない可能性がある\n\n指値注文の積極性は市場価格との関係で決まる。最良気配より有利な指値は「マーケットを作る」、不利な指値は「市場の後ろ」にある\n\n隠し注文（Hidden orders）やアイスバーグ注文は、大口注文の存在を市場に知らせずに取引するために使用される\n\n有効期限指示には当日注文（Day order）、GTC注文、IOC注文、引け注文（Market-on-close）などがある\n\n逆指値注文（Stop order）は指定価格に達した時点で成行または指値注文に変換される",
+      "keyPoints": [
+        "Market order: 即座に最良価格で執行するよう指示する注文。確実に約定するが、価格は不確実",
+        "Limit order: 指定した価格より不利な価格での約定を防ぐ注文。最良価格を追求しつつ、買いは上限、売りは下限を設定",
+        "Marketable limit order: 現在の最良気配で即座に約定可能な指値注文。買い指値が最良売り気配以上、または売り指値が最良買い気配以下",
+        "Standing limit order: 約定を待っている指値注文。板（オーダーブック）に表示される",
+        "Bid price: ディーラーや他のトレーダーが買いたい価格"
+      ],
+      "keyPointsJa": [
+        "成行注文（Market order）: 即座に最良価格で執行するよう指示する注文。確実に約定するが、価格は不確実",
+        "指値注文（Limit order）: 指定した価格より不利な価格での約定を防ぐ注文。最良価格を追求しつつ、買いは上限、売りは下限を設定",
+        "成行化可能な指値注文（Marketable limit order）: 現在の最良気配で即座に約定可能な指値注文。買い指値が最良売り気配以上、または売り指値が最良買い気配以下",
+        "待機指値注文（Standing limit order）: 約定を待っている指値注文。板（オーダーブック）に表示される",
+        "買い気配（ビッド）（Bid price）: ディーラーや他のトレーダーが買いたい価格"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q1",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "A trader submits a buy limit order at $25 when the market is '24 bid, offered at 26'. This order is best described as:",
+          "questionJa": "市場が「24ビッド、26オファー」の時に$25の買い指値注文を出した場合、この注文は何と呼ばれるか？",
+          "answer": "C. Making a new market",
+          "answerJa": "正解はC。$25は最良買い気配（$24）より高く、最良売り気配（$26）より低いため、この注文は「新しいマーケットを作る」（makes a new market）。新たな最良買い気配となる。",
+          "explanationJa": "正解はC。$25は最良買い気配（$24）より高く、最良売り気配（$26）より低いため、この注文は「新しいマーケットを作る」（makes a new market）。新たな最良買い気配となる。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q2",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "Which of the following is the main disadvantage of market orders?",
+          "questionJa": "成行注文の主な欠点は何か？",
+          "answer": "B. They can be expensive to execute, especially for large orders",
+          "answerJa": "正解はB。テキストでは「The main drawback with market orders is that they can be expensive to execute, especially when the order is placed in a market for a thinly traded security, or more generally, when the order is large relative to the normal trading activity」と説明されている。大口注文や流動性の低い市場では、不利な価格で約定する可能性がある。",
+          "explanationJa": "正解はB。テキストでは「The main drawback with market orders is that they can be expensive to execute, especially when the order is placed in a market for a thinly traded security, or more generally, when the order is large relative to the normal trading activity」と説明されている。大口注文や流動性の低い市場では、不利な価格で約定する可能性がある。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q3",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "Which of the following is the main disadvantage of limit orders?",
+          "questionJa": "指値注文の主な欠点は何か？",
+          "answer": "B. They may not execute",
+          "answerJa": "正解はB。テキストでは「The main problem with limit orders is that they may not execute」と説明されている。買い指値が低すぎる、または売り指値が高すぎる場合、注文は約定しない。",
+          "explanationJa": "正解はB。テキストでは「The main problem with limit orders is that they may not execute」と説明されている。買い指値が低すぎる、または売り指値が高すぎる場合、注文は約定しない。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q4",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "A trader wants to buy shares but does not want to reveal the full size of the order to the market. Which order type is most appropriate?",
+          "questionJa": "トレーダーが株式を購入したいが、注文の全サイズを市場に知らせたくない場合、最も適切な注文タイプは何か？",
+          "answer": "C. Iceberg order",
+          "answerJa": "正解はC。アイスバーグ注文は一部のサイズのみを表示し、残りを隠す。テキストでは「Traders sometimes call such orders iceberg orders because most of the order is hidden」と説明されている。",
+          "explanationJa": "正解はC。アイスバーグ注文は一部のサイズのみを表示し、残りを隠す。テキストでは「Traders sometimes call such orders iceberg orders because most of the order is hidden」と説明されている。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q5",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "An investment manager wants to trade at the same prices used to value the portfolio. Which order type is most appropriate?",
+          "questionJa": "投資マネージャーがポートフォリオ評価に使用される価格で取引したい場合、最も適切な注文タイプは何か？",
+          "answer": "C. Market-on-close order",
+          "answerJa": "正解はC。テキストでは「Traders often use on-close orders when they want to trade at the same prices that will be published as the closing prices of the day. Mutual funds often like to trade at such prices because they value their portfolios at closing prices」と説明されている。",
+          "explanationJa": "正解はC。テキストでは「Traders often use on-close orders when they want to trade at the same prices that will be published as the closing prices of the day. Mutual funds often like to trade at such prices because they value their portfolios at closing prices」と説明されている。",
+          "order": 5
+        },
+        {
+          "id": "EQ_MOS_DETAIL_12_13_Q6",
+          "contentId": "EQ_MOS_DETAIL_12_13",
+          "question": "Which statement about the relationship between limit order aggressiveness and execution is most accurate?",
+          "questionJa": "指値注文の積極性と約定の関係について、最も正確な記述はどれか？",
+          "answer": "B. More aggressive orders fill faster but at inferior prices",
+          "answerJa": "正解はB。テキストでは「Although aggressively priced orders fill faster and with more certainty then do less aggressively priced limit orders, the prices at which they execute are inferior」と説明されている。積極的な価格設定は約定確率を高めるが、約定価格は不利になる。",
+          "explanationJa": "正解はB。テキストでは「Although aggressively priced orders fill faster and with more certainty then do less aggressively priced limit orders, the prices at which they execute are inferior」と説明されている。積極的な価格設定は約定確率を高めるが、約定価格は不利になる。",
+          "order": 6
+        }
+      ],
+      "order": 20,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の株式市場の例：東京証券取引所では、成行注文は「成行」、指値注文は「指値」として発注。寄付（始値）や引け（終値）での約定を希望する場合は「寄成」「引成」「寄指」「引指」を使用。",
+        "アルゴリズム取引の例：機関投資家が大口注文を執行する際、VWAP（出来高加重平均価格）アルゴリズムを使用して、市場への影響を最小化しながら1日かけて分割執行する。",
+        "逆指値の活用例：株式を$100で購入した投資家が、$90の逆指値売り注文を設定。株価が$90に下落すると自動的に売り注文が発動し、損失を限定する（ストップロス）。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_14_15",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "14-15",
+      "title": "Primary and Secondary Markets",
+      "titleJa": "発行市場と流通市場",
+      "content": "Primary and Secondary Markets",
+      "contentJa": "企業は投資銀行と契約して証券を公募する。投資銀行はブックビルディングで投資家の需要を集める\n\nIPO（新規株式公開）は企業の最初の公募。新株発行と創業者の持株売却を含むことがある\n\n引受発行（Underwritten offering）では投資銀行が売れ残りを買い取る保証をする。手数料は約7%\n\nベストエフォート発行では投資銀行はブローカーとして行動し、売れ残りリスクは発行者が負う\n\n投資銀行には利益相反がある：発行者の代理人として高い価格を望むが、引受人として低い価格を望む\n\n流通市場は注文駆動型（オーダードリブン）と気配駆動型（クォートドリブン）に分類される\n\nオーダードリブン市場では注文同士がマッチング。クォートドリブン市場ではディーラーが価格を提示\n\nコールマーケットは特定時間に注文を集約して執行。継続市場は取引時間中いつでも執行可能",
+      "keyPoints": [
+        "Book building: 投資銀行が投資家の需要を集めて注文帳を作成するプロセス",
+        "Initial Public Offering (IPO): 企業が初めて株式を公募すること",
+        "Seasoned offering: 既に上場している企業による追加の株式発行",
+        "Underwritten offering: 投資銀行が売れ残りを買い取る保証をする発行方式",
+        "Best effort offering: 投資銀行がブローカーとして行動し、売れ残りリスクは発行者が負う発行方式"
+      ],
+      "keyPointsJa": [
+        "ブックビルディング（Book building）: 投資銀行が投資家の需要を集めて注文帳を作成するプロセス",
+        "新規株式公開（Initial Public Offering (IPO)）: 企業が初めて株式を公募すること",
+        "追加公募（シーズンドオファリング）（Seasoned offering）: 既に上場している企業による追加の株式発行",
+        "引受発行（Underwritten offering）: 投資銀行が売れ残りを買い取る保証をする発行方式",
+        "ベストエフォート発行（Best effort offering）: 投資銀行がブローカーとして行動し、売れ残りリスクは発行者が負う発行方式"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q1",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "In an underwritten offering, who bears the risk if the securities are not fully sold?",
+          "questionJa": "引受発行において、証券が完売しなかった場合のリスクを負うのは誰か？",
+          "answer": "B. The investment bank",
+          "answerJa": "正解はB。引受発行では、投資銀行が発行価格での売却を保証する。売れ残りがあれば投資銀行が買い取る。",
+          "explanationJa": "正解はB。引受発行では、投資銀行が発行価格での売却を保証する。売れ残りがあれば投資銀行が買い取る。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q2",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "Why do IPO prices often rise immediately after the offering?",
+          "questionJa": "IPO価格が公募直後に上昇することが多いのはなぜか？",
+          "answer": "B. Because investment banks have incentives to set low offering prices",
+          "answerJa": "正解はB。投資銀行は引受人として低い価格を望む傾向がある。価格が低ければ、優良顧客に価値ある株式を配分でき、売れ残りリスクも低下する。",
+          "explanationJa": "正解はB。投資銀行は引受人として低い価格を望む傾向がある。価格が低ければ、優良顧客に価値ある株式を配分でき、売れ残りリスクも低下する。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q3",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "Which type of market structure involves dealers providing bid and ask prices?",
+          "questionJa": "ディーラーがビッド価格とアスク価格を提示する市場構造はどれか？",
+          "answer": "B. Quote-driven market",
+          "answerJa": "正解はB。気配駆動型市場（クォートドリブン市場）では、ディーラーが買い・売り価格を提示し、トレーダーがその価格で取引する。",
+          "explanationJa": "正解はB。気配駆動型市場（クォートドリブン市場）では、ディーラーが買い・売り価格を提示し、トレーダーがその価格で取引する。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q4",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "A company issues additional shares to the public after its IPO. This is best described as:",
+          "questionJa": "企業がIPO後に追加の株式を公募した場合、これは何と呼ばれるか？",
+          "answer": "B. Seasoned offering",
+          "answerJa": "正解はB。既に上場している企業による追加の株式発行は、シーズンドオファリング（追加公募）と呼ばれる。",
+          "explanationJa": "正解はB。既に上場している企業による追加の株式発行は、シーズンドオファリング（追加公募）と呼ばれる。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q5",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "In a best effort offering, the investment bank:",
+          "questionJa": "ベストエフォート発行において、投資銀行は：",
+          "answer": "B. Acts only as a broker",
+          "answerJa": "正解はB。ベストエフォート発行では、投資銀行はブローカーとして行動するのみ。売れ残りがあっても買い取る義務はない。",
+          "explanationJa": "正解はB。ベストエフォート発行では、投資銀行はブローカーとして行動するのみ。売れ残りがあっても買い取る義務はない。",
+          "order": 5
+        },
+        {
+          "id": "EQ_MOS_DETAIL_14_15_Q6",
+          "contentId": "EQ_MOS_DETAIL_14_15",
+          "question": "What is the typical underwriting fee for a public offering?",
+          "questionJa": "公募の典型的な引受手数料はいくらか？",
+          "answer": "C. About 7%",
+          "answerJa": "正解はC。テキストでは「The issuer usually pays an underwriting fee of about 7 percent for these various services」と説明されている。",
+          "explanationJa": "正解はC。テキストでは「The issuer usually pays an underwriting fee of about 7 percent for these various services」と説明されている。",
+          "order": 6
+        }
+      ],
+      "order": 21,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本のIPOの例：メルカリは2018年に東証マザーズに上場。公募価格3,000円に対し、初値は5,000円（67%上昇）。投資銀行は大和証券、モルガン・スタンレーMUFGなどがシンジケートを組成。",
+        "日本の追加公募の例：ソフトバンクグループが子会社ソフトバンク株式会社の株式を追加売却する場合、これはシーズンドオファリングに該当。",
+        "日本の市場構造の例：東京証券取引所はオーダードリブン市場。寄付と引けはコールオークション方式、ザラ場は継続市場方式で取引される。"
+      ],
+      "calculationExamples": [
+        {
+          "title": "IPO Return Calculation",
+          "title_ja": "IPOリターンの計算",
+          "given": {
+            "offering_price": "£2.57/share",
+            "closing_price_day1": "£2.73/share"
+          },
+          "solution_steps": [
+            "1. 初日リターン = (終値 - 公募価格) / 公募価格",
+            "2. 初日リターン = (£2.73 - £2.57) / £2.57",
+            "3. 初日リターン = £0.16 / £2.57 = 6.2%"
+          ],
+          "japanese_explanation": "IPO参加者は初日で6.2%のリターンを得た。これは投資銀行が公募価格を低く設定した結果である可能性がある。"
+        },
+        {
+          "title": "Placement Cost Calculation",
+          "title_ja": "発行コストの計算",
+          "given": {
+            "gross_proceeds": "£34.3 million",
+            "net_proceeds": "£31.8 million"
+          },
+          "solution_steps": [
+            "1. 発行コスト = グロス収入 - ネット収入",
+            "2. 発行コスト = £34.3 million - £31.8 million = £2.5 million",
+            "3. 発行コスト率 = £2.5 million / £31.8 million = 7.9%"
+          ],
+          "japanese_explanation": "発行コストはネット収入の7.9%。これには引受手数料、法務費用、会計費用などが含まれる。"
+        }
+      ]
+    },
+    {
+      "id": "EQ_MOS_DETAIL_2_1_1",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "2.1.1",
+      "title": "Saving",
+      "titleJa": "貯蓄",
+      "content": "Saving",
+      "contentJa": "人々は現在の収入の一部を将来のために貯蓄する必要がある（退職後の生活費、企業の将来の支出など）\n\n貯蓄者は預金証書、債券、株式、投資信託、不動産などの資産を購入して資金を将来に移転する\n\n投資家は資金の使用と投資リスク（損失リスク、インフレリスク）に対する公正な収益率を要求する\n\n金融システムは取引コストが低く、公正に価格設定された投資手段を提供することで貯蓄を促進する",
+      "keyPoints": [
+        "Savers: 現在の支出を抑えて将来のために資金を蓄える個人や企業",
+        "Investors: 金融リターンを得るために資金を投じる貯蓄者。資産を購入する際に投資し、売却する際に投資を回収する",
+        "Fair rate of return: 資金の使用と投資リスク（損失リスク、インフレリスク）を補償する適切な収益率",
+        "Investment vehicles: 銀行預金、債券、株式、投資信託など、投資家が資金を投じることができる金融商品",
+        "Transaction costs: 資産の売買に伴う手数料や費用。低い取引コストは貯蓄を促進する"
+      ],
+      "keyPointsJa": [
+        "貯蓄者（Savers）: 現在の支出を抑えて将来のために資金を蓄える個人や企業",
+        "投資家（Investors）: 金融リターンを得るために資金を投じる貯蓄者。資産を購入する際に投資し、売却する際に投資を回収する",
+        "公正な収益率（Fair rate of return）: 資金の使用と投資リスク（損失リスク、インフレリスク）を補償する適切な収益率",
+        "投資手段（Investment vehicles）: 銀行預金、債券、株式、投資信託など、投資家が資金を投じることができる金融商品",
+        "取引コスト（Transaction costs）: 資産の売買に伴う手数料や費用。低い取引コストは貯蓄を促進する"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_2_1_1_Q1",
+          "contentId": "EQ_MOS_DETAIL_2_1_1",
+          "question": "Which of the following best describes the primary reason people save money?",
+          "questionJa": "人々が貯蓄する主な理由として最も適切なものはどれか？",
+          "answer": "A. To move money from the present to the future",
+          "answerJa": "正解はA。テキストでは、貯蓄の主な目的は「現在の資金を将来に移転すること」と説明されています。退職後の生活費や将来の支出に備えるために、人々は現在の収入の一部を貯蓄します。",
+          "explanationJa": "正解はA。テキストでは、貯蓄の主な目的は「現在の資金を将来に移転すること」と説明されています。退職後の生活費や将来の支出に備えるために、人々は現在の収入の一部を貯蓄します。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_1_Q2",
+          "contentId": "EQ_MOS_DETAIL_2_1_1",
+          "question": "When savers commit money to earn a financial return, they are commonly called:",
+          "questionJa": "貯蓄者が金融リターンを得るために資金を投じる場合、一般的に何と呼ばれるか？",
+          "answer": "B. Investors",
+          "answerJa": "正解はB。テキストでは「When savers commit money to earn a financial return, they commonly are called investors」と明記されています。貯蓄者が資産を購入して金融リターンを追求する場合、投資家と呼ばれます。",
+          "explanationJa": "正解はB。テキストでは「When savers commit money to earn a financial return, they commonly are called investors」と明記されています。貯蓄者が資産を購入して金融リターンを追求する場合、投資家と呼ばれます。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_1_Q3",
+          "contentId": "EQ_MOS_DETAIL_2_1_1",
+          "question": "The required fair rate of return compensates investors for:",
+          "questionJa": "公正な収益率が投資家に補償するものは何か？",
+          "answer": "C. The use of their money and the risk of losing money or inflation",
+          "answerJa": "正解はC。テキストでは「The required fair rate of return compensates them for the use of their money and for the risk that they may lose money if the investment fails or if inflation reduces the real value of their investments」と説明されています。公正な収益率は、資金の使用と損失リスク（投資の失敗またはインフレによる実質価値の減少）の両方を補償します。",
+          "explanationJa": "正解はC。テキストでは「The required fair rate of return compensates them for the use of their money and for the risk that they may lose money if the investment fails or if inflation reduces the real value of their investments」と説明されています。公正な収益率は、資金の使用と損失リスク（投資の失敗またはインフレによる実質価値の減少）の両方を補償します。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_1_Q4",
+          "contentId": "EQ_MOS_DETAIL_2_1_1",
+          "question": "How does the financial system facilitate savings?",
+          "questionJa": "金融システムはどのようにして貯蓄を促進するか？",
+          "answer": "C. By creating investment vehicles that can be acquired and sold without substantial transaction costs",
+          "answerJa": "正解はC。テキストでは「The financial system facilitates savings when institutions create investment vehicles... that investors can acquire and sell without paying substantial transaction costs」と説明されています。金融システムは、低い取引コストで売買できる投資手段を提供することで貯蓄を促進します。",
+          "explanationJa": "正解はC。テキストでは「The financial system facilitates savings when institutions create investment vehicles... that investors can acquire and sell without paying substantial transaction costs」と説明されています。金融システムは、低い取引コストで売買できる投資手段を提供することで貯蓄を促進します。",
+          "order": 4
+        }
+      ],
+      "order": 22,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の例：会社員が毎月給与の一部を確定拠出年金（iDeCo）や投資信託に積み立てることで、退職後の生活資金を準備する。これは現在の収入を将来に移転する典型的な貯蓄行動である。",
+        "企業の例：トヨタ自動車が営業収益の一部を現金や短期債券で保有し、将来の設備投資や研究開発費に備える。これにより、必要な時に資金を活用できる。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_2_1_2",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "2.1.2",
+      "title": "Borrowing",
+      "titleJa": "借入",
+      "content": "Borrowing",
+      "contentJa": "個人、企業、政府は現在持っていない資金を借入によって調達し、プロジェクトや支出に充てる\n\n個人は住宅ローン、個人ローン、クレジットカードで借入し、将来の収入で返済する\n\n企業は銀行融資、与信枠、固定利付証券の発行で資金を調達し、将来の収益で返済する\n\n政府は短期証券（bills）、中期債（notes）、長期債（bonds）を発行し、税収や事業収益で返済する\n\n貸し手は返済リスクが高い場合、より高い金利を要求する。借り手は担保を提供することで借入コストを下げられる\n\n信用調査機関、格付機関、政府の破産法制度が借入を促進する",
+      "keyPoints": [
+        "Collateral: 借入の返済を保証するために貸し手に差し入れる資産。返済不能の場合、貸し手は担保を売却して資金を回収できる",
+        "Credit bureaus: 借り手の信用情報を収集・提供する機関。貸し手が信用分析を行うための情報を提供する",
+        "Credit rating agencies: 借り手の信用力を評価し格付けを付与する機関。貸し手の信用分析を支援する",
+        "Mortgage: 不動産を担保とした長期借入。個人が住宅購入資金を調達する主な手段",
+        "Line of credit: 銀行が企業に設定する借入限度額。必要に応じて限度額内で資金を借り入れられる"
+      ],
+      "keyPointsJa": [
+        "担保（Collateral）: 借入の返済を保証するために貸し手に差し入れる資産。返済不能の場合、貸し手は担保を売却して資金を回収できる",
+        "信用調査機関（Credit bureaus）: 借り手の信用情報を収集・提供する機関。貸し手が信用分析を行うための情報を提供する",
+        "格付機関（Credit rating agencies）: 借り手の信用力を評価し格付けを付与する機関。貸し手の信用分析を支援する",
+        "住宅ローン（Mortgage）: 不動産を担保とした長期借入。個人が住宅購入資金を調達する主な手段",
+        "与信枠（Line of credit）: 銀行が企業に設定する借入限度額。必要に応じて限度額内で資金を借り入れられる"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_2_1_2_Q1",
+          "contentId": "EQ_MOS_DETAIL_2_1_2",
+          "question": "Which of the following is NOT a typical way for governments to borrow money?",
+          "questionJa": "政府が資金を借り入れる方法として、一般的でないものはどれか？",
+          "answer": "D. Issuing common stock",
+          "answerJa": "正解はD。テキストでは「Governments borrow by selling bills, notes, or bonds」と説明されています。政府は短期証券（bills）、中期債（notes）、長期債（bonds）を発行して借入を行いますが、普通株式（common stock）は企業が発行するものであり、政府の借入手段ではありません。",
+          "explanationJa": "正解はD。テキストでは「Governments borrow by selling bills, notes, or bonds」と説明されています。政府は短期証券（bills）、中期債（notes）、長期債（bonds）を発行して借入を行いますが、普通株式（common stock）は企業が発行するものであり、政府の借入手段ではありません。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_2_Q2",
+          "contentId": "EQ_MOS_DETAIL_2_1_2",
+          "question": "Why do lenders demand higher interest rates when they believe repayment may not occur?",
+          "questionJa": "貸し手が返済されない可能性があると考える場合、なぜ高い金利を要求するのか？",
+          "answer": "B. To cover expected losses and compensate for uncertainty",
+          "answerJa": "正解はB。テキストでは「they will demand higher rates of interest to cover their expected losses and to compensate them for the discomfit they experience wondering whether they will lose their money」と説明されています。高い金利は予想損失をカバーし、資金を失うかもしれないという不安に対する補償として要求されます。",
+          "explanationJa": "正解はB。テキストでは「they will demand higher rates of interest to cover their expected losses and to compensate them for the discomfit they experience wondering whether they will lose their money」と説明されています。高い金利は予想損失をカバーし、資金を失うかもしれないという不安に対する補償として要求されます。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_2_Q3",
+          "contentId": "EQ_MOS_DETAIL_2_1_2",
+          "question": "How can borrowers lower their costs of borrowing?",
+          "questionJa": "借り手はどのようにして借入コストを下げることができるか？",
+          "answer": "B. By pledging assets as collateral",
+          "answerJa": "正解はB。テキストでは「To lower the costs of borrowing, borrowers often pledge assets as collateral for their loans」と説明されています。担保を提供することで、貸し手のリスクが軽減され、結果として借入コスト（金利）が低下します。",
+          "explanationJa": "正解はB。テキストでは「To lower the costs of borrowing, borrowers often pledge assets as collateral for their loans」と説明されています。担保を提供することで、貸し手のリスクが軽減され、結果として借入コスト（金利）が低下します。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_2_Q4",
+          "contentId": "EQ_MOS_DETAIL_2_1_2",
+          "question": "Which entities promote borrowing by collecting and disseminating credit information?",
+          "questionJa": "信用情報を収集・提供することで借入を促進する機関はどれか？",
+          "answer": "B. Credit bureaus and credit rating agencies",
+          "answerJa": "正解はB。テキストでは「credit bureaus and credit rating agencies do so by collecting and disseminating information that lenders need to analyze credit prospects」と説明されています。信用調査機関と格付機関は、貸し手が信用分析を行うために必要な情報を収集・提供することで借入を促進します。",
+          "explanationJa": "正解はB。テキストでは「credit bureaus and credit rating agencies do so by collecting and disseminating information that lenders need to analyze credit prospects」と説明されています。信用調査機関と格付機関は、貸し手が信用分析を行うために必要な情報を収集・提供することで借入を促進します。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_2_Q5",
+          "contentId": "EQ_MOS_DETAIL_2_1_2",
+          "question": "When lenders are unwilling to loan to borrowers with risky projects, how might investors still supply capital?",
+          "questionJa": "貸し手がリスクの高いプロジェクトへの融資を拒否する場合、投資家はどのように資本を提供するか？",
+          "answer": "B. By contributing capital in exchange for equity",
+          "answerJa": "正解はB。テキストでは「Rather than lending money, however, they will contribute capital in exchange for equity in the projects」と説明されています。リスクの高いプロジェクトに対しては、貸付ではなく、株式（エクイティ）と引き換えに資本を提供する形で投資が行われます。",
+          "explanationJa": "正解はB。テキストでは「Rather than lending money, however, they will contribute capital in exchange for equity in the projects」と説明されています。リスクの高いプロジェクトに対しては、貸付ではなく、株式（エクイティ）と引き換えに資本を提供する形で投資が行われます。",
+          "order": 5
+        }
+      ],
+      "order": 23,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の個人の例：住宅購入者が銀行から住宅ローン（フラット35など）を借り入れ、購入する住宅を担保として提供する。毎月の給与から返済を行い、35年かけて完済する。",
+        "日本企業の例：ソフトバンクグループが社債を発行して投資家から資金を調達し、海外企業への投資に充てる。社債の利払いと元本返済は、投資先企業からの配当や売却益で賄う。",
+        "日本政府の例：財務省が国債（JGB）を発行して財政支出を賄う。10年物国債、40年物超長期国債など様々な年限の国債を発行し、税収で利払いと償還を行う。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_2_1_3",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "2.1.3",
+      "title": "Raising Equity Capital",
+      "titleJa": "株式資本の調達",
+      "content": "Raising Equity Capital",
+      "contentJa": "企業は普通株式やパートナーシップ持分などの所有権を売却（発行）することで資金を調達する\n\n株式は法的には企業への貸付ではなく所有権を表すが、将来から現在へ資金を移転する仕組みである\n\n株主やパートナーは現在の資金と引き換えに、将来の配当請求権を持つ株式を取得する\n\n投資銀行が株式発行を支援し、アナリストが証券を評価し、規制当局が財務開示を義務付ける\n\n流動性の高い市場では株主が容易に株式を売却でき、企業の資金調達が促進される",
+      "keyPoints": [
+        "Equity instruments: 企業の所有権を表す金融商品。普通株式やパートナーシップ持分など",
+        "Common stock: 企業の所有権を表す最も一般的な株式。議決権と配当請求権を持つ",
+        "Partnership interests: パートナーシップ（組合）における所有権。利益分配と経営参加の権利を持つ",
+        "Investment banks: 企業の株式発行を支援する金融機関。引受業務やアドバイザリー業務を行う",
+        "Capital formation: 企業が新規プロジェクトや事業拡大のために資金を調達するプロセス"
+      ],
+      "keyPointsJa": [
+        "株式商品（Equity instruments）: 企業の所有権を表す金融商品。普通株式やパートナーシップ持分など",
+        "普通株式（Common stock）: 企業の所有権を表す最も一般的な株式。議決権と配当請求権を持つ",
+        "パートナーシップ持分（Partnership interests）: パートナーシップ（組合）における所有権。利益分配と経営参加の権利を持つ",
+        "投資銀行（Investment banks）: 企業の株式発行を支援する金融機関。引受業務やアドバイザリー業務を行う",
+        "資本形成（Capital formation）: 企業が新規プロジェクトや事業拡大のために資金を調達するプロセス"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_2_1_3_Q1",
+          "contentId": "EQ_MOS_DETAIL_2_1_3",
+          "question": "What is the primary difference between equity financing and debt financing?",
+          "questionJa": "株式資金調達と借入資金調達の主な違いは何か？",
+          "answer": "A. Equity represents ownership while debt represents a loan",
+          "answerJa": "正解はA。テキストでは「these equity instruments legally represent ownership in companies rather than loans to the companies」と説明されています。株式は企業の所有権を表し、借入（負債）は企業への貸付を表します。",
+          "explanationJa": "正解はA。テキストでは「these equity instruments legally represent ownership in companies rather than loans to the companies」と説明されています。株式は企業の所有権を表し、借入（負債）は企業への貸付を表します。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_3_Q2",
+          "contentId": "EQ_MOS_DETAIL_2_1_3",
+          "question": "How does selling equity move money through time?",
+          "questionJa": "株式の売却はどのように時間を通じて資金を移転するか？",
+          "answer": "B. From the future to the present",
+          "answerJa": "正解はB。テキストでは「selling equity to raise capital is simply another mechanism for moving money from the future to the present」と説明されています。企業は将来の配当請求権と引き換えに、現在の資金を調達します。",
+          "explanationJa": "正解はB。テキストでは「selling equity to raise capital is simply another mechanism for moving money from the future to the present」と説明されています。企業は将来の配当請求権と引き換えに、現在の資金を調達します。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_3_Q3",
+          "contentId": "EQ_MOS_DETAIL_2_1_3",
+          "question": "Which of the following does NOT facilitate raising equity capital?",
+          "questionJa": "株式資本の調達を促進しないものはどれか？",
+          "answer": "D. High transaction costs in markets",
+          "answerJa": "正解はD。テキストでは投資銀行、アナリスト、規制当局が株式資本調達を促進すると説明されています。高い取引コストは市場の流動性を低下させ、資金調達を阻害します。流動性の高い市場（liquid markets）が資金調達を促進します。",
+          "explanationJa": "正解はD。テキストでは投資銀行、アナリスト、規制当局が株式資本調達を促進すると説明されています。高い取引コストは市場の流動性を低下させ、資金調達を阻害します。流動性の高い市場（liquid markets）が資金調達を促進します。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_3_Q4",
+          "contentId": "EQ_MOS_DETAIL_2_1_3",
+          "question": "Why do liquid markets help companies raise capital?",
+          "questionJa": "流動性の高い市場が企業の資金調達を助けるのはなぜか？",
+          "answer": "B. They allow shareholders to easily divest their equities",
+          "answerJa": "正解はB。テキストでは「In these markets, shareholders can easily divest their equities as desired. When investors can easily value and trade equities, they are more willing to fund reasonable projects」と説明されています。投資家が容易に株式を売却できる環境があれば、新規投資への意欲が高まります。",
+          "explanationJa": "正解はB。テキストでは「In these markets, shareholders can easily divest their equities as desired. When investors can easily value and trade equities, they are more willing to fund reasonable projects」と説明されています。投資家が容易に株式を売却できる環境があれば、新規投資への意欲が高まります。",
+          "order": 4
+        }
+      ],
+      "order": 24,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本のIPOの例：メルカリが2018年に東京証券取引所に上場し、約1,300億円を調達した。大和証券やモルガン・スタンレーなどの投資銀行が引受業務を担当し、株式の価格設定と販売を支援した。",
+        "増資の例：ソニーグループが公募増資を実施し、既存株主や新規投資家から資金を調達。調達資金は半導体事業やエンターテインメント事業への投資に充てられた。",
+        "パートナーシップの例：不動産投資ファンドが投資家からパートナーシップ持分を募集し、オフィスビルや商業施設への投資資金を調達する。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_2_1_4",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "2.1.4",
+      "title": "Managing Risks",
+      "titleJa": "リスク管理",
+      "content": "Managing Risks",
+      "contentJa": "個人、企業、政府はデフォルトリスク、金利リスク、為替リスク、原材料価格リスクなど様々な金融リスクに直面する\n\nリスクはヘッジとして機能する契約を取引することで管理される\n\n先渡契約（フォワード契約）により、農家と食品加工業者は穀物価格変動リスクを相互に排除できる\n\nヘッジャーは先物契約、オプション契約、保険契約を使用してリスクを他者に移転する\n\n流動性の高い市場でリスク管理商品が取引できれば、人々はリスクを管理しやすくなり、収益性のある活動に取り組む意欲が高まる",
+      "keyPoints": [
+        "Default risk: 借り手が債務を返済できなくなるリスク。信用リスクとも呼ばれる",
+        "Hedgers: リスクを相殺または保険するために取引を行う市場参加者",
+        "Forward contract: 将来の特定日に、合意した価格で資産を売買する拘束力のある契約",
+        "Futures contracts: 標準化された先渡契約で、取引所で取引される",
+        "Option contracts: 将来の特定日に、特定価格で資産を売買する権利（義務ではない）を与える契約"
+      ],
+      "keyPointsJa": [
+        "デフォルトリスク（Default risk）: 借り手が債務を返済できなくなるリスク。信用リスクとも呼ばれる",
+        "ヘッジャー（Hedgers）: リスクを相殺または保険するために取引を行う市場参加者",
+        "先渡契約（Forward contract）: 将来の特定日に、合意した価格で資産を売買する拘束力のある契約",
+        "先物契約（Futures contracts）: 標準化された先渡契約で、取引所で取引される",
+        "オプション契約（Option contracts）: 将来の特定日に、特定価格で資産を売買する権利（義務ではない）を与える契約"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_2_1_4_Q1",
+          "contentId": "EQ_MOS_DETAIL_2_1_4",
+          "question": "Which of the following is NOT mentioned as a financial risk that concerns people, companies, and governments?",
+          "questionJa": "個人、企業、政府が懸念する金融リスクとして言及されていないものはどれか？",
+          "answer": "C. Reputational risk",
+          "answerJa": "正解はC。テキストでは「default risk and the risk of changes in interest rates, exchange rates, raw material prices, and sale prices」が金融リスクとして挙げられています。評判リスク（reputational risk）は言及されていません。",
+          "explanationJa": "正解はC。テキストでは「default risk and the risk of changes in interest rates, exchange rates, raw material prices, and sale prices」が金融リスクとして挙げられています。評判リスク（reputational risk）は言及されていません。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_4_Q2",
+          "contentId": "EQ_MOS_DETAIL_2_1_4",
+          "question": "In the grain example, how do both the farmer and food processor eliminate their price risk?",
+          "questionJa": "穀物の例で、農家と食品加工業者はどのようにして価格リスクを排除するか？",
+          "answer": "B. By entering into a forward contract",
+          "answerJa": "正解はB。テキストでは「They both can eliminate their exposures to these risks if they enter into a binding forward contract for the farmer to sell a specified quantity of grain to the food processor at a future date at a mutually agreed upon price」と説明されています。先渡契約により将来の取引価格を固定し、両者が価格変動リスクを排除します。",
+          "explanationJa": "正解はB。テキストでは「They both can eliminate their exposures to these risks if they enter into a binding forward contract for the farmer to sell a specified quantity of grain to the food processor at a future date at a mutually agreed upon price」と説明されています。先渡契約により将来の取引価格を固定し、両者が価格変動リスクを排除します。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_4_Q3",
+          "contentId": "EQ_MOS_DETAIL_2_1_4",
+          "question": "What instruments can hedgers use to transfer risk?",
+          "questionJa": "ヘッジャーがリスクを移転するために使用できる商品はどれか？",
+          "answer": "B. Forward, futures, option, and insurance contracts",
+          "answerJa": "正解はB。テキストでは「In addition to forward contracts, they may use futures contracts, option contracts, or insurance contracts to transfer risk」と説明されています。ヘッジャーは先渡契約、先物契約、オプション契約、保険契約を使用してリスクを移転できます。",
+          "explanationJa": "正解はB。テキストでは「In addition to forward contracts, they may use futures contracts, option contracts, or insurance contracts to transfer risk」と説明されています。ヘッジャーは先渡契約、先物契約、オプション契約、保険契約を使用してリスクを移転できます。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_4_Q4",
+          "contentId": "EQ_MOS_DETAIL_2_1_4",
+          "question": "How does the financial system facilitate risk management?",
+          "questionJa": "金融システムはどのようにしてリスク管理を促進するか？",
+          "answer": "B. By providing liquid markets for risk management instruments",
+          "answerJa": "正解はB。テキストでは「The financial system facilitates risk management when liquid markets exist in which risk managers can trade instruments that are correlated (or inversely correlated) with the risks that concern them without incurring substantial transaction costs」と説明されています。流動性の高い市場でリスク管理商品を低コストで取引できることがリスク管理を促進します。",
+          "explanationJa": "正解はB。テキストでは「The financial system facilitates risk management when liquid markets exist in which risk managers can trade instruments that are correlated (or inversely correlated) with the risks that concern them without incurring substantial transaction costs」と説明されています。流動性の高い市場でリスク管理商品を低コストで取引できることがリスク管理を促進します。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_2_1_4_Q5",
+          "contentId": "EQ_MOS_DETAIL_2_1_4",
+          "question": "Why does risk transfer often make both parties more secure?",
+          "questionJa": "リスク移転がしばしば両当事者をより安全にするのはなぜか？",
+          "answer": "B. Because both parties face exactly opposite risks",
+          "answerJa": "正解はB。テキストでは「Often the hedger and the other entity face exactly the opposite risks, so the transfer makes both more secure」と説明されています。農家は価格下落を恐れ、食品加工業者は価格上昇を恐れるように、両者が正反対のリスクに直面している場合、リスク移転により両者が安全になります。",
+          "explanationJa": "正解はB。テキストでは「Often the hedger and the other entity face exactly the opposite risks, so the transfer makes both more secure」と説明されています。農家は価格下落を恐れ、食品加工業者は価格上昇を恐れるように、両者が正反対のリスクに直面している場合、リスク移転により両者が安全になります。",
+          "order": 5
+        }
+      ],
+      "order": 25,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の航空会社の例：ANAやJALは燃料価格の変動リスクをヘッジするため、原油先物契約やスワップ契約を締結する。これにより、燃料費の予算管理が容易になる。",
+        "日本の輸出企業の例：トヨタ自動車は為替リスクをヘッジするため、為替先渡契約を締結する。ドル建て売上の円換算額を固定し、為替変動による収益への影響を軽減する。",
+        "日本の農家の例：JA（農協）を通じて、米の先渡契約を締結し、収穫時の価格を事前に確定させる。これにより、価格下落リスクから農家を保護する。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_3",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "3",
+      "title": "Classifications of Assets and Markets",
+      "titleJa": "資産と市場の分類",
+      "content": "Classifications of Assets and Markets",
+      "contentJa": "最も活発に取引される資産は証券、通貨、契約、コモディティ、実物資産の5種類\n\n証券は債券（固定利付商品）、株式、プール投資ビークルの持分に分類される\n\n証券は公開証券と私募証券に分類。公開証券は取引所やディーラーを通じて取引され、厳格な規制基準を満たす必要がある\n\nデリバティブ契約は原資産の価格に依存する契約。株式デリバティブ、固定利付デリバティブなどがある\n\n市場は即時受渡（スポット市場）と将来受渡（先物・先渡市場）に分類される\n\n発行市場（プライマリー市場）は発行者から投資家への売却、流通市場（セカンダリー市場）は投資家間の売買\n\nマネーマーケットは1年以内の短期債務、キャピタルマーケットは長期の債券・株式を取引\n\n伝統的投資は公開株式・債券、オルタナティブ投資はヘッジファンド、PE、コモディティ、不動産など",
+      "keyPoints": [
+        "Securities: 債券、株式、プール投資ビークルの持分を含む金融商品",
+        "Debt instruments / Fixed-income instruments: 借入金を返済する約束。利息と元本の支払いを約束する",
+        "Equities: 企業の所有権を表す証券",
+        "Pooled investment vehicles: 投資ポートフォリオの分割されていない持分を表す。投資信託、ETFなど",
+        "Public securities: 取引所やディーラーを通じて公開市場で取引できるよう登録された証券"
+      ],
+      "keyPointsJa": [
+        "証券（Securities）: 債券、株式、プール投資ビークルの持分を含む金融商品",
+        "債券/固定利付商品（Debt instruments / Fixed-income instruments）: 借入金を返済する約束。利息と元本の支払いを約束する",
+        "株式（Equities）: 企業の所有権を表す証券",
+        "プール投資ビークル（Pooled investment vehicles）: 投資ポートフォリオの分割されていない持分を表す。投資信託、ETFなど",
+        "公開証券（Public securities）: 取引所やディーラーを通じて公開市場で取引できるよう登録された証券"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_3_Q1",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "Which of the following is classified as a financial asset rather than a physical asset?",
+          "questionJa": "以下のうち、物理的資産ではなく金融資産に分類されるものはどれか？",
+          "answer": "C. Currency",
+          "answerJa": "正解はC。テキストでは「Securities, currencies, and contracts are classified as financial assets whereas commodities and real assets are classified as physical assets」と説明されている。通貨は金融資産、金地金・不動産・農産物は物理的資産。",
+          "explanationJa": "正解はC。テキストでは「Securities, currencies, and contracts are classified as financial assets whereas commodities and real assets are classified as physical assets」と説明されている。通貨は金融資産、金地金・不動産・農産物は物理的資産。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_3_Q2",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "A company issues bonds directly to institutional investors without registering them for public trading. These bonds are best described as:",
+          "questionJa": "企業が公開取引の登録なしに機関投資家に直接債券を発行した場合、これらの債券は何と呼ばれるか？",
+          "answer": "B. Private securities",
+          "answerJa": "正解はB。公開市場で取引できるよう登録されていない証券は私募証券（private securities）に分類される。",
+          "explanationJa": "正解はB。公開市場で取引できるよう登録されていない証券は私募証券（private securities）に分類される。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_3_Q3",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "An investor purchases shares of a company in an IPO. This transaction occurs in which market?",
+          "questionJa": "投資家がIPOで企業の株式を購入した場合、この取引はどの市場で行われるか？",
+          "answer": "B. Primary market",
+          "answerJa": "正解はB。テキストでは「When issuers sell securities to investors, practitioners say that they trade in the primary market」と説明されている。IPOは発行者から投資家への売却なので発行市場（プライマリー市場）。",
+          "explanationJa": "正解はB。テキストでは「When issuers sell securities to investors, practitioners say that they trade in the primary market」と説明されている。IPOは発行者から投資家への売却なので発行市場（プライマリー市場）。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_3_Q4",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "Which of the following instruments would most likely trade in the money market?",
+          "questionJa": "以下のうち、マネーマーケットで取引される可能性が最も高いものはどれか？",
+          "answer": "C. 90-day commercial paper",
+          "answerJa": "正解はC。テキストでは「Money markets trade debt instruments maturing in one year or less. The most common such instruments are repurchase agreements, negotiable certificates of deposit, government bills, and commercial paper」と説明されている。90日のコマーシャルペーパーは1年以内の短期債務。",
+          "explanationJa": "正解はC。テキストでは「Money markets trade debt instruments maturing in one year or less. The most common such instruments are repurchase agreements, negotiable certificates of deposit, government bills, and commercial paper」と説明されている。90日のコマーシャルペーパーは1年以内の短期債務。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_3_Q5",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "A mutual fund that can only invest in public equities traded in secondary markets would NOT be able to purchase:",
+          "questionJa": "流通市場で取引される公開株式にのみ投資できる投資信託が購入できないものはどれか？",
+          "answer": "C. Shares in an IPO",
+          "answerJa": "正解はC。IPOは発行市場（プライマリー市場）での取引であり、流通市場（セカンダリー市場）ではない。テキストの例題5では「The fund would not be able to buy these shares because a purchase from the issuer would be in the primary market」と説明されている。",
+          "explanationJa": "正解はC。IPOは発行市場（プライマリー市場）での取引であり、流通市場（セカンダリー市場）ではない。テキストの例題5では「The fund would not be able to buy these shares because a purchase from the issuer would be in the primary market」と説明されている。",
+          "order": 5
+        },
+        {
+          "id": "EQ_MOS_DETAIL_3_Q6",
+          "contentId": "EQ_MOS_DETAIL_3",
+          "question": "Which of the following best describes alternative investments?",
+          "questionJa": "オルタナティブ投資の特徴として最も適切なものはどれか？",
+          "answer": "B. They include hedge funds, private equity, and commodities",
+          "answerJa": "正解はB。テキストでは「Alternative investments include hedge funds, private equities (including venture capital), commodities, real estate securities and real estate properties, securitized debts, operating leases, machinery, collectibles, and precious gems」と説明されている。オルタナティブ投資は取引・評価が難しいことが多い。",
+          "explanationJa": "正解はB。テキストでは「Alternative investments include hedge funds, private equities (including venture capital), commodities, real estate securities and real estate properties, securitized debts, operating leases, machinery, collectibles, and precious gems」と説明されている。オルタナティブ投資は取引・評価が難しいことが多い。",
+          "order": 6
+        }
+      ],
+      "order": 26,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の発行市場の例：ソフトバンクグループが新株を発行してIPOを行う場合、投資家は発行市場で株式を購入。その後、東京証券取引所で売買されるのは流通市場での取引。",
+        "日本のマネーマーケットの例：日本銀行が発行する短期国債（TB）、企業が発行するコマーシャルペーパー（CP）、銀行間のコール市場での取引はすべてマネーマーケット。",
+        "日本のオルタナティブ投資の例：J-REIT（不動産投資信託）、インフラファンド、プライベートエクイティファンド（PEファンド）への投資はオルタナティブ投資に分類される。"
+      ],
+      "calculationExamples": []
+    },
+    {
+      "id": "EQ_MOS_DETAIL_7",
+      "subject": "EQ",
+      "reading": "MOS",
+      "readingTitle": "Market Organization and Structure",
+      "readingTitleJa": "市場組織と構造",
+      "section": "7",
+      "title": "Financial Intermediaries",
+      "titleJa": "金融仲介機関",
+      "content": "Financial Intermediaries",
+      "contentJa": "ブローカーは顧客の注文を執行する代理人。顧客と取引するのではなく、取引相手を探す\n\nブロックブローカーは大口トレーダーにサービスを提供。大口注文は市場を動かすため、注文の露出を慎重に管理する\n\n投資銀行は企業クライアントにアドバイスを提供し、証券発行やM&Aを支援する\n\n取引所はトレーダーが取引を行う場所を提供。会員の行動を規制し、上場企業に財務開示を要求する\n\n代替取引システム（ATS）は取引所のように機能するが、規制権限を持たない。ダークプールは注文を表示しない\n\nディーラーは自己勘定で取引し、ビッド・アスクスプレッドから利益を得る。マーケットメイカーは常に売買価格を提示する義務がある\n\n証券化業者は資産をプールしてパススルー証券やCDOを発行する\n\n預託機関（銀行）は預金を受け入れ、貸出を行う。保険会社はリスクを引き受け、保険料を投資する",
+      "keyPoints": [
+        "Broker: 顧客の注文を執行する代理人。取引相手を探して手数料を得る",
+        "Block broker: 大口トレーダーにサービスを提供するブローカー。注文の露出を慎重に管理する",
+        "Investment bank: 企業に対して証券発行、M&A、財務アドバイスを提供する金融機関",
+        "Exchange: トレーダーが取引を行う場所。会員と上場企業を規制する権限を持つ",
+        "Alternative Trading System (ATS): 取引所のように機能するが規制権限を持たない取引施設。ECN、MTFとも呼ばれる"
+      ],
+      "keyPointsJa": [
+        "ブローカー（Broker）: 顧客の注文を執行する代理人。取引相手を探して手数料を得る",
+        "ブロックブローカー（Block broker）: 大口トレーダーにサービスを提供するブローカー。注文の露出を慎重に管理する",
+        "投資銀行（Investment bank）: 企業に対して証券発行、M&A、財務アドバイスを提供する金融機関",
+        "取引所（Exchange）: トレーダーが取引を行う場所。会員と上場企業を規制する権限を持つ",
+        "代替取引システム（Alternative Trading System (ATS)）: 取引所のように機能するが規制権限を持たない取引施設。ECN、MTFとも呼ばれる"
+      ],
+      "checkQuestions": [
+        {
+          "id": "EQ_MOS_DETAIL_7_Q1",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "Which of the following best describes the primary function of a broker?",
+          "questionJa": "ブローカーの主な機能を最もよく説明しているものはどれか？",
+          "answer": "B. Finding counterparties for clients' orders",
+          "answerJa": "正解はB。ブローカーは顧客の注文の取引相手を探す代理人。自己勘定で取引するのはディーラー。",
+          "explanationJa": "正解はB。ブローカーは顧客の注文の取引相手を探す代理人。自己勘定で取引するのはディーラー。",
+          "order": 1
+        },
+        {
+          "id": "EQ_MOS_DETAIL_7_Q2",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "Why do large investment managers prefer to use dark pools?",
+          "questionJa": "大口投資マネージャーがダークプールを好む理由は何か？",
+          "answer": "C. To prevent market prices from moving against them",
+          "answerJa": "正解はC。大口注文が市場に知られると、価格が不利な方向に動くことが多い。ダークプールは注文を表示しないため、市場への影響を避けられる。",
+          "explanationJa": "正解はC。大口注文が市場に知られると、価格が不利な方向に動くことが多い。ダークプールは注文を表示しないため、市場への影響を避けられる。",
+          "order": 2
+        },
+        {
+          "id": "EQ_MOS_DETAIL_7_Q3",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "Which of the following is a key difference between exchanges and alternative trading systems (ATSs)?",
+          "questionJa": "取引所と代替取引システム（ATS）の主な違いは何か？",
+          "answer": "B. Exchanges have regulatory authority over members and issuers",
+          "answerJa": "正解はB。取引所は会員の行動を規制し、上場企業に財務開示を要求する権限を持つ。ATSは取引行為以外の規制権限を持たない。",
+          "explanationJa": "正解はB。取引所は会員の行動を規制し、上場企業に財務開示を要求する権限を持つ。ATSは取引行為以外の規制権限を持たない。",
+          "order": 3
+        },
+        {
+          "id": "EQ_MOS_DETAIL_7_Q4",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "How do dealers profit from their trading activities?",
+          "questionJa": "ディーラーはどのようにして取引活動から利益を得るか？",
+          "answer": "B. By earning the bid-ask spread",
+          "answerJa": "正解はB。ディーラーはビッド価格（低い価格）で買い、アスク価格（高い価格）で売ることで、スプレッドから利益を得る。",
+          "explanationJa": "正解はB。ディーラーはビッド価格（低い価格）で買い、アスク価格（高い価格）で売ることで、スプレッドから利益を得る。",
+          "order": 4
+        },
+        {
+          "id": "EQ_MOS_DETAIL_7_Q5",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "Which of the following services is most likely provided by an investment bank's corporate finance division?",
+          "questionJa": "投資銀行のコーポレートファイナンス部門が提供する可能性が最も高いサービスはどれか？",
+          "answer": "B. Helping companies issue securities and arrange M&A transactions",
+          "answerJa": "正解はB。投資銀行のコーポレートファイナンス部門は、企業の証券発行やM&A取引の支援を行う。",
+          "explanationJa": "正解はB。投資銀行のコーポレートファイナンス部門は、企業の証券発行やM&A取引の支援を行う。",
+          "order": 5
+        },
+        {
+          "id": "EQ_MOS_DETAIL_7_Q6",
+          "contentId": "EQ_MOS_DETAIL_7",
+          "question": "What is the primary purpose of financial disclosure requirements imposed by exchanges on listed companies?",
+          "questionJa": "取引所が上場企業に課す財務開示要件の主な目的は何か？",
+          "answer": "B. To enable analysts to value securities accurately",
+          "answerJa": "正解はB。財務開示により、アナリストは証券を適切に評価できる。開示がなければ、情報を持つ参加者が情報を持たない参加者から利益を得る可能性がある。",
+          "explanationJa": "正解はB。財務開示により、アナリストは証券を適切に評価できる。開示がなければ、情報を持つ参加者が情報を持たない参加者から利益を得る可能性がある。",
+          "order": 6
+        }
+      ],
+      "order": 27,
+      "createdAt": "2025-01-11T00:00:00Z",
+      "updatedAt": "2025-01-11T00:00:00Z",
+      "isDetailed": true,
+      "practicalExamples": [
+        "日本の取引所の例：東京証券取引所（TSE）は日本最大の取引所。上場企業に四半期決算開示を要求し、コーポレートガバナンス・コードの遵守を求める。",
+        "日本のダークプールの例：SBIジャパンネクスト証券のPTSは、機関投資家向けにダークプール機能を提供。大口注文の市場インパクトを軽減する。",
+        "日本の投資銀行の例：野村證券、大和証券、みずほ証券などがIPO引受、M&Aアドバイザリー、債券発行支援などの投資銀行業務を提供。"
+      ],
+      "calculationExamples": []
     }
   ],
   "examples": [

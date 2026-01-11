@@ -1,0 +1,104 @@
+{
+  "section_number": "2.1.3",
+  "section_title": "Raising Equity Capital",
+  "section_title_ja": "株式資本の調達",
+  "japanese_summary": [
+    "企業は普通株式やパートナーシップ持分などの所有権を売却（発行）することで資金を調達する",
+    "株式は法的には企業への貸付ではなく所有権を表すが、将来から現在へ資金を移転する仕組みである",
+    "株主やパートナーは現在の資金と引き換えに、将来の配当請求権を持つ株式を取得する",
+    "投資銀行が株式発行を支援し、アナリストが証券を評価し、規制当局が財務開示を義務付ける",
+    "流動性の高い市場では株主が容易に株式を売却でき、企業の資金調達が促進される"
+  ],
+  "key_concepts": [
+    {
+      "term": "Equity instruments",
+      "japanese": "株式商品",
+      "definition": "企業の所有権を表す金融商品。普通株式やパートナーシップ持分など"
+    },
+    {
+      "term": "Common stock",
+      "japanese": "普通株式",
+      "definition": "企業の所有権を表す最も一般的な株式。議決権と配当請求権を持つ"
+    },
+    {
+      "term": "Partnership interests",
+      "japanese": "パートナーシップ持分",
+      "definition": "パートナーシップ（組合）における所有権。利益分配と経営参加の権利を持つ"
+    },
+    {
+      "term": "Investment banks",
+      "japanese": "投資銀行",
+      "definition": "企業の株式発行を支援する金融機関。引受業務やアドバイザリー業務を行う"
+    },
+    {
+      "term": "Capital formation",
+      "japanese": "資本形成",
+      "definition": "企業が新規プロジェクトや事業拡大のために資金を調達するプロセス"
+    },
+    {
+      "term": "Liquid markets",
+      "japanese": "流動性の高い市場",
+      "definition": "投資家が容易に証券を売買できる市場。取引コストが低く、価格への影響が小さい"
+    },
+    {
+      "term": "Financial disclosures",
+      "japanese": "財務開示",
+      "definition": "企業が投資家に提供する財務情報。規制要件と会計基準に基づいて作成される"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "What is the primary difference between equity financing and debt financing?",
+      "question_ja": "株式資金調達と借入資金調達の主な違いは何か？",
+      "options": [
+        "A. Equity represents ownership while debt represents a loan",
+        "B. Equity has scheduled repayments while debt does not",
+        "C. Equity is always cheaper than debt",
+        "D. Equity does not involve the financial system"
+      ],
+      "correct_answer": "A",
+      "explanation": "正解はA。テキストでは「these equity instruments legally represent ownership in companies rather than loans to the companies」と説明されています。株式は企業の所有権を表し、借入（負債）は企業への貸付を表します。"
+    },
+    {
+      "question": "How does selling equity move money through time?",
+      "question_ja": "株式の売却はどのように時間を通じて資金を移転するか？",
+      "options": [
+        "A. From the present to the future",
+        "B. From the future to the present",
+        "C. It does not move money through time",
+        "D. Only within the present period"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「selling equity to raise capital is simply another mechanism for moving money from the future to the present」と説明されています。企業は将来の配当請求権と引き換えに、現在の資金を調達します。"
+    },
+    {
+      "question": "Which of the following does NOT facilitate raising equity capital?",
+      "question_ja": "株式資本の調達を促進しないものはどれか？",
+      "options": [
+        "A. Investment banks helping companies issue equities",
+        "B. Analysts valuing securities",
+        "C. Regulatory reporting requirements",
+        "D. High transaction costs in markets"
+      ],
+      "correct_answer": "D",
+      "explanation": "正解はD。テキストでは投資銀行、アナリスト、規制当局が株式資本調達を促進すると説明されています。高い取引コストは市場の流動性を低下させ、資金調達を阻害します。流動性の高い市場（liquid markets）が資金調達を促進します。"
+    },
+    {
+      "question": "Why do liquid markets help companies raise capital?",
+      "question_ja": "流動性の高い市場が企業の資金調達を助けるのはなぜか？",
+      "options": [
+        "A. They eliminate all investment risks",
+        "B. They allow shareholders to easily divest their equities",
+        "C. They guarantee high returns for investors",
+        "D. They prevent stock price fluctuations"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「In these markets, shareholders can easily divest their equities as desired. When investors can easily value and trade equities, they are more willing to fund reasonable projects」と説明されています。投資家が容易に株式を売却できる環境があれば、新規投資への意欲が高まります。"
+    }
+  ],
+  "practical_examples": [
+    "日本のIPOの例：メルカリが2018年に東京証券取引所に上場し、約1,300億円を調達した。大和証券やモルガン・スタンレーなどの投資銀行が引受業務を担当し、株式の価格設定と販売を支援した。",
+    "増資の例：ソニーグループが公募増資を実施し、既存株主や新規投資家から資金を調達。調達資金は半導体事業やエンターテインメント事業への投資に充てられた。",
+    "パートナーシップの例：不動産投資ファンドが投資家からパートナーシップ持分を募集し、オフィスビルや商業施設への投資資金を調達する。"
+  ]
+}

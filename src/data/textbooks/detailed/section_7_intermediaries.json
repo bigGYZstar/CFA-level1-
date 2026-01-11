@@ -1,0 +1,161 @@
+{
+  "section_number": "7",
+  "section_title": "Financial Intermediaries",
+  "section_title_ja": "金融仲介機関",
+  "japanese_summary": [
+    "ブローカーは顧客の注文を執行する代理人。顧客と取引するのではなく、取引相手を探す",
+    "ブロックブローカーは大口トレーダーにサービスを提供。大口注文は市場を動かすため、注文の露出を慎重に管理する",
+    "投資銀行は企業クライアントにアドバイスを提供し、証券発行やM&Aを支援する",
+    "取引所はトレーダーが取引を行う場所を提供。会員の行動を規制し、上場企業に財務開示を要求する",
+    "代替取引システム（ATS）は取引所のように機能するが、規制権限を持たない。ダークプールは注文を表示しない",
+    "ディーラーは自己勘定で取引し、ビッド・アスクスプレッドから利益を得る。マーケットメイカーは常に売買価格を提示する義務がある",
+    "証券化業者は資産をプールしてパススルー証券やCDOを発行する",
+    "預託機関（銀行）は預金を受け入れ、貸出を行う。保険会社はリスクを引き受け、保険料を投資する"
+  ],
+  "key_concepts": [
+    {
+      "term": "Broker",
+      "japanese": "ブローカー",
+      "definition": "顧客の注文を執行する代理人。取引相手を探して手数料を得る"
+    },
+    {
+      "term": "Block broker",
+      "japanese": "ブロックブローカー",
+      "definition": "大口トレーダーにサービスを提供するブローカー。注文の露出を慎重に管理する"
+    },
+    {
+      "term": "Investment bank",
+      "japanese": "投資銀行",
+      "definition": "企業に対して証券発行、M&A、財務アドバイスを提供する金融機関"
+    },
+    {
+      "term": "Exchange",
+      "japanese": "取引所",
+      "definition": "トレーダーが取引を行う場所。会員と上場企業を規制する権限を持つ"
+    },
+    {
+      "term": "Alternative Trading System (ATS)",
+      "japanese": "代替取引システム",
+      "definition": "取引所のように機能するが規制権限を持たない取引施設。ECN、MTFとも呼ばれる"
+    },
+    {
+      "term": "Dark pool",
+      "japanese": "ダークプール",
+      "definition": "注文を表示しないATS。大口投資家が市場への影響を避けるために利用"
+    },
+    {
+      "term": "Dealer",
+      "japanese": "ディーラー",
+      "definition": "自己勘定で取引する業者。ビッド価格で買い、アスク価格で売る"
+    },
+    {
+      "term": "Market maker",
+      "japanese": "マーケットメイカー",
+      "definition": "常に売買価格を提示する義務を負うディーラー"
+    },
+    {
+      "term": "Bid-ask spread",
+      "japanese": "ビッド・アスクスプレッド",
+      "definition": "ディーラーの買い価格と売り価格の差。ディーラーの利益源"
+    },
+    {
+      "term": "Securitizer",
+      "japanese": "証券化業者",
+      "definition": "資産をプールして証券を発行する機関。MBS、CDOなどを組成"
+    },
+    {
+      "term": "Depository institution",
+      "japanese": "預託機関（銀行）",
+      "definition": "預金を受け入れ、貸出を行う金融機関"
+    },
+    {
+      "term": "Insurance company",
+      "japanese": "保険会社",
+      "definition": "リスクを引き受け、保険料を投資して運用する金融機関"
+    },
+    {
+      "term": "Arbitrageur",
+      "japanese": "アービトラージャー",
+      "definition": "同一資産の価格差を利用して無リスク利益を得るトレーダー"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "Which of the following best describes the primary function of a broker?",
+      "question_ja": "ブローカーの主な機能を最もよく説明しているものはどれか？",
+      "options": [
+        "A. Trading with clients using their own capital",
+        "B. Finding counterparties for clients' orders",
+        "C. Providing investment advice",
+        "D. Issuing securities"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。ブローカーは顧客の注文の取引相手を探す代理人。自己勘定で取引するのはディーラー。"
+    },
+    {
+      "question": "Why do large investment managers prefer to use dark pools?",
+      "question_ja": "大口投資マネージャーがダークプールを好む理由は何か？",
+      "options": [
+        "A. Lower trading fees",
+        "B. Faster execution",
+        "C. To prevent market prices from moving against them",
+        "D. Better regulatory protection"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。大口注文が市場に知られると、価格が不利な方向に動くことが多い。ダークプールは注文を表示しないため、市場への影響を避けられる。"
+    },
+    {
+      "question": "Which of the following is a key difference between exchanges and alternative trading systems (ATSs)?",
+      "question_ja": "取引所と代替取引システム（ATS）の主な違いは何か？",
+      "options": [
+        "A. ATSs can only trade equities",
+        "B. Exchanges have regulatory authority over members and issuers",
+        "C. ATSs provide faster execution",
+        "D. Exchanges do not use electronic trading systems"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。取引所は会員の行動を規制し、上場企業に財務開示を要求する権限を持つ。ATSは取引行為以外の規制権限を持たない。"
+    },
+    {
+      "question": "How do dealers profit from their trading activities?",
+      "question_ja": "ディーラーはどのようにして取引活動から利益を得るか？",
+      "options": [
+        "A. By charging commissions to clients",
+        "B. By earning the bid-ask spread",
+        "C. By providing investment advice",
+        "D. By underwriting securities"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。ディーラーはビッド価格（低い価格）で買い、アスク価格（高い価格）で売ることで、スプレッドから利益を得る。"
+    },
+    {
+      "question": "Which of the following services is most likely provided by an investment bank's corporate finance division?",
+      "question_ja": "投資銀行のコーポレートファイナンス部門が提供する可能性が最も高いサービスはどれか？",
+      "options": [
+        "A. Accepting deposits from retail customers",
+        "B. Helping companies issue securities and arrange M&A transactions",
+        "C. Providing insurance products",
+        "D. Managing mutual funds"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。投資銀行のコーポレートファイナンス部門は、企業の証券発行やM&A取引の支援を行う。"
+    },
+    {
+      "question": "What is the primary purpose of financial disclosure requirements imposed by exchanges on listed companies?",
+      "question_ja": "取引所が上場企業に課す財務開示要件の主な目的は何か？",
+      "options": [
+        "A. To increase trading volume",
+        "B. To enable analysts to value securities accurately",
+        "C. To reduce the number of listed companies",
+        "D. To increase exchange revenue"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。財務開示により、アナリストは証券を適切に評価できる。開示がなければ、情報を持つ参加者が情報を持たない参加者から利益を得る可能性がある。"
+    }
+  ],
+  "practical_examples": [
+    "日本の取引所の例：東京証券取引所（TSE）は日本最大の取引所。上場企業に四半期決算開示を要求し、コーポレートガバナンス・コードの遵守を求める。",
+    "日本のダークプールの例：SBIジャパンネクスト証券のPTSは、機関投資家向けにダークプール機能を提供。大口注文の市場インパクトを軽減する。",
+    "日本の投資銀行の例：野村證券、大和証券、みずほ証券などがIPO引受、M&Aアドバイザリー、債券発行支援などの投資銀行業務を提供。"
+  ]
+}

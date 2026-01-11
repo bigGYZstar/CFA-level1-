@@ -1,0 +1,176 @@
+{
+  "section_number": "3",
+  "section_title": "Classifications of Assets and Markets",
+  "section_title_ja": "資産と市場の分類",
+  "japanese_summary": [
+    "最も活発に取引される資産は証券、通貨、契約、コモディティ、実物資産の5種類",
+    "証券は債券（固定利付商品）、株式、プール投資ビークルの持分に分類される",
+    "証券は公開証券と私募証券に分類。公開証券は取引所やディーラーを通じて取引され、厳格な規制基準を満たす必要がある",
+    "デリバティブ契約は原資産の価格に依存する契約。株式デリバティブ、固定利付デリバティブなどがある",
+    "市場は即時受渡（スポット市場）と将来受渡（先物・先渡市場）に分類される",
+    "発行市場（プライマリー市場）は発行者から投資家への売却、流通市場（セカンダリー市場）は投資家間の売買",
+    "マネーマーケットは1年以内の短期債務、キャピタルマーケットは長期の債券・株式を取引",
+    "伝統的投資は公開株式・債券、オルタナティブ投資はヘッジファンド、PE、コモディティ、不動産など"
+  ],
+  "key_concepts": [
+    {
+      "term": "Securities",
+      "japanese": "証券",
+      "definition": "債券、株式、プール投資ビークルの持分を含む金融商品"
+    },
+    {
+      "term": "Debt instruments / Fixed-income instruments",
+      "japanese": "債券/固定利付商品",
+      "definition": "借入金を返済する約束。利息と元本の支払いを約束する"
+    },
+    {
+      "term": "Equities",
+      "japanese": "株式",
+      "definition": "企業の所有権を表す証券"
+    },
+    {
+      "term": "Pooled investment vehicles",
+      "japanese": "プール投資ビークル",
+      "definition": "投資ポートフォリオの分割されていない持分を表す。投資信託、ETFなど"
+    },
+    {
+      "term": "Public securities",
+      "japanese": "公開証券",
+      "definition": "取引所やディーラーを通じて公開市場で取引できるよう登録された証券"
+    },
+    {
+      "term": "Private securities",
+      "japanese": "私募証券",
+      "definition": "公開市場で取引されない証券。適格投資家のみが購入可能なことが多い"
+    },
+    {
+      "term": "Venture capital",
+      "japanese": "ベンチャーキャピタル",
+      "definition": "企業の設立時または設立直後に投資家が提供する私募株式"
+    },
+    {
+      "term": "Derivative contracts",
+      "japanese": "デリバティブ契約",
+      "definition": "価値が他の原資産の価格に依存する契約"
+    },
+    {
+      "term": "Spot market",
+      "japanese": "スポット市場（現物市場）",
+      "definition": "即時受渡で取引する市場"
+    },
+    {
+      "term": "Forward/Futures market",
+      "japanese": "先渡/先物市場",
+      "definition": "将来の受渡を約束する契約を取引する市場"
+    },
+    {
+      "term": "Primary market",
+      "japanese": "発行市場（プライマリー市場）",
+      "definition": "発行者が投資家に証券を売却する市場。資金は発行者に流れる"
+    },
+    {
+      "term": "Secondary market",
+      "japanese": "流通市場（セカンダリー市場）",
+      "definition": "投資家間で証券を売買する市場。資金はトレーダー間で流れる"
+    },
+    {
+      "term": "Money market",
+      "japanese": "マネーマーケット（短期金融市場）",
+      "definition": "満期1年以内の債務商品を取引する市場。レポ、CD、TB、CPなど"
+    },
+    {
+      "term": "Capital market",
+      "japanese": "キャピタルマーケット（資本市場）",
+      "definition": "長期の債券や株式を取引する市場"
+    },
+    {
+      "term": "Traditional investments",
+      "japanese": "伝統的投資",
+      "definition": "公開株式・債券およびそれらを保有するプール投資ビークル"
+    },
+    {
+      "term": "Alternative investments",
+      "japanese": "オルタナティブ投資",
+      "definition": "ヘッジファンド、PE、コモディティ、不動産、証券化債務など"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "Which of the following is classified as a financial asset rather than a physical asset?",
+      "question_ja": "以下のうち、物理的資産ではなく金融資産に分類されるものはどれか？",
+      "options": [
+        "A. Gold bullion",
+        "B. Real estate",
+        "C. Currency",
+        "D. Agricultural products"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「Securities, currencies, and contracts are classified as financial assets whereas commodities and real assets are classified as physical assets」と説明されている。通貨は金融資産、金地金・不動産・農産物は物理的資産。"
+    },
+    {
+      "question": "A company issues bonds directly to institutional investors without registering them for public trading. These bonds are best described as:",
+      "question_ja": "企業が公開取引の登録なしに機関投資家に直接債券を発行した場合、これらの債券は何と呼ばれるか？",
+      "options": [
+        "A. Public securities",
+        "B. Private securities",
+        "C. Derivative contracts",
+        "D. Pooled investment vehicles"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。公開市場で取引できるよう登録されていない証券は私募証券（private securities）に分類される。"
+    },
+    {
+      "question": "An investor purchases shares of a company in an IPO. This transaction occurs in which market?",
+      "question_ja": "投資家がIPOで企業の株式を購入した場合、この取引はどの市場で行われるか？",
+      "options": [
+        "A. Secondary market",
+        "B. Primary market",
+        "C. Spot market",
+        "D. Futures market"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「When issuers sell securities to investors, practitioners say that they trade in the primary market」と説明されている。IPOは発行者から投資家への売却なので発行市場（プライマリー市場）。"
+    },
+    {
+      "question": "Which of the following instruments would most likely trade in the money market?",
+      "question_ja": "以下のうち、マネーマーケットで取引される可能性が最も高いものはどれか？",
+      "options": [
+        "A. 10-year government bond",
+        "B. Common stock",
+        "C. 90-day commercial paper",
+        "D. 5-year corporate bond"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「Money markets trade debt instruments maturing in one year or less. The most common such instruments are repurchase agreements, negotiable certificates of deposit, government bills, and commercial paper」と説明されている。90日のコマーシャルペーパーは1年以内の短期債務。"
+    },
+    {
+      "question": "A mutual fund that can only invest in public equities traded in secondary markets would NOT be able to purchase:",
+      "question_ja": "流通市場で取引される公開株式にのみ投資できる投資信託が購入できないものはどれか？",
+      "options": [
+        "A. Common stock trading on a major exchange",
+        "B. Common stock trading through dealers",
+        "C. Shares in an IPO",
+        "D. ETF shares"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。IPOは発行市場（プライマリー市場）での取引であり、流通市場（セカンダリー市場）ではない。テキストの例題5では「The fund would not be able to buy these shares because a purchase from the issuer would be in the primary market」と説明されている。"
+    },
+    {
+      "question": "Which of the following best describes alternative investments?",
+      "question_ja": "オルタナティブ投資の特徴として最も適切なものはどれか？",
+      "options": [
+        "A. They are always more liquid than traditional investments",
+        "B. They include hedge funds, private equity, and commodities",
+        "C. They only include publicly traded securities",
+        "D. They are easier to value than traditional investments"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「Alternative investments include hedge funds, private equities (including venture capital), commodities, real estate securities and real estate properties, securitized debts, operating leases, machinery, collectibles, and precious gems」と説明されている。オルタナティブ投資は取引・評価が難しいことが多い。"
+    }
+  ],
+  "practical_examples": [
+    "日本の発行市場の例：ソフトバンクグループが新株を発行してIPOを行う場合、投資家は発行市場で株式を購入。その後、東京証券取引所で売買されるのは流通市場での取引。",
+    "日本のマネーマーケットの例：日本銀行が発行する短期国債（TB）、企業が発行するコマーシャルペーパー（CP）、銀行間のコール市場での取引はすべてマネーマーケット。",
+    "日本のオルタナティブ投資の例：J-REIT（不動産投資信託）、インフラファンド、プライベートエクイティファンド（PEファンド）への投資はオルタナティブ投資に分類される。"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "section_number": "12-13",
+  "section_title": "Orders, Execution Instructions, and Validity Instructions",
+  "section_title_ja": "注文タイプ、執行指示、有効期限指示",
+  "japanese_summary": [
+    "成行注文は即座に最良価格で執行されるが、価格の不確実性がある。特に流動性の低い市場や大口注文では不利な価格で約定する可能性がある",
+    "指値注文は最良価格を追求しつつ、指定した価格より不利な価格での約定を防ぐ。ただし、約定しない可能性がある",
+    "指値注文の積極性は市場価格との関係で決まる。最良気配より有利な指値は「マーケットを作る」、不利な指値は「市場の後ろ」にある",
+    "隠し注文（Hidden orders）やアイスバーグ注文は、大口注文の存在を市場に知らせずに取引するために使用される",
+    "有効期限指示には当日注文（Day order）、GTC注文、IOC注文、引け注文（Market-on-close）などがある",
+    "逆指値注文（Stop order）は指定価格に達した時点で成行または指値注文に変換される"
+  ],
+  "key_concepts": [
+    {
+      "term": "Market order",
+      "japanese": "成行注文",
+      "definition": "即座に最良価格で執行するよう指示する注文。確実に約定するが、価格は不確実"
+    },
+    {
+      "term": "Limit order",
+      "japanese": "指値注文",
+      "definition": "指定した価格より不利な価格での約定を防ぐ注文。最良価格を追求しつつ、買いは上限、売りは下限を設定"
+    },
+    {
+      "term": "Marketable limit order",
+      "japanese": "成行化可能な指値注文",
+      "definition": "現在の最良気配で即座に約定可能な指値注文。買い指値が最良売り気配以上、または売り指値が最良買い気配以下"
+    },
+    {
+      "term": "Standing limit order",
+      "japanese": "待機指値注文",
+      "definition": "約定を待っている指値注文。板（オーダーブック）に表示される"
+    },
+    {
+      "term": "Bid price",
+      "japanese": "買い気配（ビッド）",
+      "definition": "ディーラーや他のトレーダーが買いたい価格"
+    },
+    {
+      "term": "Ask/Offer price",
+      "japanese": "売り気配（アスク/オファー）",
+      "definition": "ディーラーや他のトレーダーが売りたい価格。常にビッドより高い"
+    },
+    {
+      "term": "Make a market",
+      "japanese": "マーケットを作る",
+      "definition": "最良気配と同じ価格で指値注文を出すこと"
+    },
+    {
+      "term": "Make a new market",
+      "japanese": "新しいマーケットを作る",
+      "definition": "現在の最良気配より有利な価格で指値注文を出し、新たな最良気配となること"
+    },
+    {
+      "term": "Behind the market",
+      "japanese": "市場の後ろ",
+      "definition": "最良気配より不利な価格の指値注文。市場価格が動かない限り約定しない"
+    },
+    {
+      "term": "Hidden order",
+      "japanese": "隠し注文",
+      "definition": "他のトレーダーに表示されない注文。大口注文の存在を隠すために使用"
+    },
+    {
+      "term": "Iceberg order",
+      "japanese": "アイスバーグ注文",
+      "definition": "一部のサイズのみを表示し、残りを隠す注文。氷山のように大部分が隠れている"
+    },
+    {
+      "term": "Day order",
+      "japanese": "当日注文",
+      "definition": "その日の取引終了まで有効な注文。約定しなければ失効"
+    },
+    {
+      "term": "Good-till-cancelled (GTC)",
+      "japanese": "GTC注文",
+      "definition": "キャンセルされるまで有効な注文。実務上は数ヶ月で期限切れになることが多い"
+    },
+    {
+      "term": "Immediate or cancel (IOC)",
+      "japanese": "IOC注文",
+      "definition": "即座に約定可能な部分のみ執行し、残りはキャンセルする注文"
+    },
+    {
+      "term": "Market-on-close order",
+      "japanese": "引け成行注文",
+      "definition": "取引終了時の終値で約定する成行注文。投資信託がポートフォリオ評価と一致させるために使用"
+    },
+    {
+      "term": "Stop order",
+      "japanese": "逆指値注文",
+      "definition": "指定価格に達した時点で成行注文に変換される注文。損切りや利益確定に使用"
+    }
+  ],
+  "practice_questions": [
+    {
+      "question": "A trader submits a buy limit order at $25 when the market is '24 bid, offered at 26'. This order is best described as:",
+      "question_ja": "市場が「24ビッド、26オファー」の時に$25の買い指値注文を出した場合、この注文は何と呼ばれるか？",
+      "options": [
+        "A. Behind the market",
+        "B. Making market",
+        "C. Making a new market",
+        "D. Marketable limit order"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。$25は最良買い気配（$24）より高く、最良売り気配（$26）より低いため、この注文は「新しいマーケットを作る」（makes a new market）。新たな最良買い気配となる。"
+    },
+    {
+      "question": "Which of the following is the main disadvantage of market orders?",
+      "question_ja": "成行注文の主な欠点は何か？",
+      "options": [
+        "A. They may not execute",
+        "B. They can be expensive to execute, especially for large orders",
+        "C. They require specifying a limit price",
+        "D. They are only valid for one day"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「The main drawback with market orders is that they can be expensive to execute, especially when the order is placed in a market for a thinly traded security, or more generally, when the order is large relative to the normal trading activity」と説明されている。大口注文や流動性の低い市場では、不利な価格で約定する可能性がある。"
+    },
+    {
+      "question": "Which of the following is the main disadvantage of limit orders?",
+      "question_ja": "指値注文の主な欠点は何か？",
+      "options": [
+        "A. They always execute at unfavorable prices",
+        "B. They may not execute",
+        "C. They are more expensive than market orders",
+        "D. They cannot be cancelled"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「The main problem with limit orders is that they may not execute」と説明されている。買い指値が低すぎる、または売り指値が高すぎる場合、注文は約定しない。"
+    },
+    {
+      "question": "A trader wants to buy shares but does not want to reveal the full size of the order to the market. Which order type is most appropriate?",
+      "question_ja": "トレーダーが株式を購入したいが、注文の全サイズを市場に知らせたくない場合、最も適切な注文タイプは何か？",
+      "options": [
+        "A. Market order",
+        "B. Day order",
+        "C. Iceberg order",
+        "D. Good-till-cancelled order"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。アイスバーグ注文は一部のサイズのみを表示し、残りを隠す。テキストでは「Traders sometimes call such orders iceberg orders because most of the order is hidden」と説明されている。"
+    },
+    {
+      "question": "An investment manager wants to trade at the same prices used to value the portfolio. Which order type is most appropriate?",
+      "question_ja": "投資マネージャーがポートフォリオ評価に使用される価格で取引したい場合、最も適切な注文タイプは何か？",
+      "options": [
+        "A. Market order",
+        "B. Limit order",
+        "C. Market-on-close order",
+        "D. Immediate or cancel order"
+      ],
+      "correct_answer": "C",
+      "explanation": "正解はC。テキストでは「Traders often use on-close orders when they want to trade at the same prices that will be published as the closing prices of the day. Mutual funds often like to trade at such prices because they value their portfolios at closing prices」と説明されている。"
+    },
+    {
+      "question": "Which statement about the relationship between limit order aggressiveness and execution is most accurate?",
+      "question_ja": "指値注文の積極性と約定の関係について、最も正確な記述はどれか？",
+      "options": [
+        "A. More aggressive orders fill faster but at better prices",
+        "B. More aggressive orders fill faster but at inferior prices",
+        "C. Less aggressive orders fill faster but at inferior prices",
+        "D. There is no relationship between aggressiveness and execution"
+      ],
+      "correct_answer": "B",
+      "explanation": "正解はB。テキストでは「Although aggressively priced orders fill faster and with more certainty then do less aggressively priced limit orders, the prices at which they execute are inferior」と説明されている。積極的な価格設定は約定確率を高めるが、約定価格は不利になる。"
+    }
+  ],
+  "practical_examples": [
+    "日本の株式市場の例：東京証券取引所では、成行注文は「成行」、指値注文は「指値」として発注。寄付（始値）や引け（終値）での約定を希望する場合は「寄成」「引成」「寄指」「引指」を使用。",
+    "アルゴリズム取引の例：機関投資家が大口注文を執行する際、VWAP（出来高加重平均価格）アルゴリズムを使用して、市場への影響を最小化しながら1日かけて分割執行する。",
+    "逆指値の活用例：株式を$100で購入した投資家が、$90の逆指値売り注文を設定。株価が$90に下落すると自動的に売り注文が発動し、損失を限定する（ストップロス）。"
+  ]
+}
