@@ -278,67 +278,67 @@
       {
         "id": "para_1",
         "english": "Practitioners often classify assets and the markets in which they trade by various common charac- teristics to facilitate communications with their clients, with each other, and with regulators. The most actively traded assets are securities, currencies, contracts, and commodities. In addition, real assets are traded. Securities generally include debt instruments, equities, and shares in pooled investment vehicles. Currencies are monies issued by national monetary authorities. Contracts are agreements to exchange securities, currencies, commodities or other contracts in the future. Commodities include precious metals, energy products, industrial metals, and agricultural prod- ucts.",
-        "japanese": "実務家は、資産とそれらが取引される市場を、様々な共通の特性によって分類することがよくあります。これらの分類は、資産と市場を整理し、理解するのに役立ちます。"
+        "japanese": "資産と市場は様々な方法で分類されます。最も基本的な分類は、証券、通貨、契約、コモディティ、実物資産です。証券には一般的に、債券、株式、プール投資商品の持分が含まれます。通貨は政府が発行する交換媒体です。契約は、当事者間で将来何かを行うことを約束する合意です。コモディティは、農産物、金属、エネルギー製品などの物理的な商品です。実物資産は、不動産、航空機、機械などの有形資産です。"
       },
       {
         "id": "para_2",
         "english": "Real assets are tangible properties such as real estate, airplanes, or machinery. Securities, currencies, and contracts are classified as financial assets whereas commodities and real assets are classified as physical assets. Securities are further classified as debt or equity. Debt instruments (also called fixed-income in- struments) are promises to repay borrowed money. Equities represent ownership in companies. Pooled investment vehicle shares represent ownership of an undivided interest in an investment portfolio. The portfolio may include securities, currencies, contracts, commodities, or real assets. Pooled investment vehicles, such as exchange-traded funds, which exclusively own shares in other companies, generally are also considered equities.",
-        "japanese": "実物資産は、不動産、航空機、機械などの有形資産です。証券、通貨、契約は金融資産であり、その価値は何らかの契約上の請求権から生じます。"
+        "japanese": "実物資産は、不動産、航空機、機械などの有形資産です。証券、通貨、契約は金融資産に分類され、コモディティと実物資産は物理的資産に分類されます。証券はさらに債券と株式に分類されます。債券（固定利付商品とも呼ばれる）は、借りたお金を返済する約束です。株式は、企業の所有権を表します。プール投資商品の持分は、投資信託、ユニットトラスト、上場投資信託（ETF）などの投資ファンドの所有権を表します。"
       },
       {
         "id": "para_3",
         "english": "Securities are also classified by whether they are public or private securities. Public securities are those registered to trade in public markets, such as on exchanges or through dealers. In most juris- dictions, issuers must meet stringent minimum regulatory standards, including reporting and cor- porate governance standards, to issue publicly traded securities. Private securities are all other securities. Often, only specially qualified investors can purchase private equities and private debt instruments. Investors may purchase them directly from the is- suer or indirectly through an investment vehicle specifically formed to hold such securities.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "証券は、公開証券か私募証券かによっても分類されます。公開証券は、取引所やディーラーを通じて公開市場で取引するために登録されたものです。ほとんどの法域では、発行者は公開取引証券を発行するために、報告基準やコーポレートガバナンス基準を含む厳格な最低規制基準を満たす必要があります。私募証券は、その他すべての証券です。私募証券は通常、少数の投資家に売却され、公開市場では取引されません。"
       },
       {
         "id": "para_4",
         "english": "Issuers often issue private securities when they find public reporting standards too burdensome or when they do not want to conform to the regulatory standards associated with public equity. Venture capital is private equity that investors supply to companies when or shortly after they are founded. Private securities generally are illiquid. In contrast, many public securities trade in liquid markets in which sellers can easily find buyers for their securities. Contracts are derivative contracts if their values depend on the prices of other underlying assets. Derivative contracts may be classified as physical or financial depending on whether the under- lying instruments are physical products or financial securities.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "発行者は、公開報告基準が負担になりすぎる場合や、公開株式に関連する規制基準に準拠したくない場合に、私募証券を発行することがよくあります。ベンチャーキャピタルは、企業が設立された時またはその直後に投資家が企業に供給するプライベートエクイティです。私募証券は一般的に流動性が低いです。対照的に、多くの公開証券は流動性の高い市場で取引され、投資家は大きな価格影響なしに迅速に売買できます。"
       },
       {
         "id": "para_5",
         "english": "Equity derivatives are contracts whose values depend on equities or indexes of equities. Fixed-income derivatives are contracts whose values depend on debt securities or indexes of debt securities. Practitioners classify markets by whether the markets trade instruments for immediate delivery or for future delivery. Markets that trade contracts that call for delivery in the future are forward or fu- tures markets. Those that trade for immediate delivery are called spot markets to distinguish them from forward markets that trade contracts on the same underlying instruments. Options markets trade contracts that deliver in the future, but delivery takes place only if the holders of the options choose to exercise them. When issuers sell securities to investors, practitioners say that they trade in the primary market.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "株式デリバティブは、株式または株式指数に価値が依存する契約です。固定利付デリバティブは、債券または債券指数に価値が依存する契約です。実務家は、市場を即時引渡しの商品を取引するか、将来引渡しの商品を取引するかによって分類します。将来の引渡しを求める契約を取引する市場は、先渡市場または先物市場です。即時引渡しの契約を取引する市場は、スポット市場または現物市場と呼ばれます。"
       },
       {
         "id": "para_6",
         "english": "When investors sell those securities to others, they trade in the secondary market. In the primary market, funds flow to the issuer of the security from the purchaser. In the secondary market, funds flow between traders. Practitioners classify financial markets as money markets or capital markets. Money markets trade debt instruments maturing in one year or less. The most common such instruments are repurchase agreements (defined in Section 3.2.1), negotiable certificates of deposit, government bills, and com- mercial paper.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "投資家がそれらの証券を他者に売却する場合、流通市場で取引します。発行市場では、資金は証券の発行者から購入者に流れます。流通市場では、資金はトレーダー間で流れます。実務家は金融市場をマネーマーケットまたは資本市場に分類します。マネーマーケットは、満期が1年以下の債券を取引します。最も一般的なそのような商品は、国庫短期証券、コマーシャルペーパー、譲渡性預金です。"
       },
       {
         "id": "para_7",
         "english": "In contrast, capital markets trade instruments of longer duration, such as bonds and equities, whose values depend on the credit-worthiness of the issuers and on payments of interest or dividends that will be made in the future and may be uncertain. Corporations generally finance their operations in the capital markets, but some also finance a portion of their operations by issu- ing short-term securities, such as commercial paper. Finally, practitioners distinguish between traditional investment markets and alternative investment markets. Traditional investments include all publicly traded debts and equities and shares in pooled investment vehicles that hold publicly traded debts and/or equities.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "対照的に、資本市場は、債券や株式などのより長期の商品を取引します。これらの価値は、発行者の信用力と、将来支払われる利息や配当金の支払いに依存し、不確実な場合があります。企業は一般的に資本市場で事業資金を調達しますが、一部の企業はマネーマーケットで短期証券を発行して事業の一部を資金調達することもあります。"
       },
       {
         "id": "para_8",
         "english": "Alternative investments in- clude hedge funds, private equities (including venture capital), commodities, real estate securities and real estate properties, securitized debts, operating leases, machinery, collectibles, and precious gems. Because these investments are often hard to trade and hard to value, they may sometimes trade at substantial deviations from their intrinsic values. The discounts compensate investors for the research that they must do to value these assets and for their inability to easily sell the assets if they need to liquidate a portion of their portfolios. The remainder of this section describes the most common assets and contracts that people, com- panies, and governments trade. EXAMPLE 5 Asset and Market Classification The investment policy of a mutual fund only permits the fund to invest in public equities traded in secondary markets.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "オルタナティブ投資には、ヘッジファンド、プライベートエクイティ（ベンチャーキャピタルを含む）、コモディティ、不動産証券および不動産物件、証券化債務、オペレーティングリース、機械、収集品、貴石が含まれます。これらの投資は取引や評価が難しいことが多いため、本質的価値から大幅に乖離した価格で取引されることがあります。割引は流動性の欠如を補償し、プレミアムは投資の独自性や希少性を反映する場合があります。"
       },
       {
         "id": "para_9",
         "english": "Would the fund be able to purchase: 1. Common stock of a company that trades on a large stock exchange? Solution: Yes. Common stock is equity. Those common stocks that trade on large exchanges in- variably are public equities that trade in secondary markets. 2. Common stock of a public company that trades only through dealers? Solution: Yes.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "ファンドは以下を購入できるでしょうか：1. 大規模な証券取引所で取引される会社の普通株式？解答：はい。普通株式は株式です。大規模な取引所で取引される普通株式は、必ず流通市場で取引される公開株式です。2. ディーラーを通じてのみ取引される公開会社の普通株式？解答：はい。"
       },
       {
         "id": "para_10",
         "english": "Dealer markets are secondary markets and the security is a public equity. 3. A government bond? Solution: No. Although government bonds are public securities, they are not equities. They are debt securities. 4. A single stock futures contract?",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "ディーラー市場は流通市場であり、その証券は公開株式です。3. 国債？解答：いいえ。国債は公開証券ですが、株式ではありません。債券です。4. 個別株先物契約？"
       },
       {
         "id": "para_11",
         "english": "Solution: No. Although the underlying instruments for single stock futures are invariably public equities, single stock futures are derivative contracts, not equities. 5. Common stock sold for the first time by a properly registered public company? Solution: No. The fund would not be able to buy these shares because a purchase from the issuer would be in the primary market. The fund would have to wait until it could buy the shares from someone other than the issuer. 6.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "解答：いいえ。個別株先物の原資産は必ず公開株式ですが、個別株先物はデリバティブ契約であり、株式ではありません。5. 適切に登録された公開会社が初めて売却する普通株式？解答：いいえ。発行者からの購入は発行市場になるため、ファンドはこれらの株式を購入できません。ファンドは流通市場で株式を購入する必要があります。"
       },
       {
         "id": "para_12",
         "english": "Shares in a privately held bank with €10 billion of capital? Solution: No. These shares are private equities, not public equities. The public prominence of the company does not make its securities public securities unless they have been properly registered as public securities. 4. SECURITIES LEARNING OUTCOME The candidate should be able to: describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets, including their distinguishing characteristics and major subtypes People, companies, and governments sell securities to raise money.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "資本金100億ユーロの非公開銀行の株式？解答：いいえ。これらの株式は私募株式であり、公開株式ではありません。会社の公的な知名度は、証券が公開証券として適切に登録されていない限り、その証券を公開証券にしません。"
       },
       {
         "id": "para_13",
         "english": "Securities include bonds, notes, commercial paper, mortgages, common stocks, preferred stocks, warrants, mutual fund shares, unit trusts, and depository receipts. These can be classified broadly as fixed-income instruments, equities, and shares in pooled investment vehicles. Note that the legal definition of a security varies by country and may or may not coincide with the usage here. Securities that are sold to the public or that can be resold to the public are called issues. Companies and governments are the most com- mon issuers.",
-        "japanese": "資産と市場の分類は、投資家が投資機会を理解し、ポートフォリオを構築するのに役立ちます。公開市場と私募市場、マネーマーケットとキャピタルマーケット、伝統的資産とオルタナティブ資産など、様々な分類方法があります。"
+        "japanese": "証券には、債券、ノート、コマーシャルペーパー、住宅ローン、普通株式、優先株式、ワラント、投資信託の持分、ユニットトラスト、預託証券が含まれます。これらは大まかに固定利付商品、株式、プール投資商品の持分に分類できます。証券の法的定義は国によって異なり、ここでの用法と一致する場合もしない場合もあることに注意してください。証券は、投資家が発行者に資金を提供し、見返りに所有権または返済の約束を受け取る金融商品です。"
       }
     ],
     "keyTerms": []
@@ -352,27 +352,27 @@
       {
         "id": "para_1",
         "english": "Fixed-income instruments contractually include predetermined payment schedules that usually include interest and principal payments. Fixed-income instruments generally are promises to repay borrowed money but may include other instruments with payment schedules, such as settle- ments of legal cases or prizes from lotteries. The payment amounts may be pre-specified or they may vary according to a fixed formula that depends on the future values of an interest rate or a commodity price. Bonds, notes, bills, certificates of deposit, commercial paper, repurchase agree- ments, loan agreements, and mortgages are examples of promises to repay money in the future. People, companies, and governments create fixed-income instruments when they borrow money.",
-        "japanese": "確定利付商品は、契約上、通常は利息の支払いと元本の返済を含む所定の支払いスケジュールを含みます。これらの商品は債務証券とも呼ばれます。"
+        "japanese": "固定利付商品には、借り手が貸し手に返済を約束する債券、ノート、コマーシャルペーパー、譲渡性預金、レポ、住宅ローン、およびその他の債務商品が含まれます。これらの商品は、定期的に利息を支払い、満期時に元本を返済するため、固定利付と呼ばれます。ただし、利息の支払いは固定されていない場合もあり、変動金利商品では市場金利に連動して変動します。"
       },
       {
         "id": "para_2",
         "english": "Corporations and governments issue bonds and notes. Fixed-income securities with shorter ma- turities are called \"notes,\" those with longer maturities are called \"bonds.\" The cutoff is usually at 10 years. In practice, however, the terms are generally used interchangeably. Both become short- term instruments when the remaining time until maturity is short, usually taken to be one year or less. Some corporations issue convertible bonds, which are typically convertible into stock, usually at the option of the holder after some period. If stock prices are high so that conversion is likely, convertibles are valued like stock. Conversely, if stock prices are low so that conversion is unlikely, convertibles are valued like bonds. Bills, certificates of deposit, and commercial paper are respectively issued by governments, banks, and corporations.",
-        "japanese": "企業と政府は債券とノートを発行します。満期が短い確定利付証券は、短期金融市場（マネーマーケット）商品と呼ばれることがあります。"
+        "japanese": "債券とノートは、政府、企業、その他の法人が発行する債務商品です。債券は通常、ノートよりも長い満期を持ちます。コマーシャルペーパーは、企業が発行する短期の無担保債務です。譲渡性預金は、銀行が発行する定期預金で、満期前に流通市場で売却できます。これらの商品は最初は長い満期を持つこともありますが、満期が近づくと短期商品になります。"
       },
       {
         "id": "para_3",
         "english": "They usually mature within a year of being issued; certificates of deposit some- times have longer initial maturities. Repurchase agreements (repos) are short-term lending instruments. The term can be as short as overnight. A borrower seeking funds will sell an instrument-typically a high-quality bond-to a lender with an agreement to repurchase it later at a slightly higher price based on an agreed upon interest rate. Practitioners distinguish between short-term, intermediate-term, and long-term fixed-income securities. No general consensus exists about the definition of short-term, intermediate-term, and long-term.",
-        "japanese": "確定利付証券には、国債、社債、地方債、住宅ローン担保証券などが含まれます。これらの証券は、発行者の信用力、満期、クーポン率などによって分類されます。"
+        "japanese": "レポ（現先取引）は短期の貸付商品です。期間は翌日物ほど短いこともあります。資金を求める借り手は、商品（通常は高品質の債券）を売却し、後日より高い価格で買い戻すことに同意します。売却価格と買戻価格の差が、貸し手が受け取る利息です。住宅ローンは、不動産を担保とする債務です。"
       },
       {
         "id": "para_4",
         "english": "Instruments that mature in less than one to two years are considered short-term instru- ments whereas those that mature in more than five to ten years are considered long-term instru- ments. In the middle are intermediate-term instruments. Instruments trading in money markets are called money market instruments. Such instruments are traded debt instruments maturing in one year or less. Money market funds and corporations seeking a return on their short-term cash balances typically hold money market instruments. in the company by exercising their warrants. The warrant exercise price is the price that the warrant holder must pay to buy the security.",
-        "japanese": "確定利付証券には、国債、社債、地方債、住宅ローン担保証券などが含まれます。これらの証券は、発行者の信用力、満期、クーポン率などによって分類されます。"
+        "japanese": "満期が1〜2年未満の商品は短期商品とみなされ、満期が5〜10年を超える商品は長期商品とみなされます。その中間は中期商品です。マネーマーケットで取引される商品はマネーマーケット商品と呼ばれ、資本市場で取引される商品は資本市場商品と呼ばれます。"
       },
       {
         "id": "para_5",
         "english": "EXAMPLE 6 Securities What factors distinguish fixed-income securities from equities? Solution: Fixed-income securities generate income on a regular schedule. They derive their value from the promise to pay a scheduled cash flow. The most common fixed-income securities are promises made by people, companies, and governments to repay loans. Equities represent residual ownership in companies after all other claims-including any fixed-income liabilities of the company-have been satisfied. For corporations, the claims of preferred equities typically have priority over the claims of common equities. Common equi- ties have the residual ownership in corporations.",
-        "japanese": "確定利付証券には、国債、社債、地方債、住宅ローン担保証券などが含まれます。これらの証券は、発行者の信用力、満期、クーポン率などによって分類されます。"
+        "japanese": "固定利付証券と株式を区別する要因は何ですか？解答：固定利付証券は定期的なスケジュールで収益を生み出します。それらは予定されたキャッシュフローを支払う約束からその価値を得ます。最も一般的な固定利付証券は、個人、企業、政府が借りたお金を返済する約束です。株式は企業の所有権を表し、その価値は企業の将来の収益性に依存します。"
       }
     ],
     "keyTerms": []
@@ -386,17 +386,17 @@
       {
         "id": "para_1",
         "english": "Equities represent ownership rights in companies. These include common and preferred shares. Common shareholders own residual rights to the assets of the company. They have the right to receive any dividends declared by the boards of directors, and in the event of liquidation, any assets remaining after all other claims are paid. Acting through the boards of directors that they elect, common shareholders usually can select the managers who run the corporations. Preferred shares are equities that have preferred rights (relative to common shares) to the cash flows and assets of the company. Preferred shareholders generally have the right to receive a specific dividend on a regular basis.",
-        "japanese": "株式は企業の所有権を表します。これには普通株式と優先株式が含まれます。普通株主は会社の残余利益に対する請求権を持ち、通常は議決権を持ちます。"
+        "japanese": "株式は企業の所有権を表します。これには普通株式と優先株式が含まれます。普通株主は企業の資産に対する残余権を持ちます。彼らは取締役会が宣言した配当金を受け取る権利を持ち、清算の場合には、すべての債権者と優先株主への支払い後に残った資産を受け取る権利を持ちます。普通株主は通常、企業の重要事項について投票する権利も持ちます。"
       },
       {
         "id": "para_2",
         "english": "If the preferred share is a cumulative preferred equity, the company must pay the preferred shareholders any previously omitted dividends before it can pay dividends to the common shareholders. Preferred shareholders also have higher claims to assets relative to common shareholders in the event of corporate liquidation. For valuation purposes, financial analysts generally treat preferred stocks as fixed-income securities when the issuers will clearly be able to pay their promised dividends in the foreseeable future. Warrants are securities issued by a corporation that allow the warrant holders to buy a security issued by that corporation, if they so desire, usually at any time before the warrants expire or, if not, upon expiration.",
-        "japanese": "優先株式が累積型優先株式の場合、会社は普通株主に配当を支払う前に、優先株主に未払いの配当をすべて支払わなければなりません。"
+        "japanese": "優先株式が累積優先株式の場合、会社は普通株主に配当金を支払う前に、優先株主に以前省略された配当金を支払わなければなりません。優先株主は、企業清算の場合、普通株主よりも資産に対する優先権を持ちます。ワラントは、保有者が特定の証券を特定の価格で特定の期間内に購入する権利を与える証券です。"
       },
       {
         "id": "para_3",
         "english": "The security that warrant holders can buy usually is the issuer's common stock, in which case the warrants are considered equities because the warrant holders can obtain equity",
-        "japanese": "通貨は、商品やサービスの交換媒体として機能する金融資産です。外国為替市場では、異なる通貨が互いに取引されます。"
+        "japanese": "ワラント保有者が購入できる証券は通常、発行者の普通株式であり、その場合、ワラント保有者は株式を取得できるため、ワラントは株式とみなされます。"
       }
     ],
     "keyTerms": []
@@ -410,52 +410,52 @@
       {
         "id": "para_1",
         "english": "Pooled investment vehicles are mutual funds, trusts, depositories, and hedge funds, that issue securities that represent shared ownership in the assets that these entities hold. The secur- ities created by mutual funds, trusts, depositories, and hedge fund are respectively called shares, units, depository receipts, and limited partnership interests but practitioners often use these terms interchangeably. People invest in pooled investment vehicles to benefit from the investment man- agement services of their managers and from diversification opportunities that are not readily available to them on an individual basis. Mutual funds are investment vehicles that pool money from many investors for investment in a portfolio of securities. They are often legally organized as investment trusts or as corporate in- vestment companies.",
-        "japanese": "プールド投資ビークルは、投資家から資金を集めて証券を発行する投資信託、信託、預託機関、ヘッジファンドです。"
+        "japanese": "プール投資商品は、投資信託、信託、預託機関、ヘッジファンドであり、これらの事業体が保有する資産の共有所有権を表す証券を発行します。投資信託、信託、預託機関、ヘッジファンドが作成する証券は、それぞれ株式、ユニット、預託証券、ヘッジファンド持分と呼ばれます。"
       },
       {
         "id": "para_2",
         "english": "Pooled investment vehicles may be open-ended or closed-ended. Open-ended funds issue new shares and redeem existing shares on demand, usually on a daily basis. The price at which a fund redeems and sells the fund's shares is based on the net asset value of the fund's portfolio, which is the difference between the fund's assets and liabilities, expressed on a per share basis. Investors generally buy and sell open-ended mutual funds by trading with the mutual fund. In contrast, closed-end funds issue shares in primary market offerings that the fund or its invest- ment bankers arrange. Once issued, investors cannot sell their shares of the fund back to the fund by demanding redemption. Instead, investors in closed-end funds must sell their shares to other investors in the secondary market.",
-        "japanese": "プールド投資ビークルは、オープンエンド型またはクローズドエンド型のいずれかです。オープンエンド型ファンドは新株を発行し、投資家の要求に応じて株式を買い戻します。"
+        "japanese": "プール投資商品はオープンエンド型またはクローズドエンド型の場合があります。オープンエンド型ファンドは、通常は毎日、需要に応じて新しい株式を発行し、既存の株式を償還します。ファンドが株式を償還および売却する価格は、ファンドのポートフォリオの純資産価値に基づいており、これはファンドの資産の価値からファンドの負債を差し引いたものです。"
       },
       {
         "id": "para_3",
         "english": "The secondary market prices of closed-end funds may differ -sometimes quite significantly from their net asset values. Closed-end funds generally trade at a discount to their net asset values. The discount reflects the expenses of running the fund and sometimes investor concerns about the quality of the management. Closed-end funds may also trade at a discount or a premium to net asset value when investors believe that the portfolio secur- ities are overvalued or undervalued. Many financial analysts thus believe that discounts and pre- miums on closed-end funds measure market sentiment. Exchange-traded funds (ETFs) and exchange-traded notes (ETNs) are open-ended funds that in- vestors can trade among themselves in secondary markets.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "クローズドエンド型ファンドの流通市場価格は、純資産価値と異なる場合があり、時にはかなり大きく異なることがあります。クローズドエンド型ファンドは一般的に純資産価値に対して割引で取引されます。この割引は、ファンドの運営費用と、時には投資家のファンド管理の質に対する懸念を反映しています。"
       },
       {
         "id": "para_4",
         "english": "The prices at which ETFs trade rarely differ much from net asset values because a class of investors, known as authorized participants (APS), has the option of trading directly with the ETF. If the market price of an equity ETF is suffi- ciently below its net asset value, APs will buy shares in the secondary market at market price and redeem shares at net asset value with the fund. Conversely, if the price of an ETF is sufficiently above its net asset value, APs will buy shares from the fund at net asset value and sell shares in the secondary market at market price. As a result, the market price and net asset values of ETFs tend to converge. Many ETFs permit only in-kind deposits and redemptions.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "ETFが取引される価格は、認定参加者（AP）として知られる投資家のクラスがETFと直接取引するオプションを持っているため、純資産価値からあまり離れることはありません。株式ETFの市場価格が純資産価値を十分に下回っている場合、APは市場でETFの株式を購入し、それをETFに償還して原資産を受け取ります。"
       },
       {
         "id": "para_5",
         "english": "Buyers who buy directly from such a fund pay for their shares with a portfolio of securities rather than with cash. Similarly, sellers re- ceive a portfolio of securities. The transaction portfolio generally is very similar-often essentially identical to the portfolio held by the fund. Practitioners sometimes call such funds \"depositor- ies\" because they issue depository receipts for the portfolios that traders deposit with them. The traders then trade the receipts in the secondary market. Some warehouses holding industrial ma- terials and precious metals also issue tradable warehouse receipts. Asset-backed securities are securities whose values and income payments are derived from a pool of assets, such as mortgage bonds, credit card debt, or car loans.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "そのようなファンドから直接購入する買い手は、現金ではなく証券のポートフォリオで株式の代金を支払います。同様に、売り手は証券のポートフォリオを受け取ります。取引ポートフォリオは一般的に、ファンドが保有するポートフォリオと非常に類似しており、多くの場合本質的に同一です。"
       },
       {
         "id": "para_6",
         "english": "These securities typically pass interest and principal payments received from the pool of assets through to their holders on a monthly basis. These payments may depend on formulas that give some classes of securities— called tranches-backed by the pool more value than other classes. Hedge funds are investment funds that generally organize as limited partnerships. The hedge fund managers are the general partners. The limited partners are qualified investors who are wealthy enough and well informed enough to tolerate and accept substantial losses, should they occur. The regulatory requirements to participate in a hedge fund and the regulatory restrictions on hedge funds vary by jurisdiction. Most hedge funds follow only one investment strategy, but no single in- vestment strategy characterizes hedge funds as a group.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "これらの証券は通常、資産プールから受け取った利息と元本の支払いを、月次ベースで保有者に渡します。これらの支払いは、プールに裏付けられた一部の証券クラス（トランシェと呼ばれる）に他のクラスよりも多くの価値を与える公式に依存する場合があります。ヘッジファンドは、富裕層の個人投資家と機関投資家のみが利用できるプール投資商品です。"
       },
       {
         "id": "para_7",
         "english": "Hedge funds exist that follow almost every imaginable strategy ranging from long-short arbitrage in the stock markets to direct investments in exotic alternative assets. The primary distinguishing characteristic of hedge funds is their management compensation scheme. Almost all funds pay their managers with an annual fee that is proportional to their assets and with an additional performance fee that depends on the wealth that the funds generate for their shareholders. A secondary distinguishing characteristic of many hedge funds is the use of leverage to increase risk exposure and to hopefully increase returns. 5.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "ヘッジファンドは、株式市場でのロングショートアービトラージからエキゾチックなオルタナティブ資産への直接投資まで、ほぼすべての想像できる戦略に従うものが存在します。ヘッジファンドの主な特徴は、その管理報酬体系です。ほとんどすべてのファンドは、運用資産に基づく管理手数料に加えて、パフォーマンスに基づくインセンティブ手数料をマネージャーに支払います。"
       },
       {
         "id": "para_8",
         "english": "CURRENCIES, COMMODITIES, AND REAL ASSETS LEARNING OUTCOME The candidate should be able to: describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets, including their distinguishing characteristics and major subtypes Currencies are monies issued by national monetary authorities. Approximately 180 currencies are currently in use throughout the world. Some of these currencies are regarded as reserve currencies. Reserve currencies are currencies that national central banks and other monetary authorities hold in significant quantities. The primary reserve currencies are the US dollar and the euro.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "通貨は、政府または中央銀行が発行する交換媒体です。最も広く取引されている通貨は、米ドル、ユーロ、日本円、英ポンド、スイスフランです。米ドルは世界の主要な準備通貨であり、多くの国際取引で使用されています。"
       },
       {
         "id": "para_9",
         "english": "Secondary reserve currencies include the British pound, the Japanese yen, and the Swiss franc. Currencies trade in foreign exchange markets. In spot currency transactions, one currency is im- mediately or almost immediately exchanged for another. The rate of exchange is called the spot exchange rate. Traders typically negotiate institutional trades in multiples of large quantities, such as US$1 million or ¥100 million. Institutional trades generally settle in two business days.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "副次的な準備通貨には、英ポンド、日本円、スイスフランが含まれます。通貨は外国為替市場で取引されます。スポット通貨取引では、ある通貨が即座にまたはほぼ即座に別の通貨と交換されます。交換レートはスポット為替レートと呼ばれます。"
       },
       {
         "id": "para_10",
         "english": "Retail currency trades most commonly take place through commercial banks when their custom- ers exchange currencies at a location of the bank, use ATM machines when travelling to withdraw a different currency than the currency in which their bank accounts are denominated, or use credit cards to buy items priced in different currencies. Retail currency trades also take place at airport kiosks, at store front currency exchanges, or on the street.",
-        "japanese": "契約は、将来の特定の条件下で特定の行動を取ることを約束する金融商品です。先渡契約、先物契約、オプション契約、スワップ契約などが含まれます。"
+        "japanese": "小売通貨取引は、顧客が銀行の場所で通貨を交換する場合、旅行中にATM機を使用して銀行口座の通貨とは異なる通貨を引き出す場合、またはクレジットカードを使用して外国で商品やサービスを購入する場合に、商業銀行を通じて最も一般的に行われます。"
       }
     ],
     "keyTerms": []
@@ -469,17 +469,17 @@
       {
         "id": "para_1",
         "english": "Commodities include precious metals, energy products, industrial metals, agricultural products, and carbon credits. Spot commodity markets trade commodities for immediate delivery whereas the forward and futures markets trade commodities for future delivery. Managers seeking posi- tions in commodities can acquire them directly by trading in the spot markets or indirectly by trad- ing forward and futures contracts. The producers and processors of industrial metals and agricultural products are the primary users of the spot commodity markets because they generally are best able to take and make delivery and to store physical products. They undertake these activities in the normal course of operating their businesses. Their ability to handle physical products and the information that they gather operating businesses also gives them substantial advantages as information-motivated traders in these markets.",
-        "japanese": "コモディティには、貴金属、エネルギー製品、工業用金属、農産物、炭素クレジットが含まれます。これらは実物資産であり、その価値は物理的な特性から生じます。"
+        "japanese": "コモディティには、貴金属、エネルギー製品、工業用金属、農産物、炭素クレジットが含まれます。スポットコモディティ市場は即時引渡しのコモディティを取引し、先渡市場と先物市場は将来引渡しのコモディティを取引します。コモディティの生産者と消費者は、価格変動をヘッジするためにこれらの市場を利用します。"
       },
       {
         "id": "para_2",
         "english": "Many producers employ financial analysts to help them analyze commodity market conditions so that they can best manage their inventories to hedge their operational risks and to speculate on future price changes. Commodities also interest information-motivated traders and investment managers because they can use them as hedges against risks that they hold in their portfolios or as vehicles to speculate on future price changes. Most such traders take positions in the futures markets because they usually do not have facilities to handle most physical products nor can they easily obtain them. They also cannot easily cope with the normal variation in qualities that characterizes many commodities.",
-        "japanese": "多くの生産者は、コモディティ市場の状況を分析し、生産と販売の決定を最適化するために金融アナリストを雇用しています。"
+        "japanese": "多くの生産者は、在庫を最適に管理し、運営リスクをヘッジし、将来の価格変動を投機するために、コモディティ市場の状況を分析する金融アナリストを雇用しています。コモディティは、コモディティ価格に影響を与える情報を持つ情報駆動型トレーダーや、ポートフォリオを分散させたい投資マネージャーにも関心を持たれています。"
       },
       {
         "id": "para_3",
         "english": "Information-motivated traders and investment managers also prefer to trade in futures markets because most futures markets are more liquid than their associated spot markets and forward mar- kets. The liquidity allows them to easily close their positions before delivery so that they can avoid handling physical products. Some information-motivated traders and investment managers, however, trade in the spot com- modity markets, especially when they can easily contract for low-cost storage. Commodities for which delivery and storage costs are lowest are nonperishable products for which the ratio of value to weight is high and variation in quality is low. These generally include precious metals, indus- trial diamonds, such high-value industrial metals as copper, aluminum, and mercury, and carbon credits.",
-        "japanese": "コモディティ市場は、生産者と消費者がリスクを管理し、価格発見を行う場を提供します。先物市場とスポット市場の両方でコモディティが取引されます。"
+        "japanese": "情報駆動型トレーダーと投資マネージャーは、ほとんどの先物市場が関連するスポット市場や先渡市場よりも流動性が高いため、先物市場での取引を好みます。この流動性により、ポジションを簡単にクローズでき、価格変動から利益を得たり損失を制限したりできます。"
       }
     ],
     "keyTerms": []
@@ -493,67 +493,67 @@
       {
         "id": "para_1",
         "english": "Real assets include such tangible properties as real estate, airplanes, machinery, or lumber stands. These assets normally are held by operating companies, such as real estate developers, airplane leasing companies, manufacturers, or loggers. Many institutional investment managers, however, have been adding real assets to their portfolios as direct investments (involving direct ownership of the real assets) and indirect investments (involving indirect ownership, for example, purchase of securities of companies that invest in real assets or real estate investment trusts). Investments in real assets are attractive to them because of the income and tax benefits that they often generate, and because changes in their values may have a low correlation with other investments that the managers hold.",
-        "japanese": "実物資産には、不動産、航空機、機械、立木などの有形資産が含まれます。これらの資産は物理的な形態を持ち、その価値は使用価値から生じます。"
+        "japanese": "実物資産には、不動産、航空機、機械、立木などの有形資産が含まれます。これらの資産は通常、不動産開発業者、航空機リース会社、製造業者、伐採業者などの事業会社が保有しています。多くの投資家は、インフレヘッジとして、また株式や債券との相関が低いため分散効果を得るために、実物資産への投資に関心を持っています。"
       },
       {
         "id": "para_2",
         "english": "Direct investments in real assets generally require substantial management to ensure that the as- sets are maintained and used efficiently. Investment managers investing in such assets must either hire personnel to manage them or hire outside management companies. Either way, management of real assets is quite costly. Real assets are unique properties in the sense that no two assets are alike. An example of a unique property is a real estate parcel. No two parcels are the same because, if nothing else, they are located in different places. Real assets generally differ in their conditions, remaining useful lives, locations, and suitability for various purposes. These differences are very important to the people who use them, so the market for a given real asset may be very limited.",
-        "japanese": "実物資産への直接投資は、資産が適切に維持され、生産的に使用されることを確保するために、通常、相当な管理を必要とします。"
+        "japanese": "実物資産への直接投資は、資産が維持され効率的に使用されることを確保するために、通常かなりの管理を必要とします。そのような資産に投資する投資マネージャーは、資産を管理する人員を雇用するか、外部の管理会社を雇用する必要があります。"
       },
       {
         "id": "para_3",
         "english": "Thus, real assets tend to trade in very illiquid markets. The heterogeneity of real assets, their illiquidity, and the substantial costs of managing them are all factors that complicate the valuation of real assets and generally make them unsuitable for most investment portfolios. These same problems, however, often cause real assets to be misvalued in the market, so astute information-motivated traders may occasionally identify significantly undervalued assets. The benefits from purchasing such assets, however, are often offset by the sub- stantial costs of searching for them and by the substantial costs of managing them.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "したがって、実物資産は非常に流動性の低い市場で取引される傾向があります。実物資産の異質性、流動性の低さ、管理にかかる相当なコストは、実物資産の評価を複雑にし、一般的に小規模投資家には不向きにする要因です。"
       },
       {
         "id": "para_4",
         "english": "Many financial intermediaries create entities, such as real estate investment trusts (REITs) and master limited partnerships (MLPs), to securitize real assets and to facilitate indirect investment in real assets. The financial intermediaries manage the assets and pass through the net benefits after management costs to the investors who hold these securities. Because these securities are much more homogenous and divisible than the real assets that they represent, they tend to trade in much more liquid markets. Thus, they are much more suitable as investments than the real assets themselves. Of course, investors seeking exposure to real assets can also buy shares in corporations that hold and operate real assets. Although almost all corporations hold and operate real assets, many spe- cialize in assets that particularly interest investors seeking exposure to specific real asset classes.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "多くの金融仲介機関は、不動産投資信託（REIT）やマスターリミテッドパートナーシップ（MLP）などの事業体を設立し、実物資産を証券化し、実物資産への間接投資を促進しています。金融仲介機関は資産を管理し、投資家は証券を所有します。"
       },
       {
         "id": "para_5",
         "english": "For example, investors interested in owning aircraft can buy an aircraft leasing company such as Waha Capital (Abu Dhabi Securities Exchange) and Aircastle Limited (NYSE). EXAMPLE 7 Assets and Contracts Consider the following assets and contracts: Bank deposits Certificates of deposit Hedge funds Master limited partnership interests Common stocks Corporate bonds Currencies Exchange-traded funds Lumber forward contracts Crude oil futures contracts Gold Mortgages Mutual funds Stock option contracts Preferred stocks Real estate parcels Interest rate swaps Treasury notes 1. Which of these represent ownership in corporations?",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "例えば、航空機の所有に関心のある投資家は、Waha Capital（アブダビ証券取引所）やAircastle Limited（NYSE）などの航空機リース会社を購入できます。例題7：以下の資産と契約を考えてください：銀行預金、譲渡性預金、社債、普通株式、優先株式、住宅ローン、国債ノート..."
       },
       {
         "id": "para_6",
         "english": "Solution: Common and preferred stocks represent ownership in corporations. 2. Which of these are debt instruments? 6. Which of these would a home builder most likely use to hedge construction costs? Solution: A builder would buy lumber forward contracts to lock in the price of lumber needed to build homes. 7. Which of these would a corporation trade when moving cash balances among various countries?",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "解答：普通株式と優先株式は企業の所有権を表します。2. これらのうち債務商品はどれですか？6. これらのうち、住宅建設業者が建設コストをヘッジするために最も使用する可能性が高いのはどれですか？解答：建設業者は木材先渡契約を購入して木材価格の上昇をヘッジします。"
       },
       {
         "id": "para_7",
         "english": "Solution: Corporations often trade currencies when moving cash from one country to another. Solution: Bank deposits, certificates of deposit, corporate bonds, mortgages, and Treasury notes are all debt instruments. They respectively represent loans made to banks, corporations, mortgagees (typically real estate owners), and the Treasury. 3. Which of these are created by traders rather than by issuers? Solution: Lumber forward contracts, crude oil futures contracts, stock option contracts, and inter- est rate swaps are created when the seller sells them to a buyer. 4.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "解答：企業は、ある国から別の国に現金を移動する際に通貨を取引することがよくあります。解答：銀行預金、譲渡性預金、社債、住宅ローン、国債ノートはすべて債務商品です。それぞれ、銀行、銀行、企業、住宅所有者、政府への貸付を表します。"
       },
       {
         "id": "para_8",
         "english": "Which of these are pooled investment vehicles? Solution: Exchange-traded funds, hedge funds, and mutual funds are pooled investment vehicles. They represent shared ownership in a portfolio of other assets. 5. Which of these are real assets? Solution: Real estate parcels are real assets. 6.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "これらのうちプール投資商品はどれですか？解答：上場投資信託、ヘッジファンド、投資信託はプール投資商品です。それらは他の資産のポートフォリオの共有所有権を表します。5. これらのうち実物資産はどれですか？解答：..."
       },
       {
         "id": "para_9",
         "english": "CONTRACTS LEARNING OUTCOME The candidate should be able to: describe the major types of securities, currencies, contracts, commodities, and real assets that trade in organized markets, including their distinguishing characteristics and major subtypes A contract is an agreement among traders to do something in the future. Contracts include for- ward, futures, swap, option, and insurance contracts. The values of most contracts depend on the value of an underlying asset. The underlying asset may be a commodity, a security, an index repre- senting the values of other instruments, a currency pair or basket, or other contracts. Contracts provide for some physical or cash settlement in the future.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "契約の学習成果：受験者は、組織化された市場で取引される主要な種類の証券、通貨、契約、コモディティ、実物資産について、その特徴と主要なサブタイプを含めて説明できるようになるべきです。"
       },
       {
         "id": "para_10",
         "english": "In a physically settled con- tract, settlement occurs when the parties to the contract physically exchange some item, such as avocados, pork bellies, or gold bars. Physical settlement also includes the delivery of such financial instruments as bonds, equities, or futures contracts even though the delivery is electronic. In con- trast, cash settled contracts settle through cash payments. The amount of the payment depends on formulas specified in the contracts. Financial analysts classify contracts by whether they are physical or financial based on the nature of the underlying asset. If the underlying asset is a physical product, the contract is a physical; otherwise, the contract is a financial. Examples of assets classified as physical include contracts for the delivery of petroleum, lumber, and gold.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "現物決済契約では、契約当事者がアボカド、豚バラ肉、金の延べ棒などの物品を物理的に交換することで決済が行われます。現物決済には、債券、株式、通貨などの金融商品の引渡しも含まれます。"
       },
       {
         "id": "para_11",
         "english": "Examples of assets classified as financial include op- tion contracts, and contracts on interest rates, stock indexes, currencies, and credit default swaps. Contracts that call for immediate delivery are called spot contracts, and they trade in spot markets. Immediate delivery generally is three days or less, but depends on each market. All other contracts involve what practitioners call futurity. They derive their values from events that will take place in the future. EXAMPLE 8 Contracts for Difference Contracts for difference (CFD) allow people to speculate on price changes for an underlying asset, such as a common stock or an index. Dealers generally sell CFDs to their clients.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "金融資産に分類される資産の例には、オプション契約、金利、株式指数、通貨、クレジットデフォルトスワップに関する契約が含まれます。即時引渡しを求める契約はスポット契約と呼ばれ、スポット市場で取引されます。"
       },
       {
         "id": "para_12",
         "english": "When the clients sell the CFDs back to their dealer, they receive any appreciation in the underlying asset's price between the time of purchase and sale (open and close) of the contract. If the underlying asset's price drops over this interval, the client pays the dealer the difference. 1. Are contracts for difference derivative contracts? Solution: Contracts for difference are derivative contracts because their values are derived from changes in the prices of the underlying asset on which they are based. 2.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "顧客がCFDをディーラーに売り戻すと、契約の購入時と売却時（オープンとクローズ）の間の原資産価格の上昇分を受け取ります。この期間中に原資産価格が下落した場合、顧客はディーラーに差額を支払います。"
       },
       {
         "id": "para_13",
         "english": "Are contracts for difference based on copper prices cash settled or physically settled? Solution: All contracts for difference are cash settled contracts regardless of the underlying asset on which they are based because they settle in cash and not in the underlying asset.",
-        "japanese": "実物資産は、インフレヘッジとして機能し、ポートフォリオの分散化に寄与することができます。不動産投資信託（REIT）は、実物資産への間接投資を可能にします。"
+        "japanese": "銅価格に基づく差金決済取引は現金決済ですか、それとも現物決済ですか？解答：すべての差金決済取引は、基礎となる資産に関係なく、現金で決済され、原資産の引渡しではないため、現金決済契約です。"
       }
     ],
     "keyTerms": []
