@@ -1,0 +1,35 @@
+BOJ Rate Hike Surprise Estimates
+=================================
+
+Event 1: 2024/7/31
+- Actual hike: +15bp (0.0-0.1% → 0.25%)
+- Pre-meeting OIS pricing: ~32% probability (Nikkei July 18), some sources say ~50%
+  - OIS implied: ~5bp expected (0.15 * 0.32 = ~5bp)
+  - ING: "consensus and markets were not positioned for a hike"
+  - Risk.net: "surprise 15 basis point rate hike"
+  - Japan Times: "BOJ's surprise rate rise"
+- Surprise estimate: +15bp actual - ~5bp expected = ~+10bp surprise
+  (Conservative: if 50% priced, 15*0.5=7.5bp expected, surprise = +7.5bp)
+- Best estimate: ~+10bp surprise (most sources describe it as a surprise)
+
+Event 2: 2025/1/24
+- Actual hike: +25bp (0.25% → 0.50%)
+- Pre-meeting OIS pricing: ~90% probability (Bloomberg/Coindesk Jan 16)
+  - OIS implied: ~22.5bp expected (25 * 0.90)
+- Surprise estimate: +25bp actual - 22.5bp expected = ~+2.5bp surprise
+  (Largely priced in, small surprise)
+
+Event 3: 2025/12/19
+- Actual hike: +25bp (0.50% → 0.75%)
+- Pre-meeting OIS pricing: ~94-97% probability
+  - Reuters: 97% (東短リサーチ)
+  - MarketPulse: ~94%
+  - Gaitame: ~92%
+  - OIS implied: ~24bp expected (25 * 0.96 avg)
+- Surprise estimate: +25bp actual - 24bp expected = ~+1bp surprise
+  (Fully priced in, essentially no surprise)
+
+Summary:
+Event 1 (2024/7/31): Surprise ≈ +10bp (significant surprise)
+Event 2 (2025/1/24): Surprise ≈ +2.5bp (small surprise)
+Event 3 (2025/12/19): Surprise ≈ +1bp (no surprise)
